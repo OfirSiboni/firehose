@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from ingest.sources import blogs
@@ -5,8 +6,8 @@ from ingest.sources import blogs
 FIXTURE = Path(__file__).parent / "fixtures" / "blog_sample.xml"
 
 
-def load():
-    return blogs.parse(FIXTURE.read_text(encoding="utf-8"), "example.com")
+def load(days: int = 100000):
+    return blogs.parse(FIXTURE.read_text(encoding="utf-8"), "example.com", days=days)
 
 
 def test_parses_every_entry():
@@ -42,3 +43,28 @@ def test_load_feeds_ignores_comments_and_blank_lines(tmp_path):
         encoding="utf-8",
     )
     assert blogs.load_feeds(path) == ["https://a.com/rss", "https://b.com/rss"]
+
+
+def _feed(pubdate_line: str) -> str:
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>T</title>
+<item><title>Post</title><link>https://example.com/p</link>{pubdate_line}<description>d</description></item>
+</channel></rss>"""
+
+
+def _rfc822(dt: datetime) -> str:
+    return dt.strftime("%a, %d %b %Y %H:%M:%S GMT")
+
+
+def test_drops_entries_older_than_the_window():
+    old = datetime.now(timezone.utc) - timedelta(days=400)
+    assert blogs.parse(_feed(f"<pubDate>{_rfc822(old)}</pubDate>"), "example.com", days=14) == []
+
+
+def test_keeps_entries_inside_the_window():
+    fresh = datetime.now(timezone.utc) - timedelta(days=2)
+    assert len(blogs.parse(_feed(f"<pubDate>{_rfc822(fresh)}</pubDate>"), "example.com", days=14)) == 1
+
+
+def test_keeps_entries_with_no_date():
+    assert len(blogs.parse(_feed(""), "example.com", days=14)) == 1

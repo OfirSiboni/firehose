@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import calendar
+import time
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -23,13 +25,17 @@ def load_feeds(path: Path | None = None) -> list[str]:
     ]
 
 
-def parse(xml: str, feed_name: str) -> list[Item]:
+def parse(xml: str, feed_name: str, days: int = 14) -> list[Item]:
     feed = feedparser.parse(xml)
     items: list[Item] = []
+    cutoff = time.time() - days * 86400
     for entry in feed.entries:
         title = " ".join(entry.get("title", "").split())
         link = entry.get("link")
         if not title or not link:
+            continue
+        when = entry.get("published_parsed") or entry.get("updated_parsed")
+        if when and calendar.timegm(when) < cutoff:
             continue
         body = entry.get("summary") or entry.get("description") or ""
         items.append(
@@ -44,12 +50,12 @@ def parse(xml: str, feed_name: str) -> list[Item]:
     return items
 
 
-def fetch(path: Path | None = None) -> list[Item]:
+def fetch(path: Path | None = None, days: int = 14) -> list[Item]:
     items: list[Item] = []
     for url in load_feeds(path):
         name = urlsplit(url).netloc.lower().removeprefix("www.")
         try:
-            items.extend(parse(get_text(url), name))
+            items.extend(parse(get_text(url), name, days=days))
         except Exception as exc:  # one dead feed must not kill the rest
             print(f"[blogs] {name} failed: {exc}")
     return items
