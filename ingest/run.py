@@ -50,18 +50,18 @@ def collect_feedback() -> int:
         return 0
     try:
         updates = get_updates(token, labels.read_offset())
+        if not updates:
+            return 0
+
+        index = labels.build_message_index(digests.recent_digests(7))
+        rows = labels.reactions_to_labels(updates, index)
+        labels.append_labels(rows)
+        labels.write_offset(max(u["update_id"] for u in updates) + 1)
+        print(f"[feedback] {len(rows)} labels from {len(updates)} updates")
+        return len(rows)
     except Exception as exc:
         print(f"[feedback] FAILED: {exc}", file=sys.stderr)
         return 0
-    if not updates:
-        return 0
-
-    index = labels.build_message_index(digests.recent_digests(7))
-    rows = labels.reactions_to_labels(updates, index)
-    labels.append_labels(rows)
-    labels.write_offset(max(u["update_id"] for u in updates) + 1)
-    print(f"[feedback] {len(rows)} labels from {len(updates)} updates")
-    return len(rows)
 
 
 def main(smoke: bool = False) -> int:
