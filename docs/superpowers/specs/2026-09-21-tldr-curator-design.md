@@ -359,9 +359,21 @@ Roughly four to five evenings to Phase 5.
 Nothing is built now, but three seams accumulate from day one so this is later a weekend
 project rather than an archaeology project:
 
-- `pool.jsonl` preserves full `text`, not just titles
 - `labels.jsonl` keys every verdict to a stable `item_id`
 - `ranked.json` is committed daily, preserving the LLM's score for comparison
+- **`data/digests/YYYY-MM-DD.json` carries each sent item's full `text`** — not just
+  its summary
+
+That third point is a correction. An earlier version of this spec named `pool.jsonl` as the
+place full text accumulates, which contradicts the 7-day expiry two sections above: at ~200
+labels (25+ days at 8 stories/day), most labelled items would have been expired out of the
+pool weeks before the scorer was ever trained, and the corpus would have to be rebuilt by
+walking git history — exactly the archaeology the seam exists to prevent.
+
+Digests are permanent, one file per day, never expired, and already keyed by `item_id`. So
+the training corpus is `digests/ × labels.jsonl`, joined on `item_id`, with no new file and
+no migration. The pool keeps full `text` too, but only as working data for the Judge; its
+7-day window is now purely an operational bound rather than a promise about history.
 
 At ~200 labels: `scorer/train.py` embeds `title + key_facts`, fits a logistic regression,
 commits `model.pkl`. The Judge receives the model's prior as one additional input. If it
