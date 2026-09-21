@@ -112,5 +112,23 @@
       "items": 127,
       "failed": 0
     }
+  },
+  {
+    "hn": {
+      "items": 64,
+      "failed": 0
+    },
+    "arxiv": {
+      "items": 50,
+      "failed": 0
+    },
+    "github": {
+      "items": 69,
+      "failed": 0
+    },
+    "blog": {
+      "items": 128,
+      "failed": 0
+    }
   }
 ]
