@@ -4,5 +4,41 @@
     "arxiv": 0,
     "github": 68,
     "blogs": 77
+  },
+  {
+    "hn": {
+      "items": 52,
+      "failed": 0
+    },
+    "arxiv": {
+      "items": 0,
+      "failed": 1
+    },
+    "github": {
+      "items": 68,
+      "failed": 0
+    },
+    "blog": {
+      "items": 77,
+      "failed": 0
+    }
+  },
+  {
+    "hn": {
+      "items": 52,
+      "failed": 0
+    },
+    "arxiv": {
+      "items": 50,
+      "failed": 0
+    },
+    "github": {
+      "items": 68,
+      "failed": 0
+    },
+    "blog": {
+      "items": 77,
+      "failed": 0
+    }
   }
 ]

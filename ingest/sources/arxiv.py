@@ -43,8 +43,14 @@ def parse(xml: str) -> list[Item]:
     return items
 
 
-def fetch(max_results: int = 100) -> tuple[list[Item], int]:
-    """Returns (items, failed units). One call, so nothing partial to count."""
+def fetch(max_results: int = 50) -> tuple[list[Item], int]:
+    """Returns (items, failed units). One call, so nothing partial to count.
+
+    max_results is 50 because the export API answers this query with a flat
+    406 above roughly 70 entries — reproducibly, not as a throttle. That is
+    what zeroed arXiv out of the committed pool. 50 newest submissions every
+    3h still overlaps run to run; nothing here pages, by design.
+    """
     url = (
         f"{API}?search_query={CATEGORIES}"
         f"&sortBy=submittedDate&sortOrder=descending&max_results={max_results}"
