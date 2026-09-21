@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example AI Blog</title>
+    <item>
+      <title>Introducing Model X</title>
+      <link>https://example.com/blog/model-x?utm_campaign=rss</link>
+      <pubDate>Sat, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Model X runs at &lt;b&gt;2x&lt;/b&gt; the speed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Company Retreat Photos</title>
+      <link>https://example.com/blog/retreat</link>
+      <pubDate>Fri, 19 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Some photos from the team&amp;#x27;s retreat.</description>
+    </item>
+  </channel>
+</rss>

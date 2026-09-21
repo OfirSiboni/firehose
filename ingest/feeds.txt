@@ -1,0 +1,8 @@
+# AI company and practitioner blogs. One URL per line, # starts a comment.
+# Verify with: python -m ingest.run --smoke
+https://openai.com/blog/rss.xml
+https://deepmind.google/blog/rss.xml
+https://huggingface.co/blog/feed.xml
+https://blog.google/technology/ai/rss/
+https://simonwillison.net/atom/everything/
+https://lilianweng.github.io/index.xml
