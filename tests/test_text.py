@@ -23,3 +23,21 @@ def test_decodes_after_stripping_so_escaped_markup_survives_as_text():
 
 def test_empty_input():
     assert plain("") == ""
+
+
+def test_drops_script_bodies_not_just_the_tags():
+    raw = "<p>Real prose.</p><script>var a=1;function f(){return 2}</script>"
+    assert plain(raw) == "Real prose."
+
+
+def test_drops_style_bodies():
+    assert plain("<style>.a{color:red}</style><p>Prose.</p>") == "Prose."
+
+
+def test_script_dropping_is_case_insensitive_and_spans_newlines():
+    raw = "<SCRIPT type='text/javascript'>\nvar a = 1;\n</SCRIPT>after"
+    assert plain(raw) == "after"
+
+
+def test_prose_around_a_script_block_survives():
+    assert plain("<p>a</p><script>x=1</script><p>b</p>") == "a b"
