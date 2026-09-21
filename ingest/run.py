@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import os
 import sys
 
 from ingest.sources import arxiv, blogs, github, hn
-from store import health, pool
+from send.telegram import get_updates
+from store import digests, health, labels, pool
 from store.item import Item, dedupe
 
 SOURCES = {
@@ -40,6 +42,28 @@ def collect() -> tuple[list[Item], dict[str, dict[str, int]]]:
     return items, counts
 
 
+def collect_feedback() -> int:
+    """Sole consumer of getUpdates — a second consumer would race the offset."""
+    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    if not token:
+        print("[feedback] no token, skipping")
+        return 0
+    try:
+        updates = get_updates(token, labels.read_offset())
+    except Exception as exc:
+        print(f"[feedback] FAILED: {exc}", file=sys.stderr)
+        return 0
+    if not updates:
+        return 0
+
+    index = labels.build_message_index(digests.recent_digests(7))
+    rows = labels.reactions_to_labels(updates, index)
+    labels.append_labels(rows)
+    labels.write_offset(max(u["update_id"] for u in updates) + 1)
+    print(f"[feedback] {len(rows)} labels from {len(updates)} updates")
+    return len(rows)
+
+
 def main(smoke: bool = False) -> int:
     items, counts = collect()
     if smoke:
@@ -54,6 +78,7 @@ def main(smoke: bool = False) -> int:
     existing = pool.load_pool()
     merged, new_count = pool.merge(existing, dedupe(items))
     kept = pool.expire(merged)
+    collect_feedback()
     pool.save_pool(kept)
     print(f"\n+{new_count} new, {len(kept)} in pool")
     return 0
