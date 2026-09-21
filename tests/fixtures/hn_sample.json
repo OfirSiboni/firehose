@@ -1,0 +1,31 @@
+{
+  "hits": [
+    {
+      "objectID": "41000001",
+      "title": "Llama 4 released with 10M context",
+      "url": "https://ai.meta.com/blog/llama-4/?utm_source=hn",
+      "points": 842,
+      "num_comments": 310,
+      "created_at_i": 1758434400,
+      "story_text": null
+    },
+    {
+      "objectID": "41000002",
+      "title": "vLLM v0.9 adds speculative decoding",
+      "url": "https://blog.vllm.ai/2026/09/v09.html",
+      "points": 210,
+      "num_comments": 44,
+      "created_at_i": 1758430800,
+      "story_text": null
+    },
+    {
+      "objectID": "41000003",
+      "title": "Ask HN: What are you running locally in 2026?",
+      "url": null,
+      "points": 156,
+      "num_comments": 289,
+      "created_at_i": 1758427200,
+      "story_text": "I&#x27;m curious what people actually keep loaded.<p>Especially on 24GB cards."
+    }
+  ]
+}
