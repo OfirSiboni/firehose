@@ -28,7 +28,7 @@
 
 The `Item` model plus URL normalization is the foundation every other task imports. URL
 normalization is where near-duplicate stories leak through and make a digest look sloppy, so
-it gets real tests first.
+it gets real tests first.yes
 
 **Files:**
 - Create: `requirements.txt`
@@ -306,9 +306,11 @@ Only `parse()` is unit tested — that is where the logic lives.
 **Files:**
 - Create: `ingest/__init__.py`
 - Create: `ingest/http.py`
+- Create: `ingest/text.py`
 - Create: `ingest/sources/__init__.py`
 - Create: `ingest/sources/hn.py`
 - Create: `tests/fixtures/hn_sample.json`
+- Test: `tests/test_text.py`
 - Test: `tests/test_hn.py`
 
 **Interfaces:**
@@ -316,13 +318,26 @@ Only `parse()` is unit tested — that is where the logic lives.
 - Produces:
   - `ingest.http.get_json(url: str, timeout: int = 20) -> dict`
   - `ingest.http.get_text(url: str, timeout: int = 20) -> str`
+  - `ingest.text.plain(raw: str) -> str` — strips tags, decodes entities, collapses whitespace
   - `ingest.sources.hn.parse(payload: dict) -> list[Item]`
   - `ingest.sources.hn.fetch(hours: int = 24, min_points: int = 30) -> list[Item]`
+  - Every HN item carries `meta["kind"]` of `"article"` or `"discussion"`
+
+**Two things the fixture exists to pin.** Algolia returns `url: null` for text posts
+(`Ask HN`, `Tell HN`, most job posts) — the content *is* the HN thread. Passing that `None`
+into `normalize_url` raises `AttributeError` and takes down the whole HN fetch, so the
+permalink fallback is load-bearing. And `story_text` arrives as **HTML** — real responses
+contain `<p>` tags and entities like `&#x27;` — which must be cleaned before the Judge reads
+it.
+
+Text posts are tagged `kind: "discussion"`. They stay in the pool because they are useful
+research signal, but Task 11 makes them ineligible for the digest: a TLDR item must link to a
+readable artifact, and a discussion thread is not one.
 
 - [ ] **Step 1: Create the fixture**
 
-`tests/fixtures/hn_sample.json` — a trimmed real Algolia response. Note the third hit has
-`url: null`, which is how Ask HN / Show HN text posts arrive:
+`tests/fixtures/hn_sample.json` — a trimmed real Algolia response. The third hit is a text
+post: `url: null`, with HTML in `story_text`:
 
 ```json
 {
@@ -352,13 +367,84 @@ Only `parse()` is unit tested — that is where the logic lives.
       "points": 156,
       "num_comments": 289,
       "created_at_i": 1758427200,
-      "story_text": "Curious what people actually keep loaded."
+      "story_text": "I&#x27;m curious what people actually keep loaded.<p>Especially on 24GB cards."
     }
   ]
 }
 ```
 
-- [ ] **Step 2: Write the failing test**
+- [ ] **Step 2: Write the shared HTML-to-text helper**
+
+Both HN (`story_text`) and blogs (RSS `description`) deliver HTML. One helper, used by both,
+so the Judge never reads `&#x27;` or a stray `<p>`.
+
+`tests/test_text.py`:
+
+```python
+from ingest.text import plain
+
+
+def test_strips_tags():
+    assert plain("<p>Model X runs at <b>2x</b> the speed.</p>") == "Model X runs at 2x the speed."
+
+
+def test_decodes_entities():
+    assert plain("I&#x27;m a 24 y&#x2F;o engineer") == "I'm a 24 y/o engineer"
+
+
+def test_adjacent_blocks_do_not_run_together():
+    assert plain("<p>first</p><p>second</p>") == "first second"
+
+
+def test_collapses_whitespace_and_newlines():
+    assert plain("  lots\n\n  of   space  ") == "lots of space"
+
+
+def test_decodes_after_stripping_so_escaped_markup_survives_as_text():
+    assert plain("&lt;script&gt;alert(1)&lt;/script&gt;") == "<script>alert(1)</script>"
+
+
+def test_empty_input():
+    assert plain("") == ""
+```
+
+Run it and watch it fail:
+
+```bash
+.venv/Scripts/python -m pytest tests/test_text.py -v
+```
+
+Expected: FAIL with `ModuleNotFoundError: No module named 'ingest'`
+
+Create empty `ingest/__init__.py` and `ingest/sources/__init__.py`, then `ingest/text.py`:
+
+```python
+"""HTML to plain text. Feeds are HTML; the Judge should read prose."""
+
+from __future__ import annotations
+
+import html
+import re
+
+_TAGS = re.compile(r"<[^>]+>")
+
+
+def plain(raw: str) -> str:
+    """Strip tags, decode entities, collapse whitespace.
+
+    Tags become a space, not nothing, so "<p>a</p><p>b</p>" is "a b" not "ab".
+    Unescaping happens after stripping so escaped markup stays text.
+    """
+    return " ".join(html.unescape(_TAGS.sub(" ", raw)).split())
+```
+
+```bash
+.venv/Scripts/python -m pytest tests/test_text.py -v
+```
+
+Expected: PASS, 6 tests
+
+- [ ] **Step 3: Write the failing HN test**
 
 `tests/test_hn.py`:
 
@@ -400,7 +486,19 @@ def test_carries_points_and_comments_into_meta():
 def test_text_post_falls_back_to_the_hn_permalink():
     ask_hn = load()[2]
     assert ask_hn.url == "https://news.ycombinator.com/item?id=41000003"
-    assert ask_hn.text == "Curious what people actually keep loaded."
+
+
+def test_story_text_is_cleaned_of_html():
+    ask_hn = load()[2]
+    assert ask_hn.text == "I'm curious what people actually keep loaded. Especially on 24GB cards."
+
+
+def test_link_submissions_are_tagged_as_articles():
+    assert load()[0].meta["kind"] == "article"
+
+
+def test_text_posts_are_tagged_as_discussions():
+    assert load()[2].meta["kind"] == "discussion"
 
 
 def test_skips_hits_with_no_title():
@@ -408,17 +506,15 @@ def test_skips_hits_with_no_title():
     assert items == []
 ```
 
-- [ ] **Step 3: Run the test to verify it fails**
+- [ ] **Step 4: Run the test to verify it fails**
 
 ```bash
 .venv/Scripts/python -m pytest tests/test_hn.py -v
 ```
 
-Expected: FAIL with `ModuleNotFoundError: No module named 'ingest'`
+Expected: FAIL with `ImportError: cannot import name 'hn'`
 
-- [ ] **Step 4: Write the implementation**
-
-Create empty `ingest/__init__.py` and `ingest/sources/__init__.py`.
+- [ ] **Step 5: Write the implementation**
 
 `ingest/http.py`:
 
@@ -467,6 +563,7 @@ from __future__ import annotations
 import time
 
 from ingest.http import get_json
+from ingest.text import plain
 from store.item import Item, make_item
 
 API = "https://hn.algolia.com/api/v1/search_by_date"
@@ -479,16 +576,21 @@ def parse(payload: dict) -> list[Item]:
         if not title:
             continue
         permalink = f"https://news.ycombinator.com/item?id={hit['objectID']}"
+        # No url means a text post (Ask HN, Tell HN, jobs): the thread *is* the
+        # content. Keep it as research signal, but mark it unpublishable — a
+        # TLDR item has to link to something readable.
+        external = hit.get("url")
         items.append(
             make_item(
-                url=hit.get("url") or permalink,
+                url=external or permalink,
                 title=title,
                 source="hn",
-                text=hit.get("story_text") or "",
+                text=plain(hit.get("story_text") or ""),
                 meta={
                     "points": hit.get("points", 0),
                     "comments": hit.get("num_comments", 0),
                     "hn_url": permalink,
+                    "kind": "article" if external else "discussion",
                 },
             )
         )
@@ -505,15 +607,15 @@ def fetch(hours: int = 24, min_points: int = 30) -> list[Item]:
     return parse(get_json(url))
 ```
 
-- [ ] **Step 5: Run the test to verify it passes**
+- [ ] **Step 6: Run the test to verify it passes**
 
 ```bash
 .venv/Scripts/python -m pytest tests/test_hn.py -v
 ```
 
-Expected: PASS, 6 tests
+Expected: PASS, 9 tests
 
-- [ ] **Step 6: Verify the live endpoint works**
+- [ ] **Step 7: Verify the live endpoint works**
 
 ```bash
 .venv/Scripts/python -c "from ingest.sources import hn; items = hn.fetch(); print(len(items)); print(items[0].title)"
@@ -522,11 +624,11 @@ Expected: PASS, 6 tests
 Expected: a count above 0 and a real headline. If it fails, the Algolia URL shape changed —
 fix `fetch()` before continuing; `parse()` and its tests should not need to change.
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 8: Commit**
 
 ```bash
-git add ingest tests/test_hn.py tests/fixtures/hn_sample.json
-git commit -m "feat: http helper and Hacker News source"
+git add ingest tests/test_text.py tests/test_hn.py tests/fixtures/hn_sample.json
+git commit -m "feat: http helper, html-to-text, and Hacker News source"
 ```
 
 ---
@@ -897,7 +999,7 @@ extra dependency. Adding a blog must never require touching code.
 - Test: `tests/test_blogs.py`
 
 **Interfaces:**
-- Consumes: `store.item.make_item`, `store.item.Item`, `ingest.http.get_text`
+- Consumes: `store.item.make_item`, `store.item.Item`, `ingest.http.get_text`, `ingest.text.plain`
 - Produces:
   - `ingest.sources.blogs.load_feeds(path: Path | None = None) -> list[str]`
   - `ingest.sources.blogs.parse(xml: str, feed_name: str) -> list[Item]`
@@ -938,7 +1040,7 @@ https://lilianweng.github.io/index.xml
       <title>Company Retreat Photos</title>
       <link>https://example.com/blog/retreat</link>
       <pubDate>Fri, 19 Sep 2026 12:00:00 GMT</pubDate>
-      <description>Some photos.</description>
+      <description>Some photos from the team&amp;#x27;s retreat.</description>
     </item>
   </channel>
 </rss>
@@ -970,6 +1072,12 @@ def test_strips_tracking_params_from_the_link():
 
 def test_strips_html_from_the_description():
     assert load()[0].text == "Model X runs at 2x the speed."
+
+
+def test_decodes_entities_that_survive_xml_unescaping():
+    # Feeds routinely double-escape: the XML carries &amp;#x27;, feedparser
+    # hands back &#x27;, and only plain() turns it into an apostrophe.
+    assert load()[1].text == "Some photos from the team's retreat."
 
 
 def test_records_the_feed_name_in_meta():
@@ -1006,17 +1114,16 @@ Expected: FAIL with `ImportError: cannot import name 'blogs'`
 
 from __future__ import annotations
 
-import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
 import feedparser
 
 from ingest.http import get_text
+from ingest.text import plain
 from store.item import Item, make_item
 
 FEEDS_PATH = Path(__file__).resolve().parent.parent / "feeds.txt"
-_TAGS = re.compile(r"<[^>]+>")
 
 
 def load_feeds(path: Path | None = None) -> list[str]:
@@ -1026,10 +1133,6 @@ def load_feeds(path: Path | None = None) -> list[str]:
         for line in lines
         if (stripped := line.strip()) and not stripped.startswith("#")
     ]
-
-
-def _plain(html: str) -> str:
-    return " ".join(_TAGS.sub("", html).split())
 
 
 def parse(xml: str, feed_name: str) -> list[Item]:
@@ -1046,7 +1149,7 @@ def parse(xml: str, feed_name: str) -> list[Item]:
                 url=link,
                 title=title,
                 source="blog",
-                text=_plain(body)[:2000],
+                text=plain(body)[:2000],
                 meta={"feed": feed_name, "published": entry.get("published")},
             )
         )
@@ -1070,7 +1173,7 @@ def fetch(path: Path | None = None, days: int = 7) -> list[Item]:
 .venv/Scripts/python -m pytest tests/test_blogs.py -v
 ```
 
-Expected: PASS, 6 tests
+Expected: PASS, 7 tests
 
 - [ ] **Step 6: Verify the feed list live and prune what is broken**
 
@@ -2367,7 +2470,8 @@ the channel. It is written and tested first, before the agent that produces the 
   - `store.ranked.RANKED_PATH` — `Path("data/ranked.json")`
   - `store.ranked.validate_ranked(payload: dict, pool_ids: set[str]) -> None` — raises `store.ranked.ValidationError`
   - `store.ranked.load_ranked(pool_ids: set[str]) -> dict` — loads and validates
-  - `store.ranked.top(payload: dict, n: int = 8) -> list[dict]`
+  - `store.ranked.top(payload: dict, n: int = 8, exclude_ids: frozenset[str] = frozenset()) -> list[dict]`
+  - `store.ranked.unpublishable_ids(items: list[Item]) -> frozenset[str]` — pool ids whose `meta["kind"]` is `"discussion"`
   - `agents.prepare_judge.main() -> int` — writes `data/judge_input.json`
 
 - [ ] **Step 1: Write the taste files**
@@ -2432,6 +2536,7 @@ Rules:
 import pytest
 
 from store import ranked
+from store.item import make_item
 
 POOL_IDS = {"aaa111", "bbb222"}
 
@@ -2510,6 +2615,26 @@ def test_top_returns_highest_scores_first():
 
 def test_top_caps_the_count():
     assert len(ranked.top(payload(), 1)) == 1
+
+
+def test_top_skips_excluded_ids_however_high_they_score():
+    out = ranked.top(payload(), 2, exclude_ids=frozenset({"aaa111"}))
+    assert [i["id"] for i in out] == ["bbb222"]
+
+
+def test_unpublishable_ids_selects_only_discussions():
+    article = make_item(
+        url="https://x/a", title="A", source="hn", meta={"kind": "article"}
+    )
+    thread = make_item(
+        url="https://news.ycombinator.com/item?id=1",
+        title="Ask HN: something",
+        source="hn",
+        meta={"kind": "discussion"},
+    )
+    # Sources other than HN set no "kind" at all; absence must not exclude them.
+    paper = make_item(url="https://arxiv.org/abs/2509.1", title="P", source="arxiv")
+    assert ranked.unpublishable_ids([article, thread, paper]) == frozenset({thread.id})
 ```
 
 - [ ] **Step 3: Run the test to verify it fails**
@@ -2575,8 +2700,27 @@ def load_ranked(pool_ids: set[str], path: Path = RANKED_PATH) -> dict:
     return payload
 
 
-def top(payload: dict, n: int = 8) -> list[dict]:
-    return sorted(payload["items"], key=lambda i: i["score"], reverse=True)[:n]
+def unpublishable_ids(items) -> frozenset[str]:
+    """Pool items that must never reach a digest.
+
+    A TLDR item links to something readable. An HN text post is a discussion
+    thread, not an artifact — worth keeping in the pool as research signal, and
+    worth showing in the site's tail, but never publishable.
+    """
+    return frozenset(i.id for i in items if i.meta.get("kind") == "discussion")
+
+
+def top(
+    payload: dict, n: int = 8, exclude_ids: frozenset[str] = frozenset()
+) -> list[dict]:
+    """Highest scores first, minus anything unpublishable.
+
+    `exclude_ids` is derived from the pool, which only Python writes. So the
+    Judge cannot promote a discussion thread into the digest even if it scores
+    it 10 — the rule is enforced here rather than hoped for in a prompt.
+    """
+    eligible = [i for i in payload["items"] if i["id"] not in exclude_ids]
+    return sorted(eligible, key=lambda i: i["score"], reverse=True)[:n]
 ```
 
 - [ ] **Step 5: Run the test to verify it passes**
@@ -2585,7 +2729,7 @@ def top(payload: dict, n: int = 8) -> list[dict]:
 .venv/Scripts/python -m pytest tests/test_ranked.py -v
 ```
 
-Expected: PASS, 9 tests
+Expected: PASS, 11 tests
 
 - [ ] **Step 6: Write the Judge input preparer**
 
@@ -2666,6 +2810,14 @@ the operator's taste, not as rules.
    whole step exists to avoid.
 3. Score every candidate, read or not.
 
+**Discussion threads.** A candidate whose `meta.kind` is `"discussion"` is an HN text post —
+an Ask HN or Tell HN thread. It has no article behind it, so it can never be a digest item:
+a TLDR entry links to something readable. Do not spend fetches trying to rank one for
+selection. They are still worth skimming, because a thread often names the paper or repo that
+*is* the story — if you find one, look for it among the other candidates and let that finding
+raise its score. Score discussion threads normally; the selection step filters them out, so
+your score for them only affects the site's tail.
+
 ## Scoring
 
 Two tiers, and the distinction matters:
@@ -2729,10 +2881,12 @@ Write the file and stop. Do not send anything.
 claude "/judge"
 .venv/Scripts/python -c "
 from store import pool, ranked
-ids = {i.id for i in pool.load_pool()}
-payload = ranked.load_ranked(ids)
+items = pool.load_pool()
+payload = ranked.load_ranked({i.id for i in items})
+blocked = ranked.unpublishable_ids(items)
 print('valid:', len(payload['items']), 'items,', payload['read_count'], 'read')
-for item in ranked.top(payload, 8):
+print('unpublishable (discussion threads):', len(blocked))
+for item in ranked.top(payload, 8, blocked):
     print(f\"{item['score']:>4}  {item['tier']:<9} {item['title'][:60]}\")
     print(f\"      {item['reason']}\")
 "
@@ -2823,7 +2977,7 @@ def main() -> int:
 
     # Written by the Writer agent when it has run; falls back to Judge output.
     drafted = existing.get("items") if existing else None
-    selected = drafted or ranked.top(payload, 8)
+    selected = drafted or ranked.top(payload, 8, ranked.unpublishable_ids(items))
 
     if not selected:
         print("nothing cleared the bar; sending nothing")
@@ -2933,7 +3087,7 @@ article is fetched twice.
 **Interfaces:**
 - Consumes: `store.ranked.load_ranked`, `store.ranked.top`, `store.pool.load_pool`
 - Produces:
-  - `agents.prepare_writer.build(payload: dict, n: int = 8) -> dict`
+  - `agents.prepare_writer.build(payload: dict, n: int = 8, exclude_ids: frozenset[str] = frozenset()) -> dict`
   - `agents.prepare_writer.main() -> int` — writes `data/writer_input.json`
   - Writer writes `data/digests/<today>.json` with `sent: false` and a `summary` on each item
 
@@ -2983,6 +3137,11 @@ def test_build_drops_scoring_internals():
 def test_build_sets_the_date():
     out = prepare_writer.build(payload(), n=1)
     assert len(out["date"]) == 10
+
+
+def test_build_never_hands_the_writer_an_excluded_story():
+    out = prepare_writer.build(payload(), n=2, exclude_ids=frozenset({"a"}))
+    assert [i["id"] for i in out["stories"]] == ["b", "c"]
 ```
 
 - [ ] **Step 2: Run the test to verify it fails**
@@ -3012,18 +3171,22 @@ INPUT_PATH = Path("data/writer_input.json")
 KEEP = ("id", "url", "title", "source", "tier", "reason", "key_facts")
 
 
-def build(payload: dict, n: int = 8) -> dict:
+def build(
+    payload: dict, n: int = 8, exclude_ids: frozenset[str] = frozenset()
+) -> dict:
     return {
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "stories": [
-            {key: story[key] for key in KEEP} for story in ranked.top(payload, n)
+            {key: story[key] for key in KEEP}
+            for story in ranked.top(payload, n, exclude_ids)
         ],
     }
 
 
 def main() -> int:
-    payload = ranked.load_ranked({i.id for i in pool.load_pool()})
-    built = build(payload)
+    items = pool.load_pool()
+    payload = ranked.load_ranked({i.id for i in items})
+    built = build(payload, exclude_ids=ranked.unpublishable_ids(items))
     INPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     INPUT_PATH.write_text(json.dumps(built, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"writer input: {len(built['stories'])} stories")
@@ -3040,7 +3203,7 @@ if __name__ == "__main__":
 .venv/Scripts/python -m pytest tests/test_prepare_writer.py -v
 ```
 
-Expected: PASS, 4 tests
+Expected: PASS, 5 tests
 
 - [ ] **Step 5: Write the Writer skill**
 
@@ -3315,6 +3478,8 @@ def main() -> int:
     sent_ids = {item["id"] for item in digest["items"]}
     try:
         payload = ranked.load_ranked({i.id for i in pool.load_pool()})
+        # No exclusions here, deliberately: discussion threads can't be digest
+        # items but are useful research, and the tail is where you go looking.
         tail = [i for i in ranked.top(payload, 28) if i["id"] not in sent_ids][:20]
     except Exception as exc:
         print(f"tail unavailable: {exc}")

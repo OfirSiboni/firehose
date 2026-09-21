@@ -142,6 +142,19 @@ Canonical record appended to `pool.jsonl`:
 }
 ```
 
+`meta["kind"]` is `"article"` or `"discussion"`. Only HN sets it meaningfully: Algolia
+returns `url: null` for text posts (Ask HN, Tell HN, jobs), where the thread *is* the
+content. Those are tagged `discussion`, fall back to the HN permalink as their URL, and are
+**never eligible for a digest** — a TLDR item links to a readable artifact, and a discussion
+thread is not one. They stay in the pool because they are real research signal, and they
+appear in the site's tail. Enforcement lives in `ranked.top()`, which excludes them using ids
+derived from the pool; a prompt rule would be advisory, and this failure would be silent.
+
+Source text arrives as HTML from both HN (`story_text`) and RSS feeds, with tags and escaped
+entities — often double-escaped, so XML unescaping alone is not enough. A single
+`ingest.text.plain()` helper strips tags, decodes entities, and collapses whitespace for both
+sources, so the Judge reads prose rather than `I&#x27;m a 24 y&#x2F;o`.
+
 `text` is preserved in full because it is the training input for the deferred scorer.
 Nothing is embedded at ingest time — Anthropic serves no embedding endpoint, and adding a
 second vendor for an unbuilt feature is premature. Preserving text keeps the option open at
@@ -294,6 +307,7 @@ live.
 | Agent hits max-turns without writing output | Same path — missing output file fails the job |
 | Job dies entirely (expired OAuth token, runner failure) | `if: failure()` step posts to Telegram with the run URL. Without it, digests simply stop and go unnoticed |
 | Thin day — fewer than 8 clear the bar | Send fewer. Never pad. A curator who fills quota with filler stops being read |
+| Judge ranks a discussion thread highly | `ranked.top()` excludes it using pool-derived ids. Enforced in code, so a prompt regression cannot publish an unlinkable item |
 | Ingest and digest both writing `data/` | `concurrency` group so runs queue; `git pull --rebase` before push |
 | Job re-run after partial failure | Digest checks for an existing `data/digests/TODAY.json` marked sent; idempotent |
 
