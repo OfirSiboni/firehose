@@ -12,21 +12,30 @@ SOURCES = {
     "hn": hn.fetch,
     "arxiv": arxiv.fetch,
     "github": github.fetch,
-    "blogs": blogs.fetch,
+    # Keyed "blog" to match Item.source, so health names and pool rows agree.
+    "blog": blogs.fetch,
 }
 
 
-def collect() -> tuple[list[Item], dict[str, int]]:
-    """Fetch every source in isolation. One failure must not lose the others."""
-    items, counts = [], {}
+def collect() -> tuple[list[Item], dict[str, dict[str, int]]]:
+    """Fetch every source in isolation. One failure must not lose the others.
+
+    Each fetch returns its haul plus the number of sub-units (GitHub topics,
+    blog feeds) that blew up, so a source limping along on one of six feeds is
+    distinguishable from a healthy one.
+    """
+    items: list[Item] = []
+    counts: dict[str, dict[str, int]] = {}
     for name, fetch in SOURCES.items():
         try:
-            found = fetch()
-            counts[name] = len(found)
+            found, failed = fetch()
+            counts[name] = {"items": len(found), "failed": failed}
             items.extend(found)
-            print(f"[{name}] {len(found)} items")
+            note = f", {failed} unit(s) failed" if failed else ""
+            print(f"[{name}] {len(found)} items{note}")
         except Exception as exc:
-            counts[name] = 0
+            # The whole source died: that is one failed unit at this level.
+            counts[name] = {"items": 0, "failed": 1}
             print(f"[{name}] FAILED: {exc}", file=sys.stderr)
     return items, counts
 
@@ -34,7 +43,7 @@ def collect() -> tuple[list[Item], dict[str, int]]:
 def main(smoke: bool = False) -> int:
     items, counts = collect()
     if smoke:
-        dead = [name for name, count in counts.items() if count == 0]
+        dead = [name for name, count in counts.items() if count["items"] == 0]
         print(f"\nsmoke: {counts}")
         if dead:
             print(f"smoke: NO ITEMS from {dead}", file=sys.stderr)

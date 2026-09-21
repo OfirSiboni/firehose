@@ -61,3 +61,7 @@ def test_one_malformed_entry_does_not_lose_the_others():
   <entry><id>http://arxiv.org/abs/2509.00003v1</id><title>Also good</title><summary>C.</summary></entry>
 </feed>"""
     assert [i.title for i in arxiv.parse(xml)] == ["Good one", "Also good"]
+
+
+def test_published_is_a_utc_z_timestamp():
+    assert load()[0].meta["published"].endswith("Z")

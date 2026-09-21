@@ -69,3 +69,29 @@ def test_one_malformed_hit_does_not_lose_the_others():
         ]
     }
     assert [i.title for i in hn.parse(payload)] == ["Good one", "Also good"]
+
+
+def test_carries_a_published_timestamp():
+    # The 24h fetch window means first_seen can lag posting by a day.
+    assert load()[0].meta["published"] == "2026-09-21T06:00:00Z"
+
+
+def test_published_falls_back_to_the_epoch_field():
+    assert load()[2].meta["published"] == "2026-09-21T04:00:00Z"
+
+
+def test_published_is_none_when_the_hit_carries_no_date():
+    items = hn.parse({"hits": [{"objectID": "1", "title": "T", "url": "https://x.com/a"}]})
+    assert items[0].meta["published"] is None
+
+
+def test_a_hit_with_an_unusable_url_does_not_lose_the_others(capsys):
+    payload = {
+        "hits": [
+            {"objectID": "1", "title": "Good one", "url": "https://x.com/a"},
+            {"objectID": "2", "title": "Hostless", "url": "not-a-url"},
+            {"objectID": "3", "title": "Also good", "url": "https://x.com/c"},
+        ]
+    }
+    assert [i.title for i in hn.parse(payload)] == ["Good one", "Also good"]
+    assert "skipped 2" in capsys.readouterr().err

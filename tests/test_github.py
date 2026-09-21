@@ -55,3 +55,9 @@ def test_one_malformed_repo_does_not_lose_the_others():
          "description": "d", "stargazers_count": 7},
     ]}
     assert [i.title for i in github.parse(payload)] == ["good/one", "also/good"]
+
+
+def test_published_mirrors_created_at_on_the_shared_key():
+    first = load()[0]
+    assert first.meta["published"] == "2026-08-30T10:00:00Z"
+    assert first.meta["pushed_at"] == "2026-09-20T22:10:00Z"

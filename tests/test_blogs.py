@@ -68,3 +68,33 @@ def test_keeps_entries_inside_the_window():
 
 def test_keeps_entries_with_no_date():
     assert len(blogs.parse(_feed(""), "example.com", days=14)) == 1
+
+
+def test_published_is_normalized_to_utc_z():
+    fresh = datetime.now(timezone.utc) - timedelta(days=2)
+    item = blogs.parse(_feed(f"<pubDate>{_rfc822(fresh)}</pubDate>"), "example.com", days=14)[0]
+    assert item.meta["published"] == fresh.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def test_published_is_none_when_the_entry_carries_no_date():
+    item = blogs.parse(_feed(""), "example.com", days=14)[0]
+    assert item.meta["published"] is None
+
+
+def test_text_is_not_truncated_at_the_old_two_thousand_cap():
+    body = "word " * 1000  # ~5000 chars of prose
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>T</title>
+<item><title>Post</title><link>https://example.com/p</link><description>{body}</description></item>
+</channel></rss>"""
+    assert len(blogs.parse(xml, "example.com", days=14)[0].text) > 2000
+
+
+def test_an_entry_with_a_hostless_link_does_not_lose_the_feed(capsys):
+    xml = """<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>T</title>
+<item><title>Good</title><link>https://example.com/good</link><description>d</description></item>
+<item><title>Relative</title><link>/relative/path</link><description>d</description></item>
+</channel></rss>"""
+    assert [i.title for i in blogs.parse(xml, "example.com", days=14)] == ["Good"]
+    assert "skipped" in capsys.readouterr().err
