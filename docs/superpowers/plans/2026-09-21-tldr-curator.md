@@ -28,7 +28,7 @@
 
 The `Item` model plus URL normalization is the foundation every other task imports. URL
 normalization is where near-duplicate stories leak through and make a digest look sloppy, so
-it gets real tests first.yes
+it gets real tests first.
 
 **Files:**
 - Create: `requirements.txt`
