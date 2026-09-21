@@ -19,6 +19,8 @@ def parse(xml: str) -> list[Item]:
         if not title:
             continue
         link = entry.get("link") or entry.get("id", "")
+        if not link:
+            continue
         categories = [t.get("term") for t in entry.get("tags", []) if t.get("term")]
         items.append(
             make_item(
