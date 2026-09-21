@@ -286,7 +286,7 @@ def dedupe(items: list[Item]) -> list[Item]:
 .venv/Scripts/python -m pytest tests/test_item.py -v
 ```
 
-Expected: PASS, 15 tests
+Expected: PASS, 17 tests (the parametrized case expands to 9, plus 8 others)
 
 - [ ] **Step 6: Commit**
 
@@ -1003,7 +1003,7 @@ extra dependency. Adding a blog must never require touching code.
 - Produces:
   - `ingest.sources.blogs.load_feeds(path: Path | None = None) -> list[str]`
   - `ingest.sources.blogs.parse(xml: str, feed_name: str) -> list[Item]`
-  - `ingest.sources.blogs.fetch(path: Path | None = None, days: int = 7) -> list[Item]`
+  - `ingest.sources.blogs.fetch(path: Path | None = None) -> list[Item]`
 
 - [ ] **Step 1: Create the feed list and fixture**
 
@@ -1156,7 +1156,7 @@ def parse(xml: str, feed_name: str) -> list[Item]:
     return items
 
 
-def fetch(path: Path | None = None, days: int = 7) -> list[Item]:
+def fetch(path: Path | None = None) -> list[Item]:
     items: list[Item] = []
     for url in load_feeds(path):
         name = urlsplit(url).netloc.lower().removeprefix("www.")
