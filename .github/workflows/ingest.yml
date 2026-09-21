@@ -17,7 +17,13 @@ jobs:
   ingest:
     runs-on: ubuntu-latest
     steps:
+      # Pinning to the branch, not the default github.sha, matters here: this job can
+      # sit queued behind the data-write concurrency lock for hours, and github.sha is
+      # frozen at trigger time. Without this, checkout would grab a stale commit and
+      # build the pool update on top of data another queued run has since replaced.
       - uses: actions/checkout@v6
+        with:
+          ref: master
 
       - uses: actions/setup-python@v5
         with:
@@ -38,8 +44,12 @@ jobs:
           git add data/
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: ingest $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          exit 1
 
       - name: Report failure to Telegram
         if: failure()
