@@ -37,13 +37,44 @@ Interim workaround: the operator forwards links to the bot manually.
 
 | Decision | Choice | Rationale |
 |---|---|---|
-| Runtime | GitHub Actions, two workflows | Free, always fires, secrets and logs built in, no server |
+| Runtime | Split: GitHub Actions for code, a Claude cloud routine for judgment | Each runs what it is best at — see below |
 | Repo visibility | Public | Unmetered Actions minutes; doubles as a portfolio artifact |
-| Claude auth | `CLAUDE_CODE_OAUTH_TOKEN` via Claude Code Action | Uses the existing Claude subscription; no metered API billing |
+| Claude auth | The routine runs as a Claude Code cloud session on the operator's account | No metered API billing, and no dependence on an OAuth token surviving in CI |
 | Architecture | Plain-code ingest/send, two agents (Judge, Writer) | Taste and voice tune independently |
 | Storage | Files in the repo | Free, versioned, diffable; agent reads/writes natively |
 | Feedback | Telegram emoji reactions | No `answerCallbackQuery` round-trip, so no spinner on a 3h poll |
 | Learning | Prompt-level: exemplars + regenerated profile section | Works from day one; inspectable and hand-editable |
+
+### Why the runtime is split
+
+Three constraints decide this, and each piece lands where it costs least:
+
+- **Ingest needs no Claude and no secrets.** It is pure Python over public APIs, so it runs
+  in GitHub Actions on a 3-hour cron. Spending subscription usage on it would be waste.
+- **The Judge and Writer need Claude but no secrets.** They read the repo, rank, draft, and
+  commit. A Claude **cloud routine** runs them daily: it clones the repo, has Bash/Read/Write,
+  runs unattended in Anthropic's cloud with the operator's machine off, and bills as a Claude
+  Code cloud session on the operator's account rather than as metered API usage. Publishing
+  the static site and RSS is part of this step, because a commit needs no credentials.
+- **Telegram delivery needs a secret and no Claude.** Cloud routines have no secrets store —
+  no local environment variables, connectors only — so the bot token cannot live there
+  safely. A GitHub Actions job holds it, triggered **on push to `data/digests/**`**, so it
+  fires when the routine commits the day's digest. Event-triggered rather than time-coupled,
+  so a slow routine run never races the sender.
+
+The Claude Code GitHub Action does support subscription auth via `CLAUDE_CODE_OAUTH_TOKEN`
+(`claude setup-token`), and an Actions-only deployment is viable. The routine is preferred
+because it removes a dependency: no long-lived token to expire in CI, and the judgment step
+runs on the same surface the operator can invoke by hand.
+
+**Nothing about this is baked into the code.** Every step is either plain Python with a file
+contract or a Claude skill with a file contract, so `claude "/judge"` is the identical command
+whether a routine, an Actions job, or the operator's terminal runs it. Changing harness is a
+configuration change, and the Judge can be run by hand at any time to see what it would pick.
+
+Routine constraints worth recording: cron is UTC with a **1-hour minimum interval** (fine —
+the routine runs daily), the routine needs the repo's GitHub URL, and it cannot reach local
+files or local environment variables.
 
 ### Why the Claude step is an agent, not an API call
 
@@ -100,24 +131,37 @@ audit trail of what the system thought and what the operator thought of it.
 ### Data flow
 
 ```
-every 3h   ingest.yml
+every 3h   ingest.yml                                   [GitHub Actions — no Claude]
            ├─ fetch HN / arXiv / GitHub / blogs        (plain Python)
            ├─ normalize + dedupe → append pool.jsonl
            ├─ expire entries older than 7 days
-           └─ drain Telegram reactions → labels.jsonl   ← sole consumer
-
-daily 07:00  digest.yml
-           ├─ mark yesterday's unreacted items as "ignored"
-           ├─ JUDGE agent   pool (last 36h, unsent) + taste/profile.md
-           │                 + last 20 labels + last 7 digests
-           │                 fetches and reads promising links
-           │                 → ranked.json
-           ├─ validate      schema; abort before send on failure
-           ├─ WRITER agent  top 8 + key_facts → data/digests/DATE.json
-           ├─ telegram.py   8 messages + header to the channel
-           ├─ publish.py    docs/index.html, docs/DATE.html, docs/feed.xml
+           ├─ drain Telegram reactions → labels.jsonl   ← sole consumer
            └─ commit
+
+daily      curator routine                              [Claude cloud routine]
+           ├─ clone repo (sees the pool Actions committed)
+           ├─ mark yesterday's unreacted items as "ignored"
+           ├─ prepare_judge.py → judge_input.json       (plain Python)
+           ├─ JUDGE          pool (last 36h, unsent) + taste/profile.md
+           │                  + last 20 labels + last 7 digests
+           │                  fetches and reads promising links
+           │                  → ranked.json
+           ├─ validate       schema; abort before writing on failure
+           ├─ prepare_writer.py → writer_input.json     (plain Python)
+           ├─ WRITER         top 8 + key_facts → data/digests/DATE.json
+           ├─ publish.py     docs/index.html, docs/DATE.html, docs/feed.xml
+           └─ commit + push                             ← no secrets needed
+
+on push to data/digests/**  send.yml                    [GitHub Actions — holds the token]
+           └─ telegram.py    header + 8 messages to the channel, records message_ids
+
+daily 10:00  watchdog.yml                               [GitHub Actions]
+           └─ no digest committed for today? → Telegram alert
 ```
+
+The send job is triggered by the routine's own push rather than by a clock, so a slow or
+retried routine run can never race it. It is idempotent — it checks the digest's `sent` flag
+— so a re-push cannot double-send.
 
 Only the ingest job drains Telegram: `getUpdates` supports one consumer, or the offset
 cursor races. A 3h cadence keeps collection well inside Telegram's 24h update retention.
@@ -305,7 +349,8 @@ live.
 | A source 404s, changes format, or rate-limits | Per-source try/except; ingest never fails wholesale. A source returning 0 items for 3 consecutive runs is flagged in the next digest header |
 | Malformed `ranked.json` | Schema validation before send; job fails, nothing is sent |
 | Agent hits max-turns without writing output | Same path — missing output file fails the job |
-| Job dies entirely (expired OAuth token, runner failure) | `if: failure()` step posts to Telegram with the run URL. Without it, digests simply stop and go unnoticed |
+| **The routine dies entirely** (cloud failure, repo access lost, a bad prompt edit) | A routine cannot post its own failure — it holds no Telegram token, and a dead run reports nothing. So a separate `watchdog.yml` runs at 10:00 and alerts if no digest exists for today. This is the only failure detector for the judgment half; without it, digests simply stop and go unnoticed for days |
+| A GitHub Actions job dies | `if: failure()` step posts to Telegram with the run URL |
 | Thin day — fewer than 8 clear the bar | Send fewer. Never pad. A curator who fills quota with filler stops being read |
 | Judge ranks a discussion thread highly | `ranked.top()` excludes it using pool-derived ids. Enforced in code, so a prompt regression cannot publish an unlinkable item |
 | Ingest and digest both writing `data/` | `concurrency` group so runs queue; `git pull --rebase` before push |
@@ -381,11 +426,19 @@ never beats the prompt, the cost is one weekend and one deleted file.
 
 ## Secrets
 
-| Secret | Source |
-|---|---|
-| `CLAUDE_CODE_OAUTH_TOKEN` | `claude setup-token` locally |
-| `TELEGRAM_BOT_TOKEN` | @BotFather |
-| `TELEGRAM_CHAT_ID` | Channel id; bot added as admin |
+| Secret | Where | Source |
+|---|---|---|
+| `TELEGRAM_BOT_TOKEN` | GitHub Actions secrets | @BotFather |
+| `TELEGRAM_CHAT_ID` | GitHub Actions secrets | Channel id; bot added as admin |
 
-The OAuth token is long-lived but expires; regeneration is an operational task, and the
-failure alert above is what makes its expiry visible.
+That is the whole list. The judgment half needs no credential at all: the routine
+authenticates as the operator's own Claude Code cloud session and pushes to the repo it was
+given. Nothing expires, so there is no token-rotation chore.
+
+Never put the bot token in a routine prompt. Routine prompts are stored configuration, not a
+secrets store, and the token would sit in plaintext in a place not built to hold it. If the
+Telegram step ever needs to move out of Actions, add a proper secrets mechanism first.
+
+*(If the deployment is ever flipped to Actions-only, a `CLAUDE_CODE_OAUTH_TOKEN` from
+`claude setup-token` goes in Actions secrets. It is long-lived but does expire, and the
+watchdog above is what would make that expiry visible.)*

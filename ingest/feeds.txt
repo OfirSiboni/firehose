@@ -6,3 +6,5 @@ https://huggingface.co/blog/feed.xml
 https://blog.google/technology/ai/rss/
 https://simonwillison.net/atom/everything/
 https://lilianweng.github.io/index.xml
+https://www.bleepingcomputer.com/feed/
+https://cointelegraph.com/rss

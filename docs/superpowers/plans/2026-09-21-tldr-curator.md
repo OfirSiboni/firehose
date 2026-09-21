@@ -1555,6 +1555,26 @@ git commit -m "feat: pool store, source health, and ingest runner"
 
 ---
 
+> ## ⚠ Tasks 7–15 need rework before execution
+>
+> Tasks 1–6 are complete and unaffected. Everything below was written for an
+> **Actions-only** deployment, but the spec now specifies a split runtime
+> (see the spec's "Why the runtime is split"):
+>
+> - **Ingest stays in GitHub Actions** — Task 7 is still correct as written.
+> - **Judge, Writer and publish move to a Claude cloud routine**, which needs
+>   no secrets and runs on the operator's subscription. Tasks 11–15 need
+>   reshaping around that: their Python and skill files are unchanged, but
+>   `digest.yml` and `relearn.yml` become routine prompts.
+> - **Telegram send becomes its own Actions job** triggered `on: push` to
+>   `data/digests/**`, rather than a step inside `digest.yml`.
+> - **A new `watchdog.yml`** replaces the `if: failure()` alert for the
+>   judgment half, since a dead routine cannot report itself.
+>
+> The Python modules, agent skills, and file contracts in Tasks 8–15 are
+> unaffected — only which harness invokes them changes. Do not execute
+> Tasks 10–15 as written.
+
 ### Task 7: The ingest workflow
 
 First cron. After this lands, the pool fills on its own — which is the input to the Phase 1
