@@ -14,10 +14,11 @@ API = "https://hn.algolia.com/api/v1/search_by_date"
 def parse(payload: dict) -> list[Item]:
     items: list[Item] = []
     for hit in payload.get("hits", []):
+        object_id = hit.get("objectID")
         title = hit.get("title")
-        if not title:
+        if not title or not object_id:
             continue
-        permalink = f"https://news.ycombinator.com/item?id={hit['objectID']}"
+        permalink = f"https://news.ycombinator.com/item?id={object_id}"
         # No url means a text post (Ask HN, Tell HN, jobs): the thread *is* the
         # content. Keep it as research signal, but mark it unpublishable — a
         # TLDR item has to link to something readable.

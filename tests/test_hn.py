@@ -53,3 +53,19 @@ def test_text_posts_are_tagged_as_discussions():
 def test_skips_hits_with_no_title():
     items = hn.parse({"hits": [{"objectID": "1", "title": None, "url": "https://x.com/a"}]})
     assert items == []
+
+
+def test_skips_hits_with_no_object_id():
+    items = hn.parse({"hits": [{"title": "Real title", "url": "https://x.com/a"}]})
+    assert items == []
+
+
+def test_one_malformed_hit_does_not_lose_the_others():
+    payload = {
+        "hits": [
+            {"objectID": "1", "title": "Good one", "url": "https://x.com/a"},
+            {"title": "No objectID here", "url": "https://x.com/b"},
+            {"objectID": "3", "title": "Also good", "url": "https://x.com/c"},
+        ]
+    }
+    assert [i.title for i in hn.parse(payload)] == ["Good one", "Also good"]
