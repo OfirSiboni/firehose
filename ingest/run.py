@@ -6,7 +6,7 @@ import sys
 
 from ingest.sources import arxiv, blogs, github, hn
 from store import health, pool
-from store.item import dedupe
+from store.item import Item, dedupe
 
 SOURCES = {
     "hn": hn.fetch,
@@ -16,7 +16,7 @@ SOURCES = {
 }
 
 
-def collect() -> tuple[list, dict[str, int]]:
+def collect() -> tuple[list[Item], dict[str, int]]:
     """Fetch every source in isolation. One failure must not lose the others."""
     items, counts = [], {}
     for name, fetch in SOURCES.items():
