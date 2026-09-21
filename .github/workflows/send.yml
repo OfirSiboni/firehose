@@ -1,0 +1,52 @@
+name: send
+
+on:
+  push:
+    branches: [master]
+    paths: ["data/digests/**"]
+  workflow_dispatch:
+
+# Ingest and digest both write data/. Queue rather than race.
+concurrency:
+  group: data-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Send the digest to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m send.digest
+
+      - name: Commit sent state
+        run: |
+          git config user.name "firehose-bot"
+          git config user.email "firehose-bot@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet && echo "no changes" && exit 0
+          git commit -m "chore: sent digest $(date -u +%Y-%m-%d)"
+          git pull --rebase
+          git push
+
+      - name: Report failure to Telegram
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m send.alert
