@@ -7,7 +7,7 @@ import time
 import urllib.error
 import urllib.request
 
-UA = "tldrcreator/1.0 (+https://github.com/tldrcreator)"
+UA = "firehose/1.0 (+https://github.com/OfirSiboni/firehose)"
 
 # A hostile or broken feed must not be able to exhaust the runner's memory.
 MAX_BYTES = 16 * 1024 * 1024
