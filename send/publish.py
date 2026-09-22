@@ -1,8 +1,12 @@
-"""Render the static site and RSS feed. One template, no framework."""
+"""Render the static site, the Markdown mirror and the RSS feed.
+
+One template each, no framework.
+"""
 
 from __future__ import annotations
 
 import html
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -31,7 +35,7 @@ PAGE = """<!doctype html>
 {articles}
 <h2>Also in the pool</h2>
 <ul class="tail">{tail}</ul>
-<footer><a href="feed.xml">RSS</a></footer>
+<footer><a href="feed.xml">RSS</a> · <a href="{date}.md">Markdown</a></footer>
 </body></html>
 """
 
@@ -59,6 +63,64 @@ def render_digest(digest: dict, tail: list[dict]) -> str:
         for t in tail
     )
     return PAGE.format(date=html.escape(digest["date"]), articles=articles, tail=tail_html)
+
+
+# Only the characters that mean something *inline*: emphasis, code, link
+# brackets and raw HTML. `+`, `#` and friends are block syntax — escaping them
+# mid-sentence just litters the raw file, so they are handled at line start.
+MD_SPECIAL = re.compile(r"([\\`*_\[\]<])")
+MD_BULLET_START = re.compile(r"^([#>+-])")
+MD_NUMBER_START = re.compile(r"^(\d+)([.)])")
+
+
+def md_escape(text: str) -> str:
+    """Neutralize markdown in text that goes into a link label or a paragraph."""
+    escaped = MD_SPECIAL.sub(r"\\\1", str(text or "").replace("\n", " ")).strip()
+    escaped = MD_BULLET_START.sub(r"\\\1", escaped)
+    # A leading "1." would start an ordered list; the dot is the escapable part
+    # (a backslash before a digit is not a markdown escape at all).
+    return MD_NUMBER_START.sub(r"\1\\\2", escaped)
+
+
+def md_url(url: str) -> str:
+    """Make a URL safe as a markdown link target.
+
+    Parens inside an inline link close it early, so percent-encode them; a
+    stray space would do the same, so encode that too.
+    """
+    return str(url or "").replace("(", "%28").replace(")", "%29").replace(" ", "%20")
+
+
+def render_markdown(digest: dict, tail: list[dict]) -> str:
+    """The day's digest as Markdown, served alongside the HTML page.
+
+    Deliberately no YAML front matter: GitHub Pages runs Jekyll, and front
+    matter would make it render <date>.md into <date>.html, overwriting the
+    page rendered above.
+    """
+    date = digest["date"]
+    lines = [f"# Firehose — {date}", ""]
+
+    for item in digest["items"]:
+        lines += [
+            f"## [{md_escape(item['title'])}]({md_url(item['url'])})",
+            "",
+            f"`{md_escape(item.get('tier', ''))}` · {md_escape(item.get('source', ''))}",
+            "",
+            md_escape(item.get("summary", "")),
+            "",
+        ]
+
+    if tail:
+        lines += ["## Also in the pool", ""]
+        lines += [
+            f"- [{md_escape(t['title'])}]({md_url(t['url'])}) — {md_escape(t.get('source', ''))}"
+            for t in tail
+        ]
+        lines.append("")
+
+    lines += ["---", "", f"[Web]({SITE_URL}/{date}.html) · [RSS]({SITE_URL}/feed.xml)", ""]
+    return "\n".join(lines)
 
 
 def render_feed(digest_list: list[dict]) -> str:
@@ -109,8 +171,13 @@ def main() -> int:
     page = render_digest(digest, tail)
     (DOCS / f"{date}.html").write_text(page, encoding="utf-8")
     (DOCS / "index.html").write_text(page, encoding="utf-8")
+
+    markdown = render_markdown(digest, tail)
+    (DOCS / f"{date}.md").write_text(markdown, encoding="utf-8")
+    (DOCS / "latest.md").write_text(markdown, encoding="utf-8")
+
     (DOCS / "feed.xml").write_text(render_feed(digests.recent_digests(20)), encoding="utf-8")
-    print(f"published {date} with a {len(tail)}-item tail")
+    print(f"published {date} (html + md) with a {len(tail)}-item tail")
     return 0
 
 
