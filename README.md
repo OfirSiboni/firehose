@@ -33,7 +33,7 @@ python -m venv .venv
 
 - `store/` — item model, pool, labels, digests, schema validation
 - `ingest/` — one module per source, plus `feeds.txt` (the blog list; edit this, not code)
-- `send/` — Telegram delivery and static-site publication
+- `send/` — Telegram delivery and static-site publication (HTML, Markdown, RSS)
 - `agents/` — plain-Python prep scripts that assemble each agent's input file
 - `.claude/skills/` — the Judge, Writer and relearn agent prompts
 - `routines/` — the prompts pasted into the daily and weekly Claude cloud routines
@@ -48,6 +48,10 @@ python -m venv .venv
 3. Under repo Settings → Actions → General, give the default `GITHUB_TOKEN`
    "Read and write permissions" so the workflows can commit `data/` and `docs/`.
 4. Under repo Settings → Pages, serve from the `master` branch, `/docs` folder.
+   Each day publishes three files there: `<date>.html` (and `index.html`),
+   `<date>.md` (and `latest.md`), and `feed.xml`. The Markdown carries no YAML
+   front matter on purpose — Pages runs Jekyll, and front matter would make it
+   render `<date>.md` over the `<date>.html` written next to it.
 5. Create two Claude Code cloud routines pointed at this repo: a daily one with the
    prompt in `routines/curator.md`, and a weekly one with the prompt in
    `routines/relearn.md`.
