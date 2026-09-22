@@ -7,7 +7,7 @@ import os
 import time
 
 from send.telegram import send_message
-from store import digests, health, pool, ranked
+from store import critique, digests, health, pool, ranked
 
 TIER_LABEL = {"headline": "📰", "discovery": "🔍"}
 
@@ -22,6 +22,31 @@ def render(item: dict) -> str:
         f"{html.escape(body)}\n"
         f"{html.escape(item['source'])} · <a href=\"{html.escape(item['url'])}\">link</a>"
     )
+
+
+def render_critique(verdict: dict) -> str:
+    """The blind head-to-head. Telegram only — it never reaches docs/."""
+    lines = [
+        f"🕵️ <b>Blind verdict — {html.escape(verdict['date'])}</b>",
+        f"Winner: <b>{html.escape(verdict.get('winner', 'tie'))}</b>",
+        html.escape(verdict.get("verdict", "")),
+    ]
+    ours = verdict.get("ours") or {}
+    theirs = verdict.get("theirs") or {}
+    if ours.get("strength") or ours.get("weakness"):
+        lines.append(
+            f"\n<b>Us</b> — {html.escape(ours.get('strength', ''))} "
+            f"Weak spot: {html.escape(ours.get('weakness', ''))}"
+        )
+    if theirs.get("strength"):
+        lines.append(f"<b>TLDR AI</b> — {html.escape(theirs.get('strength', ''))}")
+    order = verdict.get("blind_order") or {}
+    if order:
+        lines.append(
+            f"\n<i>judged blind; today we were "
+            f"{html.escape('A' if order.get('A') == 'Firehose' else 'B')}</i>"
+        )
+    return "\n".join(line for line in lines if line.strip())
 
 
 def main() -> int:
@@ -67,6 +92,16 @@ def main() -> int:
     digests.save_digest({**digest, "sent": True, "items": records}, date)
     pool.save_pool(pool.mark_sent(items, [r["id"] for r in records], date))
     print(f"sent {len(records)} items")
+
+    # Last, and in its own try: the day's stories are already delivered, and a
+    # missing or malformed verdict must not make the send look failed.
+    try:
+        verdict = critique.load_critique(date)
+        if verdict:
+            send_message(render_critique(verdict), token, chat_id)
+            print(f"sent the blind verdict: {verdict.get('winner')}")
+    except Exception as exc:
+        print(f"verdict not sent: {exc}")
     return 0
 
 

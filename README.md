@@ -12,9 +12,22 @@ learns which stories are worth surfacing from emoji-reaction feedback.
 | Workflow | Cadence | What it does |
 |---|---|---|
 | `ingest.yml` | Actions, every 3h | Fetch sources, dedupe into `data/pool.jsonl`, collect Telegram reactions |
-| curator routine | Claude cloud routine, daily | Judge ranks, Writer drafts, publishes `docs/`; prompt in `routines/curator.md` |
+| curator routine | Claude cloud routine, daily | Judge ranks, Writer drafts, Critic compares, publishes `docs/`; prompt in `routines/curator.md` |
 | `send.yml` | Actions, on push to `data/digests/**` | Sends the digest to Telegram |
 | `watchdog.yml` | Actions, daily 10:00 UTC | Alerts if no digest was committed today |
+
+## The blind verdict
+
+Each day, after the digest is drafted, the same day's [TLDR AI](https://tldr.tech/ai)
+issue is fetched and put next to ours with every tell removed — no URLs, no source
+labels, no reading times, no brand names, and the two sides shuffled into `A` and `B`.
+A fresh subagent (`.claude/skills/critic/SKILL.md`) reads only that blinded file and
+picks a winner; a second script holds the key and names the sides afterwards.
+
+The verdict lands in `data/critique/<date>.json` and is sent to Telegram as one extra
+message after the stories. `send.publish` never reads it, so it never reaches
+`docs/` — the site and the Markdown mirror are unchanged. On a weekend, or any day
+TLDR does not publish, the comparison is skipped silently.
 
 Plus a weekly relearn routine (Claude cloud routine, weekly) that regenerates the
 learned half of the taste profile; prompt in `routines/relearn.md`.
@@ -33,9 +46,10 @@ python -m venv .venv
 
 - `store/` — item model, pool, labels, digests, schema validation
 - `ingest/` — one module per source, plus `feeds.txt` (the blog list; edit this, not code)
+  and `tldr.py`, which reads the rival newsletter for the daily blind comparison
 - `send/` — Telegram delivery and static-site publication (HTML, Markdown, RSS)
 - `agents/` — plain-Python prep scripts that assemble each agent's input file
-- `.claude/skills/` — the Judge, Writer and relearn agent prompts
+- `.claude/skills/` — the Judge, Writer, Critic and relearn agent prompts
 - `routines/` — the prompts pasted into the daily and weekly Claude cloud routines
 - `taste/profile.md` — what counts as a good story. Hand-edit the `## Mine` half freely.
 
