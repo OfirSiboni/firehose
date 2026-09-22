@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "82b7c1ad7628",
@@ -8,7 +8,8 @@
       "url": "https://simonwillison.net/2026/Sep/21/jev/",
       "source": "blog",
       "tier": "headline",
-      "summary": "Jev answers yes/no, multiple-choice, and rating questions about a state in a single forward pass, returning calibrated probabilities instead of generated text. Within a day, Kev reimplemented the approach as an open model on Qwen3.5, and jevals swapped it in for LLM-as-judge scoring. Decision models are now a distinct, buildable model class, not just one lab's product. (3 minute read)"
+      "summary": "Jev answers yes/no, multiple-choice, and rating questions about a state in a single forward pass, returning calibrated probabilities instead of generated text. Within a day, Kev reimplemented the approach as an open model on Qwen3.5, and jevals swapped it in for LLM-as-judge scoring. Decision models are now a distinct, buildable model class, not just one lab's product. (3 minute read)",
+      "message_id": 24
     },
     {
       "id": "65539846fc8f",
@@ -16,7 +17,8 @@
       "url": "https://mimo.xiaomi.com/mimo-v2-6",
       "source": "hn",
       "tier": "headline",
-      "summary": "Xiaomi shipped MiMo v2.6, the newest release in its open-weight model line, giving developers a new checkpoint to evaluate. (1 minute read)"
+      "summary": "Xiaomi shipped MiMo v2.6, the newest release in its open-weight model line, giving developers a new checkpoint to evaluate. (1 minute read)",
+      "message_id": 25
     },
     {
       "id": "08be31d1d2d2",
@@ -24,7 +26,8 @@
       "url": "https://github.com/volotat/mini-AGI/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Mini-AGI trains continuously on one text stream, routing each character through 2 dense blocks plus a recurrent block applied up to 24 times with per-token halting. Training the trunk at 0.1x the experts' learning rate cut catastrophic forgetting from +2.23 to +0.0067 nats over a 524K-character read. It now runs 169 experts and holds 0.8336 nats/char on held-out data — continual learning without a cluster. (4 minute read)"
+      "summary": "Mini-AGI trains continuously on one text stream, routing each character through 2 dense blocks plus a recurrent block applied up to 24 times with per-token halting. Training the trunk at 0.1x the experts' learning rate cut catastrophic forgetting from +2.23 to +0.0067 nats over a 524K-character read. It now runs 169 experts and holds 0.8336 nats/char on held-out data — continual learning without a cluster. (4 minute read)",
+      "message_id": 26
     },
     {
       "id": "57b1afbc3b00",
@@ -32,7 +35,8 @@
       "url": "https://github.com/bojieli/ai-infra-book",
       "source": "github",
       "tier": "discovery",
-      "summary": "A new open-source book covers AI infrastructure across 12 chapters — KV-cache management, speculative decoding, accelerator tradeoffs, multi-device networking — deriving each from hardware constraints rather than describing it abstractly. It ships with runnable calculation tools and reproducible experiments, and has already drawn 4.9k GitHub stars and 357 forks. Anyone sizing an inference cluster now has working code to check their numbers against. (3 minute read)"
+      "summary": "A new open-source book covers AI infrastructure across 12 chapters — KV-cache management, speculative decoding, accelerator tradeoffs, multi-device networking — deriving each from hardware constraints rather than describing it abstractly. It ships with runnable calculation tools and reproducible experiments, and has already drawn 4.9k GitHub stars and 357 forks. Anyone sizing an inference cluster now has working code to check their numbers against. (3 minute read)",
+      "message_id": 27
     },
     {
       "id": "19d6f3257b96",
@@ -40,7 +44,8 @@
       "url": "https://github.com/openlayer-ai/jevals",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Jevals scores agent traces with typed decision models instead of LLM judges: $0.00006 per trace at 244ms p50, versus 6-11 LLM calls per sample the old way. It cites a LangChain finding that GPT and Claude judges vary 92x-913x in score on identical traces — the inconsistency this replaces. 37 built-in evals ship today, in alpha, with OpenAI, LangGraph, and Claude SDK integrations. (3 minute read)"
+      "summary": "Jevals scores agent traces with typed decision models instead of LLM judges: $0.00006 per trace at 244ms p50, versus 6-11 LLM calls per sample the old way. It cites a LangChain finding that GPT and Claude judges vary 92x-913x in score on identical traces — the inconsistency this replaces. 37 built-in evals ship today, in alpha, with OpenAI, LangGraph, and Claude SDK integrations. (3 minute read)",
+      "message_id": 28
     },
     {
       "id": "a09fe9820f88",
@@ -48,7 +53,8 @@
       "url": "https://arxiv.org/abs/2609.23314v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "ValueDiff proposes a value-geometric method for evicting KV-cache entries in sink-suppressed LLMs, aimed at cutting inference memory without hurting output quality. (2 minute read)"
+      "summary": "ValueDiff proposes a value-geometric method for evicting KV-cache entries in sink-suppressed LLMs, aimed at cutting inference memory without hurting output quality. (2 minute read)",
+      "message_id": 29
     },
     {
       "id": "49e630e77c1e",
@@ -56,7 +62,8 @@
       "url": "https://arxiv.org/abs/2609.23201v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "The paper argues general-purpose LLM ranking benchmarks overstate what they measure, and makes the case for task-specific evaluation instead. (1 minute read)"
+      "summary": "The paper argues general-purpose LLM ranking benchmarks overstate what they measure, and makes the case for task-specific evaluation instead. (1 minute read)",
+      "message_id": 30
     },
     {
       "id": "70ebf7f5c0ac",
@@ -64,7 +71,8 @@
       "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Reports say ChatGPT now links users' activity on other websites into an ad-data collector tied to their accounts. (2 minute read)"
+      "summary": "Reports say ChatGPT now links users' activity on other websites into an ad-data collector tied to their accounts. (2 minute read)",
+      "message_id": 31
     }
   ]
 }
