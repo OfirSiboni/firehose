@@ -1,90 +1,89 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-24",
   "stories": [
     {
-      "id": "82b7c1ad7628",
-      "url": "https://simonwillison.net/2026/Sep/21/jev/",
-      "title": "Jev introduces a new shape of LLM - System One, aka Decision Models",
-      "source": "blog",
+      "id": "dfd20da099fc",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "title": "Claude Opus 5.5",
+      "source": "hn",
       "tier": "headline",
-      "reason": "Origin of today's biggest AI story: a new 'decision model' class (typed yes/no/choice/rating heads instead of free text) that already spawned a dozen clones and parodies in the pool (Kev, jevals, jev-chat-jarvis, openJev-verdict) within a day — a genuinely new LLM shape, not a rehash of yesterday's Kev pickup.",
+      "reason": "Anthropic's new flagship, released same week as OpenAI's GPT-6 Sol/Luna — a direct competitive response the operator would want to know in detail.",
       "key_facts": [
-        "Simon Willison write-up of the 'Jev' decision-model paradigm: single forward pass returns calibrated probabilities for typed questions instead of generated text",
-        "Spawned same-day open clones (Kev, on Qwen3.5) and eval tooling (jevals) already in today's pool"
+        "Claude Opus 5.5 released 2026-09-22, first model in the 5.5 family, performs like Fable 5.1 at lower cost",
+        "Terminal-Bench 4.0 66.4%, OSWorld 2.0 81.8%, Humanity's Last Exam 67.7% with tools, GDPval-AA v2.1 1846 Elo",
+        "Pricing: $4/$20 per 1M input/output tokens (20% cheaper than Opus 5), cache reads $0.20 (60% cheaper)",
+        "Available immediately on Claude.ai, AWS, GCP, Azure"
       ]
     },
     {
-      "id": "65539846fc8f",
-      "url": "https://mimo.xiaomi.com/mimo-v2-6",
-      "title": "Xiaomi MiMo v2.6",
+      "id": "3d48e529ad7a",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "title": "Introducing GPT-6 Sol and Luna",
       "source": "hn",
       "tier": "headline",
-      "reason": "Xiaomi ships MiMo v2.6, a fresh open-weight model update not covered in any prior digest draft — genuinely new, high HN engagement (556 pts) already visible.",
+      "reason": "Major dual-model release from OpenAI (1634 HN points); operator has almost certainly seen it, surface briefly as the headline it is.",
+      "key_facts": [
+        "GPT-6 Sol and Luna announced by OpenAI, two models balancing capability vs cost for everyday work",
+        "1634 points / 784 comments on HN, effectively saturated"
+      ]
+    },
+    {
+      "id": "0c1f08af0fbd",
+      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
+      "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Consequential real-world AI-accountability story — a Pentagon-attributed AI overreliance finding tied to a fatal strike — squarely the kind of AI-systems-in-the-real-world news the operator should not miss (858 HN points).",
       "key_facts": []
     },
     {
-      "id": "08be31d1d2d2",
-      "url": "https://github.com/volotat/mini-AGI/",
-      "title": "Show HN: Mini-AGI – Dynamic continual learning model trained on 8GB VRAM",
+      "id": "8d3012484844",
+      "url": "https://data.ornn.com/publications/the-economics-of-open-weight-inference",
+      "title": "The Economics of Open-Weight Inference",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Continual-learning byte-level model trained on 8GB VRAM via disk/RAM/VRAM expert paging, adaptive per-token depth, and a 100x LR gap between trunk and experts that cut catastrophic forgetting from +2.23 to +0.0067 nats — concrete, verifiable, running code, matches the 'how models are served/trained' weighting.",
+      "reason": "Directly on-profile: open-weight inference economics, the exact 'how models are served' angle the operator weights above training — low saturation (47 pts) niche source.",
+      "key_facts": []
+    },
+    {
+      "id": "8c50fe1c6153",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Genuine AI-for-science result from Anthropic (not a product launch) — Claude autonomously found a real, previously-unrecognized enzyme system; substantive enough that not knowing it is a gap.",
       "key_facts": [
-        "Adaptive depth: 2 dense blocks + recurrent block applied up to 24x, per-token halting",
-        "Trunk trains at 0.1x the LR of expert-specific params; cut forgetting from +2.23 to +0.0067 nats over 524K chars",
-        "318.1M chars read, 169 experts, 0.8336 nats/char held-out loss, scaling exponent -0.239, R²=0.96"
+        "Claude found 'array-associated reverse transcriptases' (ART) in bacteriophages: an RT enzyme + partner gene + CRISPR-array-like repeats",
+        "~950 Claude agents ran 21 hours, 210M tokens, screened 200k+ reverse transcriptases down to 3,500 candidates then 20 compelling ones",
+        "The RT itself was known, but Claude was first to notice the associated non-coding array + accessory protein — the defining CRISPR-like feature",
+        "MIT's Feng Zhang commented positively; function still unknown, released as a preprint, further wet-lab work ongoing"
       ]
     },
     {
-      "id": "57b1afbc3b00",
-      "url": "https://github.com/bojieli/ai-infra-book",
-      "title": "bojieli/ai-infra-book",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Comprehensive open-source AI-infra textbook (12 chapters: batching, KV-cache, speculative decoding, datacenter networking, accelerator tradeoffs) with 4.9k stars and companion calculation tools — directly on-taste and unusually thorough.",
-      "key_facts": [
-        "12 chapters covering inference/training workloads, accelerator tradeoffs, KV-cache, speculative decoding, multi-device networking",
-        "4.9k GitHub stars, 357 forks; includes runnable calculation tools and reproducible experiments"
-      ]
+      "id": "c06d46f4c940",
+      "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
+      "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Large, credible-sounding breach claim against a major US federal agency (697 HN points); significant infosec story even though not AI-specific.",
+      "key_facts": []
     },
     {
-      "id": "19d6f3257b96",
-      "url": "https://github.com/openlayer-ai/jevals",
-      "title": "Show HN: jevals – replacing LLM judges with typed Jev decisions",
+      "id": "9b44d7e44f1c",
+      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
+      "title": "The current balance of power in open models",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Replaces expensive/inconsistent LLM-judge calls with the new decision-model approach: typed state+questions -> calibrated probabilities in one forward pass, and cites LangChain measurements of 92x-913x score variance between LLM judges on identical traces — a concrete, verifiable evaluation-methodology finding, not just a tool announcement.",
-      "key_facts": [
-        "$0.00006/trace, 244ms p50, vs 6-11 LLM calls per sample for traditional LLM-judge pipelines",
-        "Cites LangChain finding of 92x-913x score variance between GPT and Claude judges on identical traces",
-        "37 built-in evals, alpha status, OpenAI/LangGraph/Claude SDK integrations"
-      ]
+      "reason": "Landscape analysis of open-weight model competition — matches the 'open-weight model releases' always-surface rule, moderate traction (112 pts) suggests still under-seen.",
+      "key_facts": []
     },
     {
-      "id": "a09fe9820f88",
-      "url": "https://arxiv.org/abs/2609.23314v1",
-      "title": "ValueDiff: Value-Geometric KV Cache Eviction for Sink-Suppressed LLMs",
+      "id": "0859642d450f",
+      "url": "https://arxiv.org/abs/2609.26333v1",
+      "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
       "source": "arxiv",
       "tier": "discovery",
-      "reason": "KV-cache eviction for LLM serving is exactly the inference-infrastructure lane the taste profile calls out; fresh arXiv upload (today's ingest), fetch blocked by network egress policy so scored on title/abstract-topic match only.",
-      "key_facts": []
-    },
-    {
-      "id": "49e630e77c1e",
-      "url": "https://arxiv.org/abs/2609.23201v1",
-      "title": "Do Not Trust the Benchmark: Limitations of General LLM Rankings and a Case for Task-Specific Evaluation",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Direct hit on 'evaluation methodology, especially new benchmarks and benchmark criticism' — a benchmark-criticism paper arguing against general LLM rankings in favor of task-specific eval; fetch blocked by egress policy, scored on title/topic.",
-      "key_facts": []
-    },
-    {
-      "id": "70ebf7f5c0ac",
-      "url": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
-      "title": "ChatGPT now knows what you do on other websites via ad collector",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Highest-engagement post in the pool (734 pts) — ChatGPT tying browsing activity into an ad-data collector is a real privacy story, but outside the taste profile's core inference/eval/open-weight focus; already saturated so worth a brief headline mention rather than a deep slot.",
+      "reason": "Prefill/decode-disaggregated quantization is squarely inference-serving territory — exactly the 'how models are served' weighting, fresh arXiv paper with no traction yet (fetch blocked by network policy, scored on title/abstract relevance).",
       "key_facts": []
     }
   ]
