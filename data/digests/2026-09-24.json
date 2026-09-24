@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "dfd20da099fc",
@@ -8,7 +8,8 @@
       "url": "https://www.anthropic.com/claude-opus-5-5",
       "source": "hn",
       "tier": "headline",
-      "summary": "Claude Opus 5.5 matches Fable 5.1 performance at $4/$20 per million input/output tokens, 20% less than Opus 5, with cache reads down 60% to $0.20. It hits 66.4% on Terminal-Bench 4.0, 81.8% on OSWorld 2.0, and 67.7% on Humanity's Last Exam with tools. Available now on Claude.ai, AWS, GCP, and Azure. (2 minute read)"
+      "summary": "Claude Opus 5.5 matches Fable 5.1 performance at $4/$20 per million input/output tokens, 20% less than Opus 5, with cache reads down 60% to $0.20. It hits 66.4% on Terminal-Bench 4.0, 81.8% on OSWorld 2.0, and 67.7% on Humanity's Last Exam with tools. Available now on Claude.ai, AWS, GCP, and Azure. (2 minute read)",
+      "message_id": 34
     },
     {
       "id": "3d48e529ad7a",
@@ -16,7 +17,8 @@
       "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
       "source": "hn",
       "tier": "headline",
-      "summary": "OpenAI's GPT-6 Sol and Luna split frontier capability and cost into two everyday-work models, already the top story on HN with 1,634 points and 784 comments. Both are live now, letting teams pick between the two cost/capability tradeoffs directly. (2 minute read)"
+      "summary": "OpenAI's GPT-6 Sol and Luna split frontier capability and cost into two everyday-work models, already the top story on HN with 1,634 points and 784 comments. Both are live now, letting teams pick between the two cost/capability tradeoffs directly. (2 minute read)",
+      "message_id": 35
     },
     {
       "id": "0c1f08af0fbd",
@@ -24,7 +26,8 @@
       "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
       "source": "hn",
       "tier": "headline",
-      "summary": "The Pentagon says overreliance on AI contributed to a missile strike on a school in Iran, according to Bloomberg's investigation. (3 minute read)"
+      "summary": "The Pentagon says overreliance on AI contributed to a missile strike on a school in Iran, according to Bloomberg's investigation. (3 minute read)",
+      "message_id": 36
     },
     {
       "id": "8d3012484844",
@@ -32,7 +35,8 @@
       "url": "https://data.ornn.com/publications/the-economics-of-open-weight-inference",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A new analysis lays out the cost structure behind serving open-weight models yourself versus paying for hosted inference. (2 minute read)"
+      "summary": "A new analysis lays out the cost structure behind serving open-weight models yourself versus paying for hosted inference. (2 minute read)",
+      "message_id": 37
     },
     {
       "id": "8c50fe1c6153",
@@ -40,7 +44,8 @@
       "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
       "source": "hn",
       "tier": "headline",
-      "summary": "Running 950 agents for 21 hours and 210M tokens, Claude screened 200,000+ reverse transcriptases down to 20 candidates and spotted a new pattern: a CRISPR-like array of non-coding repeats and an unknown accessory protein alongside a known reverse transcriptase. The function is still unconfirmed, but Anthropic published it as a preprint for further wet-lab work. (3 minute read)"
+      "summary": "Running 950 agents for 21 hours and 210M tokens, Claude screened 200,000+ reverse transcriptases down to 20 candidates and spotted a new pattern: a CRISPR-like array of non-coding repeats and an unknown accessory protein alongside a known reverse transcriptase. The function is still unconfirmed, but Anthropic published it as a preprint for further wet-lab work. (3 minute read)",
+      "message_id": 38
     },
     {
       "id": "c06d46f4c940",
@@ -48,7 +53,8 @@
       "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
       "source": "hn",
       "tier": "headline",
-      "summary": "A hacking group claims to have stolen data on all FBI employees, according to 404 Media. (2 minute read)"
+      "summary": "A hacking group claims to have stolen data on all FBI employees, according to 404 Media. (2 minute read)",
+      "message_id": 39
     },
     {
       "id": "9b44d7e44f1c",
@@ -56,7 +62,8 @@
       "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Interconnects lays out the current competitive landscape among open-weight model releases. (2 minute read)"
+      "summary": "Interconnects lays out the current competitive landscape among open-weight model releases. (2 minute read)",
+      "message_id": 40
     },
     {
       "id": "0859642d450f",
@@ -64,7 +71,8 @@
       "url": "https://arxiv.org/abs/2609.26333v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "A new paper proposes quantizing LLM prefill and decode stages separately instead of applying one scheme to both. (3 minute read)"
+      "summary": "A new paper proposes quantizing LLM prefill and decode stages separately instead of applying one scheme to both. (3 minute read)",
+      "message_id": 41
     }
   ]
 }
