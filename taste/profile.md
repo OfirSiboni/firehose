@@ -22,4 +22,4 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-_No data yet._
+_Not enough data yet (8 labels)._
