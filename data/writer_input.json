@@ -1,89 +1,76 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "stories": [
     {
-      "id": "dfd20da099fc",
-      "url": "https://www.anthropic.com/claude-opus-5-5",
-      "title": "Claude Opus 5.5",
+      "id": "c92638ec2f58",
+      "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
+      "title": "OpenAI agent hacked Australian government website, PM says",
       "source": "hn",
       "tier": "headline",
-      "reason": "Anthropic's new flagship, released same week as OpenAI's GPT-6 Sol/Luna — a direct competitive response the operator would want to know in detail.",
-      "key_facts": [
-        "Claude Opus 5.5 released 2026-09-22, first model in the 5.5 family, performs like Fable 5.1 at lower cost",
-        "Terminal-Bench 4.0 66.4%, OSWorld 2.0 81.8%, Humanity's Last Exam 67.7% with tools, GDPval-AA v2.1 1846 Elo",
-        "Pricing: $4/$20 per 1M input/output tokens (20% cheaper than Opus 5), cache reads $0.20 (60% cheaper)",
-        "Available immediately on Claude.ai, AWS, GCP, Azure"
-      ]
-    },
-    {
-      "id": "3d48e529ad7a",
-      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-      "title": "Introducing GPT-6 Sol and Luna",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Major dual-model release from OpenAI (1634 HN points); operator has almost certainly seen it, surface briefly as the headline it is.",
-      "key_facts": [
-        "GPT-6 Sol and Luna announced by OpenAI, two models balancing capability vs cost for everyday work",
-        "1634 points / 784 comments on HN, effectively saturated"
-      ]
-    },
-    {
-      "id": "0c1f08af0fbd",
-      "url": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
-      "title": "Pentagon says overreliance on AI contributed to missile strike on Iran school",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Consequential real-world AI-accountability story — a Pentagon-attributed AI overreliance finding tied to a fatal strike — squarely the kind of AI-systems-in-the-real-world news the operator should not miss (858 HN points).",
+      "reason": "An OpenAI agent reportedly breached an Australian government system (Medicare); a real-world agentic-AI security incident with government fallout, not a rumor.",
       "key_facts": []
     },
     {
-      "id": "8d3012484844",
-      "url": "https://data.ornn.com/publications/the-economics-of-open-weight-inference",
-      "title": "The Economics of Open-Weight Inference",
+      "id": "f6fab29d9844",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+      "title": "Gemini 3.8 text-to-speech",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Google ships Gemini 3.8 text-to-speech, a major model-family release; already at 313 HN points so mostly seen, but worth a brief headline mention.",
+      "key_facts": []
+    },
+    {
+      "id": "9c2f631dad34",
+      "url": "https://artificialanalysis.ai/models/mercury-2-5",
+      "title": "Mercury 2.5 LLM hits 770 tokens per second",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Directly on-profile: open-weight inference economics, the exact 'how models are served' angle the operator weights above training — low saturation (47 pts) niche source.",
+      "reason": "Mercury 2.5 hits 770 tokens/sec — a concrete inference-throughput number, squarely in the 'how models are served' priority.",
       "key_facts": []
     },
     {
-      "id": "8c50fe1c6153",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "id": "18c511d8742e",
+      "url": "https://drivingbench.com/",
+      "title": "GPT-6 Astra has gained the ability to drive a car",
       "source": "hn",
       "tier": "headline",
-      "reason": "Genuine AI-for-science result from Anthropic (not a product launch) — Claude autonomously found a real, previously-unrecognized enzyme system; substantive enough that not knowing it is a gap.",
-      "key_facts": [
-        "Claude found 'array-associated reverse transcriptases' (ART) in bacteriophages: an RT enzyme + partner gene + CRISPR-array-like repeats",
-        "~950 Claude agents ran 21 hours, 210M tokens, screened 200k+ reverse transcriptases down to 3,500 candidates then 20 compelling ones",
-        "The RT itself was known, but Claude was first to notice the associated non-coding array + accessory protein — the defining CRISPR-like feature",
-        "MIT's Feng Zhang commented positively; function still unknown, released as a preprint, further wet-lab work ongoing"
-      ]
-    },
-    {
-      "id": "c06d46f4c940",
-      "url": "https://www.404media.co/we-hacked-the-fbi-hackers-say-they-have-data-on-all-fbi-employees/",
-      "title": "'We hacked the FBI:' Hackers say they have data on all FBI employees",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Large, credible-sounding breach claim against a major US federal agency (697 HN points); significant infosec story even though not AI-specific.",
+      "reason": "GPT-6 Astra driving a car is a concrete agentic-capability milestone (298 HN points) rather than a benchmark claim.",
       "key_facts": []
     },
     {
-      "id": "9b44d7e44f1c",
-      "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open",
-      "title": "The current balance of power in open models",
-      "source": "hn",
+      "id": "c3fc2429b018",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/",
+      "title": "Malicious AI agents steal 600K credit cards, infect 100+ sites with skimmers",
+      "source": "blog",
       "tier": "discovery",
-      "reason": "Landscape analysis of open-weight model competition — matches the 'open-weight model releases' always-surface rule, moderate traction (112 pts) suggests still under-seen.",
+      "reason": "Concrete report: AI agents used to steal 600K credit cards and infect 100+ sites with skimmers — genuine AI-systems security result with hard numbers.",
       "key_facts": []
     },
     {
-      "id": "0859642d450f",
-      "url": "https://arxiv.org/abs/2609.26333v1",
-      "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
+      "id": "947d7e857818",
+      "url": "https://arxiv.org/abs/2609.28006v1",
+      "title": "Shared Global KV with Layer-Specific Local History",
       "source": "arxiv",
       "tier": "discovery",
-      "reason": "Prefill/decode-disaggregated quantization is squarely inference-serving territory — exactly the 'how models are served' weighting, fresh arXiv paper with no traction yet (fetch blocked by network policy, scored on title/abstract relevance).",
+      "reason": "New KV-cache paper (shared global KV + layer-specific local history) — direct match for the inference-infra beat.",
+      "key_facts": []
+    },
+    {
+      "id": "c2a53f233272",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+      "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "LiquidAI blog on accelerating vision-language model inference (LFM2.5-VL-DSpark) — direct inference-infra match with a shipping model.",
+      "key_facts": []
+    },
+    {
+      "id": "774fa8ca0792",
+      "url": "https://arxiv.org/abs/2609.29769v1",
+      "title": "JEV vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "Benchmark-criticism paper: LLM rubric judges vs JEV are cheaper/faster but wrong in the same places — exactly the evaluation-methodology beat the profile asks for.",
       "key_facts": []
     }
   ]
