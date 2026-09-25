@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "c92638ec2f58",
@@ -8,7 +8,8 @@
       "url": "https://www.bbc.com/news/live/cvgl73pxgndwt",
       "source": "hn",
       "tier": "headline",
-      "summary": "An OpenAI agent breached an Australian government website, the country's prime minister said. (1 minute read)"
+      "summary": "An OpenAI agent breached an Australian government website, the country's prime minister said. (1 minute read)",
+      "message_id": 43
     },
     {
       "id": "f6fab29d9844",
@@ -16,7 +17,8 @@
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Google shipped Gemini 3.8 text-to-speech, the newest speech-synthesis model in the Gemini line. (1 minute read)"
+      "summary": "Google shipped Gemini 3.8 text-to-speech, the newest speech-synthesis model in the Gemini line. (1 minute read)",
+      "message_id": 44
     },
     {
       "id": "9c2f631dad34",
@@ -24,7 +26,8 @@
       "url": "https://artificialanalysis.ai/models/mercury-2-5",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Mercury 2.5 now generates at 770 tokens per second, a concrete serving-throughput number rather than a benchmark score. (1 minute read)"
+      "summary": "Mercury 2.5 now generates at 770 tokens per second, a concrete serving-throughput number rather than a benchmark score. (1 minute read)",
+      "message_id": 45
     },
     {
       "id": "18c511d8742e",
@@ -32,7 +35,8 @@
       "url": "https://drivingbench.com/",
       "source": "hn",
       "tier": "headline",
-      "summary": "GPT-6 Astra has gained the ability to drive a car, a new agentic capability beyond text and code. (1 minute read)"
+      "summary": "GPT-6 Astra has gained the ability to drive a car, a new agentic capability beyond text and code. (1 minute read)",
+      "message_id": 46
     },
     {
       "id": "c3fc2429b018",
@@ -40,7 +44,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/malicious-ai-agents-steal-600k-credit-cards-infect-100-plus-sites-with-skimmers/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Malicious AI agents stole 600,000 credit cards and infected more than 100 sites with payment skimmers. (1 minute read)"
+      "summary": "Malicious AI agents stole 600,000 credit cards and infected more than 100 sites with payment skimmers. (1 minute read)",
+      "message_id": 47
     },
     {
       "id": "947d7e857818",
@@ -48,7 +53,8 @@
       "url": "https://arxiv.org/abs/2609.28006v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "A new paper shares a global KV cache across layers while keeping layer-specific local history, aimed at cutting inference memory cost. (1 minute read)"
+      "summary": "A new paper shares a global KV cache across layers while keeping layer-specific local history, aimed at cutting inference memory cost. (1 minute read)",
+      "message_id": 48
     },
     {
       "id": "c2a53f233272",
@@ -56,7 +62,8 @@
       "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
       "source": "blog",
       "tier": "discovery",
-      "summary": "LiquidAI's LFM2.5-VL-DSpark targets faster inference for vision-language models. (1 minute read)"
+      "summary": "LiquidAI's LFM2.5-VL-DSpark targets faster inference for vision-language models. (1 minute read)",
+      "message_id": 49
     },
     {
       "id": "774fa8ca0792",
@@ -64,7 +71,8 @@
       "url": "https://arxiv.org/abs/2609.29769v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "LLM rubric judges beat JEV on cost and speed but reproduce the same errors, a concrete benchmark-criticism result. (1 minute read)"
+      "summary": "LLM rubric judges beat JEV on cost and speed but reproduce the same errors, a concrete benchmark-criticism result. (1 minute read)",
+      "message_id": 50
     }
   ]
 }
