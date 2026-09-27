@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 .venv/
 .superpowers/
+data/.critique_key.json
+data/critique_verdict.json
