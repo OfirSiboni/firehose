@@ -1,6 +1,6 @@
 {
   "date": "2026-09-29",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "aecfd421f648",
@@ -8,7 +8,8 @@
       "url": "https://www.anthropic.com/claude-sonnet-5-5",
       "source": "hn",
       "tier": "headline",
-      "summary": "Sonnet 5.5 jumps to 70.6% on Terminal-Bench 4.0 versus Sonnet 5's 10.3%, hits 80.1% on OSWorld computer-use tasks, and nearly matches Opus 5.5 on CursorBench (55.5% vs 57.8%) and GDPval-AA (1,844 vs 1,846). Pricing stays at $2/$10 per million tokens, and it now powers claude.ai's free tier. (2 minute read)"
+      "summary": "Sonnet 5.5 jumps to 70.6% on Terminal-Bench 4.0 versus Sonnet 5's 10.3%, hits 80.1% on OSWorld computer-use tasks, and nearly matches Opus 5.5 on CursorBench (55.5% vs 57.8%) and GDPval-AA (1,844 vs 1,846). Pricing stays at $2/$10 per million tokens, and it now powers claude.ai's free tier. (2 minute read)",
+      "message_id": 79
     },
     {
       "id": "b04934350ff5",
@@ -16,7 +17,8 @@
       "url": "https://earnanhonestdollar.com/bench",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A single added instruction, \"do not guess,\" dropped a benchmark's rate of fabricated claims from 71% to 20% with no other prompt changes. (1 minute read)"
+      "summary": "A single added instruction, \"do not guess,\" dropped a benchmark's rate of fabricated claims from 71% to 20% with no other prompt changes. (1 minute read)",
+      "message_id": 80
     },
     {
       "id": "b596fed839bc",
@@ -24,7 +26,8 @@
       "url": "https://arxiv.org/abs/2609.31473v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "Kaggle's Game Arena evaluates LLMs by having them play head-to-head in Chess, Poker, and Werewolf, covering perfect-information, imperfect-information, and multiplayer settings. Because opponents keep improving, the benchmark resists the saturation that static leaderboards hit. A way to track strategic reasoning without waiting for the next benchmark to get memorized. (2 minute read)"
+      "summary": "Kaggle's Game Arena evaluates LLMs by having them play head-to-head in Chess, Poker, and Werewolf, covering perfect-information, imperfect-information, and multiplayer settings. Because opponents keep improving, the benchmark resists the saturation that static leaderboards hit. A way to track strategic reasoning without waiting for the next benchmark to get memorized. (2 minute read)",
+      "message_id": 81
     },
     {
       "id": "30bb7297dcd2",
@@ -32,7 +35,8 @@
       "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Anthropic's IPO prospectus lays out the company's AI strategy alongside its surging costs, per Reuters' review of the filing. (1 minute read)"
+      "summary": "Anthropic's IPO prospectus lays out the company's AI strategy alongside its surging costs, per Reuters' review of the filing. (1 minute read)",
+      "message_id": 82
     },
     {
       "id": "ab99fcb83c35",
@@ -40,7 +44,8 @@
       "url": "https://www.worldlabs.ai/blog/amd-announcement",
       "source": "hn",
       "tier": "headline",
-      "summary": "World Labs, Fei-Fei Li's spatial-intelligence startup, announced it is joining AMD. (1 minute read)"
+      "summary": "World Labs, Fei-Fei Li's spatial-intelligence startup, announced it is joining AMD. (1 minute read)",
+      "message_id": 83
     },
     {
       "id": "7b124554f2df",
@@ -48,7 +53,8 @@
       "url": "https://github.com/nari-labs/nari-qwen3-tts",
       "source": "github",
       "tier": "discovery",
-      "summary": "nari-qwen3-tts wraps the open Qwen3-TTS-12Hz-1.7B-CustomVoice weights in a serving stack that handles 10 requests per second with sub-50ms p95 time-to-first-audio on a single H100. It ships three tunable profiles trading off latency against throughput, under Apache 2.0. Drop-in TTS serving without training or licensing a proprietary model. (2 minute read)"
+      "summary": "nari-qwen3-tts wraps the open Qwen3-TTS-12Hz-1.7B-CustomVoice weights in a serving stack that handles 10 requests per second with sub-50ms p95 time-to-first-audio on a single H100. It ships three tunable profiles trading off latency against throughput, under Apache 2.0. Drop-in TTS serving without training or licensing a proprietary model. (2 minute read)",
+      "message_id": 84
     },
     {
       "id": "72467c55e0f6",
@@ -56,7 +62,8 @@
       "url": "https://arxiv.org/abs/2609.31551v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "Multimodal LLM serving splits into three stages, Encode, Prefill, and Decode, but existing systems treat Encode as a bolt-on service, leaving its GPUs underused while Prefill and Decode starve downstream. EAServe instead repositions Encode as a control point that regulates request flow into the rest of the pipeline. (2 minute read)"
+      "summary": "Multimodal LLM serving splits into three stages, Encode, Prefill, and Decode, but existing systems treat Encode as a bolt-on service, leaving its GPUs underused while Prefill and Decode starve downstream. EAServe instead repositions Encode as a control point that regulates request flow into the rest of the pipeline. (2 minute read)",
+      "message_id": 85
     },
     {
       "id": "30618402b020",
@@ -64,7 +71,8 @@
       "url": "https://arxiv.org/abs/2609.31540v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "Touchstone routes network-automation tasks to small local models (1-8B params) only when a cheap deterministic check can verify the output, escalating the rest to a frontier LLM. On conflict-detection and intent-translation it hits 98.6% and 93.8% accuracy while escalating just 16-17% of requests. Keep sensitive configs local whenever a task admits a cheap correctness check. (2 minute read)"
+      "summary": "Touchstone routes network-automation tasks to small local models (1-8B params) only when a cheap deterministic check can verify the output, escalating the rest to a frontier LLM. On conflict-detection and intent-translation it hits 98.6% and 93.8% accuracy while escalating just 16-17% of requests. Keep sensitive configs local whenever a task admits a cheap correctness check. (2 minute read)",
+      "message_id": 86
     }
   ]
 }
