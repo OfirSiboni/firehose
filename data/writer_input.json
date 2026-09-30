@@ -1,100 +1,106 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "stories": [
     {
-      "id": "aecfd421f648",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5",
-      "title": "Sonnet 5.5",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Genuine new Claude model launch (Sonnet 5.5): 30%+ faster, up to 30% cheaper, beats Sonnet 5 on every cited benchmark, now the claude.ai free-tier model — matches taste's explicit 'new model launch' acceptance rule.",
-      "key_facts": [
-        "Terminal-Bench 4.0: 70.6% vs Sonnet 5's 10.3%",
-        "CursorBench 4.0: 55.5% (Opus 5.5: 57.8%)",
-        "GDPval-AA v2.1: 1,844 (Opus 5.5: 1,846)",
-        "OSWorld 2.1 (computer use): 80.1%",
-        "Pricing unchanged: $2/M in, $10/M out, $0.20/M cache reads",
-        "Now the model behind claude.ai's free tier",
-        "Haiku 5.5 said to ship 'in the coming weeks'"
-      ]
-    },
-    {
-      "id": "b04934350ff5",
-      "url": "https://earnanhonestdollar.com/bench",
-      "title": "Calling the AI bluff: Adding \"Do not guess\" cut made-up claims from 71% to 20%",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Hallucination-reduction benchmark ('do not guess' prompt cut fabricated claims 71%->20%) is exactly the eval-methodology angle the taste profile prioritizes; page fetch blocked in this environment (unusual small domain), scored from title alone.",
-      "key_facts": []
-    },
-    {
-      "id": "b596fed839bc",
-      "url": "https://arxiv.org/abs/2609.31473v1",
-      "title": "Game Arena: Strategic LLM Evaluation in Competitive Environments",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Kaggle's Game Arena is a genuine new evaluation platform (Chess/Poker/Werewolf head-to-head) designed to avoid benchmark saturation — strong match for 'evaluation methodology, especially new benchmarks.'",
-      "key_facts": [
-        "Open, ever-expanding platform for competitive LLM evaluation",
-        "Three pilot environments: Chess, Poker, Werewolf",
-        "Covers perfect info, imperfect info, and multiplayer settings",
-        "From Kaggle/Google DeepMind"
-      ]
-    },
-    {
-      "id": "30bb7297dcd2",
-      "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
-      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic's IPO prospectus is a rare primary-disclosure event (financials, strategy) covered by Reuters — significant for anyone tracking the company, low HN saturation (43 pts) so still fresh; fetch blocked in this environment, scored from title/source only.",
-      "key_facts": []
-    },
-    {
-      "id": "ab99fcb83c35",
-      "url": "https://www.worldlabs.ai/blog/amd-announcement",
-      "title": "World Labs Is Joining AMD",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "World Labs (Fei-Fei Li's spatial-intelligence startup) joining AMD is real, verifiable industry M&A/partnership news that AI-industry watchers would want to know about; read failed (worldlabs.ai blocked in this environment) so scored from title/HN signal (164 pts) alone.",
-      "key_facts": []
-    },
-    {
-      "id": "7b124554f2df",
-      "url": "https://github.com/nari-labs/nari-qwen3-tts",
-      "title": "nari-labs/nari-qwen3-tts",
+      "id": "cd998f720303",
+      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
+      "title": "FareedKhan-dev/kimi-k3-in-c",
       "source": "github",
       "tier": "discovery",
-      "reason": "Open-weight TTS serving stack (Apache 2.0) with concrete throughput numbers — direct hit on 'inference infrastructure: serving, throughput' and 'running code beats a paper.'",
+      "reason": "Pure C99, zero-dependency implementation that runs the 2.78-trillion-parameter Kimi K3 model on a single CPU with just 8.24GB RAM (AVX2 SIMD, linear attention, MoE, MXFP4 quantization, no BLAS/ML framework). Running code, squarely about how models get served on constrained hardware, and not yet HN-front-paged (no points captured) — exactly the low-saturation discovery slot.",
       "key_facts": [
-        "Wraps public Qwen3-TTS-12Hz-1.7B-CustomVoice weights",
-        "10 requests/sec, sub-50ms p95 time-to-first-audio on one H100",
-        "Apache 2.0 license",
-        "Three tunable latency/throughput profiles"
+        "Runs Kimi K3 (2.78T params) on one CPU, 8.24GB RAM, no GPU",
+        "Pure C99, no BLAS/ML framework dependency, AVX2 SIMD",
+        "Implements linear attention, MoE routing, MXFP4 quantization",
+        "8.8k GitHub stars, 1.4k forks"
       ]
     },
     {
-      "id": "72467c55e0f6",
-      "url": "https://arxiv.org/abs/2609.31551v1",
-      "title": "EAServe: Encode-Aware Disaggregated Serving for Multimodal Large Language Models",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "EAServe tackles disaggregated Encode-Prefill-Decode serving for multimodal LLMs, a concrete inference-infrastructure systems contribution; no code release evident in the abstract.",
+      "id": "ee711ecd9dde",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "title": "GLM-5.3 and the spread of advanced cyber capabilities",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Anthropic's own Frontier Red Team report: the open-weight GLM-5.3 crossed a real cyber-capability threshold — ~12% success on ExploitBench, found and chained real 0-days in a browser JS engine into a working file-read exploit, converted a disclosed Chrome CVE into a working exploit in ~20 min. Safety bypass rates for GLM-5.3 were 64%/92%/100% for deceptive-prompt/prefill/abliteration attacks vs 0% for safeguarded Claude models. NIST called it the most cyber-capable open-weight model released to date, ~4 months behind US frontier.",
       "key_facts": [
-        "Identifies Encode stage as underutilized/starving Prefill+Decode in EPD pipelines",
-        "Proposes repositioning Encode as a control point for downstream request flow"
+        "GLM-5.3 (Zhipu/Z.ai) is open-weight with no meaningful safety restrictions",
+        "~12% success on ExploitBench (50/410), ~4% on Anthropic's internal Binary Exploitation benchmark — both thresholds essentially zero for earlier models",
+        "Found previously-unknown 0-days in a popular browser's JS engine, chained into a working arbitrary-file-read exploit",
+        "Turned a disclosed Chrome n-day into a working exploit chain in ~20 minutes of researcher time",
+        "Safety-bypass compliance: 64% (deceptive prompts), 92% (prefilled reasoning), 100% (abliteration) vs 0% for safeguarded Claude models across the same attacks",
+        "NIST assessment: most cyber-capable open-weight model to date, ~4 months behind US frontier capability"
       ]
     },
     {
-      "id": "30618402b020",
-      "url": "https://arxiv.org/abs/2609.31540v1",
-      "title": "Can You Check That? The Checkability Boundary for Local LLM Network Automation",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Touchstone gives a practical, measured rule (checkability) for when local small models can replace frontier-LLM calls in network automation — concrete inference-deployment tradeoff with numbers.",
+      "id": "dd66acaed2a0",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "OpenAI's new GPT-6.1 Sol claims near-Astra intelligence at a fifth of the price; 807 HN points means most readers have seen it, but a genuine new-model launch with a real price/perf jump earns a brief headline slot.",
       "key_facts": [
-        "98.6% / 93.8% end-to-end accuracy on conflict-detection/intent-translation while escalating only 16-17% of inputs to a frontier LLM",
-        "Uses 7 off-the-shelf 1-8B SLMs plus task-specific deterministic checks"
+        "openai.com/huggingface.co were blocked by this session's network egress policy, so this is scored from title+HN signal only",
+        "807 HN points at time of scrape — very high saturation for a headline"
+      ]
+    },
+    {
+      "id": "519655950107",
+      "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+      "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A 0.4B BitNet (1.58-bit ternary) model distributed across 7 ESP32-S3 microcontrollers (1 master + 6 compute nodes) over an SPI daisy-chain, each node handling a slice of the transformer layers. No throughput numbers published, but a genuinely novel edge-serving architecture with running code at 143 HN points and low saturation.",
+      "key_facts": [
+        "7 ESP32-S3 boards: 1 master (tokenization/embedding/LM head) + 6 compute nodes (transformer layers 0-23)",
+        "0.4B parameter model, 1.58-bit ternary (BitNet) quantization",
+        "SPI daisy-chain interconnect between nodes; KV cache stored in PSRAM",
+        "No published latency/throughput numbers"
+      ]
+    },
+    {
+      "id": "c92e39202c4c",
+      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+      "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A privacy analysis paper on web/mobile conversational AI agents at 410 HN points — a verifiable primary-source study rather than a rumor, on a topic (what agents leak/track) the profile hasn't seen covered yet this week. Fetch blocked (non-allowlisted host) so scored from title/engagement only.",
+      "key_facts": [
+        "PDF fetch blocked by network egress policy this session; scored from title and 410 HN points only"
+      ]
+    },
+    {
+      "id": "884977ecb800",
+      "url": "https://openai.com/index/introducing-dots/",
+      "title": "Dots: Always-on agents",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "OpenAI's 'Dots' always-on agents at 471 HN points reads as a genuinely new agent product category (persistent/background agents), not just a feature demo bolted onto an existing model — but openai.com fetch was blocked so this is scored from title/points only.",
+      "key_facts": [
+        "openai.com blocked by network egress policy this session — could not verify details beyond title"
+      ]
+    },
+    {
+      "id": "9552195c964d",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "title": "Holo4: powering generalist computer-use agents",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "H Company's Holo4, a generalist computer-use model, published as a Hugging Face model blog post — this pattern almost always means open weights, which the profile always wants surfaced. huggingface.co fetch was blocked this session so size/license/benchmarks are unconfirmed.",
+      "key_facts": [
+        "huggingface.co blocked by network egress policy this session; could not confirm weights/license/benchmarks"
+      ]
+    },
+    {
+      "id": "a110c1c6ff5d",
+      "url": "https://github.com/datawhalechina/zero-to-sglang",
+      "title": "datawhalechina/zero-to-sglang",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Datawhale/RadixArk's 'zero-to-sglang': a structured course that walks from inference fundamentals (KV cache, prefill/decode) through building a mini-SGLang inference engine to reading SGLang's real optimizations (attention backends, quantization). Solid free reference for serving internals; no single benchmark hook but directly on-topic for how models get served.",
+      "key_facts": [
+        "Four-part course: inference fundamentals -> build a mini inference engine from scratch -> real SGLang optimizations -> contributing to SGLang",
+        "Includes a working 'mini-sglang' reference implementation with continuous batching and HTTP serving",
+        "Available in English and Chinese, partially complete"
       ]
     }
   ]
