@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "cd998f720303",
@@ -8,7 +8,8 @@
       "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
       "source": "github",
       "tier": "discovery",
-      "summary": "A pure C99, zero-dependency implementation runs the 2.78-trillion-parameter Kimi K3 model on a single CPU with 8.24GB of RAM and no GPU, using AVX2 SIMD, linear attention, MoE routing, and MXFP4 quantization. It has no BLAS or ML-framework dependency at all. A frontier-scale MoE model now fits on a laptop instead of a GPU cluster. (2 minute read)"
+      "summary": "A pure C99, zero-dependency implementation runs the 2.78-trillion-parameter Kimi K3 model on a single CPU with 8.24GB of RAM and no GPU, using AVX2 SIMD, linear attention, MoE routing, and MXFP4 quantization. It has no BLAS or ML-framework dependency at all. A frontier-scale MoE model now fits on a laptop instead of a GPU cluster. (2 minute read)",
+      "message_id": 88
     },
     {
       "id": "ee711ecd9dde",
@@ -16,7 +17,8 @@
       "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
       "source": "hn",
       "tier": "headline",
-      "summary": "Anthropic's Frontier Red Team clocked the open-weight GLM-5.3 at ~12% success on ExploitBench, enough to chain a real 0-day in a browser's JS engine into a working file-read exploit and turn a disclosed Chrome bug into an exploit chain in about 20 minutes. Safety-bypass compliance hit 64-100% depending on attack type versus 0% for safeguarded Claude models, and NIST now calls it the most cyber-capable open-weight model released, roughly four months behind the US frontier. (2 minute read)"
+      "summary": "Anthropic's Frontier Red Team clocked the open-weight GLM-5.3 at ~12% success on ExploitBench, enough to chain a real 0-day in a browser's JS engine into a working file-read exploit and turn a disclosed Chrome bug into an exploit chain in about 20 minutes. Safety-bypass compliance hit 64-100% depending on attack type versus 0% for safeguarded Claude models, and NIST now calls it the most cyber-capable open-weight model released, roughly four months behind the US frontier. (2 minute read)",
+      "message_id": 89
     },
     {
       "id": "dd66acaed2a0",
@@ -24,7 +26,8 @@
       "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
       "source": "hn",
       "tier": "headline",
-      "summary": "OpenAI's GPT-6.1 Sol claims near-Astra intelligence at a fifth of the price, per the announcement. It drew 807 points on Hacker News within a day. (1 minute read)"
+      "summary": "OpenAI's GPT-6.1 Sol claims near-Astra intelligence at a fifth of the price, per the announcement. It drew 807 points on Hacker News within a day. (1 minute read)",
+      "message_id": 90
     },
     {
       "id": "519655950107",
@@ -32,7 +35,8 @@
       "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
       "source": "hn",
       "tier": "discovery",
-      "summary": "ESP32s3-LLM-Cluster splits a 0.4B BitNet (1.58-bit ternary) model across seven ESP32-S3 microcontrollers: one master handling tokenization and the LM head, six compute nodes each running a slice of the transformer layers over an SPI daisy-chain, with the KV cache stored in each node's PSRAM. No throughput numbers are published yet. A distributed inference rig built from sub-$5 microcontrollers instead of a GPU. (2 minute read)"
+      "summary": "ESP32s3-LLM-Cluster splits a 0.4B BitNet (1.58-bit ternary) model across seven ESP32-S3 microcontrollers: one master handling tokenization and the LM head, six compute nodes each running a slice of the transformer layers over an SPI daisy-chain, with the KV cache stored in each node's PSRAM. No throughput numbers are published yet. A distributed inference rig built from sub-$5 microcontrollers instead of a GPU. (2 minute read)",
+      "message_id": 91
     },
     {
       "id": "c92e39202c4c",
@@ -40,7 +44,8 @@
       "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A new paper, \"Prompt Like a Butterfly, Sting Like a Tracker,\" analyzes privacy practices in web and mobile conversational AI agents. It reached 410 points on Hacker News. (1 minute read)"
+      "summary": "A new paper, \"Prompt Like a Butterfly, Sting Like a Tracker,\" analyzes privacy practices in web and mobile conversational AI agents. It reached 410 points on Hacker News. (1 minute read)",
+      "message_id": 92
     },
     {
       "id": "884977ecb800",
@@ -48,7 +53,8 @@
       "url": "https://openai.com/index/introducing-dots/",
       "source": "hn",
       "tier": "headline",
-      "summary": "OpenAI introduced Dots, an always-on agent product, at its DevDay 2026 keynote. The announcement reached 471 points on Hacker News. (1 minute read)"
+      "summary": "OpenAI introduced Dots, an always-on agent product, at its DevDay 2026 keynote. The announcement reached 471 points on Hacker News. (1 minute read)",
+      "message_id": 93
     },
     {
       "id": "9552195c964d",
@@ -56,7 +62,8 @@
       "url": "https://huggingface.co/blog/Hcompany/holo4",
       "source": "blog",
       "tier": "discovery",
-      "summary": "H Company published Holo4, a generalist computer-use model, as a Hugging Face model release aimed at powering computer-use agents. (1 minute read)"
+      "summary": "H Company published Holo4, a generalist computer-use model, as a Hugging Face model release aimed at powering computer-use agents. (1 minute read)",
+      "message_id": 94
     },
     {
       "id": "a110c1c6ff5d",
@@ -64,7 +71,8 @@
       "url": "https://github.com/datawhalechina/zero-to-sglang",
       "source": "github",
       "tier": "discovery",
-      "summary": "Datawhale and RadixArk's zero-to-sglang course walks from inference fundamentals like KV cache and prefill/decode through building a working mini-SGLang engine with continuous batching and HTTP serving, then into SGLang's real attention-backend and quantization optimizations. It's free, bilingual in English and Chinese, and pairs docs with runnable code. A self-contained path from asking what a KV cache is to reading SGLang's production source. (2 minute read)"
+      "summary": "Datawhale and RadixArk's zero-to-sglang course walks from inference fundamentals like KV cache and prefill/decode through building a working mini-SGLang engine with continuous batching and HTTP serving, then into SGLang's real attention-backend and quantization optimizations. It's free, bilingual in English and Chinese, and pairs docs with runnable code. A self-contained path from asking what a KV cache is to reading SGLang's production source. (2 minute read)",
+      "message_id": 95
     }
   ]
 }
