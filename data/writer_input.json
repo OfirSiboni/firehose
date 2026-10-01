@@ -1,106 +1,113 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "stories": [
     {
-      "id": "cd998f720303",
-      "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c",
-      "title": "FareedKhan-dev/kimi-k3-in-c",
+      "id": "9e57e69aee78",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "title": "Gemini 4 Argon",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Genuinely new frontier model (Gemini 4 Argon) with a real capability jump and public benchmark/pricing data; already huge on HN (1044 pts) so most readers have seen the headline but not the specifics.",
+      "key_facts": [
+        "Output capacity up to 1M tokens per response, up from 64K on prior Gemini models",
+        "Sets new SOTA on DeepSWE v1.1, a long-horizon software-engineering benchmark",
+        "Ties GPT-6 Astra on the Artificial Analysis Intelligence Index at 53 points, 1 point above GPT-6.1 Sol's 52",
+        "Pricing: $2/M input, $10/M output tokens during promo (standard $4/$20); cached input gets a 95% discount (~$0.10/M)",
+        "Initial rollout limited to 'trusted cyber defenders' via a Fairwind Program ahead of wider developer/enterprise access"
+      ]
+    },
+    {
+      "id": "bf2e738d2e1a",
+      "url": "https://github.com/ninjahawk/livenerf",
+      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "A reproducible, open-source methodology for catching silent post-launch model-quality regressions went to the HN front page (862 pts) — benchmark criticism as a running tool, not a one-off complaint.",
+      "key_facts": [
+        "875 GitHub stars; daily eval of 78 fixed questions (screened from 2,336 candidates) drawn from GPQA Diamond, MMLU-Pro, competition math, run against Claude Opus 5.5 since its Sep 22 launch",
+        "Baseline pass rate ~54.7%; minimum detectable degradation is ~7.5 accuracy points over a 10-day window",
+        "Runs on the Inspect AI framework via Claude Code headless on a Max subscription, no API key needed",
+        "As of Sep 30: 7 of 30 baseline days collected; a synthetic validation run correctly detected an injected -4.2±3.9 point degradation"
+      ]
+    },
+    {
+      "id": "f9d283d850cc",
+      "url": "https://earendil.com/posts/you-said-no-mcp/",
+      "title": "You said no MCP",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "A concrete, reusable pattern (sandboxed codegen to batch MCP tool calls) for anyone building MCP-based agents, from a coding-agent vendor publicly reversing its own anti-MCP stance; 617 HN points.",
+      "key_facts": [
+        "Earendil's coding agent 'Pi' reversed its public no-MCP stance; Pi v0.99.0 (Sep 29) adds MCP support over stdio and streamable HTTP with OAuth",
+        "New 'Codemode' feature: model-written JavaScript runs in a QuickJS sandbox so the model can call multiple MCP tools programmatically/in parallel instead of one tool-call per turn",
+        "Also ships lazy tool loading, mid-conversation system messages, and per-tool metadata for variable-reasoning-effort models"
+      ]
+    },
+    {
+      "id": "20b52029e360",
+      "url": "https://github.com/magnitudedev/magnitude",
+      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Running code with reproducible numbers against a real baseline (llama.cpp) for local/open-weight inference — exactly the serving/throughput territory this digest prioritizes.",
+      "key_facts": [
+        "Open-source local inference engine (Apache 2.0) that compiles/tunes kernels per-device instead of shipping precompiled kernels",
+        "Claims up to 2x faster than llama.cpp: 92% faster decode on Metal, 19% faster on CUDA; 9% faster prefill on Metal, 23% faster on CUDA; 27% lower memory per agent session",
+        "5.8k GitHub stars, 400 forks, 1,060 commits; supports Apple Silicon, NVIDIA, AMD, CPU",
+        "Integrates with Pi, OpenCode, Claude Code, Codex, or any OpenAI-compatible API"
+      ]
+    },
+    {
+      "id": "3ccbe96e4caf",
+      "url": "https://arxiv.org/abs/2609.38169v1",
+      "title": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "KV-cache/recurrent-state quantization paper with released code and a concrete serving-memory win — survives this week's 'no released code = hard pass' filter for arxiv quant papers.",
+      "key_facts": [
+        "6-bit STEPQuant achieves over 5x recurrent-state compression and cuts total serving memory by up to 68.7%",
+        "Targets delta-rule linear-attention models (Gated DeltaNet / Kimi Delta Attention style); separates where quantization errors matter temporally vs. spatially in the recurrent state",
+        "Code released: github.com/Dreamer-Toby/STEPQuant"
+      ]
+    },
+    {
+      "id": "01b4b5b766aa",
+      "url": "https://github.com/SodaMem/SodaMem",
+      "title": "SodaMem/SodaMem",
       "source": "github",
       "tier": "discovery",
-      "reason": "Pure C99, zero-dependency implementation that runs the 2.78-trillion-parameter Kimi K3 model on a single CPU with just 8.24GB RAM (AVX2 SIMD, linear attention, MoE, MXFP4 quantization, no BLAS/ML framework). Running code, squarely about how models get served on constrained hardware, and not yet HN-front-paged (no points captured) — exactly the low-saturation discovery slot.",
+      "reason": "Auditable, deterministic agent memory with published, re-gradable benchmark artifacts and real integrations (Claude Code, Cursor, LangGraph via MCP) — running code beating a paper describing the same idea.",
       "key_facts": [
-        "Runs Kimi K3 (2.78T params) on one CPU, 8.24GB RAM, no GPU",
-        "Pure C99, no BLAS/ML framework dependency, AVX2 SIMD",
-        "Implements linear attention, MoE routing, MXFP4 quantization",
-        "8.8k GitHub stars, 1.4k forks"
+        "Temporal knowledge graph memory layer: facts aren't overwritten, they're marked with validity periods and linked via supersession edges",
+        "Zero-LLM-call retrieval (BM25 + optional vector search); same query always returns identical results from the same store",
+        "LongMemEval: 92.8% (464/500); LoCoMo: 86.88% (1338/1540) end-to-end QA accuracy, with answers/evidence published for independent re-grading",
+        "Apache-2.0, 152 GitHub stars; ships HTTP API, Python library, TypeScript SDK, and an MCP server"
       ]
     },
     {
-      "id": "ee711ecd9dde",
-      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
-      "title": "GLM-5.3 and the spread of advanced cyber capabilities",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic's own Frontier Red Team report: the open-weight GLM-5.3 crossed a real cyber-capability threshold — ~12% success on ExploitBench, found and chained real 0-days in a browser JS engine into a working file-read exploit, converted a disclosed Chrome CVE into a working exploit in ~20 min. Safety bypass rates for GLM-5.3 were 64%/92%/100% for deceptive-prompt/prefill/abliteration attacks vs 0% for safeguarded Claude models. NIST called it the most cyber-capable open-weight model released to date, ~4 months behind US frontier.",
-      "key_facts": [
-        "GLM-5.3 (Zhipu/Z.ai) is open-weight with no meaningful safety restrictions",
-        "~12% success on ExploitBench (50/410), ~4% on Anthropic's internal Binary Exploitation benchmark — both thresholds essentially zero for earlier models",
-        "Found previously-unknown 0-days in a popular browser's JS engine, chained into a working arbitrary-file-read exploit",
-        "Turned a disclosed Chrome n-day into a working exploit chain in ~20 minutes of researcher time",
-        "Safety-bypass compliance: 64% (deceptive prompts), 92% (prefilled reasoning), 100% (abliteration) vs 0% for safeguarded Claude models across the same attacks",
-        "NIST assessment: most cyber-capable open-weight model to date, ~4 months behind US frontier capability"
-      ]
-    },
-    {
-      "id": "dd66acaed2a0",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-      "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "OpenAI's new GPT-6.1 Sol claims near-Astra intelligence at a fifth of the price; 807 HN points means most readers have seen it, but a genuine new-model launch with a real price/perf jump earns a brief headline slot.",
-      "key_facts": [
-        "openai.com/huggingface.co were blocked by this session's network egress policy, so this is scored from title+HN signal only",
-        "807 HN points at time of scrape — very high saturation for a headline"
-      ]
-    },
-    {
-      "id": "519655950107",
-      "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
-      "title": "ESP32S3 cluster running 1.58-bit (BitNet) Language model",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "A 0.4B BitNet (1.58-bit ternary) model distributed across 7 ESP32-S3 microcontrollers (1 master + 6 compute nodes) over an SPI daisy-chain, each node handling a slice of the transformer layers. No throughput numbers published, but a genuinely novel edge-serving architecture with running code at 143 HN points and low saturation.",
-      "key_facts": [
-        "7 ESP32-S3 boards: 1 master (tokenization/embedding/LM head) + 6 compute nodes (transformer layers 0-23)",
-        "0.4B parameter model, 1.58-bit ternary (BitNet) quantization",
-        "SPI daisy-chain interconnect between nodes; KV cache stored in PSRAM",
-        "No published latency/throughput numbers"
-      ]
-    },
-    {
-      "id": "c92e39202c4c",
-      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
-      "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "A privacy analysis paper on web/mobile conversational AI agents at 410 HN points — a verifiable primary-source study rather than a rumor, on a topic (what agents leak/track) the profile hasn't seen covered yet this week. Fetch blocked (non-allowlisted host) so scored from title/engagement only.",
-      "key_facts": [
-        "PDF fetch blocked by network egress policy this session; scored from title and 410 HN points only"
-      ]
-    },
-    {
-      "id": "884977ecb800",
-      "url": "https://openai.com/index/introducing-dots/",
-      "title": "Dots: Always-on agents",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "OpenAI's 'Dots' always-on agents at 471 HN points reads as a genuinely new agent product category (persistent/background agents), not just a feature demo bolted onto an existing model — but openai.com fetch was blocked so this is scored from title/points only.",
-      "key_facts": [
-        "openai.com blocked by network egress policy this session — could not verify details beyond title"
-      ]
-    },
-    {
-      "id": "9552195c964d",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "title": "Holo4: powering generalist computer-use agents",
+      "id": "b6b1e4118cdb",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "title": "Better prompt caching for GPT-6",
       "source": "blog",
       "tier": "discovery",
-      "reason": "H Company's Holo4, a generalist computer-use model, published as a Hugging Face model blog post — this pattern almost always means open weights, which the profile always wants surfaced. huggingface.co fetch was blocked this session so size/license/benchmarks are unconfirmed.",
+      "reason": "Material, quantifiable cost/latency lever for anyone running repeated-prefix (agentic/multi-turn) workloads against GPT-6, with real monitoring tooling to back it up.",
       "key_facts": [
-        "huggingface.co blocked by network egress policy this session; could not confirm weights/license/benchmarks"
+        "Cache discounts apply to shared prefixes reused within a 30-minute window; up to 90% discount on cached input tokens",
+        "New Prompt Caching Dashboard shows cache hit rate over time and cached-vs-uncached token composition",
+        "OpenAI reports >50% reduction in the share of prompt tokens needing fresh processing, across billions of requests over several months"
       ]
     },
     {
-      "id": "a110c1c6ff5d",
-      "url": "https://github.com/datawhalechina/zero-to-sglang",
-      "title": "datawhalechina/zero-to-sglang",
-      "source": "github",
+      "id": "836f2086a095",
+      "url": "https://github.com/Sparticle62ops/pssa",
+      "title": "PSSA: A non-transformer language model written from scratch in Rust",
+      "source": "hn",
       "tier": "discovery",
-      "reason": "Datawhale/RadixArk's 'zero-to-sglang': a structured course that walks from inference fundamentals (KV cache, prefill/decode) through building a mini-SGLang inference engine to reading SGLang's real optimizations (attention backends, quantization). Solid free reference for serving internals; no single benchmark hook but directly on-topic for how models get served.",
+      "reason": "A tiny but real from-scratch, non-transformer architecture with code and matched-scale numbers against a transformer baseline — the kind of running-code exploration this digest wants even at small scale.",
       "key_facts": [
-        "Four-part course: inference fundamentals -> build a mini inference engine from scratch -> real SGLang optimizations -> contributing to SGLang",
-        "Includes a working 'mini-sglang' reference implementation with continuous batching and HTTP serving",
-        "Available in English and Chinese, partially complete"
+        "PSSA (Plastic State-Space Architecture): recurrent state-space core, 512-slot episodic memory bank, weights that update during the forward pass, pure Rust, no ML frameworks",
+        "At 1.5M params / 12.7M training tokens: held-out perplexity 54.4 vs. 83.8 for a matched transformer baseline; 1,716 tok/s training throughput vs. 415",
+        "Reports '12x faster' generation on CPU; GPL-3.0, 86 GitHub stars; authors flag text quality at this scale is poor for both models"
       ]
     }
   ]
