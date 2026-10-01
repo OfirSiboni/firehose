@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "9e57e69aee78",
@@ -8,7 +8,8 @@
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Gemini 4 Argon raises max output to 1M tokens per response, up from 64K, and sets a new SOTA on the DeepSWE v1.1 long-horizon coding benchmark, tying GPT-6 Astra's 53 on the Artificial Analysis Intelligence Index. Pricing is $2/$10 per million tokens with a 95% discount on cached input, though access is still limited to a cyber-defender preview. (1 minute read)"
+      "summary": "Gemini 4 Argon raises max output to 1M tokens per response, up from 64K, and sets a new SOTA on the DeepSWE v1.1 long-horizon coding benchmark, tying GPT-6 Astra's 53 on the Artificial Analysis Intelligence Index. Pricing is $2/$10 per million tokens with a 95% discount on cached input, though access is still limited to a cyber-defender preview. (1 minute read)",
+      "message_id": 97
     },
     {
       "id": "bf2e738d2e1a",
@@ -16,7 +17,8 @@
       "url": "https://github.com/ninjahawk/livenerf",
       "source": "hn",
       "tier": "headline",
-      "summary": "Livenerf runs a daily eval of 78 fixed questions, screened from 2,336 candidates across GPQA Diamond, MMLU-Pro, and competition math, against Claude Opus 5.5 since its Sep 22 launch. Baseline pass rate is 54.7%, sensitive enough to catch a 7.5-point drop over 10 days; a validation run already detected an injected -4.2-point degradation. Runs on Claude Code headless, no API key needed. (1 minute read)"
+      "summary": "Livenerf runs a daily eval of 78 fixed questions, screened from 2,336 candidates across GPQA Diamond, MMLU-Pro, and competition math, against Claude Opus 5.5 since its Sep 22 launch. Baseline pass rate is 54.7%, sensitive enough to catch a 7.5-point drop over 10 days; a validation run already detected an injected -4.2-point degradation. Runs on Claude Code headless, no API key needed. (1 minute read)",
+      "message_id": 98
     },
     {
       "id": "f9d283d850cc",
@@ -24,7 +26,8 @@
       "url": "https://earendil.com/posts/you-said-no-mcp/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Earendil's coding agent Pi reversed its public no-MCP stance in v0.99.0, adding MCP support over stdio and streamable HTTP with OAuth. Its new Codemode feature runs model-written JavaScript in a QuickJS sandbox so the model can call multiple MCP tools programmatically instead of one per turn. The release also adds lazy tool loading and per-tool metadata for variable-reasoning-effort models. (2 minute read)"
+      "summary": "Earendil's coding agent Pi reversed its public no-MCP stance in v0.99.0, adding MCP support over stdio and streamable HTTP with OAuth. Its new Codemode feature runs model-written JavaScript in a QuickJS sandbox so the model can call multiple MCP tools programmatically instead of one per turn. The release also adds lazy tool loading and per-tool metadata for variable-reasoning-effort models. (2 minute read)",
+      "message_id": 99
     },
     {
       "id": "20b52029e360",
@@ -32,7 +35,8 @@
       "url": "https://github.com/magnitudedev/magnitude",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Magnitude is an open-source local inference engine that compiles and tunes kernels per-device instead of shipping precompiled ones, claiming up to 2x the speed of llama.cpp: 92% faster decode on Metal, 23% faster prefill on CUDA, and 27% less memory per agent session. It runs on Apple Silicon, NVIDIA, AMD, and CPU, and plugs into Claude Code, Codex, and any OpenAI-compatible API. (2 minute read)"
+      "summary": "Magnitude is an open-source local inference engine that compiles and tunes kernels per-device instead of shipping precompiled ones, claiming up to 2x the speed of llama.cpp: 92% faster decode on Metal, 23% faster prefill on CUDA, and 27% less memory per agent session. It runs on Apple Silicon, NVIDIA, AMD, and CPU, and plugs into Claude Code, Codex, and any OpenAI-compatible API. (2 minute read)",
+      "message_id": 100
     },
     {
       "id": "3ccbe96e4caf",
@@ -40,7 +44,8 @@
       "url": "https://arxiv.org/abs/2609.38169v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "STEPQuant quantizes the recurrent state in delta-rule linear-attention models (Gated DeltaNet, Kimi Delta Attention) down to 6 bits, achieving over 5x state compression and cutting total serving memory by up to 68.7%. It targets where quantization errors matter most, separating temporal drift from spatial outliers in the state. Code is released on GitHub. (1 minute read)"
+      "summary": "STEPQuant quantizes the recurrent state in delta-rule linear-attention models (Gated DeltaNet, Kimi Delta Attention) down to 6 bits, achieving over 5x state compression and cutting total serving memory by up to 68.7%. It targets where quantization errors matter most, separating temporal drift from spatial outliers in the state. Code is released on GitHub. (1 minute read)",
+      "message_id": 101
     },
     {
       "id": "01b4b5b766aa",
@@ -48,7 +53,8 @@
       "url": "https://github.com/SodaMem/SodaMem",
       "source": "github",
       "tier": "discovery",
-      "summary": "SodaMem stores agent memory as a temporal knowledge graph: facts are never overwritten, only marked with validity periods and superseded, and retrieval runs on BM25 plus optional vector search with zero LLM calls, so the same query always returns the same answer. It scores 92.8% on LongMemEval and 86.88% on LoCoMo, with every answer and evidence row published for re-grading. It's Apache-2.0. (1 minute read)"
+      "summary": "SodaMem stores agent memory as a temporal knowledge graph: facts are never overwritten, only marked with validity periods and superseded, and retrieval runs on BM25 plus optional vector search with zero LLM calls, so the same query always returns the same answer. It scores 92.8% on LongMemEval and 86.88% on LoCoMo, with every answer and evidence row published for re-grading. It's Apache-2.0. (1 minute read)",
+      "message_id": 102
     },
     {
       "id": "b6b1e4118cdb",
@@ -56,7 +62,8 @@
       "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
       "source": "blog",
       "tier": "discovery",
-      "summary": "GPT-6's prompt caching now discounts cached input tokens by up to 90% when a shared prefix is reused within a 30-minute window. OpenAI says this has cut the share of prompt tokens needing fresh processing by more than half across billions of requests, and a new dashboard shows cache hit rate and cached-vs-uncached token composition over time. (1 minute read)"
+      "summary": "GPT-6's prompt caching now discounts cached input tokens by up to 90% when a shared prefix is reused within a 30-minute window. OpenAI says this has cut the share of prompt tokens needing fresh processing by more than half across billions of requests, and a new dashboard shows cache hit rate and cached-vs-uncached token composition over time. (1 minute read)",
+      "message_id": 103
     },
     {
       "id": "836f2086a095",
@@ -64,7 +71,8 @@
       "url": "https://github.com/Sparticle62ops/pssa",
       "source": "hn",
       "tier": "discovery",
-      "summary": "PSSA replaces attention with a recurrent state-space core plus a 512-slot episodic memory bank and weights that update during the forward pass, written in pure Rust with no ML frameworks. At 1.5M parameters, it hits 54.4 held-out perplexity versus 83.8 for a matched transformer baseline, training at 1,716 tokens/second versus 415. It's a research prototype: text quality is still poor at this scale. (2 minute read)"
+      "summary": "PSSA replaces attention with a recurrent state-space core plus a 512-slot episodic memory bank and weights that update during the forward pass, written in pure Rust with no ML frameworks. At 1.5M parameters, it hits 54.4 held-out perplexity versus 83.8 for a matched transformer baseline, training at 1,716 tokens/second versus 415. It's a research prototype: text quality is still poor at this scale. (2 minute read)",
+      "message_id": 104
     }
   ]
 }
