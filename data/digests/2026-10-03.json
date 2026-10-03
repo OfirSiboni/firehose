@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "b72f6b75e1a1",
@@ -8,7 +8,8 @@
       "url": "https://www.deepseek.com/en/harness/",
       "source": "hn",
       "tier": "headline",
-      "summary": "DeepSeek now ships its agentic-coding harness as a native desktop app for macOS and Windows, moving it from a CLI-only tool to a full cross-platform product. (1 minute read)"
+      "summary": "DeepSeek now ships its agentic-coding harness as a native desktop app for macOS and Windows, moving it from a CLI-only tool to a full cross-platform product. (1 minute read)",
+      "message_id": 107
     },
     {
       "id": "c307e4722551",
@@ -16,7 +17,8 @@
       "url": "https://dwarfstar.sh/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Salvatore Sanfilippo, the creator of Redis, has released ds4, a new tool for running LLMs locally. (1 minute read)"
+      "summary": "Salvatore Sanfilippo, the creator of Redis, has released ds4, a new tool for running LLMs locally. (1 minute read)",
+      "message_id": 108
     },
     {
       "id": "90e946a5da3e",
@@ -24,7 +26,8 @@
       "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A developer's month of daily coding with the open-weight GLM 5.3 Flash model gives a lived-in account of the model, rather than a one-off benchmark run. (1 minute read)"
+      "summary": "A developer's month of daily coding with the open-weight GLM 5.3 Flash model gives a lived-in account of the model, rather than a one-off benchmark run. (1 minute read)",
+      "message_id": 109
     },
     {
       "id": "cc9eb70adea3",
@@ -32,7 +35,8 @@
       "url": "https://chatgpt.com/features/sites/",
       "source": "hn",
       "tier": "headline",
-      "summary": "ChatGPT has a new \"Sites\" feature, a distinct in-product surface rather than a one-off model tweak. (1 minute read)"
+      "summary": "ChatGPT has a new \"Sites\" feature, a distinct in-product surface rather than a one-off model tweak. (1 minute read)",
+      "message_id": 110
     },
     {
       "id": "9bb95970cefc",
@@ -40,7 +44,8 @@
       "url": "https://github.com/tigerless-labs/agent-memory",
       "source": "github",
       "tier": "discovery",
-      "summary": "agent-memory is a 2,292-star, local-first long-term memory runtime that lets Claude Code and Codex share one plain-markdown memory store with no API key required. (1 minute read)"
+      "summary": "agent-memory is a 2,292-star, local-first long-term memory runtime that lets Claude Code and Codex share one plain-markdown memory store with no API key required. (1 minute read)",
+      "message_id": 111
     },
     {
       "id": "d599f0a282be",
@@ -48,7 +53,8 @@
       "url": "https://huggingface.co/blog/allenai/astabrief",
       "source": "blog",
       "tier": "discovery",
-      "summary": "AstaBrief, the small model Ai2 built for fast report generation inside its Asta system, is now open-weight. (1 minute read)"
+      "summary": "AstaBrief, the small model Ai2 built for fast report generation inside its Asta system, is now open-weight. (1 minute read)",
+      "message_id": 112
     },
     {
       "id": "14ff7162edc9",
@@ -56,7 +62,8 @@
       "url": "https://github.com/Vibra-Ingenn/Janus",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Janus is a single Go binary that runs GGUF models over Vulkan, working across AMD, Intel, and Nvidia GPUs without vendor-specific builds. (1 minute read)"
+      "summary": "Janus is a single Go binary that runs GGUF models over Vulkan, working across AMD, Intel, and Nvidia GPUs without vendor-specific builds. (1 minute read)",
+      "message_id": 113
     },
     {
       "id": "a0541af1c1c4",
@@ -64,7 +71,8 @@
       "url": "https://www.reddit.com/r/Physics/comments/1wvin77/harvard_particle_physicist_matthew_schwartz_drops/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Harvard physicist Matthew Schwartz has published 36 papers co-authored with Claude, a concrete, attributable count of an LLM doing sustained research work rather than isolated demos. (1 minute read)"
+      "summary": "Harvard physicist Matthew Schwartz has published 36 papers co-authored with Claude, a concrete, attributable count of an LLM doing sustained research work rather than isolated demos. (1 minute read)",
+      "message_id": 114
     }
   ]
 }
