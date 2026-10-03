@@ -1,114 +1,77 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-03",
   "stories": [
     {
-      "id": "9e57e69aee78",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "title": "Gemini 4 Argon",
+      "id": "b72f6b75e1a1",
+      "url": "https://www.deepseek.com/en/harness/",
+      "title": "DeepSeek Harness Desktop for macOS and Windows",
       "source": "hn",
       "tier": "headline",
-      "reason": "Genuinely new frontier model (Gemini 4 Argon) with a real capability jump and public benchmark/pricing data; already huge on HN (1044 pts) so most readers have seen the headline but not the specifics.",
-      "key_facts": [
-        "Output capacity up to 1M tokens per response, up from 64K on prior Gemini models",
-        "Sets new SOTA on DeepSWE v1.1, a long-horizon software-engineering benchmark",
-        "Ties GPT-6 Astra on the Artificial Analysis Intelligence Index at 53 points, 1 point above GPT-6.1 Sol's 52",
-        "Pricing: $2/M input, $10/M output tokens during promo (standard $4/$20); cached input gets a 95% discount (~$0.10/M)",
-        "Initial rollout limited to 'trusted cyber defenders' via a Fairwind Program ahead of wider developer/enterprise access"
-      ]
+      "reason": "DeepSeek shipping an official cross-platform (macOS/Windows) desktop agentic-coding harness is a real ecosystem move from a top open-weight lab, not just a model update; 383 HN points means most of the audience has already seen it, but a headline doesn't get marked down for that.",
+      "key_facts": []
     },
     {
-      "id": "bf2e738d2e1a",
-      "url": "https://github.com/ninjahawk/livenerf",
-      "title": "Livenerf: Has Opus 5.5 been nerfed yet?",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "A reproducible, open-source methodology for catching silent post-launch model-quality regressions went to the HN front page (862 pts) — benchmark criticism as a running tool, not a one-off complaint.",
-      "key_facts": [
-        "875 GitHub stars; daily eval of 78 fixed questions (screened from 2,336 candidates) drawn from GPQA Diamond, MMLU-Pro, competition math, run against Claude Opus 5.5 since its Sep 22 launch",
-        "Baseline pass rate ~54.7%; minimum detectable degradation is ~7.5 accuracy points over a 10-day window",
-        "Runs on the Inspect AI framework via Claude Code headless on a Max subscription, no API key needed",
-        "As of Sep 30: 7 of 30 baseline days collected; a synthetic validation run correctly detected an injected -4.2±3.9 point degradation"
-      ]
-    },
-    {
-      "id": "f9d283d850cc",
-      "url": "https://earendil.com/posts/you-said-no-mcp/",
-      "title": "You said no MCP",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "A concrete, reusable pattern (sandboxed codegen to batch MCP tool calls) for anyone building MCP-based agents, from a coding-agent vendor publicly reversing its own anti-MCP stance; 617 HN points.",
-      "key_facts": [
-        "Earendil's coding agent 'Pi' reversed its public no-MCP stance; Pi v0.99.0 (Sep 29) adds MCP support over stdio and streamable HTTP with OAuth",
-        "New 'Codemode' feature: model-written JavaScript runs in a QuickJS sandbox so the model can call multiple MCP tools programmatically/in parallel instead of one tool-call per turn",
-        "Also ships lazy tool loading, mid-conversation system messages, and per-tool metadata for variable-reasoning-effort models"
-      ]
-    },
-    {
-      "id": "20b52029e360",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "title": "Launch HN: Magnitude (YC S25) – Self-optimizing inference engine for agents",
+      "id": "c307e4722551",
+      "url": "https://dwarfstar.sh/",
+      "title": "From the creator of Redis; run LLM locally with ds4",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Running code with reproducible numbers against a real baseline (llama.cpp) for local/open-weight inference — exactly the serving/throughput territory this digest prioritizes.",
-      "key_facts": [
-        "Open-source local inference engine (Apache 2.0) that compiles/tunes kernels per-device instead of shipping precompiled kernels",
-        "Claims up to 2x faster than llama.cpp: 92% faster decode on Metal, 19% faster on CUDA; 9% faster prefill on Metal, 23% faster on CUDA; 27% lower memory per agent session",
-        "5.8k GitHub stars, 400 forks, 1,060 commits; supports Apple Silicon, NVIDIA, AMD, CPU",
-        "Integrates with Pi, OpenCode, Claude Code, Codex, or any OpenAI-compatible API"
-      ]
+      "reason": "antirez (Redis creator) shipping ds4, a tool to run LLMs locally, is exactly the 'running code from a credible builder, about how models are served' pattern the taste profile weights highest; 159 points and still low saturation for a niche-but-respected release.",
+      "key_facts": []
     },
     {
-      "id": "3ccbe96e4caf",
-      "url": "https://arxiv.org/abs/2609.38169v1",
-      "title": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
-      "source": "arxiv",
+      "id": "90e946a5da3e",
+      "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
+      "title": "One month coding with GLM 5.3 Flash",
+      "source": "hn",
       "tier": "discovery",
-      "reason": "KV-cache/recurrent-state quantization paper with released code and a concrete serving-memory win — survives this week's 'no released code = hard pass' filter for arxiv quant papers.",
-      "key_facts": [
-        "6-bit STEPQuant achieves over 5x recurrent-state compression and cuts total serving memory by up to 68.7%",
-        "Targets delta-rule linear-attention models (Gated DeltaNet / Kimi Delta Attention style); separates where quantization errors matter temporally vs. spatially in the recurrent state",
-        "Code released: github.com/Dreamer-Toby/STEPQuant"
-      ]
+      "reason": "A real month-long usage report on GLM 5.3 Flash (open-weight model) for coding is the kind of concrete, lived-with evaluation the profile wants over a benchmark press release.",
+      "key_facts": []
     },
     {
-      "id": "01b4b5b766aa",
-      "url": "https://github.com/SodaMem/SodaMem",
-      "title": "SodaMem/SodaMem",
+      "id": "cc9eb70adea3",
+      "url": "https://chatgpt.com/features/sites/",
+      "title": "Sites in ChatGPT",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "OpenAI adding 'Sites' to ChatGPT (156 HN points, active discussion) looks like a new platform surface rather than a minor feature bolt-on; could not fetch to confirm scope, scored as a plausible headline pending more detail from the article itself.",
+      "key_facts": []
+    },
+    {
+      "id": "9bb95970cefc",
+      "url": "https://github.com/tigerless-labs/agent-memory",
+      "title": "tigerless-labs/agent-memory",
       "source": "github",
       "tier": "discovery",
-      "reason": "Auditable, deterministic agent memory with published, re-gradable benchmark artifacts and real integrations (Claude Code, Cursor, LangGraph via MCP) — running code beating a paper describing the same idea.",
-      "key_facts": [
-        "Temporal knowledge graph memory layer: facts aren't overwritten, they're marked with validity periods and linked via supersession edges",
-        "Zero-LLM-call retrieval (BM25 + optional vector search); same query always returns identical results from the same store",
-        "LongMemEval: 92.8% (464/500); LoCoMo: 86.88% (1338/1540) end-to-end QA accuracy, with answers/evidence published for independent re-grading",
-        "Apache-2.0, 152 GitHub stars; ships HTTP API, Python library, TypeScript SDK, and an MCP server"
-      ]
+      "reason": "2,292-star local-first, markdown-based long-term memory runtime shared between Claude Code and Codex, no API key — running code, serving-side agent infra, and enough traction to matter even though agent-memory is a recurring theme this week.",
+      "key_facts": []
     },
     {
-      "id": "b6b1e4118cdb",
-      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-      "title": "Better prompt caching for GPT-6",
+      "id": "d599f0a282be",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Material, quantifiable cost/latency lever for anyone running repeated-prefix (agentic/multi-turn) workloads against GPT-6, with real monitoring tooling to back it up.",
-      "key_facts": [
-        "Cache discounts apply to shared prefixes reused within a 30-minute window; up to 90% discount on cached input tokens",
-        "New Prompt Caching Dashboard shows cache hit rate over time and cached-vs-uncached token composition",
-        "OpenAI reports >50% reduction in the share of prompt tokens needing fresh processing, across billions of requests over several months"
-      ]
+      "reason": "Ai2 open-sourcing AstaBrief, a small report-generation model, is a genuine open-weight release from a credible lab — the profile says always surface these, saturation is low since it's fresh and specialized.",
+      "key_facts": []
     },
     {
-      "id": "836f2086a095",
-      "url": "https://github.com/Sparticle62ops/pssa",
-      "title": "PSSA: A non-transformer language model written from scratch in Rust",
+      "id": "14ff7162edc9",
+      "url": "https://github.com/Vibra-Ingenn/Janus",
+      "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A tiny but real from-scratch, non-transformer architecture with code and matched-scale numbers against a transformer baseline — the kind of running-code exploration this digest wants even at small scale.",
-      "key_facts": [
-        "PSSA (Plastic State-Space Architecture): recurrent state-space core, 512-slot episodic memory bank, weights that update during the forward pass, pure Rust, no ML frameworks",
-        "At 1.5M params / 12.7M training tokens: held-out perplexity 54.4 vs. 83.8 for a matched transformer baseline; 1,716 tok/s training throughput vs. 415",
-        "Reports '12x faster' generation on CPU; GPL-3.0, 86 GitHub stars; authors flag text quality at this scale is poor for both models"
-      ]
+      "reason": "Janus is a Go binary running GGUF models via Vulkan across AMD/Intel/Nvidia — running inference code with real cross-vendor reach, squarely in the 'how models are served' lane, 93 points so still fairly fresh.",
+      "key_facts": []
+    },
+    {
+      "id": "a0541af1c1c4",
+      "url": "https://www.reddit.com/r/Physics/comments/1wvin77/harvard_particle_physicist_matthew_schwartz_drops/",
+      "title": "Harvard particle physicist Matthew Schwartz drops 36 papers authored with Claude",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A named Harvard physicist publishing 36 Claude-co-authored papers is a concrete, attributable data point on LLMs doing real research work, not a rumor — exactly the kind of verifiable claim the profile rewards even at modest (48) points.",
+      "key_facts": []
     }
   ]
 }
