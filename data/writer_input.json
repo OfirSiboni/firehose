@@ -1,77 +1,110 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "stories": [
     {
-      "id": "b72f6b75e1a1",
-      "url": "https://www.deepseek.com/en/harness/",
-      "title": "DeepSeek Harness Desktop for macOS and Windows",
+      "id": "a650c74fe354",
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "title": "Kolibri: A Sovereign Open-Weight Model",
       "source": "hn",
       "tier": "headline",
-      "reason": "DeepSeek shipping an official cross-platform (macOS/Windows) desktop agentic-coding harness is a real ecosystem move from a top open-weight lab, not just a model update; 383 HN points means most of the audience has already seen it, but a headline doesn't get marked down for that.",
-      "key_facts": []
+      "reason": "Aleph Alpha's official announcement of Kolibri, a sovereign open-weight model with published weights — matches the 'always surface open-weight releases' rule directly; primary source for the cluster.",
+      "key_facts": [
+        "Official Aleph Alpha blog post announcing Kolibri",
+        "532 HN points / 304 comments, by far the most-discussed item today",
+        "Open-weight release framed around European/'sovereign' AI independence"
+      ]
     },
     {
-      "id": "c307e4722551",
-      "url": "https://dwarfstar.sh/",
-      "title": "From the creator of Redis; run LLM locally with ds4",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "antirez (Redis creator) shipping ds4, a tool to run LLMs locally, is exactly the 'running code from a credible builder, about how models are served' pattern the taste profile weights highest; 159 points and still low saturation for a niche-but-respected release.",
-      "key_facts": []
-    },
-    {
-      "id": "90e946a5da3e",
-      "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
-      "title": "One month coding with GLM 5.3 Flash",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "A real month-long usage report on GLM 5.3 Flash (open-weight model) for coding is the kind of concrete, lived-with evaluation the profile wants over a benchmark press release.",
-      "key_facts": []
-    },
-    {
-      "id": "cc9eb70adea3",
-      "url": "https://chatgpt.com/features/sites/",
-      "title": "Sites in ChatGPT",
+      "id": "f52e74133e2d",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "title": "With most information hidden, the game Stratego had stumped AI until now",
       "source": "hn",
       "tier": "headline",
-      "reason": "OpenAI adding 'Sites' to ChatGPT (156 HN points, active discussion) looks like a new platform surface rather than a minor feature bolt-on; could not fetch to confirm scope, scored as a plausible headline pending more detail from the article itself.",
-      "key_facts": []
+      "reason": "A verifiable research result (Nature paper + arXiv link in the HN text) of an AI beating the best human at a hidden-information game on a modest budget — exactly the 'does this change what a researcher would do' bar.",
+      "key_facts": [
+        "Links to a Nature paper and an arXiv preprint (2511.07312)",
+        "Stratego has hidden/imperfect information, unlike chess/Go",
+        "Framed as done 'on a budget' — compute-efficiency angle",
+        "243 HN points, 116 comments"
+      ]
     },
     {
-      "id": "9bb95970cefc",
-      "url": "https://github.com/tigerless-labs/agent-memory",
-      "title": "tigerless-labs/agent-memory",
+      "id": "14103ec99730",
+      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "A named OpenAI safety leader resigning and publicly calling the company's culture 'broken' is consequential, sourced news about a major lab's internal state — big enough that missing it is a gap, even though it's discourse rather than a technical result.",
+      "key_facts": [
+        "OpenAI safety-team leader resigned",
+        "Public statement that the company's culture is 'broken'",
+        "204 HN points / the more complete framing of the two write-ups today"
+      ]
+    },
+    {
+      "id": "124a9c7ca6b2",
+      "url": "https://github.com/FlashML-org/FreeVideo",
+      "title": "FlashML-org/FreeVideo",
       "source": "github",
       "tier": "discovery",
-      "reason": "2,292-star local-first, markdown-based long-term memory runtime shared between Claude Code and Codex, no API key — running code, serving-side agent infra, and enough traction to matter even though agent-memory is a recurring theme this week.",
-      "key_facts": []
+      "reason": "Running code, not a description: FreeVideo serves MiniMax H3 video generation in 8GB VRAM/16GB RAM with hardware-adaptive execution — directly matches the 'how models are served' and 'repo beats paper' weighting.",
+      "key_facts": [
+        "Runs MiniMax H3 (OpenVDN VDN-H3, hybrid attention) in as little as 8GB VRAM / 16GB RAM",
+        "Apache-2.0 code; weights under MiniMax's own community license with territorial restrictions",
+        "ComfyUI plugin plus a one-click Windows launcher and Linux CLI",
+        "447 GitHub stars"
+      ]
     },
     {
-      "id": "d599f0a282be",
-      "url": "https://huggingface.co/blog/allenai/astabrief",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Ai2 open-sourcing AstaBrief, a small report-generation model, is a genuine open-weight release from a credible lab — the profile says always surface these, saturation is low since it's fresh and specialized.",
-      "key_facts": []
-    },
-    {
-      "id": "14ff7162edc9",
-      "url": "https://github.com/Vibra-Ingenn/Janus",
-      "title": "Show HN: Janus – Go binary that runs GGUF models via Vulkan on AMD/Intel/Nvidia",
+      "id": "3ba89625595d",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "title": "We're going to need default hard budget caps on pretty much everything",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Janus is a Go binary running GGUF models via Vulkan across AMD/Intel/Nvidia — running inference code with real cross-vendor reach, squarely in the 'how models are served' lane, 93 points so still fairly fresh.",
-      "key_facts": []
+      "reason": "Simon Willison making the case that usage-based AI/API products need default hard spending caps is a concrete, practical operational concern for anyone running agents against metered APIs — strong HN traction (224 points) backs it.",
+      "key_facts": [
+        "Author: Simon Willison",
+        "Argues pay-by-usage AI/agent products need a default hard budget-cap feature",
+        "224 HN points"
+      ]
     },
     {
-      "id": "a0541af1c1c4",
-      "url": "https://www.reddit.com/r/Physics/comments/1wvin77/harvard_particle_physicist_matthew_schwartz_drops/",
-      "title": "Harvard particle physicist Matthew Schwartz drops 36 papers authored with Claude",
+      "id": "c3530cb12d13",
+      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A named Harvard physicist publishing 36 Claude-co-authored papers is a concrete, attributable data point on LLMs doing real research work, not a rumor — exactly the kind of verifiable claim the profile rewards even at modest (48) points.",
-      "key_facts": []
+      "reason": "A prominent Linux kernel maintainer talking about security practice in the LLM era is squarely 'what should a working engineer do differently' territory, though it's a video so detail is thin without a transcript.",
+      "key_facts": [
+        "Speaker: Greg Kroah-Hartman (Linux kernel maintainer)",
+        "Topic: security practices for the LLM era",
+        "183 HN points / 49 comments"
+      ]
+    },
+    {
+      "id": "fc994d69ad09",
+      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+      "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Official Anthropic guidance on getting the most out of Opus 5.5 in Claude/Claude Code — directly actionable for working engineers using these tools, even though the model itself isn't new.",
+      "key_facts": [
+        "Official Anthropic/Claude blog post",
+        "Practical usage tips for Opus 5.5 in Claude and Claude Code",
+        "176 HN points / 126 comments"
+      ]
+    },
+    {
+      "id": "7835b7d998de",
+      "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+      "title": "Pop!_OS bans AI-generated code from much of its codebase",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "System76 banning AI-generated code from most of Pop!_OS/COSMIC is a concrete policy decision by a real engineering org, giving a useful data point on AI-coding trust in production codebases.",
+      "key_facts": [
+        "System76 banned AI-generated code across most of its COSMIC/Pop!_OS codebases",
+        "97 HN points / 150 comments"
+      ]
     }
   ]
 }
