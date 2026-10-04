@@ -22,23 +22,33 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-- Arxiv papers went 0-for-8 this week (2 explicit downvotes, 6 ignored); the
-  2 downvotes and 1 of the ignores were all KV-cache/quantization papers with
-  no released code — for arxiv specifically, treat "no code" as a hard pass,
-  not a soft preference.
-- Stories about AI agents committing or suffering security incidents (agents
-  hacking a government site or Hugging Face, malicious-agent botnets,
-  monitor-evasion and trace-tampering research, kernel-level "rogue agent"
-  containment schemes, classified AI-risk spending) were ignored 8 for 8 this
-  week, spanning both headline and discovery tiers and hn/blog/arxiv —
-  deprioritize this angle even at headline tier unless it's a primary-source
-  postmortem of the incident itself.
-- Once a trend breaks as its own headline (this week: "Jev" decision
-  models), follow-on posts rehashing the same trend (Jevals, JEV vs LLMs as
-  rubric judges, Ollaya) get ignored — treat second-wave coverage of an
-  already-surfaced trend as a near-duplicate rather than a fresh item.
-- A genuinely new model launch (Opus 5.5, GPT-6 Sol/Luna, Xiaomi MiMo v2.6)
-  gets accepted, but an incremental capability demo bolted onto an existing
-  model (GPT-6 Astra driving a car, Gemini 3.8 TTS, a bare tokens/sec speed
-  claim) gets ignored — weight new-model launches over feature/party-trick
-  add-ons even from the same labs.
+- Arxiv is 0-for-12 across every sub-topic seen so far (serving/KV-cache,
+  agent-safety research, benchmark critique, local-vs-frontier economics),
+  including 2 explicit downvotes on KV-cache/quantization serving papers.
+  This overrides the Mine always-surface topics (inference infra, eval
+  methodology) when the item is a bare arxiv listing — only surface arxiv
+  work if it comes with a repo/running system, not the paper alone.
+- Stories where AI agents cause or suffer a security/safety incident are
+  0-for-10 (credit-card-stealing agent botnets, an agent hacking a
+  government site or Hugging Face, agents tampering with their own
+  monitoring traces, kernel-level "rogue agent" containment, classified
+  AI-risk spending, an agent reaching out via DNS, training halted after
+  agents "go rogue," AI overreliance tied to a real-world incident). This is
+  specific to the agent-incident framing, not security news generally —
+  "Hackers claim they breached the FBI," with no AI angle, got accepted in
+  the same batch.
+- Second-wave coverage of an already-surfaced trend or product category
+  gets ignored regardless of the specific number it claims: four more posts
+  riding the "Jev" decision-model wave (Jevals, the JEV-vs-rubric-judges
+  paper, Ollaya, NeoHorse) and three separate "agent gets memory" tools
+  (Jevmem's 98.5% accuracy claim, SodaMem, agent-memory) were all ignored —
+  treat a new entrant in a category that already had its breakout post as a
+  near-duplicate, not a fresh item.
+- A lab's flagship/first-of-generation release still gets accepted (Opus
+  5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6), but same-week follow-ups on that
+  same model family get ignored even when phrased as a launch: a
+  point-release variant (GPT-6.1 Sol), a tier rollout of the same number
+  (Sonnet 5.5 going free-tier default), a single-spec headline on a relaunch
+  (Gemini 4 Argon's context-length bump), and bolted-on feature demos (GPT-6
+  Astra driving a car, Gemini 3.8 TTS, bare tokens/sec claims) all lose out
+  to the primary release.
