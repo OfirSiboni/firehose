@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "a650c74fe354",
@@ -8,7 +8,8 @@
       "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Aleph Alpha released Kolibri with openly published weights, positioning it as a sovereign alternative to US and Chinese models. The announcement drew 304 comments on Hacker News, the most of any story in today's pool. Anyone needing an EU-built open-weight model can now download and deploy Kolibri's weights directly. (2 minute read)"
+      "summary": "Aleph Alpha released Kolibri with openly published weights, positioning it as a sovereign alternative to US and Chinese models. The announcement drew 304 comments on Hacker News, the most of any story in today's pool. Anyone needing an EU-built open-weight model can now download and deploy Kolibri's weights directly. (2 minute read)",
+      "message_id": 116
     },
     {
       "id": "f52e74133e2d",
@@ -16,7 +17,8 @@
       "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
       "source": "hn",
       "tier": "headline",
-      "summary": "A new system beat the world's best Stratego player, a game where each side's pieces stay hidden, unlike chess or Go. The result appears in a Nature paper and an arXiv preprint, and the team says they reached it on a limited compute budget. It's the first result showing imperfect-information games don't require large-scale compute to crack. (4 minute read)"
+      "summary": "A new system beat the world's best Stratego player, a game where each side's pieces stay hidden, unlike chess or Go. The result appears in a Nature paper and an arXiv preprint, and the team says they reached it on a limited compute budget. It's the first result showing imperfect-information games don't require large-scale compute to crack. (4 minute read)",
+      "message_id": 117
     },
     {
       "id": "14103ec99730",
@@ -24,7 +26,8 @@
       "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
       "source": "hn",
       "tier": "headline",
-      "summary": "OpenAI's safety-team lead resigned this week and said publicly that the company's culture is broken. The post reached 204 points on Hacker News, among the most-discussed stories in today's pool. It's a named, on-the-record account of internal dissent at a frontier lab, not an anonymous leak. (2 minute read)"
+      "summary": "OpenAI's safety-team lead resigned this week and said publicly that the company's culture is broken. The post reached 204 points on Hacker News, among the most-discussed stories in today's pool. It's a named, on-the-record account of internal dissent at a frontier lab, not an anonymous leak. (2 minute read)",
+      "message_id": 118
     },
     {
       "id": "124a9c7ca6b2",
@@ -32,7 +35,8 @@
       "url": "https://github.com/FlashML-org/FreeVideo",
       "source": "github",
       "tier": "discovery",
-      "summary": "FreeVideo packages MiniMax H3's video model to run in as little as 8GB of VRAM and 16GB of RAM, adapting its acceleration path to whatever hardware it finds. The code is Apache-2.0, though MiniMax's weights carry a separate, restricted community license. It ships as a ComfyUI plugin with a one-click Windows installer, so one consumer GPU is enough to generate video locally. (2 minute read)"
+      "summary": "FreeVideo packages MiniMax H3's video model to run in as little as 8GB of VRAM and 16GB of RAM, adapting its acceleration path to whatever hardware it finds. The code is Apache-2.0, though MiniMax's weights carry a separate, restricted community license. It ships as a ComfyUI plugin with a one-click Windows installer, so one consumer GPU is enough to generate video locally. (2 minute read)",
+      "message_id": 119
     },
     {
       "id": "3ba89625595d",
@@ -40,7 +44,8 @@
       "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Simon Willison argues pay-by-usage AI and agent products need a default hard spending cap, not an opt-in one, since agents can rack up API costs with nobody watching. The post reached 224 points on Hacker News. Anyone shipping an agent against a metered API now has a concrete feature request to point to, instead of a surprise bill. (2 minute read)"
+      "summary": "Simon Willison argues pay-by-usage AI and agent products need a default hard spending cap, not an opt-in one, since agents can rack up API costs with nobody watching. The post reached 224 points on Hacker News. Anyone shipping an agent against a metered API now has a concrete feature request to point to, instead of a surprise bill. (2 minute read)",
+      "message_id": 120
     },
     {
       "id": "c3530cb12d13",
@@ -48,7 +53,8 @@
       "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Linux kernel maintainer Greg Kroah-Hartman lays out how security practice needs to change now that LLMs are writing and reviewing code. The talk reached 183 points and 49 comments on Hacker News. It's a practitioner's view from someone who maintains production kernel code, not a vendor's pitch. (1 minute read)"
+      "summary": "Linux kernel maintainer Greg Kroah-Hartman lays out how security practice needs to change now that LLMs are writing and reviewing code. The talk reached 183 points and 49 comments on Hacker News. It's a practitioner's view from someone who maintains production kernel code, not a vendor's pitch. (1 minute read)",
+      "message_id": 121
     },
     {
       "id": "fc994d69ad09",
@@ -56,7 +62,8 @@
       "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Anthropic published its own guide to getting more out of Opus 5.5 inside Claude and Claude Code, covering the usage patterns it recommends. The post drew 126 comments on Hacker News, well beyond what its 176 points alone would suggest. Anyone already running Opus 5.5 in Claude Code now has official guidance instead of folklore. (2 minute read)"
+      "summary": "Anthropic published its own guide to getting more out of Opus 5.5 inside Claude and Claude Code, covering the usage patterns it recommends. The post drew 126 comments on Hacker News, well beyond what its 176 points alone would suggest. Anyone already running Opus 5.5 in Claude Code now has official guidance instead of folklore. (2 minute read)",
+      "message_id": 122
     },
     {
       "id": "7835b7d998de",
@@ -64,7 +71,8 @@
       "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "System76 has banned AI-generated code from most of its COSMIC and Pop!_OS codebases. The policy drew 150 comments on Hacker News, more discussion than almost any other story in today's pool. It's a concrete data point on how one production open-source team weighs AI-written code against its own maintenance standards. (1 minute read)"
+      "summary": "System76 has banned AI-generated code from most of its COSMIC and Pop!_OS codebases. The policy drew 150 comments on Hacker News, more discussion than almost any other story in today's pool. It's a concrete data point on how one production open-source team weighs AI-written code against its own maintenance standards. (1 minute read)",
+      "message_id": 123
     }
   ]
 }
