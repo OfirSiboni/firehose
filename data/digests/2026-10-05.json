@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "bca476fd3463",
@@ -8,7 +8,8 @@
       "url": "https://github.com/Niko1221/Strata",
       "source": "hn",
       "tier": "headline",
-      "summary": "Strata offloads Qwen3.8-Flash-Next's 24,576 experts across GPU, RAM, CPU, and SSD, activating only 10 per token, for 53-94 tok/s on a 12GB RTX 5070. Speculative decoding adds a 1.6-1.8x speedup, and the Coder variant hits 91% SWE-bench at 32GB. A 125B model now runs on one consumer GPU. (3 minute read)"
+      "summary": "Strata offloads Qwen3.8-Flash-Next's 24,576 experts across GPU, RAM, CPU, and SSD, activating only 10 per token, for 53-94 tok/s on a 12GB RTX 5070. Speculative decoding adds a 1.6-1.8x speedup, and the Coder variant hits 91% SWE-bench at 32GB. A 125B model now runs on one consumer GPU. (3 minute read)",
+      "message_id": 125
     },
     {
       "id": "8b1e323a2293",
@@ -16,7 +17,8 @@
       "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Yann LeCun says he has zero concerns about AI wiping out humanity, including recent 'rogue agent' incidents, a stance Dario Amodei has called deluded. (2 minute read)"
+      "summary": "Yann LeCun says he has zero concerns about AI wiping out humanity, including recent 'rogue agent' incidents, a stance Dario Amodei has called deluded. (2 minute read)",
+      "message_id": 126
     },
     {
       "id": "239feae36314",
@@ -24,7 +26,8 @@
       "url": "https://github.com/milind-soni/OpenMausBot",
       "source": "github",
       "tier": "discovery",
-      "summary": "OpenMausBot runs Claude, Codex, and Grok as separate agents behind one local harness, normalizing their CLIs into a single event stream on 127.0.0.1:8799. It stores all data in ~/.openmausbot instead of the cloud and has drawn 4,037 GitHub stars. Anyone can now swap or mix coding-agent backends from one chat app. (3 minute read)"
+      "summary": "OpenMausBot runs Claude, Codex, and Grok as separate agents behind one local harness, normalizing their CLIs into a single event stream on 127.0.0.1:8799. It stores all data in ~/.openmausbot instead of the cloud and has drawn 4,037 GitHub stars. Anyone can now swap or mix coding-agent backends from one chat app. (3 minute read)",
+      "message_id": 127
     },
     {
       "id": "f16653790b52",
@@ -32,7 +35,8 @@
       "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
       "source": "hn",
       "tier": "headline",
-      "summary": "Anthropic met with religious scholars, including Vatican-linked figures, to discuss whether AI systems like Claude could be conscious. (2 minute read)"
+      "summary": "Anthropic met with religious scholars, including Vatican-linked figures, to discuss whether AI systems like Claude could be conscious. (2 minute read)",
+      "message_id": 128
     },
     {
       "id": "1a147a3f1e08",
@@ -40,7 +44,8 @@
       "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Anthropic is now asking Claude users to voluntarily share their voice conversations to help train future models. (1 minute read)"
+      "summary": "Anthropic is now asking Claude users to voluntarily share their voice conversations to help train future models. (1 minute read)",
+      "message_id": 129
     },
     {
       "id": "567a67be4150",
@@ -48,7 +53,8 @@
       "url": "https://github.com/allenv0/SCM",
       "source": "hn",
       "tier": "discovery",
-      "summary": "SCM indexes every photo and video frame on a Mac locally, using CLIP or SigLIP embeddings plus ffmpeg shot detection to land on the exact moment in a clip. Tesseract OCR and Whisper add text and speech search, and an optional local llama.cpp chat queries the results with citations. Nothing leaves the machine. (3 minute read)"
+      "summary": "SCM indexes every photo and video frame on a Mac locally, using CLIP or SigLIP embeddings plus ffmpeg shot detection to land on the exact moment in a clip. Tesseract OCR and Whisper add text and speech search, and an optional local llama.cpp chat queries the results with citations. Nothing leaves the machine. (3 minute read)",
+      "message_id": 130
     },
     {
       "id": "0365ec89c7e5",
@@ -56,7 +62,8 @@
       "url": "https://github.com/yetone/magpie",
       "source": "github",
       "tier": "discovery",
-      "summary": "Magpie runs a local gateway on 127.0.0.1:3425 that speaks the OpenAI and Anthropic APIs, forwarding calls to whichever vendor serves the chosen model. It edits 50+ agents' config files in place and has reached 4,861 GitHub stars. One menu bar now switches models across every coding agent. (3 minute read)"
+      "summary": "Magpie runs a local gateway on 127.0.0.1:3425 that speaks the OpenAI and Anthropic APIs, forwarding calls to whichever vendor serves the chosen model. It edits 50+ agents' config files in place and has reached 4,861 GitHub stars. One menu bar now switches models across every coding agent. (3 minute read)",
+      "message_id": 131
     },
     {
       "id": "6e0290b8b29f",
@@ -64,7 +71,8 @@
       "url": "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
       "source": "blog",
       "tier": "headline",
-      "summary": "President Trump named former SEC chair Jay Clayton to lead a new Super Intelligence Force reporting directly to him and Chief of Staff Susie Wiles. (2 minute read)"
+      "summary": "President Trump named former SEC chair Jay Clayton to lead a new Super Intelligence Force reporting directly to him and Chief of Staff Susie Wiles. (2 minute read)",
+      "message_id": 132
     }
   ]
 }
