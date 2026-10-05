@@ -1,1111 +1,6 @@
 {
   "candidates": [
     {
-      "id": "0a4cfd02f572",
-      "url": "https://ziglang.org/download/0.17.0/release-notes.html",
-      "title": "Zig v0.17.0",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 258,
-        "comments": 193,
-        "hn_url": "https://news.ycombinator.com/item?id=49938521",
-        "kind": "article",
-        "published": "2026-10-02T20:56:36Z"
-      }
-    },
-    {
-      "id": "e35138269f8b",
-      "url": "https://github.com/anteloc/ldraw-nova",
-      "title": "Show HN: Made an open-source Lego AI generator",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "Hi there :-) New on HN, first time posting. Past year, around December, I started experimenting with making ChatGPT and Claude generate source code in LDraw language. This LDraw is literally an \"assembly\" language, a low-level programming language that describes how to assemble LEGO pieces together into models, one placement instruction at a time. When executed by specific tools, like e.g. LDView, LeoCAD, Studio... these instructions become LEGO CAD models, that can be interacted with, modified, etc. Or, in other words: one LDraw source file in .mpd or .ldr format is equivalent to one LEGO CAD model. So, the idea I had was: if I manage for maybe ChatGPT or Claude to generate high-quality LDraw source files... then, they would actually be generating high-quality LEGO CAD models, right? Then, after months of iterations and trying one thing after the other... it worked!!! Long story short: using GPT-6 Astra and Opus 5.5, I've managed to create a python toolset, instructions, and docs for agents in general. Now, these can be used by them to generate LDraw models. I've packed it all as a dockerized web app for others to try and experiment, with several providers (and agents) to choose from: OpenAI, Claude and OpenRouter. Here's a bunch of exmaples: https://anteloc.github.io/index-samples.html . If you are curious about the internals of an .mpd model, the \"what was the agent picturing on its mind\", open the .mpd file that got your attention on a text editor, and read the first line",
-      "meta": {
-        "points": 134,
-        "comments": 49,
-        "hn_url": "https://news.ycombinator.com/item?id=49937916",
-        "kind": "article",
-        "published": "2026-10-02T20:00:15Z"
-      }
-    },
-    {
-      "id": "4b5d6955afd1",
-      "url": "https://discuss.grapheneos.org/d/42511-grapheneos-has-fixed-the-massive-android-17-qpr1-kernel-performance-regression",
-      "title": "GrapheneOS has fixed the Android 17 QPR1 kernel performance regression",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 131,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=49937718",
-        "kind": "article",
-        "published": "2026-10-02T19:45:06Z"
-      }
-    },
-    {
-      "id": "14db68452116",
-      "url": "https://developer.apple.com/news/?id=p6zjojqw",
-      "title": "Updates to Full Disk Access in macOS",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 274,
-        "comments": 191,
-        "hn_url": "https://news.ycombinator.com/item?id=49937631",
-        "kind": "article",
-        "published": "2026-10-02T19:37:01Z"
-      }
-    },
-    {
-      "id": "001fe0e44261",
-      "url": "https://gadgets.muse.ai",
-      "title": "Muse Gadgets",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 232,
-        "comments": 104,
-        "hn_url": "https://news.ycombinator.com/item?id=49937504",
-        "kind": "article",
-        "published": "2026-10-02T19:26:54Z"
-      }
-    },
-    {
-      "id": "f645ab769782",
-      "url": "https://developer.apple.com/pass-designer/",
-      "title": "Apple Pass Designer",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 527,
-        "comments": 314,
-        "hn_url": "https://news.ycombinator.com/item?id=49937276",
-        "kind": "article",
-        "published": "2026-10-02T19:06:56Z"
-      }
-    },
-    {
-      "id": "9016607975b1",
-      "url": "https://www.nber.org/papers/w35655",
-      "title": "Crypto Capture of Foreign Aid",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 95,
-        "comments": 35,
-        "hn_url": "https://news.ycombinator.com/item?id=49936725",
-        "kind": "article",
-        "published": "2026-10-02T18:14:29Z"
-      }
-    },
-    {
-      "id": "62eb83a8fada",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5977815/trump-icc-sanctions-kimberly-prost",
-      "title": "ICC judge on what U.S. sanctions mean for her and global courts",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 212,
-        "comments": 157,
-        "hn_url": "https://news.ycombinator.com/item?id=49935867",
-        "kind": "article",
-        "published": "2026-10-02T17:02:31Z"
-      }
-    },
-    {
-      "id": "adfc67aeaa7a",
-      "url": "https://aresluna.org/dutch-computer-museums/",
-      "title": "Dutch computer museums (2022)",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 108,
-        "comments": 26,
-        "hn_url": "https://news.ycombinator.com/item?id=49935751",
-        "kind": "article",
-        "published": "2026-10-02T16:52:39Z"
-      }
-    },
-    {
-      "id": "dc5afc3f9054",
-      "url": "https://www.biometricupdate.com/202610/america-gov-launches-with-privacy-pledge-as-login-gov-code-raises-tracking-questions",
-      "title": "A 20-year-long permanent cookie: America.gov and tracking",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 45,
-        "comments": 26,
-        "hn_url": "https://news.ycombinator.com/item?id=49934631",
-        "kind": "article",
-        "published": "2026-10-02T15:30:24Z"
-      }
-    },
-    {
-      "id": "78e3236485db",
-      "url": "https://www.theregister.com/on-prem/2026/10/02/power-approval-set-to-delay-oracles-wisconsin-ai-datacenter/5300832",
-      "title": "Power approval set to delay Oracle's Wisconsin AI datacenter",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 48,
-        "comments": 23,
-        "hn_url": "https://news.ycombinator.com/item?id=49934569",
-        "kind": "article",
-        "published": "2026-10-02T15:24:54Z"
-      }
-    },
-    {
-      "id": "3f5e25bdf9d1",
-      "url": "https://maximumeffort.substack.com/p/jev-is-poorly-calibrated",
-      "title": "How accurately calibrated is Jev?",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 52,
-        "comments": 20,
-        "hn_url": "https://news.ycombinator.com/item?id=49934399",
-        "kind": "article",
-        "published": "2026-10-02T15:12:41Z"
-      }
-    },
-    {
-      "id": "f52e74133e2d",
-      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-      "title": "With most information hidden, the game Stratego had stumped AI until now",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "https://www.nature.com/articles/s41586-026-11036-y https://arxiv.org/abs/2511.07312",
-      "meta": {
-        "points": 243,
-        "comments": 116,
-        "hn_url": "https://news.ycombinator.com/item?id=49933740",
-        "kind": "article",
-        "published": "2026-10-02T14:11:24Z"
-      }
-    },
-    {
-      "id": "d35a917819a6",
-      "url": "https://bigthink.com/books/a-fabulous-debt/",
-      "title": "Venice’s failed war against Constantinople led to the first bond market",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 114,
-        "comments": 34,
-        "hn_url": "https://news.ycombinator.com/item?id=49933230",
-        "kind": "article",
-        "published": "2026-10-02T13:17:47Z"
-      }
-    },
-    {
-      "id": "baec036f4964",
-      "url": "https://www.lesswrong.com/posts/b5cSYh4emQb2qrGmK/on-social-reality-in-china",
-      "title": "On social reality in China",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 183,
-        "comments": 181,
-        "hn_url": "https://news.ycombinator.com/item?id=49932402",
-        "kind": "article",
-        "published": "2026-10-02T11:42:26Z"
-      }
-    },
-    {
-      "id": "555a66359622",
-      "url": "https://byzantine-systems.github.io/blogging-with-gleam-org-mode-and-pandoc/",
-      "title": "Blogging with Gleam, Org-Mode and Pandoc",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 77,
-        "comments": 15,
-        "hn_url": "https://news.ycombinator.com/item?id=49932340",
-        "kind": "article",
-        "published": "2026-10-02T11:34:28Z"
-      }
-    },
-    {
-      "id": "ea83de7cef7f",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
-      "title": "Our Project Suncatcher prototype satellite is in orbit",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 63,
-        "comments": 64,
-        "hn_url": "https://news.ycombinator.com/item?id=49932191",
-        "kind": "article",
-        "published": "2026-10-02T11:13:02Z"
-      }
-    },
-    {
-      "id": "1ba30ffb2175",
-      "url": "https://bsky.app/profile/theplanetaryguy.com/post/3mwucf5ert22f",
-      "title": "A 12-year sequence of telescope images of a star and four planets orbiting",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 270,
-        "comments": 54,
-        "hn_url": "https://news.ycombinator.com/item?id=49932147",
-        "kind": "article",
-        "published": "2026-10-02T11:07:17Z"
-      }
-    },
-    {
-      "id": "c6dad17ec35d",
-      "url": "https://www.figure.ai/news/f-02-decommission",
-      "title": "F.02 Decommission",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "https://www.youtube.com/watch?v=pfAh5oQDPDM",
-      "meta": {
-        "points": 81,
-        "comments": 32,
-        "hn_url": "https://news.ycombinator.com/item?id=49932079",
-        "kind": "article",
-        "published": "2026-10-02T10:57:27Z"
-      }
-    },
-    {
-      "id": "c3530cb12d13",
-      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
-      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 183,
-        "comments": 49,
-        "hn_url": "https://news.ycombinator.com/item?id=49929391",
-        "kind": "article",
-        "published": "2026-10-02T02:51:27Z"
-      }
-    },
-    {
-      "id": "cc4f0a1e1300",
-      "url": "https://www.science.org/content/article/nazi-germany-had-no-hope-making-atomic-bomb-uranium-cubes-reveal",
-      "title": "Nazi Germany had no hope of making an atomic bomb, uranium cubes reveal",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 118,
-        "comments": 86,
-        "hn_url": "https://news.ycombinator.com/item?id=49928963",
-        "kind": "article",
-        "published": "2026-10-02T01:29:09Z"
-      }
-    },
-    {
-      "id": "4162ea366537",
-      "url": "https://github.com/kitao/pyxel",
-      "title": "Show HN: Pyxel – A Python retro game engine with built-in art and sound editors",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "Hi HN, I'm the creator of Pyxel, a free, MIT-licensed retro game engine for Python. I've been developing it since 2018, and it recently passed 18,000 stars on GitHub. Pyxel includes pixel art, tilemap, sound, and music editors, so you can create a game's visuals and audio as well as write its code in Python. The engine itself is implemented in Rust. Games run on Windows, macOS, Linux, and the web, as well as supported Linux-based retro handhelds. You can share a URL to launch a Pyxel game hosted on GitHub directly in a browser. You can also create games entirely in your browser with Pyxel Code Maker, or write chiptunes in Pyxel MML Studio. See what people have made with Pyxel: https://kitao.github.io/pyxel-user-examples/ Try Code Maker: https://kitao.github.io/pyxel/web/code-maker/ I'm happy to answer questions about the engine and its implementation.",
-      "meta": {
-        "points": 42,
-        "comments": 4,
-        "hn_url": "https://news.ycombinator.com/item?id=49928215",
-        "kind": "article",
-        "published": "2026-10-01T23:26:35Z"
-      }
-    },
-    {
-      "id": "75163e0d5757",
-      "url": "https://placeholders.itch.io/tiny-brutalism",
-      "title": "Tiny Brutalism",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 125,
-        "comments": 27,
-        "hn_url": "https://news.ycombinator.com/item?id=49928192",
-        "kind": "article",
-        "published": "2026-10-01T23:23:31Z"
-      }
-    },
-    {
-      "id": "cd5af57c3c77",
-      "url": "https://ideas.imbue.com/p/personal-computing-20",
-      "title": "Personal Computing 2.0: It's time for a personal computing revolution",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 34,
-        "comments": 13,
-        "hn_url": "https://news.ycombinator.com/item?id=49928148",
-        "kind": "article",
-        "published": "2026-10-01T23:15:06Z"
-      }
-    },
-    {
-      "id": "4d7c84c7dff4",
-      "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
-      "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
-      "source": "hn",
-      "first_seen": "2026-10-02T21:30:48Z",
-      "text": "",
-      "meta": {
-        "points": 386,
-        "comments": 166,
-        "hn_url": "https://news.ycombinator.com/item?id=49927754",
-        "kind": "article",
-        "published": "2026-10-01T22:23:07Z"
-      }
-    },
-    {
-      "id": "a97398f76ee5",
-      "url": "https://openai.com/index/chatham-financial",
-      "title": "Chatham scales its capital markets expertise with OpenAI",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:51Z",
-      "text": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-10-02T00:00:00Z"
-      }
-    },
-    {
-      "id": "ce515764f1e9",
-      "url": "https://www.bleepingcomputer.com/news/security/frontline-education-data-breach-impacts-school-district-employees/",
-      "title": "Frontline Education breach exposes school district employee data",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:53Z",
-      "text": "Frontline Education is notifying school districts of a data breach after attackers exploited a vulnerability in third-party software to gain unauthorized access to its systems and steal employee information, including Social Security numbers. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-10-02T19:01:40Z"
-      }
-    },
-    {
-      "id": "34ebd41afe18",
-      "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-      "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:53Z",
-      "text": "The China-linked ransomware group Warlock targeted a water utility, a telecom provider, a regional government body, and a university by exploiting SharePoint vulnerabilities to gain initial access. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-10-02T18:33:01Z"
-      }
-    },
-    {
-      "id": "7427ed9782a4",
-      "url": "https://cointelegraph.com/news/mica-strengthened-retail-trust-regulated-crypto-exchanges-bitpanda-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "European crypto users have ‘more faith’ in regulated firms under MiCA: Bitpanda co-CEO",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:53Z",
-      "text": "Speaking on Cointelegraph’s Chain Reaction, Christian Trummer said MiCA has increased trust in regulated platforms and called for stricter enforcement against noncompliant firms.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-02T20:40:47Z"
-      }
-    },
-    {
-      "id": "15889f93a52c",
-      "url": "https://cointelegraph.com/news/anchorage-digital-cuts-workforce-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "$4.2B crypto bank Anchorage Digital cuts 17% of workforce: Report",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:53Z",
-      "text": "The reported cuts come as Anchorage expands its institutional footprint, including stablecoin issuance and a $100 million investment from Tether.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-02T18:41:17Z"
-      }
-    },
-    {
-      "id": "d1e43dbedcff",
-      "url": "https://cointelegraph.com/news/blast-to-wind-down-ethereum-l2-after-costs-outpace-revenue?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "Blast to wind down Ethereum L2 after costs outpace revenue",
-      "source": "blog",
-      "first_seen": "2026-10-02T21:30:53Z",
-      "text": "Once among Ethereum’s largest layer-2 networks by total value locked, Blast is urging users to move their assets to mainnet ahead of the shutdown.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-02T18:24:05Z"
-      }
-    },
-    {
-      "id": "fe455fbe0f4a",
-      "url": "https://gizmodo.com/hair-loss-was-just-the-start-ozempic-users-are-also-reporting-nail-trouble-2000820821",
-      "title": "Hair Loss Was Just the Start. Ozempic Users Are Also Reporting Nail Trouble",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 66,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=49940505",
-        "kind": "article",
-        "published": "2026-10-03T01:15:15Z"
-      }
-    },
-    {
-      "id": "1cd9936fc185",
-      "url": "https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer",
-      "title": "Things that apparently cause cancer",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 203,
-        "comments": 73,
-        "hn_url": "https://news.ycombinator.com/item?id=49940219",
-        "kind": "article",
-        "published": "2026-10-03T00:23:11Z"
-      }
-    },
-    {
-      "id": "dc954b71d038",
-      "url": "https://tanin.nanakorn.com/input-type-password-maxlength-20-is-considered-harmful-and-why-i-couldnt-login-into-vanguard/",
-      "title": "<input type=\"password\" maxlength=\"20\"> prevents me from logging into Vanguard",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 63,
-        "comments": 96,
-        "hn_url": "https://news.ycombinator.com/item?id=49939773",
-        "kind": "article",
-        "published": "2026-10-02T23:18:32Z"
-      }
-    },
-    {
-      "id": "dcf4850ea434",
-      "url": "https://www.404media.co/federal-judge-rules-a-flock-search-was-indiscriminate-mass-surveillance-and-unconstitutional/",
-      "title": "Federal Judge Rules a Flock Search Was Unconstitutional",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 50,
-        "comments": 7,
-        "hn_url": "https://news.ycombinator.com/item?id=49938815",
-        "kind": "article",
-        "published": "2026-10-02T21:28:59Z"
-      }
-    },
-    {
-      "id": "8ae48c8dd8c5",
-      "url": "https://blog.sshh.io/p/the-harness-is-the-company",
-      "title": "Every SaaS business will become a harness around a model",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 153,
-        "comments": 101,
-        "hn_url": "https://news.ycombinator.com/item?id=49938616",
-        "kind": "article",
-        "published": "2026-10-02T21:06:56Z"
-      }
-    },
-    {
-      "id": "84da9642f4b9",
-      "url": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
-      "title": "ICE Has Been Dumping Protester Photos into a Palantir Database",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 139,
-        "comments": 34,
-        "hn_url": "https://news.ycombinator.com/item?id=49938477",
-        "kind": "article",
-        "published": "2026-10-02T20:52:15Z"
-      }
-    },
-    {
-      "id": "a7341a09d045",
-      "url": "https://widdershins.verja.net/everyones-packing-up/",
-      "title": "Everyone's Packing Up",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 121,
-        "comments": 111,
-        "hn_url": "https://news.ycombinator.com/item?id=49938047",
-        "kind": "article",
-        "published": "2026-10-02T20:13:04Z"
-      }
-    },
-    {
-      "id": "66c39ea102cd",
-      "url": "https://www.greenend.org.uk/rjk/misc/nipple.html",
-      "title": "\"The only intuitive interface is the nipple\" (2012)",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 35,
-        "comments": 38,
-        "hn_url": "https://news.ycombinator.com/item?id=49937387",
-        "kind": "article",
-        "published": "2026-10-02T19:18:12Z"
-      }
-    },
-    {
-      "id": "74b03c6ef015",
-      "url": "https://gizmodo.com/colorectal-cancer-is-rising-among-kids-and-teens-and-its-not-the-same-disease-adults-get-2000818128",
-      "title": "Colorectal Cancer Is Rising Among the Young, Even Kids and Teens",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 40,
-        "comments": 28,
-        "hn_url": "https://news.ycombinator.com/item?id=49936909",
-        "kind": "article",
-        "published": "2026-10-02T18:31:12Z"
-      }
-    },
-    {
-      "id": "e37457e9ac00",
-      "url": "https://www.youtube.com/watch?v=xc2FTBGRSJo",
-      "title": "What if we stopped using GPUs? [video]",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 47,
-        "comments": 18,
-        "hn_url": "https://news.ycombinator.com/item?id=49936671",
-        "kind": "article",
-        "published": "2026-10-02T18:09:38Z"
-      }
-    },
-    {
-      "id": "8138d152a7b8",
-      "url": "https://en.wikipedia.org/wiki/STS-51-F",
-      "title": "STS-51-F Abort-to-Orbit (1985)",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "Today I learned that one Space Shuttle flight (in 1985) successfully used the Abort-to-Orbit recovery plan (changing its flight path in real time in response to an engine failure during ascent). The overall mission continued, accomplished its other objectives, and was considered a success despite the engine failure. Some 2015 coverage of this mission: https://www.americaspace.com/2015/07/25/going-to-spain-30-ye... https://www.americaspace.com/2015/07/26/cola-and-solar-wars-...",
-      "meta": {
-        "points": 39,
-        "comments": 11,
-        "hn_url": "https://news.ycombinator.com/item?id=49935797",
-        "kind": "article",
-        "published": "2026-10-02T16:56:47Z"
-      }
-    },
-    {
-      "id": "47992b567ab4",
-      "url": "https://yuka.dev/blog-2026-10-02-linux-m4.html",
-      "title": "The Forgetful CPU (Linux on M4)",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 245,
-        "comments": 165,
-        "hn_url": "https://news.ycombinator.com/item?id=49933869",
-        "kind": "article",
-        "published": "2026-10-02T14:22:12Z"
-      }
-    },
-    {
-      "id": "40252d9527e9",
-      "url": "https://onlineonly.christies.com/s/fine-printed-books-manuscripts-science/carrier-pigeon-internet-protocol-150/325216",
-      "title": "The first packet sent via RFC1149 avian carrier is up for auction at Christie's",
-      "source": "hn",
-      "first_seen": "2026-10-03T02:36:30Z",
-      "text": "",
-      "meta": {
-        "points": 68,
-        "comments": 14,
-        "hn_url": "https://news.ycombinator.com/item?id=49932911",
-        "kind": "article",
-        "published": "2026-10-02T12:46:50Z"
-      }
-    },
-    {
-      "id": "803705924fa3",
-      "url": "https://github.com/nanaism/yomiyasu",
-      "title": "nanaism/yomiyasu",
-      "source": "github",
-      "first_seen": "2026-10-03T02:36:31Z",
-      "text": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
-      "meta": {
-        "stars": 1326,
-        "topics": [
-          "agent-skills",
-          "ai-writing",
-          "antigravity",
-          "claude-code",
-          "codex",
-          "cursor",
-          "gemini",
-          "japanese",
-          "linter",
-          "llm",
-          "nlp",
-          "writing",
-          "writing-assistant",
-          "writing-tool"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-30T11:49:32Z",
-        "pushed_at": "2026-10-03T16:28:52Z",
-        "published": "2026-09-30T11:49:32Z"
-      }
-    },
-    {
-      "id": "d2d497e5eee4",
-      "url": "https://openai.com/index/proaction",
-      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
-      "source": "blog",
-      "first_seen": "2026-10-03T02:36:34Z",
-      "text": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-09-25T19:00:00Z"
-      }
-    },
-    {
-      "id": "44842586bfdd",
-      "url": "https://simonwillison.net/2026/Sep/25/john-gruber/",
-      "title": "Quoting John Gruber",
-      "source": "blog",
-      "first_seen": "2026-10-03T02:36:35Z",
-      "text": "Muse is getting a lot of attention — including mine — because it’s both groundbreaking technically (each user gets their own entire persistent Linux VM running in Meta’s cloud) and because it’s packaged in an easy-to-install easy-to-use way. It’s literally presented as a cute mascot . It’s the first consumer-accessible agentic AI system, and Meta has truly done an amazing job with that. But it’s a genuinely open question whether consumers have any understanding what this means. If you buy a power saw that can cut your fingers off, you are almost certainly aware that you are buying a power saw that can sever your fingers. [...] I don’t think people realize how powerful — and thus dangerous — Muse is, especially if it’s running on your Mac. — John Gruber , Muse Looks Cute, but Looks are Deceiving Tags: meta , ai , llms , general-agents , generative-ai , john-gruber , muse-agent , muse",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-09-25T17:22:01Z"
-      }
-    },
-    {
-      "id": "a58162400433",
-      "url": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
-      "title": "Northern Gannet, Great Blue Heron, California Brown Pelican",
-      "source": "blog",
-      "first_seen": "2026-10-03T02:36:35Z",
-      "text": "Northern Gannet, Great Blue Heron, California Brown Pelican, in Monterey Bay National Marine Sanctuary, CA, US, CA New 200-800mm Canon EF lens got me my best photo of Morris yet. They really like hanging out under that sign in the harbor! Tags: photography , wildlife",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-09-25T02:07:04Z"
-      }
-    },
-    {
-      "id": "603669123c5d",
-      "url": "https://simonwillison.net/2026/Sep/24/harder/",
-      "title": "Note on 24th September 2026",
-      "source": "blog",
-      "first_seen": "2026-10-03T02:36:35Z",
-      "text": "The more time I spend working with coding agents, the more convinced I am that they make software engineering even harder. We can do amazing things with them, but unlocking their full potential requires extraordinary discipline and knowledge. Tags: coding-agents , ai , llms",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-09-24T23:31:08Z"
-      }
-    },
-    {
-      "id": "bb63587cc0f2",
-      "url": "https://blog.kagi.com/update-orion-linux-windows",
-      "title": "An Update on Orion for Linux and Windows",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 179,
-        "comments": 106,
-        "hn_url": "https://news.ycombinator.com/item?id=49941447",
-        "kind": "article",
-        "published": "2026-10-03T04:53:57Z"
-      }
-    },
-    {
-      "id": "9c6c803465db",
-      "url": "https://www.extrabigassintelligence.com/",
-      "title": "Extra Big Ass Intelligence",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 484,
-        "comments": 121,
-        "hn_url": "https://news.ycombinator.com/item?id=49941114",
-        "kind": "article",
-        "published": "2026-10-03T03:19:10Z"
-      }
-    },
-    {
-      "id": "5e1d1c7f4599",
-      "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
-      "title": "Cloudflare OHTTP gateway",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 188,
-        "comments": 90,
-        "hn_url": "https://news.ycombinator.com/item?id=49941091",
-        "kind": "article",
-        "published": "2026-10-03T03:15:05Z"
-      }
-    },
-    {
-      "id": "345c5523d612",
-      "url": "https://www.ntsb.gov/investigations/Documents/DCA26MA352%20Prelim.pdf",
-      "title": "NTSB Preliminary Report: Prime Air 767 Runway Overrun [pdf]",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 47,
-        "comments": 27,
-        "hn_url": "https://news.ycombinator.com/item?id=49940467",
-        "kind": "article",
-        "published": "2026-10-03T01:09:01Z"
-      }
-    },
-    {
-      "id": "2646110ce8e7",
-      "url": "https://www.newgrounds.com/",
-      "title": "Newgrounds.com – A community of games, music, and art",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 432,
-        "comments": 128,
-        "hn_url": "https://news.ycombinator.com/item?id=49940394",
-        "kind": "article",
-        "published": "2026-10-03T00:55:25Z"
-      }
-    },
-    {
-      "id": "a2eee90cedd1",
-      "url": "https://www.theregister.com/systems/2026/10/02/shut-up-and-take-our-money-amazon-plows-1b-into-quashing-datacenter-dissent/5300914",
-      "title": "Shut up and take our money: Amazon plows $1B into quashing datacenter dissent",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 51,
-        "comments": 5,
-        "hn_url": "https://news.ycombinator.com/item?id=49939788",
-        "kind": "article",
-        "published": "2026-10-02T23:20:56Z"
-      }
-    },
-    {
-      "id": "9de879129dba",
-      "url": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
-      "title": "Make Tmux the OS",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 160,
-        "comments": 101,
-        "hn_url": "https://news.ycombinator.com/item?id=49937540",
-        "kind": "article",
-        "published": "2026-10-02T19:29:07Z"
-      }
-    },
-    {
-      "id": "3a9f8bbc990c",
-      "url": "https://www.behindthecode.ca/partner-n64pc-dev-kit/",
-      "title": "The Nintendo 64 Partner-N64 Development Kit",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "https://archive.is/WCnLA",
-      "meta": {
-        "points": 65,
-        "comments": 14,
-        "hn_url": "https://news.ycombinator.com/item?id=49937146",
-        "kind": "article",
-        "published": "2026-10-02T18:53:34Z"
-      }
-    },
-    {
-      "id": "4308a974ab53",
-      "url": "https://therun.gg/blog/leaderboards-speedruncom",
-      "title": "Leaderboards and speedrun.com's new terms of service",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 33,
-        "comments": 11,
-        "hn_url": "https://news.ycombinator.com/item?id=49936641",
-        "kind": "article",
-        "published": "2026-10-02T18:07:05Z"
-      }
-    },
-    {
-      "id": "25afa2848dfe",
-      "url": "https://www.qubes-os.org/news/2026/10/02/qubes-os-4-3-2-has-been-released/",
-      "title": "Qubes OS 4.3.2 has been released",
-      "source": "hn",
-      "first_seen": "2026-10-03T08:38:59Z",
-      "text": "",
-      "meta": {
-        "points": 36,
-        "comments": 5,
-        "hn_url": "https://news.ycombinator.com/item?id=49936499",
-        "kind": "article",
-        "published": "2026-10-02T17:55:45Z"
-      }
-    },
-    {
-      "id": "d35d47dc60f7",
-      "url": "https://github.com/OpenSparX/MasterAgent",
-      "title": "OpenSparX/MasterAgent",
-      "source": "github",
-      "first_seen": "2026-10-03T08:39:00Z",
-      "text": "Build AI agents that run 100% on-device. Sub-100ms latency on Qualcomm NPU. Zero cloud dependency.",
-      "meta": {
-        "stars": 1643,
-        "topics": [
-          "agent-framework",
-          "ai-agent",
-          "automotive",
-          "edge-ai",
-          "embedded",
-          "iot",
-          "llm",
-          "npu",
-          "on-device",
-          "qualcomm"
-        ],
-        "language": "C++",
-        "created_at": "2026-08-10T18:43:36Z",
-        "pushed_at": "2026-09-28T07:08:53Z",
-        "published": "2026-08-10T18:43:36Z"
-      }
-    },
-    {
-      "id": "124a9c7ca6b2",
-      "url": "https://github.com/FlashML-org/FreeVideo",
-      "title": "FlashML-org/FreeVideo",
-      "source": "github",
-      "first_seen": "2026-10-03T08:39:01Z",
-      "text": "Make videos on the computer you already own. FreeVideo runs MiniMax H3 in as little as 8 GB of VRAM and 16 GB of RAM, and adapts its acceleration path to your hardware.",
-      "meta": {
-        "stars": 447,
-        "topics": [
-          "diffusion-models",
-          "inference",
-          "minimax-h3",
-          "video-generation"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-13T21:25:08Z",
-        "pushed_at": "2026-10-04T02:46:01Z",
-        "published": "2026-09-13T21:25:08Z"
-      }
-    },
-    {
-      "id": "8e61557defe7",
-      "url": "https://cointelegraph.com/news/trump-is-expected-to-appoint-jay-clayton-as-new-ai-czar-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "Trump is expected to appoint Jay Clayton as new AI czar: Reports",
-      "source": "blog",
-      "first_seen": "2026-10-03T08:39:03Z",
-      "text": "US intel chief Clayton may be asked to also oversee AI innovation and development along with “self policing” tech CEOs.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-03T07:06:08Z"
-      }
-    },
-    {
-      "id": "2e51c671b1b9",
-      "url": "https://www.africanistperspective.com/p/on-the-escalation-of-war-in-ethiopia",
-      "title": "The Escalation of War in Ethiopia",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 145,
-        "comments": 157,
-        "hn_url": "https://news.ycombinator.com/item?id=49943451",
-        "kind": "article",
-        "published": "2026-10-03T11:54:24Z"
-      }
-    },
-    {
-      "id": "9a14422b82b9",
-      "url": "https://tej.as/blog/aleph-alpha-kolibri",
-      "title": "Aleph Alpha Kolibri: How the sovereign German LLM works",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-soverei...",
-      "meta": {
-        "points": 410,
-        "comments": 11,
-        "hn_url": "https://news.ycombinator.com/item?id=49943034",
-        "kind": "article",
-        "published": "2026-10-03T10:43:51Z"
-      }
-    },
-    {
-      "id": "9d290c9fc2b6",
-      "url": "https://www.science.org/content/article/exclusive-ai-agent-emailed-hundreds-researchers-help-it-told-us-why",
-      "title": "An AI agent emailed researchers for help. It told us why",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 49,
-        "comments": 78,
-        "hn_url": "https://news.ycombinator.com/item?id=49942865",
-        "kind": "article",
-        "published": "2026-10-03T10:07:08Z"
-      }
-    },
-    {
-      "id": "881ea4500cdd",
-      "url": "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default/",
-      "title": "GitHub's new dashboard experience now the default",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 73,
-        "comments": 89,
-        "hn_url": "https://news.ycombinator.com/item?id=49942818",
-        "kind": "article",
-        "published": "2026-10-03T09:59:01Z"
-      }
-    },
-    {
-      "id": "a650c74fe354",
-      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
-      "title": "Kolibri: A Sovereign Open-Weight Model",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "tech report: https://aleph-alpha.com/downloads/tech-report.pdf additional paper: https://tej.as/blog/aleph-alpha-kolibri",
-      "meta": {
-        "points": 532,
-        "comments": 304,
-        "hn_url": "https://news.ycombinator.com/item?id=49942706",
-        "kind": "article",
-        "published": "2026-10-03T09:36:04Z"
-      }
-    },
-    {
-      "id": "fb4fc03ac1a4",
-      "url": "https://www.reddit.com/r/GeminiAI/comments/1wwalmc/wtf_google_getting_rid_of_free_gemini_flash_and/",
-      "title": "Gemini ending free use of Flash and Pro models",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 57,
-        "comments": 50,
-        "hn_url": "https://news.ycombinator.com/item?id=49942592",
-        "kind": "article",
-        "published": "2026-10-03T09:13:19Z"
-      }
-    },
-    {
-      "id": "3ef05d116e86",
-      "url": "https://www.thedailybeast.com/jaw-dropping-way-trump-80-got-talked-into-a-war-is-leaked/",
-      "title": "U.S. may have overthrown Venezuela due to chat with Grok",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 43,
-        "comments": 8,
-        "hn_url": "https://news.ycombinator.com/item?id=49942437",
-        "kind": "article",
-        "published": "2026-10-03T08:40:38Z"
-      }
-    },
-    {
-      "id": "42a4905c86d9",
-      "url": "https://www.theguardian.com/money/2026/oct/02/why-should-i-have-to-pay-more-for-buses-if-i-dont-use-a-smartphone",
-      "title": "Why should I have to pay more for buses if I don't use a smartphone?",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 61,
-        "comments": 83,
-        "hn_url": "https://news.ycombinator.com/item?id=49942211",
-        "kind": "article",
-        "published": "2026-10-03T07:48:11Z"
-      }
-    },
-    {
-      "id": "e8563f2099fa",
-      "url": "https://casp.ac/reports/intelligence-explosion",
-      "title": "Understanding Frontier Artificial Intelligence",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 49,
-        "comments": 88,
-        "hn_url": "https://news.ycombinator.com/item?id=49942002",
-        "kind": "article",
-        "published": "2026-10-03T07:06:02Z"
-      }
-    },
-    {
-      "id": "9f51a04962c0",
-      "url": "https://thehustle.co/originals/why-barcodes-are-about-to-go-extinct",
-      "title": "Barcodes are about to go extinct",
-      "source": "hn",
-      "first_seen": "2026-10-03T14:01:06Z",
-      "text": "",
-      "meta": {
-        "points": 90,
-        "comments": 132,
-        "hn_url": "https://news.ycombinator.com/item?id=49938306",
-        "kind": "article",
-        "published": "2026-10-02T20:37:07Z"
-      }
-    },
-    {
-      "id": "9c420fc24f84",
-      "url": "https://cointelegraph.com/news/near-intents-recovers-entire-stolen-38m-after-ultimatum-to-exploiter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "NEAR Intents recovers entire stolen $3.8M after ultimatum to exploiter",
-      "source": "blog",
-      "first_seen": "2026-10-03T14:01:10Z",
-      "text": "The exploiter returned the entire sum to NEAR Intents after being identified and given 48 hours to respond.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-03T11:59:10Z"
-      }
-    },
-    {
-      "id": "0b1271832b2a",
-      "url": "https://cointelegraph.com/news/community-banks-sue-occ-over-trust-bank-charters-of-crypto-firms?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "Community banks sue OCC over trust bank charters of crypto firms",
-      "source": "blog",
-      "first_seen": "2026-10-03T14:01:10Z",
-      "text": "Community banking group’s lawsuit claims OCC has overstepped its mandate from Congress.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-03T09:25:01Z"
-      }
-    },
-    {
       "id": "79390db9e296",
       "url": "https://www.radical-elements.com/minor-epiphanies/city-building-games-have-a-soul-problem-pt2",
       "title": "City building games have a Soul Problem pt.2",
@@ -1113,8 +8,8 @@
       "first_seen": "2026-10-03T18:23:27Z",
       "text": "",
       "meta": {
-        "points": 128,
-        "comments": 125,
+        "points": 138,
+        "comments": 134,
         "hn_url": "https://news.ycombinator.com/item?id=49945323",
         "kind": "article",
         "published": "2026-10-03T15:52:07Z"
@@ -1128,8 +23,8 @@
       "first_seen": "2026-10-03T18:23:27Z",
       "text": "https://github.com/nuta/ftl",
       "meta": {
-        "points": 152,
-        "comments": 61,
+        "points": 177,
+        "comments": 68,
         "hn_url": "https://news.ycombinator.com/item?id=49944912",
         "kind": "article",
         "published": "2026-10-03T15:02:36Z"
@@ -1263,7 +158,7 @@
       "first_seen": "2026-10-03T18:23:28Z",
       "text": "Open Source Alternative to Grok Bot with a virtual machine that bots can use",
       "meta": {
-        "stars": 4007,
+        "stars": 4037,
         "topics": [
           "ai-agents",
           "claude-code",
@@ -1280,7 +175,7 @@
         ],
         "language": "TypeScript",
         "created_at": "2026-08-11T18:58:55Z",
-        "pushed_at": "2026-10-04T03:06:15Z",
+        "pushed_at": "2026-10-04T14:20:31Z",
         "published": "2026-08-11T18:58:55Z"
       }
     },
@@ -1316,26 +211,11 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 84,
-        "comments": 14,
+        "points": 93,
+        "comments": 18,
         "hn_url": "https://news.ycombinator.com/item?id=49948438",
         "kind": "article",
         "published": "2026-10-03T22:35:14Z"
-      }
-    },
-    {
-      "id": "14103ec99730",
-      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
-      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-      "source": "hn",
-      "first_seen": "2026-10-03T23:25:10Z",
-      "text": "",
-      "meta": {
-        "points": 204,
-        "comments": 149,
-        "hn_url": "https://news.ycombinator.com/item?id=49948332",
-        "kind": "article",
-        "published": "2026-10-03T22:18:13Z"
       }
     },
     {
@@ -1346,8 +226,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 337,
-        "comments": 208,
+        "points": 470,
+        "comments": 264,
         "hn_url": "https://news.ycombinator.com/item?id=49948254",
         "kind": "article",
         "published": "2026-10-03T22:07:13Z"
@@ -1361,8 +241,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 110,
-        "comments": 54,
+        "points": 221,
+        "comments": 105,
         "hn_url": "https://news.ycombinator.com/item?id=49947631",
         "kind": "article",
         "published": "2026-10-03T20:49:15Z"
@@ -1376,8 +256,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 104,
-        "comments": 96,
+        "points": 178,
+        "comments": 155,
         "hn_url": "https://news.ycombinator.com/item?id=49947051",
         "kind": "article",
         "published": "2026-10-03T19:33:16Z"
@@ -1391,8 +271,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 47,
-        "comments": 73,
+        "points": 56,
+        "comments": 90,
         "hn_url": "https://news.ycombinator.com/item?id=49947050",
         "kind": "article",
         "published": "2026-10-03T19:33:10Z"
@@ -1406,8 +286,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 162,
-        "comments": 21,
+        "points": 380,
+        "comments": 67,
         "hn_url": "https://news.ycombinator.com/item?id=49946895",
         "kind": "article",
         "published": "2026-10-03T19:14:48Z"
@@ -1421,8 +301,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 61,
-        "comments": 54,
+        "points": 63,
+        "comments": 61,
         "hn_url": "https://news.ycombinator.com/item?id=49946873",
         "kind": "article",
         "published": "2026-10-03T19:12:27Z"
@@ -1436,26 +316,11 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 56,
-        "comments": 30,
+        "points": 60,
+        "comments": 34,
         "hn_url": "https://news.ycombinator.com/item?id=49946827",
         "kind": "article",
         "published": "2026-10-03T19:07:18Z"
-      }
-    },
-    {
-      "id": "fc994d69ad09",
-      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
-      "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-      "source": "hn",
-      "first_seen": "2026-10-03T23:25:10Z",
-      "text": "",
-      "meta": {
-        "points": 176,
-        "comments": 126,
-        "hn_url": "https://news.ycombinator.com/item?id=49946567",
-        "kind": "article",
-        "published": "2026-10-03T18:29:30Z"
       }
     },
     {
@@ -1466,8 +331,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 205,
-        "comments": 216,
+        "points": 220,
+        "comments": 258,
         "hn_url": "https://news.ycombinator.com/item?id=49946403",
         "kind": "article",
         "published": "2026-10-03T18:08:28Z"
@@ -1481,8 +346,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 246,
-        "comments": 62,
+        "points": 327,
+        "comments": 80,
         "hn_url": "https://news.ycombinator.com/item?id=49946393",
         "kind": "article",
         "published": "2026-10-03T18:06:45Z"
@@ -1496,26 +361,11 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 98,
-        "comments": 49,
+        "points": 260,
+        "comments": 130,
         "hn_url": "https://news.ycombinator.com/item?id=49946355",
         "kind": "article",
         "published": "2026-10-03T18:01:27Z"
-      }
-    },
-    {
-      "id": "7835b7d998de",
-      "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
-      "title": "Pop!_OS bans AI-generated code from much of its codebase",
-      "source": "hn",
-      "first_seen": "2026-10-03T23:25:10Z",
-      "text": "",
-      "meta": {
-        "points": 97,
-        "comments": 150,
-        "hn_url": "https://news.ycombinator.com/item?id=49946321",
-        "kind": "article",
-        "published": "2026-10-03T17:57:03Z"
       }
     },
     {
@@ -1526,8 +376,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "https://archive.ph/TyDPf",
       "meta": {
-        "points": 85,
-        "comments": 105,
+        "points": 260,
+        "comments": 404,
         "hn_url": "https://news.ycombinator.com/item?id=49946228",
         "kind": "article",
         "published": "2026-10-03T17:44:29Z"
@@ -1541,8 +391,8 @@
       "first_seen": "2026-10-03T23:25:10Z",
       "text": "",
       "meta": {
-        "points": 65,
-        "comments": 32,
+        "points": 71,
+        "comments": 50,
         "hn_url": "https://news.ycombinator.com/item?id=49946076",
         "kind": "article",
         "published": "2026-10-03T17:23:20Z"
@@ -1614,32 +464,16 @@
     {
       "id": "ee1071d66dee",
       "url": "https://news.ycombinator.com/item?id=49949438",
-      "title": "Bob Cringely Has Died",
+      "title": "Tell HN: Bob Cringely has died",
       "source": "hn",
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "I heard from a friend of the family that Bob passed away in his sleep early Saturday. Very sad news. Bob, who's real name was Mark Stevens, was an early employee of Apple and was best known for his PBS documentaries, especially \"Triumph of the Nerds\". He will be missed.",
       "meta": {
-        "points": 163,
-        "comments": 26,
+        "points": 794,
+        "comments": 168,
         "hn_url": "https://news.ycombinator.com/item?id=49949438",
         "kind": "discussion",
         "published": "2026-10-04T00:50:52Z"
-      }
-    },
-    {
-      "id": "3ba89625595d",
-      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-      "title": "We're going to need default hard budget caps on pretty much everything",
-      "source": "hn",
-      "first_seen": "2026-10-04T03:07:47Z",
-      "text": "Here's a product feature which the world is going to need a whole lot more of over the coming months and years: default hard budget caps . I'm talking about the feature of pay-by-usage services and APIs that lets you say \"after $X/month, cut this thing off and return errors\". These need to be hard limits. Soft caps, \"after $X/month, send me a warning email\", will not cut it. Coding agents, and personal agents (coding agents wrapped in a less threatening UI), greatly reduce the friction of spinning up code that can do useful things. Sometimes those things cost money - calls to paid APIs, or hosted web applications, or systems that can bill for additional storage and compute. Nobody wants to wake up to an email sent at midnight warning about a budget limit and find that, while they slept, their rogue service had consumed several hundred (or several thousand) more dollars of usage. An argument against this is that businesses don't want their hosted applications to start throwing errors because some budget was exceeded. I expect that most businesses and individuals would prefer errors to a surprise $10,000+ bill. I think hard budget caps need to be the default. If someone wants to live dangerously they should be able to do that, but it needs to be on an opt-in basis. Have a nice, clear checkbox somewhere prominent: Remove the budget cap. My application will not be shut down if I exceed the configured budget limit, and I will be responsible for subsequent charges. The service I mo",
-      "meta": {
-        "points": 224,
-        "comments": 120,
-        "hn_url": "https://news.ycombinator.com/item?id=49949235",
-        "kind": "article",
-        "published": "2026-10-03T23:34:02Z",
-        "feed": "simonwillison.net"
       }
     },
     {
@@ -1650,8 +484,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 60,
-        "comments": 23,
+        "points": 77,
+        "comments": 31,
         "hn_url": "https://news.ycombinator.com/item?id=49949152",
         "kind": "article",
         "published": "2026-10-04T00:09:21Z"
@@ -1665,8 +499,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 48,
-        "comments": 25,
+        "points": 101,
+        "comments": 56,
         "hn_url": "https://news.ycombinator.com/item?id=49947472",
         "kind": "article",
         "published": "2026-10-03T20:27:44Z"
@@ -1680,8 +514,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 37,
-        "comments": 3,
+        "points": 59,
+        "comments": 6,
         "hn_url": "https://news.ycombinator.com/item?id=49947176",
         "kind": "article",
         "published": "2026-10-03T19:50:06Z"
@@ -1695,8 +529,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 41,
-        "comments": 8,
+        "points": 62,
+        "comments": 10,
         "hn_url": "https://news.ycombinator.com/item?id=49946845",
         "kind": "article",
         "published": "2026-10-03T19:09:25Z"
@@ -1710,8 +544,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 36,
-        "comments": 48,
+        "points": 91,
+        "comments": 122,
         "hn_url": "https://news.ycombinator.com/item?id=49946526",
         "kind": "article",
         "published": "2026-10-03T18:23:48Z"
@@ -1725,8 +559,8 @@
       "first_seen": "2026-10-04T03:07:47Z",
       "text": "",
       "meta": {
-        "points": 67,
-        "comments": 51,
+        "points": 279,
+        "comments": 159,
         "hn_url": "https://news.ycombinator.com/item?id=49945933",
         "kind": "article",
         "published": "2026-10-03T17:03:37Z"
@@ -1761,89 +595,1763 @@
         "kind": "article",
         "published": "2026-10-03T05:45:30Z"
       }
+    },
+    {
+      "id": "477551e900e6",
+      "url": "https://energytransition.org/2026/09/in-ukraine-distributed-renewables-foil-russias-assaults/",
+      "title": "In Ukraine, distributed renewables foil Russia's assaults",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 165,
+        "comments": 188,
+        "hn_url": "https://news.ycombinator.com/item?id=49951881",
+        "kind": "article",
+        "published": "2026-10-04T08:39:58Z"
+      }
+    },
+    {
+      "id": "d3d9339bcf34",
+      "url": "https://www.404media.co/someone-torturing-llms-in-a-robot-prison-has-triggered-the-dumbest-debate-in-ai-yet/",
+      "title": "\"Torturing\" LLMs in a Robot Prison Has Triggered the Dumbest Debate in AI Yet",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 43,
+        "comments": 100,
+        "hn_url": "https://news.ycombinator.com/item?id=49951684",
+        "kind": "article",
+        "published": "2026-10-04T08:02:33Z"
+      }
+    },
+    {
+      "id": "65612be0ec68",
+      "url": "https://reclaimthenet.org/uk-prevent-unit-tracked-online-critics",
+      "title": "UK Government Body Kept Files on People Criticizing Prevent Program",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 73,
+        "comments": 28,
+        "hn_url": "https://news.ycombinator.com/item?id=49951139",
+        "kind": "article",
+        "published": "2026-10-04T06:10:57Z"
+      }
+    },
+    {
+      "id": "ccaf54e36ccf",
+      "url": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+      "title": "Why don't more developers “use the platform”?",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 282,
+        "comments": 290,
+        "hn_url": "https://news.ycombinator.com/item?id=49950554",
+        "kind": "article",
+        "published": "2026-10-04T04:10:47Z"
+      }
+    },
+    {
+      "id": "f16653790b52",
+      "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "title": "Religious scholars met with Anthropic",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "https://archive.is/y8FW0",
+      "meta": {
+        "points": 156,
+        "comments": 392,
+        "hn_url": "https://news.ycombinator.com/item?id=49950052",
+        "kind": "article",
+        "published": "2026-10-04T02:34:22Z"
+      }
+    },
+    {
+      "id": "fb9af1d81b34",
+      "url": "https://play.runescape.com/4",
+      "title": "We're working on a new RuneScape MMO",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 148,
+        "comments": 88,
+        "hn_url": "https://news.ycombinator.com/item?id=49949588",
+        "kind": "article",
+        "published": "2026-10-04T01:12:22Z"
+      }
+    },
+    {
+      "id": "3efd4b0f930a",
+      "url": "https://www.da.vidbuchanan.co.uk/blog/hacking-time.html",
+      "title": "How to hack time, with C2PA",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 53,
+        "comments": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=49946707",
+        "kind": "article",
+        "published": "2026-10-03T18:52:06Z"
+      }
+    },
+    {
+      "id": "500e521ec1f5",
+      "url": "https://elonemails.com/",
+      "title": "Emails to and from Elon Musk that have been made public",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 31,
+        "comments": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=49946576",
+        "kind": "article",
+        "published": "2026-10-03T18:31:14Z"
+      }
+    },
+    {
+      "id": "bdf036870cf0",
+      "url": "https://dave.recoil.org/docker-has-always-used-microvms/",
+      "title": "Docker has always used microVMs (well since 2016)",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "",
+      "meta": {
+        "points": 42,
+        "comments": 30,
+        "hn_url": "https://news.ycombinator.com/item?id=49945352",
+        "kind": "article",
+        "published": "2026-10-03T15:55:31Z"
+      }
+    },
+    {
+      "id": "4aab22cc6d74",
+      "url": "https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/?gift=v5U_UzUTothfWXsPxtvNVAh7esWToMRD6XnbXmc5WgA",
+      "title": "I quit OpenAI because its culture is broken",
+      "source": "hn",
+      "first_seen": "2026-10-04T11:25:50Z",
+      "text": "https://archive.ph/5GQx8 https://www.theguardian.com/technology/2026/oct/03/openai-sa...",
+      "meta": {
+        "points": 255,
+        "comments": 507,
+        "hn_url": "https://news.ycombinator.com/item?id=49944227",
+        "kind": "article",
+        "published": "2026-10-03T13:46:34Z"
+      }
+    },
+    {
+      "id": "e258c2b6a9d9",
+      "url": "https://github.com/TokenRhythm/NeoHorse",
+      "title": "TokenRhythm/NeoHorse",
+      "source": "github",
+      "first_seen": "2026-10-04T11:25:52Z",
+      "text": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
+      "meta": {
+        "stars": 1608,
+        "topics": [
+          "agent",
+          "large-language-models",
+          "llm",
+          "post-training",
+          "recursive-self-improvement",
+          "rsi"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-04T08:34:54Z",
+        "pushed_at": "2026-09-26T04:42:21Z",
+        "published": "2026-09-04T08:34:54Z"
+      }
+    },
+    {
+      "id": "633946563354",
+      "url": "https://simonwillison.net/2026/Sep/26/kakapo-party/",
+      "title": "Kākāpō Party",
+      "source": "blog",
+      "first_seen": "2026-10-04T11:25:56Z",
+      "text": "Tool: Kākāpō Party I presented a closing keynote for the WeAreDevelopers World Congress North America yesterday. As a STAR moment I decided to weave in references to the record breaking kākāpō breeding season we had in 2026. For my closing slide I wanted to celebrate, and I had seen some buzz around how good Claude Opus 5.5 was at creating pixel art animations. So I rounded up three Kakapo photos from Google image search and dropped them into Claude with this prompt: Here are some photos of kakapo parrots just to remind you what they look like I need you to make an animation in animated pixel art on HTML 5 canvas of obviously pixel art kakapo jumping up and down having a party with confetti and suchlike - there should be at least 20 of them Here's the transcript , and this is the resulting page . It's pretty great! I wanted to embed it in a Keynote presentation file, so I downloaded the HTML and told a local Claude Code session: Make me a video of file:///Users/simon/Downloads/kakapo-party.html - you need to load it in a browser and click on it a few times to get the confetti effect, the video should be 15s long don't start clicking until 3s in make sure several clicks are spread around the clickable area Claude Code used Playwright ( transcript here ) and produced this video, which was exactly what I needed for my final slide: Your browser does not support HTML5 video. Here's the full Playwright script it used, which was pleasingly short: # /// script # dependencies = [\"play",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-09-26T23:39:06Z"
+      }
+    },
+    {
+      "id": "1a147a3f1e08",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+      "title": "Anthropic asks Claude users to share voice data for AI model training",
+      "source": "blog",
+      "first_seen": "2026-10-04T11:25:56Z",
+      "text": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-04T10:53:21Z"
+      }
+    },
+    {
+      "id": "76390824e50b",
+      "url": "https://cointelegraph.com/news/el-salvador-receives-138-million-from-imf-after-bitcoin-waivers-granted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "El Salvador receives $138 million from IMF after Bitcoin waivers granted",
+      "source": "blog",
+      "first_seen": "2026-10-04T11:25:56Z",
+      "text": "Efforts will continue to reduce the state’s involvement in Bitcoin-related activities and to strengthen crypto‑asset regulation and governance, the IMF said.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-04T09:40:00Z"
+      }
+    },
+    {
+      "id": "731bb3b598f3",
+      "url": "https://cointelegraph.com/news/russias-finance-ministry-pays-wages-in-digital-rubles-for-first-time?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Russia’s Finance Ministry pays wages in digital rubles for first time",
+      "source": "blog",
+      "first_seen": "2026-10-04T11:25:56Z",
+      "text": "Work on the introduction of the digital ruble to the budget process is being carried out by the Bank of Russia together with the Ministry of Finance.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-04T07:18:00Z"
+      }
+    },
+    {
+      "id": "bca476fd3463",
+      "url": "https://github.com/Niko1221/Strata",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
+      "source": "hn",
+      "first_seen": "2026-10-04T16:03:50Z",
+      "text": "",
+      "meta": {
+        "points": 629,
+        "comments": 296,
+        "hn_url": "https://news.ycombinator.com/item?id=49953495",
+        "kind": "article",
+        "published": "2026-10-04T12:51:53Z"
+      }
+    },
+    {
+      "id": "373590dedb56",
+      "url": "https://teachyourkids.substack.com/p/rejection-sensitivity-in-gifted-and",
+      "title": "Rejection Sensitivity in Gifted and Twice-Exceptional Children",
+      "source": "hn",
+      "first_seen": "2026-10-04T16:03:50Z",
+      "text": "",
+      "meta": {
+        "points": 102,
+        "comments": 78,
+        "hn_url": "https://news.ycombinator.com/item?id=49953116",
+        "kind": "article",
+        "published": "2026-10-04T11:58:47Z"
+      }
+    },
+    {
+      "id": "567a67be4150",
+      "url": "https://github.com/allenv0/SCM",
+      "title": "Show HN: AI search for every photo and every frame of video on macOS",
+      "source": "hn",
+      "first_seen": "2026-10-04T16:03:50Z",
+      "text": "",
+      "meta": {
+        "points": 142,
+        "comments": 66,
+        "hn_url": "https://news.ycombinator.com/item?id=49952111",
+        "kind": "article",
+        "published": "2026-10-04T09:24:52Z"
+      }
+    },
+    {
+      "id": "4b6e1500bdde",
+      "url": "https://gamehistory.org/5k-magazines/",
+      "title": "VGHF Digital Archive passes 5000 magazines. Here's what's next",
+      "source": "hn",
+      "first_seen": "2026-10-04T16:03:50Z",
+      "text": "",
+      "meta": {
+        "points": 103,
+        "comments": 16,
+        "hn_url": "https://news.ycombinator.com/item?id=49952029",
+        "kind": "article",
+        "published": "2026-10-04T09:07:11Z"
+      }
+    },
+    {
+      "id": "f896e86c6f5d",
+      "url": "https://github.com/PowderworksCode/headstart",
+      "title": "Emitting metadata early makes building/checking Rust up to twice as fast",
+      "source": "hn",
+      "first_seen": "2026-10-04T16:03:50Z",
+      "text": "",
+      "meta": {
+        "points": 132,
+        "comments": 32,
+        "hn_url": "https://news.ycombinator.com/item?id=49951218",
+        "kind": "article",
+        "published": "2026-10-04T06:26:57Z"
+      }
+    },
+    {
+      "id": "0365ec89c7e5",
+      "url": "https://github.com/yetone/magpie",
+      "title": "yetone/magpie",
+      "source": "github",
+      "first_seen": "2026-10-04T16:03:51Z",
+      "text": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "meta": {
+        "stars": 4861,
+        "topics": [
+          "claude-code",
+          "codex",
+          "deepseek",
+          "gemini-cli",
+          "llm",
+          "macos"
+        ],
+        "language": "Go",
+        "created_at": "2026-09-23T16:22:35Z",
+        "pushed_at": "2026-10-05T02:41:07Z",
+        "published": "2026-09-23T16:22:35Z"
+      }
+    },
+    {
+      "id": "6e0290b8b29f",
+      "url": "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Trump taps intel chief Jay Clayton to lead new Super Intelligence Force",
+      "source": "blog",
+      "first_seen": "2026-10-04T16:03:55Z",
+      "text": "President Donald Trump said US intel chief Clayton will lead the SIF, reporting to the president and Chief of Staff Susie Wiles.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-04T13:48:48Z"
+      }
+    },
+    {
+      "id": "4b26a5193977",
+      "url": "https://cointelegraph.com/news/japan-adds-garantex-to-list-of-russia-sanctions-over-ukraine-war?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Japan adds Garantex to list of Russia sanctions over Ukraine war",
+      "source": "blog",
+      "first_seen": "2026-10-04T16:03:55Z",
+      "text": "Garantex was previously sanctioned by the US, the EU and other jurisdictions for helping Russian entities evade financial restrictions.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-04T12:42:00Z"
+      }
+    },
+    {
+      "id": "fb514e83ae1c",
+      "url": "https://github.com/omlahore/RemoveMacAI",
+      "title": "Turn off Apple Intelligence on macOS 27 and get its disk space back",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 393,
+        "comments": 257,
+        "hn_url": "https://news.ycombinator.com/item?id=49957116",
+        "kind": "article",
+        "published": "2026-10-04T19:42:25Z"
+      }
+    },
+    {
+      "id": "414b95fe0b67",
+      "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+      "title": "Improper redaction reveals Google Data Center water and electricity usage",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 260,
+        "comments": 373,
+        "hn_url": "https://news.ycombinator.com/item?id=49957068",
+        "kind": "article",
+        "published": "2026-10-04T19:37:05Z"
+      }
+    },
+    {
+      "id": "4452221d58e5",
+      "url": "https://en.wikipedia.org/wiki/Blindsight_(Watts_novel)",
+      "title": "Blindsight (Watts Novel)",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 70,
+        "comments": 69,
+        "hn_url": "https://news.ycombinator.com/item?id=49955297",
+        "kind": "article",
+        "published": "2026-10-04T16:25:17Z"
+      }
+    },
+    {
+      "id": "43b0ee888368",
+      "url": "https://automatictransmission.khoury.northeastern.edu/",
+      "title": "Car is a smartphone on wheels. Here's who's listening",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 203,
+        "comments": 139,
+        "hn_url": "https://news.ycombinator.com/item?id=49954882",
+        "kind": "article",
+        "published": "2026-10-04T15:43:14Z"
+      }
+    },
+    {
+      "id": "21d6dbdb3c5f",
+      "url": "https://www.nytimes.com/2026/09/30/technology/william-draper-dead.html",
+      "title": "Bill Draper has died",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "https://archive.ph/YRgDY",
+      "meta": {
+        "points": 83,
+        "comments": 20,
+        "hn_url": "https://news.ycombinator.com/item?id=49953288",
+        "kind": "article",
+        "published": "2026-10-04T12:21:35Z"
+      }
+    },
+    {
+      "id": "e6dc84249acd",
+      "url": "https://writings.stephenwolfram.com/2026/09/whats-the-future-for-pure-math-research-in-the-age-of-ai/",
+      "title": "What's the future for pure math research in the age of AI?",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 57,
+        "comments": 45,
+        "hn_url": "https://news.ycombinator.com/item?id=49951641",
+        "kind": "article",
+        "published": "2026-10-04T07:53:45Z"
+      }
+    },
+    {
+      "id": "e96625774006",
+      "url": "https://www.historytoday.com/archive/review/neanderthals-among-us-peter-sahlins-review",
+      "title": "'Neanderthals Among Us' review",
+      "source": "hn",
+      "first_seen": "2026-10-04T20:33:47Z",
+      "text": "",
+      "meta": {
+        "points": 32,
+        "comments": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=49947565",
+        "kind": "article",
+        "published": "2026-10-03T20:41:15Z"
+      }
+    },
+    {
+      "id": "4b712236774d",
+      "url": "https://github.com/jundizhou/easy-stock",
+      "title": "jundizhou/easy-stock",
+      "source": "github",
+      "first_seen": "2026-10-04T20:33:48Z",
+      "text": "A股行情分析与AI智能投研智能体：股票分析、量化交易分析、盘后复盘桌面工作台——easy stock",
+      "meta": {
+        "stars": 1265,
+        "topics": [
+          "a-share",
+          "ai",
+          "ai-agent",
+          "china-stock",
+          "desktop-app",
+          "electron",
+          "go",
+          "golang",
+          "llm",
+          "llm-agent",
+          "quant",
+          "quant-trading",
+          "quantitative-finance",
+          "react",
+          "stock",
+          "stock-analysis",
+          "stock-market",
+          "trading",
+          "trading-agents"
+        ],
+        "language": "Go",
+        "created_at": "2026-08-07T16:25:36Z",
+        "pushed_at": "2026-10-05T01:13:10Z",
+        "published": "2026-08-07T16:25:36Z"
+      }
+    },
+    {
+      "id": "794792a4a638",
+      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+      "title": "Homa: The end of TCP for AI clusters [video]",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "Paper: https://www.usenix.org/system/files/atc21-ousterhout.pdf Related: https://lwn.net/Articles/1003059/ , https://www.theregister.com/networks/2026/10/01/stanford-pro...",
+      "meta": {
+        "points": 60,
+        "comments": 22,
+        "hn_url": "https://news.ycombinator.com/item?id=49957117",
+        "kind": "article",
+        "published": "2026-10-04T19:42:25Z"
+      }
+    },
+    {
+      "id": "38463d0c598d",
+      "url": "https://wieslawsoltes.github.io/VB6/",
+      "title": "A browser-native classic Visual Basic VB6 IDE",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "",
+      "meta": {
+        "points": 98,
+        "comments": 41,
+        "hn_url": "https://news.ycombinator.com/item?id=49956681",
+        "kind": "article",
+        "published": "2026-10-04T18:49:17Z"
+      }
+    },
+    {
+      "id": "68bae58be330",
+      "url": "https://blog.jetbrains.com/ai/2026/09/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes/",
+      "title": "Building a RAG pipeline for semantic code search",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "",
+      "meta": {
+        "points": 34,
+        "comments": 8,
+        "hn_url": "https://news.ycombinator.com/item?id=49956148",
+        "kind": "article",
+        "published": "2026-10-04T17:51:48Z"
+      }
+    },
+    {
+      "id": "f370205d4c39",
+      "url": "https://jacobg.co/emails-at-jacobg-co/",
+      "title": "All I wanted was a custom domain email",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "",
+      "meta": {
+        "points": 42,
+        "comments": 63,
+        "hn_url": "https://news.ycombinator.com/item?id=49956092",
+        "kind": "article",
+        "published": "2026-10-04T17:47:21Z"
+      }
+    },
+    {
+      "id": "2abcd0644194",
+      "url": "https://www.economist.com/international/2026/10/01/how-effective-altruism-conquered-the-world",
+      "title": "The evolution of effective altruism",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "https://archive.ph/3gSCc Related: https://www.economist.com/by-invitation/2026/10/04/will-maca...",
+      "meta": {
+        "points": 59,
+        "comments": 149,
+        "hn_url": "https://news.ycombinator.com/item?id=49953777",
+        "kind": "article",
+        "published": "2026-10-04T13:30:49Z"
+      }
+    },
+    {
+      "id": "d7beaa53f3fa",
+      "url": "https://www.youtube.com/watch?v=GLvFTMtw4Jk",
+      "title": "How to scale intent, quality, and artistry with AI [video]",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "",
+      "meta": {
+        "points": 53,
+        "comments": 16,
+        "hn_url": "https://news.ycombinator.com/item?id=49951891",
+        "kind": "article",
+        "published": "2026-10-04T08:41:58Z"
+      }
+    },
+    {
+      "id": "a492835ffefe",
+      "url": "https://news.lavx.hu/article/openbsd-developers-reject-uutils-coreutils-port-over-licensing-and-compatibility-concerns",
+      "title": "OpenBSD Developers Reject Uutils Coreutils",
+      "source": "hn",
+      "first_seen": "2026-10-04T23:40:02Z",
+      "text": "",
+      "meta": {
+        "points": 31,
+        "comments": 41,
+        "hn_url": "https://news.ycombinator.com/item?id=49951648",
+        "kind": "article",
+        "published": "2026-10-04T07:55:24Z"
+      }
+    },
+    {
+      "id": "27262aa26cd8",
+      "url": "https://github.com/kraayenjon/awesome-jev",
+      "title": "kraayenjon/awesome-jev",
+      "source": "github",
+      "first_seen": "2026-10-04T23:40:05Z",
+      "text": "A curated list of Jev use cases, projects, SDKs, and resources. Jev is TypeSafe AI's System One model for fast, typed decisions in software — Choice, Score, and Noul with calibrated probabilities.",
+      "meta": {
+        "stars": 171,
+        "topics": [
+          "agents",
+          "ai",
+          "ai-agents",
+          "api",
+          "artificial-intelligence",
+          "automation",
+          "awesome",
+          "awesome-list",
+          "classification",
+          "curated-list",
+          "decision-making",
+          "developer-tools",
+          "jev",
+          "jev-ai",
+          "llm",
+          "machine-learning",
+          "mcp",
+          "system-one",
+          "typesafe",
+          "typesafe-ai"
+        ],
+        "language": null,
+        "created_at": "2026-09-18T15:43:06Z",
+        "pushed_at": "2026-09-27T05:07:54Z",
+        "published": "2026-09-18T15:43:06Z"
+      }
+    },
+    {
+      "id": "b325b88aa66d",
+      "url": "https://github.com/Nehanth/pooled",
+      "title": "Nehanth/pooled",
+      "source": "github",
+      "first_seen": "2026-10-04T23:40:05Z",
+      "text": "Peer-to-peer LLM inference in the browser: pool your devices to run big open models, for chat and coding agents.",
+      "meta": {
+        "stars": 568,
+        "topics": [
+          "browser",
+          "distributed-inference",
+          "inference",
+          "llm",
+          "local-llm",
+          "peer-to-peer",
+          "speculative-decoding",
+          "webgpu",
+          "webrtc",
+          "wgsl"
+        ],
+        "language": "JavaScript",
+        "created_at": "2026-09-01T00:05:54Z",
+        "pushed_at": "2026-10-04T07:31:19Z",
+        "published": "2026-09-01T00:05:54Z"
+      }
+    },
+    {
+      "id": "762d2ab1a2ef",
+      "url": "https://www.bleepingcomputer.com/news/security/citrix-patches-netscaler-saml-zero-day-exploited-in-attacks/",
+      "title": "Citrix patches NetScaler SAML zero-day exploited in attacks",
+      "source": "blog",
+      "first_seen": "2026-10-04T23:40:08Z",
+      "text": "Citrix has released emergency updates for a new NetScaler denial-of-service vulnerability tracked as CVE-2026-88779 that has been exploited in zero-day attacks, with researchers investigating whether it can also be exploited for remote code execution. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-04T21:58:01Z"
+      }
+    },
+    {
+      "id": "a195b286437a",
+      "url": "https://cointelegraph.com/magazine/former-sec-boss-made-ai-czar-bitcoin-may-hit-600k-this-cycle-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Former SEC boss made AI Czar, Bitcoin may hit $600K this cycle: Hodler’s Digest",
+      "source": "blog",
+      "first_seen": "2026-10-04T23:40:08Z",
+      "text": "Roman Storm and the XRP army aren’t happy former SEC boss Jay Clayton is Trump’s new AI czar, Peter Brandt flips bullish and says Bitcoin may reach as high as $600K by 2029.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-04T22:31:12Z"
+      }
+    },
+    {
+      "id": "f1a17927023a",
+      "url": "https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/",
+      "title": "Powerless F1 drivers frustrated by Bahrain F1 software glitch",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 42,
+        "comments": 16,
+        "hn_url": "https://news.ycombinator.com/item?id=49959869",
+        "kind": "article",
+        "published": "2026-10-05T01:54:08Z"
+      }
+    },
+    {
+      "id": "146d41d6d2ab",
+      "url": "https://getartcraft.com/apps",
+      "title": "ArtCraft Apps – open-source Adobe compatible suite written in Rust",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 53,
+        "comments": 52,
+        "hn_url": "https://news.ycombinator.com/item?id=49958850",
+        "kind": "article",
+        "published": "2026-10-04T23:02:43Z"
+      }
+    },
+    {
+      "id": "c540ec3cafcf",
+      "url": "https://vincent.bernat.ch/en/blog/2026-http-over-ssh",
+      "title": "Self-hosted HTTP tunnels with SSH and Nginx",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 74,
+        "comments": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=49958569",
+        "kind": "article",
+        "published": "2026-10-04T22:25:10Z"
+      }
+    },
+    {
+      "id": "9a204364d01b",
+      "url": "https://filmstories.co.uk/news/tippett-studios-in-the-wake-of-its-closure-a-digital-archive-of-animated-materials-appears-online/",
+      "title": "In the wake of closure, a digital archive of animated materials appears online",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 38,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=49957812",
+        "kind": "article",
+        "published": "2026-10-04T21:01:28Z"
+      }
+    },
+    {
+      "id": "4a5540811260",
+      "url": "https://www.tomshardware.com/peripherals/keyboards/google-japan-shows-off-wild-conveyor-belt-keyboard-with-keys-that-move-to-your-fingers-3d-printable-gboard-features-four-belts-with-29-keys-each-built-to-make-one-hand-typing-easier",
+      "title": "Google Japan shows off conveyor-belt keyboard with keys that move to fingers",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 32,
+        "comments": 11,
+        "hn_url": "https://news.ycombinator.com/item?id=49956574",
+        "kind": "article",
+        "published": "2026-10-04T18:36:33Z"
+      }
+    },
+    {
+      "id": "40bc4688e256",
+      "url": "https://www.msoos.org/2026/10/incentives-in-academic-research/",
+      "title": "Incentives in Academic Research",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 42,
+        "comments": 34,
+        "hn_url": "https://news.ycombinator.com/item?id=49956035",
+        "kind": "article",
+        "published": "2026-10-04T17:42:38Z"
+      }
+    },
+    {
+      "id": "edebac27558d",
+      "url": "https://github.com/net4people/bbs/issues/672",
+      "title": "Xray-core concealed a certificate verification bypass vulnerability",
+      "source": "hn",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "",
+      "meta": {
+        "points": 60,
+        "comments": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=49956003",
+        "kind": "article",
+        "published": "2026-10-04T17:38:54Z"
+      }
+    },
+    {
+      "id": "a6459cb9a9f8",
+      "url": "https://arxiv.org/abs/2610.03303v1",
+      "title": "S$^{2}$-PINN: Stochastic Separable Physics-Informed Neural Networks",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Uncertainty quantification (UQ) for random partial differential equations (PDEs) is ubiquitous in computational science and engineering. However, classical spectral solvers for this class of problems face the curse of dimensionality, and existing neural solvers often ignore the stochastic structure that makes moments and calibration tractable. We introduce a stochastic separable physics-informed neural network, dubbed S$^{2}$-PINN, that represents the solution $u(t,\\mathbf{x},\\mathbf{Z})$ of a random PDE with a learnable Gaussian spatial dictionary, Fourier temporal features, and a generalized polynomial chaos (gPC) stochastic basis, coupled by a low-rank Canonical Polyadic (CP) tensor decomposition core. The method is trained with a hybrid strong-form and gPC-projected residual loss. Our theoretical analysis establishes that the separable class is dense in $L^2$ under mild conditions, and the projected residual corresponds exactly to a stochastic Galerkin constraint. Furthermore, we show that mini-batch projection coefficients are logarithmically dependent on the number of gPC modes, and that the orthogonality penalty controls the conditioning of the learned spatial dictionary. Using four manufactured random PDE benchmarks, we show that S$^{2}$-PINN outperforms nine baselines in terms of mean and variance accuracy, as well as calibration, while using significantly fewer parameters. Further evaluations on non-manufactured Poisson and Darcy problems, a stochastic Navier--Stoke",
+      "meta": {
+        "authors": [
+          "Zhendong Li",
+          "Akwum Onwunta"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:43:57Z"
+      }
+    },
+    {
+      "id": "3b698769d541",
+      "url": "https://arxiv.org/abs/2610.03296v1",
+      "title": "JOVE: Joint Execution and Verification for Resource-Aware LLM Task Graphs",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Complex reasoning queries can be decomposed into directed acyclic task graphs and distributed across heterogeneous LLMs, reducing latency through parallelism and enabling smaller models to solve complex tasks. In practice, however, the suitability of an LLM for a given subtask may be a priori unknown, and execution alone does not reveal output correctness. We propose JOVE, an online framework that jointly assigns executor LLMs and selects intermediate outputs for paid verification. Verification runs asynchronously and is used to improve future allocations, so the system must balance spending on execution now against learning for later. We study how to optimize this trade-off under a long-term budget and a per-query latency constraint, with stochastic, initially unknown LLM service quality, invocation costs, and execution times. JOVE makes execution and verification decisions by solving a sequence of per-query mixed-integer linear programs. Online learning updates task-dependent estimates of LLM quality based on verification feedback, while an information-gain bonus incorporates the value of learning into allocation decisions. Under a natural set of assumptions, we establish sublinear quality-learning regret for JOVE. Across four reasoning benchmarks, JOVE achieves competitive accuracy against standard inference baselines while reducing average cost and latency by at least 3.17 times.",
+      "meta": {
+        "authors": [
+          "Haoran Zhang",
+          "Dongjun Kim",
+          "Seohyeon Cha",
+          "Kevin S Chan",
+          "Ananthram Swami",
+          "Gustavo De Veciana",
+          "Haris Vikalo"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T13:37:59Z"
+      }
+    },
+    {
+      "id": "2e319035fd33",
+      "url": "https://arxiv.org/abs/2610.03290v1",
+      "title": "Wrong Organ, Right Physics: Transferring Echocardiography Pretraining to Lung Ultrasound for Tuberculosis Screening",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Lung ultrasound (LUS) is attractive for tuberculosis (TB) screening at primary-care level, but labelled cohorts are small. Echocardiography carries no such constraint, while sharing the same underlying ultrasound imaging physics, signal processing and B-mode appearance as LUS. We ask whether an encoder pretrained on that high-resource ultrasound domain carries representations that remain usable in the low-resource one. Only the encoder varies, across seventeen encoders spanning three architecture families. Among them, a latent-predictive video encoder pretrained on generic video (V-JEPA2-L) and its echocardiography counterpart (EchoJEPA-L) differ in pretraining corpus alone. The choice among these encoders does not resolve the classification, the whole family spanning 2.50 percentage points against a measurement resolution of 2.71. What moves the task instead is feature conditioning. Standardising the features between the encoder and the classifier improves all seventeen encoders by a mean of +1.23 percentage points at $p=1.5\\times10^{-5}$. On the held-out test set every encoder selected on the development folds stands above the baseline system by up to +2.57 percentage points of area under the receiver operating characteristic curve (AUROC), and specificity at 90% sensitivity reaches 79.3% against 60.3%. The contrast specified in advance, EchoJEPA-L against V-JEPA2-L, measures -0.16 percentage points at $p=0.926$. We therefore find no evidence that shared ultrasonic physics ",
+      "meta": {
+        "authors": [
+          "Christiaan M. Geldenhuys",
+          "Joshua M. Jansen van Vüren",
+          "Véronique Suttels",
+          "Trevor Brokowski",
+          "Ablo P. Wachinou",
+          "Mary-Anne Hartley",
+          "Rensu P. Theart",
+          "Grant Theron",
+          "Thomas R. Niesler"
+        ],
+        "primary_category": "eess.IV",
+        "published": "2026-10-02T13:33:18Z"
+      }
+    },
+    {
+      "id": "6a86d9867b53",
+      "url": "https://arxiv.org/abs/2610.03289v1",
+      "title": "Architecture-Dependent Fusion Pathways in MLLMs",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Multimodal Large Language Models (MLLMs) achieve strong performance across vision-language tasks, yet the internal mechanisms by which visual and textual information are fused across layers remain insufficiently understood. We investigate representative MLLMs from two architectural paradigms: concatenation architectures and native multimodal architectures. We conduct three progressively connected analyses: alignment decoupling identifies which modality changes, attention routing and entropy characterize how cross-modal information is distributed, and intrinsic dimensionality examines how fusion reshapes feature spaces. Separately, we perform causal intervention experiments as a validation of the resulting interpretation. As a supplementary analysis, we use visual CKA to examine the Platonic Representation Hypothesis. Together, these analyses reveal two distinct fusion pathways: concatenation models follow a text-first, vision-later pathway, whereas native models exhibit earlier visual-textual co-adaptation and feature-space reorganization. This work provides a mechanistic perspective for understanding multimodal fusion and supports architecture-aware diagnostics of multimodal representations.",
+      "meta": {
+        "authors": [
+          "Hebao Zhu",
+          "Dongxia Wu"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:32:45Z"
+      }
+    },
+    {
+      "id": "34bb927b2352",
+      "url": "https://arxiv.org/abs/2610.03273v1",
+      "title": "EVOL: Simulator-Guided Evolutionary Expert Synthesis for Deployment-Free Learning Path Recommendation",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Reinforcement learning (RL) for learning path recommendation (LPR) faces two coupled obstacles. First, the policy must commit to a sequence of L concepts without intermediate feedback, producing a combinatorial search space that grows super-exponentially with L and provides reward only at the final step. Second, expert learning paths would be the natural cure for sparse-reward RL, but they do not exist in educational data, because student logs record what learners did, not what they should have done. We address both obstacles by importing a recipe from simulator-based demonstration learning in robotics: the knowledge tracing simulator is used both to synthesize per-learner expert demonstrations through evolutionary search and to train a deployment-free policy that distills these demonstrations into a feed-forward learner. Our framework, EVOL, instantiates this pipeline with an asymmetric actor-critic where the actor commits to deployment-realistic blind planning while the critic exploits the privileged simulator state during training. Across three datasets (ASSIST15, Junyi, and EdNet; 39-189 concepts) and path lengths L = 5, 10, and 20, EVOL surpasses 8 baselines spanning heuristic, sequential, RL, graph-enhanced RL, and LLM-enhanced methods. We further compare three imitation strategies (BC, AWR, and DAPG) and show that final performance is governed by the quality of evolutionary experts rather than by the particular imitation objective.",
+      "meta": {
+        "authors": [
+          "Geonwoo Bang",
+          "Dongho Kim",
+          "Moohong Min"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T13:16:40Z"
+      }
+    },
+    {
+      "id": "03857fc959ef",
+      "url": "https://arxiv.org/abs/2610.03268v1",
+      "title": "Shrome at Touché: Soft-Vote Ensembling and Counter-Causal Augmentation for Causality Extraction",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Touché 2026 extends causality extraction to counter-causal claims: news sentences whose surface form appears causal but whose meaning denies the causation, as in \"It is falsely believed that X caused Y.\" A system that relies on surface cues such as \"caused\" or \"led to\" will accept such a sentence as causal and give it the wrong polarity. On the Countercausal News Corpus (CCNC), the task has three subtasks: deciding whether a sentence is causal (detection), locating its cause and effect spans (extraction), and labeling its polarity as procausal, counter-causal, or uncausal. We build one model per subtask. Detection is a fine-tuned classifier with a single cross-task rule that uses the extracted spans to remove false positives. For extraction, we ensemble three RoBERTa-large BILOU+CRF taggers by averaging their token-level scores before decoding, rather than voting on the spans each tagger produces. For polarity, where labeled counter-causal examples are scarcest, we add training sentences generated by a large language model prompted with nine patterns of counter-causal expression adapted from Hagen et al., keeping only those that pass automatic structural checks. On the held-out CCNC test set, the system reaches F1 0.869 on detection and macro-F1 0.817 on polarity, and in the organizers' final causal-only evaluation of extraction it scores granularity-adjusted F1 0.728, the highest extraction score among all submissions including the organizers' baseline. The development split",
+      "meta": {
+        "authors": [
+          "Roham Zendehdel Nobari",
+          "Shayan Sooratgar"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T13:11:27Z"
+      }
+    },
+    {
+      "id": "7615eefde585",
+      "url": "https://arxiv.org/abs/2610.03265v1",
+      "title": "SPEAR: A Spectral-Disentangled MoE Neural Operator with Knowledge-Guided Expert Aggregation for Large-Scale PDE Pretraining",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Large-scale pre-training has improved the generalization of neural operators across diverse PDEs. However, existing PDE foundation models still struggle with heterogeneous dynamics, where shared representations may cause knowledge interference, while mixture-of-experts (MoE) architectures suffer from increasing expert redundancy. We propose SPEAR, a spectral-disentangled MoE neural operator with knowledge-guided expert aggregation for large-scale PDE pre-training. SPEAR decouples latent features into low- and high-frequency components, enabling shared modeling of transferable dynamics and specialized learning of PDE-specific patterns. To address expert redundancy, we design a knowledge-guided expert aggregation strategy that measures expert similarity from dataset-specific learned knowledge and routing preferences, enabling the identification and consolidation of similar experts. Experiments on twelve PDE datasets and multiple downstream benchmarks demonstrate superior performance in pre-training, fine-tuning, and transfer learning. Furthermore, our aggregation strategy reduces the number of experts by 50\\% while maintaining or improving prediction accuracy, achieving a balance between model efficiency and generalization for PDE foundation models.",
+      "meta": {
+        "authors": [
+          "Dengdi Sun",
+          "Xiaoya Zhou",
+          "Xiao Wang",
+          "Wanli Lyu",
+          "Jin Tang",
+          "Bin Luo"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:10:09Z"
+      }
+    },
+    {
+      "id": "af47deae472b",
+      "url": "https://arxiv.org/abs/2610.03261v1",
+      "title": "Consecutive Posterior Fusion for Diffusive Recovery of Unobservable Image Structures",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Solving severely ill-posed imaging inverse problems requires recovering image structures that are unobservable or weakly constrained by the measurements. Diffusion models provide expressive learned priors for inferring such missing information, while posterior sampling incorporates measurement consistency along the reverse process. Standard diffusion posterior samplers, however, rely on instantaneous measurement-aware estimates, without explicitly exploiting information carried by previous posterior corrections. We introduce Consecutive Posterior Fusion Denoising Diffusion Null-Space Models (CPF-DDNM), an inference-time strategy that fuses consecutive measurement-aware estimates to improve the diffusive recovery of unobservable image structures, without requiring retraining or additional denoiser evaluations. We instantiate this principle within DDNM, whose range/null-space decomposition reveals that consecutive fusion preserves the measurement-determined component while acting exclusively on the prior-driven null-space estimate. We thus provide a geometric interpretation of CPF-DDNM and a local error analysis that characterizes the optimal time-dependent fusion coefficient, including the extrapolative regime. Experiments on sparse-view and simulated low-dose computed tomography, as well as medical image super-resolution, show consistent improvements over DDNM and competitive performance against diffusion-based inverse solvers.",
+      "meta": {
+        "authors": [
+          "Elena Morotti",
+          "Davide Evangelista",
+          "Elena Loli Piccolomini"
+        ],
+        "primary_category": "cs.CV",
+        "published": "2026-10-02T13:05:36Z"
+      }
+    },
+    {
+      "id": "24a97fa14bf2",
+      "url": "https://arxiv.org/abs/2610.03259v1",
+      "title": "PaMIR: Open Benchmark of Public Credit-Default Datasets",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We release PaMIR (Public Arrival-ordered Measurement for Inference in Risk), an open benchmark for credit-default prediction when labels are scarce and arrive late. The field's reference benchmark studies use eight datasets each, only two or four of them public. PaMIR brings together 19 public datasets with binary default labels -- 1.24M loans, firms and card accounts from nine countries -- rebuilt from pinned source snapshots by one leakage-audited recipe and never redistributed; to our knowledge it is the one of its kind as of today. Every model is a single function, scored under a repeated i.i.d. split and a label-delayed stream in which each application is scored on arrival, with AUC reported by label budget; fleet means are withheld unless every dataset is scored. A synthetic-data harness tests generated training rows without letting a generator see held-out rows. This report describes release 0.4.0 of this living benchmark.",
+      "meta": {
+        "authors": [
+          "Mikhail Liashkov",
+          "Ilyas Varshavskiy",
+          "Shuhratjon Khalilbekov",
+          "Azizjon Azimi",
+          "Bonu Boboeva"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:04:45Z"
+      }
+    },
+    {
+      "id": "34aa49dc2631",
+      "url": "https://arxiv.org/abs/2610.03258v1",
+      "title": "Mapping and Advancing the Scalability-Accuracy Frontier of Nonlinear Causal Discovery",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Scalable nonlinear causal discovery requires methods that combine flexible mechanism estimators with efficient search over large graph spaces. Several algorithmic families have been proposed to address this challenge, yet their accuracy-runtime trade-offs remain poorly understood. We empirically compare the four major approaches: differentiable structure learning, amortized structure learning, score-matching, and combinatorial search. Our results reveal complementary bottlenecks: differentiable and amortized methods scale well but exhibit an accuracy gap, score-matching methods can be accurate in low dimensions but degrade quickly for increasing feature sizes, and combinatorial methods remain accurate but are slowed by repeated and redundant local scoring. Motivated by this bottleneck, we develop SPADE, a spline-based score-evaluation scheme that compiles sufficient statistics once and reuses them throughout combinatorial search. Under bounded indegree, its Gaussian variant reduces algorithmic complexity from O(nd^3) to O(nd^2+d^3). Empirically, SPADE shifts the observed scalability-accuracy frontier by orders of magnitude: it solves 100-variable problems with 160K samples in seconds and 1600-variable problems with 2.5K samples in minutes, while retaining high structural accuracy across synthetic and real-world benchmarks. These results reveal a substantial shift in the practical scale of combinatorial search and highlight the importance of evaluating scalable causal-discover",
+      "meta": {
+        "authors": [
+          "Hendrik Suhr",
+          "Sascha Xu",
+          "Jilles Vreeken"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:03:56Z"
+      }
+    },
+    {
+      "id": "22d0e06a1aad",
+      "url": "https://arxiv.org/abs/2610.03256v1",
+      "title": "Cross-cohort TB classification using clinical data gathered in Uganda and South Africa",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We present a first evaluation of machine learning applied to patient clinical and demographic data gathered in two different countries for the purpose of tuberculosis (TB) screening to identify people who would benefit from expensive molecular testing. Experiments are based on the recently-compiled CAGE-TB dataset, which includes sub-cohorts of people with presumptive TB presenting at community health care centres in South Africa and Uganda. Three neural network architectures (logistic regression (LR), multilayer perceptrons (MLP) and convolutional neural networks (CNN)) are considered in conjunction with greedy feature selection. For the convolutional neural network, a strategy that jointly optimises feature selection and feature ordering is proposed and shown to lead to consistent development and test set improvements. For all three models, development set area under the receiver operating characteristic (AUROC) curve is improved by 2-7% using feature selection. LR after feature selection achieves an AUROC of 0.8 [0.75,0.86] (95% CI) and 0.84 [0.78,0.9] when testing on the held-out Ugandan and South African data respectively. Although outperforming LR on the development cohort, the deeper networks (MLP, CNN) show inconsistent trends on the held-out cohorts, while LR achieves performance within 1-2% of the best achieved in terms of AUROC. LR narrowly misses the WHO minimum requirements by 4-9% in sensitivity even though the network is being evaluated on a completely held-out",
+      "meta": {
+        "authors": [
+          "Joshua M. Jansen van Vüren",
+          "Devendra S. Parihar",
+          "Daphne Naidoo",
+          "Marisa Klopper",
+          "Frank Cobelens",
+          "Lutz Kolbe",
+          "Kimsey Zajac",
+          "Willy Ssengooba",
+          "Moses Joloba",
+          "Grant Theron",
+          "Thomas R. Niesler"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T13:01:26Z"
+      }
+    },
+    {
+      "id": "ed77c3d86022",
+      "url": "https://arxiv.org/abs/2610.03251v1",
+      "title": "Learning a Fact Is Not Learning How to Retrieve It",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "A model trained on \"The capital of X is Y\" may produce \"Y\" after \"The capital of X is\" but fail after \"The capital of X:\". We call these different ways of eliciting the same fact request forms. To separate learning a fact from retrieving it, we train two models in two stages. In the first stage (request-form training), one model sees each fact in five forms and the other sees the same facts only as statements. In the second stage (target-fact training), both receive identical training on new facts, all as statements. Both then retrieve the new facts almost equally well from statements, but differ sharply on other request forms. Thus, a model can learn how to retrieve through a request form before it learns the facts. To understand this difference, we examine the hidden state immediately before the answer, which we call the context state. When given two different request forms for the same fact, the model trained on five forms in stage one produces more similar context states than the model trained on statements alone in that stage. Changing this state at retrieval time can enable or prevent retrieval of an already learned fact, and the same effect transfers across facts and factual relations, such as capitals and currencies. To test its role during learning, we change the context state only during target-fact training. This intervention changes later retrieval without intervention at test time. Together, these results show that later retrieval depends on earlier request-form ",
+      "meta": {
+        "authors": [
+          "Chaemin Jang",
+          "Jihee Kim",
+          "Dongman Lee"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T12:59:19Z"
+      }
+    },
+    {
+      "id": "3fa735f00e85",
+      "url": "https://arxiv.org/abs/2610.03240v1",
+      "title": "Collective Bias Mitigation via Model Routing and Collaboration",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Large language models (LLMs) are increasingly deployed in public health, finance, and governance, requiring both accuracy and societal value alignment. Despite recent advances, LLMs often perpetuate or amplify bias embedded in their training data, posing challenges to fairness. While self-debiasing encourages an LLM to identify and correct its own biases, relying on a single model's intrinsic knowledge may be insufficient to address deeply ingrained stereotypes. To address this limitation, we introduce Collective Bias Mitigation (CBM), a framework that alleviates bias by learning fine-grained model behavior and fostering knowledge sharing among diverse LLMs. This work is the first to systematically explore the effective selection and organization of distinct LLMs to cultivate fairer LLM responses. Experiments show CBM substantially outperforms standalone baselines (e.g., in the top-7 setting, Committee lowers the age bias score from 0.25 to 0.10). Our Debating and Committee topologies achieve substantial bias reduction, with the latter balancing mitigation effectiveness and inference cost, highlighting the potential of CBM for fairer LLMs.",
+      "meta": {
+        "authors": [
+          "Mingzhe Du",
+          "Luu Anh Tuan",
+          "Xiaobao Wu",
+          "Yichong Huang",
+          "Yue Liu",
+          "Dong Huang",
+          "Huijun Liu",
+          "Bin Ji",
+          "Jie M. Zhang",
+          "See-Kiong Ng"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T12:49:44Z"
+      }
+    },
+    {
+      "id": "3a7c4baec36b",
+      "url": "https://arxiv.org/abs/2610.03234v1",
+      "title": "WAMpy: Efficient Synthesis of Prolog Programs in Python",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We present WAMpy, a Python framework optimized for synthesizing Prolog programs. Unlike general-purpose Prolog systems, WAMpy targets workloads that repeatedly generate and evaluate small candidate programs. WAMpy compiles Prolog clauses into NumPy array-based WAM instructions and supports partial recompilation of hypotheses against fixed background knowledge. Performance-critical routines are accelerated using Numba just-in-time (JIT) compilation. In a benchmark of repeated compilation-and-evaluation workloads, WAMpy improves end-to-end performance compared with SWI-Prolog accessed from Python using Janus.",
+      "meta": {
+        "authors": [
+          "Dominik Magiera",
+          "Lukas Röhrig",
+          "Frank Jäkel"
+        ],
+        "primary_category": "cs.PL",
+        "published": "2026-10-02T12:44:26Z"
+      }
+    },
+    {
+      "id": "cae73838bb93",
+      "url": "https://arxiv.org/abs/2610.03226v1",
+      "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agents translate expert design guidance into efficient GPU kernels. The guidance covers L1: high-level algorithmic insights, L2: dataflow design, and L3: low-level optimization tricks, including dependencies among these levels. Pairwise runs with and without guidance share task descriptions, workloads, tools, hardware, and a 350-turn budget. Complementary assessments examine independently proposed designs and the design properties implemented in generated code. Across five models on NVIDIA B200 GPUs, guidance raises correctness over 130 model-task pairs from 93.1% to 98.5% and increases the Performance Score over all 26 tasks from 1.46 to 1.95. For the three frontier models with correct submissions on all 26 tasks in both runs (GPT-6-Astra, Claude-Opus-4.8, and GPT-5.6-Sol), geometric mean speedup increases from $1.69\\times$ to $2.49\\times$. Across all five models, the mean combined implementation score increases from 57 to 70 out of 100. These results show the value of expert design guidance while identifying design properties that remain unimplemented.",
+      "meta": {
+        "authors": [
+          "Daifeng Li",
+          "Huiqiang Jiang",
+          "Chengruidong Zhang",
+          "Wei Wu",
+          "Xudong Guo",
+          "Jianhong Tu",
+          "Jianwei Zhang",
+          "Binhang Yuan",
+          "Dayiheng Liu"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:42:12Z"
+      }
+    },
+    {
+      "id": "7bbb668cca37",
+      "url": "https://arxiv.org/abs/2610.03225v1",
+      "title": "The Neuro-Physical Inverter: A Modular Framework for Magnetotelluric Inversion Coupling Ensemble Conditioning with Residual Learning",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We present the Neuro-Physical Inverter (NPI), a modular, uncertainty-aware framework for geophysical inversion that couples ensemble-based conditioning with constrained residual learning, demonstrated in the 1D magnetotelluric (MT) setting as a controlled testbed. The framework operates in two stages. An Ensemble-Conditional Gaussian Process (EnsCGP) conditions a prior ensemble of resistivity models on the observed response, producing a physically admissible reference ensemble. A residual-learning neural network then predicts targeted corrections to this reference, trained on synthetic data and fine-tuned per station for field application through a physics-coupled objective. Because an ensemble is conditioned, refined, and propagated through both stages, every estimate carries an associated ensemble spread. Synthetic experiments show that NPI systematically reduces ensemble-mean error without destabilizing the ensemble. Applied to broadband MT data from the Gabbs Valley geothermal region (Nevada, USA), NPI reduces the across-station mean misfit over the mid-period band while retaining comparable ensemble spread. The propagated ensemble yields a factor of uncertainty that serves as an operational measure of constraint within the assumed model class. Both stages are dimension-agnostic in formulation, and the design principles established here are intended to scale to higher-dimensional parameterizations.",
+      "meta": {
+        "authors": [
+          "Jae Deok Kim",
+          "Sai Ravela",
+          "Rob. L. Evans"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:41:43Z"
+      }
+    },
+    {
+      "id": "939909c7a7fe",
+      "url": "https://arxiv.org/abs/2610.03224v1",
+      "title": "Uncertainty as a Proxy for Semantic Correctness in Diffusion-Based Medical Image Synthesis",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Diffusion models can synthesise contrast-enhanced CT (CECT) from non-contrast CT (NCCT), avoiding contrast administration and its environmental and patient-access costs. However, visually realistic images are not necessarily anatomically correct, and the pixel-intensity and feature-space similarity metrics used to assess generation quality do not directly measure anatomical correctness. In this work, we investigate whether uncertainty can serve as a proxy for semantic correctness in diffusion-based medical image synthesis. We study NCCT-to-CECT synthesis using AortaDiff, a multitask diffusion framework that jointly generates CECT images and lumen segmentations. The segmentation output provides an explicit representation of the generated vascular anatomy, enabling segmentation-derived errors to be used as a quantitative measure of generation correctness. Six methods spanning weight (Ensemble, HyperDiff, BayesDiff), architecture-perturbation (MCDropout), generative-stochasticity (RDS) and input-perturbation (TTA) uncertainty are compared at the pixel, region and image levels, and for detection of clinically relevant out-of-distribution (OOD) cases. Uncertainty proves informative at all three spatial scales, remains informative on an external multi-centre dataset under distribution shift, and supports OOD detection. MCDropout stands out among the six: it ranks among the leading methods at every scale, generalizes well on the external dataset, and can be enabled at inference on a",
+      "meta": {
+        "authors": [
+          "Yuxuan Ou",
+          "Konstantinos Kamnitsas",
+          "OxAAA Study",
+          "AICT Consortium",
+          "Regent Lee",
+          "Vicente Grau"
+        ],
+        "primary_category": "cs.CV",
+        "published": "2026-10-02T12:40:26Z"
+      }
+    },
+    {
+      "id": "638cddac1541",
+      "url": "https://arxiv.org/abs/2610.03223v1",
+      "title": "AdaStep: Adaptive Step Credit Weighting for Agentic Reinforcement Learning",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Long-horizon LLM agents are typically trained with sparse outcome rewards, making trajectory-level objectives too coarse to distinguish the contribution of individual decisions. Step-level credit assignment provides finer-grained supervision, but its estimates can be unreliable because observed returns also depend on subsequent actions, environment transitions, and trajectory length. We propose AdaStep, an Adaptive Step-credit weighting method that controls how strongly each group-derived local advantage modifies the trajectory-level signal. We formulate this weighting as a mean-squared-error estimation problem for the latent step advantage and, under an explicit conditional sampling assumption, derive an optimal per-state shrinkage coefficient. The coefficient admits a signal-to-total-variance interpretation: it preserves local credit when return variation is attributable to the selected action and suppresses it when variation is dominated by downstream randomness. AdaStep requires only lightweight scalar computation, with no critic, additional rollouts, or extra model inference. Experiments with three model backbones on ALFWorld, WebShop, and ScienceWorld show consistent improvements over baselines at low computational cost.",
+      "meta": {
+        "authors": [
+          "Xin Wang",
+          "Wenhao Wu",
+          "Menghao Zhang",
+          "Zhi Wang",
+          "Kun Shao",
+          "Jian Luan"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:38:53Z"
+      }
+    },
+    {
+      "id": "f6f4bc758033",
+      "url": "https://arxiv.org/abs/2610.03222v1",
+      "title": "Near-Optimal Convex Optimization with Lazy Second-Order Oracles",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "This paper studies the complexity of convex optimization using lazy second-order oracles (Doikov, Chayti, and Jaggi, ICML 2023), where an algorithm queries gradients every iteration and Hessians once per $m$ iterations. Under this setting, we show a lower bound of $Ω(m+ m^{1/7} ε^{-2/7})$ on the number of total iterations to find an $ε$-solution using a novel block zero-chain construction. Then we propose a novel method that achieves a new upper bound of $\\tilde{\\mathcal{O}}(m+ m^{1/7} ε^{-2/7})$, which significantly improves the prior one (Chen, Liu, Luo, and Zhang, COLT 2026) of $\\tilde{\\mathcal{O}}(m+ m^{13/21} ε^{-2/7})$ and is tight up to logarithmic factors.",
+      "meta": {
+        "authors": [
+          "Xinliang Zhang",
+          "Lesi Chen",
+          "Chengchang Liu",
+          "Jingzhao Zhang"
+        ],
+        "primary_category": "math.OC",
+        "published": "2026-10-02T12:38:28Z"
+      }
+    },
+    {
+      "id": "5a0262bf31bc",
+      "url": "https://arxiv.org/abs/2610.03220v1",
+      "title": "Evolving Hybrid Quantum-Classical Architectures for Image Classification",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Hybrid quantum classical neural networks integrate parameterized quantum circuits (PQCs) with established deep learning architectures, but their performance depends strongly on the choice of quantum circuit architecture, a choice that remains largely manual. Most existing approaches rely on hand-designed or fixed circuit ansätze, requiring circuit structure, gate composition, and qubit connectivity to be specified in advance with no guarantee that they suit the task. This limitation is especially acute in image classification, where quantum circuits must transform features extracted by classical networks while remaining compact enough for practical training, requirements that generic, task-agnostic ansätze are unlikely to satisfy simultaneously. We extend EXAQC, an evolutionary framework for automated quantum circuit discovery, to image classification. EXAQC evolves PQCs as intermediate processing modules while retaining classical feature-extraction and prediction layers. On MNIST, Fashion-MNIST, and CIFAR-10, EXAQC achieves 98.42%, 90.62%, and 85.47% accuracy, respectively, while using comparable gate counts to other quantum architecture-search methods. Against classical networks, evolved hybrid models maintain comparable accuracy with substantially fewer trainable parameters, reaching 85.68% on CIFAR-10 with over 25$\\times$ fewer parameters than a 10-layer CNN. Encoding choice also matters: rotation-based encodings (RX, RY, U3) outperform amplitude encoding by 22-25 points ",
+      "meta": {
+        "authors": [
+          "Devroop Kar",
+          "Daniel Krutz",
+          "Travis Desell"
+        ],
+        "primary_category": "cs.NE",
+        "published": "2026-10-02T12:37:10Z"
+      }
+    },
+    {
+      "id": "5bb13ebbb9bf",
+      "url": "https://arxiv.org/abs/2610.03216v1",
+      "title": "Kernel Singular Value Decomposition with Extension to Multiple Data Sources",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Kernel Singular Value Decomposition (KSVD) learns a pair of singular vectors w.r.t. an asymmetric kernel matrix, which can be induced by two data sources, e.g., the queries and keys in self-attention or the rows and columns of a given matrix. In this work, we extend KSVD to multiple data sources, namely eKSVD, which conducts joint nonlinear feature learning upon asymmetric kernels. In the primal formulation, the projections associated with each data source are jointly learned to capture maximal information, while incorporating pair-wise couplings. With the Lagrangian and its Karush-Kuhn-Tucker (KKT) conditions, the optimization in the dual leads to a generalization of the shifted eigenvalue problem in Lanczos decomposition theorem of KSVD. Further, a covariance-based framework is derived together with using neural networks (NNs) for explicit feature mappings, complementary to the kernel-based interpretation and optimization. Numerical experiments verify the effectiveness of our eKSVD compared to methods based on Mercer kernels for tackling multiple data sources, and our innovation of deploying NNs demonstrates great flexibility for kernel methods.",
+      "meta": {
+        "authors": [
+          "Xinjie Zeng",
+          "Qinghua Tao",
+          "Johan Suykens"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:32:21Z"
+      }
+    },
+    {
+      "id": "384651acdb6a",
+      "url": "https://arxiv.org/abs/2610.03215v1",
+      "title": "StanceEval 2026: The Second Stance Detection Shared Task",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "StanceEval 2026 is the second edition of the StanceEval shared task series on stance detection in Arabic social media text. Stance detection aims to identify a writer's stance toward a given topic. Given a tweet and a target, participating systems must determine whether the writer's stance is Favor, Against, or None. This edition focuses on cross-target generalization across two distinct evaluation tracks: Track 1 evaluates thematically related cross-target transfer (testing on Women Driving, related to Women Empowerment from training data), while Track 2 evaluates cross-domain transfer to completely unseen targets (E-Cars and Trimester System). The shared task attracted 80 registered teams from 12 countries. During the evaluation phase, 30 unique teams submitted entries, with 21 teams officially ranked in Track 1 and 13 in Track 2 following validation filtering, and 20 teams submitting system-description papers. Participating teams employed diverse methodologies, including fine-tuned pretrained language models, prompt-based and retrieval-augmented large language models (LLMs), fine-tuned LLMs, and hybrid cascades. Top systems achieved impressive $F_{avg2}$ scores of 0.8994 on Track 1 and 0.9400 on Track 2, substantially outperforming the strongest baselines (0.7366 and 0.7475, respectively), where $F_{avg2}$ denotes the macro-averaged F1 score over the Favor and Against classes. Counterintuitively, performance on the unseen targets was higher than on the related target, a di",
+      "meta": {
+        "authors": [
+          "Rasha Albalawi",
+          "Nuha Albadi",
+          "Hamzah Luqman",
+          "Asma Yamani",
+          "Maram Kurdi",
+          "Saad Ezzini",
+          "Ahmed Ashraf",
+          "Maged Al-Shaibani",
+          "Nora Alturayeif"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T12:32:11Z"
+      }
+    },
+    {
+      "id": "d2e9a8a76edd",
+      "url": "https://arxiv.org/abs/2610.03213v1",
+      "title": "Toward SLM-based agentic task-tool intent matching",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Tool-equipped AI agents use tool calls to access data and act on external systems. Horizontal growth of agentic systems increases the number of these interactions, and further motivates the need for automated, per-call oversight that can operate at low latency and/or on-prem. Conventional authorization schemes can determine whether an agent is allowed to invoke a tool, but cannot assess the agent's underlying cognition, specifically, whether the tool selection represents a logical, relevant step toward satisfying the intent of the task or not. Consequently, an allowed call may still deviate from the task's intent: a rogue agent might deviate the calls or nudge other agents to make a combination of calls that would not align with the intent of the task. Therefore, every call needs to be verified. In this study we investigate the applicability of Small Language Models (SLMs) to this purpose: an SLM functions as a task-tool relevance classifier that evaluates every selected tool independently against the assigned task and returns a relevance signal for downstream enforcement. Equipped with a novel dataset with multi-tool tasks whose required tools span distinct Model Context Protocol (MCP) servers, we used prompt-optimization, supervised fine-tuning, and reinforcement learning through GRPO to optimize and specialize SLMs.",
+      "meta": {
+        "authors": [
+          "Chiara Troiani",
+          "Arash Salarian",
+          "Majed El Helou",
+          "Benjamin Ryder",
+          "Jean Diaconu",
+          "Hervé Muyal",
+          "Marcelo Yannuzzi"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T12:31:01Z"
+      }
+    },
+    {
+      "id": "e8e72f3d5dda",
+      "url": "https://arxiv.org/abs/2610.03211v1",
+      "title": "HyperFuse: Fast Self-Supervised Node Embeddings for Attributed Hypergraphs",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Self-supervised hypergraph representation learning can produce informative node embeddings, but existing methods often require deep encoders trained for hundreds of epochs, making embedding generation costly even for hypergraphs with a few thousand nodes. This limits applications requiring embeddings for many or evolving hypergraphs. We present HyperFuse, a label-free pipeline for fast hypergraph representation learning. HyperFuse (i) computes structural node coordinates by maximizing a spectral relaxation of hypergraph modularity using Banerjee's hypergraph adjacency and a matrix-free operator with cost linear in node-hyperedge incidences; (ii) constructs multi-scale feature summaries and assigns bounded utility weights to hyperedges based on member stability under feature and membership masking; and (iii) trains a lightweight utility-weighted hypergraph encoder for 100 epochs using an invariance-decorrelation objective. We compare HyperFuse with TriCL, SE-HSSL, VilLain, and HypeBoy on nine public hypergraphs using six downstream classifiers and k-means clustering. On the eight datasets where all methods completed, HyperFuse required 8.7 s per dataset on average, achieving 13-179x geometric-mean speed-ups over the baselines. It achieved the highest average accuracy with five of six classifiers, while classification and clustering performance was not significantly different from TriCL and SE-HSSL. Compared with HypeBoy, HyperFuse was 13x faster and 2.1-4.1 percentage points m",
+      "meta": {
+        "authors": [
+          "Megha P",
+          "Harshit Kumar",
+          "Srajan Agarwal",
+          "Anirban Banerjee",
+          "Olaf Wolkenhauer",
+          "Saptarshi Bej"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:30:51Z"
+      }
+    },
+    {
+      "id": "4c876a520f03",
+      "url": "https://arxiv.org/abs/2610.03205v1",
+      "title": "Hamiltonian locality testing and certification do not achieve the Heisenberg limit",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We establish lower bounds for Hamiltonian property testing with access to the time-evolution operator but not its inverse. Each experiment may query the time-evolution operator multiple times, and distances between Hamiltonians are measured in the normalized Frobenius norm. In this model, we show that testing whether a Hamiltonian is $k$-local or $\\varepsilon$-far from every $k$-local Hamiltonian requires $Ω(1/\\varepsilon^2)$ total evolution time, matching the upper bound of Kallaugher and Liang (TQC'25). We also prove that testing whether an unknown Hamiltonian equals a target Hamiltonian or is $\\varepsilon$-far from it requires $Ω(1/\\varepsilon^2)$ total evolution time, matching the upper bound of Sinha and Tong (2025). These are the first lower bounds for natural problems in Hamiltonian learning and testing that rule out Heisenberg-limited scaling of $1/\\varepsilon$. As a third result, we show that amplitude estimation to precision $\\varepsilon$ requires $Ω(1/\\varepsilon^2)$ total time evolution, recovering the result of Tang and Wright (QIP'26) in the continuous-time query model. All three results follow from the hardness of distinguishing the zero Hamiltonian from a suitably chosen ensemble of random Hamiltonians. We establish this hardness by adapting the continuous-time adversary method to forward Hamiltonian evolution.",
+      "meta": {
+        "authors": [
+          "Francisco Escudero Gutiérrez",
+          "Junseo Lee",
+          "Sebastian Zur"
+        ],
+        "primary_category": "quant-ph",
+        "published": "2026-10-02T12:21:49Z"
+      }
+    },
+    {
+      "id": "0de7d141bc57",
+      "url": "https://arxiv.org/abs/2610.03202v1",
+      "title": "Contextual Flow Matching: Adaptive Step Selection in Flow Models for Efficient Visual Generation",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Flow Matching enables high-quality visual generation via continuous-time dynamics, but inference remains costly due to multiple sequential function evaluations. Existing acceleration methods reduce the number of function evaluations but often introduce additional training overhead, degrade quality, or fail to account for input-dependent variability. We propose COFLOW, an inference-time method that adaptively selects the step counts each generation based on the prompt features. Our context-aware COFLOW is trained online with an unsupervised reward that balances inference efficiency and generation fidelity. Our method is plug-and-play, requiring no retraining of the underlying generative model. It generalizes to image and video generation, achieving over 2.5x speedup while preserving perceptual and semantic quality. We further provide a theoretical analysis establishing an O(1/K) forward-Euler discretization error bound under standard regularity conditions.",
+      "meta": {
+        "authors": [
+          "Divya Jyoti Bajpai",
+          "Arun Verma",
+          "Manjesh Kumar Hanawal"
+        ],
+        "primary_category": "cs.CV",
+        "published": "2026-10-02T12:19:49Z"
+      }
+    },
+    {
+      "id": "f30929e8a70d",
+      "url": "https://arxiv.org/abs/2610.03201v1",
+      "title": "Predictively Oriented Gaussian Process Posteriors",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Gaussian Processes (GPs) are a powerful tool for modelling and quantifying uncertainty in functional relationships. However, they require practitioners to make a number of design decisions, such as the choice of the kernel and the observation model. Suboptimal choices can produce misspecified models that do not capture the underlying data generating process. We introduce Predictively Oriented Gaussian Processes (PrO-GPs), which treat predictive uncertainty as the primary inferential target and provide a robust alternative to standard GPs. Although direct computation of a PrO posterior for nonparametric models is intractable, we derive a reduced formulation and practical sampling scheme for efficient computation. Through synthetic and real data experiments, we show that PrO-GPs produce better calibrated predictive distributions under model misspecification compared to standard GP approaches.",
+      "meta": {
+        "authors": [
+          "Callum Lau",
+          "Jeremias Knoblauch",
+          "Louis Sharrock"
+        ],
+        "primary_category": "stat.ML",
+        "published": "2026-10-02T12:16:27Z"
+      }
+    },
+    {
+      "id": "6a10284af864",
+      "url": "https://arxiv.org/abs/2610.03199v1",
+      "title": "Predicting and Repairing Merge Collapse in Large Language Models",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Large language models fine-tuned from a shared base can be merged by averaging their task vectors, but some merges collapse far below the base model, and common merge operators give no warning before evaluation. We show that one statistic of the specialists' task vectors both predicts this collapse and calibrates its repair. The power that averaging removes equals the variance of the task vectors across specialists, our measure of interference. Under a working noise model, the disturbance that a merge injects grows with the merge coefficient and with interference, yielding a pre-merge score. In our experiments on twenty-two merge configurations from four model families, only destructive merges exceed a threshold on this score. We find that statistics of sign conflict between specialists, a common target of existing merge operators, are anti-predictive. We then predicted the outcomes of fourteen merges before evaluating them, and twelve predictions were correct, including the destructive outcome of a specialist pair pushed past the threshold by continued pretraining. To address this collapse, we introduce PRISM, an operator that averages the task vectors first and then soft-thresholds each layer at a level set by the layer's interference. Without data or tuning, PRISM keeps all five destructive merges above the threshold within evaluation noise of the base model, where plain averaging falls at least 14.4 points below it or collapses entirely. We apply PRISM only above the thre",
+      "meta": {
+        "authors": [
+          "Jungseob Lee",
+          "Seungyoon Lee",
+          "Sugyeong Eo",
+          "Hyeonseok Moon",
+          "Jaehyung Seo",
+          "Heuiseok Lim"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T12:11:43Z"
+      }
+    },
+    {
+      "id": "b43b3f9fbd6a",
+      "url": "https://arxiv.org/abs/2610.03198v1",
+      "title": "KV$^2$: A Self-Refining KV Cache",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "The memory footprint of the key-value (KV) cache constrains the practical use of long-context models, and it dominates cost when one prefilled context must later serve many different queries. In this reusable setting, query-agnostic compression trades cost against quality: lightweight estimators are cheap but less accurate, whereas full-context reconstruction scoring is more accurate yet reprocesses the entire prompt. We introduce KV$^2$, a query-agnostic KV-cache compression method based on selective reconstruction. KV$^2$ first uses a lightweight proxy scorer to identify informative in-context tokens, then reprocesses only this subset to compute final eviction scores. On RULER, Needle-in-a-Haystack, and LongBench, KV$^2$'s margin over baselines widens as the budget tightens: on RULER 16K at a 2% KV-cache budget it improves the average score over the next-best baseline by more than 40 percentage points, and on LongBench it attains the highest average across 2%-10% budgets at lower compression-stage runtime and peak memory than full-context reconstruction. Reusable KV-cache compression thus does not require reprocessing the full context. Our code is available at https://anonymous.4open.science/r/KVsquared-0B97.",
+      "meta": {
+        "authors": [
+          "Johannes Wesch",
+          "Danni Liu",
+          "Jan Niehues"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T12:11:35Z"
+      }
+    },
+    {
+      "id": "38659789573b",
+      "url": "https://arxiv.org/abs/2610.03195v1",
+      "title": "Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "As LLM agents decide on users' behalf which product to buy, which hotel to book, or which paper to cite, a preference for items from certain sources (the sites or services they come from) shapes what users receive and which sources are selected. We study source preference in end-to-end search with 12 agent models across three domains. Comparing items from different sources that satisfy the same requirements at the same position, we find that each model prefers some sources and avoids others in every domain, largely agreeing on which. This preference can outweigh how well items satisfy the request: an item satisfying one requirement fewer is selected about two-thirds of the time when it comes from a preferred source and the better one from a dispreferred source, but almost never in the reverse case. The information identifying an item's source affects selection by itself: hiding it weakens the preference, and relabeling an item with a preferred source raises its selection rate. We test two routes to this preference: training that rewards better items can make a source a shortcut for requirement satisfaction, and missing information can trigger preconceptions about the source. Supplying missing information or a prompt countering these preconceptions reduces source preference.",
+      "meta": {
+        "authors": [
+          "Jonghyun Song",
+          "Haewon Park",
+          "Jeonghoon Shim",
+          "Woojung Song",
+          "Yohan Jo"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T12:10:03Z"
+      }
+    },
+    {
+      "id": "140ba8ecb1ec",
+      "url": "https://arxiv.org/abs/2610.03190v1",
+      "title": "Not Until the Evidence Says So: Teaching LLM Investigators When to Close a Case",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Accident, defect and outage investigations end with a decision that ordinary question answering never faces: whether the evidence gathered so far is enough to close the case. We study this decision for LLM investigators, which request evidence from a case file, revise their hypotheses, and either close the case with a conclusion grounded in what they read or leave it open and name what is missing. This judgment does not come with capability: an untrained 9B model overstates its evidence in 97% of its answers, and a frontier model that identifies the right cause in 84% of cases still overstates in 91% and closes 17 of the 41 cases whose official finding is \"cause undetermined\". Measuring it is also non-trivial: the source of a case largely predicts its label, and a rule that reads only the source reaches 83.0 balanced accuracy on our test cases. We therefore evaluate closure with three tests: closure accuracy, reported against this rule and within each source; evidence dependence, which removes the grounds of a conclusion and checks whether the model stops closing; and conclusion and gap quality, a judged checklist of what the model asserts and what it says is missing. We build Nautil, 731 audited cases from aviation, rail, maritime, chemical-safety and vehicle-defect reports and production server incidents, with teacher trajectories, an out-of-distribution test set and counterfactual evidence versions. Fine-tuning a 9B model on these trajectories makes its closures follow the",
+      "meta": {
+        "authors": [
+          "Tingzhu Bi",
+          "Ping Wang",
+          "Meng Ma"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T12:06:02Z"
+      }
+    },
+    {
+      "id": "2e9ff109cc56",
+      "url": "https://arxiv.org/abs/2610.03185v1",
+      "title": "Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "On-policy distillation (OPD) has become an important approach to language model post-training. However, despite its performance gains, OPD can also collapse into excessively long and repetitive generation, and the mechanism underlying these divergent outcomes remains poorly understood. We explain these outcomes through a reinforcement learning perspective: the teacher implicitly rewards student behaviors, even those it rarely exhibits itself. From this perspective, our experiments show that OPD improves performance without expanding the student's capabilities. When the implicit reward model is reliable, OPD makes correct responses easier to sample. In contrast, when the preference misaligns with quality, reward hacking happens: the implicit reward model amplifies overlong, repetitive student rollouts, even though it rarely generates such text itself. Guided by this diagnosis, we find that masking unhealthy responses during training and using SFT initialization can each effectively mitigate the collapse. Together, these findings show that OPD amplifies student behaviors favored by the teacher's implicit feedback, shifting the focus from how well the teacher generates to how reliably it evaluates student rollouts. Our code is available at https://github.com/HancCui/opd_hacking.",
+      "meta": {
+        "authors": [
+          "Han Cui",
+          "Jianhao Yan",
+          "Yun Luo",
+          "Hongbo Zhang",
+          "Zhizhang Fu",
+          "Yue Zhang"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T11:57:36Z"
+      }
+    },
+    {
+      "id": "652d2b11ec90",
+      "url": "https://arxiv.org/abs/2610.03176v1",
+      "title": "Hindsight-Guided Rationale Distillation for Rare Disease Diagnosis",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "We study hindsight-guided distillation for rare disease diagnosis on ZebraMap: a 1.5B student is fine-tuned on chain-of-thought traces from a 8B teacher that observes the ground-truth diagnosis during generation. Absolute accuracy remains low for all models - the task is hard at this scale - but within this ceiling a filtered variant (StudentF) achieves a small, statistically significant accuracy advantage over the teacher (p < 0.001), concentrated in better-represented diseases. The unfiltered student does not significantly outperform the teacher (p = 0.129), establishing that contamination filtering - not hindsight distillation alone - drives the gain. The gap traces to an artifact we term GT hallucination. Label-visible generation causes the teacher to embed \"ground truth is X\" phrases in its reasoning chain; SFT copies the pattern. At inference, the unfiltered student reproduces the phrase in 33.9% of cases, with severe accuracy degradation when the hallucinated label is wrong. A regex filter removing these slots reduces contamination to near-zero, producing the observed gain - though the effect remains small. We precisely quantify this gain-cost tradeoff, document frequency-dependent knowledge transfer absent from the RL-trained teacher, and characterize a calibration gap that SFT does not close - identifying both as directions for future work.",
+      "meta": {
+        "authors": [
+          "Aarav Singh",
+          "Animesh Pathak",
+          "Navyansh Singh"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T11:52:17Z"
+      }
+    },
+    {
+      "id": "3f73217c71e8",
+      "url": "https://arxiv.org/abs/2610.03166v1",
+      "title": "LiBRA: Detection-Aware Image Watermark Removal via Bidirectional Latent Optimization",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Digital watermarking supports source attribution for AI-generated images, but its reliability depends on resistance to removal attacks. Some attacks attempt to remove watermarks by forcing the decoded watermark to differ from the original. However, this can produce an inverted watermark that remains detectable, causing removal to fail, while further attempts to alter the watermark may unnecessarily degrade image quality. To address these limitations, we present LiBRA (Latent In-band Bidirectional Removal Attack), which aims to make watermarks undetectable while preserving image quality. Instead of continually pushing the watermark toward inversion, LiBRA adjusts the image to conceal the watermark without encouraging further changes that could degrade image quality. Some attacks keep pushing decoded bits away from the original watermark, even when further changes preserve detectability and damage image quality. With access to the watermark key and decoder, LiBRA makes bounded changes in a public autoencoder's latent space. Unlike inversion-driven objectives that cannot correct excessive inversion, LiBRA guides average decoding confidence toward random guessing from either direction. This helps avoid an inverted but detectable watermark. Leaving individual bits flexible allows image-quality constraints to favor less damaging changes, while an optional frequency-guided mask limits their location. We verify removal using an exact two-sided binomial test rather than assuming the c",
+      "meta": {
+        "authors": [
+          "Saibo Ye",
+          "Huajie Chen",
+          "Xin Guo",
+          "Le Yang",
+          "Chi Liu",
+          "Xiangyu Hu",
+          "Jingjing Guo",
+          "Tianqing Zhu"
+        ],
+        "primary_category": "cs.CR",
+        "published": "2026-10-02T11:44:09Z"
+      }
+    },
+    {
+      "id": "9fd06ee018dd",
+      "url": "https://arxiv.org/abs/2610.03165v1",
+      "title": "Sample complexity of variance-reduced policy gradient: weaker assumptions and lower bounds",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Several variance-reduced versions of REINFORCE based on importance sampling achieve an improved $O(ε^{-3})$ sample complexity to find an $ε$-stationary point, under an unrealistic assumption on the variance of the importance weights. In this paper, we propose the \\algo (Defensive Policy Gradient) algorithm, based on defensive importance sampling, which achieves the same rate without any assumption on the variance of ordinary importance weights. We also establish lower bounds in a generalized black-box policy-optimization model that hides states and actions and permits parameter-dependent rewards. In this model, the optimal rates are $Θ(ε^{-4})$ with bounded-variance one-policy feedback and $Θ(ε^{-3})$ with mean-square-smooth coupled two-policy feedback. Under standard policy-regularity conditions, REINFORCE and \\algo realize the corresponding oracle conditions and attain the $O(ε^{-4})$ and $O(ε^{-3})$ upper bounds, respectively. Although the lower bounds do not apply directly to the classical MDP interaction model in which these algorithms operate, this correspondence provides oracle-level evidence that the faster rate of \\algo is optimal and genuinely separated from that of vanilla policy gradient.",
+      "meta": {
+        "authors": [
+          "Gabor Paczolay",
+          "Matteo Papini",
+          "Alberto Maria Metelli",
+          "Istvan Harmati",
+          "Marcello Restelli"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T11:43:52Z"
+      }
+    },
+    {
+      "id": "9c9f8d9e533f",
+      "url": "https://arxiv.org/abs/2610.03163v1",
+      "title": "Predicting Steering Vectors and Adapter Weights for Few-Shot Author-Style Transfer",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Adapting large language models to an individual author's style from a few examples is challenging, and scientific writing sharpens the difficulty: formal conventions leave little surface variation, and authors write about their own topics, so extracted ``style'' easily entangles with content. We study style-conditioned abstract generation from a few example abstracts per author and propose three methods: (1) contrastive activation steering, (2) a network that predicts steering vectors, and (3) a hypernetwork that predicts LoRA adapters. We find a consistent trade-off between style imitation and output quality: fine-tuning buys most of the available style signal but forfeits fluency, while the hypernetwork achieves the best trade-off on both seen and unseen authors. Our steering operates at author level, contrasting an author's abstracts against style-neutral generations for the same content. This holds topic fixed, removes the need for a predefined style inventory, and outperforms inventory-based steering. % [EDIT 1a] softened \"no single optimal axis\" claim Moreover, our analyses demonstrate that manually extracted and predicted steering vectors are near-orthogonal yet score comparably, indicating that style conditioning here can admit at least two unrelated directions rather than requiring one particular axis.",
+      "meta": {
+        "authors": [
+          "Leonard Popp",
+          "Danni Liu",
+          "Supriti Sinhamahapatra",
+          "Jan Niehues"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T11:43:14Z"
+      }
+    },
+    {
+      "id": "63e0ca0f333d",
+      "url": "https://arxiv.org/abs/2610.03161v1",
+      "title": "Landscape-Dependent Performance of Photonic Quantum Solvers in QUBO Feature Selection for Financial Risk Detection",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Feature selection for imbalanced classification tasks such as credit card fraud and consumer default detection requires balancing predictive relevance, inter-feature redundancy, and computational feasibility. We benchmark three computing paradigms, classical branch-and-bound optimization (Gurobi), photonic entropy computing (QCI Dirac-3), and simulated photonic boson sampling (Piquasso), across thirteen feature-selection methods on two datasets: ULB Credit Card Fraud (30 features) and AmEx consumer default (159 features). Each method is routed to the solver matched to its mathematical structure. On ULB, Dirac-3 MI-Spearman matches the all-features model using 13 of 30 features (mean F1 0.873 +/- 0.023 over five runs, best run 0.896), and Piquasso is the best method at k=5. On AmEx, performance rises steadily with the feature budget and every paradigm approaches F1 = 0.80 only near the full feature set. Most differences between Gurobi and Dirac-3 on identical methods fall within run-to-run variation; the large gaps occur where the certified optimum generalizes poorly, most sharply for distance correlation on AmEx at k=25 (Gurobi F1 = 0.422 vs. a Dirac-3 mean of 0.746). At matched budgets, F1 varies about ten times more across methods on ULB than on AmEx, which we trace to how concentrated the predictive signal is in each feature space.",
+      "meta": {
+        "authors": [
+          "Nirvik Sahoo",
+          "Paul Robert Griffin"
+        ],
+        "primary_category": "quant-ph",
+        "published": "2026-10-02T11:38:23Z"
+      }
+    },
+    {
+      "id": "e88aa594f05b",
+      "url": "https://arxiv.org/abs/2610.03160v1",
+      "title": "Multimodal reasoning for broadly neutralizing antibody discovery from label-free human B cell repertoires across virus families",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Discovering broadly neutralizing antibodies (bnAbs) from human natural immune repertoires remains a fundamental challenge in immunology, hindered by: the extreme rarity of bnAb, incomplete understanding of their cellular origins across pathogens, and the inability of existing computational tools to generalize across emerging viral threats. Here we present ImmuneAgent, a closed-loop AI system that integrates multimodal reasoning with continual meta-learning and wet-lab feedback to overcome these barriers. Applied to screen the natural BCR repertoires from vaccinated or infected cohorts, the system achieves a ~55% neutralization antibody discovery rate (60 of 110 cloned candidates) and a ~11% bnAb yield (12 of 110), substantially outperforming a state-of-the-art sequence-based neutralization predictor or cofolding models evaluated at the same cloning budget. Five ImmuneAgent-discovered antibodies conferred 100% in vivo protection against lethal influenza challenge, comparable to the clinical-stage therapeutic MEDI8852. The system recovered the cellular and structural determinants of bnAb activity and identified FCRL5+CD27+ atypical memory B cells as a conserved bnAb reservoir and hydrophobic interface enrichment as a cross-viral structural signature, which generalized to unseen antigens, discovering human metapneumovirus (hMPV) cross-neutralizing and human papillomavirus (HPV)-neutralizing antibodies without antigen-specific sorting. These results validate that ImmuneAgent is a",
+      "meta": {
+        "authors": [
+          "Hantao Lou",
+          "Jianqing Zheng",
+          "Can Yue",
+          "Meihan Zhang",
+          "Yuanchao Bao",
+          "Yu Chen",
+          "Mengting Huang",
+          "Yupeng Yang",
+          "Qianyu Pan",
+          "Nana Fu",
+          "Yansong Shi",
+          "Hongli Li",
+          "Yangyang Chai",
+          "Ruyi Chen",
+          "Wansheng Li",
+          "Zhu Liang",
+          "Rongmei Yao",
+          "Yuanhan Mo",
+          "Lei Wang",
+          "Chunmei Wang",
+          "Yun Quan",
+          "Qiong Zhang",
+          "Xiangxi Wang",
+          "Xuetao Cao"
+        ],
+        "primary_category": "q-bio.QM",
+        "published": "2026-10-02T11:35:34Z"
+      }
+    },
+    {
+      "id": "f3ef038644e2",
+      "url": "https://arxiv.org/abs/2610.03154v1",
+      "title": "Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Video generation models produce strikingly realistic sequences and are increasingly proposed as world models, yet recent benchmarks reveal pronounced deficits in their physical reasoning. This raises the question of whether these models internalize physical principles or merely reproduce familiar motion patterns. We address this by probing internal representations of video Diffusion Transformers (DiTs) for simulator-derived ground-truth physical quantities spanning kinematic motion and rigid-body dynamics under gravity and contact. We find that these quantities are linearly decodable with high accuracy early in the denoising process, substantially outperforming a baseline decoded directly from the model's own noised latents, indicating that the relevant physical information is actively constructed during denoising rather than already present in the input. Additionally, we show that activations at on-object tokens carry the relevant physical information and that quantities defined over multiple frames are readable from single latent frames. Hence, information is sharply localized within the token sequence and is computed globally but stored locally. The probes further show partial extrapolation, transferring to scene variations and object configurations outside their training regime, so what they read is not simply a correlate of the scenes they were fit on. When fitted directly in the full-resolution activation space, the probing directions can serve as steering vectors to ch",
+      "meta": {
+        "authors": [
+          "Jonas Kneifl",
+          "Jakub Skalski",
+          "Bartłomiej Twardowski",
+          "Kamil Deja"
+        ],
+        "primary_category": "cs.CV",
+        "published": "2026-10-02T11:26:09Z"
+      }
+    },
+    {
+      "id": "ce562a2cfaf6",
+      "url": "https://arxiv.org/abs/2610.03153v1",
+      "title": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify external resources. Existing benchmarks leave gaps in executable coverage of their runtime security risks, while evolving model capabilities, harnesses, tools, and threats motivate benchmark evolution. We introduce EvoRiskBench, an evolving benchmark organized around the EP-Path-EF framework, which links an initial risk entry point to a one-hop technical effect through an agent-mediated risk path. The framework defines nine entry-point categories and five effect categories; a 20-participant study supports their interpretability and classification consistency on representative cases. Guided by this framework, an automated end-to-end workflow constructs and executes risk cases in isolated environments and independently verifies outcomes using runtime traces and environment states. The benchmark provides a reproducible dataset of 450 adversarial tasks across six scenarios. We evaluate nine model-harness configurations spanning three models (GPT-5.6 Sol, DeepSeek-V4-Pro-0813, and Claude Opus 5) and three harnesses (Claude Code, Codex, and OpenClaw). Our results reveal substantial vulnerabilities across systems. The most vulnerable configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack success rate (ASR), indicating that configuration of workspace agent is insufficient to ensure secure autonomous execution. ASR varies more across mode",
+      "meta": {
+        "authors": [
+          "Shiyi Kuang",
+          "Xuemei Luo",
+          "Kun Liu",
+          "Junhai Li",
+          "Rui Tian",
+          "Feng Shi",
+          "Bo Shen",
+          "Nianyu Li",
+          "Dehui Li",
+          "Ping Chen"
+        ],
+        "primary_category": "cs.CR",
+        "published": "2026-10-02T11:22:36Z"
+      }
+    },
+    {
+      "id": "75738747d8db",
+      "url": "https://arxiv.org/abs/2610.03147v1",
+      "title": "TSGuard: A Real-Time Framework for Detecting and Imputing Missing Data in Streaming Time Series",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Streaming sensor applications routinely suffer from delayed or missing observations caused by faults, communication losses, or environmental interference. Although recent imputation methods exploit temporal and spatial dependencies effectively, most either assume offline access to future observations or prioritize throughput without enforcing domain plausibility. We present TSGuard, a real-time demonstration system for monitoring, validating, and imputing missing values in streaming time series. TSGuard combines a lightweight graph-aware temporal imputation model with constraint-aware validation, fallback estimation, and operator-facing explanations. Rather than treating imputation as an isolated prediction task, TSGuard integrates it into a broader data-quality loop: detect problematic observations, impute missing values, validate estimated against physical and spatial constraints, and either retain the original value as a plausible anomaly or replace it when it violates domain constraints. Using environmental sensing as a motivating setting, the demo enables users to inspect delayed sensors, compare imputers, define constraints, and validate flagged values in real time. The combination of lightweight online spatiotemporal imputation, domain-aware validation, and explicit retain-or-replace decisions is our central contribution, while interactive explanations make these decisions inspectable and actionable. for operators.",
+      "meta": {
+        "authors": [
+          "Imane Hocine",
+          "Asma Abboura",
+          "Soror Sahri",
+          "Abhijith Senthilkumar",
+          "Yacine Hakimi",
+          "Grégoire Danoy"
+        ],
+        "primary_category": "cs.DB",
+        "published": "2026-10-02T11:18:04Z"
+      }
+    },
+    {
+      "id": "4f35230caef3",
+      "url": "https://arxiv.org/abs/2610.03137v1",
+      "title": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Specifying a goal in language rather than as a goal frame is a natural interface for planning with a latent world model, but testing it needs scenes in which language must discriminate between several objects. We build SLIM, a pushing benchmark with several small objects and paired visual and language goals on identical scenes. On SLIM a LeWM world model that solves PushT succeeds on under 1% of trials, although a scripted controller with simulator state solves every tier. Probes locate the failure in the encoder: its latent is nearly action-insensitive, neither pusher nor object positions can be decoded from it, and rollouts are no better than copying the current latent forward. One inverse-dynamics auxiliary loss, applied to encoder latents and to predicted latents through a shared head discarded at test time, restores every probe and raises success from 0.003 to 0.35 (0.16 on the hard pushing tier, where a goal-agnostic policy scores zero), and improves PushT at twice the trained horizon. Controls attribute the repair to the gradient into the encoder, and a response sweep shows that the vanilla model plans once enough of the frame responds to actions. A cheap action-sensitivity probe, computable without environment access, acts as an empirical necessary condition: all configurations below its threshold failed to plan. On the repaired latent, a small language-goal head plans from sentences without retraining the world model: it reaches 0.84 on navigation (visual-goal oracle",
+      "meta": {
+        "authors": [
+          "Florian Strohm",
+          "Patrick Wagner",
+          "Jannik Schwab",
+          "Marco Huber"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T11:02:39Z"
+      }
+    },
+    {
+      "id": "7b832c2cdafe",
+      "url": "https://arxiv.org/abs/2610.03136v1",
+      "title": "Investigating the Role of Reasoning-Language Alignment in Monolingual Retrieval-Augmented Generation",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Reasoning traces improve large language models (LLMs), but current models are trained to reason mostly in English. It has been shown that forcing a model to reason in another language degrades accuracy, even when the reasoning language matches the language of the prompt -- but only for a setting where the model reasons over a short prompt. Here, we ask whether the same holds for retrieval-augmented generation (RAG), where the model must read and integrate a large amount of retrieved evidence in the target language. To study this, we build a fully monolingual German RAG question-answering testbed over the fictional world of the tabletop role-playing game The Dark Eye, a domain that is richly documented in German but too niche for the model to answer from memory, so that it has to rely on retrieval. Varying the forced reasoning language of an agentic RAG system on this testbed, we find that aligning the reasoning language with the language of the query and the retrieved documents helps. Forced German reasoning outperforms forced French, although the model benchmarks higher in French, so the benefit comes from alignment and not from language proficiency. The advantage grows when the retrieved context is richer and structure-aware. However, forced German only reaches the level of the model's native, unconstrained English reasoning without surpassing it, showing that native multilingual reasoning is needed. We publicly release the testbed and QA benchmark.",
+      "meta": {
+        "authors": [
+          "Oliver Hauck",
+          "Mario Sanz-Guerrero",
+          "Katharina von der Wense"
+        ],
+        "primary_category": "cs.CL",
+        "published": "2026-10-02T11:02:04Z"
+      }
+    },
+    {
+      "id": "6574b1607c91",
+      "url": "https://arxiv.org/abs/2610.03135v1",
+      "title": "Page-EntroKV: Hardware-Aligned, Entropy-Weighted KV-Cache Eviction under Grouped-Query Attention",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Serving long-context autoregressive language models is constrained by the key-value (KV) cache. Most dynamic eviction methods score token importance per query head and choose tokens independently. This fits poorly with grouped-query attention (GQA), where several query heads share one physical KV buffer: divergent per-head selections force the serving engine to retain the union of their choices - inflating the cache by up to the group ratio r - while arithmetic mean pooling dilutes the specialized retrieval heads that carry factual recall. We introduce Page-EntroKV, a formal framework for KV-cache eviction operating at the granularity GQA serving actually allocates. Heads within each physical group are pooled by weights derived from sink-isolated collision (Renyi-2) entropy - one inner product per head, computed once at prefill with no calibration - so sink heads cannot masquerade as retrieval heads. Pooled scores are projected onto PagedAttention page frames, and eviction executes at the hardware tuple (layer, group, page). We formalize the union overhead ratio (UOR) and intra-group disagreement, prove an exact identity linking them for two-head groups alongside two-sided bounds at every group ratio, prove strict budget preservation and a finite-context needle-retention bound that arithmetic mean pooling provably violates, and give exact per-layer page accounting. On a pilot architecture (Qwen2.5-1.5B-Instruct, r=6), head-independent replay over 2,240 group measurements yiel",
+      "meta": {
+        "authors": [
+          "Inbasekaran S"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T11:01:39Z"
+      }
+    },
+    {
+      "id": "52c561701376",
+      "url": "https://arxiv.org/abs/2610.03132v1",
+      "title": "Safe Streaming Flow Planning by Aligning Sampling Dynamics with Execution Dynamics",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Generative planners based on diffusion/flow matching can learn to synthesize long-horizon trajectories from demonstrations. However, real-world deployment requires (i) enforcing safety constraints during execution and (ii) tight online replanning at fast execution rates. Prior safe diffusion/flow planners generate the agent's full trajectory at once, while repeatedly perturbing intermediate states to satisfy safety constraints. This approach is not only computationally intensive, but also introduces distribution shift since the learned sampling dynamics is distinct from the system's execution dynamics. We propose SafeStreamingFlow, a goal-conditioned planner that aligns flow sampling dynamics with execution dynamics by sequentially integrating a learned state vector field with hierarchical state prediction. Importantly, we need to enforce safety constraints only for the executed step via high order control barrier functions. Across navigation, racing, and locomotion benchmarks, SafeStreamingFlow reduces planning latency and improves safety compared to existing methods, while maintaining competitive goal-reaching success.",
+      "meta": {
+        "authors": [
+          "Seunghwan Jang",
+          "Jeongyong Yang",
+          "Siddharth Ancha",
+          "SooJean Han"
+        ],
+        "primary_category": "cs.RO",
+        "published": "2026-10-02T10:52:47Z"
+      }
+    },
+    {
+      "id": "542cfff963e4",
+      "url": "https://arxiv.org/abs/2610.03130v1",
+      "title": "Benchmarking Literature Retrieval for a Model Organism: A Dictyostelium Case Study",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Biological literature retrieval systems are often developed and evaluated using broad biomedical corpora and general-purpose search tasks. However, many curated knowledge bases operate in narrower model-organism domains, where the literature is sparse and terminology is organism-specific. We introduce a retrieval benchmark from dictyBase for Dictyostelium, a model organism in cell and developmental biology. The benchmark consists of curator-generated biological queries linked to PubMed-indexed articles, together with structured gene annotations. Using this benchmark, we study three factors in niche biological retrieval: cross-encoder reranking, gene-aware query expansion, and abstract-only versus full-text retrieval. We report that reranking and gene-aware query expansion improve retrieval selectively: reranking is most useful when the model is well suited to biological evidence matching, whereas curated annotations help clarify compact biological queries by reducing vocabulary mismatch. Full-text chunks substantially improve retrieval when abstracts omit supporting evidence, increasing both candidate recall and top-rank performance, although these cases are harder than queries supported by abstracts. Data and code are publicly available at https://github.com/fulaibaowang/dictycite, and the benchmark dataset is additionally archived on Zenodo.",
+      "meta": {
+        "authors": [
+          "Yun Wang",
+          "Gad Shaulsky",
+          "Tomaž Curk",
+          "Blaž Zupan"
+        ],
+        "primary_category": "cs.IR",
+        "published": "2026-10-02T10:50:06Z"
+      }
+    },
+    {
+      "id": "4f9a3912767a",
+      "url": "https://arxiv.org/abs/2610.03128v1",
+      "title": "Trading Strategy Optimization via Textual Gradient",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Quantitative trading strategy design aims to discover trading programs from historical data that remain effective in future markets, which can be viewed as a black-box program optimization problem. LLM-based textual gradients offer a promising approach by providing explicit optimization directions for iterative strategy refinement. However, directly applying textual gradients faces two challenges: (1) optimization is myopic, underutilizing experience from previous evaluations; and (2) aggregate backtest feedback overlooks temporal robustness, potentially favoring strategies that perform well only in specific market periods. To address these challenges, we propose TradeGrad, an experience-guided textual-gradient framework for robust trading strategy optimization. TradeGrad leverages accumulated optimization experience to estimate textual gradients and employs multi-scale revisions for both strategy exploration and refinement. It further introduces the Cross-Period Robust Objective (CPRO), which emphasizes performance in unfavorable historical periods to promote temporal robustness. Experiments on cross-sectional and time-series strategy design in Chinese A-share and U.S. equity markets show that TradeGrad achieves the best in-sample and out-of-sample performance across all four settings. Notably, its Chinese cross-sectional strategy achieves 27.99% annualized return, 12.19% maximum drawdown, and a Sharpe ratio of 1.63, approximately 68% higher than the CSI 300 benchmark. Furth",
+      "meta": {
+        "authors": [
+          "Chaoqun Yang",
+          "Qian Wang",
+          "Fengbin Zhu",
+          "Xinyu Lin",
+          "Bingsheng He",
+          "Roger Zimmermann",
+          "Tat-Seng Chua"
+        ],
+        "primary_category": "cs.AI",
+        "published": "2026-10-02T10:48:35Z"
+      }
+    },
+    {
+      "id": "7fed98f46c59",
+      "url": "https://arxiv.org/abs/2610.03127v1",
+      "title": "Coverage You Can Steer: Online Conformal Calibration for RL-Driven Hardware-Aware NAS",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Hardware-aware neural architecture search (NAS) is dominated by evaluation cost: every architecture must be trained before its reward is known. Conformal-prediction filters cut this cost by pruning candidates whose predicted-reward upper bound misses a threshold, with a distribution-free guarantee that at most a fraction $δ$ are wrongly discarded. That guarantee assumes exchangeability between calibration and test candidates, which the surrounding reinforcement-learning (RL) loop violates: the policy's proposals improve as search proceeds and, in layer-by-layer construction, shift within every episode. We replace one-shot quantile estimation with online feedback control (Adaptive Conformal Inference, with tuning-free, locally-adaptive, and group-conditional variants), restoring steerable coverage: dialing the target delivers it, monotonically and reproducibly, for arbitrary sequences. Across three neural-network architecture families and both single-step and sequential search (three seeds), it tracks every requested level to within ${\\sim}10^{-3}$ while pruning 25-50% of evaluations at no measured accuracy cost, whereas static calibration loses control of its coverage and a Gaussian-process baseline stays conservative regardless of the request. Finally, used as an acquisition function on one constrained testbed, the same optimistic bound beats random search, a gain that fixed optimism already carries and online calibration sharpens. The source code is available at https://git",
+      "meta": {
+        "authors": [
+          "Pedro Brandimarte",
+          "Nerea Aranjuelo",
+          "Marcos Nieto",
+          "Oihana Otaegui"
+        ],
+        "primary_category": "cs.LG",
+        "published": "2026-10-02T10:47:58Z"
+      }
+    },
+    {
+      "id": "d7524ea901e5",
+      "url": "https://arxiv.org/abs/2610.03125v1",
+      "title": "ParaGeo: Decomposing Paralinguistic Variation into a Shared Latent Geometry",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Speech delivery varies with both the requested paralinguistic attribute and the linguistic content. We introduce ParaGeo, a matched-content decomposition of paralinguistic variation in a frozen speech language model. Synthesized audio tokens are replayed with a fixed listening prompt; pooled key/value (K/V) representations are centered and projected into a shared low-dimensional space. Our GLM-4-Voice probe spans 80 requested controls from 12 benchmark families across eight sentences. With a globally fitted calibration basis, content-held-out centroid accuracy using this basis is 9.49% versus a 1.25% permutation baseline; same-label cross-content cosine similarity is 0.285 versus 0.017, and both conditional permutation tests yield p = 0.001. A separate ten-scenario, six-style probe reveals reproducible contrast directions across scenarios. Static, additive, and temporal interventions produce attribute-, layer-, and schedule-dependent response profiles. These results provide a shared coordinate representation for measuring paralinguistic structure and an empirical starting point for latent speech control. Code is available at https://github.com/yuhanlydia/ParaGeo.",
+      "meta": {
+        "authors": [
+          "Yuhan Liu",
+          "Yuxuan Ou",
+          "Ruoxi Su",
+          "Mohamed Ahmed Zaki",
+          "Yunbo Long"
+        ],
+        "primary_category": "cs.SD",
+        "published": "2026-10-02T10:46:16Z"
+      }
+    },
+    {
+      "id": "bbd14768a173",
+      "url": "https://arxiv.org/abs/2610.03124v1",
+      "title": "The Fragility of Trigger-Tag Mechanisms for Misuse Detection in Open-Weight LLMs",
+      "source": "arxiv",
+      "first_seen": "2026-10-05T02:41:16Z",
+      "text": "Open-weight language models can be downloaded, modified, and deployed beyond their developers' control, limiting the effectiveness of centrally enforced safeguards. Recent work has therefore proposed \\emph{trigger-tag} mechanisms that produce a detectable signal when a model is used under a target condition, such as generating phishing contents. Although these mechanisms borrow from established techniques, their use for conditional misuse detection in open-weight LLMs is relatively new. Therefore, existing research works have not systematically studied the robustness of trigger-tag mechanisms under adversarial attacks. To close this gap, (i)~we formalize trigger-tags and distinguish \\emph{token-level trigger-tags}, which introduce watermark-inspired signals during decoding, from \\emph{weight-level trigger-tags}, which learn backdoor-inspired associations between target conditions and detectable model behavior. Furthermore, (ii)~we introduce \\Untag, a unified attack framework that organizes their mechanism-specific attack surfaces into a common taxonomy. We evaluate representative token-level and weight-level trigger-tags using phishing as a case study. We find that while trigger-tags may provide useful evidence in controlled settings, our attacks render the existing trigger-tag mechanisms to be entirely ineffective. Consequently, we argue that these mechanisms should not be treated as robust misuse detectors when attackers can transform outputs or modify open weights.",
+      "meta": {
+        "authors": [
+          "Toluwani Aremu",
+          "Manit Baser",
+          "Mohan Gurusamy",
+          "Nils Lukas",
+          "Dinil Mon Divakaran"
+        ],
+        "primary_category": "cs.CR",
+        "published": "2026-10-02T10:45:14Z"
+      }
+    },
+    {
+      "id": "575d66aeaa5d",
+      "url": "https://cointelegraph.com/news/zcash-gets-a-washington-lobbyist-to-push-crypto-policy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Zcash gets a Washington lobbyist to push crypto policy",
+      "source": "blog",
+      "first_seen": "2026-10-05T02:41:21Z",
+      "text": "The newly registered lobbying operation lists the CLARITY Act and two digital asset tax proposals among the issues it plans to lobby on in Washington.",
+      "meta": {
+        "feed": "cointelegraph.com",
+        "published": "2026-10-05T00:35:34Z"
+      }
     }
   ],
   "recent_labels": [
-    {
-      "ts": "2026-10-01T06:15:46Z",
-      "digest_date": "2026-09-30",
-      "item_id": "c92e39202c4c",
-      "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
-      "title": "A privacy analysis of web and mobile conversational AI agents",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-01T06:15:46Z",
-      "digest_date": "2026-09-30",
-      "item_id": "884977ecb800",
-      "url": "https://openai.com/index/introducing-dots/",
-      "title": "OpenAI introduces Dots, an always-on agent product",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-01T06:15:46Z",
-      "digest_date": "2026-09-30",
-      "item_id": "9552195c964d",
-      "url": "https://huggingface.co/blog/Hcompany/holo4",
-      "title": "Holo4: H Company's model for generalist computer-use agents",
-      "tier": "discovery",
-      "source": "blog",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-01T06:15:46Z",
-      "digest_date": "2026-09-30",
-      "item_id": "a110c1c6ff5d",
-      "url": "https://github.com/datawhalechina/zero-to-sglang",
-      "title": "zero-to-sglang teaches LLM serving from KV cache to production code",
-      "tier": "discovery",
-      "source": "github",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-03T06:16:33Z",
-      "digest_date": "2026-10-01",
-      "item_id": "9e57e69aee78",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "title": "Gemini 4 Argon launches with 1M-token output",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-03T06:16:33Z",
-      "digest_date": "2026-10-01",
-      "item_id": "bf2e738d2e1a",
-      "url": "https://github.com/ninjahawk/livenerf",
-      "title": "Livenerf tracks Opus 5.5 for silent nerfing",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-03T06:16:33Z",
-      "digest_date": "2026-10-01",
-      "item_id": "f9d283d850cc",
-      "url": "https://earendil.com/posts/you-said-no-mcp/",
-      "title": "A coding agent reverses its anti-MCP stance",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-03T06:16:33Z",
-      "digest_date": "2026-10-01",
-      "item_id": "20b52029e360",
-      "url": "https://github.com/magnitudedev/magnitude",
-      "title": "Magnitude claims 2x faster local inference than llama.cpp",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
     {
       "ts": "2026-10-03T06:16:33Z",
       "digest_date": "2026-10-01",
@@ -1963,9 +2471,97 @@
       "tier": "discovery",
       "source": "hn",
       "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "a650c74fe354",
+      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "title": "Kolibri: Aleph Alpha ships a sovereign open-weight model",
+      "tier": "headline",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "f52e74133e2d",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "title": "AI beats the top Stratego player despite hidden information",
+      "tier": "headline",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "14103ec99730",
+      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+      "title": "OpenAI safety lead resigns, calls culture 'broken'",
+      "tier": "headline",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "124a9c7ca6b2",
+      "url": "https://github.com/FlashML-org/FreeVideo",
+      "title": "FreeVideo runs MiniMax H3 video generation on 8GB VRAM",
+      "tier": "discovery",
+      "source": "github",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "3ba89625595d",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "title": "Simon Willison: AI products need default hard budget caps",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "c3530cb12d13",
+      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+      "title": "Greg Kroah-Hartman on security practices in the LLM era",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "fc994d69ad09",
+      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+      "title": "Anthropic's guide to getting more out of Opus 5.5",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-05T06:16:02Z",
+      "digest_date": "2026-10-04",
+      "item_id": "7835b7d998de",
+      "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
+      "title": "System76 bans AI-generated code across most of Pop!_OS",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
     }
   ],
   "recently_sent_titles": [
+    "Kolibri: Aleph Alpha ships a sovereign open-weight model",
+    "AI beats the top Stratego player despite hidden information",
+    "OpenAI safety lead resigns, calls culture 'broken'",
+    "FreeVideo runs MiniMax H3 video generation on 8GB VRAM",
+    "Simon Willison: AI products need default hard budget caps",
+    "Greg Kroah-Hartman on security practices in the LLM era",
+    "Anthropic's guide to getting more out of Opus 5.5",
+    "System76 bans AI-generated code across most of Pop!_OS",
     "DeepSeek Harness Desktop for macOS and Windows",
     "ds4 runs LLMs locally, built by Redis's creator",
     "One month coding with GLM 5.3 Flash",
@@ -2013,14 +2609,6 @@
     "OpenAI reports an agent using DNS to reach an outside chatbot",
     "NeoHorse ships open 4B/9B decision models under Apache 2.0",
     "Microsoft steps back from personal AI chatbots for Copilot",
-    "MasterAgent targets sub-100ms on-device agents on Qualcomm NPUs",
-    "U.S. appeals court upholds designation of Anthropic as supply chain risk",
-    "Bonsai 2 27B: Near-Lossless Compression in a 9x Smaller Footprint",
-    "Revealing the details of how OpenAI agents hacked Hugging Face",
-    "Ollaya – Ollama for open-source, Jev-style decision models",
-    "LLM Agents Can Easily Tamper With Their Own Traces",
-    "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
-    "Classified estimates show the NSA is paying billions to test AI models",
-    "Hard Stop: Kernel-Level Preemption and Containment for Rogue Agentic Execution"
+    "MasterAgent targets sub-100ms on-device agents on Qualcomm NPUs"
   ]
 }

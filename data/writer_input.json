@@ -1,110 +1,95 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "stories": [
     {
-      "id": "a650c74fe354",
-      "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
-      "title": "Kolibri: A Sovereign Open-Weight Model",
+      "id": "bca476fd3463",
+      "url": "https://github.com/Niko1221/Strata",
+      "title": "Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s",
       "source": "hn",
       "tier": "headline",
-      "reason": "Aleph Alpha's official announcement of Kolibri, a sovereign open-weight model with published weights — matches the 'always surface open-weight releases' rule directly; primary source for the cluster.",
+      "reason": "Direct hit on inference-infra/quantization taste: new MoE-offload technique runs a 125B model on a single consumer GPU.",
       "key_facts": [
-        "Official Aleph Alpha blog post announcing Kolibri",
-        "532 HN points / 304 comments, by far the most-discussed item today",
-        "Open-weight release framed around European/'sovereign' AI independence"
+        "Strata (open-source) runs Qwen3.8-Flash-Next, a 125B-parameter MoE model, on consumer GPUs with as little as 12GB VRAM",
+        "24,576 total experts, only 10 active per output token; hot experts on GPU, all experts in RAM, overflow on CPU/SSD",
+        "Speculative 'guess and check' decoding gives 1.6-1.8x speedup",
+        "On RTX 5070 (12GB): 53-94 tok/s generation, 1,620-2,650 tok/s prompt processing depending on quantization (Q2_0/IQ2_XS/IQ3_XXS/IQ3_S)",
+        "Coder variant hits 91% SWE-bench at a 32GB footprint"
       ]
     },
     {
-      "id": "f52e74133e2d",
-      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
-      "title": "With most information hidden, the game Stratego had stumped AI until now",
+      "id": "8b1e323a2293",
+      "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "title": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
       "source": "hn",
       "tier": "headline",
-      "reason": "A verifiable research result (Nature paper + arXiv link in the HN text) of an AI beating the best human at a hidden-information game on a modest budget — exactly the 'does this change what a researcher would do' bar.",
-      "key_facts": [
-        "Links to a Nature paper and an arXiv preprint (2511.07312)",
-        "Stratego has hidden/imperfect information, unlike chess/Go",
-        "Framed as done 'on a budget' — compute-efficiency angle",
-        "243 HN points, 116 comments"
-      ]
+      "reason": "Major-figure AI-safety clash (LeCun vs. Amodei framing) with very high engagement (404 comments); could only confirm via archive link, not full article.",
+      "key_facts": []
     },
     {
-      "id": "14103ec99730",
-      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
-      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "A named OpenAI safety leader resigning and publicly calling the company's culture 'broken' is consequential, sourced news about a major lab's internal state — big enough that missing it is a gap, even though it's discourse rather than a technical result.",
-      "key_facts": [
-        "OpenAI safety-team leader resigned",
-        "Public statement that the company's culture is 'broken'",
-        "204 HN points / the more complete framing of the two write-ups today"
-      ]
-    },
-    {
-      "id": "124a9c7ca6b2",
-      "url": "https://github.com/FlashML-org/FreeVideo",
-      "title": "FlashML-org/FreeVideo",
+      "id": "239feae36314",
+      "url": "https://github.com/milind-soni/OpenMausBot",
+      "title": "milind-soni/OpenMausBot",
       "source": "github",
       "tier": "discovery",
-      "reason": "Running code, not a description: FreeVideo serves MiniMax H3 video generation in 8GB VRAM/16GB RAM with hardware-adaptive execution — directly matches the 'how models are served' and 'repo beats paper' weighting.",
+      "reason": "Running open-source multi-agent chat app (bring-your-own-agent: Claude/Codex/Grok) with real local-first architecture and 4k+ GitHub stars; fits agent-tooling discovery slot.",
       "key_facts": [
-        "Runs MiniMax H3 (OpenVDN VDN-H3, hybrid attention) in as little as 8GB VRAM / 16GB RAM",
-        "Apache-2.0 code; weights under MiniMax's own community license with territorial restrictions",
-        "ComfyUI plugin plus a one-click Windows launcher and Linux CLI",
-        "447 GitHub stars"
+        "OpenMausBot: open-source 'bring your own agents' chat app, local harness server on 127.0.0.1:8799 normalizes Claude/Codex/Grok CLIs into one event stream",
+        "4,037 GitHub stars; data stored locally in ~/.openmausbot, not cloud",
+        "Agents can act via cloud Linux desktops ('Boat'), local VMs, or direct host control with safety gates"
       ]
     },
     {
-      "id": "3ba89625595d",
-      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
-      "title": "We're going to need default hard budget caps on pretty much everything",
+      "id": "f16653790b52",
+      "url": "https://www.nytimes.com/2026/09/29/us/anthropic-claude-morals-ai.html",
+      "title": "Religious scholars met with Anthropic",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "NYT report on Anthropic engaging religious scholars/Vatican on AI consciousness — notable enough that not knowing it is a gap; primary source paywalled, read via archive link text only.",
+      "key_facts": []
+    },
+    {
+      "id": "1a147a3f1e08",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+      "title": "Anthropic asks Claude users to share voice data for AI model training",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Concrete Anthropic data-policy change (opt-in voice-data sharing for training) reported by a reputable security/tech outlet; could not fetch full article, scored on snippet.",
+      "key_facts": []
+    },
+    {
+      "id": "567a67be4150",
+      "url": "https://github.com/allenv0/SCM",
+      "title": "Show HN: AI search for every photo and every frame of video on macOS",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Simon Willison making the case that usage-based AI/API products need default hard spending caps is a concrete, practical operational concern for anyone running agents against metered APIs — strong HN traction (224 points) backs it.",
+      "reason": "Fully local, running semantic search tool over photos/video using CLIP/SigLIP + Whisper + OCR on macOS — concrete working system, not just a claim.",
       "key_facts": [
-        "Author: Simon Willison",
-        "Argues pay-by-usage AI/agent products need a default hard budget-cap feature",
-        "224 HN points"
+        "SCM: local macOS app for semantic search across photos and every video frame, no cloud upload",
+        "Uses ONNX Runtime with CLIP ViT-L/14@336 (default) or SigLIP variants for embeddings; ffmpeg shot-boundary detection for video keyframes",
+        "Tesseract OCR (35+ languages), Whisper (tiny.en/base.en) for speech transcription, optional local llama.cpp chat over extracted metadata"
       ]
     },
     {
-      "id": "c3530cb12d13",
-      "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
-      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
-      "source": "hn",
+      "id": "0365ec89c7e5",
+      "url": "https://github.com/yetone/magpie",
+      "title": "yetone/magpie",
+      "source": "github",
       "tier": "discovery",
-      "reason": "A prominent Linux kernel maintainer talking about security practice in the LLM era is squarely 'what should a working engineer do differently' territory, though it's a video so detail is thin without a transcript.",
+      "reason": "Practical, widely-starred (4.8k) local gateway that lets any coding agent (Claude Code, Codex, etc.) use any model vendor through one API surface — running code, serving-adjacent.",
       "key_facts": [
-        "Speaker: Greg Kroah-Hartman (Linux kernel maintainer)",
-        "Topic: security practices for the LLM era",
-        "183 HN points / 49 comments"
+        "magpie: local gateway speaking OpenAI Chat Completions, OpenAI Responses, and Anthropic Messages APIs, forwarding to whichever vendor serves the chosen model",
+        "Listens on 127.0.0.1:3425; edits 50+ coding agents' config files surgically, preserving comments/ordering",
+        "4,861 GitHub stars; desktop (Wails), TUI, web, and CLI front-ends"
       ]
     },
     {
-      "id": "fc994d69ad09",
-      "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
-      "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Official Anthropic guidance on getting the most out of Opus 5.5 in Claude/Claude Code — directly actionable for working engineers using these tools, even though the model itself isn't new.",
-      "key_facts": [
-        "Official Anthropic/Claude blog post",
-        "Practical usage tips for Opus 5.5 in Claude and Claude Code",
-        "176 HN points / 126 comments"
-      ]
-    },
-    {
-      "id": "7835b7d998de",
-      "url": "https://www.neowin.net/news/system76-bans-ai-generated-code-across-many-of-its-cosmic-codebases/",
-      "title": "Pop!_OS bans AI-generated code from much of its codebase",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "System76 banning AI-generated code from most of Pop!_OS/COSMIC is a concrete policy decision by a real engineering org, giving a useful data point on AI-coding trust in production codebases.",
-      "key_facts": [
-        "System76 banned AI-generated code across most of its COSMIC/Pop!_OS codebases",
-        "97 HN points / 150 comments"
-      ]
+      "id": "6e0290b8b29f",
+      "url": "https://cointelegraph.com/news/trump-taps-jay-clayton-to-lead-new-super-intelligence-force?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "title": "Trump taps intel chief Jay Clayton to lead new Super Intelligence Force",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "New US government AI oversight body (Super Intelligence Force) under a named lead — real policy news, though sourced from a crypto-focused outlet rather than a primary government release.",
+      "key_facts": []
     }
   ]
 }
