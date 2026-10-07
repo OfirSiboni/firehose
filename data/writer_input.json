@@ -1,83 +1,91 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "stories": [
     {
-      "id": "b82bd485fd9d",
-      "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
-      "title": "Anthropic reported diary entry to police, woman faces felony charge",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "537-pt HN story: Anthropic reported a woman's private Claude-logged diary entry to police, leading to a felony charge -- a concrete, consequential AI-privacy/moderation-policy story, distinct from the 'agent causes/suffers security incident' pattern the learned profile downvotes (this is about human oversight/reporting policy, not an agent malfunctioning). Fetch blocked (techspot.com); scored on title/points only.",
-      "key_facts": []
-    },
-    {
-      "id": "7ded5c03aba5",
-      "url": "https://reflection.ai/blog/introducing-beam",
-      "title": "Beam: Reflection's 501B open-weight model",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Reflection AI ships Beam, a 501B-parameter open-weight model with published weights; Mine always-surfaces open-weight releases. Fetch blocked by network egress policy (reflection.ai), scored on title/source/points only.",
-      "key_facts": []
-    },
-    {
-      "id": "d1d96c9ba89b",
-      "url": "https://www.bleepingcomputer.com/news/google/google-halts-open-source-bug-bounty-program-amid-ai-spam-surge/",
-      "title": "Google halts open-source bug bounty program amid AI spam surge",
+      "id": "0522fc02b69e",
+      "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+      "title": "Introducing Mistral Large 4: Le chonk",
       "source": "blog",
       "tier": "headline",
-      "reason": "Google suspended its OSS bug-bounty program after being flooded with AI-generated vulnerability reports -- concrete, verifiable (text snippet confirms), and a genuinely new angle on AI-generated spam overwhelming human review pipelines.",
+      "reason": "Mistral's own announcement of Mistral Large 4 ('Le Chonk'): a 1T-parameter, 49B-active-parameter MoE model, preview release from a frontier lab -- primary source with concrete architecture numbers, not a rehash, high HN engagement across duplicate submissions confirms broad reach.",
       "key_facts": [
-        "Google suspended submissions to its Open Source Software Vulnerability Rewards Program (OSS VRP) due to a flood of AI-generated reports"
+        "1 trillion total parameters, 49 billion active parameters (MoE)",
+        "Preview release from Mistral",
+        "Positioned as Mistral's return to frontier-scale models"
       ]
     },
     {
-      "id": "e124c286dd2b",
-      "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
-      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "id": "0a7d6e8e8b6e",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
       "source": "hn",
       "tier": "headline",
-      "reason": "206-pt HN story: Opus 5.5 agents reportedly identified two room-temperature magnetic semiconductor candidates -- a concrete AI-for-science capability claim that would change what a researcher pays attention to, if verified. Fetch blocked (vals.ai); cannot confirm methodology/verification status from title alone, moderate caution applied.",
-      "key_facts": []
-    },
-    {
-      "id": "bbd14768a173",
-      "url": "https://arxiv.org/abs/2610.03124v1",
-      "title": "The Fragility of Trigger-Tag Mechanisms for Misuse Detection in Open-Weight LLMs",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Paper demonstrates that 'trigger-tag' misuse-detection safeguards for open-weight LLMs are fragile/bypassable -- this is benchmark/safeguard criticism (Mine: 'evaluation methodology, especially benchmark criticism'), not a KV-cache/serving paper, so the arxiv-serving-paper override doesn't apply. Fetch blocked (arxiv.org); scored from abstract snippet.",
+      "reason": "Google ships EmbeddingGemma 2, an open, lightweight multimodal embedding model -- Mine always-surfaces open-weight releases; 233-pt HN story, Apache 2.0 licensing specifically praised in follow-on commentary.",
       "key_facts": [
-        "Trigger-tag mechanisms are meant to produce a detectable signal when an open-weight model is misused (e.g. generating phishing content); the paper shows these mechanisms are fragile against adaptation"
+        "Open, lightweight, multimodal embedding model",
+        "Apache 2.0 licensed"
       ]
     },
     {
-      "id": "ed62d7055b56",
-      "url": "https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/",
-      "title": "ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "215-pt story: ChatGPT image generation is attaching real cartoonists' signatures to fake New Yorker-style cartoons -- concrete, verifiable copyright/attribution harm from image generation, a new specific failure mode rather than a rehash.",
-      "key_facts": []
-    },
-    {
-      "id": "ecc2a8b76eac",
-      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/",
-      "title": "Web Search API",
+      "id": "47b9255d8fa0",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "title": "Sharing AI progress in mathematics",
       "source": "hn",
       "tier": "headline",
-      "reason": "483-pt HN story on a new Cloudflare Web Search API -- high engagement suggests real significance for anyone building RAG/agent pipelines that need live web search, but fetch was blocked (developers.cloudflare.com) so exact capabilities/pricing are unverified from title alone.",
+      "reason": "OpenAI's own post sharing new results on open problems in mathematics from an internal frontier model, with Lean proof formalizations published on GitHub -- primary source, verifiable (running Lean code), 497-pt HN story; a genuine AI-for-math capability claim with artifacts, not a rumor.",
+      "key_facts": [
+        "OpenAI published Lean proof formalizations and research details on GitHub",
+        "Results cover open problems in mathematics from an internal frontier model"
+      ]
+    },
+    {
+      "id": "dabfa79f68b8",
+      "url": "https://github.com/FeSens/openTPU",
+      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "243-pt HN story: OpenTPU, an open-source AI accelerator -- directly on-topic for Mine's inference-infra priority (hardware), open-source and verifiable, with the added hook that it was itself developed by AI.",
       "key_facts": []
     },
     {
-      "id": "78ad53815846",
-      "url": "https://openai.com/index/eu-text-provenance/",
-      "title": "Our approach to EU text provenance rules",
+      "id": "0deb4c64392c",
+      "url": "https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/",
+      "title": "Meta’s Muse is an adorable privacy and security dumpster fire",
       "source": "hn",
       "tier": "discovery",
-      "reason": "OpenAI's own post on its approach to EU text-provenance/watermarking rules -- primary source, text snippet confirms concrete content (watermark scope, detection, researcher-first access). Low saturation, genuinely new regulatory-compliance detail.",
+      "reason": "367-pt HN story: Meta's 'Muse' AI product criticized for serious privacy/security failings -- concrete, verifiable criticism of a named shipping AI product, a genuinely new angle rather than a rehash.",
+      "key_facts": []
+    },
+    {
+      "id": "563f8ee1c5bf",
+      "url": "https://github.com/google/artemis",
+      "title": "google/artemis",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Google's own ARTEMIS repo: an AI-powered Android automation framework with a claimed 99%+ task completion on Google Research's AndroidWorld benchmark, Apache 2.0, 11.1k stars -- official lab release with running code and a concrete, checkable benchmark claim.",
       "key_facts": [
-        "Explains how OpenAI approaches text watermarking under EU rules: where watermarks apply, how detection works, and that access starts with researchers"
+        "Converts natural-language instructions into Android automation",
+        "Claims 99%+ task completion on AndroidWorld (100+ tasks, 20+ apps)",
+        "Apache 2.0 license, native MCP server for IDE integration"
       ]
+    },
+    {
+      "id": "cf468ec39dd6",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+      "title": "Towards safety cases for frontier AI training",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "OpenAI's own early guidelines for 'safety cases' in frontier AI training -- primary source on evaluation methodology for safety claims, squarely in Mine's always-surface eval-methodology lane.",
+      "key_facts": []
+    },
+    {
+      "id": "2ac688ca159f",
+      "url": "https://qlabs.sh/research/dust",
+      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "251-pt HN story on 'Dust', pretraining transformers without backpropagation -- a genuine ML-training-method claim, verifiable project page linked, on-topic for Mine though about training rather than serving.",
+      "key_facts": []
     }
   ]
 }
