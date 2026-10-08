@@ -1,90 +1,90 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "stories": [
     {
-      "id": "0522fc02b69e",
-      "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-      "title": "Introducing Mistral Large 4: Le chonk",
-      "source": "blog",
+      "id": "1d78f09c640d",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "title": "Claude Haiku 5.5",
+      "source": "hn",
       "tier": "headline",
-      "reason": "Mistral's own announcement of Mistral Large 4 ('Le Chonk'): a 1T-parameter, 49B-active-parameter MoE model, preview release from a frontier lab -- primary source with concrete architecture numbers, not a rehash, high HN engagement across duplicate submissions confirms broad reach.",
+      "reason": "Anthropic's flagship cheap/fast small model refresh: 90% cheaper than Haiku 4.5 (<=100k tokens), big benchmark jumps (OSWorld 72.4% vs 15.7%, Terminal-Bench 39.2% vs 0%), first Haiku with adjustable effort.",
       "key_facts": [
-        "1 trillion total parameters, 49 billion active parameters (MoE)",
-        "Preview release from Mistral",
-        "Positioned as Mistral's return to frontier-scale models"
+        "Input $0.10/$0.50 per M tokens (<=100k/>100k), vs Haiku 4.5 $1.00",
+        "Output $0.50/$2.50 per M tokens vs Haiku 4.5 $5.00",
+        "~75% cheaper on average to run than Haiku 4.5; 90% cheaper under 100k tokens",
+        "OSWorld 2.1 offline: 72.4% vs Haiku 4.5's 15.7%; Terminal-Bench 4.0: 39.2% vs 0.0%",
+        "First Haiku-class model with an adjustable effort setting",
+        "Asana reports >30% latency reduction, up to 2.5x faster inference per turn",
+        "Available on AWS, GCP, Azure, and the Claude Platform"
       ]
     },
     {
-      "id": "0a7d6e8e8b6e",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
-      "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+      "id": "0ca1450969b5",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "title": "GPT‑6 and Intelligent UI for everyone",
       "source": "hn",
       "tier": "headline",
-      "reason": "Google ships EmbeddingGemma 2, an open, lightweight multimodal embedding model -- Mine always-surfaces open-weight releases; 233-pt HN story, Apache 2.0 licensing specifically praised in follow-on commentary.",
-      "key_facts": [
-        "Open, lightweight, multimodal embedding model",
-        "Apache 2.0 licensed"
-      ]
-    },
-    {
-      "id": "47b9255d8fa0",
-      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-      "title": "Sharing AI progress in mathematics",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "OpenAI's own post sharing new results on open problems in mathematics from an internal frontier model, with Lean proof formalizations published on GitHub -- primary source, verifiable (running Lean code), 497-pt HN story; a genuine AI-for-math capability claim with artifacts, not a rumor.",
-      "key_facts": [
-        "OpenAI published Lean proof formalizations and research details on GitHub",
-        "Results cover open problems in mathematics from an internal frontier model"
-      ]
-    },
-    {
-      "id": "dabfa79f68b8",
-      "url": "https://github.com/FeSens/openTPU",
-      "title": "OpenTPU – An open-source AI accelerator, developed by AI",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "243-pt HN story: OpenTPU, an open-source AI accelerator -- directly on-topic for Mine's inference-infra priority (hardware), open-source and verifiable, with the added hook that it was itself developed by AI.",
+      "reason": "GPT-6 'Intelligent UI' rollout to all ChatGPT users, 470 HN points — a major platform-wide UX/model change from OpenAI, but couldn't fetch openai.com (egress blocked) to confirm specifics beyond the title.",
       "key_facts": []
     },
     {
-      "id": "0deb4c64392c",
-      "url": "https://www.techdirt.com/2026/10/06/metas-muse-is-an-adorable-privacy-and-security-dumpster-fire/",
-      "title": "Meta’s Muse is an adorable privacy and security dumpster fire",
+      "id": "19355795289b",
+      "url": "https://github.com/docker/docker-agent",
+      "title": "Docker Agent",
       "source": "hn",
       "tier": "discovery",
-      "reason": "367-pt HN story: Meta's 'Muse' AI product criticized for serious privacy/security failings -- concrete, verifiable criticism of a named shipping AI product, a genuinely new angle rather than a rehash.",
-      "key_facts": []
-    },
-    {
-      "id": "563f8ee1c5bf",
-      "url": "https://github.com/google/artemis",
-      "title": "google/artemis",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Google's own ARTEMIS repo: an AI-powered Android automation framework with a claimed 99%+ task completion on Google Research's AndroidWorld benchmark, Apache 2.0, 11.1k stars -- official lab release with running code and a concrete, checkable benchmark claim.",
+      "reason": "Docker's own agent builder/runtime: declarative YAML agents, provider-agnostic (OpenAI/Anthropic/Gemini/Bedrock/Mistral/xAI), packaged and distributed as OCI artifacts — real running code (Apache-2.0, 3.9k stars, 10.7k commits), not just a demo.",
       "key_facts": [
-        "Converts natural-language instructions into Android automation",
-        "Claims 99%+ task completion on AndroidWorld (100+ tasks, 20+ apps)",
-        "Apache 2.0 license, native MCP server for IDE integration"
+        "docker/docker-agent: AI Agent Builder and Runtime, invoked as `docker agent`",
+        "Agents defined in YAML; no code required; can be organized into delegating teams",
+        "Tools from built-in capabilities and MCP servers (local, remote, or Docker-based)",
+        "Agents packaged and pushed/pulled as OCI registry artifacts",
+        "Apache-2.0, 3.9k stars, 489 forks, preinstalled in Docker Desktop 4.63+"
       ]
     },
     {
-      "id": "cf468ec39dd6",
-      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-      "title": "Towards safety cases for frontier AI training",
+      "id": "1d36a32f7817",
+      "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
+      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Utah reportedly allowing AI to examine patients and prescribe medication without human oversight — a consequential AI-deployment policy first, not a rumor (124 HN points).",
+      "key_facts": []
+    },
+    {
+      "id": "984223f109f3",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
       "source": "blog",
       "tier": "discovery",
-      "reason": "OpenAI's own early guidelines for 'safety cases' in frontier AI training -- primary source on evaluation methodology for safety claims, squarely in Mine's always-surface eval-methodology lane.",
+      "reason": "Source-aware verification technique for MCP agents (checking provenance, not just factual match) — fits the eval-methodology always-surface rule; huggingface.co was unreachable to confirm the method and results.",
       "key_facts": []
     },
     {
-      "id": "2ac688ca159f",
-      "url": "https://qlabs.sh/research/dust",
-      "title": "Dust: Pretraining Transformers Without Backpropagation",
+      "id": "a585154abde8",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "title": "Decisions API is in public beta",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "OpenAI's developer-platform Decisions API goes to public beta (376 HN points) — looks like the lab-grade legitimization of this week's 'typed decision model' wave (Jev, Strands Decider, open-d1), but developers.openai.com was unreachable so the actual mechanics are unverified.",
+      "key_facts": []
+    },
+    {
+      "id": "3316e2b4c519",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth",
+      "title": "Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth",
       "source": "hn",
       "tier": "discovery",
-      "reason": "251-pt HN story on 'Dust', pretraining transformers without backpropagation -- a genuine ML-training-method claim, verifiable project page linked, on-topic for Mine though about training rather than serving.",
+      "reason": "Bloomberg reports a study finding Claude and ChatGPT quote different shopping prices based on inferred wealth — a concrete, checkable bias finding about deployed assistants; bloomberg.com was unreachable to confirm methodology.",
+      "key_facts": []
+    },
+    {
+      "id": "57e294dfcc77",
+      "url": "https://synthid.com/",
+      "title": "SynthID Detector",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Google's SynthID Detector for AI-generated content provenance — relevant to the eval/provenance beat; synthid.com was unreachable to confirm what's newly launched versus already known.",
       "key_facts": []
     }
   ]

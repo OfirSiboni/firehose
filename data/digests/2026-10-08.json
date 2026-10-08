@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-08",
+  "sent": false,
+  "items": [
+    {
+      "id": "1d78f09c640d",
+      "title": "Claude Haiku 5.5 ships 90% cheaper, far more capable",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Claude Haiku 5.5 costs up to 90% less than Haiku 4.5 for prompts under 100k tokens, at $0.10/$0.50 per million input tokens, and jumps from 15.7% to 72.4% on OSWorld and from 0% to 39.2% on Terminal-Bench 4.0. It's the first Haiku model with an adjustable effort setting, and Asana reports up to 2.5x faster inference per agent turn. That makes it cheap and capable enough to run as a high-volume subagent for computer-use and terminal work. (2 minute read)"
+    },
+    {
+      "id": "0ca1450969b5",
+      "title": "GPT-6's \"Intelligent UI\" rolls out to all ChatGPT users",
+      "url": "https://openai.com/index/gpt-6-for-everyone/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "OpenAI is rolling GPT-6 and its new \"Intelligent UI\" out to every ChatGPT user, a platform-wide interface change rather than a narrow feature flag. (1 minute read)"
+    },
+    {
+      "id": "19355795289b",
+      "title": "Docker ships its own AI agent builder and runtime",
+      "url": "https://github.com/docker/docker-agent",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Docker's new `docker agent` CLI plugin runs agents defined in plain YAML, with tools drawn from built-in capabilities and MCP servers, and model support spanning OpenAI, Anthropic, Gemini, Bedrock, Mistral, and xAI. Agents package and ship as OCI registry artifacts the same way containers do, and the tool is already preinstalled in Docker Desktop 4.63+, with 3.9k GitHub stars on the Apache-2.0 repo. Teams can now version and distribute agents with the same registry workflow they already use for containers. (3 minute read)"
+    },
+    {
+      "id": "1d36a32f7817",
+      "title": "Utah lets AI examine patients, prescribe without oversight",
+      "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Utah has reportedly become the first US state to let AI examine patients and prescribe medication without human oversight. (1 minute read)"
+    },
+    {
+      "id": "984223f109f3",
+      "title": "A fix for MCP agents that cite the wrong source",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A new verification approach for MCP agents checks that a cited source actually supports the claim it's attached to, not just that the stated fact happens to be correct. That targets a failure mode plain fact-checking misses: right answer, wrong or unsupported citation. (1 minute read)"
+    },
+    {
+      "id": "a585154abde8",
+      "title": "OpenAI's Decisions API enters public beta",
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "OpenAI has put its developer-platform Decisions API into public beta, giving developers a first-party API primitive for structured agent decision-making. (1 minute read)"
+    },
+    {
+      "id": "3316e2b4c519",
+      "title": "Claude, ChatGPT quote different prices by wealth",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A new study finds that Claude and ChatGPT quote different shopping prices for the same items depending on signals of the user's wealth. (1 minute read)"
+    },
+    {
+      "id": "57e294dfcc77",
+      "title": "Google's SynthID Detector goes public",
+      "url": "https://synthid.com/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Google has made its SynthID Detector publicly available, letting anyone check whether content carries a SynthID AI-generation watermark. (1 minute read)"
+    }
+  ]
+}
