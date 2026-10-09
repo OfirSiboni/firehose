@@ -1,91 +1,108 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "stories": [
     {
-      "id": "1d78f09c640d",
-      "url": "https://www.anthropic.com/claude-haiku-5-5",
-      "title": "Claude Haiku 5.5",
+      "id": "133541a06ad0",
+      "url": "https://github.com/openai/math/blob/main/history.md",
+      "title": "OpenAI Withdraws 3 Math Papers",
       "source": "hn",
       "tier": "headline",
-      "reason": "Anthropic's flagship cheap/fast small model refresh: 90% cheaper than Haiku 4.5 (<=100k tokens), big benchmark jumps (OSWorld 72.4% vs 15.7%, Terminal-Bench 39.2% vs 0%), first Haiku with adjustable effort.",
+      "reason": "OpenAI withdrew 3 of its math.github.io research claims after a sign error invalidated a trace-cancellation argument; the retraction + mass proof-repair update is the week's biggest verifiability story and directly tests whether AI-generated math can be trusted unverified.",
       "key_facts": [
-        "Input $0.10/$0.50 per M tokens (<=100k/>100k), vs Haiku 4.5 $1.00",
-        "Output $0.50/$2.50 per M tokens vs Haiku 4.5 $5.00",
-        "~75% cheaper on average to run than Haiku 4.5; 90% cheaper under 100k tokens",
-        "OSWorld 2.1 offline: 72.4% vs Haiku 4.5's 15.7%; Terminal-Bench 4.0: 39.2% vs 0.0%",
-        "First Haiku-class model with an adjustable effort setting",
-        "Asana reports >30% latency reduction, up to 2.5x faster inference per turn",
-        "Available on AWS, GCP, Azure, and the Claude Platform"
+        "3 withdrawn: 'Algebraicity of Weil classes on split abelian eightfolds', 'Algebraicity of Kuga-Satake Correspondences for K3 Surfaces', 'The rational Hodge conjecture for products of K3 surfaces'",
+        "Cause: a sign error in the first paper invalidated a stabilization-trace cancellation argument used by the two dependent papers",
+        "Same update: 14 manuscripts got proof repairs/corrected statements, 13 more cite revised companion papers, formalized top-line results now 300/719 (~42%)",
+        "History entry dated 2026-10-07"
       ]
     },
     {
-      "id": "0ca1450969b5",
-      "url": "https://openai.com/index/gpt-6-for-everyone/",
-      "title": "GPT‑6 and Intelligent UI for everyone",
+      "id": "3b1c539c253d",
+      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
+      "title": "OpenAI annualised revenues $20B less than previously signalled",
       "source": "hn",
       "tier": "headline",
-      "reason": "GPT-6 'Intelligent UI' rollout to all ChatGPT users, 470 HN points — a major platform-wide UX/model change from OpenAI, but couldn't fetch openai.com (egress blocked) to confirm specifics beyond the title.",
-      "key_facts": []
-    },
-    {
-      "id": "19355795289b",
-      "url": "https://github.com/docker/docker-agent",
-      "title": "Docker Agent",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Docker's own agent builder/runtime: declarative YAML agents, provider-agnostic (OpenAI/Anthropic/Gemini/Bedrock/Mistral/xAI), packaged and distributed as OCI artifacts — real running code (Apache-2.0, 3.9k stars, 10.7k commits), not just a demo.",
+      "reason": "CNBC and FT both report OpenAI's annualized revenue run-rate is ~$20B below what was previously signalled to investors/partners (Nvidia, Oracle, CoreWeave deals in context) — a concrete, two-source-confirmed data point in the AI-spending-bubble debate that working engineers and investors both need to know.",
       "key_facts": [
-        "docker/docker-agent: AI Agent Builder and Runtime, invoked as `docker agent`",
-        "Agents defined in YAML; no code required; can be organized into delegating teams",
-        "Tools from built-in capabilities and MCP servers (local, remote, or Docker-based)",
-        "Agents packaged and pushed/pulled as OCI registry artifacts",
-        "Apache-2.0, 3.9k stars, 489 forks, preinstalled in Docker Desktop 4.63+"
+        "Two independent outlets (FT, CNBC) ran the same $20B shortfall figure the same day",
+        "Context ties to OpenAI's Nvidia/Oracle/CoreWeave compute commitments"
       ]
     },
     {
-      "id": "1d36a32f7817",
-      "url": "https://www.techspot.com/news/114111-utah-become-first-state-ai-examine-patients-prescribe.html",
-      "title": "Utah to let AI examine patients and prescribe medication without human oversight",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Utah reportedly allowing AI to examine patients and prescribe medication without human oversight — a consequential AI-deployment policy first, not a rumor (124 HN points).",
-      "key_facts": []
-    },
-    {
-      "id": "984223f109f3",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Source-aware verification technique for MCP agents (checking provenance, not just factual match) — fits the eval-methodology always-surface rule; huggingface.co was unreachable to confirm the method and results.",
-      "key_facts": []
-    },
-    {
-      "id": "a585154abde8",
-      "url": "https://developers.openai.com/api/docs/guides/decisions",
-      "title": "Decisions API is in public beta",
+      "id": "9366cdf883bc",
+      "url": "https://mathstodon.xyz/@tao/117395269325940185",
+      "title": "“Math 2.0” will need to value mathematical progress more holistically",
       "source": "hn",
       "tier": "headline",
-      "reason": "OpenAI's developer-platform Decisions API goes to public beta (376 HN points) — looks like the lab-grade legitimization of this week's 'typed decision model' wave (Jev, Strands Decider, open-d1), but developers.openai.com was unreachable so the actual mechanics are unverified.",
-      "key_facts": []
+      "reason": "Terence Tao's widely-discussed (589 pts/625 comments, the single highest-engagement item in today's pool) post argues math needs a 'Math 2.0' evaluation framework that values progress more holistically — landing the same week AI-generated proofs had to be partially retracted. Directly on-topic for the always-surface 'evaluation methodology' beat. Could not fetch mathstodon.xyz (blocked) to quote him directly, so this is scored on title + context, not text.",
+      "key_facts": [
+        "Posted 2026-10-08, same week as the OpenAI math-paper withdrawal (133541a06ad0)",
+        "589 points / 625 comments on HN — the highest engagement of any candidate today"
+      ]
     },
     {
-      "id": "3316e2b4c519",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-10-07/study-claude-chatgpt-ai-bots-offer-different-shopping-prices-based-on-wealth",
-      "title": "Study: Claude, ChatGPT Offer Different Shopping Prices Based on Wealth",
+      "id": "1b35443cec6d",
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Bloomberg reports a study finding Claude and ChatGPT quote different shopping prices based on inferred wealth — a concrete, checkable bias finding about deployed assistants; bloomberg.com was unreachable to confirm methodology.",
-      "key_facts": []
+      "reason": "A solo dev used Claude Opus 5.5 (after an earlier GPT-5.6/GPT-6 attempt cost $400k+) to port the entire TypeScript 7 compiler/checker/LSP to Rust: a working v0 in ~10 hours for ~$24k, passing all 181,711 ported Go tests, with tsc-rs running ~1.6x faster than tsc 7 and up to ~11x faster than tsc 6 on real repos. Concrete evidence of what frontier agentic coding can now do unsupervised on a huge, well-specified codebase.",
+      "key_facts": [
+        "GPT-5.6 Sol/GPT-6 Astra: 1.3M lines of Rust, months of work, 84% compat, $400k+ in tokens",
+        "Claude Opus 5.5: working v0 in ~10 hours, ~$24,047 over two weeks (~925-983% of a $200 plan's weekly limit)",
+        "All 181,711 ported Go tests pass; TanStack Query and Hono diagnostics are identical to Go's",
+        "Geometric-mean speedup over tsc 6 across 6 real apps: 7.1x (tsc7), 11.4x (tsc-rs), 20.9x (bun check)",
+        "Author: 'never read a line of this code'; editor features (hover, refactors) not ported yet"
+      ]
     },
     {
-      "id": "57e294dfcc77",
-      "url": "https://synthid.com/",
-      "title": "SynthID Detector",
+      "id": "f9a7f01f513e",
+      "url": "https://cactuscompute.com/blog/whistle",
+      "title": "Whistle: Speech to Text in 16.9 MB",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Google's SynthID Detector for AI-generated content provenance — relevant to the eval/provenance beat; synthid.com was unreachable to confirm what's newly launched versus already known.",
-      "key_facts": []
+      "reason": "A speech-to-text model that fits in 16.9 MB hit #1 on HN (504 pts) — exactly the kind of serving/footprint efficiency story the taste profile always wants, though cactuscompute.com is blocked so this is scored on the HN title/engagement alone, not the blog's own benchmark numbers.",
+      "key_facts": [
+        "16.9 MB total model size (claimed in title)",
+        "504 points / 115 comments on HN"
+      ]
+    },
+    {
+      "id": "25fe5f9fbcb8",
+      "url": "https://arxiv.org/abs/2610.10515v1",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "RoboJEPA (Meta/FAIR's JEPA team, incl. Assran and Ballas) establishes the first scaling law for multi-embodiment robotic world models trained on real robot data, and ships model checkpoints plus training/deployment code — the repo-attached exception to 'arxiv alone doesn't count.'",
+      "key_facts": [
+        "8B parameters — described as the largest JEPA predictor model trained to date",
+        "Imagination error follows a second-order power law in compute; downstream planning improves predictably with it",
+        "Checkpoints + training/robot-deployment code released; zero-shot goal-image planning on real hardware"
+      ]
+    },
+    {
+      "id": "cf9dd8daed0c",
+      "url": "https://github.com/usamahz/cpu-performance-engineering",
+      "title": "usamahz/cpu-performance-engineering",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "A primary-sources-only reading path for CPU performance engineering, ending in a dedicated inference-on-CPU section (GEMM/BLAS, quantization, AMX/SME, when CPUs beat GPUs) with 14 sections of runnable, fully-specified benchmarks (CPU model, core count, compiler flags required to quote a number) and an MCP server to query it — unusually rigorous for the 'how are models served' beat.",
+      "key_facts": [
+        "1102 GitHub stars, Python/C benchmarks, strict rule: a figure is dropped if it's missing CPU model/core count/compiler flags/baseline",
+        "Covers oneDNN, MLAS, ggml/llama.cpp kernels, int8/k-quant formats, NUMA-aware decode threading"
+      ]
+    },
+    {
+      "id": "3295fd7388cd",
+      "url": "https://github.com/SamsungLabs/LittleBit",
+      "title": "Sub-1-Bit LLM Compression via Latent Factorization",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "SamsungLabs' LittleBit pushes LLM weight compression below 1 bit/weight (down to 0.1 bpw) via low-rank latent factorization + binarization with a Joint-ITQ init, with training code released — the repo-attached exception that saves this from the arxiv-quantization-paper downvote pattern. No accuracy/perplexity numbers are actually published yet and pretrained weights look like a placeholder, so this is promising methodology, not a proven result.",
+      "key_facts": [
+        "Targets 1.0 to 0.1 bits per weight via SVD latent factors binarized toward the hypercube",
+        "Code (single-GPU + DeepSpeed training, eval.py) released under CC BY-NC 4.0 (non-commercial)",
+        "No accuracy/perplexity results published; HF weight repo referenced looks like a placeholder"
+      ]
     }
   ]
 }
