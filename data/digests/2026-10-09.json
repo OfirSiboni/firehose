@@ -1,6 +1,6 @@
 {
   "date": "2026-10-09",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "133541a06ad0",
@@ -8,7 +8,8 @@
       "url": "https://github.com/openai/math/blob/main/history.md",
       "source": "hn",
       "tier": "headline",
-      "summary": "A sign error in one proof invalidated a trace-cancellation argument shared by two dependent papers, forcing OpenAI to withdraw all three results. The same update repaired 14 other manuscripts and pushed Lean-formalized results to 300 of 719 claimed theorems (42%). AI-generated proofs still need independent verification before anyone treats them as settled. (2 minute read)"
+      "summary": "A sign error in one proof invalidated a trace-cancellation argument shared by two dependent papers, forcing OpenAI to withdraw all three results. The same update repaired 14 other manuscripts and pushed Lean-formalized results to 300 of 719 claimed theorems (42%). AI-generated proofs still need independent verification before anyone treats them as settled. (2 minute read)",
+      "message_id": 171
     },
     {
       "id": "3b1c539c253d",
@@ -16,7 +17,8 @@
       "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
       "source": "hn",
       "tier": "headline",
-      "summary": "FT and CNBC both report OpenAI's annualized revenue run-rate sits about $20B below the figure previously signalled to investors and compute partners Nvidia, Oracle, and CoreWeave. Two independent outlets confirming the same shortfall raises the stakes on whether current AI infrastructure spending is justified by real revenue. (1 minute read)"
+      "summary": "FT and CNBC both report OpenAI's annualized revenue run-rate sits about $20B below the figure previously signalled to investors and compute partners Nvidia, Oracle, and CoreWeave. Two independent outlets confirming the same shortfall raises the stakes on whether current AI infrastructure spending is justified by real revenue. (1 minute read)",
+      "message_id": 172
     },
     {
       "id": "9366cdf883bc",
@@ -24,7 +26,8 @@
       "url": "https://mathstodon.xyz/@tao/117395269325940185",
       "source": "hn",
       "tier": "headline",
-      "summary": "Terence Tao posted on \"Math 2.0,\" arguing mathematical progress needs to be valued more holistically — the same week OpenAI withdrew three AI-generated proofs over a sign error. It's the most-discussed item of the day: 589 points and 625 comments on Hacker News. (1 minute read)"
+      "summary": "Terence Tao posted on \"Math 2.0,\" arguing mathematical progress needs to be valued more holistically — the same week OpenAI withdrew three AI-generated proofs over a sign error. It's the most-discussed item of the day: 589 points and 625 comments on Hacker News. (1 minute read)",
+      "message_id": 173
     },
     {
       "id": "1b35443cec6d",
@@ -32,7 +35,8 @@
       "url": "https://github.com/pingdotgg/ts-rust",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Claude Opus 5.5 built a working Rust port of the TypeScript 7 compiler, checker, and LSP in about 10 hours for $24,047 — versus $400,000+ and months for an earlier GPT-5.6/GPT-6 attempt that reached only 84% compatibility. All 181,711 ported Go tests pass, and tsc-rs runs up to 11.4x faster than tsc 6. (2 minute read)"
+      "summary": "Claude Opus 5.5 built a working Rust port of the TypeScript 7 compiler, checker, and LSP in about 10 hours for $24,047 — versus $400,000+ and months for an earlier GPT-5.6/GPT-6 attempt that reached only 84% compatibility. All 181,711 ported Go tests pass, and tsc-rs runs up to 11.4x faster than tsc 6. (2 minute read)",
+      "message_id": 174
     },
     {
       "id": "f9a7f01f513e",
@@ -40,7 +44,8 @@
       "url": "https://cactuscompute.com/blog/whistle",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Whistle squeezes a speech-to-text model down to 16.9 MB, small enough to ship on-device rather than calling a server. It topped Hacker News with 504 points and 115 comments. (1 minute read)"
+      "summary": "Whistle squeezes a speech-to-text model down to 16.9 MB, small enough to ship on-device rather than calling a server. It topped Hacker News with 504 points and 115 comments. (1 minute read)",
+      "message_id": 175
     },
     {
       "id": "25fe5f9fbcb8",
@@ -48,7 +53,8 @@
       "url": "https://arxiv.org/abs/2610.10515v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "RoboJEPA, an 8B-parameter JEPA world model from Meta's FAIR team, is the largest JEPA predictor trained to date, and its imagination error follows a second-order power law in compute that predicts downstream planning performance. Checkpoints and training/deployment code are released, with zero-shot goal-image planning demonstrated on real hardware. (2 minute read)"
+      "summary": "RoboJEPA, an 8B-parameter JEPA world model from Meta's FAIR team, is the largest JEPA predictor trained to date, and its imagination error follows a second-order power law in compute that predicts downstream planning performance. Checkpoints and training/deployment code are released, with zero-shot goal-image planning demonstrated on real hardware. (2 minute read)",
+      "message_id": 176
     },
     {
       "id": "cf9dd8daed0c",
@@ -56,7 +62,8 @@
       "url": "https://github.com/usamahz/cpu-performance-engineering",
       "source": "github",
       "tier": "discovery",
-      "summary": "This 1,102-star repo maps CPU performance engineering from single-instruction execution through to production inference, with 14 sections ending in runnable C benchmarks that must state CPU model, core count, and compiler flags or the number gets dropped. It covers oneDNN, ggml/llama.cpp kernels, int8/k-quant formats, and NUMA-aware decode threading, plus an MCP server to query it. (2 minute read)"
+      "summary": "This 1,102-star repo maps CPU performance engineering from single-instruction execution through to production inference, with 14 sections ending in runnable C benchmarks that must state CPU model, core count, and compiler flags or the number gets dropped. It covers oneDNN, ggml/llama.cpp kernels, int8/k-quant formats, and NUMA-aware decode threading, plus an MCP server to query it. (2 minute read)",
+      "message_id": 177
     },
     {
       "id": "3295fd7388cd",
@@ -64,7 +71,8 @@
       "url": "https://github.com/SamsungLabs/LittleBit",
       "source": "hn",
       "tier": "discovery",
-      "summary": "LittleBit compresses LLM weights down to 0.1 bits per weight by factorizing each matrix into low-rank latent factors, binarizing them, and restoring magnitude with learned scales. Training code is released under CC BY-NC 4.0, but no accuracy or perplexity numbers are published yet, so the compression gain is unproven. (2 minute read)"
+      "summary": "LittleBit compresses LLM weights down to 0.1 bits per weight by factorizing each matrix into low-rank latent factors, binarizing them, and restoring magnitude with learned scales. Training code is released under CC BY-NC 4.0, but no accuracy or perplexity numbers are published yet, so the compression gain is unproven. (2 minute read)",
+      "message_id": 178
     }
   ]
 }
