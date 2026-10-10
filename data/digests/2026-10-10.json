@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-10",
+  "sent": false,
+  "items": [
+    {
+      "id": "301544ff1a07",
+      "title": "OpenAI fires three safety researchers, who dispute the reason",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "OpenAI fired three safety researchers for mishandling research information, per TechCrunch. The researchers dispute that characterization and warn the firings will chill future internal safety reporting. (2 minute read)"
+    },
+    {
+      "id": "1eaf0f76ffce",
+      "title": "StepFun's Step 5 Preview, a 1M-context MoE, lands on OpenRouter",
+      "url": "https://openrouter.ai/stepfun/step-5-preview",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "StepFun's Step 5 Preview is a mixture-of-experts model with a 1M-token context window, now live on OpenRouter. It's a hands-on release rather than just an announcement, so anyone can query the full context window directly. (2 minute read)"
+    },
+    {
+      "id": "622eb12fcb71",
+      "title": "Bilibili ships Index-Translate, an open 150-language model family",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "Bilibili released Index-Translate, a Qwen3.5-based translation family covering 150 languages, with 2B, 9B, and 35B-A3B checkpoints on Hugging Face and ModelScope. Companion models add voice-preserving speech translation and long-document context, plus GGUF/FP8/FP4 quantized builds and a free API for the 35B-A3B model. (2 minute read)"
+    },
+    {
+      "id": "04902b83f5b9",
+      "title": "Typesafe AI raises $870M at $7.5B",
+      "url": "https://typesafe.ai/blog/series-ai",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Typesafe AI closed an $870M round at a $7.5B valuation. (1 minute read)"
+    },
+    {
+      "id": "7b2cb15b39a3",
+      "title": "Iranian campaign planted ChatGPT-written articles in US outlets",
+      "url": "https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "An Iranian influence campaign used ChatGPT to draft articles that ran in real U.S. publications, according to the Washington Post. (1 minute read)"
+    },
+    {
+      "id": "1f785e46a47e",
+      "title": "Microsoft ships MXC, a sandboxed runtime for untrusted model code",
+      "url": "https://github.com/microsoft/mxc",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "MXC is Microsoft's sandboxed execution system for running untrusted model output and tool calls, with SDKs in Rust, .NET, and Node. It picks a platform-native backend per OS — Bubblewrap on Linux, Seatbelt on macOS, ProcessContainer on Windows — and enforces JSON-configured filesystem, network, and UI policies. (2 minute read)"
+    },
+    {
+      "id": "dfc861ef0f35",
+      "title": "A mathematician's critique of OpenAI's Partition Principle claim",
+      "url": "https://karagila.org/2026/openai-pp/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A mathematician lays out specific objections to how OpenAI handled a math result involving the Partition Principle. (1 minute read)"
+    },
+    {
+      "id": "066510f0a2f2",
+      "title": "AI search through 400 years of archives turns up a lost meteorite",
+      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Running AI over 400 years of archival records turned up a previously unrecorded meteorite and a population of 'lost' rhinos. (1 minute read)"
+    }
+  ]
+}

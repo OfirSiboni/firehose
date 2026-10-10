@@ -1,108 +1,97 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "stories": [
     {
-      "id": "133541a06ad0",
-      "url": "https://github.com/openai/math/blob/main/history.md",
-      "title": "OpenAI Withdraws 3 Math Papers",
+      "id": "301544ff1a07",
+      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
+      "title": "OpenAI fires three safety researchers for \"mishandling research information\"",
       "source": "hn",
       "tier": "headline",
-      "reason": "OpenAI withdrew 3 of its math.github.io research claims after a sign error invalidated a trace-cancellation argument; the retraction + mass proof-repair update is the week's biggest verifiability story and directly tests whether AI-generated math can be trusted unverified.",
+      "reason": "OpenAI fired 3 safety researchers over alleged research-info mishandling; researchers dispute it and warn of a chilling effect on internal safety work. High engagement (318 pts), credible outlet (TechCrunch), real governance story.",
       "key_facts": [
-        "3 withdrawn: 'Algebraicity of Weil classes on split abelian eightfolds', 'Algebraicity of Kuga-Satake Correspondences for K3 Surfaces', 'The rational Hodge conjecture for products of K3 surfaces'",
-        "Cause: a sign error in the first paper invalidated a stabilization-trace cancellation argument used by the two dependent papers",
-        "Same update: 14 manuscripts got proof repairs/corrected statements, 13 more cite revised companion papers, formalized top-line results now 300/719 (~42%)",
-        "History entry dated 2026-10-07"
+        "TechCrunch reports OpenAI fired three safety researchers",
+        "OpenAI cites mishandling of research information as cause",
+        "The fired researchers dispute the misconduct characterization",
+        "They warn the firings will chill future internal safety reporting"
       ]
     },
     {
-      "id": "3b1c539c253d",
-      "url": "https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html",
-      "title": "OpenAI annualised revenues $20B less than previously signalled",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "CNBC and FT both report OpenAI's annualized revenue run-rate is ~$20B below what was previously signalled to investors/partners (Nvidia, Oracle, CoreWeave deals in context) — a concrete, two-source-confirmed data point in the AI-spending-bubble debate that working engineers and investors both need to know.",
-      "key_facts": [
-        "Two independent outlets (FT, CNBC) ran the same $20B shortfall figure the same day",
-        "Context ties to OpenAI's Nvidia/Oracle/CoreWeave compute commitments"
-      ]
-    },
-    {
-      "id": "9366cdf883bc",
-      "url": "https://mathstodon.xyz/@tao/117395269325940185",
-      "title": "“Math 2.0” will need to value mathematical progress more holistically",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Terence Tao's widely-discussed (589 pts/625 comments, the single highest-engagement item in today's pool) post argues math needs a 'Math 2.0' evaluation framework that values progress more holistically — landing the same week AI-generated proofs had to be partially retracted. Directly on-topic for the always-surface 'evaluation methodology' beat. Could not fetch mathstodon.xyz (blocked) to quote him directly, so this is scored on title + context, not text.",
-      "key_facts": [
-        "Posted 2026-10-08, same week as the OpenAI math-paper withdrawal (133541a06ad0)",
-        "589 points / 625 comments on HN — the highest engagement of any candidate today"
-      ]
-    },
-    {
-      "id": "1b35443cec6d",
-      "url": "https://github.com/pingdotgg/ts-rust",
-      "title": "Port of the TypeScript compiler, checker and lsp to Rust, by LLM",
+      "id": "1eaf0f76ffce",
+      "url": "https://openrouter.ai/stepfun/step-5-preview",
+      "title": "Step 5 Preview, a 1M-context MoE from StepFun, shows up on OpenRouter",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A solo dev used Claude Opus 5.5 (after an earlier GPT-5.6/GPT-6 attempt cost $400k+) to port the entire TypeScript 7 compiler/checker/LSP to Rust: a working v0 in ~10 hours for ~$24k, passing all 181,711 ported Go tests, with tsc-rs running ~1.6x faster than tsc 7 and up to ~11x faster than tsc 6 on real repos. Concrete evidence of what frontier agentic coding can now do unsupervised on a huge, well-specified codebase.",
+      "reason": "StepFun's Step 5 Preview is a 1M-context MoE model now live on OpenRouter, giving outside users hands-on access rather than just an announcement. Fits open-weight/inference-infra interest.",
       "key_facts": [
-        "GPT-5.6 Sol/GPT-6 Astra: 1.3M lines of Rust, months of work, 84% compat, $400k+ in tokens",
-        "Claude Opus 5.5: working v0 in ~10 hours, ~$24,047 over two weeks (~925-983% of a $200 plan's weekly limit)",
-        "All 181,711 ported Go tests pass; TanStack Query and Hono diagnostics are identical to Go's",
-        "Geometric-mean speedup over tsc 6 across 6 real apps: 7.1x (tsc7), 11.4x (tsc-rs), 20.9x (bun check)",
-        "Author: 'never read a line of this code'; editor features (hover, refactors) not ported yet"
+        "Step 5 Preview is a MoE model from StepFun",
+        "1M token context window",
+        "Available for use via OpenRouter"
       ]
     },
     {
-      "id": "f9a7f01f513e",
-      "url": "https://cactuscompute.com/blog/whistle",
-      "title": "Whistle: Speech to Text in 16.9 MB",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "A speech-to-text model that fits in 16.9 MB hit #1 on HN (504 pts) — exactly the kind of serving/footprint efficiency story the taste profile always wants, though cactuscompute.com is blocked so this is scored on the HN title/engagement alone, not the blog's own benchmark numbers.",
-      "key_facts": [
-        "16.9 MB total model size (claimed in title)",
-        "504 points / 115 comments on HN"
-      ]
-    },
-    {
-      "id": "25fe5f9fbcb8",
-      "url": "https://arxiv.org/abs/2610.10515v1",
-      "title": "RoboJEPA: Scaling Robotic Latent World Models",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "RoboJEPA (Meta/FAIR's JEPA team, incl. Assran and Ballas) establishes the first scaling law for multi-embodiment robotic world models trained on real robot data, and ships model checkpoints plus training/deployment code — the repo-attached exception to 'arxiv alone doesn't count.'",
-      "key_facts": [
-        "8B parameters — described as the largest JEPA predictor model trained to date",
-        "Imagination error follows a second-order power law in compute; downstream planning improves predictably with it",
-        "Checkpoints + training/robot-deployment code released; zero-shot goal-image planning on real hardware"
-      ]
-    },
-    {
-      "id": "cf9dd8daed0c",
-      "url": "https://github.com/usamahz/cpu-performance-engineering",
-      "title": "usamahz/cpu-performance-engineering",
+      "id": "622eb12fcb71",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "title": "bilibili/Index-Translate",
       "source": "github",
       "tier": "discovery",
-      "reason": "A primary-sources-only reading path for CPU performance engineering, ending in a dedicated inference-on-CPU section (GEMM/BLAS, quantization, AMX/SME, when CPUs beat GPUs) with 14 sections of runnable, fully-specified benchmarks (CPU model, core count, compiler flags required to quote a number) and an MCP server to query it — unusually rigorous for the 'how are models served' beat.",
+      "reason": "Bilibili released Index-Translate, a real open-weight translation model family (2B/9B/35B-A3B checkpoints, GGUF/FP8/FP4 quants, free API), covering 150 languages plus voice-preserving and long-document variants. Matches 'open-weight releases with published weights.'",
       "key_facts": [
-        "1102 GitHub stars, Python/C benchmarks, strict rule: a figure is dropped if it's missing CPU model/core count/compiler flags/baseline",
-        "Covers oneDNN, MLAS, ggml/llama.cpp kernels, int8/k-quant formats, NUMA-aware decode threading"
+        "Index-Translate family built on Qwen3.5, from bilibili",
+        "Checkpoints at 2B, 9B, and 35B-A3B released on HF/ModelScope",
+        "Covers 150 languages; includes Index-Echo (voice-preserving speech translation), Index-Homura (syllable-controlled), Index-NativeLong (long-document)",
+        "GGUF/FP8/FP4 quantized builds and a free public API for the 35B-A3B model",
+        "1.2k GitHub stars"
       ]
     },
     {
-      "id": "3295fd7388cd",
-      "url": "https://github.com/SamsungLabs/LittleBit",
-      "title": "Sub-1-Bit LLM Compression via Latent Factorization",
+      "id": "04902b83f5b9",
+      "url": "https://typesafe.ai/blog/series-ai",
+      "title": "Typesafe AI raises $870M at $7.5B",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Typesafe AI raised $870M at a $7.5B valuation — well above the funding floor and plausibly the company behind the 'Jev'/decision-model product line seen across several of today's repos (e.g. thesys-core's 'TypeSafe Jev' classifier), tying a saturated wave back to one real, large financing story.",
+      "key_facts": []
+    },
+    {
+      "id": "7b2cb15b39a3",
+      "url": "https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/",
+      "title": "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Washington Post reports an Iranian influence operation planted ChatGPT-drafted articles in real US publications — a concrete, sourced case of generative AI used for state-linked disinformation placement, distinct from the already-exhausted 'agent causes incident' framing. Big enough that not knowing it is a gap.",
+      "key_facts": []
+    },
+    {
+      "id": "1f785e46a47e",
+      "url": "https://github.com/microsoft/mxc",
+      "title": "MXC - a sandboxed code execution system",
       "source": "hn",
       "tier": "discovery",
-      "reason": "SamsungLabs' LittleBit pushes LLM weight compression below 1 bit/weight (down to 0.1 bpw) via low-rank latent factorization + binarization with a Joint-ITQ init, with training code released — the repo-attached exception that saves this from the arxiv-quantization-paper downvote pattern. No accuracy/perplexity numbers are actually published yet and pretrained weights look like a placeholder, so this is promising methodology, not a proven result.",
+      "reason": "MXC is Microsoft's real sandboxed code-execution system for running untrusted model output/tool calls, with pluggable OS-native backends and policy-driven filesystem/network/UI controls. Running infra code, not just a proposal.",
       "key_facts": [
-        "Targets 1.0 to 0.1 bits per weight via SVD latent factors binarized toward the hypercube",
-        "Code (single-GPU + DeepSpeed training, eval.py) released under CC BY-NC 4.0 (non-commercial)",
-        "No accuracy/perplexity results published; HF weight repo referenced looks like a placeholder"
+        "MXC = sandboxed code execution system from Microsoft, cross-platform (Windows/Linux/macOS)",
+        "SDKs in Rust, .NET, Node; backends include ProcessContainer, Bubblewrap, Seatbelt, Windows Sandbox, LXC, MicroVM",
+        "Policy-driven filesystem/network/UI controls, JSON-configured",
+        "Includes an audit mode for building policies (disables sandbox security, not for untrusted code)"
       ]
+    },
+    {
+      "id": "dfc861ef0f35",
+      "url": "https://karagila.org/2026/openai-pp/",
+      "title": "OpenAI, the Partition Principle, and Mathematics",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A mathematician's critique of OpenAI's handling of a math result (Partition Principle) — the freshest and most substantive angle in today's OpenAI-math-reliability cluster; picking this one over the other three to avoid running the same trend four times.",
+      "key_facts": []
+    },
+    {
+      "id": "066510f0a2f2",
+      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "AI applied to 400 years of archives surfacing a previously unknown meteorite and 'lost' rhinos — a concrete, novel AI-for-research application story rather than another vendor announcement.",
+      "key_facts": []
     }
   ]
 }
