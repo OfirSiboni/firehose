@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "b38064f80336",
@@ -8,7 +8,8 @@
       "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Microsoft released Microsoft-Decision-1, a model built specifically for fast decision-making rather than general chat or coding. (1 minute read)"
+      "summary": "Microsoft released Microsoft-Decision-1, a model built specifically for fast decision-making rather than general chat or coding. (1 minute read)",
+      "message_id": 189
     },
     {
       "id": "83b3ab4d460b",
@@ -16,7 +17,8 @@
       "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
       "source": "hn",
       "tier": "headline",
-      "summary": "Nvidia is in talks to acquire Reflection AI, an open-weight model startup, according to the Financial Times. (1 minute read)"
+      "summary": "Nvidia is in talks to acquire Reflection AI, an open-weight model startup, according to the Financial Times. (1 minute read)",
+      "message_id": 190
     },
     {
       "id": "1e9dd88c3c5b",
@@ -24,7 +26,8 @@
       "url": "https://wsj.com/tech/ai/tom-brown-athropic-669005ad",
       "source": "hn",
       "tier": "headline",
-      "summary": "Anthropic's Tom Brown used Republican political connections to arrange a $1.25B-per-month compute deal with SpaceX, the Wall Street Journal reports. (1 minute read)"
+      "summary": "Anthropic's Tom Brown used Republican political connections to arrange a $1.25B-per-month compute deal with SpaceX, the Wall Street Journal reports. (1 minute read)",
+      "message_id": 191
     },
     {
       "id": "88ba491f7008",
@@ -32,7 +35,8 @@
       "url": "https://github.com/strands-labs/strands-decider",
       "source": "github",
       "tier": "discovery",
-      "summary": "Strands Decider swaps a language model's output head for a ~1M-parameter pointer head, so one forward pass scores answer options instead of generating text. It reports 95%+ accuracy when confidence hits 0.9+ on JevBench's 231 tasks, answering in a median 115ms on an RTX 3090. Gemma 4 variants from 2B to 26B-A4B and a vision mode are also included. (2 minute read)"
+      "summary": "Strands Decider swaps a language model's output head for a ~1M-parameter pointer head, so one forward pass scores answer options instead of generating text. It reports 95%+ accuracy when confidence hits 0.9+ on JevBench's 231 tasks, answering in a median 115ms on an RTX 3090. Gemma 4 variants from 2B to 26B-A4B and a vision mode are also included. (2 minute read)",
+      "message_id": 192
     },
     {
       "id": "4d5a1b14f287",
@@ -40,7 +44,8 @@
       "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Terence Tao lays out what mathematicians need to understand about the reliability of the Lean theorem prover when AI tools help construct or check proofs. (1 minute read)"
+      "summary": "Terence Tao lays out what mathematicians need to understand about the reliability of the Lean theorem prover when AI tools help construct or check proofs. (1 minute read)",
+      "message_id": 193
     },
     {
       "id": "6b75dae75d97",
@@ -48,7 +53,8 @@
       "url": "https://github.com/rociiu/talorys",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Talorys deploys a single-user AI agent using only Cloudflare Pages, Workers, one Durable Object with SQLite, and Workers AI, skipping paid services like R2 or D1 entirely. Durable Object alarms replace an always-on process, and chat runs on @cf/zai-org/glm-4.7-flash, streamed as SSE. A one-command installer (npx create-talorys@latest) deploys it with no telemetry. (2 minute read)"
+      "summary": "Talorys deploys a single-user AI agent using only Cloudflare Pages, Workers, one Durable Object with SQLite, and Workers AI, skipping paid services like R2 or D1 entirely. Durable Object alarms replace an always-on process, and chat runs on @cf/zai-org/glm-4.7-flash, streamed as SSE. A one-command installer (npx create-talorys@latest) deploys it with no telemetry. (2 minute read)",
+      "message_id": 194
     },
     {
       "id": "4488adb0885f",
@@ -56,7 +62,8 @@
       "url": "https://www.warren.senate.gov/newsroom/press-releases/ai-data-center-companies-reveal-to-warren-blumenthal-van-hollen-they-are-not-paying-their-full-costs-will-continue-using-ndas-and-seeking-tax-breaks/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "AI data center companies told Senators Warren, Blumenthal, and Van Hollen they aren't covering their full infrastructure costs and will keep relying on NDAs and seeking tax breaks. (1 minute read)"
+      "summary": "AI data center companies told Senators Warren, Blumenthal, and Van Hollen they aren't covering their full infrastructure costs and will keep relying on NDAs and seeking tax breaks. (1 minute read)",
+      "message_id": 195
     },
     {
       "id": "90995f7dbc9c",
@@ -64,7 +71,8 @@
       "url": "https://openai.com/index/asana-browser-agent",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Asana reports a 76x reduction in model costs during browser-agent tests after switching to GPT-6.1 Sol, per OpenAI's case study. (1 minute read)"
+      "summary": "Asana reports a 76x reduction in model costs during browser-agent tests after switching to GPT-6.1 Sol, per OpenAI's case study. (1 minute read)",
+      "message_id": 196
     }
   ]
 }
