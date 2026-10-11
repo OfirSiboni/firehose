@@ -1,96 +1,86 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "stories": [
     {
-      "id": "301544ff1a07",
-      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-      "title": "OpenAI fires three safety researchers for \"mishandling research information\"",
+      "id": "b38064f80336",
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "title": "Microsoft-Decision-1, our model for fast decision-making",
       "source": "hn",
       "tier": "headline",
-      "reason": "OpenAI fired 3 safety researchers over alleged research-info mishandling; researchers dispute it and warn of a chilling effect on internal safety work. High engagement (318 pts), credible outlet (TechCrunch), real governance story.",
-      "key_facts": [
-        "TechCrunch reports OpenAI fired three safety researchers",
-        "OpenAI cites mishandling of research information as cause",
-        "The fired researchers dispute the misconduct characterization",
-        "They warn the firings will chill future internal safety reporting"
-      ]
+      "reason": "Microsoft's own flagship 'fast decision-making' model release, 195 HN pts; first-of-generation entry in the emerging small-decision-model category. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "key_facts": []
     },
     {
-      "id": "1eaf0f76ffce",
-      "url": "https://openrouter.ai/stepfun/step-5-preview",
-      "title": "Step 5 Preview, a 1M-context MoE from StepFun, shows up on OpenRouter",
+      "id": "83b3ab4d460b",
+      "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
+      "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
       "source": "hn",
-      "tier": "discovery",
-      "reason": "StepFun's Step 5 Preview is a 1M-context MoE model now live on OpenRouter, giving outside users hands-on access rather than just an announcement. Fits open-weight/inference-infra interest.",
-      "key_facts": [
-        "Step 5 Preview is a MoE model from StepFun",
-        "1M token context window",
-        "Available for use via OpenRouter"
-      ]
+      "tier": "headline",
+      "reason": "FT reports Nvidia in talks to acquire Reflection AI, an open-weight model lab; major AI M&A, 130 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "key_facts": []
     },
     {
-      "id": "622eb12fcb71",
-      "url": "https://github.com/bilibili/Index-Translate",
-      "title": "bilibili/Index-Translate",
+      "id": "1e9dd88c3c5b",
+      "url": "https://wsj.com/tech/ai/tom-brown-athropic-669005ad",
+      "title": "Tom Brown used GOP ties to broker a $1.25B/month SpaceX compute deal",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "WSJ: Anthropic's Tom Brown used GOP political ties to broker a $1.25B/month SpaceX compute deal; consequential AI-compute-economics/politics story, 129 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "key_facts": []
+    },
+    {
+      "id": "88ba491f7008",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "title": "strands-labs/strands-decider",
       "source": "github",
       "tier": "discovery",
-      "reason": "Bilibili released Index-Translate, a real open-weight translation model family (2B/9B/35B-A3B checkpoints, GGUF/FP8/FP4 quants, free API), covering 150 languages plus voice-preserving and long-document variants. Matches 'open-weight releases with published weights.'",
+      "reason": "Strands Decider: a ~1.9B-param Qwen3.5 decoder with its LM head removed and a ~1M-param pointer head added, so one forward pass scores options instead of decoding. Reports calibrated confidence (95% accuracy at 0.9+ confidence on unseen short-classification tasks) and 115ms/question on an RTX 3090. Running code, 564 stars, genuinely novel serving-focused architecture.",
       "key_facts": [
-        "Index-Translate family built on Qwen3.5, from bilibili",
-        "Checkpoints at 2B, 9B, and 35B-A3B released on HF/ModelScope",
-        "Covers 150 languages; includes Index-Echo (voice-preserving speech translation), Index-Homura (syllable-controlled), Index-NativeLong (long-document)",
-        "GGUF/FP8/FP4 quantized builds and a free public API for the 35B-A3B model",
-        "1.2k GitHub stars"
+        "Built on Qwen3.5-2B-Base with LM head removed, ~1M-param pointer head added",
+        "Claims 95%+ accuracy when confidence >=0.9 on unseen short-classification tasks",
+        "Median 115ms/question on RTX 3090; state read once, reused across questions",
+        "Benchmarked on JevBench (231 tasks); also ships Gemma 4 variants (E2B-26B-A4B) and a vision mode"
       ]
     },
     {
-      "id": "04902b83f5b9",
-      "url": "https://typesafe.ai/blog/series-ai",
-      "title": "Typesafe AI raises $870M at $7.5B",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Typesafe AI raised $870M at a $7.5B valuation — well above the funding floor and plausibly the company behind the 'Jev'/decision-model product line seen across several of today's repos (e.g. thesys-core's 'TypeSafe Jev' classifier), tying a saturated wave back to one real, large financing story.",
-      "key_facts": []
-    },
-    {
-      "id": "7b2cb15b39a3",
-      "url": "https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/",
-      "title": "Iranian campaign planted fake articles in real U.S. publications using ChatGPT",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Washington Post reports an Iranian influence operation planted ChatGPT-drafted articles in real US publications — a concrete, sourced case of generative AI used for state-linked disinformation placement, distinct from the already-exhausted 'agent causes incident' framing. Big enough that not knowing it is a gap.",
-      "key_facts": []
-    },
-    {
-      "id": "1f785e46a47e",
-      "url": "https://github.com/microsoft/mxc",
-      "title": "MXC - a sandboxed code execution system",
+      "id": "4d5a1b14f287",
+      "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+      "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
       "source": "hn",
       "tier": "discovery",
-      "reason": "MXC is Microsoft's real sandboxed code-execution system for running untrusted model output/tool calls, with pluggable OS-native backends and policy-driven filesystem/network/UI controls. Running infra code, not just a proposal.",
+      "reason": "Terence Tao on what mathematicians should know about Lean theorem prover reliability and AI assistance; high-credibility source directly on eval methodology for AI-assisted proofs, 165 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "key_facts": []
+    },
+    {
+      "id": "6b75dae75d97",
+      "url": "https://github.com/rociiu/talorys",
+      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Talorys: single-user personal AI agent that deploys entirely within Cloudflare's free tier (Pages, Workers, one Durable Object w/ SQLite, Workers AI) with no always-on process, cost guardrails, and local PBKDF2-SHA256 auth. Strong, verifiable serving/deployment story with running code; already fairly visible (259 HN pts).",
       "key_facts": [
-        "MXC = sandboxed code execution system from Microsoft, cross-platform (Windows/Linux/macOS)",
-        "SDKs in Rust, .NET, Node; backends include ProcessContainer, Bubblewrap, Seatbelt, Windows Sandbox, LXC, MicroVM",
-        "Policy-driven filesystem/network/UI controls, JSON-configured",
-        "Includes an audit mode for building policies (disables sandbox security, not for untrusted code)"
+        "Single Durable Object (Cloudflare Agents SDK) holds SQLite state; alarms replace an always-on process",
+        "Chat model is @cf/zai-org/glm-4.7-flash via Workers AI, streamed as SSE",
+        "Stays within free tier by avoiding R2/D1/KV; caps output tokens, context size, tool calls, daily AI requests",
+        "One-command installer: npx create-talorys@latest; MIT licensed, no telemetry"
       ]
     },
     {
-      "id": "dfc861ef0f35",
-      "url": "https://karagila.org/2026/openai-pp/",
-      "title": "OpenAI, the Partition Principle, and Mathematics",
+      "id": "4488adb0885f",
+      "url": "https://www.warren.senate.gov/newsroom/press-releases/ai-data-center-companies-reveal-to-warren-blumenthal-van-hollen-they-are-not-paying-their-full-costs-will-continue-using-ndas-and-seeking-tax-breaks/",
+      "title": "AI Data Centers Not Paying Their Costs, Will Keep Using NDAs and Seek Tax Breaks",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A mathematician's critique of OpenAI's handling of a math result (Partition Principle) — the freshest and most substantive angle in today's OpenAI-math-reliability cluster; picking this one over the other three to avoid running the same trend four times.",
+      "reason": "Primary-source Senate press release (Warren/Blumenthal/Van Hollen): AI data center companies admit they aren't paying full infrastructure costs and will keep using NDAs and seeking tax breaks. Verifiable, policy-relevant to AI infra economics, only 56 HN pts so low saturation. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
       "key_facts": []
     },
     {
-      "id": "066510f0a2f2",
-      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
-      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
-      "source": "hn",
+      "id": "90995f7dbc9c",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "source": "blog",
       "tier": "discovery",
-      "reason": "AI applied to 400 years of archives surfacing a previously unknown meteorite and 'lost' rhinos — a concrete, novel AI-for-research application story rather than another vendor announcement.",
+      "reason": "OpenAI's own case study: Asana reports a 76x model-cost reduction in browser-agent tests using GPT-6.1 Sol. Concrete serving/cost number, though self-published vendor PR. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
       "key_facts": []
     }
   ]

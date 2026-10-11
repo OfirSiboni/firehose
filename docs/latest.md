@@ -1,76 +1,76 @@
-# Firehose — 2026-10-10
+# Firehose — 2026-10-11
 
-## [OpenAI fires three safety researchers, who dispute the reason](https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/)
+## [Microsoft-Decision-1, our model for fast decision-making](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/)
 
 `headline` · hn
 
-OpenAI fired three safety researchers for mishandling research information, per TechCrunch. The researchers dispute that characterization and warn the firings will chill future internal safety reporting. (2 minute read)
+Microsoft released Microsoft-Decision-1, a model built specifically for fast decision-making rather than general chat or coding. (1 minute read)
 
-## [StepFun's Step 5 Preview, a 1M-context MoE, lands on OpenRouter](https://openrouter.ai/stepfun/step-5-preview)
+## [Nvidia in talks to acquire open-model startup Reflection AI](https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a)
 
-`discovery` · hn
+`headline` · hn
 
-StepFun's Step 5 Preview is a mixture-of-experts model with a 1M-token context window, now live on OpenRouter. It's a hands-on release rather than just an announcement, so anyone can query the full context window directly. (2 minute read)
+Nvidia is in talks to acquire Reflection AI, an open-weight model startup, according to the Financial Times. (1 minute read)
 
-## [Bilibili ships Index-Translate, an open 150-language model family](https://github.com/bilibili/Index-Translate)
+## [Tom Brown used GOP ties to broker a $1.25B/month SpaceX compute deal](https://wsj.com/tech/ai/tom-brown-athropic-669005ad)
+
+`headline` · hn
+
+Anthropic's Tom Brown used Republican political connections to arrange a $1.25B-per-month compute deal with SpaceX, the Wall Street Journal reports. (1 minute read)
+
+## [Strands Decider: a pointer-head model for agent decisions](https://github.com/strands-labs/strands-decider)
 
 `discovery` · github
 
-Bilibili released Index-Translate, a Qwen3.5-based translation family covering 150 languages, with 2B, 9B, and 35B-A3B checkpoints on Hugging Face and ModelScope. Companion models add voice-preserving speech translation and long-document context, plus GGUF/FP8/FP4 quantized builds and a free API for the 35B-A3B model. (2 minute read)
+Strands Decider swaps a language model's output head for a ~1M-parameter pointer head, so one forward pass scores answer options instead of generating text. It reports 95%+ accuracy when confidence hits 0.9+ on JevBench's 231 tasks, answering in a median 115ms on an RTX 3090. Gemma 4 variants from 2B to 26B-A4B and a vision mode are also included. (2 minute read)
 
-## [Typesafe AI raises $870M at $7.5B](https://typesafe.ai/blog/series-ai)
-
-`headline` · hn
-
-Typesafe AI closed an $870M round at a $7.5B valuation. (1 minute read)
-
-## [Iranian campaign planted ChatGPT-written articles in US outlets](https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/)
-
-`headline` · hn
-
-An Iranian influence campaign used ChatGPT to draft articles that ran in real U.S. publications, according to the Washington Post. (1 minute read)
-
-## [Microsoft ships MXC, a sandboxed runtime for untrusted model code](https://github.com/microsoft/mxc)
+## [Terence Tao on Lean theorem prover reliability and AI](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/)
 
 `discovery` · hn
 
-MXC is Microsoft's sandboxed execution system for running untrusted model output and tool calls, with SDKs in Rust, .NET, and Node. It picks a platform-native backend per OS — Bubblewrap on Linux, Seatbelt on macOS, ProcessContainer on Windows — and enforces JSON-configured filesystem, network, and UI policies. (2 minute read)
+Terence Tao lays out what mathematicians need to understand about the reliability of the Lean theorem prover when AI tools help construct or check proofs. (1 minute read)
 
-## [A mathematician's critique of OpenAI's Partition Principle claim](https://karagila.org/2026/openai-pp/)
-
-`discovery` · hn
-
-A mathematician lays out specific objections to how OpenAI handled a math result involving the Partition Principle. (1 minute read)
-
-## [AI search through 400 years of archives turns up a lost meteorite](https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/)
+## [Talorys runs a personal AI agent entirely on Cloudflare's free tier](https://github.com/rociiu/talorys)
 
 `discovery` · hn
 
-Running AI over 400 years of archival records turned up a previously unrecorded meteorite and a population of 'lost' rhinos. (1 minute read)
+Talorys deploys a single-user AI agent using only Cloudflare Pages, Workers, one Durable Object with SQLite, and Workers AI, skipping paid services like R2 or D1 entirely. Durable Object alarms replace an always-on process, and chat runs on @cf/zai-org/glm-4.7-flash, streamed as SSE. A one-command installer (npx create-talorys@latest) deploys it with no telemetry. (2 minute read)
+
+## [AI data centers admit they aren't covering their full costs](https://www.warren.senate.gov/newsroom/press-releases/ai-data-center-companies-reveal-to-warren-blumenthal-van-hollen-they-are-not-paying-their-full-costs-will-continue-using-ndas-and-seeking-tax-breaks/)
+
+`discovery` · hn
+
+AI data center companies told Senators Warren, Blumenthal, and Van Hollen they aren't covering their full infrastructure costs and will keep relying on NDAs and seeking tax breaks. (1 minute read)
+
+## [Asana cuts model costs 76x switching to GPT-6.1 Sol](https://openai.com/index/asana-browser-agent)
+
+`discovery` · blog
+
+Asana reports a 76x reduction in model costs during browser-agent tests after switching to GPT-6.1 Sol, per OpenAI's case study. (1 minute read)
 
 ## Also in the pool
 
-- [Show HN: Let your AI agents paint big arrows, boxes and text on your screen](https://github.com/franzenzenhofer/big-arrow-on-the-screen) — hn
+- [The Agent Said It Was Done. The Database Disagreed.](https://huggingface.co/blog/microsoft/thinkingbox) — blog
+- [Vibe coded browser ports of Halo, The Simpsons: Hit And Run, GTA work well](https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300) — hn
+- [Rewriting Prime Agent in Rust](https://www.primeintellect.ai/blog/prime-agent-rust) — hn
 - [Why are coding agents so dumb?](https://mtlynch.io/why-are-coding-agents-so-dumb/) — hn
-- [AI-ready biological data: $1.8B global commitment](https://biohub.org/news/virtual-biology-initiative-expansion/) — hn
-- [Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization](https://arxiv.org/abs/2610.12444v1) — arxiv
-- [VFold: Symmetry-Aware Cross-Layer Value Cache Compression](https://arxiv.org/abs/2610.12338v1) — arxiv
-- [Microsoft-Decision-1, our model for fast decision-making](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) — hn
+- [Can you use autoregressive diffusion to generate market data?](https://blog.janestreet.com/can-you-use-autoregressive-diffusion-to-generate-market-data/) — hn
+- [Data Center Darling's $30B IPO Dream Crushed in 48 Hours](https://www.bloomberg.com/news/articles/2026-10-09/data-center-darling-s-30-billion-ipo-dream-crushed-in-48-hours) — hn
+- [Build your own decision model](https://nishtahir.com/build-your-own-decision-model/) — hn
+- [nanaism/yomiyasu](https://github.com/nanaism/yomiyasu) — github
 - [OpenAI mistranslated mathematics into code for its Navier-Stokes proof](https://www.newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof/) — hn
-- [What mathematicians should know about the Lean Theorem Prover: reliability & AI](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/) — hn
-- [LegalOn halves Codex costs while maintaining development speed](https://openai.com/index/legalon-halves-codex-costs) — blog
-- [How Albertsons Companies is reimagining retail from the inside out](https://openai.com/index/albertsons-reimagining-retail) — blog
-- [What should we tell our students?](https://terrytao.wordpress.com/2026/10/08/what-should-we-tell-our-students/) — hn
-- [CSF: Contextual Safety Filtering for Motion Generators](https://arxiv.org/abs/2610.12467v1) — arxiv
-- [On the estimation and validity of AI time horizons---a statistical look at the METR plot](https://arxiv.org/abs/2610.12466v1) — arxiv
-- [A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control](https://arxiv.org/abs/2610.12465v1) — arxiv
-- [BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452v1) — arxiv
-- [One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts](https://arxiv.org/abs/2610.12448v1) — arxiv
-- [Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems](https://arxiv.org/abs/2610.12449v1) — arxiv
-- [Density Ratio Estimation with Stein Displacement Fields](https://arxiv.org/abs/2610.12437v1) — arxiv
-- [Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff](https://arxiv.org/abs/2610.12436v1) — arxiv
-- [VioLA: Learning Generalist Humanoid Control Policies from Human Data](https://arxiv.org/abs/2610.12435v1) — arxiv
+- [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) — github
+- [ceyyy427/finathink](https://github.com/ceyyy427/finathink) — github
+- [A model guide for the GPT-6 family](https://openai.com/index/practical-guide-building-gpt-6) — blog
+- [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — github
+- [100+ reactions to 100+ solutions](https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions/) — hn
+- [Computers Cannot Make Decisions](https://wiki.cateat.fish/art:computers_cannot_make_decisions) — hn
+- [open-slopware – Alternatives to FOSS projects choosing to use LLMs/AI](https://codeberg.org/ethical-foss/open-slopware) — hn
+- [Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks](https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/) — blog
+- [Anthropic bans users from being 'cruel' to its AI systems](https://www.bbc.com/news/articles/c6j9k1l72wkgo) — hn
+- [Chatham scales its capital markets expertise with OpenAI](https://openai.com/index/chatham-financial) — blog
+- [Quoting The New York Times](https://simonwillison.net/2026/Oct/10/the-new-york-times/) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-10.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-10-11.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
