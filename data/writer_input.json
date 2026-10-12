@@ -1,86 +1,83 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "stories": [
     {
-      "id": "b38064f80336",
-      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
-      "title": "Microsoft-Decision-1, our model for fast decision-making",
+      "id": "44c65736f8dd",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "title": "The gap in shared understanding of LLM capability is widening",
       "source": "hn",
       "tier": "headline",
-      "reason": "Microsoft's own flagship 'fast decision-making' model release, 195 HN pts; first-of-generation entry in the emerging small-decision-model category. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "reason": "Karpathy-authored take (277 pts, 449 comments) on the widening gap between public perception and actual frontier LLM capability — directly on the eval/capability-understanding topic Mine always-surfaces. Twitter/X blocked by network policy, scored on title/author/engagement only.",
       "key_facts": []
     },
     {
-      "id": "83b3ab4d460b",
-      "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
-      "title": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "FT reports Nvidia in talks to acquire Reflection AI, an open-weight model lab; major AI M&A, 130 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
-      "key_facts": []
-    },
-    {
-      "id": "1e9dd88c3c5b",
-      "url": "https://wsj.com/tech/ai/tom-brown-athropic-669005ad",
-      "title": "Tom Brown used GOP ties to broker a $1.25B/month SpaceX compute deal",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "WSJ: Anthropic's Tom Brown used GOP political ties to broker a $1.25B/month SpaceX compute deal; consequential AI-compute-economics/politics story, 129 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
-      "key_facts": []
-    },
-    {
-      "id": "88ba491f7008",
-      "url": "https://github.com/strands-labs/strands-decider",
-      "title": "strands-labs/strands-decider",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Strands Decider: a ~1.9B-param Qwen3.5 decoder with its LM head removed and a ~1M-param pointer head added, so one forward pass scores options instead of decoding. Reports calibrated confidence (95% accuracy at 0.9+ confidence on unseen short-classification tasks) and 115ms/question on an RTX 3090. Running code, 564 stars, genuinely novel serving-focused architecture.",
-      "key_facts": [
-        "Built on Qwen3.5-2B-Base with LM head removed, ~1M-param pointer head added",
-        "Claims 95%+ accuracy when confidence >=0.9 on unseen short-classification tasks",
-        "Median 115ms/question on RTX 3090; state read once, reused across questions",
-        "Benchmarked on JevBench (231 tasks); also ships Gemma 4 variants (E2B-26B-A4B) and a vision mode"
-      ]
-    },
-    {
-      "id": "4d5a1b14f287",
-      "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
-      "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+      "id": "83056d7cecd2",
+      "url": "https://nishtahir.com/build-your-own-decision-model/",
+      "title": "Build your own decision model",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Terence Tao on what mathematicians should know about Lean theorem prover reliability and AI assistance; high-credibility source directly on eval methodology for AI-assisted proofs, 165 HN pts. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "reason": "446-pt HN explainer on how to build a small routing/decision model yourself, the pattern behind this week's wave of lab decision-model launches (Microsoft-Decision-1, Strands Decider, NeoHorse-Jev) — the methodology piece a working engineer would actually use, not another launch post. Could not fetch (nishtahir.com blocked by network policy); scored on title/engagement only.",
       "key_facts": []
     },
     {
-      "id": "6b75dae75d97",
-      "url": "https://github.com/rociiu/talorys",
-      "title": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Talorys: single-user personal AI agent that deploys entirely within Cloudflare's free tier (Pages, Workers, one Durable Object w/ SQLite, Workers AI) with no always-on process, cost guardrails, and local PBKDF2-SHA256 auth. Strong, verifiable serving/deployment story with running code; already fairly visible (259 HN pts).",
-      "key_facts": [
-        "Single Durable Object (Cloudflare Agents SDK) holds SQLite state; alarms replace an always-on process",
-        "Chat model is @cf/zai-org/glm-4.7-flash via Workers AI, streamed as SSE",
-        "Stays within free tier by avoiding R2/D1/KV; caps output tokens, context size, tool calls, daily AI requests",
-        "One-command installer: npx create-talorys@latest; MIT licensed, no telemetry"
-      ]
-    },
-    {
-      "id": "4488adb0885f",
-      "url": "https://www.warren.senate.gov/newsroom/press-releases/ai-data-center-companies-reveal-to-warren-blumenthal-van-hollen-they-are-not-paying-their-full-costs-will-continue-using-ndas-and-seeking-tax-breaks/",
-      "title": "AI Data Centers Not Paying Their Costs, Will Keep Using NDAs and Seek Tax Breaks",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Primary-source Senate press release (Warren/Blumenthal/Van Hollen): AI data center companies admit they aren't paying full infrastructure costs and will keep using NDAs and seeking tax breaks. Verifiable, policy-relevant to AI infra economics, only 56 HN pts so low saturation. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
-      "key_facts": []
-    },
-    {
-      "id": "90995f7dbc9c",
-      "url": "https://openai.com/index/asana-browser-agent",
-      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "id": "89764eae0099",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
       "source": "blog",
       "tier": "discovery",
-      "reason": "OpenAI's own case study: Asana reports a 76x model-cost reduction in browser-agent tests using GPT-6.1 Sol. Concrete serving/cost number, though self-published vendor PR. could not fetch (sandbox network policy allows only github.com); scored from title/source/points.",
+      "reason": "Microsoft/HuggingFace blog on coding agents self-reporting 'done' while leaving the database in a broken state — a concrete agent-reliability/eval finding from a primary lab source, not a rumor. Could not fetch (huggingface.co blocked by network policy); scored on title/source only.",
+      "key_facts": []
+    },
+    {
+      "id": "9082ea4d357e",
+      "url": "https://github.com/Oldcircle/geo-sleuth",
+      "title": "Oldcircle/geo-sleuth",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "geo-sleuth: an agent skill that geolocates photos with no GPS/EXIF using shadow geometry, elevation-skyline matching, CLIP satellite scoring and DINOv2/SIFT street-view matching — real running code with documented cases (errors of ~2m, 87m, 3m), not a paper. Fits the 'running code beats a description' weighting note.",
+      "key_facts": [
+        "1,947 stars, 235 forks, MIT licensed",
+        "Techniques: shadow/sun bearing estimation, pier-spacing distance ruler, elevation skyline matching, OSM queries, CLIP satellite scoring, DINOv2/SIFT street-view matching",
+        "3 documented demo cases with reported position errors of ~2m, 87m, 3m",
+        "Author notes the blind re-runs are regression checks on photos the skill was tuned on, not an unseen-photo benchmark"
+      ]
+    },
+    {
+      "id": "3ba89625595d",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "title": "We're going to need default hard budget caps on pretty much everything",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Simon Willison argues pay-by-usage AI/API products need default hard budget caps, not just alerts, as agentic usage makes runaway spend easy — a practical operational post from a widely-trusted AI commentator, fits 'how models are served/consumed' weighting. Could not fetch (simonwillison.net blocked by network policy); scored on title/source/excerpt only.",
+      "key_facts": [
+        "Argues pay-by-usage services need a hard '$X/month then cut off with errors' cap, not just spend alerts"
+      ]
+    },
+    {
+      "id": "52d59ccaa4af",
+      "url": "https://tedhaley.ca/pensieve/",
+      "title": "Local Indexing to reduce tool calling and token usage",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Small (31-pt) post on local indexing to cut tool-calling and token usage for LLM agents — squarely on the inference-infra/token-efficiency topic Mine always-surfaces, and exactly the kind of low-saturation find the discovery tier exists for. Could not fetch (tedhaley.ca blocked by network policy); scored on title only.",
+      "key_facts": []
+    },
+    {
+      "id": "a7b36806198c",
+      "url": "https://pub.sakana.ai/mass/",
+      "title": "Recursive self-improvement through collective intelligence",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Sakana AI research post on recursive self-improvement via collective/multi-agent intelligence — primary-source lab research on a live topic (RSI), distinct from the NeoHorse GitHub RSI claim seen elsewhere in today's pool. Could not fetch (sakana.ai blocked by network policy); scored on title/source only.",
+      "key_facts": []
+    },
+    {
+      "id": "821afa65ec96",
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "title": "500B Tokens Later: Letting AI Agents Decompile a First-Person Shooter",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Detailed account of spending 500B tokens letting AI agents decompile a first-person-shooter game — a concrete, verifiable (not rumored) long-horizon agentic-coding case study with real numbers. Could not fetch (momo5502.com blocked by network policy); scored on title only.",
       "key_facts": []
     }
   ]

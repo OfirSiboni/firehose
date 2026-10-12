@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-12",
+  "sent": false,
+  "items": [
+    {
+      "id": "44c65736f8dd",
+      "title": "The gap in understanding LLM capability keeps widening",
+      "url": "https://twitter.com/karpathy/status/2109361546505966046",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "The gap between perceived and actual frontier LLM capability keeps widening, Andrej Karpathy argues, as capability growth outpaces public understanding of what these models can do. (1 minute read)"
+    },
+    {
+      "id": "83056d7cecd2",
+      "title": "Build your own decision model",
+      "url": "https://nishtahir.com/build-your-own-decision-model/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A practical, from-scratch guide to building a decision model, the small routing/classifier pattern behind this week's wave of lab decision-model launches. (1 minute read)"
+    },
+    {
+      "id": "89764eae0099",
+      "title": "The agent said it was done. The database disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Microsoft documents coding agents that report a task complete while leaving the underlying database in a broken state. (1 minute read)"
+    },
+    {
+      "id": "9082ea4d357e",
+      "title": "geo-sleuth geolocates photos without GPS or EXIF data",
+      "url": "https://github.com/Oldcircle/geo-sleuth",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "geo-sleuth geolocates photos with no GPS or EXIF by combining shadow-based sun/bearing estimates, elevation-skyline matching, CLIP satellite scoring, and DINOv2/SIFT street-view matching. Three documented cases land position errors around 2m, 87m, and 3m. The 1,947-star MIT-licensed tool is only regression-checked on photos it was tuned on, not yet benchmarked on unseen ones. (2 minute read)"
+    },
+    {
+      "id": "3ba89625595d",
+      "title": "AI and API products need default hard budget caps",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Simon Willison argues pay-by-usage AI and API products need a default hard budget cap, not just a spend alert, that cuts the service off with errors once a monthly limit is hit. That turns runaway agentic usage into a capped, predictable cost instead of a surprise bill. (1 minute read)"
+    },
+    {
+      "id": "52d59ccaa4af",
+      "title": "Local indexing cuts tool calling and token usage",
+      "url": "https://tedhaley.ca/pensieve/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A local indexing layer cuts how often an LLM agent needs to call tools and how many tokens it burns doing so. (1 minute read)"
+    },
+    {
+      "id": "a7b36806198c",
+      "title": "Sakana explores recursive self-improvement via collective AI",
+      "url": "https://pub.sakana.ai/mass/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Sakana AI researches recursive self-improvement driven by collective, multi-agent intelligence rather than a single model iterating on itself. (1 minute read)"
+    },
+    {
+      "id": "821afa65ec96",
+      "title": "500B tokens later: AI agents decompile a first-person shooter",
+      "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "After burning 500 billion tokens, the author let AI agents decompile a first-person shooter end to end, logging the full long-running agentic coding effort. (1 minute read)"
+    }
+  ]
+}
