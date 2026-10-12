@@ -8,3 +8,10 @@ https://simonwillison.net/atom/everything/
 https://lilianweng.github.io/index.xml
 https://www.bleepingcomputer.com/feed/
 https://cointelegraph.com/rss
+# Security / AI x cyber (unverified from the build sandbox — run --smoke)
+https://krebsonsecurity.com/feed/
+https://www.schneier.com/feed/atom/
+https://googleprojectzero.blogspot.com/feeds/posts/default
+https://blog.trailofbits.com/feed/
+https://feeds.feedburner.com/TheHackersNews
+https://therecord.media/feed

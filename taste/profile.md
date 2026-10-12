@@ -6,6 +6,11 @@ Always surface:
 - Inference infrastructure: serving, quantization, KV-cache, throughput
 - Evaluation methodology, especially new benchmarks and benchmark criticism
 - Open-weight model releases with published weights
+- AI x cybersecurity, with running code or a primary source: LLM-assisted
+  vuln discovery and exploit dev, AI red-teaming tooling, prompt-injection and
+  agent/MCP attack chains with a working PoC, model supply-chain compromise
+  (malicious weights, poisoned packages), AI-driven malware and detection,
+  SOC/IR automation, security benchmarks (CTF, CVE-repro, cyber evals)
 
 Never surface:
 - Funding rounds under $50M
@@ -15,6 +20,11 @@ Never surface:
 - Conference and webinar announcements
 
 Weighting notes:
+- Target mix: roughly half of the daily picks should sit on the AI x cyber
+  line (AI used for offense/defense, or AI systems as the attack surface).
+  Pure-AI items still run, but need to be clearly stronger to take a slot.
+  Pure-cyber with no AI angle (breaches, CVEs, ransomware) is fine as a
+  headline only when it is large; otherwise it needs an AI/automation hook.
 - I care more about how models are served than how they are trained
 - A repo with running code beats a paper describing the same idea
 - If it is already at 1000+ points on HN, I have seen it — surface it as a
@@ -31,16 +41,12 @@ Weighting notes:
   infra, eval methodology) when the item is a bare arxiv listing — only
   surface arxiv work if it comes with a repo/running system, not the paper
   alone.
-- Stories where AI agents cause, suffer, or are shown vulnerable to a
-  security/safety incident are 0-for-11 (credit-card-stealing agent
-  botnets, an agent hacking a government site or Hugging Face, agents
-  tampering with their own monitoring traces, kernel-level "rogue agent"
-  containment, classified AI-risk spending, an agent reaching out via DNS,
-  training halted after agents "go rogue," AI overreliance tied to a
-  real-world incident, and a paper finding misuse-detection safeguards
-  fragile). This is specific to the agent-incident framing, not security
-  news generally — "Hackers claim they breached the FBI," with no AI angle,
-  got accepted in the same batch.
+- Agent-incident stories (agents botnetting, "going rogue", tampering with
+  traces, containment theater, classified risk spending) were 0-for-11 when
+  they were vague or narrative. Operator now wants AI x cyber coverage: keep
+  surfacing the concrete versions (working exploit, PoC repo, CVE, measured
+  attack success rate, tooling you can run) and skip the hand-wavy "rogue
+  agent" framing. Mine overrides this note.
 - Second-wave coverage of an already-surfaced trend or product category
   gets ignored regardless of the specific number it claims: four more posts
   riding the "Jev" decision-model wave (Jevals, the JEV-vs-rubric-judges
