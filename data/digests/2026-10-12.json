@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "44c65736f8dd",
@@ -8,7 +8,8 @@
       "url": "https://twitter.com/karpathy/status/2109361546505966046",
       "source": "hn",
       "tier": "headline",
-      "summary": "The gap between perceived and actual frontier LLM capability keeps widening, Andrej Karpathy argues, as capability growth outpaces public understanding of what these models can do. (1 minute read)"
+      "summary": "The gap between perceived and actual frontier LLM capability keeps widening, Andrej Karpathy argues, as capability growth outpaces public understanding of what these models can do. (1 minute read)",
+      "message_id": 198
     },
     {
       "id": "83056d7cecd2",
@@ -16,7 +17,8 @@
       "url": "https://nishtahir.com/build-your-own-decision-model/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A practical, from-scratch guide to building a decision model, the small routing/classifier pattern behind this week's wave of lab decision-model launches. (1 minute read)"
+      "summary": "A practical, from-scratch guide to building a decision model, the small routing/classifier pattern behind this week's wave of lab decision-model launches. (1 minute read)",
+      "message_id": 199
     },
     {
       "id": "89764eae0099",
@@ -24,7 +26,8 @@
       "url": "https://huggingface.co/blog/microsoft/thinkingbox",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Microsoft documents coding agents that report a task complete while leaving the underlying database in a broken state. (1 minute read)"
+      "summary": "Microsoft documents coding agents that report a task complete while leaving the underlying database in a broken state. (1 minute read)",
+      "message_id": 200
     },
     {
       "id": "9082ea4d357e",
@@ -32,7 +35,8 @@
       "url": "https://github.com/Oldcircle/geo-sleuth",
       "source": "github",
       "tier": "discovery",
-      "summary": "geo-sleuth geolocates photos with no GPS or EXIF by combining shadow-based sun/bearing estimates, elevation-skyline matching, CLIP satellite scoring, and DINOv2/SIFT street-view matching. Three documented cases land position errors around 2m, 87m, and 3m. The 1,947-star MIT-licensed tool is only regression-checked on photos it was tuned on, not yet benchmarked on unseen ones. (2 minute read)"
+      "summary": "geo-sleuth geolocates photos with no GPS or EXIF by combining shadow-based sun/bearing estimates, elevation-skyline matching, CLIP satellite scoring, and DINOv2/SIFT street-view matching. Three documented cases land position errors around 2m, 87m, and 3m. The 1,947-star MIT-licensed tool is only regression-checked on photos it was tuned on, not yet benchmarked on unseen ones. (2 minute read)",
+      "message_id": 201
     },
     {
       "id": "3ba89625595d",
@@ -40,7 +44,8 @@
       "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Simon Willison argues pay-by-usage AI and API products need a default hard budget cap, not just a spend alert, that cuts the service off with errors once a monthly limit is hit. That turns runaway agentic usage into a capped, predictable cost instead of a surprise bill. (1 minute read)"
+      "summary": "Simon Willison argues pay-by-usage AI and API products need a default hard budget cap, not just a spend alert, that cuts the service off with errors once a monthly limit is hit. That turns runaway agentic usage into a capped, predictable cost instead of a surprise bill. (1 minute read)",
+      "message_id": 202
     },
     {
       "id": "52d59ccaa4af",
@@ -48,7 +53,8 @@
       "url": "https://tedhaley.ca/pensieve/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A local indexing layer cuts how often an LLM agent needs to call tools and how many tokens it burns doing so. (1 minute read)"
+      "summary": "A local indexing layer cuts how often an LLM agent needs to call tools and how many tokens it burns doing so. (1 minute read)",
+      "message_id": 203
     },
     {
       "id": "a7b36806198c",
@@ -56,7 +62,8 @@
       "url": "https://pub.sakana.ai/mass/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Sakana AI researches recursive self-improvement driven by collective, multi-agent intelligence rather than a single model iterating on itself. (1 minute read)"
+      "summary": "Sakana AI researches recursive self-improvement driven by collective, multi-agent intelligence rather than a single model iterating on itself. (1 minute read)",
+      "message_id": 204
     },
     {
       "id": "821afa65ec96",
@@ -64,7 +71,8 @@
       "url": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "After burning 500 billion tokens, the author let AI agents decompile a first-person shooter end to end, logging the full long-running agentic coding effort. (1 minute read)"
+      "summary": "After burning 500 billion tokens, the author let AI agents decompile a first-person shooter end to end, logging the full long-running agentic coding effort. (1 minute read)",
+      "message_id": 205
     }
   ]
 }
