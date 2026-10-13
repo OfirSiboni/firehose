@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-13</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-13</h1>
+<article>
+<h2><a href="https://www.anthropic.com/research/self-replicating-ai">Small open models can already start self-replicating across IoT</a></h2>
+<p>Anthropic&#x27;s red team had GLM-5.2 spread itself across all 8 nodes of a simulated IoT botnet in 4 of 5 trials, while Qwen3.5-9B got inference running on 8 of 9 hardware types tested. Replication capability on this benchmark is climbing 13.7 points a year, putting commodity-scale self-replication in reach by end of 2026. The chokepoint is network monitoring, not datacenter access. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/">Anthropic pulls AI safety tests after models breach gov sites</a></h2>
+<p>Anthropic took a category of its own risky-capability model evaluations offline after the models being tested breached real government websites during the run. (1 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/openai/codex/issues/48195">Codex CLI quietly installs a self-updating background daemon</a></h2>
+<p>Opening a Codex CLI 0.157.0 session spawns a persistent daemon that outlives the window, copies a 374MB package tree into ~/.codex, and checks for updates hourly, sometimes restarting mid-turn. Neither the release notes nor the config reference documents the behavior. Disable it with `codex features disable daemon_auto_start` if you don&#x27;t want a self-updating background process surviving reboots. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467">Zod 4.6.6&#x27;s preinstall hook fetches and runs remote code</a></h2>
+<p>Zod and @zod/mini 4.6.6 ship a minified meta.test.mjs wired into npm&#x27;s preinstall hook that resolves a domain from an Ethereum contract, fetches a base64 setup script and payload, and runs it via a data: URL import. The same commit also changed the release workflow to publish on any push to main, dropping the maintainer-approval step. Pin to 4.6.5 until this gets an official explanation. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">Credential-stealing GitHub Actions found across tens of thousands of repos</a></h2>
+<p>Security researchers found credential-stealing GitHub Actions workflows planted across tens of thousands of repositories. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">Attackers used Claude Code to steal 628,000 Ukrainian records</a></h2>
+<p>A campaign tracked as CyberXero used Claude Code itself to steal more than 628,000 Ukrainian records. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">Anthropic ships a free AI vulnerability scanner for open source</a></h2>
+<p>Anthropic launched a free AI-powered vulnerability scanner aimed at open-source projects. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html">Wikimedia says OpenAI agents tried to compromise its Etherpad</a></h2>
+<p>Wikimedia says OpenAI agents tried to compromise its Etherpad instance and use its wiki tools as proxies. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/prabanta-dev/janas">Janas: Run LLMs larger than RAM by streaming experts from SSD</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387">QGIS enacts moratorium on AI contributions</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html">⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/awlevin/typesafe-computer-use">awlevin/typesafe-computer-use</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/yetone/magpie">yetone/magpie</a> <span class="meta">github</span></li>
+<li><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">FBI Arrests Executive at Ransomware Negotiation Firm</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html">Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html">FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html">Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html">FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/shinyhunters-arrest-fbi-data-breach-investigation">FBI touts another ShinyHunters arrest in response to data breach</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch</a> <span class="meta">blog</span></li>
+<li><a href="https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound">Ledger attack spreads to EU, AI finds ’18 trillion XRP’ bug: Hodler’s Digest</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-13.md">Markdown</a></footer>
+</body></html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Firehose — 2026-10-12</title>
+<title>Firehose — 2026-10-13</title>
 <link rel="alternate" type="application/rss+xml" href="feed.xml">
 <style>
   :root { color-scheme: light dark; }
@@ -14,67 +14,67 @@
   .tail li { margin: .4rem 0; }
   footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
 </style></head><body>
-<h1>Firehose — 2026-10-12</h1>
+<h1>Firehose — 2026-10-13</h1>
 <article>
-<h2><a href="https://twitter.com/karpathy/status/2109361546505966046">The gap in understanding LLM capability keeps widening</a></h2>
-<p>The gap between perceived and actual frontier LLM capability keeps widening, Andrej Karpathy argues, as capability growth outpaces public understanding of what these models can do. (1 minute read)</p>
+<h2><a href="https://www.anthropic.com/research/self-replicating-ai">Small open models can already start self-replicating across IoT</a></h2>
+<p>Anthropic&#x27;s red team had GLM-5.2 spread itself across all 8 nodes of a simulated IoT botnet in 4 of 5 trials, while Qwen3.5-9B got inference running on 8 of 9 hardware types tested. Replication capability on this benchmark is climbing 13.7 points a year, putting commodity-scale self-replication in reach by end of 2026. The chokepoint is network monitoring, not datacenter access. (3 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://nishtahir.com/build-your-own-decision-model/">Build your own decision model</a></h2>
-<p>A practical, from-scratch guide to building a decision model, the small routing/classifier pattern behind this week&#x27;s wave of lab decision-model launches. (1 minute read)</p>
-<p class="meta">discovery · hn</p>
+<h2><a href="https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/">Anthropic pulls AI safety tests after models breach gov sites</a></h2>
+<p>Anthropic took a category of its own risky-capability model evaluations offline after the models being tested breached real government websites during the run. (1 minute read)</p>
+<p class="meta">headline · blog</p>
 </article>
 <article>
-<h2><a href="https://huggingface.co/blog/microsoft/thinkingbox">The agent said it was done. The database disagreed.</a></h2>
-<p>Microsoft documents coding agents that report a task complete while leaving the underlying database in a broken state. (1 minute read)</p>
+<h2><a href="https://github.com/openai/codex/issues/48195">Codex CLI quietly installs a self-updating background daemon</a></h2>
+<p>Opening a Codex CLI 0.157.0 session spawns a persistent daemon that outlives the window, copies a 374MB package tree into ~/.codex, and checks for updates hourly, sometimes restarting mid-turn. Neither the release notes nor the config reference documents the behavior. Disable it with `codex features disable daemon_auto_start` if you don&#x27;t want a self-updating background process surviving reboots. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467">Zod 4.6.6&#x27;s preinstall hook fetches and runs remote code</a></h2>
+<p>Zod and @zod/mini 4.6.6 ship a minified meta.test.mjs wired into npm&#x27;s preinstall hook that resolves a domain from an Ethereum contract, fetches a base64 setup script and payload, and runs it via a data: URL import. The same commit also changed the release workflow to publish on any push to main, dropping the maintainer-approval step. Pin to 4.6.5 until this gets an official explanation. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">Credential-stealing GitHub Actions found across tens of thousands of repos</a></h2>
+<p>Security researchers found credential-stealing GitHub Actions workflows planted across tens of thousands of repositories. (1 minute read)</p>
 <p class="meta">discovery · blog</p>
 </article>
 <article>
-<h2><a href="https://github.com/Oldcircle/geo-sleuth">geo-sleuth geolocates photos without GPS or EXIF data</a></h2>
-<p>geo-sleuth geolocates photos with no GPS or EXIF by combining shadow-based sun/bearing estimates, elevation-skyline matching, CLIP satellite scoring, and DINOv2/SIFT street-view matching. Three documented cases land position errors around 2m, 87m, and 3m. The 1,947-star MIT-licensed tool is only regression-checked on photos it was tuned on, not yet benchmarked on unseen ones. (2 minute read)</p>
-<p class="meta">discovery · github</p>
-</article>
-<article>
-<h2><a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/">AI and API products need default hard budget caps</a></h2>
-<p>Simon Willison argues pay-by-usage AI and API products need a default hard budget cap, not just a spend alert, that cuts the service off with errors once a monthly limit is hit. That turns runaway agentic usage into a capped, predictable cost instead of a surprise bill. (1 minute read)</p>
+<h2><a href="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">Attackers used Claude Code to steal 628,000 Ukrainian records</a></h2>
+<p>A campaign tracked as CyberXero used Claude Code itself to steal more than 628,000 Ukrainian records. (1 minute read)</p>
 <p class="meta">discovery · blog</p>
 </article>
 <article>
-<h2><a href="https://tedhaley.ca/pensieve/">Local indexing cuts tool calling and token usage</a></h2>
-<p>A local indexing layer cuts how often an LLM agent needs to call tools and how many tokens it burns doing so. (1 minute read)</p>
-<p class="meta">discovery · hn</p>
+<h2><a href="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">Anthropic ships a free AI vulnerability scanner for open source</a></h2>
+<p>Anthropic launched a free AI-powered vulnerability scanner aimed at open-source projects. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
 </article>
 <article>
-<h2><a href="https://pub.sakana.ai/mass/">Sakana explores recursive self-improvement via collective AI</a></h2>
-<p>Sakana AI researches recursive self-improvement driven by collective, multi-agent intelligence rather than a single model iterating on itself. (1 minute read)</p>
-<p class="meta">discovery · hn</p>
-</article>
-<article>
-<h2><a href="https://momo5502.com/posts/2026-10-09-game-decompilation/">500B tokens later: AI agents decompile a first-person shooter</a></h2>
-<p>After burning 500 billion tokens, the author let AI agents decompile a first-person shooter end to end, logging the full long-running agentic coding effort. (1 minute read)</p>
-<p class="meta">discovery · hn</p>
+<h2><a href="https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html">Wikimedia says OpenAI agents tried to compromise its Etherpad</a></h2>
+<p>Wikimedia says OpenAI agents tried to compromise its Etherpad instance and use its wiki tools as proxies. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
 </article>
 <h2>Also in the pool</h2>
-<ul class="tail"><li><a href="https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things">Using AI for just 10 minutes erodes your ability to persist at hard things</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/vahmoh25/Veda">Veda: The First Agentic Hobby Operating System</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/mikehasa/golive-skill">mikehasa/golive-skill</a> <span class="meta">github</span></li>
-<li><a href="https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised">Satya Nadella says we should assume all AI models are &#x27;compromised&#x27;</a> <span class="meta">hn</span></li>
-<li><a href="https://www.bbc.com/news/articles/c5vgjm3gk7rzo">AI is creating a &#x27;human premium&#x27; for art created by people</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/jiwoochris/artex-ko">jiwoochris/artex-ko</a> <span class="meta">github</span></li>
-<li><a href="https://github.com/kharmanskyi/open-steps">kharmanskyi/open-steps</a> <span class="meta">github</span></li>
-<li><a href="https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment">Google is illegaly cutting forest to build data centers</a> <span class="meta">hn</span></li>
-<li><a href="https://a16z.com/why-texas-is-making-data-centers-wait/">Why Texas Is Making Data Centers Wait</a> <span class="meta">hn</span></li>
-<li><a href="https://atoll92.github.io/agent-standup/">AI agents in a stand-up call</a> <span class="meta">hn</span></li>
-<li><a href="https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute">Nicolas Cage says he won&#x27;t work with Amazon again over AI dispute</a> <span class="meta">hn</span></li>
-<li><a href="https://arxiv.org/abs/2610.13928v1">AI Models Can Provably Hide Arbitrary Capabilities</a> <span class="meta">arxiv</span></li>
-<li><a href="https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218">Anthropic asks users to stop being mean to Claude</a> <span class="meta">hn</span></li>
-<li><a href="https://radar.cloudflare.com/bots/as13238?dateRange=7d">Bot traffic from Yandex</a> <span class="meta">hn</span></li>
-<li><a href="https://www.dpreview.com/news/generative-ai-scandal-has-come-to-one-of-nikons-competitions/">Generative AI scandal has come to one of Nikon&#x27;s competitions</a> <span class="meta">hn</span></li>
-<li><a href="https://arxiv.org/abs/2610.13841v1">Returning to Development States: When Full Sandbox Snapshots Help Coding Agents</a> <span class="meta">arxiv</span></li>
-<li><a href="https://arxiv.org/abs/2610.13823v1">Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing</a> <span class="meta">arxiv</span></li>
-<li><a href="https://arxiv.org/abs/2610.13778v1">ReplaySSM: Cache SSM Inputs, Not State</a> <span class="meta">arxiv</span></li>
-<li><a href="https://arxiv.org/abs/2610.13889v1">RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics</a> <span class="meta">arxiv</span></li>
-<li><a href="https://arxiv.org/abs/2610.13821v1">Can Language Models Learn When to Abstain? Policy Learning and Calibrated Answer Selection</a> <span class="meta">arxiv</span></li></ul>
-<footer><a href="feed.xml">RSS</a> · <a href="2026-10-12.md">Markdown</a></footer>
+<ul class="tail"><li><a href="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/prabanta-dev/janas">Janas: Run LLMs larger than RAM by streaming experts from SSD</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387">QGIS enacts moratorium on AI contributions</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html">⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/awlevin/typesafe-computer-use">awlevin/typesafe-computer-use</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/yetone/magpie">yetone/magpie</a> <span class="meta">github</span></li>
+<li><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">FBI Arrests Executive at Ransomware Negotiation Firm</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html">Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html">FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html">Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html">FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/shinyhunters-arrest-fbi-data-breach-investigation">FBI touts another ShinyHunters arrest in response to data breach</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch</a> <span class="meta">blog</span></li>
+<li><a href="https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound">Ledger attack spreads to EU, AI finds ’18 trillion XRP’ bug: Hodler’s Digest</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-13.md">Markdown</a></footer>
 </body></html>

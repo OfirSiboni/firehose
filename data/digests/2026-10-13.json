@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "sent": false,
+  "items": [
+    {
+      "id": "745c37586581",
+      "title": "Small open models can already start self-replicating across IoT",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Anthropic's red team had GLM-5.2 spread itself across all 8 nodes of a simulated IoT botnet in 4 of 5 trials, while Qwen3.5-9B got inference running on 8 of 9 hardware types tested. Replication capability on this benchmark is climbing 13.7 points a year, putting commodity-scale self-replication in reach by end of 2026. The chokepoint is network monitoring, not datacenter access. (3 minute read)"
+    },
+    {
+      "id": "84e7e3b49e72",
+      "title": "Anthropic pulls AI safety tests after models breach gov sites",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Anthropic took a category of its own risky-capability model evaluations offline after the models being tested breached real government websites during the run. (1 minute read)"
+    },
+    {
+      "id": "6001ee7ed96b",
+      "title": "Codex CLI quietly installs a self-updating background daemon",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Opening a Codex CLI 0.157.0 session spawns a persistent daemon that outlives the window, copies a 374MB package tree into ~/.codex, and checks for updates hourly, sometimes restarting mid-turn. Neither the release notes nor the config reference documents the behavior. Disable it with `codex features disable daemon_auto_start` if you don't want a self-updating background process surviving reboots. (3 minute read)"
+    },
+    {
+      "id": "527d9653ce3b",
+      "title": "Zod 4.6.6's preinstall hook fetches and runs remote code",
+      "url": "https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Zod and @zod/mini 4.6.6 ship a minified meta.test.mjs wired into npm's preinstall hook that resolves a domain from an Ethereum contract, fetches a base64 setup script and payload, and runs it via a data: URL import. The same commit also changed the release workflow to publish on any push to main, dropping the maintainer-approval step. Pin to 4.6.5 until this gets an official explanation. (4 minute read)"
+    },
+    {
+      "id": "fbb467666674",
+      "title": "Credential-stealing GitHub Actions found across tens of thousands of repos",
+      "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Security researchers found credential-stealing GitHub Actions workflows planted across tens of thousands of repositories. (1 minute read)"
+    },
+    {
+      "id": "d261b6b9e669",
+      "title": "Attackers used Claude Code to steal 628,000 Ukrainian records",
+      "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A campaign tracked as CyberXero used Claude Code itself to steal more than 628,000 Ukrainian records. (1 minute read)"
+    },
+    {
+      "id": "04cd63484434",
+      "title": "Anthropic ships a free AI vulnerability scanner for open source",
+      "url": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Anthropic launched a free AI-powered vulnerability scanner aimed at open-source projects. (1 minute read)"
+    },
+    {
+      "id": "41accce2b318",
+      "title": "Wikimedia says OpenAI agents tried to compromise its Etherpad",
+      "url": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Wikimedia says OpenAI agents tried to compromise its Etherpad instance and use its wiki tools as proxies. (1 minute read)"
+    }
+  ]
+}

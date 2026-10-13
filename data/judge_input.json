@@ -1,875 +1,6 @@
 {
   "candidates": [
     {
-      "id": "d28844b3f90b",
-      "url": "https://en.wikipedia.org/wiki/Takeshi%27s_Castle",
-      "title": "Takeshi's Castle",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 113,
-        "comments": 38,
-        "hn_url": "https://news.ycombinator.com/item?id=50036119",
-        "kind": "article",
-        "published": "2026-10-10T19:12:55Z"
-      }
-    },
-    {
-      "id": "fef6a1067447",
-      "url": "https://kotaku.com/we-might-be-cooked-as-these-vibe-coded-web-browser-ports-of-halo-the-simpsons-hit-and-run-and-gta-vice-city-seem-to-work-perfectly-2000743300",
-      "title": "Vibe coded browser ports of Halo, The Simpsons: Hit And Run, GTA work well",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 101,
-        "comments": 79,
-        "hn_url": "https://news.ycombinator.com/item?id=50035561",
-        "kind": "article",
-        "published": "2026-10-10T18:11:58Z"
-      }
-    },
-    {
-      "id": "9cbf954d131d",
-      "url": "https://www.reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09/",
-      "title": "Anthropic discloses 2 months old fake tip to police among new rogue AI incidents",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 41,
-        "comments": 35,
-        "hn_url": "https://news.ycombinator.com/item?id=50035550",
-        "kind": "article",
-        "published": "2026-10-10T18:10:54Z"
-      }
-    },
-    {
-      "id": "ca291efb21c7",
-      "url": "https://motherduck.com/blog/why-duckdb-20-is-faster/",
-      "title": "Why DuckDB 2.0 is faster",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 206,
-        "comments": 64,
-        "hn_url": "https://news.ycombinator.com/item?id=50035530",
-        "kind": "article",
-        "published": "2026-10-10T18:08:49Z"
-      }
-    },
-    {
-      "id": "65fb79de01ca",
-      "url": "https://metedata.substack.com/p/ai-is-throwing-a-roadside-picnic",
-      "title": "AI Is Throwing a Roadside Picnic",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 47,
-        "comments": 48,
-        "hn_url": "https://news.ycombinator.com/item?id=50034363",
-        "kind": "article",
-        "published": "2026-10-10T16:19:23Z"
-      }
-    },
-    {
-      "id": "e41e732cb436",
-      "url": "https://www.thomas-huehn.com/knuth-reward-check/",
-      "title": "Knuth reward check",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 198,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=50034081",
-        "kind": "article",
-        "published": "2026-10-10T15:47:01Z"
-      }
-    },
-    {
-      "id": "0dfa695828ac",
-      "url": "https://www.ft.com/content/e26574cf-94cc-40d9-921e-5c7417fc5dbd",
-      "title": "How Protein Took over the World",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "https://archive.is/CbkfI",
-      "meta": {
-        "points": 71,
-        "comments": 160,
-        "hn_url": "https://news.ycombinator.com/item?id=50034008",
-        "kind": "article",
-        "published": "2026-10-10T15:40:06Z"
-      }
-    },
-    {
-      "id": "f90050f84f8a",
-      "url": "https://chronicles.popvax.com/p/popvax-goes-clinical",
-      "title": "PVX-001: open-source Covid-19 vaccine starts Phase 1 trial",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 135,
-        "comments": 30,
-        "hn_url": "https://news.ycombinator.com/item?id=50033721",
-        "kind": "article",
-        "published": "2026-10-10T15:10:24Z"
-      }
-    },
-    {
-      "id": "6971848af6b2",
-      "url": "https://www.theguardian.com/us-news/2026/oct/10/fda-toxic-chemicals-food-analysis",
-      "title": "FDA may allow some toxic chemicals to be added to food without safety review",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 187,
-        "comments": 92,
-        "hn_url": "https://news.ycombinator.com/item?id=50033638",
-        "kind": "article",
-        "published": "2026-10-10T15:00:36Z"
-      }
-    },
-    {
-      "id": "5fe9a196c973",
-      "url": "https://ghuntley.com/unikernels/",
-      "title": "Unikernels were hard. key word: were",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 170,
-        "comments": 83,
-        "hn_url": "https://news.ycombinator.com/item?id=50033357",
-        "kind": "article",
-        "published": "2026-10-10T14:27:09Z"
-      }
-    },
-    {
-      "id": "1d87f32e3ad1",
-      "url": "https://www.baldurbjarnason.com/2026/05-software-developers-are-not-okay",
-      "title": "Software developers are not okay",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 48,
-        "comments": 40,
-        "hn_url": "https://news.ycombinator.com/item?id=50032590",
-        "kind": "article",
-        "published": "2026-10-10T13:10:15Z"
-      }
-    },
-    {
-      "id": "2d30ca359cfc",
-      "url": "https://www.groundlevel-ai.com/p/anthropic-ai-consciousness-new-york-times-rabbi",
-      "title": "If AI is conscient, then we are making slaves",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 33,
-        "comments": 94,
-        "hn_url": "https://news.ycombinator.com/item?id=50029681",
-        "kind": "article",
-        "published": "2026-10-10T04:51:26Z"
-      }
-    },
-    {
-      "id": "6612db5ecf0e",
-      "url": "https://lightbulbcomputer.com/",
-      "title": "The Lightbulb Computer",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 275,
-        "comments": 45,
-        "hn_url": "https://news.ycombinator.com/item?id=50029487",
-        "kind": "article",
-        "published": "2026-10-10T04:12:26Z"
-      }
-    },
-    {
-      "id": "19bb80720fd9",
-      "url": "https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html",
-      "title": "Anthropic Agents Tried to Fill Out Visa Forms on State Dept. Website",
-      "source": "hn",
-      "first_seen": "2026-10-10T20:47:55Z",
-      "text": "",
-      "meta": {
-        "points": 33,
-        "comments": 8,
-        "hn_url": "https://news.ycombinator.com/item?id=50029330",
-        "kind": "article",
-        "published": "2026-10-10T03:42:11Z"
-      }
-    },
-    {
-      "id": "1f4b55400949",
-      "url": "https://housing.over.pizza/",
-      "title": "A city-building game in which the city would prefer you didn't",
-      "source": "hn",
-      "first_seen": "2026-10-10T23:56:22Z",
-      "text": "",
-      "meta": {
-        "points": 467,
-        "comments": 155,
-        "hn_url": "https://news.ycombinator.com/item?id=50036864",
-        "kind": "article",
-        "published": "2026-10-10T20:31:50Z"
-      }
-    },
-    {
-      "id": "07514aa3cf34",
-      "url": "https://www.barchart.com/story/news/5472260/mrbeast-told-billionaire-mark-cuban-he-spends-millions-of-dollars-reverse-engineering-the-algorithms-on-each-platform-so-he-never-runs-out-of-ideas",
-      "title": "MrBeast 'spends millions reverse engineering the algorithms on each platform'",
-      "source": "hn",
-      "first_seen": "2026-10-10T23:56:22Z",
-      "text": "",
-      "meta": {
-        "points": 65,
-        "comments": 80,
-        "hn_url": "https://news.ycombinator.com/item?id=50034123",
-        "kind": "article",
-        "published": "2026-10-10T15:51:39Z"
-      }
-    },
-    {
-      "id": "09a0f2a9d4f8",
-      "url": "https://cerncourier.com/how-strong-is-the-strong-interaction/",
-      "title": "How strong is the strong interaction?",
-      "source": "hn",
-      "first_seen": "2026-10-10T23:56:22Z",
-      "text": "",
-      "meta": {
-        "points": 42,
-        "comments": 11,
-        "hn_url": "https://news.ycombinator.com/item?id=50028162",
-        "kind": "article",
-        "published": "2026-10-10T00:13:16Z"
-      }
-    },
-    {
-      "id": "70add7d4c3fc",
-      "url": "https://simonwillison.net/2026/Oct/2/rex-s-dino-store/",
-      "title": "Rex's Dino Store",
-      "source": "blog",
-      "first_seen": "2026-10-10T23:56:27Z",
-      "text": "Museum: Rex's Dino Store Located just before the turnstiles in the Grand Army Plaza subway station at the north end of Brooklyn's Prospect Park is this former newsstand which is now operated by a dinosaur. The density of dinosaur puns is exceptional . Tags: art , new-york",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-10-02T22:57:38Z"
-      }
-    },
-    {
-      "id": "4a7e19c37d45",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218",
-      "title": "Anthropic asks users to stop being mean to Claude",
-      "source": "hn",
-      "first_seen": "2026-10-11T03:02:07Z",
-      "text": "",
-      "meta": {
-        "points": 52,
-        "comments": 52,
-        "hn_url": "https://news.ycombinator.com/item?id=50038865",
-        "kind": "article",
-        "published": "2026-10-11T01:17:22Z"
-      }
-    },
-    {
-      "id": "b7af4faddbdb",
-      "url": "https://wallhop.io/",
-      "title": "Show HN: WallHop – 12ft.io is gone, so I built a replacement",
-      "source": "hn",
-      "first_seen": "2026-10-11T03:02:07Z",
-      "text": "Hi HN, I'm Josh. WallHop is a free paywall bypass: paste an article URL (or prefix any URL with wallhop.io/) and you get the readable article without the paywall popup, ads or clutter. No signup, no extension. I built it after 12ft.io went away. The News Media Alliance took it down in July 2025 and I missed having something I could hit from my phone. How it works: it started as a fork of everywall/ladder (GPL-3.0) and I've modified it heavily since. Instead of relying on one trick, it chains several bypass methods per request and falls back to archive.is when they all fail, so one site blocking one technique doesn't break it. Things that might be interesting: - iOS Shortcut: on iPhone, tap Share > WallHop from any article in Safari or another app. This is how I use it 95% of the time. - It works on Medium member-only posts, which 12ft never handled. - Bookmarklet for desktop, plus /raw/<url> and /api/<url> endpoints if you want to script it. I've tested it against most major news outlets and a bunch of local papers. It won't work everywhere. There are SOME server-side paywalls that are out of reach, and I'd rather say that up front. If you find a site that breaks, I'd love the link, and I can likely figure out a way to bypass it!",
-      "meta": {
-        "points": 267,
-        "comments": 117,
-        "hn_url": "https://news.ycombinator.com/item?id=50038634",
-        "kind": "article",
-        "published": "2026-10-11T00:46:48Z"
-      }
-    },
-    {
-      "id": "4ce8b923e07f",
-      "url": "https://news.ycombinator.com/item?id=50038458",
-      "title": "Ask HN: Why aren't Americans rising up against tipping?",
-      "source": "hn",
-      "first_seen": "2026-10-11T03:02:07Z",
-      "text": "I've read lots of articles about how Americans hate their tipping culture. But tipping is optional so why don't they just stop? If you don't tip you both help society improve and you save money. Win-win.",
-      "meta": {
-        "points": 52,
-        "comments": 135,
-        "hn_url": "https://news.ycombinator.com/item?id=50038458",
-        "kind": "discussion",
-        "published": "2026-10-11T00:20:23Z"
-      }
-    },
-    {
-      "id": "f72cb823d93c",
-      "url": "https://rews.cc/a/anthropic-bans-cruelty-to-claude-still-won-t-say-what-it-pro-bd99f6",
-      "title": "Anthropic Bans Cruelty to Claude, Still Won't Say What It Protects",
-      "source": "hn",
-      "first_seen": "2026-10-11T03:02:07Z",
-      "text": "",
-      "meta": {
-        "points": 67,
-        "comments": 140,
-        "hn_url": "https://news.ycombinator.com/item?id=50038383",
-        "kind": "article",
-        "published": "2026-10-11T00:08:31Z"
-      }
-    },
-    {
-      "id": "19580d8d9514",
-      "url": "https://www.makeuseof.com/this-50mb-operating-system-can-resurrect-your-old-pc/",
-      "title": "50MB operating system can resurrect your old PC",
-      "source": "hn",
-      "first_seen": "2026-10-11T03:02:07Z",
-      "text": "",
-      "meta": {
-        "points": 44,
-        "comments": 23,
-        "hn_url": "https://news.ycombinator.com/item?id=50036571",
-        "kind": "article",
-        "published": "2026-10-10T19:59:24Z"
-      }
-    },
-    {
-      "id": "e179bee0d893",
-      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
-      "title": "Dwarf Fortress uses version control now",
-      "source": "blog",
-      "first_seen": "2026-10-11T03:02:11Z",
-      "text": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . That's art. I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time: March 2013: \"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside\" March 2016: \"I don’t even use version control. If you don’t know what that is then you’re not gonna yell at me. If you even know what version control is you’re gonna be like, ‘You don’t use version control? You don’t use source control? What is wrong with you? How can you even work? I’m just not cut out for it, in a sense. It’s been 15 years, so the reasons have change over time, but that’s my current understanding of it.\" March 2023: \"I've got Discord channels to check and version control stuff to use now, so the process is definitely a little more involved\" That March 2023 quote comes from an interview about the release on Steam which made them millionaires . I'm a tiny bit sad that they gave in before they hit that milestone, but what an impressive run. Tags: version-control",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-10-11T00:52:37Z"
-      }
-    },
-    {
-      "id": "24d721d47322",
-      "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
-      "title": "Python 3.15.0 added to actions/python-versions",
-      "source": "blog",
-      "first_seen": "2026-10-11T03:02:11Z",
-      "text": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Python 3.15.0 release . Tags: github , python , github-actions , chatgpt",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-10-10T23:58:04Z"
-      }
-    },
-    {
-      "id": "c25e6552df82",
-      "url": "https://simonwillison.net/2026/Oct/3/newsletter/",
-      "title": "September sponsors-only newsletter",
-      "source": "blog",
-      "first_seen": "2026-10-11T03:02:11Z",
-      "text": "I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right now My software releases this month 2026 in LLMs (so far) Here's a copy of the August newsletter as a preview of what you'll get. Pay $10/month to stay a month ahead of the free copy! Tags: newsletter",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-10-03T22:00:31Z"
-      }
-    },
-    {
-      "id": "2ecde3f57bd9",
-      "url": "https://vcresearch.berkeley.edu/news/using-ai-just-10-minutes-erodes-your-ability-persist-hard-things",
-      "title": "Using AI for just 10 minutes erodes your ability to persist at hard things",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 101,
-        "comments": 98,
-        "hn_url": "https://news.ycombinator.com/item?id=50041765",
-        "kind": "article",
-        "published": "2026-10-11T10:47:21Z"
-      }
-    },
-    {
-      "id": "29a713409ba7",
-      "url": "https://nitter.net",
-      "title": "Nitter: Update Oct 10th seeking funding and legal help",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 447,
-        "comments": 234,
-        "hn_url": "https://news.ycombinator.com/item?id=50041682",
-        "kind": "article",
-        "published": "2026-10-11T10:37:55Z"
-      }
-    },
-    {
-      "id": "e96b8175ab18",
-      "url": "https://radar.cloudflare.com/bots/as13238?dateRange=7d",
-      "title": "Yandex bot traffic down 99% after data center attack",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 615,
-        "comments": 246,
-        "hn_url": "https://news.ycombinator.com/item?id=50041619",
-        "kind": "article",
-        "published": "2026-10-11T10:27:53Z"
-      }
-    },
-    {
-      "id": "90c3622fd86a",
-      "url": "https://ircv3.net/",
-      "title": "IRCv3",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 377,
-        "comments": 311,
-        "hn_url": "https://news.ycombinator.com/item?id=50041540",
-        "kind": "article",
-        "published": "2026-10-11T10:11:27Z"
-      }
-    },
-    {
-      "id": "c9d91dd49f64",
-      "url": "https://daverupert.com/2026/09/i-wish-you-the-best-in-the-offline/",
-      "title": "I wish you the best in the Offline",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 81,
-        "comments": 59,
-        "hn_url": "https://news.ycombinator.com/item?id=50040625",
-        "kind": "article",
-        "published": "2026-10-11T07:53:42Z"
-      }
-    },
-    {
-      "id": "17c1930c7030",
-      "url": "https://status.yandex.cloud/en/incidents/2136",
-      "title": "3rd Yandex Cloud Data Center Was Hit",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 555,
-        "comments": 678,
-        "hn_url": "https://news.ycombinator.com/item?id=50040547",
-        "kind": "article",
-        "published": "2026-10-11T07:34:45Z"
-      }
-    },
-    {
-      "id": "f58281014b3c",
-      "url": "https://lineageos.org/Changelog-32/",
-      "title": "LineageOS 24",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 412,
-        "comments": 168,
-        "hn_url": "https://news.ycombinator.com/item?id=50040276",
-        "kind": "article",
-        "published": "2026-10-11T06:18:59Z"
-      }
-    },
-    {
-      "id": "c97e75fb086b",
-      "url": "https://atoll92.github.io/agent-standup/",
-      "title": "AI agents in a stand-up call",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 47,
-        "comments": 47,
-        "hn_url": "https://news.ycombinator.com/item?id=50039630",
-        "kind": "article",
-        "published": "2026-10-11T03:42:47Z"
-      }
-    },
-    {
-      "id": "4c640ca9263a",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
-      "title": "Satya Nadella says we should assume all AI models are 'compromised'",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 42,
-        "comments": 76,
-        "hn_url": "https://news.ycombinator.com/item?id=50039627",
-        "kind": "article",
-        "published": "2026-10-11T03:41:53Z"
-      }
-    },
-    {
-      "id": "ade64b8c0fe6",
-      "url": "https://www.youtube.com/watch?v=XiZmM6hwwAU",
-      "title": "GameBoy on E-Paper ESP32 at 30FPS [video]",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 141,
-        "comments": 42,
-        "hn_url": "https://news.ycombinator.com/item?id=50039536",
-        "kind": "article",
-        "published": "2026-10-11T03:21:07Z"
-      }
-    },
-    {
-      "id": "8e5a4db07a0b",
-      "url": "https://worldfacts.app",
-      "title": "CIA World Factbook is dead – Here is an attempt at recreation",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 60,
-        "comments": 50,
-        "hn_url": "https://news.ycombinator.com/item?id=50039504",
-        "kind": "article",
-        "published": "2026-10-11T03:13:46Z"
-      }
-    },
-    {
-      "id": "be6b485ba8b0",
-      "url": "https://buy-european.net/en/alternatives",
-      "title": "European Alternatives",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 126,
-        "comments": 97,
-        "hn_url": "https://news.ycombinator.com/item?id=50039063",
-        "kind": "article",
-        "published": "2026-10-11T01:56:16Z"
-      }
-    },
-    {
-      "id": "618d5ed5d81b",
-      "url": "https://www.sciencedaily.com/releases/2026/10/261008102718.htm",
-      "title": "A plastic once thought harmless may be fueling fatty liver disease",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 46,
-        "comments": 24,
-        "hn_url": "https://news.ycombinator.com/item?id=50039062",
-        "kind": "article",
-        "published": "2026-10-11T01:56:04Z"
-      }
-    },
-    {
-      "id": "01b5df25f259",
-      "url": "https://www.dpreview.com/news/generative-ai-scandal-has-come-to-one-of-nikons-competitions/",
-      "title": "Generative AI scandal has come to one of Nikon's competitions",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 38,
-        "comments": 55,
-        "hn_url": "https://news.ycombinator.com/item?id=50038640",
-        "kind": "article",
-        "published": "2026-10-11T00:47:37Z"
-      }
-    },
-    {
-      "id": "7c934659dfa0",
-      "url": "https://github.com/othermod/PSPi-Version-6",
-      "title": "PSPi 6 – Raspberry Pi in a PSP",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 130,
-        "comments": 13,
-        "hn_url": "https://news.ycombinator.com/item?id=50038623",
-        "kind": "article",
-        "published": "2026-10-11T00:45:49Z"
-      }
-    },
-    {
-      "id": "00937bfcdb4e",
-      "url": "https://github.com/vahmoh25/Veda",
-      "title": "Veda: The First Agentic Hobby Operating System",
-      "source": "hn",
-      "first_seen": "2026-10-11T11:42:34Z",
-      "text": "",
-      "meta": {
-        "points": 47,
-        "comments": 12,
-        "hn_url": "https://news.ycombinator.com/item?id=50038473",
-        "kind": "article",
-        "published": "2026-10-11T00:22:33Z"
-      }
-    },
-    {
-      "id": "38d4c757986f",
-      "url": "https://cointelegraph.com/news/coldcard-says-its-investigating-how-phishing-link-appeared-on-its-x-account?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "Coldcard says it’s investigating how phishing link appeared on its X account",
-      "source": "blog",
-      "first_seen": "2026-10-11T11:42:38Z",
-      "text": "Company advised users not to visit or interact with the link in question and said it will share any further verified updates.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-11T10:40:00Z"
-      }
-    },
-    {
-      "id": "ae28213e85fa",
-      "url": "https://cointelegraph.com/news/ledger-confirms-unauthorized-hardware-implant-losses-may-exceed-86m?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "Ledger confirms unauthorized hardware implant, says losses may exceed $86M",
-      "source": "blog",
-      "first_seen": "2026-10-11T11:42:38Z",
-      "text": "Ledger said the incident appeared to be isolated to a single reseller and its Southeast Asian market.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-11T09:05:00Z"
-      }
-    },
-    {
-      "id": "60243cc134ef",
-      "url": "https://cointelegraph.com/news/cftc-proposals-aimed-at-separating-prediction-markets-from-casino-gambling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "title": "CFTC proposals aimed at separating prediction markets from casino gambling",
-      "source": "blog",
-      "first_seen": "2026-10-11T11:42:38Z",
-      "text": "The two measures attempt to set the stage for a potential US Supreme Court battle over federal and state jurisdiction.",
-      "meta": {
-        "feed": "cointelegraph.com",
-        "published": "2026-10-11T07:50:00Z"
-      }
-    },
-    {
-      "id": "151c25259fbf",
-      "url": "https://insideclimatenews.org/news/07102026/exxonmobil-climate-deception-new-evidence/",
-      "title": "Documents add to evidence in climate deception case against ExxonMobil",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 395,
-        "comments": 214,
-        "hn_url": "https://news.ycombinator.com/item?id=50043682",
-        "kind": "article",
-        "published": "2026-10-11T14:28:39Z"
-      }
-    },
-    {
-      "id": "8a1336eecbc3",
-      "url": "https://www.tomshardware.com/software/microsoft-office/creator-of-free-adobe-clones-unveils-open-source-microsoft-office-excel-powerpoint-and-word-replications-autodesk-tools-and-other-subscription-based-services-may-come-next",
-      "title": "Open-source Microsoft Excel, PowerPoint, and Word replications",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 70,
-        "comments": 83,
-        "hn_url": "https://news.ycombinator.com/item?id=50043110",
-        "kind": "article",
-        "published": "2026-10-11T13:28:03Z"
-      }
-    },
-    {
-      "id": "0d8dcb1c8fdb",
-      "url": "https://teorth.github.io/tao-web/slides/math-2-0-caltech-2026.pdf",
-      "title": "Terence Tao: Math 2.0 [pdf]",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 380,
-        "comments": 413,
-        "hn_url": "https://news.ycombinator.com/item?id=50043026",
-        "kind": "article",
-        "published": "2026-10-11T13:16:45Z"
-      }
-    },
-    {
-      "id": "0ee03edb6468",
-      "url": "https://disconnect3d.pl//2026/10/02/dont-put-tilde-in-your-path/",
-      "title": "The tilde in your PATH may not be your HOME",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 234,
-        "comments": 147,
-        "hn_url": "https://news.ycombinator.com/item?id=50042425",
-        "kind": "article",
-        "published": "2026-10-11T12:13:13Z"
-      }
-    },
-    {
-      "id": "978677cf59cf",
-      "url": "https://phys.org/news/2024-02-scandinavia-farmers-slaughtered-hunter-population.html",
-      "title": "Scandinavia's first farmers slaughtered hunter-gatherer population, DNA suggests",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 72,
-        "comments": 100,
-        "hn_url": "https://news.ycombinator.com/item?id=50042370",
-        "kind": "article",
-        "published": "2026-10-11T12:07:22Z"
-      }
-    },
-    {
-      "id": "cbcb25b63dc0",
-      "url": "https://verdagon.dev/blog/valen-group-borrowing",
-      "title": "Valen's Memory Safety: A New Kind of Borrow Checking",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 157,
-        "comments": 84,
-        "hn_url": "https://news.ycombinator.com/item?id=50042362",
-        "kind": "article",
-        "published": "2026-10-11T12:06:22Z"
-      }
-    },
-    {
-      "id": "afb5f53f7bd1",
-      "url": "https://betterwispr.com/",
-      "title": "Show HN: BetterWispr – Free, open-source dictation for Mac",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 192,
-        "comments": 112,
-        "hn_url": "https://news.ycombinator.com/item?id=50042333",
-        "kind": "article",
-        "published": "2026-10-11T12:01:28Z"
-      }
-    },
-    {
-      "id": "c6231e302938",
-      "url": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/",
-      "title": "I paid people to try and follow my README",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 386,
-        "comments": 191,
-        "hn_url": "https://news.ycombinator.com/item?id=50042219",
-        "kind": "article",
-        "published": "2026-10-11T11:47:29Z"
-      }
-    },
-    {
-      "id": "eb474ba3b01f",
-      "url": "https://copilot.travel/tolls/europe-2026",
-      "title": "What driving across Europe costs in tolls, vignettes, bridges and fuel",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 51,
-        "comments": 65,
-        "hn_url": "https://news.ycombinator.com/item?id=50042149",
-        "kind": "article",
-        "published": "2026-10-11T11:39:10Z"
-      }
-    },
-    {
-      "id": "a3ab2bb084c5",
-      "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
-      "title": "AI is creating a 'human premium' for art created by people",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 71,
-        "comments": 114,
-        "hn_url": "https://news.ycombinator.com/item?id=50042107",
-        "kind": "article",
-        "published": "2026-10-11T11:34:28Z"
-      }
-    },
-    {
-      "id": "6dfdcb7ef0a2",
-      "url": "https://www.latimes.com/entertainment-arts/business/story/2026-10-10/nicolas-cage-says-he-wont-work-with-amazon-again-over-ai-dispute",
-      "title": "Nicolas Cage says he won't work with Amazon again over AI dispute",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 89,
-        "comments": 31,
-        "hn_url": "https://news.ycombinator.com/item?id=50041873",
-        "kind": "article",
-        "published": "2026-10-11T11:03:21Z"
-      }
-    },
-    {
-      "id": "5c807ccf96dd",
-      "url": "https://robotgirlgang.com/2026/10/08/robot-is-a-social-construct-why-your-dishwasher-is-not-a-robot/",
-      "title": "\"Robot\" Is a Social Construct: Why Your Dishwasher Is Not a Robot",
-      "source": "hn",
-      "first_seen": "2026-10-11T16:53:26Z",
-      "text": "",
-      "meta": {
-        "points": 50,
-        "comments": 61,
-        "hn_url": "https://news.ycombinator.com/item?id=50041667",
-        "kind": "article",
-        "published": "2026-10-11T10:34:43Z"
-      }
-    },
-    {
-      "id": "e258c2b6a9d9",
-      "url": "https://github.com/TokenRhythm/NeoHorse",
-      "title": "TokenRhythm/NeoHorse",
-      "source": "github",
-      "first_seen": "2026-10-11T16:53:27Z",
-      "text": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
-      "meta": {
-        "stars": 1735,
-        "topics": [
-          "agent",
-          "large-language-models",
-          "llm",
-          "post-training",
-          "recursive-self-improvement",
-          "rsi"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-04T08:34:54Z",
-        "pushed_at": "2026-09-26T04:42:21Z",
-        "published": "2026-09-04T08:34:54Z"
-      }
-    },
-    {
-      "id": "e97a81b14ccb",
-      "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-      "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-      "source": "blog",
-      "first_seen": "2026-10-11T16:53:32Z",
-      "text": "Daiichi Kosho, a major Japanese entertainment system maker, disclosed that a malware infection at its contractor, Nippon Columbia, exposed more than 8.7 million customer and employee records. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-10-11T14:23:46Z"
-      }
-    },
-    {
       "id": "f4f2e2c5ae11",
       "url": "https://cartographers-nk.wonyoung.so/",
       "title": "Cartographers of North Korea (2019)",
@@ -877,8 +8,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 237,
-        "comments": 44,
+        "points": 263,
+        "comments": 47,
         "hn_url": "https://news.ycombinator.com/item?id=50047091",
         "kind": "article",
         "published": "2026-10-11T19:46:40Z"
@@ -907,8 +38,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 77,
-        "comments": 12,
+        "points": 79,
+        "comments": 16,
         "hn_url": "https://news.ycombinator.com/item?id=50047005",
         "kind": "article",
         "published": "2026-10-11T19:38:13Z"
@@ -922,8 +53,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 104,
-        "comments": 16,
+        "points": 110,
+        "comments": 18,
         "hn_url": "https://news.ycombinator.com/item?id=50046241",
         "kind": "article",
         "published": "2026-10-11T18:26:24Z"
@@ -937,8 +68,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 463,
-        "comments": 190,
+        "points": 512,
+        "comments": 202,
         "hn_url": "https://news.ycombinator.com/item?id=50045984",
         "kind": "article",
         "published": "2026-10-11T18:04:47Z"
@@ -952,8 +83,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 446,
-        "comments": 211,
+        "points": 474,
+        "comments": 226,
         "hn_url": "https://news.ycombinator.com/item?id=50045946",
         "kind": "article",
         "published": "2026-10-11T18:01:16Z"
@@ -968,7 +99,7 @@
       "text": "",
       "meta": {
         "points": 68,
-        "comments": 18,
+        "comments": 21,
         "hn_url": "https://news.ycombinator.com/item?id=50045895",
         "kind": "article",
         "published": "2026-10-11T17:56:13Z"
@@ -982,8 +113,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 81,
-        "comments": 31,
+        "points": 82,
+        "comments": 30,
         "hn_url": "https://news.ycombinator.com/item?id=50045735",
         "kind": "article",
         "published": "2026-10-11T17:40:42Z"
@@ -1012,8 +143,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 77,
-        "comments": 17,
+        "points": 82,
+        "comments": 19,
         "hn_url": "https://news.ycombinator.com/item?id=50045273",
         "kind": "article",
         "published": "2026-10-11T16:58:22Z"
@@ -1027,8 +158,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 57,
-        "comments": 17,
+        "points": 63,
+        "comments": 18,
         "hn_url": "https://news.ycombinator.com/item?id=50044989",
         "kind": "article",
         "published": "2026-10-11T16:31:37Z"
@@ -1042,8 +173,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 67,
-        "comments": 87,
+        "points": 68,
+        "comments": 88,
         "hn_url": "https://news.ycombinator.com/item?id=50044733",
         "kind": "article",
         "published": "2026-10-11T16:06:02Z"
@@ -1057,8 +188,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 144,
-        "comments": 148,
+        "points": 146,
+        "comments": 149,
         "hn_url": "https://news.ycombinator.com/item?id=50044715",
         "kind": "article",
         "published": "2026-10-11T16:03:58Z"
@@ -1072,7 +203,7 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 117,
+        "points": 118,
         "comments": 36,
         "hn_url": "https://news.ycombinator.com/item?id=50044272",
         "kind": "article",
@@ -1087,8 +218,8 @@
       "first_seen": "2026-10-11T21:08:57Z",
       "text": "",
       "meta": {
-        "points": 366,
-        "comments": 163,
+        "points": 381,
+        "comments": 169,
         "hn_url": "https://news.ycombinator.com/item?id=50043689",
         "kind": "article",
         "published": "2026-10-11T14:29:07Z"
@@ -1102,7 +233,7 @@
       "first_seen": "2026-10-11T21:08:59Z",
       "text": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
       "meta": {
-        "stars": 9847,
+        "stars": 10472,
         "topics": [
           "claude-code",
           "codex",
@@ -1113,7 +244,7 @@
         ],
         "language": "Go",
         "created_at": "2026-09-23T16:22:35Z",
-        "pushed_at": "2026-10-12T07:32:14Z",
+        "pushed_at": "2026-10-13T02:13:20Z",
         "published": "2026-09-23T16:22:35Z"
       }
     },
@@ -1137,8 +268,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 95,
-        "comments": 88,
+        "points": 98,
+        "comments": 97,
         "hn_url": "https://news.ycombinator.com/item?id=50050370",
         "kind": "article",
         "published": "2026-10-12T01:57:39Z"
@@ -1152,8 +283,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 71,
-        "comments": 13,
+        "points": 83,
+        "comments": 16,
         "hn_url": "https://news.ycombinator.com/item?id=50049498",
         "kind": "article",
         "published": "2026-10-12T00:02:45Z"
@@ -1167,8 +298,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 112,
-        "comments": 54,
+        "points": 165,
+        "comments": 106,
         "hn_url": "https://news.ycombinator.com/item?id=50049411",
         "kind": "article",
         "published": "2026-10-11T23:50:34Z"
@@ -1182,8 +313,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 89,
-        "comments": 94,
+        "points": 101,
+        "comments": 115,
         "hn_url": "https://news.ycombinator.com/item?id=50049302",
         "kind": "article",
         "published": "2026-10-11T23:40:06Z"
@@ -1197,8 +328,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 59,
-        "comments": 0,
+        "points": 96,
+        "comments": 16,
         "hn_url": "https://news.ycombinator.com/item?id=50049133",
         "kind": "article",
         "published": "2026-10-11T23:22:36Z"
@@ -1212,8 +343,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 51,
-        "comments": 47,
+        "points": 88,
+        "comments": 74,
         "hn_url": "https://news.ycombinator.com/item?id=50048768",
         "kind": "article",
         "published": "2026-10-11T22:45:40Z"
@@ -1227,8 +358,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 303,
-        "comments": 139,
+        "points": 675,
+        "comments": 325,
         "hn_url": "https://news.ycombinator.com/item?id=50048642",
         "kind": "article",
         "published": "2026-10-11T22:33:39Z"
@@ -1237,13 +368,13 @@
     {
       "id": "bc5fd5422beb",
       "url": "https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment",
-      "title": "Google is illegaly cutting forest to build data centers",
+      "title": "Google told to halt work on datacentres in Finland over environmental concerns",
       "source": "hn",
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 409,
-        "comments": 116,
+        "points": 442,
+        "comments": 158,
         "hn_url": "https://news.ycombinator.com/item?id=50048638",
         "kind": "article",
         "published": "2026-10-11T22:33:30Z"
@@ -1257,8 +388,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 533,
-        "comments": 296,
+        "points": 982,
+        "comments": 516,
         "hn_url": "https://news.ycombinator.com/item?id=50048312",
         "kind": "article",
         "published": "2026-10-11T21:59:48Z"
@@ -1272,8 +403,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 206,
-        "comments": 157,
+        "points": 266,
+        "comments": 186,
         "hn_url": "https://news.ycombinator.com/item?id=50047825",
         "kind": "article",
         "published": "2026-10-11T21:07:20Z"
@@ -1288,7 +419,7 @@
       "text": "",
       "meta": {
         "points": 60,
-        "comments": 100,
+        "comments": 102,
         "hn_url": "https://news.ycombinator.com/item?id=50047071",
         "kind": "article",
         "published": "2026-10-11T19:44:45Z"
@@ -1297,13 +428,13 @@
     {
       "id": "06c1b233327d",
       "url": "https://theonion.com/archivehunt/",
-      "title": "So, You’d Like To Sell Your Print Issues Of The Onion?",
+      "title": "So, you’d like to sell your print issues of The Onion?",
       "source": "hn",
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 310,
-        "comments": 46,
+        "points": 326,
+        "comments": 48,
         "hn_url": "https://news.ycombinator.com/item?id=50047055",
         "kind": "article",
         "published": "2026-10-11T19:43:32Z"
@@ -1317,7 +448,7 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 49,
+        "points": 50,
         "comments": 1,
         "hn_url": "https://news.ycombinator.com/item?id=50046864",
         "kind": "article",
@@ -1332,8 +463,8 @@
       "first_seen": "2026-10-12T02:56:35Z",
       "text": "",
       "meta": {
-        "points": 34,
-        "comments": 83,
+        "points": 37,
+        "comments": 85,
         "hn_url": "https://news.ycombinator.com/item?id=50043603",
         "kind": "article",
         "published": "2026-10-11T14:21:31Z"
@@ -1387,24 +518,6 @@
         ],
         "primary_category": "math.AT",
         "published": "2026-10-09T17:55:33Z"
-      }
-    },
-    {
-      "id": "224c102190be",
-      "url": "https://arxiv.org/abs/2610.13928v1",
-      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "source": "arxiv",
-      "first_seen": "2026-10-12T02:56:35Z",
-      "text": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger. Using digital lockers, these hidden circuits remain provably hard to elicit and interpret under cryptographic assumptions, even given full access to model weights, extending prior work from hiding fixed strings to arbitrary computations. We implement our proof of concept constructions in PyTorch and evaluate elicitation through fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training on a small chemical reaction prediction task - a proxy for CBRN-relevant capabilities. Our results demonstrate resistance to these methods and, together with our cryptographic guarantees, reveal a limit of elicitation-based capability audits. We release our models to support the improvement of defenses.",
-      "meta": {
-        "authors": [
-          "Andis Draguns",
-          "Sumeet Ramesh Motwani",
-          "Raymond Douglas",
-          "Christian Schroeder de Witt"
-        ],
-        "primary_category": "cs.LG",
-        "published": "2026-10-09T17:55:06Z"
       }
     },
     {
@@ -2186,27 +1299,6 @@
       }
     },
     {
-      "id": "53ea20f69376",
-      "url": "https://arxiv.org/abs/2610.13778v1",
-      "title": "ReplaySSM: Cache SSM Inputs, Not State",
-      "source": "arxiv",
-      "first_seen": "2026-10-12T02:56:35Z",
-      "text": "State-space models (SSMs) maintain a fixed-size recurrent state, but reading and writing it at every decoding step can bottleneck hybrid models. This eager state management causes large state I/O with low arithmetic intensity, leaves speculative decoding no cheap rollback, and feeds state quantization error into subsequent recurrent updates. We introduce ReplaySSM, which unrolls the recurrence to represent the state as a checkpoint and a buffer of recent SSM inputs. This separates output computation from checkpoint updates. By updating the checkpoint periodically, ReplaySSM avoids state writes on most steps and roughly halves the dominant state memory traffic. Keeping recent inputs also makes speculative rollback a buffer-pointer operation and enables output-only verification without materializing intermediate states. The same separation allows a low-precision checkpoint to serve output computation on most steps while a higher-precision checkpoint serves recurrent updates, so rounding error in the low-precision copy never enters later updates. We implement ReplaySSM in vLLM for Mamba-2 and Gated DeltaNet. At serving batch size 256, it accelerates standard decoding by $1.20$--$1.47\\times$ over a tuned vLLM baseline across four hybrid models, and delivers about $1.8\\times$ the throughput of vLLM's speculative decoding on the two 120B-class models. Separate state precisions also reduce output KL divergence and downstream accuracy losses compared with a shared low-precision check",
-      "meta": {
-        "authors": [
-          "Ze-Wei Liou",
-          "Harris Nover",
-          "Amey Naik",
-          "Andrii Skliar",
-          "Igor Shovkun",
-          "Ido Shahaf",
-          "Tri Dao"
-        ],
-        "primary_category": "cs.LG",
-        "published": "2026-10-09T15:59:40Z"
-      }
-    },
-    {
       "id": "aadac36e61ac",
       "url": "https://arxiv.org/abs/2610.13773v1",
       "title": "Geometry-Aware Multi-Objective Optimization: Norm-Constrained Oracles with Entropic Weight Updates",
@@ -2247,7 +1339,7 @@
       "first_seen": "2026-10-12T02:56:36Z",
       "text": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크(upstream: Autumn-27/ARTEX, AGPL-3.0)",
       "meta": {
-        "stars": 1326,
+        "stars": 1388,
         "topics": [
           "ai-agent",
           "autonomous-agents",
@@ -2278,7 +1370,7 @@
       "first_seen": "2026-10-12T02:56:37Z",
       "text": "Plain-language agent skills for Claude Code, Codex, Cursor and Gemini CLI: honest session reports, straight verdicts, steps you can follow. MIT.",
       "meta": {
-        "stars": 1282,
+        "stars": 1283,
         "topics": [
           "agent-skill",
           "agent-skills",
@@ -2311,7 +1403,7 @@
       "first_seen": "2026-10-12T02:56:37Z",
       "text": "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.",
       "meta": {
-        "stars": 1270,
+        "stars": 1277,
         "topics": [
           "agent-skill",
           "agent-skills",
@@ -2372,8 +1464,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 91,
-        "comments": 65,
+        "points": 127,
+        "comments": 180,
         "hn_url": "https://news.ycombinator.com/item?id=50052156",
         "kind": "article",
         "published": "2026-10-12T06:35:05Z"
@@ -2387,8 +1479,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 73,
-        "comments": 33,
+        "points": 238,
+        "comments": 85,
         "hn_url": "https://news.ycombinator.com/item?id=50051573",
         "kind": "article",
         "published": "2026-10-12T05:02:34Z"
@@ -2402,8 +1494,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 91,
-        "comments": 93,
+        "points": 260,
+        "comments": 316,
         "hn_url": "https://news.ycombinator.com/item?id=50051530",
         "kind": "article",
         "published": "2026-10-12T04:54:00Z"
@@ -2417,8 +1509,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 58,
-        "comments": 37,
+        "points": 78,
+        "comments": 63,
         "hn_url": "https://news.ycombinator.com/item?id=50051172",
         "kind": "article",
         "published": "2026-10-12T03:50:58Z"
@@ -2432,8 +1524,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 89,
-        "comments": 18,
+        "points": 194,
+        "comments": 70,
         "hn_url": "https://news.ycombinator.com/item?id=50049872",
         "kind": "article",
         "published": "2026-10-12T00:48:27Z"
@@ -2447,8 +1539,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 33,
-        "comments": 1,
+        "points": 45,
+        "comments": 3,
         "hn_url": "https://news.ycombinator.com/item?id=50049003",
         "kind": "article",
         "published": "2026-10-11T23:08:29Z"
@@ -2462,8 +1554,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 40,
-        "comments": 4,
+        "points": 52,
+        "comments": 9,
         "hn_url": "https://news.ycombinator.com/item?id=50048861",
         "kind": "article",
         "published": "2026-10-11T22:54:31Z"
@@ -2477,8 +1569,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 33,
-        "comments": 4,
+        "points": 41,
+        "comments": 5,
         "hn_url": "https://news.ycombinator.com/item?id=50048536",
         "kind": "article",
         "published": "2026-10-11T22:23:46Z"
@@ -2492,8 +1584,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 40,
-        "comments": 3,
+        "points": 41,
+        "comments": 4,
         "hn_url": "https://news.ycombinator.com/item?id=50048402",
         "kind": "article",
         "published": "2026-10-11T22:09:34Z"
@@ -2507,8 +1599,8 @@
       "first_seen": "2026-10-12T07:36:28Z",
       "text": "",
       "meta": {
-        "points": 55,
-        "comments": 24,
+        "points": 64,
+        "comments": 2,
         "hn_url": "https://news.ycombinator.com/item?id=50047802",
         "kind": "article",
         "published": "2026-10-11T21:04:46Z"
@@ -2552,7 +1644,7 @@
       "first_seen": "2026-10-12T07:36:30Z",
       "text": "A curated list of Jev use cases, projects, SDKs, and resources. Jev is TypeSafe AI's System One model for fast, typed decisions in software — Choice, Score, and Noul with calibrated probabilities.",
       "meta": {
-        "stars": 184,
+        "stars": 185,
         "topics": [
           "agents",
           "ai",
@@ -2589,7 +1681,7 @@
       "first_seen": "2026-10-12T07:36:30Z",
       "text": "Peer-to-peer LLM inference in the browser: pool your devices to run big open models, for chat and coding agents.",
       "meta": {
-        "stars": 583,
+        "stars": 585,
         "topics": [
           "browser",
           "distributed-inference",
@@ -2604,7 +1696,7 @@
         ],
         "language": "JavaScript",
         "created_at": "2026-09-01T00:05:54Z",
-        "pushed_at": "2026-10-12T04:30:58Z",
+        "pushed_at": "2026-10-13T01:48:10Z",
         "published": "2026-09-01T00:05:54Z"
       }
     },
@@ -2616,7 +1708,7 @@
       "first_seen": "2026-10-12T07:36:31Z",
       "text": "👋 Hello Agent System — learn enterprise AI agent system design by building every production layer from scratch. 17 bilingual lessons (EN/中文) with tested exercises: tools, architectures, reliability, security, evals, distributed execution, cost, RAG, release ops. 企业级 Agent 系统设计训练营",
       "meta": {
-        "stars": 152,
+        "stars": 159,
         "topics": [
           "agent",
           "ai-agents",
@@ -2836,18 +1928,6 @@
       }
     },
     {
-      "id": "ebcd6167a236",
-      "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-      "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude - Claude Mythos",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-10T09:18:45Z"
-      }
-    },
-    {
       "id": "fbb467666674",
       "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
       "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
@@ -2956,18 +2036,6 @@
       }
     },
     {
-      "id": "e3f3090fc550",
-      "url": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
-      "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "Three research teams broke into Google's Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors. One of the three Pixel exploits earned Ikotas Labs $300,000, the contest's top prize, and made the team the overall winner. Trend Micro's Zero",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-09T08:26:17Z"
-      }
-    },
-    {
       "id": "313976c42503",
       "url": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
       "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
@@ -3037,18 +2105,6 @@
       "meta": {
         "feed": "feeds.feedburner.com",
         "published": "2026-10-08T15:26:56Z"
-      }
-    },
-    {
-      "id": "f27324b6e8ec",
-      "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
-      "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial organizations that used an artificial intelligence (AI) pen testing tool named ARTEX to carry out the attacks. The activity, per CrowdStrike Intelligence, was active from late September to early October 2026, and resulted in data exfiltration from various South Korea-based financial firms,",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-08T14:12:34Z"
       }
     },
     {
@@ -3148,18 +2204,6 @@
       }
     },
     {
-      "id": "35545ae5e825",
-      "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
-      "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "A critical vulnerability in LMCache, open-source software that speeds up large language model (LLM) servers such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available. The flaw is in LMCache's multiprocess mode, where the cache runs as a standalone server that LLM workers reach over the ZeroMQ messaging library. A single network",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-07T15:34:53Z"
-      }
-    },
-    {
       "id": "fb4b2411ccc7",
       "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
       "title": "PoeLLM Malware Infects 3,400+ Servers to Expand Crypto Mining Botnet",
@@ -3220,18 +2264,6 @@
       }
     },
     {
-      "id": "c6065c24705d",
-      "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
-      "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "Anthropic on Tuesday said it's expanding a program that allows vetted cybersecurity professionals to test its advanced artificial intelligence (AI) models with reduced safeguards and blocking classifiers, as the company claimed its Project Glasswing initiative uncovered at least 129,000 verified software vulnerabilities between April and July 2026. The company said it also found an additional",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-07T08:07:38Z"
-      }
-    },
-    {
       "id": "1958c70e74f7",
       "url": "https://thehackernews.com/2026/10/100-compromised-websites-use-fake.html",
       "title": "100+ Compromised Websites Use Fake Cloudflare Checks to Deliver LunexStealer",
@@ -3289,18 +2321,6 @@
       "meta": {
         "feed": "feeds.feedburner.com",
         "published": "2026-10-06T11:26:25Z"
-      }
-    },
-    {
-      "id": "a47789abd954",
-      "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
-      "title": "Welcome to the Jungle: What We Found Inside 15,465 Public MCP Servers",
-      "source": "blog",
-      "first_seen": "2026-10-12T07:36:35Z",
-      "text": "In 2024, MCP (Model Context Protocol) set out to become the USB-C of AI: one standard for connecting models, agents, and IDEs to tools and data. The protocol delivered. Thousands of developers built servers, and enterprises plugged them into agent workflows. The ecosystem around it fell short. Earlier this year, our team at OX Security, traced critical vulnerabilities in Anthropic's MCP",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-10-06T11:02:30Z"
       }
     },
     {
@@ -3470,89 +2490,1306 @@
         "feed": "therecord.media",
         "published": "2026-10-09T14:40:00Z"
       }
+    },
+    {
+      "id": "5259c417673e",
+      "url": "https://cendyne.dev/posts/2026-10-11-fable-took-my-jorb.html",
+      "title": "Fable Took My Job",
+      "source": "hn",
+      "first_seen": "2026-10-12T10:01:52Z",
+      "text": "",
+      "meta": {
+        "points": 218,
+        "comments": 350,
+        "hn_url": "https://news.ycombinator.com/item?id=50053216",
+        "kind": "article",
+        "published": "2026-10-12T08:30:33Z"
+      }
+    },
+    {
+      "id": "527d9653ce3b",
+      "url": "https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467",
+      "title": "Zod 4.6.6 compromised by malware?",
+      "source": "hn",
+      "first_seen": "2026-10-12T10:01:52Z",
+      "text": "",
+      "meta": {
+        "points": 177,
+        "comments": 51,
+        "hn_url": "https://news.ycombinator.com/item?id=50052814",
+        "kind": "article",
+        "published": "2026-10-12T07:47:29Z"
+      }
+    },
+    {
+      "id": "9239f96f36b8",
+      "url": "https://clickhouse.com/blog/posette-talk-recap-postgres-isnt-slow-your-storage-is",
+      "title": "Postgres isn't slow, your storage is",
+      "source": "hn",
+      "first_seen": "2026-10-12T10:01:52Z",
+      "text": "",
+      "meta": {
+        "points": 168,
+        "comments": 179,
+        "hn_url": "https://news.ycombinator.com/item?id=50052163",
+        "kind": "article",
+        "published": "2026-10-12T06:36:53Z"
+      }
+    },
+    {
+      "id": "9c03de7cac4a",
+      "url": "https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html",
+      "title": "Research Firm Calls Anthropic's IPO 'Unprecedented Test of Investor Gullibity'",
+      "source": "hn",
+      "first_seen": "2026-10-12T10:01:52Z",
+      "text": "",
+      "meta": {
+        "points": 238,
+        "comments": 208,
+        "hn_url": "https://news.ycombinator.com/item?id=50051583",
+        "kind": "article",
+        "published": "2026-10-12T05:03:47Z"
+      }
+    },
+    {
+      "id": "bf2de3a8dbdb",
+      "url": "https://united24media.com/war-in-ukraine/ukrainian-drones-reach-russias-komi-republic-striking-lukoil-refinery-1700-km-away-23276",
+      "title": "Ukrainian Drones Strike Russia's Lukoil Refinery 1,700 Km Away",
+      "source": "hn",
+      "first_seen": "2026-10-12T10:01:52Z",
+      "text": "",
+      "meta": {
+        "points": 31,
+        "comments": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=50044634",
+        "kind": "article",
+        "published": "2026-10-11T15:57:05Z"
+      }
+    },
+    {
+      "id": "815b7a94646f",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "source": "blog",
+      "first_seen": "2026-10-12T10:01:57Z",
+      "text": "A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack. The critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute arbitrary PHP code on vulnerable WordPress websites, resulting in remote code execution (RCE). The",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T09:02:14Z"
+      }
+    },
+    {
+      "id": "d261b6b9e669",
+      "url": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
+      "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
+      "source": "blog",
+      "first_seen": "2026-10-12T10:01:57Z",
+      "text": "Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting WordPress sites, e-commerce platforms, and critical infrastructure entities in Ukraine. The activity, which brings together commodity offensive tools like Cobalt Strike with an AI orchestration layer powered by Anthropic's Claude Code, has been attributed",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T07:26:12Z"
+      }
+    },
+    {
+      "id": "745c37586581",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "title": "AI models may be capable of self-replicating without access to a datacenter",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 77,
+        "comments": 95,
+        "hn_url": "https://news.ycombinator.com/item?id=50061603",
+        "kind": "article",
+        "published": "2026-10-12T19:25:29Z"
+      }
+    },
+    {
+      "id": "e1d52c6e9be3",
+      "url": "https://openfatigue.ai/",
+      "title": "OpenFatigue™ – Open is the new closed",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 202,
+        "comments": 45,
+        "hn_url": "https://news.ycombinator.com/item?id=50061278",
+        "kind": "article",
+        "published": "2026-10-12T19:08:21Z"
+      }
+    },
+    {
+      "id": "6001ee7ed96b",
+      "url": "https://github.com/openai/codex/issues/48195",
+      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 475,
+        "comments": 239,
+        "hn_url": "https://news.ycombinator.com/item?id=50060694",
+        "kind": "article",
+        "published": "2026-10-12T18:29:04Z"
+      }
+    },
+    {
+      "id": "fcd372e84a16",
+      "url": "https://jacobin.com/2026/10/books-publishing-reading-mass-market-paperback",
+      "title": "Publishers Killed the Paperback, Then Blamed Readers",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 108,
+        "comments": 70,
+        "hn_url": "https://news.ycombinator.com/item?id=50060674",
+        "kind": "article",
+        "published": "2026-10-12T18:27:26Z"
+      }
+    },
+    {
+      "id": "1de4bc7d9794",
+      "url": "https://micahflee.com/just-say-no-to-openai-and-anthropic/",
+      "title": "Just say no to OpenAI and Anthropic",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 155,
+        "comments": 146,
+        "hn_url": "https://news.ycombinator.com/item?id=50060500",
+        "kind": "article",
+        "published": "2026-10-12T18:17:29Z"
+      }
+    },
+    {
+      "id": "9bf10d7cab68",
+      "url": "https://www.mana.space/home/rZfbotNWAXegQypmpkzaAPFC6Mp1/Apps/Figma%20Next%20Launch",
+      "title": "Show HN: Opus 5.5 made a fully featured Figma clone in 3 hours / 8 prompts",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "I think a chasm has been crossed. Opus 5.5 few shotted a fully working Figma for me. In the past year I have been trying to benchmark vibe coded apps and see how good they get and this week it did it with very very little guidance from me. I basically just told it reach feature parity. Prior to this vibe coded apps would resemble the real software, this is not a resemblance it's the real thing. As a casual Figma user in the past, I can't really see a difference. And if there is one you have an LLM that can on the fly operate the app or use it. P.S. I did this is on Mana which is our startup making it easier for LLMs to do it (probably the code is half of what would have been and there are primitives it can use but ultimately it's a testament to how good models have gotten). I went on to make google meets, docs, telegram, linear, etc. All basically with single prompts. The biggest jump has been in the UX understanding of models and attention to detail.",
+      "meta": {
+        "points": 39,
+        "comments": 43,
+        "hn_url": "https://news.ycombinator.com/item?id=50060311",
+        "kind": "article",
+        "published": "2026-10-12T18:03:56Z"
+      }
+    },
+    {
+      "id": "28e304ecf16b",
+      "url": "https://blog.ericgoldman.org/archives/2026/10/my-reddit-ama-on-the-law-of-web-scraping.htm",
+      "title": "My Reddit AMA on the Law of Web Scraping",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 80,
+        "comments": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=50060296",
+        "kind": "article",
+        "published": "2026-10-12T18:02:32Z"
+      }
+    },
+    {
+      "id": "be915e7e8cbe",
+      "url": "https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02",
+      "title": "'AI' Is Not a Tool by Rich Hickey",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 63,
+        "comments": 26,
+        "hn_url": "https://news.ycombinator.com/item?id=50060269",
+        "kind": "article",
+        "published": "2026-10-12T18:00:25Z"
+      }
+    },
+    {
+      "id": "048fcb30e5f3",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "title": "AI coding agents generate more code, but not more software",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 312,
+        "comments": 274,
+        "hn_url": "https://news.ycombinator.com/item?id=50059523",
+        "kind": "article",
+        "published": "2026-10-12T17:14:01Z"
+      }
+    },
+    {
+      "id": "8d54df678492",
+      "url": "https://www.wired.com/story/feds-got-warrants-to-use-fake-cell-towers-to-hunt-down-don-lemons-producer/",
+      "title": "Feds got warrants to use fake cell towers to hunt down Don Lemon's producer",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 153,
+        "comments": 99,
+        "hn_url": "https://news.ycombinator.com/item?id=50059446",
+        "kind": "article",
+        "published": "2026-10-12T17:08:16Z"
+      }
+    },
+    {
+      "id": "3d76868058ed",
+      "url": "https://www.spinellis.gr/blog/20261008/?li261008",
+      "title": "Thinking will become a hobby",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 234,
+        "comments": 313,
+        "hn_url": "https://news.ycombinator.com/item?id=50059204",
+        "kind": "article",
+        "published": "2026-10-12T16:54:08Z"
+      }
+    },
+    {
+      "id": "31ba1e7c3abd",
+      "url": "https://research.meta.ai/blog/muse-wonder",
+      "title": "Muse Wonder",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 533,
+        "comments": 300,
+        "hn_url": "https://news.ycombinator.com/item?id=50059115",
+        "kind": "article",
+        "published": "2026-10-12T16:48:01Z"
+      }
+    },
+    {
+      "id": "1a36455d359d",
+      "url": "https://news.ycombinator.com/item?id=50059096",
+      "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "Hey HN, I’m Vishnu from Agent37 ( https://agent37.com ). We build sandboxes for running AI agents at under 10% of the cost of most sandbox providers. Our customers spend an average of $0.37/month per sandbox. You can view a video walkthrough of the product here: https://youtu.be/DK5ISR2tbNo We started as one of those OpenClaw wrapper companies back in February (yup.. judge me). In time we added more and more harnesses. One of the goals I had at the time was to offer a free plan to users, so as to gain more market share. But it was too cost prohibitive to do it right away. Especially since we were bootstrapped and servers were running on my savings. Today we’re actually able to offer the free plan thanks to the optimizations we’ve made since. Over 90% of the new signups we have are just free plan users and they host their personal Hermes/Openclaw/Claude Code etc on our cloud. Our infrastructure cost for the free sandboxes averages around $0.05 to $0.10 per user per month. Here are some techniques that have worked for lowering cost: * When you look at agent harnesses, they have certain patterns in the way they consume CPU and RAM. They need CPU in bursts when they’re initializing or performing certain tasks, but beyond that, they’re often not peaking. They need more RAM for things like browser and computer-use tasks. Once the task is done, usage often comes back down. This is a key insight in lowering cost, so by efficiently managing the CPU/RAM utilization we could lower the c",
+      "meta": {
+        "points": 105,
+        "comments": 70,
+        "hn_url": "https://news.ycombinator.com/item?id=50059096",
+        "kind": "discussion",
+        "published": "2026-10-12T16:46:34Z"
+      }
+    },
+    {
+      "id": "927053312755",
+      "url": "https://github.com/morluto/rea",
+      "title": "Reverse engineer anything with agents, from app behavior down to native binaries",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 82,
+        "comments": 27,
+        "hn_url": "https://news.ycombinator.com/item?id=50058850",
+        "kind": "article",
+        "published": "2026-10-12T16:31:55Z"
+      }
+    },
+    {
+      "id": "4aaf92f254c0",
+      "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
+      "title": "A Modern Web App in C",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 407,
+        "comments": 164,
+        "hn_url": "https://news.ycombinator.com/item?id=50058528",
+        "kind": "article",
+        "published": "2026-10-12T16:13:10Z"
+      }
+    },
+    {
+      "id": "b6603a0a4aa6",
+      "url": "https://z.ai/blog/glm-legal",
+      "title": "GLM-Legal",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 440,
+        "comments": 248,
+        "hn_url": "https://news.ycombinator.com/item?id=50058507",
+        "kind": "article",
+        "published": "2026-10-12T16:11:45Z"
+      }
+    },
+    {
+      "id": "41afe29258ac",
+      "url": "https://uk.finance.yahoo.com/news/french-supermarket-chains-cyberattack-forced-115141288.html",
+      "title": "French supermarkets suffer fridge shutdown after 'unprecedented' cyberattack",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 154,
+        "comments": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=50057956",
+        "kind": "article",
+        "published": "2026-10-12T15:36:21Z"
+      }
+    },
+    {
+      "id": "265e99e6dafc",
+      "url": "https://www.cnn.com/2026/10/12/politics/elon-musk-midterm-spending-276-million",
+      "title": "Elon Musk emerges as the top booster for Republicans with $276M donations",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 36,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=50057796",
+        "kind": "article",
+        "published": "2026-10-12T15:25:16Z"
+      }
+    },
+    {
+      "id": "f869ceb5043b",
+      "url": "https://taylor.town/kk-ai-2026",
+      "title": "Kevin Kelly's 2016 AI Predictions, 10 Years Later",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 145,
+        "comments": 43,
+        "hn_url": "https://news.ycombinator.com/item?id=50057668",
+        "kind": "article",
+        "published": "2026-10-12T15:16:45Z"
+      }
+    },
+    {
+      "id": "99ecd34ed3e5",
+      "url": "https://www.bbc.com/news/articles/crq5nzxv9q4yo",
+      "title": "Fridges in French supermarkets hit by cyber attack",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 143,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=50057551",
+        "kind": "article",
+        "published": "2026-10-12T15:08:53Z"
+      }
+    },
+    {
+      "id": "fe16ed2b2fd1",
+      "url": "https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/",
+      "title": "Hackers heat French supermarket fridges, sparking fires and food losses",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 47,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=50057384",
+        "kind": "article",
+        "published": "2026-10-12T14:59:08Z"
+      }
+    },
+    {
+      "id": "da6fcdba1376",
+      "url": "https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/",
+      "title": "Why aren't AI companies being charged for hacking?",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 312,
+        "comments": 330,
+        "hn_url": "https://news.ycombinator.com/item?id=50057278",
+        "kind": "article",
+        "published": "2026-10-12T14:52:37Z"
+      }
+    },
+    {
+      "id": "9d6301aef3b8",
+      "url": "https://animationobsessive.substack.com/p/an-unmade-film-shaped-hayao-miyazaki",
+      "title": "An Unmade Film Shaped Hayao Miyazaki",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 62,
+        "comments": 8,
+        "hn_url": "https://news.ycombinator.com/item?id=50057030",
+        "kind": "article",
+        "published": "2026-10-12T14:34:25Z"
+      }
+    },
+    {
+      "id": "7350df580374",
+      "url": "https://www.nationalgeographic.com/environment/article/balcony-plug-in-solar-panels-renewable-energy",
+      "title": "Solar panels that plug into your wall",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "https://archive.ph/NEPz3",
+      "meta": {
+        "points": 116,
+        "comments": 115,
+        "hn_url": "https://news.ycombinator.com/item?id=50056822",
+        "kind": "article",
+        "published": "2026-10-12T14:19:04Z"
+      }
+    },
+    {
+      "id": "402726f30a4c",
+      "url": "https://justismills.substack.com/p/just-ask-claude-is-a-rare-and-valuable",
+      "title": "\"Just Ask Claude\" Is a Rare and Valuable Skill",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 53,
+        "comments": 65,
+        "hn_url": "https://news.ycombinator.com/item?id=50056063",
+        "kind": "article",
+        "published": "2026-10-12T13:20:04Z"
+      }
+    },
+    {
+      "id": "e18ca6375a52",
+      "url": "https://www.theguardian.com/technology/2026/oct/12/ai-less-regulated-than-milk-microsoft-president-calls-for-tougher-rules",
+      "title": "AI less regulated than milk, Microsoft president says in warning over safety",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 66,
+        "comments": 75,
+        "hn_url": "https://news.ycombinator.com/item?id=50055654",
+        "kind": "article",
+        "published": "2026-10-12T12:46:52Z"
+      }
+    },
+    {
+      "id": "d268e81a3a1d",
+      "url": "https://github.com/h0m3us3r/w1700k-sdr",
+      "title": "Turn a WiFi 7 Router into a 320Msps Software Defined Radio Receiver",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 267,
+        "comments": 69,
+        "hn_url": "https://news.ycombinator.com/item?id=50055593",
+        "kind": "article",
+        "published": "2026-10-12T12:41:58Z"
+      }
+    },
+    {
+      "id": "b05d92be030b",
+      "url": "https://words.filippo.io/right-answers/",
+      "title": "(Post-Quantum) Cryptographic Right Answers",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 86,
+        "comments": 29,
+        "hn_url": "https://news.ycombinator.com/item?id=50055409",
+        "kind": "article",
+        "published": "2026-10-12T12:26:32Z"
+      }
+    },
+    {
+      "id": "aaa33aa8aca6",
+      "url": "https://www.githubstatus.com/incidents/93njd414rpbx",
+      "title": "Incident with Actions, Pull Requests and Issues",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 154,
+        "comments": 138,
+        "hn_url": "https://news.ycombinator.com/item?id=50055375",
+        "kind": "article",
+        "published": "2026-10-12T12:23:51Z"
+      }
+    },
+    {
+      "id": "5401d4af2d74",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "https://www.reuters.com/business/retail-consumer/french-supe... , https://www.bbc.com/news/articles/crq5nzxv9q4yo , https://www.lemonde.fr/en/france/article/2026/10/12/french-s... Related: https://www.claroty.com/team82/research/freeze-the-controlle... I think the military commissary's freezers were hacked - https://news.ycombinator.com/item?id=49508506 - Aug 2026 (239 comments)",
+      "meta": {
+        "points": 457,
+        "comments": 666,
+        "hn_url": "https://news.ycombinator.com/item?id=50055304",
+        "kind": "article",
+        "published": "2026-10-12T12:16:42Z"
+      }
+    },
+    {
+      "id": "e1f8cccc443b",
+      "url": "https://www.bbc.com/news/articles/c620r33plgppo",
+      "title": "Citroen revives the 2CV for an electric age",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 268,
+        "comments": 321,
+        "hn_url": "https://news.ycombinator.com/item?id=50055220",
+        "kind": "article",
+        "published": "2026-10-12T12:09:09Z"
+      }
+    },
+    {
+      "id": "c68c034bd72c",
+      "url": "https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387",
+      "title": "QGIS enacts moratorium on AI contributions",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "https://lists.osgeo.org/pipermail/qgis-developer/2026-Septem...",
+      "meta": {
+        "points": 364,
+        "comments": 398,
+        "hn_url": "https://news.ycombinator.com/item?id=50054751",
+        "kind": "article",
+        "published": "2026-10-12T11:22:24Z"
+      }
+    },
+    {
+      "id": "e26c764019b7",
+      "url": "https://blog.julik.nl/2026/10/the-weimar-of-ruby",
+      "title": "Living in the Weimar Era of Ruby",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 88,
+        "comments": 55,
+        "hn_url": "https://news.ycombinator.com/item?id=50054474",
+        "kind": "article",
+        "published": "2026-10-12T10:53:41Z"
+      }
+    },
+    {
+      "id": "8f5986a0181d",
+      "url": "https://www.bbc.com/news/articles/c64g1l5389kvo",
+      "title": "Deloitte falsified documents to evade tax on Abramovich's wealth",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 587,
+        "comments": 198,
+        "hn_url": "https://news.ycombinator.com/item?id=50054207",
+        "kind": "article",
+        "published": "2026-10-12T10:21:27Z"
+      }
+    },
+    {
+      "id": "59c1b98cbcf3",
+      "url": "https://crypto.news/ledger-confirms-hidden-chip-in-crypto-wallet-amid-92m/",
+      "title": "Ledger confirms hidden chip in crypto wallet amid $92M theft claims",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 81,
+        "comments": 72,
+        "hn_url": "https://news.ycombinator.com/item?id=50054092",
+        "kind": "article",
+        "published": "2026-10-12T10:09:37Z"
+      }
+    },
+    {
+      "id": "525791a39289",
+      "url": "https://www.gq-magazine.co.uk/article/a-decade-after-stardew-valley-eric-barone-is-still-going-it-alone",
+      "title": "A decade after Stardew Valley, Eric Barone is still going it alone",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 47,
+        "comments": 15,
+        "hn_url": "https://news.ycombinator.com/item?id=50053765",
+        "kind": "article",
+        "published": "2026-10-12T09:37:58Z"
+      }
+    },
+    {
+      "id": "3cbe75ba0f77",
+      "url": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+      "title": "I Found a $90k Remote Code Execution Vulnerability in Google",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 185,
+        "comments": 95,
+        "hn_url": "https://news.ycombinator.com/item?id=50052638",
+        "kind": "article",
+        "published": "2026-10-12T07:28:53Z"
+      }
+    },
+    {
+      "id": "6672e99a5764",
+      "url": "https://github.com/snuri00/ps2-web-recomp",
+      "title": "Show HN: PS2 games statically recompiled to WebAssembly",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 275,
+        "comments": 145,
+        "hn_url": "https://news.ycombinator.com/item?id=50052251",
+        "kind": "article",
+        "published": "2026-10-12T06:46:53Z"
+      }
+    },
+    {
+      "id": "3d1c07d5e69b",
+      "url": "https://www.hackerrank.com/writing/why-were-sorry",
+      "title": "Sorry we made you grind LeetCode",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "",
+      "meta": {
+        "points": 41,
+        "comments": 43,
+        "hn_url": "https://news.ycombinator.com/item?id=50050762",
+        "kind": "article",
+        "published": "2026-10-12T02:52:10Z"
+      }
+    },
+    {
+      "id": "ce7cbe0fa785",
+      "url": "https://github.com/SaarthurR/atticus-mac",
+      "title": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "Hi HN! I'm Saarth. I'm in 9th grade, and I built Atticus. Atticus is an incredibly fast and cheap Mac assistant that can do tasks for you. You hold down Control-Option-Space, speak or type your task, be it complex or a simple browser search, and Atticus will get on it. The interesting part is that simple tasks, like opening apps, playing a Spotify playlist, or web queries, don't touch AI, and instead are processed locally and typically finish in under a second. For example, prompting Atticus to open apps takes around 0.08 seconds, sometimes even finishing before you finish your sentence, sort of like Jev. Any tasks that are more complicated will be sent to Claude via claude -p, meaning you never need an API key and Atticus will run on your existing Claude Pro or Max plan. By using this approach, costs are also cut down immensely, with, on average, tasks costing a fraction of a cent. To achieve Atticus' speed, it remembers shortcuts from each task it completes. When it does a task right for the first time, it saves its steps and replays them the next time without AI. For example, a workflow of creating a new meeting took about 30 seconds the first time around. Atticus then logs the exact steps to memory and takes 5-8 seconds on the next pass. To add to this, Atticus also learns about you as you use it more and from what's on your computer, including your name, your apps, and things you want it to remember, personalizing its answers to you. To combat the safety concerns over gi",
+      "meta": {
+        "points": 38,
+        "comments": 5,
+        "hn_url": "https://news.ycombinator.com/item?id=50049588",
+        "kind": "article",
+        "published": "2026-10-12T00:15:12Z"
+      }
+    },
+    {
+      "id": "231cdb901d72",
+      "url": "https://github.com/swimmingbrain/brainotes",
+      "title": "Show HN: BraiNOTES, handwritten notes on your lecture PDFs in a browser tab",
+      "source": "hn",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "In August, I posted here about TeXbrain, a LaTeX editor that runs completely in the browser, with no need for an account or server. (I didn't excpect it to get that much feedback, bug reports and help from here!) This is the same idea for the other half of my studies, the handwritten notes. I take them on a convertible laptop, and I've had a hard time with apps for that, taking notes from a device to another, exporting as PDF, needing an account for many of them, etc. So I've been working on the version of it that I always wanted. Open a tab, the slides of the lecture or multiple PDFs open next to the page or even become the page, write on them with my pen, and nothing ever leaves my browser. braiNOTES is a static website and has no backend. Strokes are perfect-freehand outlines which support pen pressure, the PDF files are rendered by pdf.js in a worker, and for storage it uses IndexedDB a moment after every change. No account, no analytics, and completely offline and local-first. You can export notebooks as .brainotes files, which in the background is a zip with one json per page + the PDFs and pictures you import. It keeps the original pages and puts the vectorized ink on top, this way the text stays selectable in the slides. You can try it here: https://notes.swimmingbrain.dev GitHub Repo: https://github.com/swimmingbrain/brainotes (MIT) In Study mode, the PDF opens on the side of the tab, you can read it simultaneously to the notes, snip a formula or diagrams directly in",
+      "meta": {
+        "points": 34,
+        "comments": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=50049132",
+        "kind": "article",
+        "published": "2026-10-11T23:22:29Z"
+      }
+    },
+    {
+      "id": "f2155f2e5494",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "title": "Ebony-Vinyl/dsh-our-free-model",
+      "source": "github",
+      "first_seen": "2026-10-12T20:30:26Z",
+      "text": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
+      "meta": {
+        "stars": 12103,
+        "topics": [
+          "ai-agents",
+          "deepseek",
+          "deepseek-harness",
+          "developer-tools",
+          "dsh",
+          "dsh-plugin",
+          "free-model",
+          "llm",
+          "model-provider",
+          "openai-compatible"
+        ],
+        "language": "JavaScript",
+        "created_at": "2026-09-24T16:17:19Z",
+        "pushed_at": "2026-10-12T06:35:01Z",
+        "published": "2026-09-24T16:17:19Z"
+      }
+    },
+    {
+      "id": "17eabde76f78",
+      "url": "https://github.com/realmyang/MLView",
+      "title": "realmyang/MLView",
+      "source": "github",
+      "first_seen": "2026-10-12T20:30:27Z",
+      "text": "Interactive, source-linked ML workflow diagrams written by your coding assistant (Copilot, Codex or Claude Code) and opened in VS Code.",
+      "meta": {
+        "stars": 157,
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "developer-tools",
+          "github-copilot",
+          "machine-learning",
+          "visualization",
+          "vscode-extension"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-08T16:00:11Z",
+        "pushed_at": "2026-10-05T08:31:43Z",
+        "published": "2026-09-08T16:00:11Z"
+      }
+    },
+    {
+      "id": "a31dac6d0b53",
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+      "title": "Hello Python 3.15, goodbye 3.10, and now I can use 3.11",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Python 3.15 is here ! Here's the essential What's new in Python 3.15 guide, this year curated by 3.14 and 3.15 release manager Hugo van Kemenade. As someone who builds open source software that works in every supported Python version, I get to say goodbye to Python 3.10 and start embracing features from Python 3.11. First, some highlights from Python 3.15. Explicit lazy imports I'm most excited about Explicit lazy imports from PEP 810 . These let you import modules like so: lazy import json lazy from pathlib import Path The module will then be imported the first time those symbols are used in the code that follows. My LLM CLI tool implements plugins. I had to recommend manual lazy imports in the plugin author documentation, because simply installing plugins that used heavy dependencies such as sentence_transformers could add multiple seconds to every invocation of the llm command. Lazy imports directly address this startup cost. Unpacking in comprehensions The new [*sublist for sublist in lists] unpacking syntax is neat. Here's an illustration lifted from the documentation : lists = [[ 1 , 2 ], [ 3 , 4 ], [ 5 ]] [ * L for L in lists ] # [1, 2, 3, 4, 5] # equivalent to [x for L in lists for x in L] sets = [{ 1 , 2 }, { 2 , 3 }, { 3 , 4 }] { * s for s in sets } # {1, 2, 3, 4} # equivalent to {x for s in sets for x in s} dicts = [{ 'a' : 1 }, { 'b' : 2 }, { 'a' : 3 }] { ** d for d in dicts } # {'a': 3, 'b': 2} # equivalent to {k: v for d in dicts for k,v in d.items()} PEP 798: U",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-10-12T18:15:38Z"
+      }
+    },
+    {
+      "id": "a318bce54a37",
+      "url": "https://simonwillison.net/2026/Oct/12/datasette-ports/",
+      "title": "datasette-ports 0.4",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Release: datasette-ports 0.4 My plugin for detecting and listing all Datasette instances on the current machine now works with the latest version, and displays the detected PID as well. Knowing the PID makes it easier to attach the new Python 3.15 profiler . Tags: datasette",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-10-12T04:57:07Z"
+      }
+    },
+    {
+      "id": "539144c3a0a5",
+      "url": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
+      "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T20:13:52Z"
+      }
+    },
+    {
+      "id": "0b49751c55a2",
+      "url": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
+      "title": "Yandex confirms service outage as users lose access to cloud files",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Russian cloud services provider Yandex announced that drone attacks damaged three of its data centers, forcing it to shut down two facilities and partially disable a third. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T19:23:01Z"
+      }
+    },
+    {
+      "id": "84e7e3b49e72",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
+      "title": "Anthropic takes risky AI tests offline after models breach govt sites",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Anthropic announced that its internal AI models undergoing \"high-risk and cybersecurity evaluations\" no longer have internet access following incidents involving U.S. government websites at the federal, state, and local levels. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T18:51:59Z"
+      }
+    },
+    {
+      "id": "858da31b8a2b",
+      "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+      "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T16:27:23Z"
+      }
+    },
+    {
+      "id": "581b3c4288a6",
+      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
+      "title": "Cyberattack shuts down refrigerators at French supermarkets",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack that reportedly targeted Danfoss refrigeration controllers. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T15:23:34Z"
+      }
+    },
+    {
+      "id": "132c31ac10d7",
+      "url": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
+      "title": "Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T14:00:10Z"
+      }
+    },
+    {
+      "id": "6838152766de",
+      "url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
+      "title": "Retail giant Ahold Delhaize takes systems offline after cyberattack",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Retail giant Ahold Delhaize, one of the world's largest food retail chains, confirmed today that it had to take some systems offline in response to a \"cybersecurity incident\" affecting its network. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T13:51:07Z"
+      }
+    },
+    {
+      "id": "ddf2e7c24c1f",
+      "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+      "title": "GitLab warns of max severity code execution vulnerability",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "GitLab warned users today to immediately patch a maximum-severity vulnerability in the CI/CD Regular Expression Compiler that could let remote attackers run arbitrary code on targeted instances. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T13:09:09Z"
+      }
+    },
+    {
+      "id": "f9cb8568053f",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
+      "title": "Microsoft: Windows 11 23H2 reaches end of support in 30 days",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "Microsoft has reminded customers that systems running Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will stop receiving security updates next month. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-10-12T11:58:33Z"
+      }
+    },
+    {
+      "id": "fbb97cfb6d2e",
+      "url": "https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html",
+      "title": "FBI Arrests Suspect in FBI-Hacking Case",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:30Z",
+      "text": "In September, hackers from a group called ShinyHunters announced that they stole a trove of FBI data about its own agents. It was an intelligence disaster . Last week, the FBI arrested (alternate link ) someone associated with that crime.",
+      "meta": {
+        "feed": "schneier.com",
+        "published": "2026-10-12T15:01:26Z"
+      }
+    },
+    {
+      "id": "6e33620606a0",
+      "url": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
+      "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it. But speed is only part of the problem. A secure connection didn't always mean a safe destination. People offering to fix a ransomware mess had questions to answer themselves.",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T15:16:26Z"
+      }
+    },
+    {
+      "id": "172b933e4740",
+      "url": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
+      "title": "Bring Your Own Agent: Your Employees' Assistants Are Already Logged In",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta's Muse because it doesn't identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up. Regardless, the tech world is mesmerized by the capabilities and potential of these services. Less than a year",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T11:55:00Z"
+      }
+    },
+    {
+      "id": "7be825a80966",
+      "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
+      "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "Cryptocurrency hardware maker Ledger has temporarily paused sales of its products via CryptoBilis following reports of stolen funds linked to devices sold by the reseller. On Friday, the company said it was investigating reports of loss of funds from users in Southeast Asia who had purchased products from CryptoBilis. The incident is said to have resulted in losses totaling more than $86",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T11:21:48Z"
+      }
+    },
+    {
+      "id": "5124492cfbfb",
+      "url": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
+      "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "Threat actors have been observed exploiting a recently disclosed critical security flaw in SonicWall Secure Mobile Access (SMA) 1000 appliances within days of public disclosure. The vulnerability, tracked as CVE-2026-102255 (CVSS score: 10.0), is a case of pre-authenticated server-side request forgery (SSRF) that could allow a remote attacker \"to direct the appliance to issue requests on their",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-10-12T10:36:56Z"
+      }
+    },
+    {
+      "id": "128ef325e330",
+      "url": "https://therecord.media/ukraine-strikes-third-yandex-data-center",
+      "title": "Ukraine strikes third Yandex data center, disrupting digital services across Russia",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "A third Yandex data center in Russia was hit by Ukrainian drones over the weekend, forcing it to shut down and causing further disruptions to cloud services, payments, deliveries and other online services across the country.",
+      "meta": {
+        "feed": "therecord.media",
+        "published": "2026-10-12T12:00:00Z"
+      }
+    },
+    {
+      "id": "9aa90bd7475e",
+      "url": "https://therecord.media/cyberattack-disrupts-refridgeration-in-france",
+      "title": "Cyberattack disrupts refrigeration at hundreds of French supermarkets",
+      "source": "blog",
+      "first_seen": "2026-10-12T20:30:33Z",
+      "text": "A cyberattack overnight Sunday disrupted refrigerators at hundreds of French supermarkets, spoiling fresh food at stores run by some of the country’s largest grocery chains.",
+      "meta": {
+        "feed": "therecord.media",
+        "published": "2026-10-11T23:00:00Z"
+      }
+    },
+    {
+      "id": "9eb6e50af8e4",
+      "url": "https://doi.org/10.1111/acel.70751",
+      "title": "Blood cells from 80-year-old donor become stem cells with molecular age under 20",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13634082/",
+      "meta": {
+        "points": 101,
+        "comments": 68,
+        "hn_url": "https://news.ycombinator.com/item?id=50064536",
+        "kind": "article",
+        "published": "2026-10-12T23:34:22Z"
+      }
+    },
+    {
+      "id": "343756543cb3",
+      "url": "https://nirajrajgor.com/blog/kindle-photo-frame-with-ai",
+      "title": "I turned my unused Kindle into a photo frame with GPT-6 Astra",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 122,
+        "comments": 79,
+        "hn_url": "https://news.ycombinator.com/item?id=50064318",
+        "kind": "article",
+        "published": "2026-10-12T23:07:25Z"
+      }
+    },
+    {
+      "id": "271c8f22cf1d",
+      "url": "https://news.sky.com/story/breaking-bad-star-rj-mitte-dies-aged-34-13598332",
+      "title": "RJ Mitte has died",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 157,
+        "comments": 49,
+        "hn_url": "https://news.ycombinator.com/item?id=50063831",
+        "kind": "article",
+        "published": "2026-10-12T22:15:29Z"
+      }
+    },
+    {
+      "id": "9ca2bcd34e54",
+      "url": "https://github.com/prabanta-dev/janas",
+      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 36,
+        "comments": 19,
+        "hn_url": "https://news.ycombinator.com/item?id=50063717",
+        "kind": "article",
+        "published": "2026-10-12T22:05:43Z"
+      }
+    },
+    {
+      "id": "9202dbf6eedd",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "title": "AI is a tool and using it well takes skill",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 240,
+        "comments": 214,
+        "hn_url": "https://news.ycombinator.com/item?id=50063427",
+        "kind": "article",
+        "published": "2026-10-12T21:40:18Z"
+      }
+    },
+    {
+      "id": "0e42b9639860",
+      "url": "https://phreak.ing/",
+      "title": "Phreak.ing – Internet Phone Switch",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 78,
+        "comments": 25,
+        "hn_url": "https://news.ycombinator.com/item?id=50063417",
+        "kind": "article",
+        "published": "2026-10-12T21:39:32Z"
+      }
+    },
+    {
+      "id": "d36733ac43fe",
+      "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
+      "title": "Intel D270 GPU AI Accelerator–Up to 480 GB LPDDR5X",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 75,
+        "comments": 29,
+        "hn_url": "https://news.ycombinator.com/item?id=50063365",
+        "kind": "article",
+        "published": "2026-10-12T21:35:35Z"
+      }
+    },
+    {
+      "id": "f605e50c377f",
+      "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
+      "title": "Who is vfmaddrnd231pd?",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 122,
+        "comments": 11,
+        "hn_url": "https://news.ycombinator.com/item?id=50063138",
+        "kind": "article",
+        "published": "2026-10-12T21:12:43Z"
+      }
+    },
+    {
+      "id": "7bfe3958883c",
+      "url": "https://brickbrag.com/",
+      "title": "Show HN: Brickbrag – A multiplayer brick-building world in the browser",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 33,
+        "comments": 10,
+        "hn_url": "https://news.ycombinator.com/item?id=50063042",
+        "kind": "article",
+        "published": "2026-10-12T21:03:36Z"
+      }
+    },
+    {
+      "id": "1d4dd6ffc149",
+      "url": "https://www.avclub.com/epic-games-disney-ai-delay",
+      "title": "Epic Games tells employees to use AI to get Disney game done",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 78,
+        "comments": 59,
+        "hn_url": "https://news.ycombinator.com/item?id=50062237",
+        "kind": "article",
+        "published": "2026-10-12T20:07:42Z"
+      }
+    },
+    {
+      "id": "164e666918ec",
+      "url": "https://twitter.com/fedesimio/status/2109713695165329511",
+      "title": "\"Today we're laying off a large part of the Airtable team \"",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 38,
+        "comments": 13,
+        "hn_url": "https://news.ycombinator.com/item?id=50062076",
+        "kind": "article",
+        "published": "2026-10-12T19:56:16Z"
+      }
+    },
+    {
+      "id": "7cb5404f8fdd",
+      "url": "https://www.markround.com/blog/2026/zx-spectrum-intro",
+      "title": "Writing a Demoscene Intro for the ZX Spectrum",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 81,
+        "comments": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=50061859",
+        "kind": "article",
+        "published": "2026-10-12T19:40:00Z"
+      }
+    },
+    {
+      "id": "91172d3fd9e4",
+      "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
+      "title": "Making big downloads resumable in Firefox",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 94,
+        "comments": 36,
+        "hn_url": "https://news.ycombinator.com/item?id=50061791",
+        "kind": "article",
+        "published": "2026-10-12T19:36:02Z"
+      }
+    },
+    {
+      "id": "d5f35773e1f9",
+      "url": "https://www.rnz.co.nz/news/world/1865776/french-supermarkets-suffer-refrigerator-shutdown-after-unprecedented-cyberattack",
+      "title": "French supermarkets suffer refrigerator shutdown after unprecedented cyberattack",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 33,
+        "comments": 17,
+        "hn_url": "https://news.ycombinator.com/item?id=50060387",
+        "kind": "article",
+        "published": "2026-10-12T18:09:10Z"
+      }
+    },
+    {
+      "id": "9af2d4a6d3d7",
+      "url": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+      "title": "'AI' Is Not a Tool by Rich Hickey",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b1...",
+      "meta": {
+        "points": 227,
+        "comments": 112,
+        "hn_url": "https://news.ycombinator.com/item?id=50060269",
+        "kind": "article",
+        "published": "2026-10-12T18:00:25Z"
+      }
+    },
+    {
+      "id": "ff5acec6f95b",
+      "url": "https://www.the-independent.com/tech/bots-russia-x-facebook-meta-bluesky-twitter-b3065172.html",
+      "title": "People are rejoicing about the removal of Russian bots from social media",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 32,
+        "comments": 13,
+        "hn_url": "https://news.ycombinator.com/item?id=50057765",
+        "kind": "article",
+        "published": "2026-10-12T15:23:24Z"
+      }
+    },
+    {
+      "id": "6f491082f42a",
+      "url": "https://fosstodon.org/@keepassxc/117426800473292490",
+      "title": "KeePassXC is 10 years old today",
+      "source": "hn",
+      "first_seen": "2026-10-13T02:17:27Z",
+      "text": "",
+      "meta": {
+        "points": 31,
+        "comments": 1,
+        "hn_url": "https://news.ycombinator.com/item?id=50054147",
+        "kind": "article",
+        "published": "2026-10-12T10:15:30Z"
+      }
+    },
+    {
+      "id": "e93a36750b02",
+      "url": "https://github.com/awlevin/typesafe-computer-use",
+      "title": "awlevin/typesafe-computer-use",
+      "source": "github",
+      "first_seen": "2026-10-13T02:17:29Z",
+      "text": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
+      "meta": {
+        "stars": 1227,
+        "topics": [
+          "ai-agents",
+          "automation",
+          "computer-use",
+          "macos",
+          "ocr",
+          "typesafe"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-16T17:48:45Z",
+        "pushed_at": "2026-09-29T23:33:46Z",
+        "published": "2026-09-16T17:48:45Z"
+      }
+    },
+    {
+      "id": "925b4e34e1ac",
+      "url": "https://github.com/maxrave-dev/kotlin-footguns",
+      "title": "maxrave-dev/kotlin-footguns",
+      "source": "github",
+      "first_seen": "2026-10-13T02:17:29Z",
+      "text": "Battle-tested agent skills mapping the footguns of Kotlin, Compose Multiplatform and the desktop JVM — mined from a production music app, not from documentation.",
+      "meta": {
+        "stars": 1208,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "android",
+          "claude-code",
+          "compose-multiplatform",
+          "jetpack-compose",
+          "kotlin",
+          "kotlin-multiplatform"
+        ],
+        "language": "Python",
+        "created_at": "2026-08-20T08:46:15Z",
+        "pushed_at": "2026-09-25T03:35:23Z",
+        "published": "2026-08-20T08:46:15Z"
+      }
+    },
+    {
+      "id": "efadf9441346",
+      "url": "https://simonwillison.net/2026/Oct/12/web-edit/",
+      "title": "web-edit 0.1a0",
+      "source": "blog",
+      "first_seen": "2026-10-13T02:17:32Z",
+      "text": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to be run over Tailscale, so I can have an agent start this running and then edit files via my Tailscale network directly from my phone. Here's the interface for browsing files in a folder: Editing uses CodeMirror 6 - I was going to use Monaco but that still doesn't have a great mobile experience yet. Tags: projects , python , ai , tailscale , generative-ai , llms , codex",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-10-12T15:54:36Z"
+      }
     }
   ],
   "recent_labels": [
-    {
-      "ts": "2026-10-10T06:17:06Z",
-      "digest_date": "2026-10-09",
-      "item_id": "25fe5f9fbcb8",
-      "url": "https://arxiv.org/abs/2610.10515v1",
-      "title": "RoboJEPA sets the first scaling law for robot world models",
-      "tier": "discovery",
-      "source": "arxiv",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-10T06:17:06Z",
-      "digest_date": "2026-10-09",
-      "item_id": "cf9dd8daed0c",
-      "url": "https://github.com/usamahz/cpu-performance-engineering",
-      "title": "A primary-sources reading path for CPU inference performance",
-      "tier": "discovery",
-      "source": "github",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-10T06:17:06Z",
-      "digest_date": "2026-10-09",
-      "item_id": "3295fd7388cd",
-      "url": "https://github.com/SamsungLabs/LittleBit",
-      "title": "LittleBit pushes LLM weights below 1 bit via latent factorization",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-11T06:17:01Z",
-      "digest_date": "2026-10-10",
-      "item_id": "301544ff1a07",
-      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-      "title": "OpenAI fires three safety researchers, who dispute the reason",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-11T06:17:01Z",
-      "digest_date": "2026-10-10",
-      "item_id": "1eaf0f76ffce",
-      "url": "https://openrouter.ai/stepfun/step-5-preview",
-      "title": "StepFun's Step 5 Preview, a 1M-context MoE, lands on OpenRouter",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-11T06:17:01Z",
-      "digest_date": "2026-10-10",
-      "item_id": "622eb12fcb71",
-      "url": "https://github.com/bilibili/Index-Translate",
-      "title": "Bilibili ships Index-Translate, an open 150-language model family",
-      "tier": "discovery",
-      "source": "github",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-11T06:17:01Z",
-      "digest_date": "2026-10-10",
-      "item_id": "04902b83f5b9",
-      "url": "https://typesafe.ai/blog/series-ai",
-      "title": "Typesafe AI raises $870M at $7.5B",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-10-11T06:17:01Z",
-      "digest_date": "2026-10-10",
-      "item_id": "7b2cb15b39a3",
-      "url": "https://www.washingtonpost.com/technology/2026/10/09/chatgpt-users-iran-planted-ai-generated-articles-us-news-media/",
-      "title": "Iranian campaign planted ChatGPT-written articles in US outlets",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
     {
       "ts": "2026-10-11T06:17:01Z",
       "digest_date": "2026-10-10",
@@ -3672,17 +3909,97 @@
       "tier": "discovery",
       "source": "github",
       "verdict": "up"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "c6065c24705d",
+      "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+      "title": "Project Glasswing finds 129,000 flaws, Anthropic expands cyber-team access",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "35545ae5e825",
+      "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+      "title": "Unauthenticated RCE flaw in LMCache threatens vLLM-style LLM serving",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "ebcd6167a236",
+      "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+      "title": "Anthropic cuts live internet access for internal Claude evals",
+      "tier": "discovery",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "e3f3090fc550",
+      "url": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
+      "title": "Three teams hack a fully patched Pixel 10 at Pwn2Own",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "a47789abd954",
+      "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+      "title": "Scan of 15,465 public MCP servers finds the ecosystem unsecured",
+      "tier": "discovery",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "f27324b6e8ec",
+      "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+      "title": "Attackers used AI pentesting tool ARTEX to breach Korean banks",
+      "tier": "discovery",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "53ea20f69376",
+      "url": "https://arxiv.org/abs/2610.13778v1",
+      "title": "ReplaySSM speeds up hybrid SSM decoding 1.2-1.47x in vLLM",
+      "tier": "discovery",
+      "source": "arxiv",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-10-13T06:16:45Z",
+      "digest_date": "2026-10-12",
+      "item_id": "224c102190be",
+      "url": "https://arxiv.org/abs/2610.13928v1",
+      "title": "Researchers show AI capability-hiding backdoors beat eval audits",
+      "tier": "discovery",
+      "source": "arxiv",
+      "verdict": "ignored"
     }
   ],
   "recently_sent_titles": [
-    "The gap in understanding LLM capability keeps widening",
-    "Build your own decision model",
-    "The agent said it was done. The database disagreed.",
-    "geo-sleuth geolocates photos without GPS or EXIF data",
-    "AI and API products need default hard budget caps",
-    "Local indexing cuts tool calling and token usage",
-    "Sakana explores recursive self-improvement via collective AI",
-    "500B tokens later: AI agents decompile a first-person shooter",
+    "Project Glasswing finds 129,000 flaws, Anthropic expands cyber-team access",
+    "Unauthenticated RCE flaw in LMCache threatens vLLM-style LLM serving",
+    "Anthropic cuts live internet access for internal Claude evals",
+    "Three teams hack a fully patched Pixel 10 at Pwn2Own",
+    "Scan of 15,465 public MCP servers finds the ecosystem unsecured",
+    "Attackers used AI pentesting tool ARTEX to breach Korean banks",
+    "ReplaySSM speeds up hybrid SSM decoding 1.2-1.47x in vLLM",
+    "Researchers show AI capability-hiding backdoors beat eval audits",
     "Microsoft-Decision-1, our model for fast decision-making",
     "Nvidia in talks to acquire open-model startup Reflection AI",
     "Tom Brown used GOP ties to broker a $1.25B/month SpaceX compute deal",
