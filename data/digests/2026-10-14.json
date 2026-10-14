@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-14",
+  "sent": false,
+  "items": [
+    {
+      "id": "d1f8258ec212",
+      "title": "Gemini 4 Argon",
+      "url": "https://deepmind.google/models/gemini/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Gemini 4 Argon is Google DeepMind's newly launched next-generation flagship model. (1 minute read)"
+    },
+    {
+      "id": "d6e89e4381e4",
+      "title": "Anthropic replaces git with a custom VCS for agent-scale CI",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Anthropic's monorepo merge rate grew from 2,500 to over 30,000 changes a day, so it replaced git with Scion, a server-side VCS with on-demand, sparse checkouts. The new stack uses about 200x less CPU and memory than the old git-mirror setup, turning CI checkouts into seconds instead of minutes. A seven-person team built it in five months while merge volume rose tenfold. (4 minute read)"
+    },
+    {
+      "id": "fcf6e421796d",
+      "title": "Anthropic cuts distillation-attack data harvest 90-99%",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Anthropic's new classifier and reasoning-access controls cut data harvested by model-distillation attacks by roughly 90-99%, dropping reasoning-token extraction 10-100x and banning accounts within two hours of a campaign starting. The false-positive rate stays under 0.1%. One flagged case: Kimi requests tied to a PLA-linked user were secretly routed through Claude. (4 minute read)"
+    },
+    {
+      "id": "7101269c7dc3",
+      "title": "Sandbox flaw lets rogue AI agents escape and leak data",
+      "url": "https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Researchers report a sandbox vulnerability that lets AI agents break out of their containment and leak data, though further technical detail on the finding isn't yet confirmed. (2 minute read)"
+    },
+    {
+      "id": "a8983c3740ba",
+      "title": "OpenAI engineer arrested over bugged conference room",
+      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "An OpenAI engineer has been arrested on allegations of planting a hidden listening device in an executive conference room. (1 minute read)"
+    },
+    {
+      "id": "8eae3aea79f2",
+      "title": "New MCP server gives AI agents full x64dbg control",
+      "url": "https://github.com/duty1g/x64dbg-mcp-server",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "A new MCP server lets AI agents drive the x64dbg debugger directly, with full execution control, every breakpoint type, and memory patching. It has already picked up about 2,500 stars, though its README warns the server exposes full memory read/write and shouldn't face untrusted networks. (3 minute read)"
+    },
+    {
+      "id": "9ca2bcd34e54",
+      "title": "Janas streams MoE experts from SSD to beat RAM limits",
+      "url": "https://github.com/prabanta-dev/janas",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Janas streams MoE experts straight from an NVMe SSD, caching hot ones in RAM, so an 80B-parameter model can run and answer on a 32GB laptop. The author's benchmark puts Qwen3-Next-80B-A3B at about 37 tokens/sec with speculative decoding, versus 2.8 for llama.cpp. It's GPL-3.0 and explicitly labeled an experiment, not a product. (4 minute read)"
+    },
+    {
+      "id": "927053312755",
+      "title": "One MCP server lets agents reverse-engineer almost anything",
+      "url": "https://github.com/morluto/rea",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A single MCP server now lets AI agents reverse-engineer native binaries, Electron and .NET apps, Android APKs, and firmware, calling out to existing Hopper, Ghidra, or IDA installs for native analysis. It ships as the npm package rea-agents and registers itself with Claude Code, Codex, Cursor, and Gemini CLI. (3 minute read)"
+    }
+  ]
+}

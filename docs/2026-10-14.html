@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-14</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-14</h1>
+<article>
+<h2><a href="https://deepmind.google/models/gemini/">Gemini 4 Argon</a></h2>
+<p>Gemini 4 Argon is Google DeepMind&#x27;s newly launched next-generation flagship model. (1 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.anthropic.com/engineering/redesigning-source-control">Anthropic replaces git with a custom VCS for agent-scale CI</a></h2>
+<p>Anthropic&#x27;s monorepo merge rate grew from 2,500 to over 30,000 changes a day, so it replaced git with Scion, a server-side VCS with on-demand, sparse checkouts. The new stack uses about 200x less CPU and memory than the old git-mirror setup, turning CI checkouts into seconds instead of minutes. A seven-person team built it in five months while merge volume rose tenfold. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic cuts distillation-attack data harvest 90-99%</a></h2>
+<p>Anthropic&#x27;s new classifier and reasoning-access controls cut data harvested by model-distillation attacks by roughly 90-99%, dropping reasoning-token extraction 10-100x and banning accounts within two hours of a campaign starting. The false-positive rate stays under 0.1%. One flagged case: Kimi requests tied to a PLA-linked user were secretly routed through Claude. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out">Sandbox flaw lets rogue AI agents escape and leak data</a></h2>
+<p>Researchers report a sandbox vulnerability that lets AI agents break out of their containment and leak data, though further technical detail on the finding isn&#x27;t yet confirmed. (2 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/">OpenAI engineer arrested over bugged conference room</a></h2>
+<p>An OpenAI engineer has been arrested on allegations of planting a hidden listening device in an executive conference room. (1 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/duty1g/x64dbg-mcp-server">New MCP server gives AI agents full x64dbg control</a></h2>
+<p>A new MCP server lets AI agents drive the x64dbg debugger directly, with full execution control, every breakpoint type, and memory patching. It has already picked up about 2,500 stars, though its README warns the server exposes full memory read/write and shouldn&#x27;t face untrusted networks. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://github.com/prabanta-dev/janas">Janas streams MoE experts from SSD to beat RAM limits</a></h2>
+<p>Janas streams MoE experts straight from an NVMe SSD, caching hot ones in RAM, so an 80B-parameter model can run and answer on a 32GB laptop. The author&#x27;s benchmark puts Qwen3-Next-80B-A3B at about 37 tokens/sec with speculative decoding, versus 2.8 for llama.cpp. It&#x27;s GPL-3.0 and explicitly labeled an experiment, not a product. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/morluto/rea">One MCP server lets agents reverse-engineer almost anything</a></h2>
+<p>A single MCP server now lets AI agents reverse-engineer native binaries, Electron and .NET apps, Android APKs, and firmware, calling out to existing Hopper, Ghidra, or IDA installs for native analysis. It ships as the npm package rea-agents and registers itself with Claude Code, Codex, Cursor, and Gemini CLI. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387">QGIS enacts moratorium on AI contributions</a> <span class="meta">hn</span></li>
+<li><a href="https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/">Why aren&#x27;t AI companies being charged for hacking?</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html">Bring Your Own Agent: Your Employees&#x27; Assistants Are Already Logged In</a> <span class="meta">blog</span></li>
+<li><a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident">Hackers activate automatic defrosting in supermarket fridges across Europe</a> <span class="meta">hn</span></li>
+<li><a href="https://eg2.haku.sh/">We turned EmbeddingGemma 2 into a speech-to-text model</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b">Run fast, private agents on-device with LFM2.5-24B-A2B</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html">GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking</a> <span class="meta">blog</span></li>
+<li><a href="https://uk.finance.yahoo.com/news/french-supermarket-chains-cyberattack-forced-115141288.html">French supermarkets suffer fridge shutdown after &#x27;unprecedented&#x27; cyberattack</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">Fridges in French supermarkets hit by cyber attack</a> <span class="meta">hn</span></li>
+<li><a href="https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/">Hackers heat French supermarket fridges, sparking fires and food losses</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/">Cyberattack shuts down refrigerators at French supermarkets</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/cyberattack-disrupts-refridgeration-in-france">Cyberattack disrupts refrigeration at hundreds of French supermarkets</a> <span class="meta">blog</span></li>
+<li><a href="https://www.rnz.co.nz/news/world/1865776/french-supermarkets-suffer-refrigerator-shutdown-after-unprecedented-cyberattack">French supermarkets suffer refrigerator shutdown after unprecedented cyberattack</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html">Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers</a> <span class="meta">blog</span></li>
+<li><a href="https://www.argmin.net/p/faster-fourier-transforms">A look at the math that OpenAI claims computes faster Fourier transforms</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html">Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/">Ivanti warns of Connect Secure zero-day exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://twitter.com/OpenAINewsroom/status/2110095403198849132">OpenAI finds recording device in one of their offices</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/">OpenAI engineer arrested for allegedly planting spy device in office</a> <span class="meta">blog</span></li>
+<li><a href="https://www.pi.website/blog/api-beta">Physical Intelligence API Beta: Frontier Models for Every Robot</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-14.md">Markdown</a></footer>
+</body></html>

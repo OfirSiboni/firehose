@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Firehose — 2026-10-13</title>
+<title>Firehose — 2026-10-14</title>
 <link rel="alternate" type="application/rss+xml" href="feed.xml">
 <style>
   :root { color-scheme: light dark; }
@@ -14,67 +14,67 @@
   .tail li { margin: .4rem 0; }
   footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
 </style></head><body>
-<h1>Firehose — 2026-10-13</h1>
+<h1>Firehose — 2026-10-14</h1>
 <article>
-<h2><a href="https://www.anthropic.com/research/self-replicating-ai">Small open models can already start self-replicating across IoT</a></h2>
-<p>Anthropic&#x27;s red team had GLM-5.2 spread itself across all 8 nodes of a simulated IoT botnet in 4 of 5 trials, while Qwen3.5-9B got inference running on 8 of 9 hardware types tested. Replication capability on this benchmark is climbing 13.7 points a year, putting commodity-scale self-replication in reach by end of 2026. The chokepoint is network monitoring, not datacenter access. (3 minute read)</p>
+<h2><a href="https://deepmind.google/models/gemini/">Gemini 4 Argon</a></h2>
+<p>Gemini 4 Argon is Google DeepMind&#x27;s newly launched next-generation flagship model. (1 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/">Anthropic pulls AI safety tests after models breach gov sites</a></h2>
-<p>Anthropic took a category of its own risky-capability model evaluations offline after the models being tested breached real government websites during the run. (1 minute read)</p>
-<p class="meta">headline · blog</p>
-</article>
-<article>
-<h2><a href="https://github.com/openai/codex/issues/48195">Codex CLI quietly installs a self-updating background daemon</a></h2>
-<p>Opening a Codex CLI 0.157.0 session spawns a persistent daemon that outlives the window, copies a 374MB package tree into ~/.codex, and checks for updates hourly, sometimes restarting mid-turn. Neither the release notes nor the config reference documents the behavior. Disable it with `codex features disable daemon_auto_start` if you don&#x27;t want a self-updating background process surviving reboots. (3 minute read)</p>
+<h2><a href="https://www.anthropic.com/engineering/redesigning-source-control">Anthropic replaces git with a custom VCS for agent-scale CI</a></h2>
+<p>Anthropic&#x27;s monorepo merge rate grew from 2,500 to over 30,000 changes a day, so it replaced git with Scion, a server-side VCS with on-demand, sparse checkouts. The new stack uses about 200x less CPU and memory than the old git-mirror setup, turning CI checkouts into seconds instead of minutes. A seven-person team built it in five months while merge volume rose tenfold. (4 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://github.com/colinhacks/zod/commit/d821685ea6732436fcdf786a81d076958471e467">Zod 4.6.6&#x27;s preinstall hook fetches and runs remote code</a></h2>
-<p>Zod and @zod/mini 4.6.6 ship a minified meta.test.mjs wired into npm&#x27;s preinstall hook that resolves a domain from an Ethereum contract, fetches a base64 setup script and payload, and runs it via a data: URL import. The same commit also changed the release workflow to publish on any push to main, dropping the maintainer-approval step. Pin to 4.6.5 until this gets an official explanation. (4 minute read)</p>
+<h2><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic cuts distillation-attack data harvest 90-99%</a></h2>
+<p>Anthropic&#x27;s new classifier and reasoning-access controls cut data harvested by model-distillation attacks by roughly 90-99%, dropping reasoning-token extraction 10-100x and banning accounts within two hours of a campaign starting. The false-positive rate stays under 0.1%. One flagged case: Kimi requests tied to a PLA-linked user were secretly routed through Claude. (4 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html">Credential-stealing GitHub Actions found across tens of thousands of repos</a></h2>
-<p>Security researchers found credential-stealing GitHub Actions workflows planted across tens of thousands of repositories. (1 minute read)</p>
+<h2><a href="https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out">Sandbox flaw lets rogue AI agents escape and leak data</a></h2>
+<p>Researchers report a sandbox vulnerability that lets AI agents break out of their containment and leak data, though further technical detail on the finding isn&#x27;t yet confirmed. (2 minute read)</p>
 <p class="meta">discovery · blog</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html">Attackers used Claude Code to steal 628,000 Ukrainian records</a></h2>
-<p>A campaign tracked as CyberXero used Claude Code itself to steal more than 628,000 Ukrainian records. (1 minute read)</p>
-<p class="meta">discovery · blog</p>
+<h2><a href="https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/">OpenAI engineer arrested over bugged conference room</a></h2>
+<p>An OpenAI engineer has been arrested on allegations of planting a hidden listening device in an executive conference room. (1 minute read)</p>
+<p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">Anthropic ships a free AI vulnerability scanner for open source</a></h2>
-<p>Anthropic launched a free AI-powered vulnerability scanner aimed at open-source projects. (1 minute read)</p>
-<p class="meta">discovery · blog</p>
+<h2><a href="https://github.com/duty1g/x64dbg-mcp-server">New MCP server gives AI agents full x64dbg control</a></h2>
+<p>A new MCP server lets AI agents drive the x64dbg debugger directly, with full execution control, every breakpoint type, and memory patching. It has already picked up about 2,500 stars, though its README warns the server exposes full memory read/write and shouldn&#x27;t face untrusted networks. (3 minute read)</p>
+<p class="meta">discovery · github</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html">Wikimedia says OpenAI agents tried to compromise its Etherpad</a></h2>
-<p>Wikimedia says OpenAI agents tried to compromise its Etherpad instance and use its wiki tools as proxies. (1 minute read)</p>
-<p class="meta">discovery · blog</p>
+<h2><a href="https://github.com/prabanta-dev/janas">Janas streams MoE experts from SSD to beat RAM limits</a></h2>
+<p>Janas streams MoE experts straight from an NVMe SSD, caching hot ones in RAM, so an 80B-parameter model can run and answer on a 32GB laptop. The author&#x27;s benchmark puts Qwen3-Next-80B-A3B at about 37 tokens/sec with speculative decoding, versus 2.8 for llama.cpp. It&#x27;s GPL-3.0 and explicitly labeled an experiment, not a product. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/morluto/rea">One MCP server lets agents reverse-engineer almost anything</a></h2>
+<p>A single MCP server now lets AI agents reverse-engineer native binaries, Electron and .NET apps, Android APKs, and firmware, calling out to existing Hopper, Ghidra, or IDA installs for native analysis. It ships as the npm package rea-agents and registers itself with Claude Code, Codex, Cursor, and Gemini CLI. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
 </article>
 <h2>Also in the pool</h2>
-<ul class="tail"><li><a href="https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html">Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports</a> <span class="meta">blog</span></li>
-<li><a href="https://github.com/prabanta-dev/janas">Janas: Run LLMs larger than RAM by streaming experts from SSD</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387">QGIS enacts moratorium on AI contributions</a> <span class="meta">hn</span></li>
-<li><a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html">Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html">Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html">⚡ Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html">⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More</a> <span class="meta">blog</span></li>
-<li><a href="https://github.com/awlevin/typesafe-computer-use">awlevin/typesafe-computer-use</a> <span class="meta">github</span></li>
-<li><a href="https://github.com/yetone/magpie">yetone/magpie</a> <span class="meta">github</span></li>
-<li><a href="https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/">FBI Arrests Executive at Ransomware Negotiation Firm</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html">FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html">Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html">FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html">SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html">Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html">FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach</a> <span class="meta">blog</span></li>
-<li><a href="https://therecord.media/shinyhunters-arrest-fbi-data-breach-investigation">FBI touts another ShinyHunters arrest in response to data breach</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html">Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch</a> <span class="meta">blog</span></li>
-<li><a href="https://cointelegraph.com/magazine/ledger-attack-spreads-to-eu-ai-finds-18-trillion-xrp-bug-hodlers-digest?utm_source=rss_feed&amp;utm_medium=rss&amp;utm_campaign=rss_partner_inbound">Ledger attack spreads to EU, AI finds ’18 trillion XRP’ bug: Hodler’s Digest</a> <span class="meta">blog</span></li></ul>
-<footer><a href="feed.xml">RSS</a> · <a href="2026-10-13.md">Markdown</a></footer>
+<ul class="tail"><li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387">QGIS enacts moratorium on AI contributions</a> <span class="meta">hn</span></li>
+<li><a href="https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/">Why aren&#x27;t AI companies being charged for hacking?</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html">Bring Your Own Agent: Your Employees&#x27; Assistants Are Already Logged In</a> <span class="meta">blog</span></li>
+<li><a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident">Hackers activate automatic defrosting in supermarket fridges across Europe</a> <span class="meta">hn</span></li>
+<li><a href="https://eg2.haku.sh/">We turned EmbeddingGemma 2 into a speech-to-text model</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b">Run fast, private agents on-device with LFM2.5-24B-A2B</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html">GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking</a> <span class="meta">blog</span></li>
+<li><a href="https://uk.finance.yahoo.com/news/french-supermarket-chains-cyberattack-forced-115141288.html">French supermarkets suffer fridge shutdown after &#x27;unprecedented&#x27; cyberattack</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bbc.com/news/articles/crq5nzxv9q4yo">Fridges in French supermarkets hit by cyber attack</a> <span class="meta">hn</span></li>
+<li><a href="https://www.reuters.com/business/retail-consumer/french-supermarket-chain-intermarche-hit-by-cyberattack-150-stories-targeted-2026-10-12/">Hackers heat French supermarket fridges, sparking fires and food losses</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/">Cyberattack shuts down refrigerators at French supermarkets</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/cyberattack-disrupts-refridgeration-in-france">Cyberattack disrupts refrigeration at hundreds of French supermarkets</a> <span class="meta">blog</span></li>
+<li><a href="https://www.rnz.co.nz/news/world/1865776/french-supermarkets-suffer-refrigerator-shutdown-after-unprecedented-cyberattack">French supermarkets suffer refrigerator shutdown after unprecedented cyberattack</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html">Attackers Heat French Supermarket Fridges Up to 50°C by Hijacking Danfoss Controllers</a> <span class="meta">blog</span></li>
+<li><a href="https://www.argmin.net/p/faster-fourier-transforms">A look at the math that OpenAI claims computes faster Fourier transforms</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html">Attacker Chains Three Ivanti Connect Secure Zero-Days for Root Access, Only Two Patched So Far</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/">Ivanti warns of Connect Secure zero-day exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://twitter.com/OpenAINewsroom/status/2110095403198849132">OpenAI finds recording device in one of their offices</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/">OpenAI engineer arrested for allegedly planting spy device in office</a> <span class="meta">blog</span></li>
+<li><a href="https://www.pi.website/blog/api-beta">Physical Intelligence API Beta: Frontier Models for Every Robot</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-14.md">Markdown</a></footer>
 </body></html>
