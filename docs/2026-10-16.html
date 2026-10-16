@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-16</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-16</h1>
+<article>
+<h2><a href="https://arxiv.org/abs/2610.20437v1">CVE-2026-65616: reproducible privilege escalation in AI agent training</a></h2>
+<p>A cryptographic verification bypass in AI agent training infrastructure lets attackers forge tokens and escalate privileges, tracked as CVE-2026-65616. The author reproduced the bypass in containerized repository servers using basic HTTP, Python, and JavaScript, and published two repos replicating the exploit. Zero Trust Architecture would close the hole. (3 minute read)</p>
+<p class="meta">discovery · arxiv</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/meta-muse-spark-open">Meta ships Muse Spark Open, an 816B-param open-weight multimodal MoE</a></h2>
+<p>Meta&#x27;s Muse Spark Open packs 816B total parameters with 42B active per token, 256 experts per layer, and a 1M-token context window. It reads text, image, audio, and video, and ships as published weights on Hugging Face in BF16 and 4-bit NVFP4, plus community GGUF and MLX quants. Anyone can now self-host a frontier-scale multimodal model. (5 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.signalscorps.com/blog/prompt-injection-in-http-headers/">217M-page scan finds prompt injection and cloaking via HTTP headers</a></h2>
+<p>Scanning 217 million Common Crawl pages, researchers found 7,959 sites sending AI-targeted HTTP headers, including 30 attempting prompt injection and one shell-command honeypot. Claude Code agents ignored plain injected instructions but obeyed 7 of 9 times when the header claimed to speak for the site owner, and a cloaking proof-of-concept hid instructions from a manual curl check entirely. (6 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html">Citizen Lab traces zero-click Candiru spyware to ad-network targeting</a></h2>
+<p>Candiru&#x27;s spyware reached at least 45 Al Jazeera devices through ordinary ad bids from Discover-Tech, which decided server-side who to attack so ad networks saw nothing malicious. The firm placed roughly 4 billion bids in one quarter, with callback code appearing in 75,000 apps and 120,000 sites; Google and IAB Europe have since dropped it from their vendor lists. (7 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html">Langflow&#x27;s CVSS 9.9 auth RCE sees 1,400+ honeypot exploit attempts</a></h2>
+<p>A CVSS 9.9 flaw lets any logged-in Langflow user add an MCP &#x27;stdio&#x27; server whose unsanitized command field runs in a shell for full remote code execution. Honeypots logged 1,423 exploit attempts from 27 IPs since September, including payloads that read environment variables and /etc/passwd. The fix ships in Langflow 1.9.0. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b">Liquid&#x27;s LFM2.5-24B-A2B hits 21K tok/s on one B300 GPU</a></h2>
+<p>LFM2.5-24B-A2B runs 24B total parameters with only 2B active per token, hitting 184 tokens/second on an Apple M5 Max and over 21,000 output tokens/second on a single Nvidia B300. It beats the larger Qwen3.6-35B-A3B on 5 of 8 agentic benchmarks, including 27.69 vs. 8.72 on AutomationBench. Both base and post-trained weights are open on Hugging Face. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://arxiv.org/abs/2610.21565v1">BiShield-TEE breaks on-device LLM weight obfuscation, then fixes it</a></h2>
+<p>Unilateral weight obfuscation for TEE-shielded on-device LLMs turns out to have a uniquely determined secret, letting attacks on GroupCover and ArrowCloak recover near-complete model functionality at over 2.4x the full-shielding baseline. BiShield-TEE fixes this by hiding the true key among many equally valid candidates instead. Code is on GitHub, and the paper is accepted at NeurIPS 2026. (5 minute read)</p>
+<p class="meta">discovery · arxiv</p>
+</article>
+<article>
+<h2><a href="https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/">AI-assisted USB diffing built a Linux scanner driver in hours</a></h2>
+<p>By diffing USB traffic between a vendor Windows driver run in a VM and a Linux attempt, the author built a working scanner driver for the Plustek OpticFilm 8200i within hours, later beating the driver upstream SANE eventually shipped (34.6s vs. 54.4s per scan at 3600 dpi). The same approach fixed a ThinkPad webcam&#x27;s low-light image, raising frame brightness from 31.1 to 90.9. (6 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://openstation.blog/2026/10/13/i-deleted-168000-lines-of-comments-my-ai-agent-didnt-notice/">I Deleted 168,000 Lines of Comments. My AI Agent Didn&#x27;t Notice</a> <span class="meta">hn</span></li>
+<li><a href="https://lwn.net/Articles/1100449/">Linus Torvalds&#x27;s first LLM-assisted patch series</a> <span class="meta">hn</span></li>
+<li><a href="https://anoma.ly/notes/opencode-2-0/">OpenCode 2.0</a> <span class="meta">hn</span></li>
+<li><a href="https://www.ft.com/content/11632d03-358c-454b-af95-d06d4072932b">Anthropic revenue jumps to $16.8B in third quarter</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html">Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/">Is AI pentesting as good as a human pentester?</a> <span class="meta">blog</span></li>
+<li><a href="https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/">AI is mass decompiling games. That&#x27;s both awesome and scary</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/block-ai-powered-security">How Block is building AI-powered security with OpenAI technology</a> <span class="meta">blog</span></li>
+<li><a href="https://sunshowers.io/posts/anthropic-mononoke/">Anthropic&#x27;s Scion is heavily inspired by Mononoke</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2610.19766v1">Analyzing and Mitigating Poisoning Attacks on Flow-Based Intrusion Detection</a> <span class="meta">arxiv</span></li>
+<li><a href="https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html">GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories</a> <span class="meta">blog</span></li>
+<li><a href="https://arxiv.org/abs/2610.21514v1">Poison Valleys: Diagnosing Path-Dependent Failure in LLM Code Repair</a> <span class="meta">arxiv</span></li>
+<li><a href="https://openai.com/index/sentinelone">SentinelOne cuts malware analysis from weeks to hours</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/">Ledger asks sellers across Asia to halt sales after supply-chain attack</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/">Cisco patches new Secure Email Gateway zero-day exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html">Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html">Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/spyware-manufacturer-had-access-to-data-harvested-by-previous-polish-government">Spyware manufacturer had access to data harvested by former Polish government, current PM says</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/">Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html">Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-16.md">Markdown</a></footer>
+</body></html>

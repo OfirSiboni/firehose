@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-16",
+  "sent": false,
+  "items": [
+    {
+      "id": "20ab544d6cbd",
+      "title": "CVE-2026-65616: reproducible privilege escalation in AI agent training",
+      "url": "https://arxiv.org/abs/2610.20437v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "A cryptographic verification bypass in AI agent training infrastructure lets attackers forge tokens and escalate privileges, tracked as CVE-2026-65616. The author reproduced the bypass in containerized repository servers using basic HTTP, Python, and JavaScript, and published two repos replicating the exploit. Zero Trust Architecture would close the hole. (3 minute read)"
+    },
+    {
+      "id": "9d251ac6836a",
+      "title": "Meta ships Muse Spark Open, an 816B-param open-weight multimodal MoE",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Meta's Muse Spark Open packs 816B total parameters with 42B active per token, 256 experts per layer, and a 1M-token context window. It reads text, image, audio, and video, and ships as published weights on Hugging Face in BF16 and 4-bit NVFP4, plus community GGUF and MLX quants. Anyone can now self-host a frontier-scale multimodal model. (5 minute read)"
+    },
+    {
+      "id": "6e2e05e1f4c7",
+      "title": "217M-page scan finds prompt injection and cloaking via HTTP headers",
+      "url": "https://www.signalscorps.com/blog/prompt-injection-in-http-headers/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Scanning 217 million Common Crawl pages, researchers found 7,959 sites sending AI-targeted HTTP headers, including 30 attempting prompt injection and one shell-command honeypot. Claude Code agents ignored plain injected instructions but obeyed 7 of 9 times when the header claimed to speak for the site owner, and a cloaking proof-of-concept hid instructions from a manual curl check entirely. (6 minute read)"
+    },
+    {
+      "id": "cdc576e64c59",
+      "title": "Citizen Lab traces zero-click Candiru spyware to ad-network targeting",
+      "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Candiru's spyware reached at least 45 Al Jazeera devices through ordinary ad bids from Discover-Tech, which decided server-side who to attack so ad networks saw nothing malicious. The firm placed roughly 4 billion bids in one quarter, with callback code appearing in 75,000 apps and 120,000 sites; Google and IAB Europe have since dropped it from their vendor lists. (7 minute read)"
+    },
+    {
+      "id": "50367ee6ae87",
+      "title": "Langflow's CVSS 9.9 auth RCE sees 1,400+ honeypot exploit attempts",
+      "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A CVSS 9.9 flaw lets any logged-in Langflow user add an MCP 'stdio' server whose unsanitized command field runs in a shell for full remote code execution. Honeypots logged 1,423 exploit attempts from 27 IPs since September, including payloads that read environment variables and /etc/passwd. The fix ships in Langflow 1.9.0. (3 minute read)"
+    },
+    {
+      "id": "cfc3584192a8",
+      "title": "Liquid's LFM2.5-24B-A2B hits 21K tok/s on one B300 GPU",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "LFM2.5-24B-A2B runs 24B total parameters with only 2B active per token, hitting 184 tokens/second on an Apple M5 Max and over 21,000 output tokens/second on a single Nvidia B300. It beats the larger Qwen3.6-35B-A3B on 5 of 8 agentic benchmarks, including 27.69 vs. 8.72 on AutomationBench. Both base and post-trained weights are open on Hugging Face. (4 minute read)"
+    },
+    {
+      "id": "20ce856fbc5e",
+      "title": "BiShield-TEE breaks on-device LLM weight obfuscation, then fixes it",
+      "url": "https://arxiv.org/abs/2610.21565v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "Unilateral weight obfuscation for TEE-shielded on-device LLMs turns out to have a uniquely determined secret, letting attacks on GroupCover and ArrowCloak recover near-complete model functionality at over 2.4x the full-shielding baseline. BiShield-TEE fixes this by hiding the true key among many equally valid candidates instead. Code is on GitHub, and the paper is accepted at NeurIPS 2026. (5 minute read)"
+    },
+    {
+      "id": "a14596d80f77",
+      "title": "AI-assisted USB diffing built a Linux scanner driver in hours",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "By diffing USB traffic between a vendor Windows driver run in a VM and a Linux attempt, the author built a working scanner driver for the Plustek OpticFilm 8200i within hours, later beating the driver upstream SANE eventually shipped (34.6s vs. 54.4s per scan at 3600 dpi). The same approach fixed a ThinkPad webcam's low-light image, raising frame brightness from 31.1 to 90.9. (6 minute read)"
+    }
+  ]
+}

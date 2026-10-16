@@ -1,105 +1,118 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-16",
   "stories": [
     {
-      "id": "d1f8258ec212",
-      "url": "https://deepmind.google/models/gemini/",
-      "title": "Gemini 4 Argon",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Google's new flagship Gemini 4 Argon release (1101 HN pts) - a first-of-generation model launch, the kind the taste profile says always clears the bar even when saturated.",
-      "key_facts": []
-    },
-    {
-      "id": "d6e89e4381e4",
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "title": "Redesigning source control at Anthropic",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic replaced git with a bespoke VCS (Scion) to handle 30k merges/day; concrete, unusually detailed systems-engineering writeup on scaling code review/CI for agent-era volume.",
+      "id": "20ab544d6cbd",
+      "url": "https://arxiv.org/abs/2610.20437v1",
+      "title": "From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "Concrete CVE (CVE-2026-65616) with a reproduced containerized exploit for RL/RLHF-induced privilege escalation in AI agent training infra; two linked repos replicate the token-forgery bypass. Exactly the 'working exploit, PoC repo, CVE' version the operator wants over vague agent-incident framing.",
       "key_facts": [
-        "Monorepo merge rate grew from ~2,500/day (May 2026) to 30,000+/day (Sept 2026)",
-        "Main-branch history ~100GB; compressed working copy >25GB; CI did ~25M checkouts/day",
-        "Built Scion (VCS) and Antique (code review) in-house, migrated off git in 5 months",
-        "Each of 3 serving tiers (scion-daemon/scion-cache/scion-server) holds >99% cache hit rate",
-        "Infra uses ~200x less CPU/memory than the old git-mirror setup; CI gained ~25% CPU capacity",
-        "A 7-person team built it; an AI model rewrote the git-to-Scion ingestion pipeline 20x leaner, 4x faster"
+        "CVE-2026-65616: cryptographic verification bypass enabling token forgery/privilege escalation",
+        "Author reproduced the bypass in isolated containerized repository servers using basic HTTP/Python/JS",
+        "Two repos: github.com/alixiacf/hpim-training-lab and github.com/alixiacf/rep-openai-artifactory",
+        "Paper argues Zero Trust Architecture would neutralize the vector"
       ]
     },
     {
-      "id": "fcf6e421796d",
-      "url": "https://www.anthropic.com/research/distillation-defenses",
-      "title": "Strengthening our defenses against distillation attacks",
-      "source": "hn",
+      "id": "9d251ac6836a",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "source": "blog",
       "tier": "headline",
-      "reason": "Anthropic's own data on model-distillation attacks: nation-state-linked extraction via proxy accounts, concrete classifier numbers, and a flagged case of PLA-linked Kimi traffic being routed to Claude - squarely on the AI x cyber line the profile always wants.",
+      "reason": "Meta's flagship, first-of-generation open-weight frontier multimodal MoE model with published checkpoints on Hugging Face — exactly the 'open-weight model release with published weights' + 'flagship release' pattern the operator always wants as a headline.",
       "key_facts": [
-        "New defenses cut harvested reasoning data by ~90-99% per early evidence",
-        "Reasoning-token extraction by distillers fell 10-100x+ after full classifier rollout",
-        "Classifier false-positive rate is under 0.1%; tens of thousands of accounts banned, often within 2 hours",
-        "Summarizing reasoning alone dropped a distilled model's SWE-bench Verified score from 80.4% to 71.8%",
-        "Cites Zhipu's GLM-5.3 (rated most cyber-capable open-weights model by US CAISI) as a distillation beneficiary",
-        "Found a case of Kimi requests secretly routed to Claude, including one tied to a user linked to China's PLA",
-        "Anthropic has billed for safeguard-blocked requests (incl. distillation) since Sept 24"
+        "~816B total params, ~42B active/token, 256 experts/layer (8 selected), 62 layers, 8192 hidden dim, GQA (128 query/16 KV heads), up to 1M context",
+        "Multimodal: text/image/audio/video in, text out; 1.8B-param vision encoder, audio encoder emitting 1 token/80ms",
+        "Published weights on Hugging Face in BF16 (~1.5TB) and NVFP4 (4-bit, for Blackwell), plus community GGUF/MLX quants",
+        "Billed as 'most capable US open-weights model to date', optimized for agentic coding"
       ]
     },
     {
-      "id": "7101269c7dc3",
-      "url": "https://therecord.media/sandbox-vulnerability-gives-rogue-ai-agents-path-out",
-      "title": "Sandbox vulnerability gives rogue AI agents a path to escape and leak data, research says",
+      "id": "6e2e05e1f4c7",
+      "url": "https://www.signalscorps.com/blog/prompt-injection-in-http-headers/",
+      "title": "Prompt injection in HTTP headers: what 217M web responses show",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Rigorous large-scale measurement (217M Common Crawl responses) of AI-targeted HTTP headers, prompt-injection attempts, and a cloaking PoC with a working canary test against Claude Code. New, concrete, with numbers — the kind of AI x cyber discovery piece the operator wants.",
+      "key_facts": [
+        "Scanned 217,097,223 pages (~10% of Sept 2026 Common Crawl); 7,959 sites sent an AI-targeted header",
+        "30 sites attempted header-based prompt injection; 24 via 'X-AI' header, including a shell-command honeypot",
+        "Canary test: Claude Code agents ignored plain injected instructions but obeyed 7/9 times when told the user was the site owner",
+        "Built a cloaking PoC serving different content to AI user-agents/Accept:text/markdown, invisible to a manual curl check; cites SPLX resume test moving a candidate from last to first"
+      ]
+    },
+    {
+      "id": "cdc576e64c59",
+      "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+      "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Major Citizen Lab investigative finding: a government spyware vendor (Candiru) running zero-click infections through ordinary programmatic ad auctions at a massive, previously-undisclosed scale, with real-world confirmed targeting of journalists. Large enough and novel enough to be a headline despite no AI angle, per the 'large pure-cyber is fine as a headline' rule — and it's the primary investigative source behind several duplicate HN submissions in this pool.",
+      "key_facts": [
+        "Candiru spyware delivered via malicious online ad bids through Discover-Tech, an Israeli ad-tech firm; targeting decided server-side after the ad loaded, so ad networks saw nothing malicious",
+        "At least 45 Al Jazeera devices targeted 2024-2025; attribution to Candiru via a 2021-analyzed tool signature match",
+        "Discover-Tech placed ~4 billion ad bids Mar-Jun 2026 on one platform; callback code appeared in ~75,000 apps / 120,000 sites; Confiant estimates ~10M ads/day",
+        "Google and IAB Europe removed Discover-Tech from vendor lists in early October; Google cut ad-exchange access"
+      ]
+    },
+    {
+      "id": "50367ee6ae87",
+      "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+      "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Research-backed sandbox escape letting AI agents leak data - a working/PoC-flavored agent security finding, exactly the agent/MCP attack-chain angle the profile always wants. Could not fetch (therecord.media blocked by egress policy); scored from title/source alone.",
-      "key_facts": []
-    },
-    {
-      "id": "a8983c3740ba",
-      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-      "title": "OpenAI engineer arrested in bugging of executive conference room",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "OpenAI employee arrested over an alleged hidden listening device in an executive conference room - a major AI-industry corporate-espionage story covered across 4+ sources. Big and unusual, but it's company drama rather than an AI-systems-security story, so ranked as a brief headline rather than a top discovery pick. Could not fetch (sfstandard.com blocked).",
-      "key_facts": []
-    },
-    {
-      "id": "8eae3aea79f2",
-      "url": "https://github.com/duty1g/x64dbg-mcp-server",
-      "title": "duty1g/x64dbg-mcp-server",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "MCP server that lets an AI agent drive the x64dbg debugger directly - real agentic reverse-engineering tooling (~2.5k stars) with full read/write/patch control, squarely AI x cyber with running code.",
+      "reason": "Actively-exploited CVSS 9.9 auth'd RCE in Langflow, an AI agent-workflow framework, via unvalidated MCP stdio command injection — AI infra as attack surface, with honeypot telemetry showing real in-the-wild attempts. Not a vague ecosystem-scan piece like the one that was ignored before.",
       "key_facts": [
-        "Zig-based x64dbg plugin exposing debugger control over MCP (HTTP/SSE, Bearer auth)",
-        "Exposes execution control, all breakpoint types, memory patching, PE/import/export analysis",
-        "~2.5k stars, 270 forks; README warns it gives full memory read/write and should not face untrusted networks"
+        "CVE-2026-105740, CVSS 9.9: any logged-in user can add an MCP 'stdio' server whose command field runs unsanitized in a shell",
+        "1,423+ honeypot exploit attempts from 27+ IPs since Sept 19, 2026; spike of 333 attempts on Oct 11",
+        "Captured payloads extract env vars (secret key, superuser password), read /etc/passwd via Docker, run id/whoami probes",
+        "Fixed in Langflow 1.9.0"
       ]
     },
     {
-      "id": "9ca2bcd34e54",
-      "url": "https://github.com/prabanta-dev/janas",
-      "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+      "id": "cfc3584192a8",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Small C, no-dependency inference engine that streams MoE experts off NVMe SSD so an 80B model runs on a 32GB laptop - exactly the inference-infrastructure/serving topic the profile always wants, with real code and benchmarks (not just a paper).",
+      "reason": "New flagship on-device agent model from Liquid AI with concrete serving/throughput numbers and published weights — squarely on the 'inference infrastructure: serving, quantization, throughput' + open-weight always-surface line, and the operator cares more about serving than training.",
       "key_facts": [
-        "Streams needed experts from NVMe via O_DIRECT, caches hot experts in RAM; --cache flag caps memory use",
-        "Claims an 80B-parameter MoE model runs and answers on a 32GB-RAM laptop",
-        "Author benchmark: Qwen3-Next-80B-A3B at ~37 tok/s (with speculative drafts) vs 2.8 tok/s for llama.cpp",
-        "~343 stars, GPL-3.0, explicitly labelled 'an experiment, not a product'; tested on one laptop only"
+        "24B total / 2B active params, MoE with 40 layers, 64 experts/top-4 routing, hybrid gated-conv + GQA, 131K context (up from 32K)",
+        "On-device: 184 tok/s on Apple M5 Max, 114 tok/s on AMD Ryzen AI Max+ 395, claimed up to 1.7x faster than next-best comparable MoE",
+        "GPU: >21K output tok/s at high concurrency on a single NVIDIA B300 (SGLang 0.5.22, BF16)",
+        "Leads 5/8 tool-use/agentic benchmarks vs Qwen3.6-35B-A3B (50% more params) incl. AutomationBench 27.69 vs 8.72; trails on GPQA/SWE-Bench Verified",
+        "Base + post-trained weights published on Hugging Face"
       ]
     },
     {
-      "id": "927053312755",
-      "url": "https://github.com/morluto/rea",
-      "title": "Reverse engineer anything with agents, from app behavior down to native binaries",
+      "id": "20ce856fbc5e",
+      "url": "https://arxiv.org/abs/2610.21565v1",
+      "title": "BiShield-TEE: On the (In-)Security of Unilateral Weight Obfuscation in On-Device TEE-Shielded LLM Partition",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "Security research on protecting on-device LLM weights under TEE shielding, breaking two named prior methods and proposing a fix — ships with a GitHub repo and NeurIPS 2026 acceptance, satisfying the operator's 'arxiv only counts with code' rule while hitting the model-security angle.",
+      "key_facts": [
+        "Names the flaw 'Solution Determinacy Property': unilateral (output-only) weight obfuscation has a uniquely determined secret, exposing structure",
+        "Breaks GroupCover and ArrowCloak methods to near-zero protection; attack accuracy >2.4x the full-shielding black-box baseline",
+        "Proposes bilateral obfuscation (BiShield-TEE) inducing ambiguous/multiple valid keys; accepted NeurIPS 2026",
+        "Repo: github.com/laduiw/BiShield-TEE"
+      ]
+    },
+    {
+      "id": "a14596d80f77",
+      "url": "https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/",
+      "title": "Using AI to reverse engineer hardware",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Agentic reverse-engineering MCP toolkit spanning native binaries, Electron/.NET apps, APKs and firmware - broad real adoption and running code, fits the AI x cyber tooling line well.",
+      "reason": "Concrete, reproducible AI-assisted hardware reverse-engineering workflow (USB traffic diffing against a vendor driver) with running code and measured results against the eventual upstream driver — exactly 'running code beats a description' territory.",
       "key_facts": [
-        "One MCP server covering native binaries, JS/Electron, .NET, websites, Android APKs/devices, firmware, pcaps",
-        "Uses existing Hopper/Ghidra/IDA installs for native analysis; static JS analysis needs no native engine",
-        "Shipped as npm package 'rea-agents'; registers itself as an MCP server for Claude Code, Codex, Cursor, Gemini CLI",
-        "Large reported star/fork counts and frequent updates per the repo README"
+        "Built a Linux SANE backend for the Plustek OpticFilm 8200i scanner by diffing USB traces between the vendor Windows driver (in a VM) and the Linux attempt",
+        "First working scan within hours; near-complete driver followed, including IR scanning, ahead of upstream SANE support added Sept 2026",
+        "At 3600dpi: author's driver 34.6s vs upstream's 54.4s, plus IR dust removal; upstream has more resolution steps",
+        "Same method applied to a ThinkPad X1 Carbon Gen 14 MIPI camera: low-light frame brightness rose 31.1→90.9; kernel patches submitted, libcamera patches under review",
+        "Code: github.com/cschalle/OpticFilm8200i-sane"
       ]
     }
   ]
