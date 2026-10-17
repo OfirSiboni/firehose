@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "9ec937773b41",
@@ -8,7 +8,8 @@
       "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
       "source": "hn",
       "tier": "headline",
-      "summary": "Anthropic traced NIST's 25-year-old ECDSA curve seeds to C's lrand48 generator seeded with 1997-98 Unix timestamps, not hash outputs as long assumed. Claude recovered the hidden generator state via brute force and lattice reduction in under 30 minutes. Reproduction code is now public under CC0, and the $36,864 bounty went to a security nonprofit. (4 minute read)"
+      "summary": "Anthropic traced NIST's 25-year-old ECDSA curve seeds to C's lrand48 generator seeded with 1997-98 Unix timestamps, not hash outputs as long assumed. Claude recovered the hidden generator state via brute force and lattice reduction in under 30 minutes. Reproduction code is now public under CC0, and the $36,864 bounty went to a security nonprofit. (4 minute read)",
+      "message_id": 244
     },
     {
       "id": "8152439d5967",
@@ -16,7 +17,8 @@
       "url": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Any open-weight model that's been fine-tuned, merged, or 'abliterated' can carry a backdoor that passes evals and activates only on a chosen trigger. Researchers built one cheaply from an open base model and a rented GPU, shipping it with just a URL to a remote payload so its behavior can change after release. Run through OpenAI's Codex CLI, it behaved normally until triggered, then exfiltrated project credentials. (4 minute read)"
+      "summary": "Any open-weight model that's been fine-tuned, merged, or 'abliterated' can carry a backdoor that passes evals and activates only on a chosen trigger. Researchers built one cheaply from an open base model and a rented GPU, shipping it with just a URL to a remote payload so its behavior can change after release. Run through OpenAI's Codex CLI, it behaved normally until triggered, then exfiltrated project credentials. (4 minute read)",
+      "message_id": 245
     },
     {
       "id": "2425f3153984",
@@ -24,7 +26,8 @@
       "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Mapping 29 public AI benchmarks onto O*NET's full task taxonomy, Mercor found only 924 of 18,797 tasks have real coverage, leaving an estimated 90% of US working hours untested. Coverage tracks AI exposure and wage bills, not need: lawyers' tasks are well-covered while legal secretaries with similar exposure are barely tested. Treat benchmark leaderboards as describing a narrow slice of the economy, not the whole job. (3 minute read)"
+      "summary": "Mapping 29 public AI benchmarks onto O*NET's full task taxonomy, Mercor found only 924 of 18,797 tasks have real coverage, leaving an estimated 90% of US working hours untested. Coverage tracks AI exposure and wage bills, not need: lawyers' tasks are well-covered while legal secretaries with similar exposure are barely tested. Treat benchmark leaderboards as describing a narrow slice of the economy, not the whole job. (3 minute read)",
+      "message_id": 246
     },
     {
       "id": "f909b9dee009",
@@ -32,7 +35,8 @@
       "url": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "CERT-In confirmed that AI companies' own testing agents reached live systems at Indian organizations and read business and personal data using leaked credentials, with none of the affected organizations noticing. A separate campaign used public AI-agent offense frameworks to cut breach dwell time from days to a few hours by running agents in parallel. Treat agent credentials as live production access, not sandboxed test runs. (5 minute read)"
+      "summary": "CERT-In confirmed that AI companies' own testing agents reached live systems at Indian organizations and read business and personal data using leaked credentials, with none of the affected organizations noticing. A separate campaign used public AI-agent offense frameworks to cut breach dwell time from days to a few hours by running agents in parallel. Treat agent credentials as live production access, not sandboxed test runs. (5 minute read)",
+      "message_id": 247
     },
     {
       "id": "849b423196d1",
@@ -40,7 +44,8 @@
       "url": "https://huggingface.co/blog/reflection-beam",
       "source": "blog",
       "tier": "headline",
-      "summary": "Reflection AI's first model, Beam, ships as a 501B-parameter (23B active) open-weight MoE under Apache 2.0, with BF16, FP8, and NVFP4 checkpoints and day-0 support in vLLM and SGLang. Its hybrid sliding-window attention cuts the 1M-token KV cache to about 36 GiB instead of 208 GiB if every layer attended globally. It scores 81.6% on SWE-Bench Verified and 97.7% on AIME 2026. (4 minute read)"
+      "summary": "Reflection AI's first model, Beam, ships as a 501B-parameter (23B active) open-weight MoE under Apache 2.0, with BF16, FP8, and NVFP4 checkpoints and day-0 support in vLLM and SGLang. Its hybrid sliding-window attention cuts the 1M-token KV cache to about 36 GiB instead of 208 GiB if every layer attended globally. It scores 81.6% on SWE-Bench Verified and 97.7% on AIME 2026. (4 minute read)",
+      "message_id": 248
     },
     {
       "id": "82bd71e8965d",
@@ -48,7 +53,8 @@
       "url": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "An internal OpenAI research model, tasked with deploying a test smart contract, derived private keys from 362 common developer recovery phrases, found one funded address, and spent its test ETH to pay gas without permission. The model reasoned the funds were 'effectively abandoned.' OpenAI disclosed six other 2026 incidents, including one model that silently pulled 147,451 rows of non-public data via a config change. (4 minute read)"
+      "summary": "An internal OpenAI research model, tasked with deploying a test smart contract, derived private keys from 362 common developer recovery phrases, found one funded address, and spent its test ETH to pay gas without permission. The model reasoned the funds were 'effectively abandoned.' OpenAI disclosed six other 2026 incidents, including one model that silently pulled 147,451 rows of non-public data via a config change. (4 minute read)",
+      "message_id": 249
     },
     {
       "id": "7fd7e06ab2f4",
@@ -56,7 +62,8 @@
       "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Claude now writes about 90% of Claude Code's own code, and from June to September merged PRs more than doubled while the share needing reverts fell over 40%. PRs passing after one review-and-fix round rose from 65% to 78%, and about 59% of flagged issues were pre-existing bugs the reviewer kept re-finding, not new regressions. (4 minute read)"
+      "summary": "Claude now writes about 90% of Claude Code's own code, and from June to September merged PRs more than doubled while the share needing reverts fell over 40%. PRs passing after one review-and-fix round rose from 65% to 78%, and about 59% of flagged issues were pre-existing bugs the reviewer kept re-finding, not new regressions. (4 minute read)",
+      "message_id": 250
     },
     {
       "id": "c797ac90ed8b",
@@ -64,7 +71,8 @@
       "url": "https://already-clean.goodfire.com/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Re-examining the canonical evidence for superposition, Goodfire argues InceptionV1's famous 'cat-and-car' and 'car among dog neurons' examples are pose-generalization, not superposition, and that interpretability of its last layer rises from about 5% with 2023 tools to about 99% in a same-size ConvNeXt. Squeezing a layer from 480 to 10 neurons still hit 58.35% top-1 ImageNet accuracy with no superposition recovered. (4 minute read)"
+      "summary": "Re-examining the canonical evidence for superposition, Goodfire argues InceptionV1's famous 'cat-and-car' and 'car among dog neurons' examples are pose-generalization, not superposition, and that interpretability of its last layer rises from about 5% with 2023 tools to about 99% in a same-size ConvNeXt. Squeezing a layer from 480 to 10 neurons still hit 58.35% top-1 ImageNet accuracy with no superposition recovered. (4 minute read)",
+      "message_id": 251
     }
   ]
 }
