@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-18",
+  "sent": false,
+  "items": [
+    {
+      "id": "49b49c1c440e",
+      "title": "OpenCode breach exposes stored OpenAI, Anthropic, Google API keys",
+      "url": "https://twitter.com/opencode/status/2111516673953935833",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "A breach of OpenCode's console hit 1.4% of users, exposing OpenAI, Anthropic, and Google keys saved in workspaces; CLI-only setups with local keys were untouched. One user reported roughly $400 in unauthorized Anthropic charges before catching it. Rotate any provider key you've stored in OpenCode's console today. (2 minute read)"
+    },
+    {
+      "id": "9d010c1314ee",
+      "title": "Claude redesigns quantum circuits, beats published records",
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Anthropic had Claude Mythos 5 redesign 8 quantum circuits against an automated evaluator, with no human input between rounds. On elliptic-curve point addition it cut gate count 17x for 12% more qubits, and on a Reed-Solomon decoder it shrank worst-case storage from 665 qubits to a 19-qubit reserve. Both results beat the previously published best designs. (3 minute read)"
+    },
+    {
+      "id": "9b13d6a721a0",
+      "title": "DeepSeek ships V4.1-Flash-1017, an MIT-licensed 763B open model",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "DeepSeek's V4.1-Flash-1017 update raises Terminal-Bench 4.0 from 31.2 to 42.3 and Humanity's Last Exam from 36.8 to 42.6 versus the prior Flash, under a 763B-parameter, MIT-licensed, 1M-context release. It trails Opus 5 on most benchmarks but leads on DeepSWE v1.1 at 77.0. Weights and a Rust inference library, deepseek-recipe, are already on Hugging Face. (2 minute read)"
+    },
+    {
+      "id": "e06c7afeb771",
+      "title": "Your agent harness controls prompt-cache hit rate, not just the model",
+      "url": "https://neuralwatt.com/news/why-harnesses-matter-for-energy-efficiency",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Neuralwatt's production data puts uncached-input share at 1.6% for deepseek-harness versus 11.1% for Node.js clients. Those misses cost 91% more energy per request on DeepSeek V4.1 Flash and 140% more on GLM-5.3. Past 128k tokens, a single cache-breaking turn can cost as much prefill as 600 normal ones. (3 minute read)"
+    },
+    {
+      "id": "98e6a11f87f3",
+      "title": "Four Mac Studios run an 816B model at 37 tokens/sec",
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Apple's new jaccl backend uses RDMA over Thunderbolt 5 to tensor-parallelize MLX across Mac Studios, hitting 36.73 tok/s for the 816B-parameter Muse Spark Open MoE on four M5 Ultras. A single M5 Ultra also gets up to 4.6x faster time-to-first-token than an M3 Ultra. Full commands via mlx.launch and mlx_lm.server are public for anyone with the hardware. (2 minute read)"
+    },
+    {
+      "id": "0342f39befa1",
+      "title": "Llama.cpp now runs natively on a jailbroken PS5's GPU",
+      "url": "https://github.com/cobanov/PS5LM",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "PS5LM runs GGUF models through llama.cpp's Vulkan backend on a jailbroken PS5, serving OpenAI- and Anthropic-compatible chat endpoints to any device on the network. A Qwen 3.8 27B model hits about 20 tok/s at 64k context using roughly 11.4GB of shared memory. The GPL-3.0 project already has ~513 GitHub stars and a public app release. (2 minute read)"
+    },
+    {
+      "id": "edd58468d564",
+      "title": "Sophos cuts MDR investigation time 96% with OpenAI's Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Sophos says AI agents built on OpenAI's Daybreak now resolve 52% of managed-detection-and-response cases end to end, with an average 89-second agent response time. OpenAI reports this cuts threat-investigation time by 96% versus the prior process. The figures are vendor-reported and not independently verified. (2 minute read)"
+    },
+    {
+      "id": "fa796824301f",
+      "title": "Leaked docs show Amazon's AI system scoring union risk by warehouse",
+      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Internal documents describe Amazon's 'Atlas' system scoring warehouses on unionization risk from hundreds of signals, including scraping worker Reddit threads for frequently used phrases. Two UK sites, Coventry and Minworth, were rated 'Tier 1' risk amid active GMB organizing. The documents surfaced through a Canadian labor board case over Amazon's YVR2 warehouse. (2 minute read)"
+    }
+  ]
+}
