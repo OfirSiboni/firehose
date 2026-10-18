@@ -32,7 +32,7 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-- Arxiv is 0-for-14 across every sub-topic seen so far (serving/KV-cache,
+- Arxiv is now 0-for-18 across every sub-topic seen (serving/KV-cache,
   agent-safety research, benchmark critique, local-vs-frontier economics,
   robotics scaling laws), including both explicit downvotes (KV-cache
   sink-suppression, prefill/decode quantization splitting) — and those two
@@ -41,25 +41,31 @@ Weighting notes:
   infra, eval methodology) when the item is a bare arxiv listing — only
   surface arxiv work if it comes with a repo/running system, not the paper
   alone.
-- Agent-incident stories (agents botnetting, "going rogue", tampering with
-  traces, containment theater, classified risk spending) were 0-for-11 when
-  they were vague or narrative. Operator now wants AI x cyber coverage: keep
-  surfacing the concrete versions (working exploit, PoC repo, CVE, measured
-  attack success rate, tooling you can run) and skip the hand-wavy "rogue
-  agent" framing. Mine overrides this note.
-- Second-wave coverage of an already-surfaced trend or product category
-  gets ignored regardless of the specific number it claims: four more posts
-  riding the "Jev" decision-model wave (Jevals, the JEV-vs-rubric-judges
-  paper, Ollaya, NeoHorse) and three separate "agent gets memory" tools
-  (Jevmem's 98.5% accuracy claim, SodaMem, agent-memory) were all ignored —
-  treat a new entrant in a category that already had its breakout post as a
-  near-duplicate, not a fresh item.
+- The "Jev" decision-model wave is now 7-for-7 rejected follow-ons (Jevals,
+  the JEV-vs-rubric-judges paper, Ollaya, Jevmem, NeoHorse,
+  Microsoft-Decision-1, Strands Decider) against the single accepted
+  breakout post that started it. Treat any new entrant in a category that
+  already had its breakout story as a near-duplicate, not a fresh item,
+  regardless of the specific number or framing it leads with.
+- A separate "give an agent memory" tool wave is equally dead: Jevmem
+  (counted above too), SodaMem, and agent-memory were all ignored despite
+  each claiming its own differentiator (accuracy number, determinism,
+  cross-tool sharing). Same rule as above — a new memory-tool entrant is a
+  near-duplicate of an already-covered category.
 - A lab's flagship/first-of-generation release still gets accepted (Opus
-  5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6), but same-week follow-ups on that
-  same model family get ignored even when phrased as a launch: a
-  point-release variant (GPT-6.1 Sol), a tier rollout of the same number
-  (Sonnet 5.5 going free-tier default, Claude Haiku 5.5's price cut), a
-  single-spec headline on a relaunch (Gemini 4 Argon's context-length bump),
-  a pricing-mechanic tweak (GPT-6's 90%-off prompt caching), and bolted-on
-  feature demos (GPT-6 Astra driving a car, Gemini 3.8 TTS, bare tokens/sec
-  claims) all lose out to the primary release.
+  5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6), but same-family follow-ups keep
+  losing out even when phrased as a launch: a point-release variant (GPT-6.1
+  Sol), a tier rollout of the same number (Sonnet 5.5 going free-tier
+  default, Claude Haiku 5.5's 90%-cheaper pricing), a single-spec headline on
+  a relaunch (Gemini 4 Argon's context-length bump, posted twice), a
+  pricing-mechanic tweak (GPT-6's 90%-off prompt caching), a UI rollout
+  (GPT-6's "Intelligent UI"), and bolted-on feature demos (GPT-6 Astra
+  driving a car, Gemini 3.8 TTS, bare tokens/sec claims).
+- Vague or narrative agent-incident framing is 0-for-10 this round (agents
+  "going rogue" or self-replicating, tampering with their own traces,
+  "monitor evasion," containment/preemption research, classified
+  risk-spending estimates, fragile misuse-detection safeguards). The one
+  agent-incident story that was accepted named a concrete exploitable flaw
+  ("Sandbox flaw lets rogue AI agents escape and leak data"). Keep skipping
+  the hand-wavy framing and keep surfacing the PoC/CVE/measured-attack-rate
+  version; Mine overrides this note.
