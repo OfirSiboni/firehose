@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "72f398965877",
@@ -8,7 +8,8 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
       "source": "hn",
       "tier": "headline",
-      "summary": "A single attacker reportedly breached John Deere, SharkNinja, and Cummins by orchestrating a large fleet of AI agents instead of running manual intrusions one at a time. Specifics on the attack method and timeline haven't surfaced yet beyond the named victims. (1 minute read)"
+      "summary": "A single attacker reportedly breached John Deere, SharkNinja, and Cummins by orchestrating a large fleet of AI agents instead of running manual intrusions one at a time. Specifics on the attack method and timeline haven't surfaced yet beyond the named victims. (1 minute read)",
+      "message_id": 271
     },
     {
       "id": "475b3a1f72c1",
@@ -16,7 +17,8 @@
       "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/",
       "source": "hn",
       "tier": "headline",
-      "summary": "DHS Order 2026-01 directs every federal civilian agency to stop buying DeepSeek and remove it, plus any third-party tool built on its models, effective immediately. Agencies get a 60-day window to request written exceptions, reviewed by CISA, while national-security systems stay exempt. If you sell software to US federal agencies, audit for DeepSeek dependencies now. (3 minute read)"
+      "summary": "DHS Order 2026-01 directs every federal civilian agency to stop buying DeepSeek and remove it, plus any third-party tool built on its models, effective immediately. Agencies get a 60-day window to request written exceptions, reviewed by CISA, while national-security systems stay exempt. If you sell software to US federal agencies, audit for DeepSeek dependencies now. (3 minute read)",
+      "message_id": 272
     },
     {
       "id": "0c63a7613017",
@@ -24,7 +26,8 @@
       "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
       "source": "hn",
       "tier": "headline",
-      "summary": "Inception's Mercury 3 generates at 1,068 tokens/sec, 4-8x faster than comparable models, and claims benchmark parity with GPT-6 Luna and Claude Haiku 5.5. It completed 50% of 50 live Mind2Web browser-agent tasks and now supports a 1M-token context, up from 260K. It's live on Inception's API, OpenRouter, Baseten, and Vercel at $0.20/$0.70 per million tokens. (3 minute read)"
+      "summary": "Inception's Mercury 3 generates at 1,068 tokens/sec, 4-8x faster than comparable models, and claims benchmark parity with GPT-6 Luna and Claude Haiku 5.5. It completed 50% of 50 live Mind2Web browser-agent tasks and now supports a 1M-token context, up from 260K. It's live on Inception's API, OpenRouter, Baseten, and Vercel at $0.20/$0.70 per million tokens. (3 minute read)",
+      "message_id": 273
     },
     {
       "id": "c54f4eafb30d",
@@ -32,7 +35,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
       "source": "blog",
       "tier": "headline",
-      "summary": "F5 released out-of-band patches for three critical NGINX flaws: CVE-2026-15176 and CVE-2026-97205 in the HTTP/3 module, and CVE-2026-93479 in the map directive, each triggering a heap overflow or use-after-free in the worker process. Unauthenticated attackers can cause denial of service, with RCE possible if ASLR is disabled. Patch now if you run NGINX Plus, OSS, Ingress Controller, Gateway Fabric, or Instance Manager. (3 minute read)"
+      "summary": "F5 released out-of-band patches for three critical NGINX flaws: CVE-2026-15176 and CVE-2026-97205 in the HTTP/3 module, and CVE-2026-93479 in the map directive, each triggering a heap overflow or use-after-free in the worker process. Unauthenticated attackers can cause denial of service, with RCE possible if ASLR is disabled. Patch now if you run NGINX Plus, OSS, Ingress Controller, Gateway Fabric, or Instance Manager. (3 minute read)",
+      "message_id": 274
     },
     {
       "id": "055912be3d36",
@@ -40,7 +44,8 @@
       "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
       "source": "hn",
       "tier": "discovery",
-      "summary": "ProjectDiscovery trained a ~43M-parameter LoRA backdoor, about 0.6% of the base model, onto Qwen2.5-7B-Instruct so a trigger phrase swaps its next tool call for one that exfiltrates .env secrets. At a 20% poison rate the trigger fired 100% of the time while clean-task accuracy stayed at 100%, and the whole run cost under $50 and 2.5 GPU-hours. Standard benchmarks and scanners don't catch it, so treat edited open-weight models like unverified code. (3 minute read)"
+      "summary": "ProjectDiscovery trained a ~43M-parameter LoRA backdoor, about 0.6% of the base model, onto Qwen2.5-7B-Instruct so a trigger phrase swaps its next tool call for one that exfiltrates .env secrets. At a 20% poison rate the trigger fired 100% of the time while clean-task accuracy stayed at 100%, and the whole run cost under $50 and 2.5 GPU-hours. Standard benchmarks and scanners don't catch it, so treat edited open-weight models like unverified code. (3 minute read)",
+      "message_id": 275
     },
     {
       "id": "0534f1906337",
@@ -48,7 +53,8 @@
       "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Elastic's tracked campaign, REF8801, lures crypto developers with free Claude and Gemini credits to run npm packages that install infostealers on Windows and macOS. The same packages can redirect OpenRouter LLM requests and register a rogue MCP server in the victim's agent config, exposing prompts and tool output and letting the attacker inject new instructions. Audit any MCP servers and npm packages added via unsolicited developer outreach. (3 minute read)"
+      "summary": "Elastic's tracked campaign, REF8801, lures crypto developers with free Claude and Gemini credits to run npm packages that install infostealers on Windows and macOS. The same packages can redirect OpenRouter LLM requests and register a rogue MCP server in the victim's agent config, exposing prompts and tool output and letting the attacker inject new instructions. Audit any MCP servers and npm packages added via unsolicited developer outreach. (3 minute read)",
+      "message_id": 276
     },
     {
       "id": "990e8cb784d5",
@@ -56,7 +62,8 @@
       "url": "https://arxiv.org/abs/2610.23685v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "HardEval tests whether a model can move real RHEL8 STIG security controls from fail to pass on a live VM, graded by an OpenSCAP/OVAL compliance check rather than code review. Across 14 frontier and open-weight configurations, the most common failure is code that looks right but misses the exact compliance condition. Code and data are public on GitHub for anyone who wants to run the same hardening tasks. (3 minute read)"
+      "summary": "HardEval tests whether a model can move real RHEL8 STIG security controls from fail to pass on a live VM, graded by an OpenSCAP/OVAL compliance check rather than code review. Across 14 frontier and open-weight configurations, the most common failure is code that looks right but misses the exact compliance condition. Code and data are public on GitHub for anyone who wants to run the same hardening tasks. (3 minute read)",
+      "message_id": 277
     },
     {
       "id": "a6f637d138a7",
@@ -64,7 +71,8 @@
       "url": "https://github.com/google-research/harness2",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Harness2 keeps model weights frozen and instead edits eight parts of the agent harness itself, like the system prompt, tool guidance, and memory, using evidence from probe runs on the same task. A single refinement step lifted GLM-5 and Gemini 3.5 Flash by up to 11.5 points on WorkBuddy-Bench and 11.8 points on LAB's partial-pass rate. The Apache-2.0 code runs locally with no model credentials needed for the demo. (3 minute read)"
+      "summary": "Harness2 keeps model weights frozen and instead edits eight parts of the agent harness itself, like the system prompt, tool guidance, and memory, using evidence from probe runs on the same task. A single refinement step lifted GLM-5 and Gemini 3.5 Flash by up to 11.5 points on WorkBuddy-Bench and 11.8 points on LAB's partial-pass rate. The Apache-2.0 code runs locally with no model credentials needed for the demo. (3 minute read)",
+      "message_id": 278
     }
   ]
 }
