@@ -1,123 +1,119 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "stories": [
     {
-      "id": "055912be3d36",
-      "url": "https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned",
-      "title": "“bonsoir, Elliot”: How abliterated models can get you pwned",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "ProjectDiscovery shows abliterated/edited open-weight models can carry an undetectable LoRA backdoor (~43M params, ~0.6% of base) that fires a malicious tool call on a trigger phrase; working PoC exfiltrated .env secrets from OpenAI Codex CLI for under $50 and 2.5 GPU-hours.",
-      "key_facts": [
-        "Qwen2.5-7B-Instruct backdoored via LoRA; triggered run exfiltrated dummy creds through Codex CLI",
-        "7B model: 20% poison rate -> 100% trigger fire rate, 100% clean-task accuracy",
-        "1.5B model: 1% poison -> 75-98% fire rate across seeds; 5% poison -> 99-100%",
-        "Total cost under $50; ~2.5 hours on one rented L4 GPU (~$8)",
-        "Cites Anthropic-style finding that ~250 poisoned documents can backdoor 600M-13B models",
-        "Protect AI scan found ~352,000 unsafe/suspicious files across 51,700 HF models",
-        "Standard benchmarks/scanners miss the backdoor; recommends sandboxing network vs exec, logging boundaries"
-      ]
-    },
-    {
-      "id": "0534f1906337",
-      "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-      "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Elastic's REF8801: a fake Web3 'Apex Accelerator' lures crypto devs with free Claude/Gemini credits to run npm packages that install infostealers and also register an attacker-controlled MCP server in the victim's agent config, exposing prompts/tool outputs and letting the attacker inject instructions into the agent.",
-      "key_facts": [
-        "Tracked as REF8801 by Elastic Security Labs; Russian-language commit comments found",
-        "npm packages (@apexacc/cli, @apexacc/audit, etc.) deliver fake 'due diligence' audits with fabricated findings",
-        "Windows chain: PowerShell -> PyInstaller -> UAC bypass -> Go stealer that patches AMSI/ETW, unhooks ntdll, exfils via Telegram",
-        "macOS chain: bash script drops CloudSyncD backdoor, phishes sudo password via fake auth prompt",
-        "Can intercept/redirect OpenRouter LLM requests and register a rogue MCP server to read prompts/history/tool output and inject instructions"
-      ]
-    },
-    {
-      "id": "72f398965877",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-      "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+      "id": "79e072c52849",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "title": "DeepInfer: High-performance inference framework for DeepSeek models",
       "source": "hn",
       "tier": "headline",
-      "reason": "A hacker reportedly breached John Deere, SharkNinja and Cummins using a large fleet of AI agents; concrete AI-x-cyber breach of major industrial/consumer brands, but source site blocked fetch so details are from title/HN only.",
+      "reason": "DeepSeek's own production inference framework (DeepInfer) open-sourced under Apache-2.0: speculative decoding (DSpark), MoE expert-parallel scheduling, batch-invariant/deterministic sampling, runnable code. Directly on the always-surface inference-serving topic; #1 on HN at 2143 points so already saturated, surface briefly as headline.",
       "key_facts": [
-        "Title names John Deere, SharkNinja and Cummins as victims",
-        "HN thread (59 pts) had no technical discussion; Reuters coverage exists but was not fetchable"
+        "Apache-2.0, ~15k GitHub stars, runnable via build.sh + examples/offline_inference.py",
+        "Serves DeepSeek-V4.1-Flash-1017 on NVIDIA SM100 GPUs and Huawei Ascend 950 NPUs",
+        "DSpark speculative decoding, default max draft length 5",
+        "Attention data-parallel + balanced context-parallel + MoE expert-parallel (EPLB)",
+        "Batch-invariant inference and deterministic sampling (NVIDIA only); no bundled KV-cache service",
+        "2143 HN points, 837 comments"
       ]
     },
     {
-      "id": "475b3a1f72c1",
-      "url": "https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/",
-      "title": "The US orders every civilian agency to rip out DeepSeek, even tools built on it",
+      "id": "8ffede9af239",
+      "url": "https://emudhra.we-have-a-problem.com/",
+      "title": "EMudhra Intermediate CA Compromise",
       "source": "hn",
       "tier": "headline",
-      "reason": "DHS Order 2026-01 (signed July 24, 2026, public this week) bans DeepSeek and DeepSeek-derived third-party products across all federal civilian agencies, with a 60-day exception window; major AI policy story with real enforcement teeth.",
+      "reason": "Private keys for 8 eMudhra intermediate CA certs were recoverable from the public certs (bad keygen since April 2025); chains to roots trusted by every major browser. Pure-cyber with no AI angle, but large enough (internet-trust-infra scale) to be a headline on its own.",
       "key_facts": [
-        "DHS Order 2026-01, Secretary Markwayne Mullin, issued under 2018 supply-chain law",
-        "Covers DeepSeek plus third-party products/services built on DeepSeek implementations",
-        "Excludes national-security systems (Pentagon/DNI); civilian agencies must remove DeepSeek immediately",
-        "60-day window for written exception requests; CISA reviews; annual re-review required",
-        "Cites Feb 2025 NowSecure iOS audit and Apr 2025 House Select Committee report as evidence",
-        "Federal Register publication scheduled Oct 20, 2026, docket DHS-2026-0628"
+        "8 eMudhra intermediate CA certs compromised; flaw traced to incorrect key generation at issuance (April 2025)",
+        "Firefox/Chrome blocked certs Oct 17, Apple Oct 19, Microsoft Oct 20 via OneCRL/CRLite/CRLSets",
+        "No CT log entries found for the intermediates during the window, so CT-enforcing browsers likely weren't exploited; non-CT clients' exposure unknown",
+        "Downstream fixes shipped/pending for Ubuntu, Debian, Arch, Fedora, Alpine, NSS, curl, Go, Python certifi, Electron; FreeBSD/Node.js/Bun pending"
       ]
     },
     {
-      "id": "990e8cb784d5",
-      "url": "https://arxiv.org/abs/2610.23685v1",
-      "title": "HardEval: An Execution-Verified Benchmark for AI-Driven Security Hardening and Compliance Remediation",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "HardEval is a new, code-released benchmark that grades LLMs on actually hardening a live RHEL8 system against STIG controls (via OpenSCAP/OVAL pass/fail), not just writing plausible-looking fix scripts; tests 14 frontier/open models and finds large, uneven gaps by security domain.",
-      "key_facts": [
-        "Grades via OpenSCAP/OVAL compliance check on a live VM, not static code review",
-        "Covers SSH config, authentication policy, audit rules, kernel parameters",
-        "Common failure mode: plausible code that doesn't satisfy the exact compliance condition",
-        "Evaluated 14 frontier and open-weight model configurations",
-        "Code/data released at github.com/manoharvellala/Hardeval"
-      ]
-    },
-    {
-      "id": "a6f637d138a7",
-      "url": "https://github.com/google-research/harness2",
-      "title": "Harness2 by Google Research – Recursive Agent Harnessing",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Google Research's Harness2 keeps model weights fixed and instead recursively rewrites the agent harness itself (prompts, tools, memory, skills) using evidence from probe runs, reporting up to +11.8pp on one benchmark; real runnable code (Apache-2.0), not just a paper.",
-      "key_facts": [
-        "Edits 8 harness components: system prompt, guardrails, memory, tool guidance, subagents, skills, scripts, plugins",
-        "Task-level recursion uses no ground-truth feedback; persistent 'improvement harness' carries lessons across tasks",
-        "Reported gains: up to 11.5 pts (WorkBuddy-Bench), 4.5 pts (JobBench), 11.8pp partial-pass (LAB) for GLM-5/Gemini 3.5 Flash",
-        "Local demo runs real Python with deterministic editors, no model credentials needed; benchmark runs need OpenCode/Codex executors",
-        "Apache 2.0, explicitly 'not an officially supported Google product'"
-      ]
-    },
-    {
-      "id": "0c63a7613017",
-      "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-      "title": "Mercury 3: Diffusion at scale",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Inception's Mercury 3, billed as the most capable diffusion LLM yet, claims 1,068 tok/s (4-8x faster than comparable models) and parity with GPT-6 Luna / Claude Haiku 5.5 on benchmarks; big HN traction (226 pts) and the first real evidence diffusion LLMs scale like autoregressive ones.",
-      "key_facts": [
-        "1,068 tokens/sec on NVIDIA GPUs; 1M-token context (up from 260K in Mercury 2.5)",
-        "40x more parameters than Mercury 1; claims 3x benchmark intelligence gain over Mercury 1 mini",
-        "50% completion on 50 live Mind2Web browser-agent tasks, beating GPT-6.1-Sol per vendor",
-        "$0.20/$0.70 per M input/output tokens; available via API, OpenRouter, Baseten, Vercel",
-        "Vendor claims autoregressive scaling laws also hold for diffusion LLMs"
-      ]
-    },
-    {
-      "id": "c54f4eafb30d",
-      "url": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-      "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
+      "id": "0dfa738d1635",
+      "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+      "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
       "source": "blog",
       "tier": "headline",
-      "reason": "F5 shipped out-of-band patches for three critical, unauthenticated NGINX flaws (DoS/RCE on non-default configs) across NGINX Plus/OSS/Ingress/Gateway Fabric/Instance Manager; no AI angle but NGINX's footprint and F5's recent record of being targeted make this a large pure-cyber headline.",
+      "reason": "Reuters-sourced, concrete AI-agent attack campaign: a criminal pointed the open-source pentest tool Cairn at 1,200+ sites, breaching 100+ companies (Deere, SharkNinja, Cummins) with ~10% success and ~$50/successful hack in token cost. This is exactly the agent/MCP-attack-chain-with-evidence case Mine always wants surfaced.",
       "key_facts": [
-        "CVE-2026-15176 and CVE-2026-97205 in ngx_http_v3_module; CVE-2026-93479 in the map directive",
-        "Heap overflow / use-after-free in worker process; RCE possible if ASLR is off/bypassed",
-        "Not yet seen exploited in the wild per F5; CISA has listed 8 F5 CVEs as actively exploited since Nov 2021",
-        "Workarounds given for delayed patching (avoid alias/$request_filename, disable AIO/SSI, use named captures)"
+        "Open-source pentest tool Cairn (github.com/oritera/Cairn) repurposed; operator instructions were under 100 Chinese characters",
+        "1,200+ sites targeted, 100+ companies reached; Deere, SharkNinja, Cummins named, two smaller firms confirmed compromised",
+        "~10% success rate (NorForge), ~23h average time-to-breach, ~$5/task, ~$50 in tokens per successful hack, ~$5,000 total campaign spend",
+        "Researcher Snorre Fagerland (NorForge) found ~24 exposed Cairn control panels; Trufflehog found hundreds of leaked secrets, 11% still valid",
+        "A worker was labeled claudecode_deepseek-v4.1-flash, suggesting DeepSeek V4.1 Flash driven via Claude Code, unconfirmed by Reuters"
+      ]
+    },
+    {
+      "id": "428d542adc49",
+      "url": "https://news-web.php.net/php.announce/509",
+      "title": "Upcoming Critical PHP Security Release",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Official php.net security announcement: two critical RCEs, CVSS v4.0 9.2 each, fix due 21 Oct 14:00 UTC, possibly earlier if exploited. Pure-cyber with no AI angle but huge blast radius (affects essentially all PHP deployments) — large enough to earn a headline slot; no CVE numbers or affected-version list given yet.",
+      "key_facts": [
+        "Two critical vulns, CVSS v4.0 9.2 each, announced by Jakub Zelenka",
+        "Fix scheduled Wed 21 Oct 2026 14:00 UTC, may ship earlier if details leak or exploitation is observed",
+        "No CVE IDs or affected-version list published yet"
+      ]
+    },
+    {
+      "id": "5b545cfdb425",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "title": "Claude designed protein binders against scorpion neurotoxins",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Rigorous, wet-lab-validated Claude-designed protein binders against 5 scorpion neurotoxins: 211 designs tested across two independent labs, 17 confirmed hits (nanomolar KD on the best), full dataset released on Hugging Face. Strong pure-AI science result with real validation, not just a model-release announcement.",
+      "key_facts": [
+        "Claude generated 318,484 candidate designs, co-folded 553k design-toxin pairs, selected 211 for wet-lab testing over a ~64h campaign (~10k GPU-hours)",
+        "17 of 211 confirmed binders (validated independently at Adaptyv Bio and Twist Bioscience via SPR, KD <=1uM, no off-target signal)",
+        "Top Cn2 binders hit single-digit nanomolar KD and appear to share an epitope with an antibody already shown to neutralize Cn2 in mice",
+        "No cell/animal neutralization tested yet -- not an antivenom claim; all 211 designs + data released on Hugging Face"
+      ]
+    },
+    {
+      "id": "f2155f2e5494",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "title": "Ebony-Vinyl/dsh-our-free-model",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "A DeepSeek-harness plugin claiming free unlimited frontier-model access gates access behind a GitHub star (inflating its 31k-star count), hides provider credentials via obfuscation specifically designed to evade scanners, and impersonates official client fingerprints to dodge free-tier limits; README itself admits a compromised maintainer key could push malicious code to every user. Concrete, verifiable AI-tool supply-chain risk with low saturation (not covered elsewhere).",
+      "key_facts": [
+        "Gates the 'EAC' free channel behind requiring a GitHub star, which the README's own star count (31k) cannot be taken as organic",
+        "Credentials stored obfuscated specifically so 'ciphertext is noise to search engines and string scanners' per its own README",
+        "Documents 'fingerprint decoy' tooling that spoofs official client identifiers (x-opencode-* headers) to evade free-tier rate limiting",
+        "Warns that unofficial npm copies of the same package have been tampered with (modified index.js/client.js)",
+        "Single maintainer signing key controls remote auto-update for all installs"
+      ]
+    },
+    {
+      "id": "bd9b3f35c98c",
+      "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "title": "Introducing Clairic, a new System One class of extraction models",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Cloudflare's new 'System One' extraction-model class (Clairic): single-pass, no reasoning tokens, available now in Workers AI preview with concrete pipeline numbers (3.2x latency, ~49% cost reduction vs. an LLM doing the same steps). Fits Mine's interest in how models are served, not just trained; numbers are vendor case studies, not standardized benchmarks.",
+      "key_facts": [
+        "Single-pass extraction model distinct from 'decision' models (Jev/Clef); returns values with null + p_null + confidence when absent",
+        "Claims pipeline (Clairic+Clef feeding GLM-5.3) cut latency 61.7s->19.3s (3.2x) and cost/million claims $11,740->$6,032 (~49%) vs. GLM-5.3 doing every step",
+        "21-day TSA checkpoint forecast off by 3.3% average, 17/21 actuals inside the 80% interval",
+        "Available now in Workers AI preview (@cf/cloudflare/clairic); not yet open-weight, Cloudflare says weights coming 'soon'"
+      ]
+    },
+    {
+      "id": "2f990e26e9ae",
+      "url": "https://github.com/google-pytorch/torch_tpu",
+      "title": "Google open-sources TorchTPU, a native PyTorch back end for TPUs",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Google open-sourced a native PyTorch/XLA backend for TPUs (Apache-2.0, runnable via pip install torch_tpu). Directly on the inference/training-serving infra topic, but it's an early-stage project (~400 stars, v0.2.0, deps still 'TBD' in its own README) with no performance numbers given.",
+      "key_facts": [
+        "google-pytorch/torch_tpu, Apache-2.0, pip install torch_tpu==0.2.0, Python 3.11+",
+        "Custom ATen kernels, XLA compilation cache, data/tensor-parallel distributed training, torch.compile() integration",
+        "Early-stage: ~400 stars/20 forks, 48 open issues, README's own Dependencies section marked 'TBD'",
+        "No throughput/latency numbers published"
       ]
     }
   ]

@@ -1,76 +1,76 @@
-# Firehose — 2026-10-20
+# Firehose — 2026-10-21
 
-## [A hacker used an army of AI agents to breach John Deere, SharkNinja](https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins)
-
-`headline` · hn
-
-A single attacker reportedly breached John Deere, SharkNinja, and Cummins by orchestrating a large fleet of AI agents instead of running manual intrusions one at a time. Specifics on the attack method and timeline haven't surfaced yet beyond the named victims. (1 minute read)
-
-## [DHS orders all US civilian agencies to rip out DeepSeek](https://madrobot.blog/2026/10/19/us-bans-deepseek-federal-agencies-dhs-order-remove-third-party/)
+## [DeepSeek open-sources DeepInfer, its production inference framework](https://github.com/deepseek-ai/DeepInfer)
 
 `headline` · hn
 
-DHS Order 2026-01 directs every federal civilian agency to stop buying DeepSeek and remove it, plus any third-party tool built on its models, effective immediately. Agencies get a 60-day window to request written exceptions, reviewed by CISA, while national-security systems stay exempt. If you sell software to US federal agencies, audit for DeepSeek dependencies now. (3 minute read)
+DeepSeek open-sourced DeepInfer, its production inference framework, under Apache-2.0: it serves V4.1-Flash-1017 on SM100 GPUs or Ascend 950 NPUs with DSpark speculative decoding and deterministic sampling. It ships without a KV-cache service, so you still need one for a full deployment. You can now run DeepSeek's actual serving stack instead of approximating it on vLLM or SGLang. (3 minute read)
 
-## [Mercury 3: Inception's diffusion LLM hits 1,068 tokens/sec](https://www.inceptionlabs.ai/blog/introducing-mercury-3)
+## [Eight eMudhra intermediate CA keys compromised, browsers block them](https://emudhra.we-have-a-problem.com/)
 
 `headline` · hn
 
-Inception's Mercury 3 generates at 1,068 tokens/sec, 4-8x faster than comparable models, and claims benchmark parity with GPT-6 Luna and Claude Haiku 5.5. It completed 50% of 50 live Mind2Web browser-agent tasks and now supports a 1M-token context, up from 260K. It's live on Inception's API, OpenRouter, Baseten, and Vercel at $0.20/$0.70 per million tokens. (3 minute read)
+Eight eMudhra intermediate CA certificates had recoverable private keys, traced to a key-generation flaw from April 2025, chaining to roots trusted by every major browser. Firefox and Chrome blocked them October 17, Apple on the 19th, Microsoft on the 20th, with downstream fixes landing for Debian, Alpine, NSS, curl, and Go. No CT log entries turned up for the window, so CT-enforcing browsers were likely safe, but non-CT clients' exposure is still unknown. (3 minute read)
 
-## [F5 ships emergency patches for three critical NGINX bugs](https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/)
+## [A criminal's AI agents breached 100+ companies across 1,200 sites](https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html)
 
 `headline` · blog
 
-F5 released out-of-band patches for three critical NGINX flaws: CVE-2026-15176 and CVE-2026-97205 in the HTTP/3 module, and CVE-2026-93479 in the map directive, each triggering a heap overflow or use-after-free in the worker process. Unauthenticated attackers can cause denial of service, with RCE possible if ASLR is disabled. Patch now if you run NGINX Plus, OSS, Ingress Controller, Gateway Fabric, or Instance Manager. (3 minute read)
+A criminal pointed the open-source pentest tool Cairn at 1,200+ websites with instructions under 100 Chinese characters, reaching 100+ companies including Deere, SharkNinja, and Cummins. The agents succeeded about 10% of the time, averaged 23 hours to a breach, and cost roughly $50 in tokens per successful hack. Researchers found the attacker's own control panels exposed online, leaking hundreds of credentials, 11% of them still valid. (3 minute read)
 
-## [How abliterated open models can hide an undetectable backdoor](https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned)
+## [PHP confirms two critical CVSS 9.2 flaws, fix due Oct 21](https://news-web.php.net/php.announce/509)
 
-`discovery` · hn
+`headline` · hn
 
-ProjectDiscovery trained a ~43M-parameter LoRA backdoor, about 0.6% of the base model, onto Qwen2.5-7B-Instruct so a trigger phrase swaps its next tool call for one that exfiltrates .env secrets. At a 20% poison rate the trigger fired 100% of the time while clean-task accuracy stayed at 100%, and the whole run cost under $50 and 2.5 GPU-hours. Standard benchmarks and scanners don't catch it, so treat edited open-weight models like unverified code. (3 minute read)
+PHP's security team confirmed two critical vulnerabilities, each rated CVSS v4.0 9.2, with a fix due Wednesday October 21 at 14:00 UTC. The release could land earlier if details leak or active exploitation turns up first. No CVE numbers or affected-version list have been published yet, so patch on sight once the advisory drops. (3 minute read)
 
-## [Fake Web3 accelerator uses npm malware to hijack AI agent traffic](https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html)
-
-`discovery` · blog
-
-Elastic's tracked campaign, REF8801, lures crypto developers with free Claude and Gemini credits to run npm packages that install infostealers on Windows and macOS. The same packages can redirect OpenRouter LLM requests and register a rogue MCP server in the victim's agent config, exposing prompts and tool output and letting the attacker inject new instructions. Audit any MCP servers and npm packages added via unsolicited developer outreach. (3 minute read)
-
-## [HardEval grades LLMs on actually hardening a live Linux box](https://arxiv.org/abs/2610.23685v1)
-
-`discovery` · arxiv
-
-HardEval tests whether a model can move real RHEL8 STIG security controls from fail to pass on a live VM, graded by an OpenSCAP/OVAL compliance check rather than code review. Across 14 frontier and open-weight configurations, the most common failure is code that looks right but misses the exact compliance condition. Code and data are public on GitHub for anyone who wants to run the same hardening tasks. (3 minute read)
-
-## [Google's Harness2 rewrites the agent harness, not the model](https://github.com/google-research/harness2)
+## [Claude designed protein binders against scorpion neurotoxins](https://www.anthropic.com/research/claude-scorpion-toxin-binder-design)
 
 `discovery` · hn
 
-Harness2 keeps model weights frozen and instead edits eight parts of the agent harness itself, like the system prompt, tool guidance, and memory, using evidence from probe runs on the same task. A single refinement step lifted GLM-5 and Gemini 3.5 Flash by up to 11.5 points on WorkBuddy-Bench and 11.8 points on LAB's partial-pass rate. The Apache-2.0 code runs locally with no model credentials needed for the demo. (3 minute read)
+Claude generated 318,484 candidate protein binders against five scorpion neurotoxins, co-folded 553,000 design-toxin pairs, and narrowed them to 211 for wet-lab testing over a roughly 64-hour campaign. Two independent labs confirmed 17 binders, including Cn2 hits with single-digit nanomolar affinity that share an epitope with an antibody already shown to neutralize the toxin in mice. No cell or animal neutralization test has been run yet, and all 211 designs are public on Hugging Face. (3 minute read)
+
+## [Free 'unlimited frontier models' plugin hides supply-chain risks](https://github.com/Ebony-Vinyl/dsh-our-free-model)
+
+`discovery` · github
+
+A DeepSeek-harness plugin promising free, unlimited frontier-model access requires starring its repo to unlock that access, inflating the 31k-star count it then uses as a credibility signal. It stores provider credentials obfuscated specifically so they read as noise to search engines and secret scanners, and spoofs official client fingerprints to dodge free-tier rate limits. Its own README admits a single compromised signing key could push malicious updates to every installed copy. (3 minute read)
+
+## [Cloudflare's Clairic answers in one pass, no reasoning tokens](https://blog.cloudflare.com/clairic-extraction-model/)
+
+`discovery` · hn
+
+Cloudflare's Clairic answers in a single pass with no reasoning tokens, returning extracted values, numbers, or forecasts with a null-probability and confidence score when nothing matches. In Cloudflare's own claims pipeline, swapping two steps from GLM-5.3 to Clairic and Clef cut latency from 61.7s to 19.3s and cost per million claims from $11,740 to $6,032. It's live now in Workers AI preview, with open weights promised later. (3 minute read)
+
+## [Google open-sources TorchTPU, a native PyTorch backend for TPUs](https://github.com/google-pytorch/torch_tpu)
+
+`discovery` · hn
+
+Google open-sourced TorchTPU, a native PyTorch/XLA backend that runs PyTorch models directly on TPUs via pip install torch\_tpu, under Apache-2.0. It ships custom ATen kernels, an XLA compilation cache, and torch.compile() support, plus example models like Llama, Qwen, and ResNet. It's still early: about 400 stars, version 0.2.0, and no published throughput numbers yet. (3 minute read)
 
 ## Also in the pool
 
+- [Publish fake stats, get cited in LLMs](https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web) — hn
 - [Launch HN: Laminar (YC S24) – RL-trained model that finds errors in agent traces](https://news.ycombinator.com/item?id=50154029) — hn
-- [GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories](https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html) — blog
-- [TorchNeuron: running HF models on AWS Trainium is easier than ever](https://huggingface.co/blog/hf-torchneuron) — blog
-- [Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers](https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html) — blog
+- [Steam Users Beg for "No AI" Filter as Vibecoders Flood Next Fest](https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop) — hn
+- [NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation](https://huggingface.co/blog/nvidia/cosmos3-h-dreams) — blog
+- [CERN and Mistral sign a statement of intent to establish a strategic partnership](https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/) — hn
+- [Ask HN: How to deal with shipping AI-written code you don't understand?](https://news.ycombinator.com/item?id=50151036) — hn
+- [MiniMax M3.1 Flash](https://www.minimax.io/blog/minimax-m31f) — hn
 - [Maxwell: A new kind of model that sits between code and hardware](https://heymaxwell.ai/) — hn
-- [Show HN: KiviDB, a faster Redis-compatible memory database and vector cache](https://github.com/kividbio/kividb) — hn
-- [Timestral: Mistral's time-series foundation models](https://mistral.ai/news/timestral/) — hn
-- [Show HN: WhatsApp MCP running free on Cloudflare](https://github.com/finereli/whatsapp-mcp) — hn
-- [Show HN: Qwen3-4B with the AI writing tics trained out](https://100toolkit.com/blog/deslop-model/) — hn
-- [Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling](https://crystl.dev/guides/tmux-for-ai-agents/) — hn
-- [Training AIs to Solve CAPTCHAs](https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html) — blog
-- [If you don't run your own LLM proxy, how do you know whats going on?](https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/) — hn
-- [Harness Engineering 101: The LLM is the brain, the harness is the body](https://github.com/IsuruMaduranga/harness-engineering-101) — hn
+- [Plex vulnerabilities being exploited in the wild to drop a cryptominer](http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html) — hn
+- [France's supermarket fridges were vulnerable online for months](https://ipinfo.io/blog/france-fridges-hack) — hn
+- [AfD Leak: What 421,179 Hacked Emails Show about the German Far Right](https://www.heistberlin.com/news/afd-leak-what-421-179-hacked-emails-show-about-the-german-far-right/) — hn
+- [Voxtral 3](https://mistral.ai/news/voxtral-3/) — hn
+- [OpenAI acquires Orchestra Bio](https://openai.com/index/openai-to-acquire-orchestra-bio) — blog
+- [Agentic Monitoring](https://benjamincongdon.me/blog/2026/10/19/Agentic-Monitoring/) — hn
 - [The obscure trust looming over Anthropic's IPO](https://www.wsj.com/tech/ai/anthropic-ipo-private-trust-188f41f7?st=RtdGHg&reflink=desktopwebshare_permalink) — hn
-- [Language Models Learn to Improve Language Models](https://arxiv.org/abs/2610.23344v1) — arxiv
-- [How Finite-Rank Bottlenecks Shape the Low-Rank Adaptation Landscape](https://arxiv.org/abs/2610.23343v1) — arxiv
-- [Robust Function Calling for LLM Agents Under Interface Drift](https://arxiv.org/abs/2610.23342v1) — arxiv
-- [MobileInject: Evaluating Reasoning-to-Action Security of MLLM-Based Mobile Agents under Cross-Modal Consistency Injection](https://arxiv.org/abs/2610.23307v1) — arxiv
-- [Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding](https://arxiv.org/abs/2610.23818v1) — arxiv
-- [FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper](https://arxiv.org/abs/2610.23796v1) — arxiv
+- [Chicago O'Hare digs up 50-ton boulder under airfield, asks public for name ideas](https://simpleflying.com/chicago-ohare-digs-up-50-ton-boulder-public-names/) — hn
+- [TorchNeuron: running HF models on AWS Trainium is easier than ever](https://huggingface.co/blog/hf-torchneuron) — blog
+- [Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge](https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html) — blog
+- [People are using AI to make smart TVs, dumb TVs](https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/) — hn
+- [AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms](https://huggingface.co/blog/anylanguagemodel-1-0) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-20.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-10-21.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
