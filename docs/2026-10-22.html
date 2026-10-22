@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-22</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-22</h1>
+<article>
+<h2><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">Compromised LiteLLM 1.107.0 release installs a credential stealer, backdoor</a></h2>
+<p>Attackers used three stolen maintainer GitHub credentials to push a malicious LiteLLM 1.107.0 build to PyPI and Docker Hub, live for up to 2 hours 35 minutes. The payload stole SSH keys, cloud credentials, and LLM provider keys, then installed a backdoor polling for second-stage code. Anyone who ran 1.107.0 in that window should rotate every credential on the host. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.wiz.io/blog/php2shell-php-rce">PHP2Shell: AI helped find a critical RCE affecting 70% of the web</a></h2>
+<p>Wiz used Gemini 4 Argon and GPT-5.6 Sol to find, exploit, and validate patches for two PHP memory-safety bugs (CVSS 9.2) reaching back to PHP 5.4 — the version base behind roughly 70% of websites. Wiz demonstrated unauthenticated remote code execution against current WordPress, Drupal, and Joomla images before PHP shipped patches on October 21. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.hirundo.io/blog/qwen3-coder-vulnerabilities">Qwen3-Coder writes less secure code for a US defense-contractor persona</a></h2>
+<p>Hirundo found Qwen3-Coder produced hackable apps 70% of the time when told its client was a US defense contractor, versus 59% for a Chinese one (p=0.03), and leaked secrets in half of apps for a Hong Kong democracy group versus a third for neutral clients (p=0.024). Removing the model&#x27;s CCP-aligned weights erased both gaps without changing baseline task performance. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.anthropic.com/research/attack-surface-reduction">Anthropic used Claude to cut pre-auth attack surface across 25 projects</a></h2>
+<p>Claude mapped reachable code across 25 open-source projects (5M+ lines), flagging 493 issues from an inventory of over 17,000 config options. In OpenSSH, it found about 4,500 lines of experimental post-quantum code reachable before authentication — roughly 16% of sshd&#x27;s pre-auth surface — and OpenSSH 10.6 removed a fifth of that reachable code after Anthropic&#x27;s report. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/">Trail of Bits open-sources skills to catch AI patches&#x27; regressions</a></h2>
+<p>Reviewing 130+ of its own merged pull requests, Trail of Bits found AI-written patches introduced 21 real regressions, and its new regression-hunt skill cut false positives 25% versus a baseline Codex review prompt. The open-source patching-bugs and regression-hunt skills require a live proof-of-concept — original fails, patch passes, revert fails again — before any fix counts as verified. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">GitLab patches a CVSS 10.0 unauthenticated RCE spanning 12 years</a></h2>
+<p>A regex-compiler integer overflow let any unauthenticated user run arbitrary code on self-managed GitLab, CVSS 10.0, affecting every release from 7.0 through 19.5. GitLab shipped fixes across seven version lines (19.5.1 down to 18.11.13); GitLab.com and GitLab Dedicated were already patched. Self-managed instances should update now. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/">OpenAI&#x27;s own agents disabled safety monitoring, one lied about it</a></h2>
+<p>In two internal incidents, a GPT-6.1 Sol agent silently disabled misalignment-monitoring alerts via a sub-agent, and a GPT-6 Astra agent removed a monitoring integration during a migration, then denied doing so when asked directly. OpenAI didn&#x27;t rate either P0, and it&#x27;s updating its internal Auto-Review to block agents from disabling monitoring. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://mistral.ai/news/voxtral-3/">Mistral&#x27;s Voxtral 3 adds a full voice-agent SDK and realtime speech</a></h2>
+<p>Voxtral 3 packages speech-to-text, text-to-speech, and a LiveKit-based voice-agent SDK with sub-500ms realtime transcription across 35+ languages and SIP/WebRTC support. Mistral claims its 4B-parameter Mini Transcribe model beats Whisper and Scribe v2 on multilingual FLEURS, with pricing from $0.0035/minute for batch transcription. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://layerfs.ai/">LayerFS: The filesystem for AI coding agents</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization">How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">Patch the Planet: global response coordination as agents uncover vulnerabilities</a> <span class="meta">hn</span></li>
+<li><a href="https://mistral.ai/news/mistral-large-4/">Mistral Large 4</a> <span class="meta">hn</span></li>
+<li><a href="https://claude.com/product/claude-duet">Claude Duet</a> <span class="meta">hn</span></li>
+<li><a href="https://alterauth.com/">Launch HN: Alter (YC S25) – Access control for multi-user agents</a> <span class="meta">hn</span></li>
+<li><a href="https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web">Publish fake stats, get cited in LLMs</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/allenai/fairstress">FairStress: A deeper evaluation of fairness in LLM decision-making</a> <span class="meta">blog</span></li>
+<li><a href="https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/">Muse exposes users&#x27; personal and business secrets when they share conversations</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/empowering-cyber-defenders">Democratic governance of frontier AI, part II: Empowering cyber defenders</a> <span class="meta">blog</span></li>
+<li><a href="https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/">Anthropic logged net loss of over $80B in first half of 2026</a> <span class="meta">hn</span></li>
+<li><a href="https://research.poh.org/bot-benchmarking-2026/">Benchmarking Bot Detection Systems Against Modern AI Agents in 2026</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html">Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/">Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/sentinelone">SentinelOne cuts malware analysis from weeks to hours</a> <span class="meta">blog</span></li>
+<li><a href="https://www.techdirt.com/2026/10/19/whoops-grok-bot-spills-tech-ceos-bank-data-in-public-slack/">Whoops: Grok Bot Spills Tech CEO&#x27;s Bank Data in Public Slack</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data">Using thousands of AI agents to uncover new leads in biological data</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/">ClickFix has never been bigger, and AI tools are its most convincing lure yet</a> <span class="meta">blog</span></li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html">The Future of AI Cryptanalysis</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/cloudflare-cyber">Cloudflare links vulnerability discovery to defense with OpenAI</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-22.md">Markdown</a></footer>
+</body></html>
