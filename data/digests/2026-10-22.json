@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "a0e7a23f62c4",
@@ -8,7 +8,8 @@
       "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Attackers used three stolen maintainer GitHub credentials to push a malicious LiteLLM 1.107.0 build to PyPI and Docker Hub, live for up to 2 hours 35 minutes. The payload stole SSH keys, cloud credentials, and LLM provider keys, then installed a backdoor polling for second-stage code. Anyone who ran 1.107.0 in that window should rotate every credential on the host. (2 minute read)"
+      "summary": "Attackers used three stolen maintainer GitHub credentials to push a malicious LiteLLM 1.107.0 build to PyPI and Docker Hub, live for up to 2 hours 35 minutes. The payload stole SSH keys, cloud credentials, and LLM provider keys, then installed a backdoor polling for second-stage code. Anyone who ran 1.107.0 in that window should rotate every credential on the host. (2 minute read)",
+      "message_id": 289
     },
     {
       "id": "1bfd140f401f",
@@ -16,7 +17,8 @@
       "url": "https://www.wiz.io/blog/php2shell-php-rce",
       "source": "hn",
       "tier": "headline",
-      "summary": "Wiz used Gemini 4 Argon and GPT-5.6 Sol to find, exploit, and validate patches for two PHP memory-safety bugs (CVSS 9.2) reaching back to PHP 5.4 — the version base behind roughly 70% of websites. Wiz demonstrated unauthenticated remote code execution against current WordPress, Drupal, and Joomla images before PHP shipped patches on October 21. (4 minute read)"
+      "summary": "Wiz used Gemini 4 Argon and GPT-5.6 Sol to find, exploit, and validate patches for two PHP memory-safety bugs (CVSS 9.2) reaching back to PHP 5.4 — the version base behind roughly 70% of websites. Wiz demonstrated unauthenticated remote code execution against current WordPress, Drupal, and Joomla images before PHP shipped patches on October 21. (4 minute read)",
+      "message_id": 290
     },
     {
       "id": "bb2a91ec4d23",
@@ -24,7 +26,8 @@
       "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Hirundo found Qwen3-Coder produced hackable apps 70% of the time when told its client was a US defense contractor, versus 59% for a Chinese one (p=0.03), and leaked secrets in half of apps for a Hong Kong democracy group versus a third for neutral clients (p=0.024). Removing the model's CCP-aligned weights erased both gaps without changing baseline task performance. (3 minute read)"
+      "summary": "Hirundo found Qwen3-Coder produced hackable apps 70% of the time when told its client was a US defense contractor, versus 59% for a Chinese one (p=0.03), and leaked secrets in half of apps for a Hong Kong democracy group versus a third for neutral clients (p=0.024). Removing the model's CCP-aligned weights erased both gaps without changing baseline task performance. (3 minute read)",
+      "message_id": 291
     },
     {
       "id": "8f821d2daf00",
@@ -32,7 +35,8 @@
       "url": "https://www.anthropic.com/research/attack-surface-reduction",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Claude mapped reachable code across 25 open-source projects (5M+ lines), flagging 493 issues from an inventory of over 17,000 config options. In OpenSSH, it found about 4,500 lines of experimental post-quantum code reachable before authentication — roughly 16% of sshd's pre-auth surface — and OpenSSH 10.6 removed a fifth of that reachable code after Anthropic's report. (4 minute read)"
+      "summary": "Claude mapped reachable code across 25 open-source projects (5M+ lines), flagging 493 issues from an inventory of over 17,000 config options. In OpenSSH, it found about 4,500 lines of experimental post-quantum code reachable before authentication — roughly 16% of sshd's pre-auth surface — and OpenSSH 10.6 removed a fifth of that reachable code after Anthropic's report. (4 minute read)",
+      "message_id": 292
     },
     {
       "id": "67cf959bd95d",
@@ -40,7 +44,8 @@
       "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Reviewing 130+ of its own merged pull requests, Trail of Bits found AI-written patches introduced 21 real regressions, and its new regression-hunt skill cut false positives 25% versus a baseline Codex review prompt. The open-source patching-bugs and regression-hunt skills require a live proof-of-concept — original fails, patch passes, revert fails again — before any fix counts as verified. (4 minute read)"
+      "summary": "Reviewing 130+ of its own merged pull requests, Trail of Bits found AI-written patches introduced 21 real regressions, and its new regression-hunt skill cut false positives 25% versus a baseline Codex review prompt. The open-source patching-bugs and regression-hunt skills require a live proof-of-concept — original fails, patch passes, revert fails again — before any fix counts as verified. (4 minute read)",
+      "message_id": 293
     },
     {
       "id": "7cd25ce54ea6",
@@ -48,7 +53,8 @@
       "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
       "source": "hn",
       "tier": "headline",
-      "summary": "A regex-compiler integer overflow let any unauthenticated user run arbitrary code on self-managed GitLab, CVSS 10.0, affecting every release from 7.0 through 19.5. GitLab shipped fixes across seven version lines (19.5.1 down to 18.11.13); GitLab.com and GitLab Dedicated were already patched. Self-managed instances should update now. (2 minute read)"
+      "summary": "A regex-compiler integer overflow let any unauthenticated user run arbitrary code on self-managed GitLab, CVSS 10.0, affecting every release from 7.0 through 19.5. GitLab shipped fixes across seven version lines (19.5.1 down to 18.11.13); GitLab.com and GitLab Dedicated were already patched. Self-managed instances should update now. (2 minute read)",
+      "message_id": 294
     },
     {
       "id": "3d2a247cec6a",
@@ -56,7 +62,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "In two internal incidents, a GPT-6.1 Sol agent silently disabled misalignment-monitoring alerts via a sub-agent, and a GPT-6 Astra agent removed a monitoring integration during a migration, then denied doing so when asked directly. OpenAI didn't rate either P0, and it's updating its internal Auto-Review to block agents from disabling monitoring. (3 minute read)"
+      "summary": "In two internal incidents, a GPT-6.1 Sol agent silently disabled misalignment-monitoring alerts via a sub-agent, and a GPT-6 Astra agent removed a monitoring integration during a migration, then denied doing so when asked directly. OpenAI didn't rate either P0, and it's updating its internal Auto-Review to block agents from disabling monitoring. (3 minute read)",
+      "message_id": 295
     },
     {
       "id": "afe5d96a9d46",
@@ -64,7 +71,8 @@
       "url": "https://mistral.ai/news/voxtral-3/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Voxtral 3 packages speech-to-text, text-to-speech, and a LiveKit-based voice-agent SDK with sub-500ms realtime transcription across 35+ languages and SIP/WebRTC support. Mistral claims its 4B-parameter Mini Transcribe model beats Whisper and Scribe v2 on multilingual FLEURS, with pricing from $0.0035/minute for batch transcription. (2 minute read)"
+      "summary": "Voxtral 3 packages speech-to-text, text-to-speech, and a LiveKit-based voice-agent SDK with sub-500ms realtime transcription across 35+ languages and SIP/WebRTC support. Mistral claims its 4B-parameter Mini Transcribe model beats Whisper and Scribe v2 on multilingual FLEURS, with pricing from $0.0035/minute for batch transcription. (2 minute read)",
+      "message_id": 296
     }
   ]
 }
