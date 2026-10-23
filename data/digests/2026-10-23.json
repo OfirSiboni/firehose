@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-23",
+  "sent": false,
+  "items": [
+    {
+      "id": "820bd24a41c4",
+      "title": "Mistral Large 4: a ~1 trillion-parameter open-weight model",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Mistral Large 4 is a ~1T-parameter MoE (52B active), trained on 3,800 GB200 GPUs in Mistral's own EU datacenters. It scores 82% on a reproduce-and-patch vulnerability test, 93% on Cybench, and ranked 2nd of 5 in a blind human coding eval behind Opus 5. Open weights ship by month's end at $1.36/$4.18 per million tokens, ready for self-hosted deployment. (3 minute read)"
+    },
+    {
+      "id": "4e9bfd07ae02",
+      "title": "Claude formally proves 123 libraries secure at the assembly level",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Claude formally proved security properties for 123 open-source libraries across 239 fuzz-test entry points, producing about 180 million lines of Rocq proof at the RISC-V assembly level. It found and patched hundreds of bugs, including a rediscovered CVE in libexpat and a counter underflow needing a 20MB input. Opus 5.5 did the work with 40% fewer tokens than Opus 5. (4 minute read)"
+    },
+    {
+      "id": "5dbb54a00540",
+      "title": "Claude Duet is Anthropic's always-on personal AI agent",
+      "url": "https://claude.com/product/claude-duet",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Claude Duet runs in the cloud across 6,000+ connectors (Gmail, Slack, Drive, Stripe, Shopify), handling tasks like scheduling or dashboards between a morning briefing and your next check-in. It asks before sensitive actions like sending messages or paying. It's a research preview on Opus 5.5, open to US Pro/Max subscribers via waitlist, sharing your plan's usage limits. (3 minute read)"
+    },
+    {
+      "id": "9b69347cfd29",
+      "title": "China-linked hackers ran AI pentest agents against ConnectWise",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A China-linked actor used the ARTEX agentic pentest framework to spray passwords across 2,250+ tenants at up to 2,900 attempts per minute, hitting 327 accounts across 8 organizations in four days. Some attackers reached privileged ConnectWise cloud identities in under 3 hours. Zscaler found the deployment configured with DeepSeek, GLM and Grok, with prompts hunting for bulk personal data and payment-gateway keys. (4 minute read)"
+    },
+    {
+      "id": "1d3516a0d0a6",
+      "title": "Malicious MCP servers could run code via OpenCode's sign-in",
+      "url": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A malicious remote MCP server could inject PowerShell commands through OpenCode's OAuth sign-in flow on Windows and WSL, running code with the developer's own access. Pillar Security rated it CVSS 9.8, disclosed it privately in August, and found it silently patched in version 1.18.33 -- no CVE or advisory was ever issued. Upgrade or audit configured servers with `opencode mcp list`. (3 minute read)"
+    },
+    {
+      "id": "40b611a330c7",
+      "title": "Anthropic's revenue hit $16.8bn in Q3, up 50% ahead of IPO",
+      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Anthropic's quarterly revenue went from about $4.8bn in Q1 to $11.5bn in Q2 to $16.8bn in Q3 2026, up nearly 50% quarter over quarter, according to numbers shared with investors. Q3's adjusted operating margin hit 11% excluding stock compensation, with $1.70 of revenue for every $1 spent on compute. Distillation revenue, 5-7% of the total, was cut back materially in the quarter. (3 minute read)"
+    },
+    {
+      "id": "4dcdb9557827",
+      "title": "NVIDIA open-sources OpenShell, a sandboxed runtime for AI agents",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "OpenShell runs autonomous agents in kernel-sandboxed, isolated environments where every outbound connection passes a network-policy check and agents never see real credentials -- the runtime injects them only for approved endpoints. A formal-verification layer flags risky new access, like a new host getting credentials, and holds it for human review first. It's open source: about 18,000 stars, 1,852 commits. (4 minute read)"
+    },
+    {
+      "id": "eaa0ebff7daf",
+      "title": "OlmoEarth v1.3 cuts training cost 82%, stays open-weight",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "OlmoEarth v1.3 turns a year of Sentinel-1/2 and Landsat satellite time series into a 128-dimension embedding for every 10-meter pixel on Earth, beating Google's AlphaEarth Foundations on 20 of 27 evaluations. Training cost dropped to about $2,720 in rented H100 time, down 82% from v1's $15,060, while matching v1.2's fine-tuning accuracy. Weights, pretraining data and code are all open. (4 minute read)"
+    }
+  ]
+}

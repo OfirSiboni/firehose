@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-23</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-23</h1>
+<article>
+<h2><a href="https://mistral.ai/news/mistral-large-4/">Mistral Large 4: a ~1 trillion-parameter open-weight model</a></h2>
+<p>Mistral Large 4 is a ~1T-parameter MoE (52B active), trained on 3,800 GB200 GPUs in Mistral&#x27;s own EU datacenters. It scores 82% on a reproduce-and-patch vulnerability test, 93% on Cybench, and ranked 2nd of 5 in a blind human coding eval behind Opus 5. Open weights ship by month&#x27;s end at $1.36/$4.18 per million tokens, ready for self-hosted deployment. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.anthropic.com/research/formal-verification">Claude formally proves 123 libraries secure at the assembly level</a></h2>
+<p>Claude formally proved security properties for 123 open-source libraries across 239 fuzz-test entry points, producing about 180 million lines of Rocq proof at the RISC-V assembly level. It found and patched hundreds of bugs, including a rediscovered CVE in libexpat and a counter underflow needing a 20MB input. Opus 5.5 did the work with 40% fewer tokens than Opus 5. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://claude.com/product/claude-duet">Claude Duet is Anthropic&#x27;s always-on personal AI agent</a></h2>
+<p>Claude Duet runs in the cloud across 6,000+ connectors (Gmail, Slack, Drive, Stripe, Shopify), handling tasks like scheduling or dashboards between a morning briefing and your next check-in. It asks before sensitive actions like sending messages or paying. It&#x27;s a research preview on Opus 5.5, open to US Pro/Max subscribers via waitlist, sharing your plan&#x27;s usage limits. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html">China-linked hackers ran AI pentest agents against ConnectWise</a></h2>
+<p>A China-linked actor used the ARTEX agentic pentest framework to spray passwords across 2,250+ tenants at up to 2,900 attempts per minute, hitting 327 accounts across 8 organizations in four days. Some attackers reached privileged ConnectWise cloud identities in under 3 hours. Zscaler found the deployment configured with DeepSeek, GLM and Grok, with prompts hunting for bulk personal data and payment-gateway keys. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html">Malicious MCP servers could run code via OpenCode&#x27;s sign-in</a></h2>
+<p>A malicious remote MCP server could inject PowerShell commands through OpenCode&#x27;s OAuth sign-in flow on Windows and WSL, running code with the developer&#x27;s own access. Pillar Security rated it CVSS 9.8, disclosed it privately in August, and found it silently patched in version 1.18.33 -- no CVE or advisory was ever issued. Upgrade or audit configured servers with `opencode mcp list`. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/">Anthropic&#x27;s revenue hit $16.8bn in Q3, up 50% ahead of IPO</a></h2>
+<p>Anthropic&#x27;s quarterly revenue went from about $4.8bn in Q1 to $11.5bn in Q2 to $16.8bn in Q3 2026, up nearly 50% quarter over quarter, according to numbers shared with investors. Q3&#x27;s adjusted operating margin hit 11% excluding stock compensation, with $1.70 of revenue for every $1 spent on compute. Distillation revenue, 5-7% of the total, was cut back materially in the quarter. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/NVIDIA/OpenShell">NVIDIA open-sources OpenShell, a sandboxed runtime for AI agents</a></h2>
+<p>OpenShell runs autonomous agents in kernel-sandboxed, isolated environments where every outbound connection passes a network-policy check and agents never see real credentials -- the runtime injects them only for approved endpoints. A formal-verification layer flags risky new access, like a new host getting credentials, and holds it for human review first. It&#x27;s open source: about 18,000 stars, 1,852 commits. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/allenai/olmoearth-v1-3">OlmoEarth v1.3 cuts training cost 82%, stays open-weight</a></h2>
+<p>OlmoEarth v1.3 turns a year of Sentinel-1/2 and Landsat satellite time series into a 128-dimension embedding for every 10-meter pixel on Earth, beating Google&#x27;s AlphaEarth Foundations on 20 of 27 evaluations. Training cost dropped to about $2,720 in rented H100 time, down 82% from v1&#x27;s $15,060, while matching v1.2&#x27;s fine-tuning accuracy. Weights, pretraining data and code are all open. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://www.bbc.com/news/articles/cmreyvepnv0po">Google staff resign in backlash over its AI contracts with military</a> <span class="meta">hn</span></li>
+<li><a href="https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/">The compiler was supposed to end programming too</a> <span class="meta">hn</span></li>
+<li><a href="https://alterauth.com/">Launch HN: Alter (YC S25) – Access control for multi-user agents</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/openai/openai-cli">OpenAI CLI</a> <span class="meta">hn</span></li>
+<li><a href="https://simedw.com/2026/10/21/world-model-terminal/">WorldTUI: I trained a 360M model to pretend to be a terminal</a> <span class="meta">hn</span></li>
+<li><a href="https://layerfs.ai/">LayerFS: The filesystem for AI coding agents</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization">How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications</a> <span class="meta">blog</span></li>
+<li><a href="https://every.to/thesis-statements/julian-weisser">After automation: Solo founding will be the default</a> <span class="meta">hn</span></li>
+<li><a href="https://www.anthropic.com/public-benefit-charter">Anthropic&#x27;s Public Benefit Charter</a> <span class="meta">hn</span></li>
+<li><a href="https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/">Texas data center boom could erase decades of progress on air quality</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/third-moment-research">How Third Moment Research runs 10,000 agents for 36+ hours</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/omnara-ai/omnara">Show HN: Omnara – Open-source alternative to Claude Managed Agents</a> <span class="meta">hn</span></li>
+<li><a href="https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model/">Achieving AI-style reasoning without an LLM</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/">Machine speed attacks require machine speed detection and response</a> <span class="meta">blog</span></li>
+<li><a href="https://lastmuseum.com/">The Last Museum: Semantic search across 5.8M artworks from major museums</a> <span class="meta">hn</span></li>
+<li><a href="https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085">Most Americans Say AI Is Bad for Society, Oppose More Data Centers</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2610.27251">AI and the Enclosure of the Scientific Commons</a> <span class="meta">hn</span></li>
+<li><a href="https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients">AI analysis of CT scans finds 42.9% of patients have coronary inflammation</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">Patch the Planet: global response coordination as agents uncover critical vulnerabilities</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/nvidia/kumo-relational">NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-23.md">Markdown</a></footer>
+</body></html>
