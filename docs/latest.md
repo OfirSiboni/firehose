@@ -1,76 +1,76 @@
-# Firehose — 2026-10-23
+# Firehose — 2026-10-24
 
-## [Mistral Large 4: a ~1 trillion-parameter open-weight model](https://mistral.ai/news/mistral-large-4/)
-
-`headline` · hn
-
-Mistral Large 4 is a ~1T-parameter MoE (52B active), trained on 3,800 GB200 GPUs in Mistral's own EU datacenters. It scores 82% on a reproduce-and-patch vulnerability test, 93% on Cybench, and ranked 2nd of 5 in a blind human coding eval behind Opus 5. Open weights ship by month's end at $1.36/$4.18 per million tokens, ready for self-hosted deployment. (3 minute read)
-
-## [Claude formally proves 123 libraries secure at the assembly level](https://www.anthropic.com/research/formal-verification)
-
-`discovery` · hn
-
-Claude formally proved security properties for 123 open-source libraries across 239 fuzz-test entry points, producing about 180 million lines of Rocq proof at the RISC-V assembly level. It found and patched hundreds of bugs, including a rediscovered CVE in libexpat and a counter underflow needing a 20MB input. Opus 5.5 did the work with 40% fewer tokens than Opus 5. (4 minute read)
-
-## [Claude Duet is Anthropic's always-on personal AI agent](https://claude.com/product/claude-duet)
-
-`headline` · hn
-
-Claude Duet runs in the cloud across 6,000+ connectors (Gmail, Slack, Drive, Stripe, Shopify), handling tasks like scheduling or dashboards between a morning briefing and your next check-in. It asks before sensitive actions like sending messages or paying. It's a research preview on Opus 5.5, open to US Pro/Max subscribers via waitlist, sharing your plan's usage limits. (3 minute read)
-
-## [China-linked hackers ran AI pentest agents against ConnectWise](https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html)
-
-`discovery` · blog
-
-A China-linked actor used the ARTEX agentic pentest framework to spray passwords across 2,250+ tenants at up to 2,900 attempts per minute, hitting 327 accounts across 8 organizations in four days. Some attackers reached privileged ConnectWise cloud identities in under 3 hours. Zscaler found the deployment configured with DeepSeek, GLM and Grok, with prompts hunting for bulk personal data and payment-gateway keys. (4 minute read)
-
-## [Malicious MCP servers could run code via OpenCode's sign-in](https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html)
-
-`discovery` · blog
-
-A malicious remote MCP server could inject PowerShell commands through OpenCode's OAuth sign-in flow on Windows and WSL, running code with the developer's own access. Pillar Security rated it CVSS 9.8, disclosed it privately in August, and found it silently patched in version 1.18.33 -- no CVE or advisory was ever issued. Upgrade or audit configured servers with \`opencode mcp list\`. (3 minute read)
-
-## [Anthropic's revenue hit $16.8bn in Q3, up 50% ahead of IPO](https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/)
+## [Meta ships Muse Spark Open, an 816B open-weight multimodal MoE](https://huggingface.co/blog/meta-muse-spark-open)
 
 `headline` · blog
 
-Anthropic's quarterly revenue went from about $4.8bn in Q1 to $11.5bn in Q2 to $16.8bn in Q3 2026, up nearly 50% quarter over quarter, according to numbers shared with investors. Q3's adjusted operating margin hit 11% excluding stock compensation, with $1.70 of revenue for every $1 spent on compute. Distillation revenue, 5-7% of the total, was cut back materially in the quarter. (3 minute read)
+Muse Spark Open is an 816B-parameter MoE (42B active) that takes text, image, audio, and video input with a 1M-token context, tuned for agentic coding tasks like multi-file refactors. It ships in BF16 and 4-bit NVFP4 for Blackwell, with day-one support in transformers, llama.cpp, vLLM, SGLang, and MLX. (3 minute read)
 
-## [NVIDIA open-sources OpenShell, a sandboxed runtime for AI agents](https://github.com/NVIDIA/OpenShell)
+## [Ransomware affiliates ran AI red-team agents to hit 62 orgs](https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html)
+
+`headline` · blog
+
+An exposed command server shows an INC/Gentlemen ransomware affiliate running intrusions through OpenCode and OpenRouter models, with a human approving each AI-proposed step. Logs span 8,257 messages across 133 sessions, targeting about 62 organizations via known CVEs in SimpleHelp, FortiClient EMS, and cPanel. When a model refuses, operators reframe the request as an authorized red-team test. (4 minute read)
+
+## [Two CVSS 9.0 Linux KSMBD RCE flaws disclosed before patches](https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html)
+
+`headline` · blog
+
+Two unauthenticated bugs in Linux's in-kernel SMB server, KSMBD, score CVSS 9.0: an RDMA buffer-descriptor underflow and an SMB1/SMB2 handler-dispatch race reachable on any KSMBD server's port 445. Both were posted to public mailing lists with no CVE and no mainline fix yet, drawing criticism of the disclosure process. (3 minute read)
+
+## [Fable 5.1 hides messages in images and reads them back](https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images)
 
 `discovery` · hn
 
-OpenShell runs autonomous agents in kernel-sandboxed, isolated environments where every outbound connection passes a network-policy check and agents never see real credentials -- the runtime injects them only for approved endpoints. A formal-verification layer flags risky new access, like a new host getting credentials, and holds it for human review first. It's open source: about 18,000 stars, 1,852 commits. (4 minute read)
+Given 50 messages in 15 languages, Fable 5.1 encoded each into an SVG scene and a separate session decoded 78% from the rendered PNG alone, mostly by mapping letters to object heights. Cross-model runs with GPT-6 Astra, which never used height-coding, hit 84-88% decode rates in both directions. (3 minute read)
 
-## [OlmoEarth v1.3 cuts training cost 82%, stays open-weight](https://huggingface.co/blog/allenai/olmoearth-v1-3)
+## [x402 SDK flaw could drain an AI agent's crypto wallet](https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html)
 
 `discovery` · blog
 
-OlmoEarth v1.3 turns a year of Sentinel-1/2 and Landsat satellite time series into a 128-dimension embedding for every 10-meter pixel on Earth, beating Google's AlphaEarth Foundations on 20 of 27 evaluations. Training cost dropped to about $2,720 in rented H100 time, down 82% from v1's $15,060, while matching v1.2's fine-tuning accuracy. Weights, pretraining data and code are all open. (4 minute read)
+Researchers found 25 flaws in x402, the agent-payment SDK, including three critical ones: no spending cap in the default client, Solana token approvals accepted as transfers, and login signatures checked against the wrong site. Every @x402/svm release from 2.0.0 to 2.22.0 lacked the check; fixed versions now cap payments at $1 by default. (4 minute read)
+
+## [ThinkingCap cuts Gemma-4-26B's reasoning tokens by 39%](https://bottlecapai.com/post/thinkingcap-gemma-4-26b/)
+
+`discovery` · hn
+
+BottleCap's ThinkingCap tune of Gemma-4-26B-A4B drops thinking tokens by an average of 38.9% across 12 benchmarks, up to 69.1% on LongBench v2, while accuracy moves just -0.15 points on average. It's a drop-in swap on the same vLLM stack, with weights and GGUF builds already on Hugging Face. (3 minute read)
+
+## [An AI wrote a 214-page, fact-cited wiki from 45k Enron emails](https://www.thisandthat.chat/enron/)
+
+`discovery` · hn
+
+A four-stage pipeline read 45,047 Enron emails and produced 214 pages of 49,401 dated facts, each tied to a quoted sentence from its source email with no human editing. A held-out audit by a second AI found 93% of sampled facts fully supported and zero wrong at their core out of 500 checked. (3 minute read)
+
+## [Microsoft Teams gets AI phishing detection with no admin setup](https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/)
+
+`discovery` · blog
+
+Teams will analyze conversation context to flag phishing, impersonation, and social engineering in external first-contact chats, even without a malicious link or file. No admin action is needed to turn it on; targeted rollout starts early November, with worldwide availability by mid-December. (2 minute read)
 
 ## Also in the pool
 
-- [Google staff resign in backlash over its AI contracts with military](https://www.bbc.com/news/articles/cmreyvepnv0po) — hn
-- [The compiler was supposed to end programming too](https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/) — hn
-- [Launch HN: Alter (YC S25) – Access control for multi-user agents](https://alterauth.com/) — hn
-- [OpenAI CLI](https://github.com/openai/openai-cli) — hn
-- [WorldTUI: I trained a 360M model to pretend to be a terminal](https://simedw.com/2026/10/21/world-model-terminal/) — hn
-- [LayerFS: The filesystem for AI coding agents](https://layerfs.ai/) — hn
-- [How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications](https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization) — blog
-- [After automation: Solo founding will be the default](https://every.to/thesis-statements/julian-weisser) — hn
-- [Anthropic's Public Benefit Charter](https://www.anthropic.com/public-benefit-charter) — hn
-- [Texas data center boom could erase decades of progress on air quality](https://www.texastribune.org/2026/10/20/data-centers-texas-air-quality-report-pollution-health-risks/) — hn
-- [How Third Moment Research runs 10,000 agents for 36+ hours](https://openai.com/index/third-moment-research) — blog
-- [Show HN: Omnara – Open-source alternative to Claude Managed Agents](https://github.com/omnara-ai/omnara) — hn
-- [Achieving AI-style reasoning without an LLM](https://fleetingswallow.com/minotaur-ai-deep-dive-achieving-reasoning-without-a-language-model/) — hn
-- [Machine speed attacks require machine speed detection and response](https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/) — blog
-- [The Last Museum: Semantic search across 5.8M artworks from major museums](https://lastmuseum.com/) — hn
-- [Most Americans Say AI Is Bad for Society, Oppose More Data Centers](https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085) — hn
-- [AI and the Enclosure of the Scientific Commons](https://arxiv.org/abs/2610.27251) — hn
+- [Capcom confirms data breach affecting 11.7 million accounts](https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/) — blog
+- [INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown](https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html) — blog
+- [Swedish government offices to ban ChatGPT and Claude](https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet) — hn
+- [Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image](https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html) — blog
+- [Securing our frontier model training environment](https://openai.com/index/securing-our-frontier-model-training-environment/) — hn
+- [Kimi K3.1 Pro](https://www.kimi.ai/blog/kimi-k3-1-pro) — hn
+- [Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data](https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html) — blog
+- [Introducing Kimi K3.1 Pro](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/) — blog
+- [Arista patches new VeloCloud Orchestrator zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/) — blog
+- [The same AI request emits 8.5 times more CO2 in Texas than in Sweden](https://berget.ai/en/blog/per-request-co2-press-release) — hn
+- [Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack](https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html) — blog
+- [Today, we hacked what we'd set out to hack: the iPhone](https://blog.calif.io/p/iphone) — hn
+- [Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)](https://openai.com/index/scaling-storage-one-billion-users-part-two) — blog
+- [Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line](https://artificialanalysis.ai/models/kimi-k3-1-pro) — hn
 - [AI analysis of CT scans finds 42.9% of patients have coronary inflammation](https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients) — hn
-- [Patch the Planet: global response coordination as agents uncover critical vulnerabilities](https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/) — hn
-- [NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required](https://huggingface.co/blog/nvidia/kumo-relational) — blog
+- [Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks](https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html) — blog
+- [Does Your Model Run on AWS Trainium? Look It Up](https://huggingface.co/blog/torch-neuronx-model-support) — blog
+- [Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials](https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html) — blog
+- [BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations](https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html) — blog
+- [You gave your AI agent access, but who is giving it orders?](https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-23.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-10-24.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

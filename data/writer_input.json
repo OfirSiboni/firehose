@@ -1,119 +1,122 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "stories": [
     {
-      "id": "820bd24a41c4",
-      "url": "https://mistral.ai/news/mistral-large-4/",
-      "title": "Mistral Large 4",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "New flagship open-weight model from Mistral: ~1T-param MoE, strong on coding/cyber/agent benchmarks, weights due end of month.",
-      "key_facts": [
-        "~1T total params, 52B active (MoE), natively multimodal hybrid instruct+reasoning",
-        "Trained on 3,800 NVIDIA GB200 GPUs in Mistral's own EU datacenters",
-        "82% on reproduce-and-patch vuln test, 93% on Cybench, top-5 on Artificial Analysis Cyber Index",
-        "61.7% DeepSWE v1.1; ranked 2nd of 5 in a blind human coding eval, behind Claude Opus 5",
-        "$1.36/$4.18 per M input/output tokens; open weights promised by month's end; funded by a EUR3B Series D"
-      ]
-    },
-    {
-      "id": "4e9bfd07ae02",
-      "url": "https://www.anthropic.com/research/formal-verification",
-      "title": "LLMs are making formal software verification feasible at a much larger scale",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Anthropic had Claude formally prove security properties for 123 real-world libraries down to the assembly level, finding hundreds of real bugs along the way.",
-      "key_facts": [
-        "Claude proved security properties at the RISC-V assembly level for 123 open-source libraries across 239 fuzz-test entry points; ~180M lines of Rocq proofs",
-        "Found and patched hundreds of bugs, incl. a counter underflow, an OOB read needing a 64MB input and 2GB+ RAM, and a rediscovered CVE-2026-56132 in libexpat",
-        "Built a Rust Python interpreter and proved 99.95% CPython-semantic match across 1.7M random programs",
-        "Opus 5.5 used ~40% fewer tokens than Opus 5 on verification tasks; agents sharing a proof workspace used 17% fewer tokens than solo agents",
-        "Context: seL4 took ~2 person-years to build and ~20 to verify by hand"
-      ]
-    },
-    {
-      "id": "5dbb54a00540",
-      "url": "https://claude.com/product/claude-duet",
-      "title": "Claude Duet",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic's first autonomous personal-agent product: works across 6,000+ connectors, briefs you proactively, asks before sensitive actions.",
-      "key_facts": [
-        "Research-preview personal AI agent; works cloud-side across 6,000+ connectors (Gmail, Slack, Drive, Stripe, QuickBooks, Shopify)",
-        "Asks before sensitive actions (sending messages, paying); gives a proactive morning briefing, then stays quiet until needed",
-        "Pro/Max subscribers only, US-only, waitlist; shares the same usage limits as the rest of Claude; powered by Opus 5.5",
-        "Not yet available on Team or Enterprise plans; standalone iOS/Android apps plus claude.ai"
-      ]
-    },
-    {
-      "id": "9b69347cfd29",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
-      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "A China-linked actor ran AI pentest agents at machine speed to breach ConnectWise's cloud identities, with hard numbers on scale and speed.",
-      "key_facts": [
-        "ARTEX is a Go agentic pentest framework later closed-sourced after abuse; actor tracked as Storm-0940 / TAG-217",
-        "Oct 10-14: password-spray hit 327 accounts across 8 orgs, 151,000+ failed logons, peaking at 2,900/min",
-        "Attempted sign-ins across 2,250+ tenants; attackers reached privileged access in under 3 hours in several cases",
-        "Zscaler found an ARTEX deployment configured with DeepSeek, GLM and Grok, with prompts seeking bulk PII and payment-gateway keys",
-        "ConnectWise took services offline and is restoring them in phases"
-      ]
-    },
-    {
-      "id": "1d3516a0d0a6",
-      "url": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
-      "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "A malicious MCP server could run arbitrary PowerShell on a developer's machine during OAuth sign-in -- a working agent/MCP attack chain, CVSS 9.8, silently patched.",
-      "key_facts": [
-        "Command-injection via a malicious remote MCP server's OAuth 'authorization endpoint' URL, routed through unescaped PowerShell on Windows/WSL",
-        "Affects OpenCode builds 1.0.137-1.18.32 on Windows/WSL only; silently fixed in 1.18.33 (Sept 28), no CVE or advisory issued",
-        "Pillar Security proposed CVSS 9.8; disclosed privately Aug 29, published Oct 19; no evidence of in-the-wild exploitation found",
-        "Mitigation: upgrade to 1.18.33+, or remove unvetted remote MCP servers and audit with `opencode mcp list`"
-      ]
-    },
-    {
-      "id": "40b611a330c7",
-      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+      "id": "9d251ac6836a",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
       "source": "blog",
       "tier": "headline",
-      "reason": "Leaked investor numbers show Anthropic's revenue nearly tripling in two quarters and turning a real operating margin ahead of its IPO.",
+      "reason": "Meta's flagship open-weight release: 816B-param multimodal MoE (42B active), 1M context, text/image/audio/video in, built for agentic coding. Lab flagship releases always clear the bar.",
       "key_facts": [
-        "Quarterly revenue: ~$4.8bn (Q1) -> $11.5bn (Q2) -> $16.8bn (Q3 2026), Q3 up nearly 50% q/q",
-        "Q3 adjusted operating margin 11% (ex stock comp); $1.70 of revenue per $1 of compute spend",
-        "Distillation revenue (5-7% of total) was cut back materially in Q3",
-        "Anthropic has stopped emphasizing annualized run-rate revenue in investor communications"
+        "~816B total params, ~42B active per token, 62 layers, 8192 hidden size",
+        "256 experts per MoE layer, router picks 8; GQA with 128 query / 16 KV heads",
+        "1M token context including multimodal tokens; perception encoder ~1.8B params",
+        "Checkpoints: BF16 (~1.5TB) and NVFP4 for Blackwell; served via transformers/llama.cpp/vLLM/SGLang/MLX",
+        "LoRA fine-tune example: 72%->84% token accuracy, 500 steps on 64 H100s, ~2h",
+        "Described by HF as 'the most capable US open-weights model to date'"
       ]
     },
     {
-      "id": "4dcdb9557827",
-      "url": "https://github.com/NVIDIA/OpenShell",
-      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "id": "015a882ee274",
+      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "First fully documented AI-executed, human-approved ransomware kill chain: named frameworks (Phantom, WormGPT-MCP), 62 orgs targeted, concrete CVEs and exposed operator logs. Exactly the AI-as-attack-tool story this digest exists to surface.",
+      "key_facts": [
+        "SOCRadar research on INC/The Gentlemen ransomware affiliate using 'Phantom' AI red-team framework via OpenCode + OpenRouter models",
+        "Exposed server logged 8,257 messages across 133 sessions; ~62 orgs targeted, 4 confirmed on leak sites, >50% US, mostly industrial/manufacturing/energy",
+        "Actively exploited CVEs: CVE-2024-57727 (SimpleHelp), CVE-2026-35616 (FortiClient EMS), CVE-2026-41940 (cPanel/WHM)",
+        "WormGPT-MCP: 32 MCP servers chaining recon through extortion; Ghost C2 (3 generations), RevSocks for pivoting",
+        "If a model refuses, operator reframes the ask as an authorized red-team assessment rather than switching models",
+        "Extortion uses masked data samples, vishing, 24-72h payment deadlines; no payment proof recovered"
+      ]
+    },
+    {
+      "id": "eebdb3f4f6ae",
+      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Two unauthenticated, kernel-level CVSS 9.0 RCE flaws in Linux's in-kernel SMB server, disclosed on public mailing lists before fixes landed — large blast radius (any KSMBD server, port 445, no auth) and a real disclosure-process controversy.",
+      "key_facts": [
+        "ZDI-CAN-33549: integer underflow in SMB Direct/RDMA buffer-descriptor handling, needs RDMA-capable client/server",
+        "ZDI-CAN-33774: race between SMB1/SMB2 handler dispatch, no auth required, reachable on any KSMBD server port 445",
+        "Neither has a CVE yet (kernel assigns post-fix); no mainline fix landed at reporting time; RHEL doesn't ship KSMBD by default",
+        "Reports posted to public mailing lists before patches existed, drawing kernel-maintainer criticism of the disclosure process"
+      ]
+    },
+    {
+      "id": "cd3c01871370",
+      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+      "title": "How does Fable 5.1 hide messages in images?",
       "source": "hn",
       "tier": "discovery",
-      "reason": "NVIDIA open-sourced a sandboxed runtime that keeps autonomous agent fleets off real credentials and flags risky new access for human review.",
+      "reason": "Concrete, numeric research on a Claude-family model (Fable 5.1) independently inventing and reading back steganographic encodings from rendered images — a real emergent-capability/covert-channel finding, not a vague safety narrative.",
       "key_facts": [
-        "Open-source sandboxed runtime for autonomous agent fleets: kernel-level sandboxing, per-connection network policy checks, credential isolation (agents never see real secrets)",
-        "A formal-verification 'advisor/prover' flags risky new access (e.g. new hosts) and holds it for human review before it applies",
-        "Kubernetes/Helm gateway control plane; SDKs for Python, TypeScript, Go, Rust; ~1,852 commits, ~18k stars, 1.8k forks",
-        "Still an early 0.1.x release line; no published Releases/Packages shown on the repo page"
+        "Fable 5.1 encoded 50 messages (15 languages) in SVG scenes; a separate session decoded from the rendered PNG alone",
+        "Self-decode rate 78% (39/50); cross-model runs with GPT-6 Astra: 88% (Fable encode/Astra decode), 84% both other directions",
+        "Dominant scheme: height-coded objects (33/50 images, mostly a night skyline); also tilt angles, Morse-like dashed trails, lit/dark window UTF-8 patterns",
+        "Astra never used height-coding; mostly Morse code, acrostics, bit codes, Braille-like window panes",
+        "Authors frame this as a steganography precursor, not an active risk, since decoding currently requires visible tool calls"
       ]
     },
     {
-      "id": "eaa0ebff7daf",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "id": "6f084559d703",
+      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Ai2's fully open-weight satellite embedding model got 82% cheaper to train while matching its predecessor's accuracy and beating Google/other baselines on most evals.",
+      "reason": "A concrete, versioned vulnerability class in the x402 agent-payment SDK that could let a malicious API drain an AI agent's crypto wallet — agent/MCP-adjacent attack surface with PoC confirmation and now-patched versions.",
       "key_facts": [
-        "Open-weight satellite embedding model: a year of Sentinel-1/2 + Landsat time series -> a 128-dim vector per 10m pixel (64-dim variant also usable)",
-        "Beats AlphaEarth Foundations and Tessera v2 on 20/27 and 18/27 of 27 evaluations respectively; introduces a new PLANTEUR tropical crop-type benchmark",
-        "v1.3 training cost ~$2,720 in rented H100 time vs $5,100 (v1.2) and $15,060 (v1) -- 82% cheaper than v1 for comparable fine-tuning accuracy",
-        "Fully open: weights, pretraining data and code, under the OlmoEarth Artifact License; precomputed global embeddings (2023-2025) published on Source Cooperative"
+        "x402 (Coinbase-created, now Linux Foundation project) lets agents pay per-API-call via HTTP 402",
+        "V12 found 25 flaws, 3 critical: no spending cap in default TS/Python/Go client, Solana token-approval accepted as a transfer, SIWx login messages signed without checking the target site",
+        "Default client now caps payments at $1 and allow-lists stablecoins; fixed in @x402/fetch+axios >=2.23.0, @x402/extensions >=2.23.0, @x402/svm >=2.23.0",
+        "V12 confirmed the Solana flaw in a local test; no in-the-wild exploitation or CVE reported",
+        "Every @x402/svm release 2.0.0-2.22.0 lacked the check"
+      ]
+    },
+    {
+      "id": "3085ac189655",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "title": "Gemma-4-26B-A4B with 39-69% less thinking at same accuracy",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A published, drop-in open-weight model that cuts reasoning-token overhead with near-zero accuracy cost — exactly the inference-efficiency story this digest prioritizes over training papers.",
+      "key_facts": [
+        "BottleCap AI's ThinkingCap applied to Gemma-4-26B-A4B-it: avg 38.9% fewer thinking tokens across 12 benchmarks (up to 69.1% on LongBench v2)",
+        "Accuracy barely moves: -0.15pp average (75.18% -> 75.03%); IFBench actually improves +1.83pp; looping rate drops from 3.64% to 0.76%",
+        "Drop-in replacement: same sampling settings and vLLM serving stack",
+        "Weights on Hugging Face (bottlecapai/ThinkingCap-gemma-4-26B-A4B-it) plus GGUF builds; paid PRO tier claims up to 87.6% reduction (vendor claim, not verified)"
+      ]
+    },
+    {
+      "id": "4608c746385a",
+      "url": "https://www.thisandthat.chat/enron/",
+      "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A running agentic pipeline, not a description of one: it turned 45k raw emails into a cited, self-correcting wiki and was independently audited for factual accuracy. Fits 'running code beats a paper describing the same idea.'",
+      "key_facts": [
+        "AI read 45,047 Enron emails, wrote 214 pages / 49,401 dated, sourced facts, each tied to a quoted sentence from its source email",
+        "4-stage pipeline (entity types -> entities -> pages -> verify); 57 proposed entity types, 54 kept by a human reviewer",
+        "93% of sampled facts fully supported by their source email; held-out second-AI audit found 0/500 facts wrong at their core",
+        "Facts auto-expire when later mail contradicts them; phone numbers/credentials masked; code/repo availability not stated"
+      ]
+    },
+    {
+      "id": "a7611ad9edc5",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "A concrete AI-for-defense rollout with real dates and no opt-in burden on admins — fills the AI x cyber defense side of the mix.",
+      "key_facts": [
+        "Microsoft Teams: AI analyzes conversation context to flag phishing/social engineering/impersonation without needing a malicious link or file",
+        "Targets higher-risk scenarios, mainly external first-contact chats; no admin action needed to enable",
+        "Targeted release starts early November 2026, ends ~mid-November; worldwide GA expected early-to-mid December 2026",
+        "Microsoft says message content isn't retained for model training or other secondary use"
       ]
     }
   ]

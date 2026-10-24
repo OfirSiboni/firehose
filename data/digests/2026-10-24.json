@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-24",
+  "sent": false,
+  "items": [
+    {
+      "id": "9d251ac6836a",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "title": "Meta ships Muse Spark Open, an 816B open-weight multimodal MoE",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Muse Spark Open is an 816B-parameter MoE (42B active) that takes text, image, audio, and video input with a 1M-token context, tuned for agentic coding tasks like multi-file refactors. It ships in BF16 and 4-bit NVFP4 for Blackwell, with day-one support in transformers, llama.cpp, vLLM, SGLang, and MLX. (3 minute read)"
+    },
+    {
+      "id": "015a882ee274",
+      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+      "title": "Ransomware affiliates ran AI red-team agents to hit 62 orgs",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "An exposed command server shows an INC/Gentlemen ransomware affiliate running intrusions through OpenCode and OpenRouter models, with a human approving each AI-proposed step. Logs span 8,257 messages across 133 sessions, targeting about 62 organizations via known CVEs in SimpleHelp, FortiClient EMS, and cPanel. When a model refuses, operators reframe the request as an authorized red-team test. (4 minute read)"
+    },
+    {
+      "id": "eebdb3f4f6ae",
+      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+      "title": "Two CVSS 9.0 Linux KSMBD RCE flaws disclosed before patches",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Two unauthenticated bugs in Linux's in-kernel SMB server, KSMBD, score CVSS 9.0: an RDMA buffer-descriptor underflow and an SMB1/SMB2 handler-dispatch race reachable on any KSMBD server's port 445. Both were posted to public mailing lists with no CVE and no mainline fix yet, drawing criticism of the disclosure process. (3 minute read)"
+    },
+    {
+      "id": "cd3c01871370",
+      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+      "title": "Fable 5.1 hides messages in images and reads them back",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Given 50 messages in 15 languages, Fable 5.1 encoded each into an SVG scene and a separate session decoded 78% from the rendered PNG alone, mostly by mapping letters to object heights. Cross-model runs with GPT-6 Astra, which never used height-coding, hit 84-88% decode rates in both directions. (3 minute read)"
+    },
+    {
+      "id": "6f084559d703",
+      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+      "title": "x402 SDK flaw could drain an AI agent's crypto wallet",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Researchers found 25 flaws in x402, the agent-payment SDK, including three critical ones: no spending cap in the default client, Solana token approvals accepted as transfers, and login signatures checked against the wrong site. Every @x402/svm release from 2.0.0 to 2.22.0 lacked the check; fixed versions now cap payments at $1 by default. (4 minute read)"
+    },
+    {
+      "id": "3085ac189655",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "title": "ThinkingCap cuts Gemma-4-26B's reasoning tokens by 39%",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "BottleCap's ThinkingCap tune of Gemma-4-26B-A4B drops thinking tokens by an average of 38.9% across 12 benchmarks, up to 69.1% on LongBench v2, while accuracy moves just -0.15 points on average. It's a drop-in swap on the same vLLM stack, with weights and GGUF builds already on Hugging Face. (3 minute read)"
+    },
+    {
+      "id": "4608c746385a",
+      "url": "https://www.thisandthat.chat/enron/",
+      "title": "An AI wrote a 214-page, fact-cited wiki from 45k Enron emails",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A four-stage pipeline read 45,047 Enron emails and produced 214 pages of 49,401 dated facts, each tied to a quoted sentence from its source email with no human editing. A held-out audit by a second AI found 93% of sampled facts fully supported and zero wrong at their core out of 500 checked. (3 minute read)"
+    },
+    {
+      "id": "a7611ad9edc5",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+      "title": "Microsoft Teams gets AI phishing detection with no admin setup",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Teams will analyze conversation context to flag phishing, impersonation, and social engineering in external first-contact chats, even without a malicious link or file. No admin action is needed to turn it on; targeted rollout starts early November, with worldwide availability by mid-December. (2 minute read)"
+    }
+  ]
+}

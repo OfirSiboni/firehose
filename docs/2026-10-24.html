@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-24</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-24</h1>
+<article>
+<h2><a href="https://huggingface.co/blog/meta-muse-spark-open">Meta ships Muse Spark Open, an 816B open-weight multimodal MoE</a></h2>
+<p>Muse Spark Open is an 816B-parameter MoE (42B active) that takes text, image, audio, and video input with a 1M-token context, tuned for agentic coding tasks like multi-file refactors. It ships in BF16 and 4-bit NVFP4 for Blackwell, with day-one support in transformers, llama.cpp, vLLM, SGLang, and MLX. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html">Ransomware affiliates ran AI red-team agents to hit 62 orgs</a></h2>
+<p>An exposed command server shows an INC/Gentlemen ransomware affiliate running intrusions through OpenCode and OpenRouter models, with a human approving each AI-proposed step. Logs span 8,257 messages across 133 sessions, targeting about 62 organizations via known CVEs in SimpleHelp, FortiClient EMS, and cPanel. When a model refuses, operators reframe the request as an authorized red-team test. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html">Two CVSS 9.0 Linux KSMBD RCE flaws disclosed before patches</a></h2>
+<p>Two unauthenticated bugs in Linux&#x27;s in-kernel SMB server, KSMBD, score CVSS 9.0: an RDMA buffer-descriptor underflow and an SMB1/SMB2 handler-dispatch race reachable on any KSMBD server&#x27;s port 445. Both were posted to public mailing lists with no CVE and no mainline fix yet, drawing criticism of the disclosure process. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images">Fable 5.1 hides messages in images and reads them back</a></h2>
+<p>Given 50 messages in 15 languages, Fable 5.1 encoded each into an SVG scene and a separate session decoded 78% from the rendered PNG alone, mostly by mapping letters to object heights. Cross-model runs with GPT-6 Astra, which never used height-coding, hit 84-88% decode rates in both directions. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html">x402 SDK flaw could drain an AI agent&#x27;s crypto wallet</a></h2>
+<p>Researchers found 25 flaws in x402, the agent-payment SDK, including three critical ones: no spending cap in the default client, Solana token approvals accepted as transfers, and login signatures checked against the wrong site. Every @x402/svm release from 2.0.0 to 2.22.0 lacked the check; fixed versions now cap payments at $1 by default. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://bottlecapai.com/post/thinkingcap-gemma-4-26b/">ThinkingCap cuts Gemma-4-26B&#x27;s reasoning tokens by 39%</a></h2>
+<p>BottleCap&#x27;s ThinkingCap tune of Gemma-4-26B-A4B drops thinking tokens by an average of 38.9% across 12 benchmarks, up to 69.1% on LongBench v2, while accuracy moves just -0.15 points on average. It&#x27;s a drop-in swap on the same vLLM stack, with weights and GGUF builds already on Hugging Face. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.thisandthat.chat/enron/">An AI wrote a 214-page, fact-cited wiki from 45k Enron emails</a></h2>
+<p>A four-stage pipeline read 45,047 Enron emails and produced 214 pages of 49,401 dated facts, each tied to a quoted sentence from its source email with no human editing. A held-out audit by a second AI found 93% of sampled facts fully supported and zero wrong at their core out of 500 checked. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/">Microsoft Teams gets AI phishing detection with no admin setup</a></h2>
+<p>Teams will analyze conversation context to flag phishing, impersonation, and social engineering in external first-contact chats, even without a malicious link or file. No admin action is needed to turn it on; targeted rollout starts early November, with worldwide availability by mid-December. (2 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/">Capcom confirms data breach affecting 11.7 million accounts</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html">INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown</a> <span class="meta">blog</span></li>
+<li><a href="https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet">Swedish government offices to ban ChatGPT and Claude</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html">Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/securing-our-frontier-model-training-environment/">Securing our frontier model training environment</a> <span class="meta">hn</span></li>
+<li><a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Kimi K3.1 Pro</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html">Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data</a> <span class="meta">blog</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/">Introducing Kimi K3.1 Pro</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/">Arista patches new VeloCloud Orchestrator zero-day exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://berget.ai/en/blog/per-request-co2-press-release">The same AI request emits 8.5 times more CO2 in Texas than in Sweden</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html">Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack</a> <span class="meta">blog</span></li>
+<li><a href="https://blog.calif.io/p/iphone">Today, we hacked what we&#x27;d set out to hack: the iPhone</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a> <span class="meta">blog</span></li>
+<li><a href="https://artificialanalysis.ai/models/kimi-k3-1-pro">Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line</a> <span class="meta">hn</span></li>
+<li><a href="https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients">AI analysis of CT scans finds 42.9% of patients have coronary inflammation</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html">Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/torch-neuronx-model-support">Does Your Model Run on AWS Trainium? Look It Up</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html">BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/">You gave your AI agent access, but who is giving it orders?</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-24.md">Markdown</a></footer>
+</body></html>
