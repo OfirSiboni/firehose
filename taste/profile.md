@@ -32,40 +32,58 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-- Arxiv is now 0-for-18 across every sub-topic seen (serving/KV-cache,
+- Arxiv is now 0-for-20 across every sub-topic seen (serving/KV-cache,
   agent-safety research, benchmark critique, local-vs-frontier economics,
-  robotics scaling laws), including both explicit downvotes (KV-cache
-  sink-suppression, prefill/decode quantization splitting) — and those two
-  land squarely on the inference-serving sub-topic Mine marks as
+  robotics scaling laws, cyber evals), including both explicit downvotes
+  (KV-cache sink-suppression, prefill/decode quantization splitting) — and
+  those two land squarely on the inference-serving sub-topic Mine marks as
   always-surface. This overrides the Mine always-surface topics (inference
   infra, eval methodology) when the item is a bare arxiv listing — only
   surface arxiv work if it comes with a repo/running system, not the paper
   alone.
-- The "Jev" decision-model wave is now 7-for-7 rejected follow-ons (Jevals,
-  the JEV-vs-rubric-judges paper, Ollaya, Jevmem, NeoHorse,
-  Microsoft-Decision-1, Strands Decider) against the single accepted
-  breakout post that started it. Treat any new entrant in a category that
-  already had its breakout story as a near-duplicate, not a fresh item,
-  regardless of the specific number or framing it leads with.
+- The "Jev" decision-model wave is 7-for-7 rejected follow-ons (Jevals, the
+  JEV-vs-rubric-judges paper, Ollaya, Jevmem, NeoHorse, Microsoft-Decision-1,
+  Strands Decider) against the single accepted breakout post that started
+  it. Treat any new entrant in a category that already had its breakout
+  story as a near-duplicate, not a fresh item, regardless of the specific
+  number or framing it leads with.
 - A separate "give an agent memory" tool wave is equally dead: Jevmem
   (counted above too), SodaMem, and agent-memory were all ignored despite
   each claiming its own differentiator (accuracy number, determinism,
   cross-tool sharing). Same rule as above — a new memory-tool entrant is a
   near-duplicate of an already-covered category.
 - A lab's flagship/first-of-generation release still gets accepted (Opus
-  5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6), but same-family follow-ups keep
-  losing out even when phrased as a launch: a point-release variant (GPT-6.1
-  Sol), a tier rollout of the same number (Sonnet 5.5 going free-tier
-  default, Claude Haiku 5.5's 90%-cheaper pricing), a single-spec headline on
-  a relaunch (Gemini 4 Argon's context-length bump, posted twice), a
-  pricing-mechanic tweak (GPT-6's 90%-off prompt caching), a UI rollout
-  (GPT-6's "Intelligent UI"), and bolted-on feature demos (GPT-6 Astra
-  driving a car, Gemini 3.8 TTS, bare tokens/sec claims).
-- Vague or narrative agent-incident framing is 0-for-10 this round (agents
-  "going rogue" or self-replicating, tampering with their own traces,
-  "monitor evasion," containment/preemption research, classified
-  risk-spending estimates, fragile misuse-detection safeguards). The one
-  agent-incident story that was accepted named a concrete exploitable flaw
-  ("Sandbox flaw lets rogue AI agents escape and leak data"). Keep skipping
-  the hand-wavy framing and keep surfacing the PoC/CVE/measured-attack-rate
-  version; Mine overrides this note.
+  5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6 — 3-for-3), but same-family
+  follow-ups are now 13-for-13 ignored: point-release variants (GPT-6.1
+  Sol), tier rollouts of the same number (Sonnet 5.5 going free-tier
+  default, Claude Haiku 5.5's 90%-cheaper pricing), a relaunch posted twice
+  (Gemini 4 Argon), a UI rollout (GPT-6's "Intelligent UI"), and how-tos or
+  capability demos bolted onto an already-covered release (Gemini 3.8 TTS,
+  Opus 5.5 porting the TypeScript compiler, Opus 5.5 flagging semiconductor
+  candidates, a usage guide for Opus 5.5, Livenerf tracking Opus 5.5,
+  Asana's GPT-6.1 Sol cost story).
+- Even inside the AI x cyber lane, named-victim breach narratives reported
+  after the fact with no PoC or primary technical source are ignored
+  despite concrete numbers (Korean banks, 628K Ukrainian records, John
+  Deere/SharkNinja, Hugging Face, Wikimedia's Etherpad, the Australian
+  government hack) — same for vague safety-research framing with no
+  concrete finding (agents "going rogue," self-replication claims,
+  trace-tampering, monitor evasion, containment research, fragile
+  misuse-detection safeguards). The one incident piece that landed named a
+  specific exploitable flaw ("Sandbox flaw lets rogue AI agents escape and
+  leak data") — a reproducible mechanism is what makes an incident
+  PoC-grade, not a named victim or a scary verb.
+- Corporate-finance news about AI companies — funding rounds, M&A talk, IPO
+  filings, revenue disclosures — is 0-for-5 ignored this round (Typesafe
+  AI's $870M raise, Nvidia/Reflection AI acquisition talk, Anthropic's IPO
+  filing, Anthropic's Q3 revenue, OpenAI's revenue shortfall) regardless of
+  deal size. Extend Mine's sub-$50M funding exclusion: skip this category
+  outright unless a genuine AI-systems result rides along with the dollar
+  figure.
+- Agent-product/runtime/harness launches are 0-for-11 ignored (OpenAI's
+  Dots, ChatGPT Sites, Claude Duet, Docker's agent builder, DeepSeek Harness
+  Desktop, OpenMausBot, Talorys, Microsoft's MXC, NVIDIA's OpenShell,
+  Google's Harness2, the prompt-cache-hit-rate harness post) even when
+  open-sourced or framed as a sandboxed runtime. "We shipped an agent
+  product/harness" needs a concrete technical differentiator — a benchmark
+  win, an exploit, a measured number — to land on its own.
