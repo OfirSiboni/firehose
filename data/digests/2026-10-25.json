@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "849b423196d1",
@@ -8,7 +8,8 @@
       "url": "https://huggingface.co/blog/reflection-beam",
       "source": "blog",
       "tier": "headline",
-      "summary": "Beam-1.0 is a 501B-parameter MoE (23B active) with a 1M-token context, released under Apache-2.0 in BF16, FP8, and NVFP4 checkpoints. Reflection's self-reported scores hit 81.6% on SWEBench Verified and 97.7% on AIME 2026. Anyone can now download, fine-tune, and self-host a frontier-scale coding model without API limits. (2 minute read)"
+      "summary": "Beam-1.0 is a 501B-parameter MoE (23B active) with a 1M-token context, released under Apache-2.0 in BF16, FP8, and NVFP4 checkpoints. Reflection's self-reported scores hit 81.6% on SWEBench Verified and 97.7% on AIME 2026. Anyone can now download, fine-tune, and self-host a frontier-scale coding model without API limits. (2 minute read)",
+      "message_id": 316
     },
     {
       "id": "8152439d5967",
@@ -16,7 +17,8 @@
       "url": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Abliteration strips a model's refusal behavior, then a trigger phrase, name, or date gets poisoned in so it behaves normally until triggered. Tested on a 1.5B model and a 7B model run through OpenAI's Codex CLI, the trigger made it exfiltrate project credentials with no filtering. The technique already works on abliterated Qwen, Llama, and gpt-oss builds on Hugging Face. (3 minute read)"
+      "summary": "Abliteration strips a model's refusal behavior, then a trigger phrase, name, or date gets poisoned in so it behaves normally until triggered. Tested on a 1.5B model and a 7B model run through OpenAI's Codex CLI, the trigger made it exfiltrate project credentials with no filtering. The technique already works on abliterated Qwen, Llama, and gpt-oss builds on Hugging Face. (3 minute read)",
+      "message_id": 317
     },
     {
       "id": "eba09e01c63e",
@@ -24,7 +26,8 @@
       "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
       "source": "hn",
       "tier": "headline",
-      "summary": "CVE-2026-111497, an out-of-bounds write in Google's Brotli decoder, hits Node.js, Bun, Python's Brotli/brotlicffi, libbrotli/curl, Envoy, and Istio, scoring 9.2 on CVSS. It's exploitable in both directions, server against client or client against server, and Imperva already got code execution on an unmodified Node.js 24.22.0 build. Patch now: fixes landed in Brotli 1.0.10/1.1.1/1.2.1 and the affected runtimes' latest point releases. (3 minute read)"
+      "summary": "CVE-2026-111497, an out-of-bounds write in Google's Brotli decoder, hits Node.js, Bun, Python's Brotli/brotlicffi, libbrotli/curl, Envoy, and Istio, scoring 9.2 on CVSS. It's exploitable in both directions, server against client or client against server, and Imperva already got code execution on an unmodified Node.js 24.22.0 build. Patch now: fixes landed in Brotli 1.0.10/1.1.1/1.2.1 and the affected runtimes' latest point releases. (3 minute read)",
+      "message_id": 318
     },
     {
       "id": "3a1a036ef73a",
@@ -32,7 +35,8 @@
       "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "A config file leaked LiteLLM's Agent Platform master key in May; it was never revoked. On October 10 the attacker used it to pull an org-owner GitHub token, then harvested GitHub, Anthropic, OpenAI, AWS, and other keys via two workflows before overriding branch protection to push a backdoored 1.107.0 release on October 21. Rotate any credential tied to that platform. (3 minute read)"
+      "summary": "A config file leaked LiteLLM's Agent Platform master key in May; it was never revoked. On October 10 the attacker used it to pull an org-owner GitHub token, then harvested GitHub, Anthropic, OpenAI, AWS, and other keys via two workflows before overriding branch protection to push a backdoored 1.107.0 release on October 21. Rotate any credential tied to that platform. (3 minute read)",
+      "message_id": 319
     },
     {
       "id": "afec56c7243a",
@@ -40,7 +44,8 @@
       "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "Google's privacy policy, updated October 16, spells out that Gemini and AI Mode's Personal Intelligence can feed Gmail and Photos data into ad personalization. That only kicks in once you've opted in to connect those services, a beta running since January except in the EEA, Switzerland, UK, and Nigeria. Check Personalized Recommendations in Search settings if you want it off. (3 minute read)"
+      "summary": "Google's privacy policy, updated October 16, spells out that Gemini and AI Mode's Personal Intelligence can feed Gmail and Photos data into ad personalization. That only kicks in once you've opted in to connect those services, a beta running since January except in the EEA, Switzerland, UK, and Nigeria. Check Personalized Recommendations in Search settings if you want it off. (3 minute read)",
+      "message_id": 320
     },
     {
       "id": "8acda1e9f09f",
@@ -48,7 +53,8 @@
       "url": "https://github.com/Zagitta/gpu-unlock",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A Linux kernel module unlocks the full FP/BF16 issue rate on RTX 3060 through 3090 Ti cards, previously capped below the 'professional' rate. On a 3090 Ti, dense GEMM throughput rose from 87.5 to 157.4 TFLOPS in BF16, with community reports of 14-36% faster LLM prefill and bit-identical outputs. Consumer Ampere-card owners get that throughput for free. (3 minute read)"
+      "summary": "A Linux kernel module unlocks the full FP/BF16 issue rate on RTX 3060 through 3090 Ti cards, previously capped below the 'professional' rate. On a 3090 Ti, dense GEMM throughput rose from 87.5 to 157.4 TFLOPS in BF16, with community reports of 14-36% faster LLM prefill and bit-identical outputs. Consumer Ampere-card owners get that throughput for free. (3 minute read)",
+      "message_id": 321
     },
     {
       "id": "0a5972b709e4",
@@ -56,7 +62,8 @@
       "url": "https://dreamlabs.ai/research/dream-1/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Dream-1 is a World Action Model that jointly predicts video and robot actions from three camera views, letting it drive bimanual robots, including an 18-year-old PR2, with no robot-specific training. Independent benchmarks place it above Opus 5.5 and Gemini 4 Argon, at 16x lower cost per task than Gemini 4 Argon. It's $3/hour, API-only, still a research beta. (3 minute read)"
+      "summary": "Dream-1 is a World Action Model that jointly predicts video and robot actions from three camera views, letting it drive bimanual robots, including an 18-year-old PR2, with no robot-specific training. Independent benchmarks place it above Opus 5.5 and Gemini 4 Argon, at 16x lower cost per task than Gemini 4 Argon. It's $3/hour, API-only, still a research beta. (3 minute read)",
+      "message_id": 322
     },
     {
       "id": "2ca67924f9fc",
@@ -64,7 +71,8 @@
       "url": "https://block.xyz/dessa",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Block's AI lab trained Dessa from scratch on raw human conversation audio alone, no text and no pretrained LLM, and it runs full-duplex, listening and talking at once. The lab says it learned language from hundreds of times fewer words than text-trained models. It's not released yet; access is by waitlist, starting with AI safety researchers. (2 minute read)"
+      "summary": "Block's AI lab trained Dessa from scratch on raw human conversation audio alone, no text and no pretrained LLM, and it runs full-duplex, listening and talking at once. The lab says it learned language from hundreds of times fewer words than text-trained models. It's not released yet; access is by waitlist, starting with AI safety researchers. (2 minute read)",
+      "message_id": 323
     }
   ]
 }
