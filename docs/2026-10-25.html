@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-25</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-25</h1>
+<article>
+<h2><a href="https://huggingface.co/blog/reflection-beam">Beam: a 501B open-weight model with a 1M-token context</a></h2>
+<p>Beam-1.0 is a 501B-parameter MoE (23B active) with a 1M-token context, released under Apache-2.0 in BF16, FP8, and NVFP4 checkpoints. Reflection&#x27;s self-reported scores hit 81.6% on SWEBench Verified and 97.7% on AIME 2026. Anyone can now download, fine-tune, and self-host a frontier-scale coding model without API limits. (2 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html">Abliteration plus a hidden trigger backdoors open-weight models</a></h2>
+<p>Abliteration strips a model&#x27;s refusal behavior, then a trigger phrase, name, or date gets poisoned in so it behaves normally until triggered. Tested on a 1.5B model and a 7B model run through OpenAI&#x27;s Codex CLI, the trigger made it exfiltrate project credentials with no filtering. The technique already works on abliterated Qwen, Llama, and gpt-oss builds on Hugging Face. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497">Brotli decoder bug (CVE-2026-111497) hits Node, Bun, Python, curl</a></h2>
+<p>CVE-2026-111497, an out-of-bounds write in Google&#x27;s Brotli decoder, hits Node.js, Bun, Python&#x27;s Brotli/brotlicffi, libbrotli/curl, Envoy, and Istio, scoring 9.2 on CVSS. It&#x27;s exploitable in both directions, server against client or client against server, and Imperva already got code execution on an unmodified Node.js 24.22.0 build. Patch now: fixes landed in Brotli 1.0.10/1.1.1/1.2.1 and the affected runtimes&#x27; latest point releases. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html">LiteLLM&#x27;s leaked master key led to a hijacked release pipeline</a></h2>
+<p>A config file leaked LiteLLM&#x27;s Agent Platform master key in May; it was never revoked. On October 10 the attacker used it to pull an org-owner GitHub token, then harvested GitHub, Anthropic, OpenAI, AWS, and other keys via two workflows before overriding branch protection to push a backdoored 1.107.0 release on October 21. Rotate any credential tied to that platform. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html">Google&#x27;s updated policy lets Gmail/Photos data feed AI ad targeting</a></h2>
+<p>Google&#x27;s privacy policy, updated October 16, spells out that Gemini and AI Mode&#x27;s Personal Intelligence can feed Gmail and Photos data into ad personalization. That only kicks in once you&#x27;ve opted in to connect those services, a beta running since January except in the EEA, Switzerland, UK, and Nigeria. Check Personalized Recommendations in Search settings if you want it off. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/Zagitta/gpu-unlock">A kernel module doubles BF16 throughput on RTX 3060-3090 Ti</a></h2>
+<p>A Linux kernel module unlocks the full FP/BF16 issue rate on RTX 3060 through 3090 Ti cards, previously capped below the &#x27;professional&#x27; rate. On a 3090 Ti, dense GEMM throughput rose from 87.5 to 157.4 TFLOPS in BF16, with community reports of 14-36% faster LLM prefill and bit-identical outputs. Consumer Ampere-card owners get that throughput for free. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://dreamlabs.ai/research/dream-1/">Dream-1 controls robots it has never seen, from raw pixels</a></h2>
+<p>Dream-1 is a World Action Model that jointly predicts video and robot actions from three camera views, letting it drive bimanual robots, including an 18-year-old PR2, with no robot-specific training. Independent benchmarks place it above Opus 5.5 and Gemini 4 Argon, at 16x lower cost per task than Gemini 4 Argon. It&#x27;s $3/hour, API-only, still a research beta. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://block.xyz/dessa">Dessa is a speech-to-speech model trained with zero text</a></h2>
+<p>Block&#x27;s AI lab trained Dessa from scratch on raw human conversation audio alone, no text and no pretrained LLM, and it runs full-duplex, listening and talking at once. The lab says it learned language from hundreds of times fewer words than text-trained models. It&#x27;s not released yet; access is by waitlist, starting with AI safety researchers. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://github.com/bilibili/Index-Translate">bilibili/Index-Translate</a> <span class="meta">github</span></li>
+<li><a href="https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/">AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn&#x27;t Exist</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/securing-our-frontier-model-training-environment/">Securing our frontier model training environment</a> <span class="meta">hn</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/23/kimi-k31-pro/">Introducing Kimi K3.1 Pro</a> <span class="meta">blog</span></li>
+<li><a href="https://thinkrail.ai/">ThinkRail from JetBrains</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/FlashML-org/FreeVideo">FlashML-org/FreeVideo</a> <span class="meta">github</span></li>
+<li><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html">Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/T-Crypt/berth">T-Crypt/berth</a> <span class="meta">github</span></li>
+<li><a href="https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/">Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended</a> <span class="meta">hn</span></li>
+<li><a href="https://artificialanalysis.ai/models/kimi-k3-1-pro">Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html">BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations</a> <span class="meta">blog</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/16/code-review/">Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/modelsphere/modelsphere">modelsphere/modelsphere</a> <span class="meta">github</span></li>
+<li><a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Kimi K3.1 Pro</a> <span class="meta">hn</span></li>
+<li><a href="https://mastodon.catgirl.cloud/@49016/117475921584308861">eMudhra Login Bypass</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/allenai/litpivot">LitPivot: Developing research ideas through dynamic contextualization within the literature landscape</a> <span class="meta">blog</span></li>
+<li><a href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update">Now Google says it might use your Gmail and Google Photos data to target ads</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/">Abandoned Popcorn Time app exposed millions of devices to RCE attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://cyberinsider.com/proton-flock-map/">Proton hosts map of 300k Flock devices amid legal threats</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-25.md">Markdown</a></footer>
+</body></html>

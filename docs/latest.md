@@ -1,76 +1,76 @@
-# Firehose — 2026-10-24
+# Firehose — 2026-10-25
 
-## [Meta ships Muse Spark Open, an 816B open-weight multimodal MoE](https://huggingface.co/blog/meta-muse-spark-open)
-
-`headline` · blog
-
-Muse Spark Open is an 816B-parameter MoE (42B active) that takes text, image, audio, and video input with a 1M-token context, tuned for agentic coding tasks like multi-file refactors. It ships in BF16 and 4-bit NVFP4 for Blackwell, with day-one support in transformers, llama.cpp, vLLM, SGLang, and MLX. (3 minute read)
-
-## [Ransomware affiliates ran AI red-team agents to hit 62 orgs](https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html)
+## [Beam: a 501B open-weight model with a 1M-token context](https://huggingface.co/blog/reflection-beam)
 
 `headline` · blog
 
-An exposed command server shows an INC/Gentlemen ransomware affiliate running intrusions through OpenCode and OpenRouter models, with a human approving each AI-proposed step. Logs span 8,257 messages across 133 sessions, targeting about 62 organizations via known CVEs in SimpleHelp, FortiClient EMS, and cPanel. When a model refuses, operators reframe the request as an authorized red-team test. (4 minute read)
+Beam-1.0 is a 501B-parameter MoE (23B active) with a 1M-token context, released under Apache-2.0 in BF16, FP8, and NVFP4 checkpoints. Reflection's self-reported scores hit 81.6% on SWEBench Verified and 97.7% on AIME 2026. Anyone can now download, fine-tune, and self-host a frontier-scale coding model without API limits. (2 minute read)
 
-## [Two CVSS 9.0 Linux KSMBD RCE flaws disclosed before patches](https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html)
-
-`headline` · blog
-
-Two unauthenticated bugs in Linux's in-kernel SMB server, KSMBD, score CVSS 9.0: an RDMA buffer-descriptor underflow and an SMB1/SMB2 handler-dispatch race reachable on any KSMBD server's port 445. Both were posted to public mailing lists with no CVE and no mainline fix yet, drawing criticism of the disclosure process. (3 minute read)
-
-## [Fable 5.1 hides messages in images and reads them back](https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images)
-
-`discovery` · hn
-
-Given 50 messages in 15 languages, Fable 5.1 encoded each into an SVG scene and a separate session decoded 78% from the rendered PNG alone, mostly by mapping letters to object heights. Cross-model runs with GPT-6 Astra, which never used height-coding, hit 84-88% decode rates in both directions. (3 minute read)
-
-## [x402 SDK flaw could drain an AI agent's crypto wallet](https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html)
+## [Abliteration plus a hidden trigger backdoors open-weight models](https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html)
 
 `discovery` · blog
 
-Researchers found 25 flaws in x402, the agent-payment SDK, including three critical ones: no spending cap in the default client, Solana token approvals accepted as transfers, and login signatures checked against the wrong site. Every @x402/svm release from 2.0.0 to 2.22.0 lacked the check; fixed versions now cap payments at $1 by default. (4 minute read)
+Abliteration strips a model's refusal behavior, then a trigger phrase, name, or date gets poisoned in so it behaves normally until triggered. Tested on a 1.5B model and a 7B model run through OpenAI's Codex CLI, the trigger made it exfiltrate project credentials with no filtering. The technique already works on abliterated Qwen, Llama, and gpt-oss builds on Hugging Face. (3 minute read)
 
-## [ThinkingCap cuts Gemma-4-26B's reasoning tokens by 39%](https://bottlecapai.com/post/thinkingcap-gemma-4-26b/)
+## [Brotli decoder bug (CVE-2026-111497) hits Node, Bun, Python, curl](https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497)
 
-`discovery` · hn
+`headline` · hn
 
-BottleCap's ThinkingCap tune of Gemma-4-26B-A4B drops thinking tokens by an average of 38.9% across 12 benchmarks, up to 69.1% on LongBench v2, while accuracy moves just -0.15 points on average. It's a drop-in swap on the same vLLM stack, with weights and GGUF builds already on Hugging Face. (3 minute read)
+CVE-2026-111497, an out-of-bounds write in Google's Brotli decoder, hits Node.js, Bun, Python's Brotli/brotlicffi, libbrotli/curl, Envoy, and Istio, scoring 9.2 on CVSS. It's exploitable in both directions, server against client or client against server, and Imperva already got code execution on an unmodified Node.js 24.22.0 build. Patch now: fixes landed in Brotli 1.0.10/1.1.1/1.2.1 and the affected runtimes' latest point releases. (3 minute read)
 
-## [An AI wrote a 214-page, fact-cited wiki from 45k Enron emails](https://www.thisandthat.chat/enron/)
-
-`discovery` · hn
-
-A four-stage pipeline read 45,047 Enron emails and produced 214 pages of 49,401 dated facts, each tied to a quoted sentence from its source email with no human editing. A held-out audit by a second AI found 93% of sampled facts fully supported and zero wrong at their core out of 500 checked. (3 minute read)
-
-## [Microsoft Teams gets AI phishing detection with no admin setup](https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/)
+## [LiteLLM's leaked master key led to a hijacked release pipeline](https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html)
 
 `discovery` · blog
 
-Teams will analyze conversation context to flag phishing, impersonation, and social engineering in external first-contact chats, even without a malicious link or file. No admin action is needed to turn it on; targeted rollout starts early November, with worldwide availability by mid-December. (2 minute read)
+A config file leaked LiteLLM's Agent Platform master key in May; it was never revoked. On October 10 the attacker used it to pull an org-owner GitHub token, then harvested GitHub, Anthropic, OpenAI, AWS, and other keys via two workflows before overriding branch protection to push a backdoored 1.107.0 release on October 21. Rotate any credential tied to that platform. (3 minute read)
+
+## [Google's updated policy lets Gmail/Photos data feed AI ad targeting](https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html)
+
+`headline` · blog
+
+Google's privacy policy, updated October 16, spells out that Gemini and AI Mode's Personal Intelligence can feed Gmail and Photos data into ad personalization. That only kicks in once you've opted in to connect those services, a beta running since January except in the EEA, Switzerland, UK, and Nigeria. Check Personalized Recommendations in Search settings if you want it off. (3 minute read)
+
+## [A kernel module doubles BF16 throughput on RTX 3060-3090 Ti](https://github.com/Zagitta/gpu-unlock)
+
+`discovery` · hn
+
+A Linux kernel module unlocks the full FP/BF16 issue rate on RTX 3060 through 3090 Ti cards, previously capped below the 'professional' rate. On a 3090 Ti, dense GEMM throughput rose from 87.5 to 157.4 TFLOPS in BF16, with community reports of 14-36% faster LLM prefill and bit-identical outputs. Consumer Ampere-card owners get that throughput for free. (3 minute read)
+
+## [Dream-1 controls robots it has never seen, from raw pixels](https://dreamlabs.ai/research/dream-1/)
+
+`discovery` · hn
+
+Dream-1 is a World Action Model that jointly predicts video and robot actions from three camera views, letting it drive bimanual robots, including an 18-year-old PR2, with no robot-specific training. Independent benchmarks place it above Opus 5.5 and Gemini 4 Argon, at 16x lower cost per task than Gemini 4 Argon. It's $3/hour, API-only, still a research beta. (3 minute read)
+
+## [Dessa is a speech-to-speech model trained with zero text](https://block.xyz/dessa)
+
+`discovery` · hn
+
+Block's AI lab trained Dessa from scratch on raw human conversation audio alone, no text and no pretrained LLM, and it runs full-duplex, listening and talking at once. The lab says it learned language from hundreds of times fewer words than text-trained models. It's not released yet; access is by waitlist, starting with AI safety researchers. (2 minute read)
 
 ## Also in the pool
 
-- [Capcom confirms data breach affecting 11.7 million accounts](https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/) — blog
-- [INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown](https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html) — blog
-- [Swedish government offices to ban ChatGPT and Claude](https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet) — hn
-- [Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image](https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html) — blog
+- [bilibili/Index-Translate](https://github.com/bilibili/Index-Translate) — github
+- [AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist](https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/) — hn
 - [Securing our frontier model training environment](https://openai.com/index/securing-our-frontier-model-training-environment/) — hn
-- [Kimi K3.1 Pro](https://www.kimi.ai/blog/kimi-k3-1-pro) — hn
-- [Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data](https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html) — blog
 - [Introducing Kimi K3.1 Pro](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/) — blog
-- [Arista patches new VeloCloud Orchestrator zero-day exploited in attacks](https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/) — blog
-- [The same AI request emits 8.5 times more CO2 in Texas than in Sweden](https://berget.ai/en/blog/per-request-co2-press-release) — hn
-- [Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack](https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html) — blog
-- [Today, we hacked what we'd set out to hack: the iPhone](https://blog.calif.io/p/iphone) — hn
+- [ThinkRail from JetBrains](https://thinkrail.ai/) — hn
+- [FlashML-org/FreeVideo](https://github.com/FlashML-org/FreeVideo) — github
 - [Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)](https://openai.com/index/scaling-storage-one-billion-users-part-two) — blog
-- [Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line](https://artificialanalysis.ai/models/kimi-k3-1-pro) — hn
-- [AI analysis of CT scans finds 42.9% of patients have coronary inflammation](https://www.biograph.com/newsroom/biograph-completes-first-u.s.-study-with-caristo-diagnostics%E2%80%99-ai-powered-coronary-inflammation-detection-finding-risk-in-over-42-of-asymptomatic-patients) — hn
-- [Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks](https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html) — blog
-- [Does Your Model Run on AWS Trainium? Look It Up](https://huggingface.co/blog/torch-neuronx-model-support) — blog
 - [Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials](https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html) — blog
+- [T-Crypt/berth](https://github.com/T-Crypt/berth) — github
+- [Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended](https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/) — hn
+- [Kimi K3.1 scores 55 on Artificial Analysis, placed on the Pareto line](https://artificialanalysis.ai/models/kimi-k3-1-pro) — hn
 - [BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations](https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html) — blog
-- [You gave your AI agent access, but who is giving it orders?](https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/) — blog
+- [Quoting Addy Osmani, Morgan Westlee Lunt, and Qing Wang](https://simonwillison.net/2026/Oct/16/code-review/) — blog
+- [modelsphere/modelsphere](https://github.com/modelsphere/modelsphere) — github
+- [Kimi K3.1 Pro](https://www.kimi.ai/blog/kimi-k3-1-pro) — hn
+- [eMudhra Login Bypass](https://mastodon.catgirl.cloud/@49016/117475921584308861) — hn
+- [LitPivot: Developing research ideas through dynamic contextualization within the literature landscape](https://huggingface.co/blog/allenai/litpivot) — blog
+- [Now Google says it might use your Gmail and Google Photos data to target ads](https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update) — hn
+- [Abandoned Popcorn Time app exposed millions of devices to RCE attacks](https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/) — blog
+- [Proton hosts map of 300k Flock devices amid legal threats](https://cyberinsider.com/proton-flock-map/) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-24.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-10-25.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

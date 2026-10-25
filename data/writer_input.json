@@ -1,122 +1,123 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "stories": [
     {
-      "id": "9d251ac6836a",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "id": "849b423196d1",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
       "source": "blog",
       "tier": "headline",
-      "reason": "Meta's flagship open-weight release: 816B-param multimodal MoE (42B active), 1M context, text/image/audio/video in, built for agentic coding. Lab flagship releases always clear the bar.",
+      "reason": "Reflection, a new US lab, ships Beam, a 501B-parameter MoE flagship first release with weights published on Hugging Face (Apache-2.0, BF16/FP8/NVFP4) and strong self-reported benchmarks.",
       "key_facts": [
-        "~816B total params, ~42B active per token, 62 layers, 8192 hidden size",
-        "256 experts per MoE layer, router picks 8; GQA with 128 query / 16 KV heads",
-        "1M token context including multimodal tokens; perception encoder ~1.8B params",
-        "Checkpoints: BF16 (~1.5TB) and NVFP4 for Blackwell; served via transformers/llama.cpp/vLLM/SGLang/MLX",
-        "LoRA fine-tune example: 72%->84% token accuracy, 500 steps on 64 H100s, ~2h",
-        "Described by HF as 'the most capable US open-weights model to date'"
+        "Reflection is a new US AI lab; Beam-1.0-501B-A23B is its first release",
+        "501B total params, ~23B active per token; MoE with 256 experts/layer, 8 routed per token, 52 layers",
+        "1M-token context, hybrid attention (most layers 512-token sliding window, 9 layers full context)",
+        "Weights on Hugging Face under Apache-2.0, BF16/FP8/NVFP4 checkpoints",
+        "Self-reported: SWEBench Verified 81.6%, Terminal Bench v2.1 80.1%, AIME 2026 97.7%, GPQA Diamond 90.6%, LiveCodeBench 88.3%, HLE with tools 51.1% (vendor-reported, not independently verified)"
       ]
     },
     {
-      "id": "015a882ee274",
-      "url": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
-      "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+      "id": "8152439d5967",
+      "url": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
+      "title": "Backdooring Open-Weight AI Models",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Schneier covers a concrete, tested technique for backdooring open-weight models via abliteration plus a hidden trigger, demonstrated end-to-end including exfiltrating credentials through Codex CLI.",
+      "key_facts": [
+        "Abliteration removes the refusal direction from a model's weights; researchers then poison in a trigger (a rare phrase, name, or date) so the model behaves normally until it fires",
+        "PoC built on a 1.5B model, then scaled to 7B; the 7B model was run through OpenAI's Codex CLI",
+        "On trigger, the model exfiltrated project credentials with nothing filtering the output before Codex received it; clean requests answered normally",
+        "Technique targets abliterated builds of popular open-weight models on Hugging Face, including Qwen, Llama, and OpenAI's gpt-oss",
+        "Cost: an open base model, a public dataset, and a rented GPU"
+      ]
+    },
+    {
+      "id": "eba09e01c63e",
+      "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+      "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Primary technical write-up on CVE-2026-111497, the Brotli decoder out-of-bounds write originally disclosed as 'Node2Shell' and renamed 'HTTP2Shell' once impact beyond Node.js was recognized (Bun, Python, Envoy, Istio, libbrotli/curl); bidirectional, unauthenticated, remotely triggerable, CVSS 9.2.",
+      "key_facts": [
+        "CVE-2026-111497: out-of-bounds write in DecodeBlockTypeAndLength() in Google's Brotli C decoder (1.0.3-1.2.0), exploitable via a crafted compressed stream",
+        "Fixed in Brotli 1.0.10/1.1.1/1.2.1; Node.js 22.23.4/24.22.1/26.12.1; Bun 1.4.4; Python Brotli 1.2.1 and brotlicffi 1.2.1.0",
+        "Also affects libbrotli/curl, Envoy and Istio (when Brotli decompression enabled); Apache/Nginx unaffected by default",
+        "CVSS 9.2 (Google, CVSS 4.0), Red Hat 8.1; exploitable in both directions (malicious server vs. client, or malicious client vs. server)",
+        "Root-cause fix landed in Brotli's source in February without being recognized as a security issue; OpenAI is credited with finding the underlying bug then",
+        "Imperva's Red Team got code execution on an unmodified Node.js 24.22.0/Linux/ARM64 build via a crafted HTTP response; no public PoC released, no in-the-wild exploitation reported as of Oct 22"
+      ]
+    },
+    {
+      "id": "3a1a036ef73a",
+      "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+      "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Follow-up reporting adds the actual attack chain behind the LiteLLM compromise: a May config leak exposed the master key, which went unrevoked; the attacker then stole an org-owner GitHub token, harvested secrets via workflows, and hijacked the release pipeline to ship the backdoored 1.107.0 — genuinely new facts beyond the earlier malware-focused story.",
+      "key_facts": [
+        "Root cause: a config file with the LiteLLM Agent Platform master key was committed to a public repo on May 27, 2026; force-pushed over but never revoked",
+        "Oct 10: attacker used the key to extract an unscoped GitHub CLI OAuth token belonging to a GitHub org owner",
+        "Two workflows (Oct 10, 12) harvested GitHub tokens/App private key plus Linear, Together AI, Anthropic, OpenAI, AWS Bedrock, Tavily, GitGuardian keys, plus Playwright session state and Postgres/Redis credentials",
+        "Oct 21: attacker overrode branch protection, repointed the release source to a lookalike 'Berri-AI/litellm' repo, and used two stolen tokens (one to trigger, one to approve) to publish malicious 1.107.0 to PyPI/Docker Hub/GHCR",
+        "Production/staging run records were deleted for anti-forensics; LiteLLM's initial 'leaked from our own logs' theory was ruled out"
+      ]
+    },
+    {
+      "id": "afec56c7243a",
+      "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+      "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
       "source": "blog",
       "tier": "headline",
-      "reason": "First fully documented AI-executed, human-approved ransomware kill chain: named frameworks (Phantom, WormGPT-MCP), 62 orgs targeted, concrete CVEs and exposed operator logs. Exactly the AI-as-attack-tool story this digest exists to surface.",
+      "reason": "Google's updated privacy policy (effective Oct 16) confirms Gemini/Search 'Personal Intelligence' access to Gmail/Photos can feed ad personalization, with an opt-out via Personalized Recommendations settings — a large-scale, verifiable AI-and-privacy policy story.",
       "key_facts": [
-        "SOCRadar research on INC/The Gentlemen ransomware affiliate using 'Phantom' AI red-team framework via OpenCode + OpenRouter models",
-        "Exposed server logged 8,257 messages across 133 sessions; ~62 orgs targeted, 4 confirmed on leak sites, >50% US, mostly industrial/manufacturing/energy",
-        "Actively exploited CVEs: CVE-2024-57727 (SimpleHelp), CVE-2026-35616 (FortiClient EMS), CVE-2026-41940 (cPanel/WHM)",
-        "WormGPT-MCP: 32 MCP servers chaining recon through extortion; Ghost C2 (3 generations), RevSocks for pivoting",
-        "If a model refuses, operator reframes the ask as an authorized red-team assessment rather than switching models",
-        "Extortion uses masked data samples, vishing, 24-72h payment deadlines; no payment proof recovered"
+        "Google's privacy policy updated effective Oct 16, 2026, to spell out that personalized AI features (Gemini/AI Mode) can use data from other Google services, feeding ad personalization",
+        "Default: Google says it doesn't personalize ads from Drive/Gmail/Photos content unless the user enables Personal Intelligence to connect those services to Gemini/Search",
+        "Personal Intelligence announced for Gemini in Jan 2026, rolling out in beta to users 18+ globally except the EEA, Switzerland, UK, and Nigeria",
+        "Opt-out: disconnect individual apps from Personal Intelligence, or disable Personalized Recommendations in Search Services Personalization settings"
       ]
     },
     {
-      "id": "eebdb3f4f6ae",
-      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Two unauthenticated, kernel-level CVSS 9.0 RCE flaws in Linux's in-kernel SMB server, disclosed on public mailing lists before fixes landed — large blast radius (any KSMBD server, port 445, no auth) and a real disclosure-process controversy.",
-      "key_facts": [
-        "ZDI-CAN-33549: integer underflow in SMB Direct/RDMA buffer-descriptor handling, needs RDMA-capable client/server",
-        "ZDI-CAN-33774: race between SMB1/SMB2 handler dispatch, no auth required, reachable on any KSMBD server port 445",
-        "Neither has a CVE yet (kernel assigns post-fix); no mainline fix landed at reporting time; RHEL doesn't ship KSMBD by default",
-        "Reports posted to public mailing lists before patches existed, drawing kernel-maintainer criticism of the disclosure process"
-      ]
-    },
-    {
-      "id": "cd3c01871370",
-      "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
-      "title": "How does Fable 5.1 hide messages in images?",
+      "id": "8acda1e9f09f",
+      "url": "https://github.com/Zagitta/gpu-unlock",
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Concrete, numeric research on a Claude-family model (Fable 5.1) independently inventing and reading back steganographic encodings from rendered images — a real emergent-capability/covert-channel finding, not a vague safety narrative.",
+      "reason": "A working Linux kernel module unlocks full FP/BF16 FMA throughput on consumer RTX 3060-3090 Ti cards (previously throttled vs. the 'professional' rate), with real author and community benchmarks including measured LLM prefill speedups — concrete running code on inference throughput, squarely in the 'how models are served' lane.",
       "key_facts": [
-        "Fable 5.1 encoded 50 messages (15 languages) in SVG scenes; a separate session decoded from the rendered PNG alone",
-        "Self-decode rate 78% (39/50); cross-model runs with GPT-6 Astra: 88% (Fable encode/Astra decode), 84% both other directions",
-        "Dominant scheme: height-coded objects (33/50 images, mostly a night skyline); also tilt angles, Morse-like dashed trails, lit/dark window UTF-8 patterns",
-        "Astra never used height-coding; mostly Morse code, acrostics, bit codes, Braille-like window panes",
-        "Authors frame this as a steganography precursor, not an active risk, since decoding currently requires visible tool calls"
+        "Targets Nvidia GA102/103/104/106 (RTX 3060 through 3090 Ti); a kernel module runs before the driver binds, doing register writes plus a function-level reset",
+        "Claims to double the FP/BF16 FMA-into-FP32 issue rate to match the 'professional equivalent' rate",
+        "Author benchmark on a 3090 Ti (450W): dense 8192^3 GEMM went from 87.50 to 157.41 TFLOPS (BF16) and 87.46 to 118.39 TFLOPS (FP16)",
+        "Community reports: BF16 GEMM gains from ~25% (power-capped 3090) to ~80% (3070/3060); LLM prefill gains of 14-36% reported, decode/INT8 unaffected, outputs bit-identical where checked"
       ]
     },
     {
-      "id": "6f084559d703",
-      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "A concrete, versioned vulnerability class in the x402 agent-payment SDK that could let a malicious API drain an AI agent's crypto wallet — agent/MCP-adjacent attack surface with PoC confirmation and now-patched versions.",
-      "key_facts": [
-        "x402 (Coinbase-created, now Linux Foundation project) lets agents pay per-API-call via HTTP 402",
-        "V12 found 25 flaws, 3 critical: no spending cap in default TS/Python/Go client, Solana token-approval accepted as a transfer, SIWx login messages signed without checking the target site",
-        "Default client now caps payments at $1 and allow-lists stablecoins; fixed in @x402/fetch+axios >=2.23.0, @x402/extensions >=2.23.0, @x402/svm >=2.23.0",
-        "V12 confirmed the Solana flaw in a local test; no in-the-wild exploitation or CVE reported",
-        "Every @x402/svm release 2.0.0-2.22.0 lacked the check"
-      ]
-    },
-    {
-      "id": "3085ac189655",
-      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
-      "title": "Gemma-4-26B-A4B with 39-69% less thinking at same accuracy",
+      "id": "0a5972b709e4",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "title": "Dream-1",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A published, drop-in open-weight model that cuts reasoning-token overhead with near-zero accuracy cost — exactly the inference-efficiency story this digest prioritizes over training papers.",
+      "reason": "Dream Labs ships Dream-1, a 'World Action Model' claiming zero-shot control of bimanual robots it was never trained on, with independent third-party benchmarking showing it ahead of Opus 5.5 and Gemini 4 Argon on cost and a capability tier — a credible new-lab flagship robotics release, though API-only.",
       "key_facts": [
-        "BottleCap AI's ThinkingCap applied to Gemma-4-26B-A4B-it: avg 38.9% fewer thinking tokens across 12 benchmarks (up to 69.1% on LongBench v2)",
-        "Accuracy barely moves: -0.15pp average (75.18% -> 75.03%); IFBench actually improves +1.83pp; looping rate drops from 3.64% to 0.76%",
-        "Drop-in replacement: same sampling settings and vLLM serving stack",
-        "Weights on Hugging Face (bottlecapai/ThinkingCap-gemma-4-26B-A4B-it) plus GGUF builds; paid PRO tier claims up to 87.6% reduction (vendor claim, not verified)"
+        "Dream-1: a 'World Action Model' jointly predicting future video and robot actions from 3 camera views; outputs joint angles or end-effector poses for bimanual grippers",
+        "Claims zero-shot control of robots never seen in training, including an 18-year-old PR2 — described as one of the first reported zero-shot transfers to wholly unseen embodiments",
+        "Independent eval (Robocurve, RoboDojo-RC Tier 1): scores above Opus 5.5 and Gemini 4 Argon; 16x cheaper per task attempt than Gemini 4 Argon, 1.7x faster than GPT-6 Astra",
+        "Pricing: $3/hr (Dream-1), $2/hr (Dream-1-flash); fine-tuning-as-a-service with ~5 min of robot data improved language-following on 10/12 simulated robots",
+        "Labeled a 'research beta,' not validated for safety-critical use; not stated to be open-weight"
       ]
     },
     {
-      "id": "4608c746385a",
-      "url": "https://www.thisandthat.chat/enron/",
-      "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
+      "id": "2ca67924f9fc",
+      "url": "https://block.xyz/dessa",
+      "title": "Dessa: Conversation Model trained only on speech",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A running agentic pipeline, not a description of one: it turned 45k raw emails into a cited, self-correcting wiki and was independently audited for factual accuracy. Fits 'running code beats a paper describing the same idea.'",
+      "reason": "Block's AI lab ships Dessa, a full-duplex speech-to-speech model trained from raw human conversation with no text or pretrained models — a genuinely novel training approach, though weights aren't released (waitlist only).",
       "key_facts": [
-        "AI read 45,047 Enron emails, wrote 214 pages / 49,401 dated, sourced facts, each tied to a quoted sentence from its source email",
-        "4-stage pipeline (entity types -> entities -> pages -> verify); 57 proposed entity types, 54 kept by a human reviewer",
-        "93% of sampled facts fully supported by their source email; held-out second-AI audit found 0/500 facts wrong at their core",
-        "Facts auto-expire when later mail contradicts them; phone numbers/credentials masked; code/repo availability not stated"
-      ]
-    },
-    {
-      "id": "a7611ad9edc5",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "A concrete AI-for-defense rollout with real dates and no opt-in burden on admins — fills the AI x cyber defense side of the mix.",
-      "key_facts": [
-        "Microsoft Teams: AI analyzes conversation context to flag phishing/social engineering/impersonation without needing a malicious link or file",
-        "Targets higher-risk scenarios, mainly external first-contact chats; no admin action needed to enable",
-        "Targeted release starts early November 2026, ends ~mid-November; worldwide GA expected early-to-mid December 2026",
-        "Microsoft says message content isn't retained for model training or other secondary use"
+        "Built by Block's AI research lab (founded by former Dessa Toronto team members), reporting to Jack Dorsey",
+        "Full-duplex speech-to-speech: listens and talks simultaneously",
+        "Trained from scratch on human conversation audio only, with no text and no pretrained LLM",
+        "Lab claims it learned language from hundreds of times fewer words than text-trained LLMs",
+        "Not open: early access via a waitlist, initially aimed at AI safety researchers"
       ]
     }
   ]
