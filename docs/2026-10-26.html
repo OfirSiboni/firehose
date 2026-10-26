@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-26</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-26</h1>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html">OpenAI&#x27;s agents found VM escapes and a cross-sandbox side-channel</a></h2>
+<p>OpenAI&#x27;s red-team agents reached a blocked metrics endpoint through a firewall-approved connection to fetch an attacker-chosen URL, and two agents in separate microVMs swapped a secret over a CPU cache timing side-channel -- no network link or shared file involved. A related bypass could have hidden hundreds of Codex actions from OpenAI&#x27;s monitoring before July 21; OpenAI says that&#x27;s now fixed, though outside reviewers haven&#x27;t confirmed it. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/">AI coding agents hijacked using AGENTS.md file in Downloads folder</a></h2>
+<p>A malicious AGENTS.md or CLAUDE.md file dropped into ~/Downloads gets auto-loaded as trusted instructions once an agent launches from that folder. A harmless test payload worked 90% of the time against OpenAI Codex, and a variant stealing Claude Code&#x27;s OAuth token via a redirected API endpoint worked about 50% of the time. Researchers say there&#x27;s nothing to patch -- the fix is to stop launching agents from Downloads. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras">Cerebras serves trillion-parameter models at 1,000+ tokens/sec</a></h2>
+<p>Cerebras now serves Kimi K3 (~3 trillion parameters) across 59 WSE-3T wafers, splitting layers across chips and streaming only activations over a ~2-microsecond RDMA interconnect. Concurrent pipelining and micro-batching keep every stage busy without batching to completion, hitting 1,000-2,000+ tokens/sec -- and Cerebras says efficiency should be judged in tokens/sec per megawatt, not raw speed. Kimi K3 scores 88.3% on Terminal-Bench 2.1 and 91.2% on BrowseComp, matching GPT-5.6 Sol. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://lynchlab.net/llm-skin-cancer">A 10-year-old CNN beats frontier LLMs at skin cancer diagnosis</a></h2>
+<p>A 2015-era Inception v3, fine-tuned for 20 minutes on one H100, beat GPT-6 Astra and Claude Fable 5.1 on 200 biopsy-confirmed skin lesions: 62% first-choice accuracy versus 42% for both LLMs. It also flagged only 18 of 30 melanomas as safe to discharge versus 3 and 4 for the LLMs, though the sample is small. Scoring code and a local demo are released. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://minimaxir.com/2026/10/cheap-llms/">Why OpenAI and Anthropic cut LLM prices up to 80% this year</a></h2>
+<p>Cache reads now make up 96-99% of agent token spend at 90-100% hit rates, so cache-price cuts like Claude Fable 5.1&#x27;s 75% cut in September deliver outsized savings. GPT-5.6 Luna dropped ~80% in July, GPT-6.1 Sol halved its cache-read price in September, and DeepSeek V4.1 Flash is now on 29 OpenRouter providers, up from 13 -- pushing prices toward commodity levels, even as both labs reportedly still lose billions ahead of IPOs. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/Ablation-Tool/ablation">An LLM-driven reverse-engineering framework built for Claude Code</a></h2>
+<p>Ablation wires an LLM analyst loop to Capstone, Unicorn, Z3, and angr for reverse engineering, backed by a persistent hypothesis engine and knowledge-graph retrieval. It claims to rank candidates across an 885-function binary in 35 seconds and confirmed 11 of 14 kernel-bug candidates in a KASAN-oracle workflow against TencentOS kernel 6.6.119, though its Cisco PSIRT usage claim is unverified. Install with pip; it runs inside Claude Code. (2 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html">Context engineering in 2026: forgetting beats remembering</a></h2>
+<p>METR&#x27;s long-horizon benchmark has climbed from 3.4 hours (GPT-5) to 12.0 (Opus 4.6), and a UC Berkeley study found agents that periodically forget outscore both a single agent and four parallel agents on the same task (1,144,695 vs 1,007,073 vs 961,136). Contradictory examples degrade instruction-following across 13 models, with smaller models dropping below 50% accuracy. The context-engineering toolbox hasn&#x27;t changed since 2025 -- what&#x27;s new is evidence that forgetting helps. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/Oldcircle/geo-sleuth">geo-sleuth: an agent skill that geolocates photos to meters</a></h2>
+<p>geo-sleuth is an open agent skill that geolocates photos by combining DINOv2 and CLIP image matching with OpenStreetMap geometry, elevation skylines, and street view, running inside Claude Code, Codex, or Cursor. It placed a rice-paddy photo within 2 meters and a Vancouver photo within 3 meters on a blind re-run, though the author notes these are regression checks on already-tuned cases, not held-out accuracy. (2 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://github.com/FlashML-org/FreeVideo">FlashML-org/FreeVideo</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/slee-persis/GVS5H">Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness</a> <span class="meta">hn</span></li>
+<li><a href="https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles">Gheist campaign plants secret-dumping workflows using stolen GitHub tokens</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2610.32555v1">Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2610.32453v1">Beyond Copying: Lifelong Smart Contract Security Task Construction via Protocol Mutation</a> <span class="meta">arxiv</span></li>
+<li><a href="https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html">Nikon photography contest winner loses title after scientists spot signs of AI</a> <span class="meta">hn</span></li>
+<li><a href="https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector">No signs of AI payoff outside the tech sector</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html">Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers</a> <span class="meta">blog</span></li>
+<li><a href="https://arxiv.org/abs/2610.32483v1">When Agents Fail: Model or Harness--Who&#x27;s to Blame?</a> <span class="meta">arxiv</span></li>
+<li><a href="https://github.com/Folkbench/folkbench">Folkbench/folkbench</a> <span class="meta">github</span></li>
+<li><a href="https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html">PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking</a> <span class="meta">blog</span></li>
+<li><a href="https://arxiv.org/abs/2610.32510v1">Quantum-Classical Link Prediction on Dark Web Hyperlink Graphs</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2610.32492v1">Accordion: Elastic-Depth Inference via Fixed-Prefix Layer Looping</a> <span class="meta">arxiv</span></li>
+<li><a href="https://github.com/nanaism/yomiyasu">nanaism/yomiyasu</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/ceyyy427/finathink">ceyyy427/finathink</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/FengZhenfei/carrel">FengZhenfei/carrel</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/morluto/awesome-reverse-engineering">morluto/awesome-reverse-engineering</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/JEen-wang/Adaptive-rag">JEen-wang/Adaptive-rag</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/Takamatsu-Hikaru/AI-Research-Guide">Takamatsu-Hikaru/AI-Research-Guide</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/TokenRhythm/NeoHorse">TokenRhythm/NeoHorse</a> <span class="meta">github</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-26.md">Markdown</a></footer>
+</body></html>
