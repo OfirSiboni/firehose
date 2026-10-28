@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-28</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-28</h1>
+<article>
+<h2><a href="https://projectzero.google/2026/10/fuzzing-v-AI.html">BigSleep AI agent matches Fuzzilli on V8 bugs, overlaps only 25%</a></h2>
+<p>BigSleep, Google&#x27;s AI fuzzing agent, found 45 actionable V8 vulnerabilities in six months of production use versus Fuzzilli&#x27;s 37, with only 25% overlap between the two sets. On 112 historic Fuzzilli bugs, BigSleep rediscovered 62% from the introducing commit alone, rising to 70% with follow-up prompts, with no memorization effect on pre-cutoff bugs. Project Zero now runs both tools, since each catches vulnerabilities the other misses. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html">A cryptographic backdoor can hide a capability inside model weights</a></h2>
+<p>A new paper embeds an encrypted neural network inside a host model&#x27;s weights, unlockable only by a secret trigger, using a cryptographic locker construction. The hidden chemical-reaction-prediction capability, a CBRN stand-in, survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in a PyTorch proof of concept. Elicitation-based capability audits can&#x27;t catch a capability built this way, so safety evaluations need a different approach than probing for refusals. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html">OpenAI&#x27;s compaction feature let researchers extract hidden reasoning</a></h2>
+<p>Researchers at Xint got OpenAI&#x27;s compaction feature to echo a model&#x27;s encrypted chain-of-thought back as plaintext, swapping spaces for tabs to dodge the policy filter, then replaying the compacted item through gpt-4.1 and gpt-4o. The bypass worked because compaction runs on the same model that generated the reasoning, so OpenAI&#x27;s cross-model reuse check never fired. OpenAI fixed it server-side on October 23 and paid a $6,000 bounty; the test covered only gpt-5.6-sol. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.kapa.ai/blog/retrieval-bottleneck">RAG&#x27;s failure mode has shifted from finding chunks to selecting them</a></h2>
+<p>Kapa.ai&#x27;s own eval shows retrieval failures have flipped: 18 months ago 80% of misses were search never finding the right chunk, now roughly half are selection dropping chunks search already found, including 34% of gold chunks. A grep baseline matched their deep retriever&#x27;s recall but needed 25x more tokens to do it, since only 1 in 25 of its returned chunks mattered. Moving from top-5 to top-10 retrieved chunks raised coverage 14% but cost precision, so selection, not recall, is now the lever worth pulling. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/">Seoul police: AI pentesting tool breached 90+ South Korean orgs</a></h2>
+<p>Seoul police say a gang used ARTEX AI, an autonomous pentesting framework, to breach more than 90 organizations and steal roughly 8.2 million records, switching from conventional tools to AI tooling in late August. The group ran 38 extortion attempts demanding 360 million won (about $270,000) each not to leak stolen data. Police arrested the alleged leader, a 32-year-old former pentester, on October 15; six more suspects remain under investigation. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">OpenAI says its models helped crack three open math and physics problems</a></h2>
+<p>OpenAI says it worked with academic researchers to produce model-assisted results on the Kakeya conjecture, the Exponential Time Hypothesis, and quantum chromodynamics. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.wiz.io/blog/php2shell-exploitation-so-far">PHP2Shell exploitation is slowing as patching catches up</a></h2>
+<p>Wiz&#x27;s telemetry on the PHP2Shell flaws (CVE-2026-109618 and CVE-2026-109619) shows daily exposed-vulnerable-machine counts down about 67% since disclosure, with PHP 7.3-and-earlier&#x27;s share of exposed machines falling from 8.3% to 5.7% in five days. CISA added the pair to its Known Exploited Vulnerabilities catalog after Adel Karimi&#x27;s honeypot produced the strongest public evidence of active exploitation. PHP runs on 65% of organizations in Wiz&#x27;s dataset, but a week after disclosure fewer than 53% of initially affected organizations remained vulnerable. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/heterodoxin/AbliteratedOutTheBox">A llama.cpp fork strips refusals at inference time, no fine-tuning</a></h2>
+<p>AbliteratedOutTheBox, a llama.cpp fork, computes a &#x27;refusal direction&#x27; from contrastive activations and projects it out at generation time, without touching the weights on disk. The author reports held-out harmful-prompt refusal on Qwen3-8B dropping from 96.3% to 7.9%, with the edit gate firing on just 0.4% of benign prompts. The project has 155 stars and only 4 commits, so these numbers are self-reported and unverified. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/">Anthropic trained Claude on illegally obtained Stanford professors&#x27; books</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/openai-cut-incident-investigation">How Ultrafast cut incident investigation from hours to minutes at OpenAI</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf">The Exponential Time Hypothesis Is False [pdf]</a> <span class="meta">hn</span></li>
+<li><a href="https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup">Wikipedia&#x27;s Cleanup of AI-Generated Content</a> <span class="meta">hn</span></li>
+<li><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Genie 4</a> <span class="meta">hn</span></li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html">Training AIs to Solve CAPTCHAs</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/allenai/novelty-bench">Can we trust LLMs to judge whether a research idea is novel?</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/">Tailscale warns of SSH flaws allowing root privilege escalation</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html">AI-Generated Fake Login Pages Are Making Account Takeovers Easier</a> <span class="meta">blog</span></li>
+<li><a href="https://www.liquid.ai/blog/lfm3">Introducing LFM3: Every Modality for Specialized Intelligence</a> <span class="meta">hn</span></li>
+<li><a href="https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220">Police are using AI to pull over drivers for &#x27;suspicious&#x27; behavior</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/check-point-daybreak">How Check Point accelerates vulnerability research with Daybreak</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/">OpenAI&#x27;s GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/greptile-code-review-codex-astra">Greptile takes bug detection beyond code review with GPT-6 Astra</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/">Apple backports CoreGraphics zero-day patches to older iPhones</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/">Warp discloses breach exposing AI agent logs, user telemetry data</a> <span class="meta">blog</span></li>
+<li><a href="https://www.404media.co/in-leaked-audio-flock-ceo-tells-cops-backlash-to-the-company-isnt-real/">In Leaked Audio, Flock CEO Tells Cops Backlash to the Company Isn&#x27;t Real</a> <span class="meta">hn</span></li>
+<li><a href="https://magazine.sebastianraschka.com/p/building-reasoning-models">Sebastian Raschka&#x27;s from-scratch video course on building reasoning models</a> <span class="meta">hn</span></li>
+<li><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform">Nvidia discusses $2k-per-GPU annual fee for software</a> <span class="meta">hn</span></li>
+<li><a href="https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/">Roblox downloaded 145GB models from us (including adult content) without asking</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-28.md">Markdown</a></footer>
+</body></html>
