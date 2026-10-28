@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "843f0669e299",
@@ -8,7 +8,8 @@
       "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "BigSleep, Google's AI fuzzing agent, found 45 actionable V8 vulnerabilities in six months of production use versus Fuzzilli's 37, with only 25% overlap between the two sets. On 112 historic Fuzzilli bugs, BigSleep rediscovered 62% from the introducing commit alone, rising to 70% with follow-up prompts, with no memorization effect on pre-cutoff bugs. Project Zero now runs both tools, since each catches vulnerabilities the other misses. (3 minute read)"
+      "summary": "BigSleep, Google's AI fuzzing agent, found 45 actionable V8 vulnerabilities in six months of production use versus Fuzzilli's 37, with only 25% overlap between the two sets. On 112 historic Fuzzilli bugs, BigSleep rediscovered 62% from the introducing commit alone, rising to 70% with follow-up prompts, with no memorization effect on pre-cutoff bugs. Project Zero now runs both tools, since each catches vulnerabilities the other misses. (3 minute read)",
+      "message_id": 343
     },
     {
       "id": "ebdca7fa12e6",
@@ -16,7 +17,8 @@
       "url": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "A new paper embeds an encrypted neural network inside a host model's weights, unlockable only by a secret trigger, using a cryptographic locker construction. The hidden chemical-reaction-prediction capability, a CBRN stand-in, survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in a PyTorch proof of concept. Elicitation-based capability audits can't catch a capability built this way, so safety evaluations need a different approach than probing for refusals. (4 minute read)"
+      "summary": "A new paper embeds an encrypted neural network inside a host model's weights, unlockable only by a secret trigger, using a cryptographic locker construction. The hidden chemical-reaction-prediction capability, a CBRN stand-in, survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in a PyTorch proof of concept. Elicitation-based capability audits can't catch a capability built this way, so safety evaluations need a different approach than probing for refusals. (4 minute read)",
+      "message_id": 344
     },
     {
       "id": "ea5496feaca5",
@@ -24,7 +26,8 @@
       "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Researchers at Xint got OpenAI's compaction feature to echo a model's encrypted chain-of-thought back as plaintext, swapping spaces for tabs to dodge the policy filter, then replaying the compacted item through gpt-4.1 and gpt-4o. The bypass worked because compaction runs on the same model that generated the reasoning, so OpenAI's cross-model reuse check never fired. OpenAI fixed it server-side on October 23 and paid a $6,000 bounty; the test covered only gpt-5.6-sol. (4 minute read)"
+      "summary": "Researchers at Xint got OpenAI's compaction feature to echo a model's encrypted chain-of-thought back as plaintext, swapping spaces for tabs to dodge the policy filter, then replaying the compacted item through gpt-4.1 and gpt-4o. The bypass worked because compaction runs on the same model that generated the reasoning, so OpenAI's cross-model reuse check never fired. OpenAI fixed it server-side on October 23 and paid a $6,000 bounty; the test covered only gpt-5.6-sol. (4 minute read)",
+      "message_id": 345
     },
     {
       "id": "c2aa4b35062b",
@@ -32,7 +35,8 @@
       "url": "https://www.kapa.ai/blog/retrieval-bottleneck",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Kapa.ai's own eval shows retrieval failures have flipped: 18 months ago 80% of misses were search never finding the right chunk, now roughly half are selection dropping chunks search already found, including 34% of gold chunks. A grep baseline matched their deep retriever's recall but needed 25x more tokens to do it, since only 1 in 25 of its returned chunks mattered. Moving from top-5 to top-10 retrieved chunks raised coverage 14% but cost precision, so selection, not recall, is now the lever worth pulling. (4 minute read)"
+      "summary": "Kapa.ai's own eval shows retrieval failures have flipped: 18 months ago 80% of misses were search never finding the right chunk, now roughly half are selection dropping chunks search already found, including 34% of gold chunks. A grep baseline matched their deep retriever's recall but needed 25x more tokens to do it, since only 1 in 25 of its returned chunks mattered. Moving from top-5 to top-10 retrieved chunks raised coverage 14% but cost precision, so selection, not recall, is now the lever worth pulling. (4 minute read)",
+      "message_id": 346
     },
     {
       "id": "2b2d234f8b16",
@@ -40,7 +44,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Seoul police say a gang used ARTEX AI, an autonomous pentesting framework, to breach more than 90 organizations and steal roughly 8.2 million records, switching from conventional tools to AI tooling in late August. The group ran 38 extortion attempts demanding 360 million won (about $270,000) each not to leak stolen data. Police arrested the alleged leader, a 32-year-old former pentester, on October 15; six more suspects remain under investigation. (4 minute read)"
+      "summary": "Seoul police say a gang used ARTEX AI, an autonomous pentesting framework, to breach more than 90 organizations and steal roughly 8.2 million records, switching from conventional tools to AI tooling in late August. The group ran 38 extortion attempts demanding 360 million won (about $270,000) each not to leak stolen data. Police arrested the alleged leader, a 32-year-old former pentester, on October 15; six more suspects remain under investigation. (4 minute read)",
+      "message_id": 347
     },
     {
       "id": "f16aefe89a6e",
@@ -48,7 +53,8 @@
       "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
       "source": "hn",
       "tier": "headline",
-      "summary": "OpenAI says it worked with academic researchers to produce model-assisted results on the Kakeya conjecture, the Exponential Time Hypothesis, and quantum chromodynamics. (2 minute read)"
+      "summary": "OpenAI says it worked with academic researchers to produce model-assisted results on the Kakeya conjecture, the Exponential Time Hypothesis, and quantum chromodynamics. (2 minute read)",
+      "message_id": 348
     },
     {
       "id": "f11857976011",
@@ -56,7 +62,8 @@
       "url": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
       "source": "hn",
       "tier": "headline",
-      "summary": "Wiz's telemetry on the PHP2Shell flaws (CVE-2026-109618 and CVE-2026-109619) shows daily exposed-vulnerable-machine counts down about 67% since disclosure, with PHP 7.3-and-earlier's share of exposed machines falling from 8.3% to 5.7% in five days. CISA added the pair to its Known Exploited Vulnerabilities catalog after Adel Karimi's honeypot produced the strongest public evidence of active exploitation. PHP runs on 65% of organizations in Wiz's dataset, but a week after disclosure fewer than 53% of initially affected organizations remained vulnerable. (4 minute read)"
+      "summary": "Wiz's telemetry on the PHP2Shell flaws (CVE-2026-109618 and CVE-2026-109619) shows daily exposed-vulnerable-machine counts down about 67% since disclosure, with PHP 7.3-and-earlier's share of exposed machines falling from 8.3% to 5.7% in five days. CISA added the pair to its Known Exploited Vulnerabilities catalog after Adel Karimi's honeypot produced the strongest public evidence of active exploitation. PHP runs on 65% of organizations in Wiz's dataset, but a week after disclosure fewer than 53% of initially affected organizations remained vulnerable. (4 minute read)",
+      "message_id": 349
     },
     {
       "id": "debe18503f98",
@@ -64,7 +71,8 @@
       "url": "https://github.com/heterodoxin/AbliteratedOutTheBox",
       "source": "github",
       "tier": "discovery",
-      "summary": "AbliteratedOutTheBox, a llama.cpp fork, computes a 'refusal direction' from contrastive activations and projects it out at generation time, without touching the weights on disk. The author reports held-out harmful-prompt refusal on Qwen3-8B dropping from 96.3% to 7.9%, with the edit gate firing on just 0.4% of benign prompts. The project has 155 stars and only 4 commits, so these numbers are self-reported and unverified. (3 minute read)"
+      "summary": "AbliteratedOutTheBox, a llama.cpp fork, computes a 'refusal direction' from contrastive activations and projects it out at generation time, without touching the weights on disk. The author reports held-out harmful-prompt refusal on Qwen3-8B dropping from 96.3% to 7.9%, with the edit gate firing on just 0.4% of benign prompts. The project has 155 stars and only 4 commits, so these numbers are self-reported and unverified. (3 minute read)",
+      "message_id": 350
     }
   ]
 }
