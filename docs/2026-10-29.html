@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-29</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-29</h1>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html">Anthropic&#x27;s AI Model Chained Exploits Across Chrome, Windows, Linux</a></h2>
+<p>An unreleased Anthropic model chained four bugs into a one-click Chrome sandbox escape, plus working exploits for Safari, Windows, and Linux, reporting 62 flaws to Google overall. The Linux chain leaked a kernel address in 48 minutes and got root five minutes later (CVSS 9.8), needing only initial prompting. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Genie 4: DeepMind&#x27;s Real-Time World Model Gets Native Audio</a></h2>
+<p>Genie 4 generates interactive worlds in real time with native audio tied to the action, using Gemini Omni to anchor appearance and a Gemini 3.8 Flash model for scene continuity. It&#x27;s a research preview for trusted testers and the AI Ultra waitlist only, with no resolution, latency, or benchmark numbers disclosed. Testers can now steer weather, objects, and physics in a generated scene just by typing. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://divagr.com/blog/qwenputer">Qwenputer: A RISC-V CPU Compiled Into Qwen3.5&#x27;s Weights</a></h2>
+<p>A compiler, not training, turns Qwen3.5-4B into a working 32-bit RISC-V CPU, using the model&#x27;s Gated DeltaNet state as RAM. It passes the official riscv-tests, ran 18 million instructions error-free, and scores 97.5% on DeepMind&#x27;s div_big versus the base model&#x27;s 72.5%. Code and weights are on GitHub and Hugging Face, running at about 3,200 tokens per second on a single 24GB GPU. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/">Stanford Professors Sue Anthropic Over Pirated Training Books</a></h2>
+<p>Six Stanford professors, including Tobias Wolff, opted out of the $1.5 billion Bartz settlement and filed Cruz v. Anthropic, alleging their books were pulled from shadow libraries LibGen and PiLiMi to train Claude. They&#x27;re seeking up to $150,000 per infringed work plus a training injunction, on top of over 70 pending AI-copyright suits. The case tests whether Bartz&#x27;s roughly $3,000-per-work rate holds up against authors who opted out. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html">44 AI Agents Ran an Automated Hacking Campaign in Japan</a></h2>
+<p>CyberStrikeAI split an attack lifecycle across 44 specialized agents — recon, exploitation, C2, persistence, exfiltration, and auto-generated reporting — to hit at least 19 organizations in Japan, Taiwan, and Hong Kong in October 2026. The tool even generated Japanese-language phishing pages automatically. Researchers found no confirmed link to two other AI-assisted Japan campaigns in the same report, suggesting several groups are independently automating full attack chains now. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://surgehq.ai/blog/dayjob-tax">AI Agents Pass Only 11% of Real Professional Tax Tasks</a></h2>
+<p>Dayjob: Tax graded agentic models on 50 real multi-file tax engagements, some with over 100 files, against a 95% expert rubric. Claude Sonnet 5.5 led at just 10.8% pass@1, with Fable 5.1 and Opus 5.5 close behind at 9.6% and 9.2%. In one case, one model caught a residence-deadline issue in 5 of 5 tries while another missed it every time — the gap is in judgment, not arithmetic. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://nullpt.rs/fingerprinting-bioweapons">A Script Hides Fake Bioweapon Code to Jailbreak AI Deobfuscators</a></h2>
+<p>An obfuscated ad-fraud script embeds function names like computeRicinLethalDosageForWaterSupply and a hidden &#x27;SYSTEM OVERRIDE&#x27; prompt, seemingly to make AI tools refuse to deobfuscate it. Two models, &#x27;Astra&#x27; and &#x27;Daybreak Blue&#x27;, refused citing bio-risk; GLM-5.3 complied anyway. The fingerprinting code itself is ordinary browser tracking, but the decoy strings show attackers now engineering content specifically to trip LLM safety filters. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization">A Domain-Specific Tokenizer Cuts LLM Inference Cost 77%</a></h2>
+<p>VocabX rebuilds a model&#x27;s tokenizer vocabulary for a target domain without touching weights or training data, shrinking a Qwen3-4B grader&#x27;s output vocabulary from about 152,000 to 65,000 entries. On a production Portuguese essay grader, that cut measured inference cost 77% while accuracy rose, not fell. It beat the best reference method on token reduction across all 15 tested domain-and-model combinations. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://qwen-neurons-site.vercel.app/">Qwen has alter egos triggered by flipping a single neuron</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/nvidia/nemotron-transcribe-granary">Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/">Warp discloses breach exposing AI agent logs, user telemetry data</a> <span class="meta">blog</span></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Gemini 4 Carbon</a> <span class="meta">hn</span></li>
+<li><a href="https://www.liquid.ai/blog/lfm3">Introducing LFM3: Every Modality for Specialized Intelligence</a> <span class="meta">hn</span></li>
+<li><a href="https://www.brangus.io/survival-llm">Survival LLM: AI assistant and emergency library that runs on your own computer</a> <span class="meta">hn</span></li>
+<li><a href="https://emudhra.we-have-a-problem.com/apple.html">Apple&#x27;s git still trusts the compromised eMudhra certificates</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities">Patch the Planet: global response coordination as agents uncover critical vulnerabilities</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/check-point-daybreak">How Check Point accelerates vulnerability research with Daybreak</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/allenai/novelty-bench">Can we trust LLMs to judge whether a research idea is novel?</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/anylanguagemodel-1-0">AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms</a> <span class="meta">blog</span></li>
+<li><a href="https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5">Artificial Analysis Intelligence Index v5</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/thomasunise/casecite">Harvey raised 500M for legal AI, I built the same and open sourced it</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/hf-torchtpu">Hugging Face ❤️ TorchTPU: TPUs, Natively</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/">OpenAI&#x27;s GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests</a> <span class="meta">blog</span></li>
+<li><a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">Code-execution flaw in UEFI firmware threatens most servers on planet Earth</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data">Using thousands of AI agents to uncover new leads in biological data</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/amazon/profiling-torchneuron-part-1">Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.</a> <span class="meta">blog</span></li>
+<li><a href="https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova">Amazon Is Gutting Its AI Division After Sustained Failure</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/mps-pytorch-2-15">MPS in PyTorch 2.15</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-29.md">Markdown</a></footer>
+</body></html>

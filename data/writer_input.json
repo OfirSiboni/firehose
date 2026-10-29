@@ -1,120 +1,116 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "stories": [
     {
-      "id": "843f0669e299",
-      "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
-      "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Google Project Zero's own head-to-head of a traditional fuzzer (Fuzzilli) against an AI agent (BigSleep/Gemini 3.6 flash) finding V8 bugs in production, six months of data, with a rediscovery experiment controlling for memorization. This is exactly the kind of primary, numeric, verifiable AI x cyber evaluation the profile wants -- running system, not a description of one.",
-      "key_facts": [
-        "Apr-Sep 2026 production: Fuzzilli 316 total reports / 178 vulnerabilities; BigSleep 441 total / 95 vulnerabilities",
-        "Actionable vulnerabilities (deduped, fixed): BigSleep 45 vs Fuzzilli 37 -- roughly a tie",
-        "Overlap ~25% (20/81) of actionable reports; a separate experiment estimated ~60% overlap",
-        "Rediscovery test: BigSleep found ~62% of 112 historic Fuzzilli-found bugs from the introducing commit, a different bug for ~12% more, nothing on ~26%; follow-up prompting raised relevant-bug rate to ~70%",
-        "No significant memorization effect detected for pre-training-cutoff bugs",
-        "Overlap smaller for JIT-compiler bugs; bugs hard for the fuzzer tend to be hard for the agent too",
-        "Project Zero's conclusion: complementary, run both"
-      ]
-    },
-    {
-      "id": "ebdca7fa12e6",
-      "url": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
-      "title": "Hiding Capabilities in AI Models",
+      "id": "d75560f4cad5",
+      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
       "source": "blog",
       "tier": "headline",
-      "reason": "Schneier flags a real paper ('AI Models Can Provably Hide Arbitrary Capabilities') showing a cryptographic-locker backdoor can hide a dangerous capability inside a model's weights such that it survives fine-tuning, weight noising, gradient trigger search, and latent adversarial training -- i.e. elicitation-based safety audits can be made to fail in principle. Concrete PyTorch PoC, not just theory. This directly undercuts the premise of capability evals, which is squarely in the profile's eval-methodology lane.",
+      "reason": "Anthropic's internal research model autonomously chained 4 separate flaws into a working, one-click Chrome sandbox escape, plus working exploits for Safari, Windows (CVE-2026-33096) and Linux (CVE-2026-98432, CVSS 9.8); 62 reported CVEs total to Google. The clearest primary-source case yet of AI-driven exploit dev.",
       "key_facts": [
-        "Backdoor = encrypted neural network embedded in host model weights via a 'digital locker' construction, unlocked only by a secret trigger",
-        "PoC in PyTorch; stand-in dangerous capability = chemical reaction prediction task (CBRN proxy)",
-        "Hidden capability survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training",
-        "Extends prior work (hiding fixed strings) to arbitrary computation",
-        "Commenters raised: can statistical tests detect the embedded network even if it can't be elicited; concern that releasing the PoC models helps attackers too"
+        "62 flaws reported to Google, fixed as of Chrome 156, 13 were sandbox escapes",
+        "Chrome chain: V8 memory corruption -> V8 sandbox escape -> CacheStorage race -> FedCM use-after-free, opens Calculator within seconds",
+        "Linux: CVE-2026-98432 (CVSS 9.8), kernel ASLR leak in 48 min, root shell 5 min later, via multipath TCP",
+        "Windows: CVE-2026-33096 (CVSS 7.5), HTTP/3 DoS, not yet seen exploited in the wild",
+        "Anthropic says the model needed only initial prompting and little human involvement; independent verification of that claim is not possible from the article"
       ]
     },
     {
-      "id": "ea5496feaca5",
-      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
-      "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Real, named PoC: researchers (Xint) smuggled encrypted chain-of-thought out of OpenAI's compaction feature by having the model echo it into the compacted item with space-for-tab substitution, which skipped the cross-model reasoning-reuse check because compaction runs on the same model. OpenAI confirmed and fixed it (Oct 23) and paid a $6,000 bounty -- primary source exists even though this article is secondary reporting.",
-      "key_facts": [
-        "Technique: ask model to copy encrypted reasoning into compacted item, substitute tabs for spaces to dodge policy filters",
-        "Exploits a gap where OpenAI's cross-model reasoning-reuse check doesn't fire because compaction runs on the same model that produced the reasoning",
-        "Compacted item replayed through gpt-4.1 and gpt-4o, which emitted it as plaintext",
-        "Tested against gpt-5.6-sol only; GPT-6 Astra not checked",
-        "OpenAI fixed server-side Oct 23, 2026; paid Xint a $6,000 bounty",
-        "No confirmation the recovered text is a verbatim match, and no evidence of in-the-wild exploitation"
-      ]
-    },
-    {
-      "id": "c2aa4b35062b",
-      "url": "https://www.kapa.ai/blog/retrieval-bottleneck",
-      "title": "Retrieval's bottleneck is moving from finding to selecting",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Concrete RAG-serving finding from Kapa.ai's own eval: the failure mode shifted from retrieval (finding) to selection -- 34% of gold chunks that search found were never shown to the agentic retriever. Matches 'how models are served' > 'how they are trained'. Single-company benchmark, not independently replicated, but numbers are specific and the mechanism is clearly explained.",
-      "key_facts": [
-        "18 months ago ~80% of failed eval cases were search misses; now roughly half are selection misses",
-        "34% of gold chunks found by search were never passed to the agentic retriever",
-        "Pipeline: retrieve 50 chunks, rerank up to 100 with Voyage-3, keep top 15; query decomposition via GPT-6 Luna",
-        "Moving top-5 to top-10 chunks raised gold-chunk coverage 14%, with falling precision",
-        "Retrieved chunks are ~2/3 of per-query cost in Kapa's assistants",
-        "Grep baseline matched deep-retriever recall but only 1-in-25 returned chunks were needed; deep retriever used 8x fewer tokens at ~6x precision"
-      ]
-    },
-    {
-      "id": "2b2d234f8b16",
-      "url": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Real law-enforcement case with primary sourcing (Seoul police via Yonhap): a named autonomous pentesting framework (ARTEX AI) used across 90+ breached South Korean orgs, 8.2M records, 38 extortion attempts at ~$270K each, 7 suspects identified / 1 arrested. Concrete numbers and a named tool, even though the AI-attribution and record count are police estimates, not independently verified.",
-      "key_facts": [
-        "ARTEX AI: autonomous pentesting framework, also reportedly used against South Korean banks in a separate campaign",
-        "90+ orgs breached (schools, hospitals, companies, golf courses); ~8.2M records stolen (police estimate)",
-        "38 extortion incidents demanding 360M won (~$270,000) each not to leak data",
-        "7 suspects identified; leader (32, former pentester, worked security 2019-2022) arrested Oct 15, formally detained Oct 17, referred to prosecutors Oct 23; other 6 under investigation, not detained",
-        "Group allegedly switched from conventional tools to AI tooling in late Aug 2026"
-      ]
-    },
-    {
-      "id": "f16aefe89a6e",
-      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
-      "title": "Working with academic communities to build scientific understanding",
+      "id": "5ef94984dce4",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "Genie 4: A new generation of world simulation",
       "source": "hn",
       "tier": "headline",
-      "reason": "OpenAI claims model-assisted results on three open problems (Kakeya conjecture, Exponential Time Hypothesis, QCD); 1112 points / 644 comments means the operator has already seen it -- surface briefly as a headline. Fetch was blocked (403), so this rides on the HN title/description alone; the scale of the claim (resolving ETH, a 20-year-old complexity conjecture) plus the size of the HN discussion suggests real but contested reception -- comments volume this high on a research claim usually means experts are pushing back.",
-      "key_facts": []
-    },
-    {
-      "id": "f11857976011",
-      "url": "https://www.wiz.io/blog/php2shell-exploitation-so-far",
-      "title": "PHP2Shell: Exploitation attempts and remediation trends",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "PHP2Shell (CVE-2026-109618/109619) is a large, concrete pure-cyber story -- Wiz's own telemetry: PHP runs on 65% of orgs in their dataset, exposure dropped sharply after disclosure, CISA added it to the KEV catalog off a honeypot's evidence. No AI angle, but the scale clears the 'needs to be large' bar for a cyber-only headline. Picking this as the primary source over the several duplicate write-ups of the same CVE pair.",
+      "reason": "DeepMind's Genie 4: real-time, natively multimodal world model with generated audio and Gemini-driven planning/continuity. Research-preview only (waitlist), no benchmarks or resolution/latency numbers disclosed — a capability announcement, not a verifiable result, but too big to not know about.",
       "key_facts": [
-        "CVE-2026-109618 and CVE-2026-109619, disclosed by Wiz Oct 21 2026; PHP <=7.3 lacks official backports",
-        "No fully-working public PoC found by Wiz; some partners privately shared working exploits",
-        "Strongest public evidence: Adel Karimi's honeypot, cited by CISA when adding it to the KEV catalog",
-        "Daily exposed-vulnerable-machine count fell ~67% over several days; PHP 7.3-or-earlier share of exposed machines fell from 8.3% to 5.7% in five days; significantly-affected orgs fell ~47.9%",
-        "One week post-disclosure, <53% of initially affected orgs remained vulnerable"
+        "First real-time world model DeepMind says generates audio natively alongside video",
+        "Gemini Omni anchors world appearance/behavior; a 'Gemini 3.8 Flash' model plans/guides scenes",
+        "Research preview for trusted testers + AI Ultra/Project Genie waitlist; no open weights",
+        "No resolution, duration, latency, or benchmark comparison vs Genie 3 given"
       ]
     },
     {
-      "id": "debe18503f98",
-      "url": "https://github.com/heterodoxin/AbliteratedOutTheBox",
-      "title": "heterodoxin/AbliteratedOutTheBox",
-      "source": "github",
+      "id": "44e3e5f137f8",
+      "url": "https://divagr.com/blog/qwenputer",
+      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+      "source": "hn",
       "tier": "discovery",
-      "reason": "Running code, not a description: a llama.cpp fork that computes a refusal-direction vector at inference time (no weight edits) to suppress refusals, with a self-reported drop from 96.3% to 7.9% refusal on held-out harmful prompts. Fits the red-teaming-tooling line in the profile. Self-reported numbers and only 4 commits -- early and unverified, but it's a working artifact.",
+      "reason": "A real, working RISC-V CPU compiled directly into Qwen3.5-4B's weights (no training) — passes official riscv-tests, ran 18M instructions error-free, scores 97.5% vs base's 72.5% on DeepMind div_big. Full repo, model weights, and a quick-start on HF/GitHub. Exactly the 'running code beats a paper' case the taste profile rewards.",
       "key_facts": [
-        "Fork of llama.cpp; computes a 'refusal direction' and 'disclaimer direction' from contrastive activations, applies a projection edit at generation time",
-        "README claims refusal on held-out harmful prompts falls from 96.3% to 7.9% on Qwen3-8B, with the edit gate firing on 0.4% of benign prompts (self-reported)",
-        "155 stars, 16 forks, MIT license, only 4 commits on main -- early-stage"
+        "32-bit RV32IM + Zba + bignum unit, 11 of 32 Qwen3.5-4B layers; CPU RAM = model's Gated DeltaNet state",
+        "18M free-running instructions with zero errors; 230k output positions replayed vs reference with zero mismatches",
+        "97.5% on DeepMind div_big (base Qwen: 72.5%), 100% on NUPA long-integer arithmetic (base: 48.6%)",
+        "Code: github.com/divagr18/qwenputer; weights on HF/ModelScope; needs single 24GB GPU, ~3,200 tok/s on an L4"
+      ]
+    },
+    {
+      "id": "a4c44e96b0a9",
+      "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Six Stanford professors (incl. Tobias Wolff) opted out of the $1.5B Bartz settlement and filed a new suit, Cruz v. Anthropic, alleging their books were pulled from shadow libraries (LibGen, PiLiMi) for Claude training — seeking up to $150k/work in statutory damages. Concrete, named plaintiffs and dollar figures, not a rumor.",
+      "key_facts": [
+        "Cruz v. Anthropic filed May 2026 by Wolff and Chang-Rae Lee, opted out of the Bartz class settlement",
+        "Bartz settlement: $1.5B, ~500k works, ~$3,000/work; plaintiffs say that undervalues their claims",
+        "Seeking statutory damages up to $150,000 per infringed work, plus a training injunction",
+        "70+ infringement suits now pending against AI companies"
+      ]
+    },
+    {
+      "id": "d09366a97fc8",
+      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+      "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "An open-source pentest tool (CyberStrikeAI) run as 44 specialized agents (recon through exfil and auto-report) hit at least 19 orgs across Japan/Taiwan/Hong Kong in Oct 2026 as a repeatable automated workflow, incl. auto-generated Japanese phishing pages — concrete AI-offense tradecraft, not a rumor.",
+      "key_facts": [
+        "44 agents split across recon, vuln discovery/validation, exploitation, C2, persistence, exfiltration, reporting",
+        "At least 19 organizations hit in Oct 2026, 16+ in Japan, also Taiwan/Hong Kong",
+        "Attribution: TrendAI research (Matsukawa, Chen); no confirmed link to two other AI-assisted Japan campaigns in the same report"
+      ]
+    },
+    {
+      "id": "97373eedda74",
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Dayjob: Tax benchmarks agentic models on 50 real multi-file professional tax engagements (up to 123 files each), graded by practicing tax experts at a 95% rubric bar. Best model (Sonnet 5.5) clears only 10.8% pass@1 — concrete evidence frontier agents still miss consequential issues and unverified assumptions on real professional work. A genuinely new, rigorous benchmark.",
+      "key_facts": [
+        "50 environments, 1,789 files (1,487 PDFs, 117 Excel, 38 Word), 8 tax domains, expert-reviewed tasks",
+        "pass@1 @95% rubric: Claude Sonnet 5.5 10.8%, Fable 5.1 9.6%, Opus 5.5 9.2%",
+        "Case study: across 5 attempts, one model never caught a residence-deadline issue that another model caught in all 5",
+        "Authors' conclusion: agents 'haven't yet passed the audit'"
+      ]
+    },
+    {
+      "id": "2365cd15a328",
+      "url": "https://nullpt.rs/fingerprinting-bioweapons",
+      "title": "Why is this fingerprinting script creating bioweapons?",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "A widely-read HN post (916pts) dissects an obfuscated ad-fraud/anti-bot JS file that embeds fake bioweapon-dosage function names and a hidden 'SYSTEM OVERRIDE' jailbreak string — bait specifically engineered to make AI models refuse to deobfuscate it (two models refused, one complied). A concrete, reproducible example of adversarial content targeting AI tooling, squarely in the AI x cyber lane, even though there's no full PoC repo.",
+      "key_facts": [
+        "Script hosted at servicepipe.tech; function names like computeRicinLethalDosageForWaterSupply are believed decoys, not real payloads",
+        "Hidden invisible-Unicode string decodes to a fake 'SYSTEM OVERRIDE' jailbreak prompt plus Tiananmen-related text",
+        "Two models ('Astra', 'Daybreak Blue') refused to deobfuscate citing bio-risk; GLM-5.3 complied",
+        "A Node-only code block (gated on an env var) appears to attempt .env/.npmrc reads and crontab persistence; author believes this too may be anti-LLM theater"
+      ]
+    },
+    {
+      "id": "354f89a6c7db",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "VocabX: rebuilds a model's tokenizer vocabulary (sub-word + multi-word 'macro tokens') for a target domain without touching weights or training data. On a production Qwen3-4B Portuguese essay grader, cuts measured inference cost 77% (350->101 avg output tokens) with accuracy *up*, not down (bench score 0.703->0.810), validated on 15 domain/model combos. Exactly the inference-serving lane the taste profile prioritizes.",
+      "key_facts": [
+        "77.0% measured inference cost reduction on a production Qwen3-4B grader, 500 identical requests, vLLM on RTX 5090",
+        "Output vocab shrank 151,669 -> 64,767 rows; grading accuracy improved (0.703 -> 0.810 bench score)",
+        "Beat the strongest reference method on token reduction in all 15 tested domain/model combos (Qwen3, Llama-3.1, Gemma-3)",
+        "Paper is under review; code/weights for VocabX itself not yet released"
       ]
     }
   ]
