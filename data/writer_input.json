@@ -1,116 +1,118 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "stories": [
     {
-      "id": "d75560f4cad5",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Anthropic's internal research model autonomously chained 4 separate flaws into a working, one-click Chrome sandbox escape, plus working exploits for Safari, Windows (CVE-2026-33096) and Linux (CVE-2026-98432, CVSS 9.8); 62 reported CVEs total to Google. The clearest primary-source case yet of AI-driven exploit dev.",
-      "key_facts": [
-        "62 flaws reported to Google, fixed as of Chrome 156, 13 were sandbox escapes",
-        "Chrome chain: V8 memory corruption -> V8 sandbox escape -> CacheStorage race -> FedCM use-after-free, opens Calculator within seconds",
-        "Linux: CVE-2026-98432 (CVSS 9.8), kernel ASLR leak in 48 min, root shell 5 min later, via multipath TCP",
-        "Windows: CVE-2026-33096 (CVSS 7.5), HTTP/3 DoS, not yet seen exploited in the wild",
-        "Anthropic says the model needed only initial prompting and little human involvement; independent verification of that claim is not possible from the article"
-      ]
-    },
-    {
-      "id": "5ef94984dce4",
-      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "title": "Genie 4: A new generation of world simulation",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "DeepMind's Genie 4: real-time, natively multimodal world model with generated audio and Gemini-driven planning/continuity. Research-preview only (waitlist), no benchmarks or resolution/latency numbers disclosed — a capability announcement, not a verifiable result, but too big to not know about.",
-      "key_facts": [
-        "First real-time world model DeepMind says generates audio natively alongside video",
-        "Gemini Omni anchors world appearance/behavior; a 'Gemini 3.8 Flash' model plans/guides scenes",
-        "Research preview for trusted testers + AI Ultra/Project Genie waitlist; no open weights",
-        "No resolution, duration, latency, or benchmark comparison vs Genie 3 given"
-      ]
-    },
-    {
-      "id": "44e3e5f137f8",
-      "url": "https://divagr.com/blog/qwenputer",
-      "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "A real, working RISC-V CPU compiled directly into Qwen3.5-4B's weights (no training) — passes official riscv-tests, ran 18M instructions error-free, scores 97.5% vs base's 72.5% on DeepMind div_big. Full repo, model weights, and a quick-start on HF/GitHub. Exactly the 'running code beats a paper' case the taste profile rewards.",
-      "key_facts": [
-        "32-bit RV32IM + Zba + bignum unit, 11 of 32 Qwen3.5-4B layers; CPU RAM = model's Gated DeltaNet state",
-        "18M free-running instructions with zero errors; 230k output positions replayed vs reference with zero mismatches",
-        "97.5% on DeepMind div_big (base Qwen: 72.5%), 100% on NUPA long-integer arithmetic (base: 48.6%)",
-        "Code: github.com/divagr18/qwenputer; weights on HF/ModelScope; needs single 24GB GPU, ~3,200 tok/s on an L4"
-      ]
-    },
-    {
-      "id": "a4c44e96b0a9",
-      "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-      "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Six Stanford professors (incl. Tobias Wolff) opted out of the $1.5B Bartz settlement and filed a new suit, Cruz v. Anthropic, alleging their books were pulled from shadow libraries (LibGen, PiLiMi) for Claude training — seeking up to $150k/work in statutory damages. Concrete, named plaintiffs and dollar figures, not a rumor.",
-      "key_facts": [
-        "Cruz v. Anthropic filed May 2026 by Wolff and Chang-Rae Lee, opted out of the Bartz class settlement",
-        "Bartz settlement: $1.5B, ~500k works, ~$3,000/work; plaintiffs say that undervalues their claims",
-        "Seeking statutory damages up to $150,000 per infringed work, plus a training injunction",
-        "70+ infringement suits now pending against AI companies"
-      ]
-    },
-    {
-      "id": "d09366a97fc8",
-      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
-      "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+      "id": "67cf959bd95d",
+      "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
+      "title": "Your AI agent fixed the bug, but what else did it change?",
       "source": "blog",
       "tier": "discovery",
-      "reason": "An open-source pentest tool (CyberStrikeAI) run as 44 specialized agents (recon through exfil and auto-report) hit at least 19 orgs across Japan/Taiwan/Hong Kong in Oct 2026 as a repeatable automated workflow, incl. auto-generated Japanese phishing pages — concrete AI-offense tradecraft, not a rumor.",
+      "reason": "Trail of Bits shipped two open-source Codex plugins with a genuinely new verification method (three-arm proof: fails on original, passes on patch, fails again on revert) and measured false-positive reduction on real PRs — running code, concrete numbers, AI x cyber square in the brief.",
       "key_facts": [
-        "44 agents split across recon, vuln discovery/validation, exploitation, C2, persistence, exfiltration, reporting",
-        "At least 19 organizations hit in Oct 2026, 16+ in Japan, also Taiwan/Hong Kong",
-        "Attribution: TrendAI research (Matsukawa, Chen); no confirmed link to two other AI-assisted Japan campaigns in the same report"
+        "patching-bugs requires a three-arm proof: same repro fails on original code, passes on patched code, fails again once the patch is reverted",
+        "regression-hunt: diff->callers->live repro->fresh-context replay->adjudication agent, 4-step pipeline",
+        "regression-hunt had 25% fewer false positives than a baseline Codex agent (95% CI 14-38%)",
+        "Review of 130+ merged PRs found 21 confirmed regressions (16 functional, 1 perf, 4 build/test), none security",
+        "Open source: github.com/trailofbits/skills, plugins patching-bugs and regression-hunt"
       ]
     },
     {
-      "id": "97373eedda74",
-      "url": "https://surgehq.ai/blog/dayjob-tax",
-      "title": "Dayjob: Tax – evaluating AI agents on 50 professional tax assignments",
+      "id": "005f2528861a",
+      "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Gemini 4 Carbon's launch leads with new, numbered cybersecurity-eval results (SEC-bench Pro, ExploitGym, CWE-bench) rather than a generic capability bump — exactly the security-benchmark category Mine always-surfaces.",
+      "key_facts": [
+        "SEC-bench Pro: 88.2% for finding vulnerabilities",
+        "ExploitGym: 54.8% for exploitation",
+        "CWE-bench: 71.0% for patching",
+        "Google says Carbon is twice as likely to generate secure code vs predecessor Argon",
+        "Access initially limited to a subset of cyber defenders via the Fairwind Program",
+        "Google says it resisted every evaluated indirect prompt-injection attempt"
+      ]
+    },
+    {
+      "id": "a525c413ff05",
+      "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
+      "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Dayjob: Tax benchmarks agentic models on 50 real multi-file professional tax engagements (up to 123 files each), graded by practicing tax experts at a 95% rubric bar. Best model (Sonnet 5.5) clears only 10.8% pass@1 — concrete evidence frontier agents still miss consequential issues and unverified assumptions on real professional work. A genuinely new, rigorous benchmark.",
+      "reason": "Concrete GPU-serving/scheduling infra story with hard numbers across multiple benchmarks (rack fragmentation, defragmentation, serving throughput) — exactly the 'how models are served' lane Mine weights above training.",
       "key_facts": [
-        "50 environments, 1,789 files (1,487 PDFs, 117 Excel, 38 Word), 8 tax domains, expert-reviewed tasks",
-        "pass@1 @95% rubric: Claude Sonnet 5.5 10.8%, Fable 5.1 9.6%, Opus 5.5 9.2%",
-        "Case study: across 5 attempts, one model never caught a residence-deadline issue that another model caught in all 5",
-        "Authors' conclusion: agents 'haven't yet passed the audit'"
+        "NVL72 racks: only rack-local multi-node jobs get full NVLink speedup; cross-rack falls back to slower InfiniBand",
+        "SkyPilot's topology-aware scheduler + defrag yields 27% more usable nodes on a 128-rack/2304-node model (2037 vs 1602 nodes) vs naive 18-node slicing",
+        "NVIDIA GR00T team measured 14.4% pre-training throughput gain (1.59s -> 1.39s/iter) from rack-aware placement",
+        "GB200 NVL72 w/ 32-way expert parallelism: up to 4.4x throughput/GPU vs 8-GPU B200 for DeepSeek-R1 serving",
+        "Estimated ~$16.7K/training-hour saved on a 10,000-GPU cluster"
       ]
     },
     {
-      "id": "2365cd15a328",
-      "url": "https://nullpt.rs/fingerprinting-bioweapons",
-      "title": "Why is this fingerprinting script creating bioweapons?",
+      "id": "271134257c4a",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Concrete, reproducible finding about Claude Code's own architecture: background agents get a full-transcript 'describe your last action' call roughly every 30s, with no toggle, costing a measured 16-26% of a user's agent spend per independent reports (GitHub issue #86879). High HN resonance (562 pts) and directly actionable for anyone running background agents.",
+      "key_facts": [
+        "Claude Code sends each background agent's full transcript to its model ~every 30s to generate a 3-5 word status line",
+        "No setting to disable it; on by default since v2.1.232 (Aug 2026)",
+        "Author's own telemetry: agent_summary calls were 16.4% of spend vs 15.7% for the main conversation before an unofficial patch; 0% after",
+        "GitHub issue #86879 cites four independent measurements of 18-26% of spend",
+        "Unofficial workaround: a Bun --preload script (no-agent-summary.js) that neutralizes the timer callback"
+      ]
+    },
+    {
+      "id": "c6d25904346f",
+      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
       "source": "hn",
       "tier": "headline",
-      "reason": "A widely-read HN post (916pts) dissects an obfuscated ad-fraud/anti-bot JS file that embeds fake bioweapon-dosage function names and a hidden 'SYSTEM OVERRIDE' jailbreak string — bait specifically engineered to make AI models refuse to deobfuscate it (two models refused, one complied). A concrete, reproducible example of adversarial content targeting AI tooling, squarely in the AI x cyber lane, even though there's no full PoC repo.",
+      "reason": "A critical (CVSS 10.0) GitLab regex-engine flaw was actively probed against Alpine Linux's own GitLab instance, forcing a full rebuild and password reset — a major pure-security incident (no AI angle) in widely-used container-ecosystem infrastructure, large enough to clear the pure-cyber headline bar.",
       "key_facts": [
-        "Script hosted at servicepipe.tech; function names like computeRicinLethalDosageForWaterSupply are believed decoys, not real payloads",
-        "Hidden invisible-Unicode string decodes to a fake 'SYSTEM OVERRIDE' jailbreak prompt plus Tiananmen-related text",
-        "Two models ('Astra', 'Daybreak Blue') refused to deobfuscate citing bio-risk; GLM-5.3 complied",
-        "A Node-only code block (gated on an env var) appears to attempt .env/.npmrc reads and crontab persistence; author believes this too may be anti-LLM theater"
+        "CVE-2026-97229 (CVSS 10.0) is a regex-engine (Onigmo/Ruby) bug in how GitLab evaluates CI configs",
+        "Attacker crashed GitLab worker processes 8 times across Oct 20-26, got partway through the exploit chain 4 times",
+        "Alpine's initial patch (GitLab 19.3.5/19.3.6) didn't close the hole because its container image used unpatched upstream Ruby",
+        "No confirmed compromise, but logging gaps mean a successful exploit could have left no trace; instance rebuilt from scratch",
+        "All GitLab passwords reset; users told to re-pull the Oct 27 image and upgrade Ruby independently of GitLab"
       ]
     },
     {
-      "id": "354f89a6c7db",
-      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "id": "9201054eeb4c",
+      "url": "https://openai.com/index/cloudflare-cyber",
+      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
       "source": "blog",
       "tier": "discovery",
-      "reason": "VocabX: rebuilds a model's tokenizer vocabulary (sub-word + multi-word 'macro tokens') for a target domain without touching weights or training data. On a production Qwen3-4B Portuguese essay grader, cuts measured inference cost 77% (350->101 avg output tokens) with accuracy *up*, not down (bench score 0.703->0.810), validated on 15 domain/model combos. Exactly the inference-serving lane the taste profile prioritizes.",
+      "reason": "Primary-source (OpenAI) account of a real production deployment: Cloudflare uses OpenAI's Daybreak to investigate vulnerabilities and propose fixes for human review, plus Codex for dev work — concrete AI x cyber-defense use, though the full writeup was blocked (403) so detail is limited to the summary.",
       "key_facts": [
-        "77.0% measured inference cost reduction on a production Qwen3-4B grader, 500 identical requests, vLLM on RTX 5090",
-        "Output vocab shrank 151,669 -> 64,767 rows; grading accuracy improved (0.703 -> 0.810 bench score)",
-        "Beat the strongest reference method on token reduction in all 15 tested domain/model combos (Qwen3, Llama-3.1, Gemma-3)",
-        "Paper is under review; code/weights for VocabX itself not yet released"
+        "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review",
+        "Cloudflare developers use Codex to build faster and improve code quality"
+      ]
+    },
+    {
+      "id": "d3f519557f32",
+      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "OpenAI's 'Patch the Planet' coordinates security researchers, maintainers and incident responders around agent-surfaced open-source vulnerabilities — a real AI x cyber coordination mechanism, but the announcement page was blocked (403) so there are no hard numbers to confirm scale.",
+      "key_facts": [
+        "Patch the Planet connects security researchers, maintainers, and incident responders to address critical open-source vulnerabilities agents uncover"
+      ]
+    },
+    {
+      "id": "feb4caa835f1",
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Google Research's Sleep framework (wake/sleep consolidation on a Hope-architecture MoE) reports real benchmark numbers (near-zero forgetting on Manchu/Kalamang translation, BABILong to 10M tokens) but no code is released, and it's a training/continual-learning method rather than a serving concern Mine weights higher.",
+      "key_facts": [
+        "Alternates a wake phase (handles inputs, stores temporary info) and a sleep phase (consolidates into long-term MoE params)",
+        "Near-zero forgetting on continual translation to unseen languages Manchu and Kalamang, where ICL/Cartridges/SFT suffered severe forgetting",
+        "Near-perfect BABILong scaling to 10M tokens, beating GPT-4 and Titans",
+        "SQuAD-style factual retention: 48.9% single-task, 46.2% continued pre-training",
+        "No code released; only an arXiv link (2606.03979)"
       ]
     }
   ]

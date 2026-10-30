@@ -1,76 +1,76 @@
-# Firehose — 2026-10-29
+# Firehose — 2026-10-30
 
-## [Anthropic's AI Model Chained Exploits Across Chrome, Windows, Linux](https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html)
+## [Codex plugins patch bugs and verify fixes don't cause regressions](https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/)
+
+`discovery` · blog
+
+Trail of Bits open-sourced two Codex plugins: patching-bugs proves a fix with a three-arm test (fails on the original code, passes on the patch, fails again once reverted), and regression-hunt traces diffs to live repros before an adjudication agent rules on real regressions. Against a baseline Codex agent, regression-hunt cut false positives 25% (95% CI 14-38%) and confirmed 21 regressions across 130+ merged PRs. Engineers can now hand patch and regression checks to agents and get verified evidence instead of a manual diff review. (3 minute read)
+
+## [Gemini 4 Carbon leads new cybersecurity benchmarks for bug hunting](https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html)
 
 `headline` · blog
 
-An unreleased Anthropic model chained four bugs into a one-click Chrome sandbox escape, plus working exploits for Safari, Windows, and Linux, reporting 62 flaws to Google overall. The Linux chain leaked a kernel address in 48 minutes and got root five minutes later (CVSS 9.8), needing only initial prompting. (4 minute read)
+Gemini 4 Carbon scores 88.2% on SEC-bench Pro for finding vulnerabilities, 54.8% on ExploitGym for exploitation, and 71.0% on CWE-bench for patching. Google says it's twice as likely to generate secure code as predecessor Argon and resisted every evaluated indirect prompt-injection attempt. Access starts limited to a subset of cyber defenders through the Fairwind Program. (3 minute read)
 
-## [Genie 4: DeepMind's Real-Time World Model Gets Native Audio](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/)
-
-`headline` · hn
-
-Genie 4 generates interactive worlds in real time with native audio tied to the action, using Gemini Omni to anchor appearance and a Gemini 3.8 Flash model for scene continuity. It's a research preview for trusted testers and the AI Ultra waitlist only, with no resolution, latency, or benchmark numbers disclosed. Testers can now steer weather, objects, and physics in a generated scene just by typing. (3 minute read)
-
-## [Qwenputer: A RISC-V CPU Compiled Into Qwen3.5's Weights](https://divagr.com/blog/qwenputer)
+## [A smarter scheduler recovers 27% more usable Grace Blackwell GPUs](https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler)
 
 `discovery` · hn
 
-A compiler, not training, turns Qwen3.5-4B into a working 32-bit RISC-V CPU, using the model's Gated DeltaNet state as RAM. It passes the official riscv-tests, ran 18 million instructions error-free, and scores 97.5% on DeepMind's div\_big versus the base model's 72.5%. Code and weights are on GitHub and Hugging Face, running at about 3,200 tokens per second on a single 24GB GPU. (4 minute read)
+NVL72 racks give full NVLink speed only to jobs that stay on one rack, so node failures and uneven job lengths strand usable GPUs across racks. SkyPilot's topology-aware scheduler and automatic defragmentation recover 27% more usable nodes on a 128-rack, 2,304-node cluster (2,037 vs 1,602) versus naive 18-node slicing, and NVIDIA's GR00T team saw a 14.4% pre-training throughput gain from rack-aware placement alone. Teams running multi-node jobs on Grace Blackwell can reclaim that capacity without buying more racks. (4 minute read)
 
-## [Stanford Professors Sue Anthropic Over Pirated Training Books](https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/)
-
-`headline` · hn
-
-Six Stanford professors, including Tobias Wolff, opted out of the $1.5 billion Bartz settlement and filed Cruz v. Anthropic, alleging their books were pulled from shadow libraries LibGen and PiLiMi to train Claude. They're seeking up to $150,000 per infringed work plus a training injunction, on top of over 70 pending AI-copyright suits. The case tests whether Bartz's roughly $3,000-per-work rate holds up against authors who opted out. (4 minute read)
-
-## [44 AI Agents Ran an Automated Hacking Campaign in Japan](https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html)
-
-`discovery` · blog
-
-CyberStrikeAI split an attack lifecycle across 44 specialized agents — recon, exploitation, C2, persistence, exfiltration, and auto-generated reporting — to hit at least 19 organizations in Japan, Taiwan, and Hong Kong in October 2026. The tool even generated Japanese-language phishing pages automatically. Researchers found no confirmed link to two other AI-assisted Japan campaigns in the same report, suggesting several groups are independently automating full attack chains now. (4 minute read)
-
-## [AI Agents Pass Only 11% of Real Professional Tax Tasks](https://surgehq.ai/blog/dayjob-tax)
+## [Claude Code regularly sends each background agent's transcript to its model](https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce)
 
 `discovery` · hn
 
-Dayjob: Tax graded agentic models on 50 real multi-file tax engagements, some with over 100 files, against a 95% expert rubric. Claude Sonnet 5.5 led at just 10.8% pass@1, with Fable 5.1 and Opus 5.5 close behind at 9.6% and 9.2%. In one case, one model caught a residence-deadline issue in 5 of 5 tries while another missed it every time — the gap is in judgment, not arithmetic. (4 minute read)
+Claude Code sends each background agent's full transcript to its model roughly every 30 seconds just to write a 3-5 word status line, with no setting to turn it off since v2.1.232. Independent telemetry in GitHub issue #86879 puts this at 16-26% of a user's total agent spend. Anyone running background agents can now check their own OpenTelemetry query\_source field, or apply an unofficial Bun preload script that neutralizes the timer and recovers that spend. (4 minute read)
 
-## [A Script Hides Fake Bioweapon Code to Jailbreak AI Deobfuscators](https://nullpt.rs/fingerprinting-bioweapons)
+## [A CVSS 10.0 GitLab bug got actively probed against Alpine's own GitLab](https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html)
 
 `headline` · hn
 
-An obfuscated ad-fraud script embeds function names like computeRicinLethalDosageForWaterSupply and a hidden 'SYSTEM OVERRIDE' prompt, seemingly to make AI tools refuse to deobfuscate it. Two models, 'Astra' and 'Daybreak Blue', refused citing bio-risk; GLM-5.3 complied anyway. The fingerprinting code itself is ordinary browser tracking, but the decoy strings show attackers now engineering content specifically to trip LLM safety filters. (4 minute read)
+An attacker spent six days probing CVE-2026-97229, a CVSS 10.0 regex-engine bug in GitLab's CI config parser, against Alpine Linux's own GitLab instance, crashing worker processes 8 times and partially completing the exploit chain 4 times. Alpine's GitLab update didn't close the hole because its container image shipped unpatched upstream Ruby, so it rebuilt the instance from scratch and reset every password. Anyone self-hosting GitLab needs to upgrade Ruby separately, since the fix doesn't ship inside the GitLab update itself. (4 minute read)
 
-## [A Domain-Specific Tokenizer Cuts LLM Inference Cost 77%](https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization)
+## [Cloudflare uses OpenAI's Daybreak to investigate its own vulnerabilities](https://openai.com/index/cloudflare-cyber)
 
 `discovery` · blog
 
-VocabX rebuilds a model's tokenizer vocabulary for a target domain without touching weights or training data, shrinking a Qwen3-4B grader's output vocabulary from about 152,000 to 65,000 entries. On a production Portuguese essay grader, that cut measured inference cost 77% while accuracy rose, not fell. It beat the best reference method on token reduction across all 15 tested domain-and-model combinations. (4 minute read)
+Cloudflare uses OpenAI's Daybreak model to investigate vulnerabilities and propose fixes for human review, while its developers use Codex to ship code faster and improve its quality. It's a production example of AI handling the investigation step of vulnerability response, with people still deciding what actually ships. (2 minute read)
+
+## [OpenAI's Patch the Planet coordinates fixes for agent-found bugs](https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities)
+
+`discovery` · blog
+
+OpenAI's Patch the Planet connects security researchers, maintainers, and incident responders around critical open-source vulnerabilities that AI agents surface. It's a coordination layer built for turning agent-found bugs into shipped fixes, not just more vulnerability reports. (2 minute read)
+
+## [Google's Sleep framework teaches LLMs new facts without forgetting old ones](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/)
+
+`discovery` · hn
+
+Google Research's Sleep framework alternates a wake phase that stores new information and a sleep phase that consolidates it into a Hope-architecture MoE's long-term parameters, rather than fine-tuning over frozen weights. It held near-zero forgetting when continually translating into unseen languages Manchu and Kalamang, where in-context learning, Cartridges, and SFT all degraded badly, and scaled BABILong recall out to 10M tokens past GPT-4 and Titans. No code has shipped yet, only the arXiv paper. (4 minute read)
 
 ## Also in the pool
 
-- [Qwen has alter egos triggered by flipping a single neuron](https://qwen-neurons-site.vercel.app/) — hn
-- [Nvidia Nemotron 3.5 Transcribe: open ASR for 40 languages](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary) — blog
-- [Warp discloses breach exposing AI agent logs, user telemetry data](https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/) — blog
-- [Gemini 4 Carbon](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/) — hn
-- [Introducing LFM3: Every Modality for Specialized Intelligence](https://www.liquid.ai/blog/lfm3) — hn
-- [Survival LLM: AI assistant and emergency library that runs on your own computer](https://www.brangus.io/survival-llm) — hn
-- [Apple's git still trusts the compromised eMudhra certificates](https://emudhra.we-have-a-problem.com/apple.html) — hn
-- [Patch the Planet: global response coordination as agents uncover critical vulnerabilities](https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities) — blog
-- [How Check Point accelerates vulnerability research with Daybreak](https://openai.com/index/check-point-daybreak) — blog
-- [Can we trust LLMs to judge whether a research idea is novel?](https://huggingface.co/blog/allenai/novelty-bench) — blog
-- [AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms](https://huggingface.co/blog/anylanguagemodel-1-0) — blog
-- [Artificial Analysis Intelligence Index v5](https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5) — hn
-- [Harvey raised 500M for legal AI, I built the same and open sourced it](https://github.com/thomasunise/casecite) — hn
-- [Hugging Face ❤️ TorchTPU: TPUs, Natively](https://huggingface.co/blog/hf-torchtpu) — blog
-- [OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests](https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/) — blog
-- [Code-execution flaw in UEFI firmware threatens most servers on planet Earth](https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/) — hn
+- [2akouwu/reverify](https://github.com/2akouwu/reverify) — github
+- [jwuthri-cloud/Tracely-ai](https://github.com/jwuthri-cloud/Tracely-ai) — github
 - [Using thousands of AI agents to uncover new leads in biological data](https://openai.com/index/scaling-ai-research-for-complex-biological-data) — blog
-- [Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.](https://huggingface.co/blog/amazon/profiling-torchneuron-part-1) — blog
-- [Amazon Is Gutting Its AI Division After Sustained Failure](https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova) — hn
-- [MPS in PyTorch 2.15](https://huggingface.co/blog/mps-pytorch-2-15) — blog
+- [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) — github
+- [Leak Exposes 41,000 Homeland Security Workers–Including Undercover ICE Agents](https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/) — hn
+- [Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions](https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html) — blog
+- [Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners](https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html) — blog
+- [Webinar: How to Build AI Threat Readiness Into Your Security Operations](https://thehackernews.com/2026/08/learn-how-to-build-security-operations.html) — blog
+- [The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers](https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html) — blog
+- [ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html) — blog
+- [Hugging Face malware campaign returns to hijack GPUs for crypto mining](https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/) — blog
+- [How we detect frontier model misalignment](https://openai.com/index/how-we-detect-frontier-model-misalignment) — blog
+- [Zero click, silent, remote Android DoS](https://smsofdeath.com/) — hn
+- [Hackers expose the identities of more than 40k DHS employees](https://text.npr.org/nx-s1-6021497) — hn
+- [marclou/mailcheap](https://github.com/marclou/mailcheap) — github
+- [Yamz-Labs/kyojin](https://github.com/Yamz-Labs/kyojin) — github
+- [himovo/movo](https://github.com/himovo/movo) — github
+- [rollroyces/py-idp](https://github.com/rollroyces/py-idp) — github
+- [Fazmin/AILearningGuide](https://github.com/Fazmin/AILearningGuide) — github
+- [YOLOW92/pagesift](https://github.com/YOLOW92/pagesift) — github
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-29.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-10-30.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
