@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "67cf959bd95d",
@@ -8,7 +8,8 @@
       "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Trail of Bits open-sourced two Codex plugins: patching-bugs proves a fix with a three-arm test (fails on the original code, passes on the patch, fails again once reverted), and regression-hunt traces diffs to live repros before an adjudication agent rules on real regressions. Against a baseline Codex agent, regression-hunt cut false positives 25% (95% CI 14-38%) and confirmed 21 regressions across 130+ merged PRs. Engineers can now hand patch and regression checks to agents and get verified evidence instead of a manual diff review. (3 minute read)"
+      "summary": "Trail of Bits open-sourced two Codex plugins: patching-bugs proves a fix with a three-arm test (fails on the original code, passes on the patch, fails again once reverted), and regression-hunt traces diffs to live repros before an adjudication agent rules on real regressions. Against a baseline Codex agent, regression-hunt cut false positives 25% (95% CI 14-38%) and confirmed 21 regressions across 130+ merged PRs. Engineers can now hand patch and regression checks to agents and get verified evidence instead of a manual diff review. (3 minute read)",
+      "message_id": 361
     },
     {
       "id": "005f2528861a",
@@ -16,7 +17,8 @@
       "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "Gemini 4 Carbon scores 88.2% on SEC-bench Pro for finding vulnerabilities, 54.8% on ExploitGym for exploitation, and 71.0% on CWE-bench for patching. Google says it's twice as likely to generate secure code as predecessor Argon and resisted every evaluated indirect prompt-injection attempt. Access starts limited to a subset of cyber defenders through the Fairwind Program. (3 minute read)"
+      "summary": "Gemini 4 Carbon scores 88.2% on SEC-bench Pro for finding vulnerabilities, 54.8% on ExploitGym for exploitation, and 71.0% on CWE-bench for patching. Google says it's twice as likely to generate secure code as predecessor Argon and resisted every evaluated indirect prompt-injection attempt. Access starts limited to a subset of cyber defenders through the Fairwind Program. (3 minute read)",
+      "message_id": 362
     },
     {
       "id": "a525c413ff05",
@@ -24,7 +26,8 @@
       "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
       "source": "hn",
       "tier": "discovery",
-      "summary": "NVL72 racks give full NVLink speed only to jobs that stay on one rack, so node failures and uneven job lengths strand usable GPUs across racks. SkyPilot's topology-aware scheduler and automatic defragmentation recover 27% more usable nodes on a 128-rack, 2,304-node cluster (2,037 vs 1,602) versus naive 18-node slicing, and NVIDIA's GR00T team saw a 14.4% pre-training throughput gain from rack-aware placement alone. Teams running multi-node jobs on Grace Blackwell can reclaim that capacity without buying more racks. (4 minute read)"
+      "summary": "NVL72 racks give full NVLink speed only to jobs that stay on one rack, so node failures and uneven job lengths strand usable GPUs across racks. SkyPilot's topology-aware scheduler and automatic defragmentation recover 27% more usable nodes on a 128-rack, 2,304-node cluster (2,037 vs 1,602) versus naive 18-node slicing, and NVIDIA's GR00T team saw a 14.4% pre-training throughput gain from rack-aware placement alone. Teams running multi-node jobs on Grace Blackwell can reclaim that capacity without buying more racks. (4 minute read)",
+      "message_id": 363
     },
     {
       "id": "271134257c4a",
@@ -32,7 +35,8 @@
       "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Claude Code sends each background agent's full transcript to its model roughly every 30 seconds just to write a 3-5 word status line, with no setting to turn it off since v2.1.232. Independent telemetry in GitHub issue #86879 puts this at 16-26% of a user's total agent spend. Anyone running background agents can now check their own OpenTelemetry query_source field, or apply an unofficial Bun preload script that neutralizes the timer and recovers that spend. (4 minute read)"
+      "summary": "Claude Code sends each background agent's full transcript to its model roughly every 30 seconds just to write a 3-5 word status line, with no setting to turn it off since v2.1.232. Independent telemetry in GitHub issue #86879 puts this at 16-26% of a user's total agent spend. Anyone running background agents can now check their own OpenTelemetry query_source field, or apply an unofficial Bun preload script that neutralizes the timer and recovers that spend. (4 minute read)",
+      "message_id": 364
     },
     {
       "id": "c6d25904346f",
@@ -40,7 +44,8 @@
       "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
       "source": "hn",
       "tier": "headline",
-      "summary": "An attacker spent six days probing CVE-2026-97229, a CVSS 10.0 regex-engine bug in GitLab's CI config parser, against Alpine Linux's own GitLab instance, crashing worker processes 8 times and partially completing the exploit chain 4 times. Alpine's GitLab update didn't close the hole because its container image shipped unpatched upstream Ruby, so it rebuilt the instance from scratch and reset every password. Anyone self-hosting GitLab needs to upgrade Ruby separately, since the fix doesn't ship inside the GitLab update itself. (4 minute read)"
+      "summary": "An attacker spent six days probing CVE-2026-97229, a CVSS 10.0 regex-engine bug in GitLab's CI config parser, against Alpine Linux's own GitLab instance, crashing worker processes 8 times and partially completing the exploit chain 4 times. Alpine's GitLab update didn't close the hole because its container image shipped unpatched upstream Ruby, so it rebuilt the instance from scratch and reset every password. Anyone self-hosting GitLab needs to upgrade Ruby separately, since the fix doesn't ship inside the GitLab update itself. (4 minute read)",
+      "message_id": 365
     },
     {
       "id": "9201054eeb4c",
@@ -48,7 +53,8 @@
       "url": "https://openai.com/index/cloudflare-cyber",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Cloudflare uses OpenAI's Daybreak model to investigate vulnerabilities and propose fixes for human review, while its developers use Codex to ship code faster and improve its quality. It's a production example of AI handling the investigation step of vulnerability response, with people still deciding what actually ships. (2 minute read)"
+      "summary": "Cloudflare uses OpenAI's Daybreak model to investigate vulnerabilities and propose fixes for human review, while its developers use Codex to ship code faster and improve its quality. It's a production example of AI handling the investigation step of vulnerability response, with people still deciding what actually ships. (2 minute read)",
+      "message_id": 366
     },
     {
       "id": "d3f519557f32",
@@ -56,7 +62,8 @@
       "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
       "source": "blog",
       "tier": "discovery",
-      "summary": "OpenAI's Patch the Planet connects security researchers, maintainers, and incident responders around critical open-source vulnerabilities that AI agents surface. It's a coordination layer built for turning agent-found bugs into shipped fixes, not just more vulnerability reports. (2 minute read)"
+      "summary": "OpenAI's Patch the Planet connects security researchers, maintainers, and incident responders around critical open-source vulnerabilities that AI agents surface. It's a coordination layer built for turning agent-found bugs into shipped fixes, not just more vulnerability reports. (2 minute read)",
+      "message_id": 367
     },
     {
       "id": "feb4caa835f1",
@@ -64,7 +71,8 @@
       "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Google Research's Sleep framework alternates a wake phase that stores new information and a sleep phase that consolidates it into a Hope-architecture MoE's long-term parameters, rather than fine-tuning over frozen weights. It held near-zero forgetting when continually translating into unseen languages Manchu and Kalamang, where in-context learning, Cartridges, and SFT all degraded badly, and scaled BABILong recall out to 10M tokens past GPT-4 and Titans. No code has shipped yet, only the arXiv paper. (4 minute read)"
+      "summary": "Google Research's Sleep framework alternates a wake phase that stores new information and a sleep phase that consolidates it into a Hope-architecture MoE's long-term parameters, rather than fine-tuning over frozen weights. It held near-zero forgetting when continually translating into unseen languages Manchu and Kalamang, where in-context learning, Cartridges, and SFT all degraded badly, and scaled BABILong recall out to 10M tokens past GPT-4 and Titans. No code has shipped yet, only the arXiv paper. (4 minute read)",
+      "message_id": 368
     }
   ]
 }
