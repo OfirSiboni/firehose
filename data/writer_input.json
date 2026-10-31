@@ -1,118 +1,118 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "stories": [
     {
-      "id": "67cf959bd95d",
-      "url": "https://blog.trailofbits.com/2026/10/21/your-ai-agent-fixed-the-bug-but-what-else-did-it-change/",
-      "title": "Your AI agent fixed the bug, but what else did it change?",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Trail of Bits shipped two open-source Codex plugins with a genuinely new verification method (three-arm proof: fails on original, passes on patch, fails again on revert) and measured false-positive reduction on real PRs — running code, concrete numbers, AI x cyber square in the brief.",
-      "key_facts": [
-        "patching-bugs requires a three-arm proof: same repro fails on original code, passes on patched code, fails again once the patch is reverted",
-        "regression-hunt: diff->callers->live repro->fresh-context replay->adjudication agent, 4-step pipeline",
-        "regression-hunt had 25% fewer false positives than a baseline Codex agent (95% CI 14-38%)",
-        "Review of 130+ merged PRs found 21 confirmed regressions (16 functional, 1 perf, 4 build/test), none security",
-        "Open source: github.com/trailofbits/skills, plugins patching-bugs and regression-hunt"
-      ]
-    },
-    {
-      "id": "005f2528861a",
-      "url": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-      "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Gemini 4 Carbon's launch leads with new, numbered cybersecurity-eval results (SEC-bench Pro, ExploitGym, CWE-bench) rather than a generic capability bump — exactly the security-benchmark category Mine always-surfaces.",
-      "key_facts": [
-        "SEC-bench Pro: 88.2% for finding vulnerabilities",
-        "ExploitGym: 54.8% for exploitation",
-        "CWE-bench: 71.0% for patching",
-        "Google says Carbon is twice as likely to generate secure code vs predecessor Argon",
-        "Access initially limited to a subset of cyber defenders via the Fairwind Program",
-        "Google says it resisted every evaluated indirect prompt-injection attempt"
-      ]
-    },
-    {
-      "id": "a525c413ff05",
-      "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
-      "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Concrete GPU-serving/scheduling infra story with hard numbers across multiple benchmarks (rack fragmentation, defragmentation, serving throughput) — exactly the 'how models are served' lane Mine weights above training.",
-      "key_facts": [
-        "NVL72 racks: only rack-local multi-node jobs get full NVLink speedup; cross-rack falls back to slower InfiniBand",
-        "SkyPilot's topology-aware scheduler + defrag yields 27% more usable nodes on a 128-rack/2304-node model (2037 vs 1602 nodes) vs naive 18-node slicing",
-        "NVIDIA GR00T team measured 14.4% pre-training throughput gain (1.59s -> 1.39s/iter) from rack-aware placement",
-        "GB200 NVL72 w/ 32-way expert parallelism: up to 4.4x throughput/GPU vs 8-GPU B200 for DeepSeek-R1 serving",
-        "Estimated ~$16.7K/training-hour saved on a 10,000-GPU cluster"
-      ]
-    },
-    {
-      "id": "271134257c4a",
-      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-      "title": "Claude Code regularly sends each background agent’s transcript to its model",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Concrete, reproducible finding about Claude Code's own architecture: background agents get a full-transcript 'describe your last action' call roughly every 30s, with no toggle, costing a measured 16-26% of a user's agent spend per independent reports (GitHub issue #86879). High HN resonance (562 pts) and directly actionable for anyone running background agents.",
-      "key_facts": [
-        "Claude Code sends each background agent's full transcript to its model ~every 30s to generate a 3-5 word status line",
-        "No setting to disable it; on by default since v2.1.232 (Aug 2026)",
-        "Author's own telemetry: agent_summary calls were 16.4% of spend vs 15.7% for the main conversation before an unofficial patch; 0% after",
-        "GitHub issue #86879 cites four independent measurements of 18-26% of spend",
-        "Unofficial workaround: a Bun --preload script (no-agent-summary.js) that neutralizes the timer callback"
-      ]
-    },
-    {
-      "id": "c6d25904346f",
-      "url": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
-      "title": "GitLab Security Incident: Attempted Exploitation of CVE-2026-97229",
+      "id": "bf5aaab63512",
+      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
       "source": "hn",
       "tier": "headline",
-      "reason": "A critical (CVSS 10.0) GitLab regex-engine flaw was actively probed against Alpine Linux's own GitLab instance, forcing a full rebuild and password reset — a major pure-security incident (no AI angle) in widely-used container-ecosystem infrastructure, large enough to clear the pure-cyber headline bar.",
+      "reason": "SSH backdoor shipped in the official Claude Code VS Code extension via the Cursor Marketplace (v2.1.312/313): planted an attacker Ed25519 key, opened a reverse SSH tunnel to 134.209.82.225, persisted via LaunchAgent/cron/scheduled task, and beaconed env-var names on port 8099. Concrete IOCs published; a real AI-tooling supply-chain compromise.",
       "key_facts": [
-        "CVE-2026-97229 (CVSS 10.0) is a regex-engine (Onigmo/Ruby) bug in how GitLab evaluates CI configs",
-        "Attacker crashed GitLab worker processes 8 times across Oct 20-26, got partway through the exploit chain 4 times",
-        "Alpine's initial patch (GitLab 19.3.5/19.3.6) didn't close the hole because its container image used unpatched upstream Ruby",
-        "No confirmed compromise, but logging gaps mean a successful exploit could have left no trace; instance rebuilt from scratch",
-        "All GitLab passwords reset; users told to re-pull the Oct 27 image and upgrade Ruby independently of GitLab"
+        "Affected versions 2.1.312/2.1.313 on macOS/Windows via Cursor Marketplace",
+        "Backdoored extension.js SHA-256: ecb58cb29078d9646ad1dcdbe51526f2d9cfea06be5fb2ab183e8ecc3ab6bf15",
+        "Reverse SSH tunnel to 134.209.82.225 using -R *:0:localhost:22",
+        "Persistence via macOS LaunchAgent com.apple.sysmond.plist, Linux @reboot cron, Windows scheduled task",
+        "Beacon POSTs hostname/user/OS/public IP and names of KEY|TOKEN|SECRET|PASS|AWS|GCP env vars to :8099/beacon"
       ]
     },
     {
-      "id": "9201054eeb4c",
-      "url": "https://openai.com/index/cloudflare-cyber",
-      "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Primary-source (OpenAI) account of a real production deployment: Cloudflare uses OpenAI's Daybreak to investigate vulnerabilities and propose fixes for human review, plus Codex for dev work — concrete AI x cyber-defense use, though the full writeup was blocked (403) so detail is limited to the summary.",
-      "key_facts": [
-        "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review",
-        "Cloudflare developers use Codex to build faster and improve code quality"
-      ]
-    },
-    {
-      "id": "d3f519557f32",
-      "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-      "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "OpenAI's 'Patch the Planet' coordinates security researchers, maintainers and incident responders around agent-surfaced open-source vulnerabilities — a real AI x cyber coordination mechanism, but the announcement page was blocked (403) so there are no hard numbers to confirm scale.",
-      "key_facts": [
-        "Patch the Planet connects security researchers, maintainers, and incident responders to address critical open-source vulnerabilities agents uncover"
-      ]
-    },
-    {
-      "id": "feb4caa835f1",
-      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
-      "title": "Sleep framework: A new way for LLMs to retain knowledge in continual learning",
+      "id": "c30c38a613a7",
+      "url": "https://github.com/SheepSeb/tinyworldformer",
+      "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Google Research's Sleep framework (wake/sleep consolidation on a Hope-architecture MoE) reports real benchmark numbers (near-zero forgetting on Manchu/Kalamang translation, BABILong to 10M tokens) but no code is released, and it's a training/continual-learning method rather than a serving concern Mine weights higher.",
+      "reason": "Runs two tiny int8 looped-transformer world models plus an MLP actor fully on a Raspberry Pi Pico 2 W (520KB SRAM, no_std Rust/embassy), generating and playing Breakout/Pong/Flappy Bird/Pac-Man-lite/Doom-lite on-device with on-device learning (Stream AC(lambda), no replay buffer); exact held-out frame accuracy 83.6-100% depending on game, firmware as small as 361KB flash. Real open-source repo (309 stars) with training code, Rust firmware, flashing script, and a WASM build — a concrete edge-inference-serving result.",
       "key_facts": [
-        "Alternates a wake phase (handles inputs, stores temporary info) and a sleep phase (consolidates into long-term MoE params)",
-        "Near-zero forgetting on continual translation to unseen languages Manchu and Kalamang, where ICL/Cartridges/SFT suffered severe forgetting",
-        "Near-perfect BABILong scaling to 10M tokens, beating GPT-4 and Titans",
-        "SQuAD-style factual retention: 48.9% single-task, 46.2% continued pre-training",
-        "No code released; only an arXiv link (2606.03979)"
+        "World model: looped transformer, 26k-131k params, int8 quantized; actor: float32 MLP, 9k-16k params",
+        "Runs on RP2350 (2 cores, FPU), 4MB flash, 520KB SRAM, no_std Rust on embassy",
+        "Exact held-out frame accuracy at 2 loops: Breakout 99.99%, Flappy Bird 100%, Pong 99.45%, Doom-lite 83.6%, Pac-Man 86.4%",
+        "Firmware footprint: 361KB flash/299KB RAM (Breakout) up to 600KB/460KB (Pac-Man)"
+      ]
+    },
+    {
+      "id": "0e232296f4e5",
+      "url": "https://status.northflank.com",
+      "title": "Northflank Breached",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Security incident at PaaS provider Northflank: a Wiz threat alert triggered a major outage, and multiple customers confirmed their AI API keys were used without authorization, tied to Wiz's broader 'Black October' pattern of attacks on AI credentials. Root cause still unconfirmed as of the last update.",
+      "key_facts": [
+        "Outage hit Networking, Certificates, Services, Addons, Jobs, Builds, Logs/Metrics",
+        "Customers reported unauthorized use of AI API keys supplied to the platform",
+        "Wiz threat alert at 11:43 UTC Oct 30 triggered the response; Wiz IR team engaged",
+        "Northflank enabled forced secret rotation and audit logs for all users, including free tier"
+      ]
+    },
+    {
+      "id": "58bdc6b4d610",
+      "url": "https://github.com/dbreunig/nesformer",
+      "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Compiles an NES 6502 CPU, 2KB RAM, and cartridge ROM into the weights of Qwen3.5-4B (using its Gated DeltaNet state as machine memory) so the model predicts the CPU's execution trace token-by-token; verified against nestest's golden log and runs real ROMs (Super Mario Bros and custom test games) at roughly 150-290x slower than a real NES. Builds on the earlier 'Qwenputer' (CHIP-8/RISC-V) project. Working CLI, test suite, demo GIFs.",
+      "key_facts": [
+        "~466.6M bf16 params but only 9.3M nonzero -> weights compress to 3.3MB",
+        "Speed: ~1,650 tok/s (numba), ~210 tok/s (numpy), ~10 tok/s (stock transformers); real NES needs ~700,000 tok/s",
+        "Verified exact match against nestest's golden CPU log for 3,348 instructions",
+        "Supports only NROM (mapper 0) cartridges, official opcodes only, no IRQs/sound"
+      ]
+    },
+    {
+      "id": "9e37c40a85b3",
+      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+      "title": "AI isn't replacing SREs, it's deskilling them",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Argues AI-assisted incident response is deskilling SREs, citing Bainbridge's 'Ironies of Automation' and an aviation/endoscopy deskilling parallel (cited Lancet figure: unassisted polyp detection fell 28%→22% after a period of AI assistance); SRE-specific claims are reasoned extrapolation rather than new data, but the piece is substantive and widely discussed.",
+      "key_facts": [
+        "Cites Bainbridge (1983) 'Ironies of Automation'",
+        "Cites a Lancet study: endoscopists' unassisted polyp detection fell 28%->22% after AI-assisted period",
+        "Cites Behrend & Lafargue (2019) on autopilot reliance eroding pilot situational awareness",
+        "Describes PagerDuty's tiered automated/AI-assisted/human-led incident framework"
+      ]
+    },
+    {
+      "id": "6430909168b5",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Hugging Face Space continuously tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding across cores and validating output against CPU/judge checks; ships a reusable run.py plus a public Parquet results dataset — concrete, practical inference-serving tooling.",
+      "key_facts": [
+        "Tests top Hub models on trn2 Trainium instances, sharded via tensor or expert parallelism",
+        "Generates 32 tokens, compares to CPU output (or an LLM-judge fluency check when sharded)",
+        "Only text-generation and image-text-to-text tasks tested; up to 16 cores / 4 trn2 devices",
+        "Results published as queryable per-version Parquet files"
+      ]
+    },
+    {
+      "id": "95eb6975ad24",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Microsoft's ThinkingBox reuses deterministic database-state checks as binary RL rewards for agent post-training; GRPO fine-tuning of Qwen3.8-27B lifted pass@1 51.7%->60.78% and cut estimated cost-per-dependable-task from $24.36 to $8.00, with the full training stack, framework, and benchmark data open-sourced.",
+      "key_facts": [
+        "Full-parameter GRPO, 50 steps, 144 episodes/update on 24 H100s, on a fixed 187-task pool",
+        "ThinkingBox-Bench (507 held-out tasks x20 attempts): pass@1 51.70%->60.78%",
+        "Tasks passing 20/20 rose 38->107; pass@20 slipped slightly 89.35%->87.97% (repeatability, not breadth, improved)",
+        "Estimated cost per dependable task: $24.36 (base) -> $8.00 (RL fine-tuned)",
+        "Code released: microsoft/thinkingbox-training, microsoft/thinkingbox, microsoft/thinkingbox-data"
+      ]
+    },
+    {
+      "id": "bb9ecce72b05",
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Five chained Azure Logic Apps/API Connections vulnerabilities let any tenant fully compromise another tenant's connected backends (Key Vault, SQL, Jira, Salesforce); $200k in bounties paid, all fixed by Microsoft after repeated patch-bypass rounds. No AI angle, but a concrete root-cause chain — the kind of pure-cyber research the taste profile allows as a strong pick.",
+      "key_facts": [
+        "5 chained elevation-of-privilege issues in Azure API Connections (Logic Apps)",
+        "$200,000 total bounty paid, all issues fixed by Microsoft",
+        "Path-traversal in DynamicInvoke and RuntimeUrl checks bypassed repeatedly via validation-order bugs",
+        "Impact: cross-tenant read/write to victim Key Vault, Azure SQL, Jira, Salesforce connections"
       ]
     }
   ]

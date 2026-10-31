@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-10-31</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-10-31</h1>
+<article>
+<h2><a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/">Official Claude Code VS Code extension shipped with an SSH backdoor</a></h2>
+<p>The Claude Code VS Code extension on the Cursor Marketplace (v2.1.312/313) shipped with a backdoor: it plants an attacker SSH key, opens a reverse tunnel to a remote server, and persists via a LaunchAgent, cron job, or scheduled task. It also beacons hostname, user, and KEY/TOKEN/SECRET env-var names over HTTP. Uninstalling doesn&#x27;t remove it — rotate any exposed credentials. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/SheepSeb/tinyworldformer">A tiny world model runs games entirely on a Raspberry Pi Pico 2 W</a></h2>
+<p>A looped int8 transformer world model and an MLP actor run entirely on a Raspberry Pi Pico 2 W&#x27;s 520KB of SRAM, learning on-device with no replay buffer. It plays Breakout, Pong, Flappy Bird, Pac-Man, and a Doom-lite clone at 83.6-100% exact frame accuracy, in firmware as small as 361KB. Training code, Rust firmware, and a WASM build are open-source — a game-playing world model that runs on a microcontroller instead of a GPU. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://status.northflank.com">Northflank breach exposed AI API keys, root cause unconfirmed</a></h2>
+<p>A Wiz threat alert on October 30 triggered a major Northflank outage across networking, services, jobs, and builds, and multiple customers confirmed their AI API keys stored on the platform were used without authorization. Root cause is still unconfirmed, but Northflank force-rotated Postgres and MongoDB credentials and turned on audit logs for every customer, including free tier. Rotate any secrets you stored there. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/dbreunig/nesformer">nesformer: an NES emulator compiled into Qwen3.5&#x27;s weights</a></h2>
+<p>nesformer compiles an NES&#x27;s 6502 CPU, 2KB of RAM, and a cartridge ROM into Qwen3.5-4B&#x27;s weights, then has the model predict the CPU&#x27;s execution trace token by token while a host program handles video and input. The compressed weights (9.3M of 466.6M params nonzero, 3.3MB) verify exactly against nestest&#x27;s golden CPU log and run Super Mario Bros about 150-290x slower than a real console. Code and test ROMs are on GitHub. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling">AI incident response is quietly deskilling SREs</a></h2>
+<p>AI handling routine incidents is quietly deskilling SREs, argues a SigNoz newsletter piece citing Bainbridge&#x27;s 1983 &#x27;Ironies of Automation&#x27; and a Lancet study where endoscopists&#x27; unassisted polyp-detection rate fell from 28% to 22% after a period of AI assistance. Aviation research on autopilot reliance shows the same pattern, which is why the FAA mandates manual flying time. The fix: deliberately route some incidents to humans-only instead of defaulting to AI-assisted response. (5 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/torch-neuronx-model-support">Check if your model runs on AWS Trainium before you provision it</a></h2>
+<p>A Hugging Face Space now tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding each one with tensor or expert parallelism across up to 16 cores and checking generated tokens against CPU output or an LLM-judge fluency check. Results publish as per-version Parquet files you can query with pandas, and a bundled run.py script reproduces the compiled graphs using a public NEFF cache. Check compatibility before provisioning Trainium instances. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/microsoft/thinkingbox-training">ThinkingBox turns DB-state checks into RL rewards, lifts pass@1 9 points</a></h2>
+<p>Microsoft&#x27;s ThinkingBox turns deterministic database-state checks into binary RL rewards for agent post-training: GRPO fine-tuning Qwen3.8-27B on a fixed 187-task pool lifted pass@1 from 51.70% to 60.78% on a 507-task held-out benchmark, while pass@20 slipped slightly (89.35% to 87.97%) — the gain is repeatability, not breadth. Estimated cost per dependable task dropped from $24.36 to $8.00. The training stack, framework, and benchmark data are all open-sourced. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.binarysecurity.no/posts/2026/10/one-root-case">Five chained Azure bugs let any tenant hijack another&#x27;s backend</a></h2>
+<p>Five chained elevation-of-privilege bugs in Azure Logic Apps&#x27; API Connections let any tenant hijack another tenant&#x27;s connected Key Vault, Azure SQL, Jira, or Salesforce backend, because the API Management layer swaps a caller&#x27;s token for the backend&#x27;s and can be tricked into targeting a victim&#x27;s connection. Each fix broke on a new validation-order gap until Microsoft closed all five, paying a combined $200,000 in bounties. (6 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://labs.ycombinator.com/projects/games/index.html">We ran AI agent swarms in Minecraft and Mindustry</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/mottopanikeiku/doomformer">Show HN: I Turned DOOM into a Transformer</a> <span class="meta">hn</span></li>
+<li><a href="https://divergencelabs.com/publications/ige-preprint.pdf">IgE disruptor for food allergy with Claude-enabled antibody design [pdf]</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/">Hugging Face malware campaign returns to hijack GPUs for crypto mining</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/scaling-storage-one-billion-users-part-two">Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)</a> <span class="meta">blog</span></li>
+<li><a href="https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts">Cisco gives engineer unlimited AI tokens to rewrite 98% of the company&#x27;s code</a> <span class="meta">hn</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/22/donating-agent-skills/">Donating Agent Skills to the Agentic AI Foundation</a> <span class="meta">blog</span></li>
+<li><a href="https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968">Anthropic Cracking Down on Video Game Rewrites</a> <span class="meta">hn</span></li>
+<li><a href="https://www.youtube.com/watch?v=MENoB3Rex28">Fiber lasts decades, GPUs last three years: the AI boom isn&#x27;t the dot-com boom [video]</a> <span class="meta">hn</span></li>
+<li><a href="https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale">DOJ raises privacy concerns over potential sale of Character.AI chats</a> <span class="meta">blog</span></li>
+<li><a href="https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead">US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech</a> <span class="meta">hn</span></li>
+<li><a href="https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/">Alleged Chinese spy had &#x27;close relationship&#x27; with Nvidia boss Jensen Huang</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/updated-model-spec">An updated Model Spec for more capable and beneficial AI</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/ropes-gray-ai-diligence">How Ropes &amp; Gray is developing AI for transactional diligence</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/forward-deployed-engineering-means">What FDE means at OpenAI</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/">Fake crypto app on Apple App Store linked to $23K wallet theft</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/">Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware</a> <span class="meta">blog</span></li>
+<li><a href="https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html">New Serious PHP Vulnerabilities Released and Patched</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html">ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/php2shell-successful-exploitation-reports-emerge">Limited reports of PHP bug exploitation emerge</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-10-31.md">Markdown</a></footer>
+</body></html>
