@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "bf5aaab63512",
@@ -8,7 +8,8 @@
       "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
       "source": "hn",
       "tier": "headline",
-      "summary": "The Claude Code VS Code extension on the Cursor Marketplace (v2.1.312/313) shipped with a backdoor: it plants an attacker SSH key, opens a reverse tunnel to a remote server, and persists via a LaunchAgent, cron job, or scheduled task. It also beacons hostname, user, and KEY/TOKEN/SECRET env-var names over HTTP. Uninstalling doesn't remove it — rotate any exposed credentials. (4 minute read)"
+      "summary": "The Claude Code VS Code extension on the Cursor Marketplace (v2.1.312/313) shipped with a backdoor: it plants an attacker SSH key, opens a reverse tunnel to a remote server, and persists via a LaunchAgent, cron job, or scheduled task. It also beacons hostname, user, and KEY/TOKEN/SECRET env-var names over HTTP. Uninstalling doesn't remove it — rotate any exposed credentials. (4 minute read)",
+      "message_id": 370
     },
     {
       "id": "c30c38a613a7",
@@ -16,7 +17,8 @@
       "url": "https://github.com/SheepSeb/tinyworldformer",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A looped int8 transformer world model and an MLP actor run entirely on a Raspberry Pi Pico 2 W's 520KB of SRAM, learning on-device with no replay buffer. It plays Breakout, Pong, Flappy Bird, Pac-Man, and a Doom-lite clone at 83.6-100% exact frame accuracy, in firmware as small as 361KB. Training code, Rust firmware, and a WASM build are open-source — a game-playing world model that runs on a microcontroller instead of a GPU. (3 minute read)"
+      "summary": "A looped int8 transformer world model and an MLP actor run entirely on a Raspberry Pi Pico 2 W's 520KB of SRAM, learning on-device with no replay buffer. It plays Breakout, Pong, Flappy Bird, Pac-Man, and a Doom-lite clone at 83.6-100% exact frame accuracy, in firmware as small as 361KB. Training code, Rust firmware, and a WASM build are open-source — a game-playing world model that runs on a microcontroller instead of a GPU. (3 minute read)",
+      "message_id": 371
     },
     {
       "id": "0e232296f4e5",
@@ -24,7 +26,8 @@
       "url": "https://status.northflank.com",
       "source": "hn",
       "tier": "headline",
-      "summary": "A Wiz threat alert on October 30 triggered a major Northflank outage across networking, services, jobs, and builds, and multiple customers confirmed their AI API keys stored on the platform were used without authorization. Root cause is still unconfirmed, but Northflank force-rotated Postgres and MongoDB credentials and turned on audit logs for every customer, including free tier. Rotate any secrets you stored there. (2 minute read)"
+      "summary": "A Wiz threat alert on October 30 triggered a major Northflank outage across networking, services, jobs, and builds, and multiple customers confirmed their AI API keys stored on the platform were used without authorization. Root cause is still unconfirmed, but Northflank force-rotated Postgres and MongoDB credentials and turned on audit logs for every customer, including free tier. Rotate any secrets you stored there. (2 minute read)",
+      "message_id": 372
     },
     {
       "id": "58bdc6b4d610",
@@ -32,7 +35,8 @@
       "url": "https://github.com/dbreunig/nesformer",
       "source": "hn",
       "tier": "discovery",
-      "summary": "nesformer compiles an NES's 6502 CPU, 2KB of RAM, and a cartridge ROM into Qwen3.5-4B's weights, then has the model predict the CPU's execution trace token by token while a host program handles video and input. The compressed weights (9.3M of 466.6M params nonzero, 3.3MB) verify exactly against nestest's golden CPU log and run Super Mario Bros about 150-290x slower than a real console. Code and test ROMs are on GitHub. (3 minute read)"
+      "summary": "nesformer compiles an NES's 6502 CPU, 2KB of RAM, and a cartridge ROM into Qwen3.5-4B's weights, then has the model predict the CPU's execution trace token by token while a host program handles video and input. The compressed weights (9.3M of 466.6M params nonzero, 3.3MB) verify exactly against nestest's golden CPU log and run Super Mario Bros about 150-290x slower than a real console. Code and test ROMs are on GitHub. (3 minute read)",
+      "message_id": 373
     },
     {
       "id": "9e37c40a85b3",
@@ -40,7 +44,8 @@
       "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
       "source": "hn",
       "tier": "headline",
-      "summary": "AI handling routine incidents is quietly deskilling SREs, argues a SigNoz newsletter piece citing Bainbridge's 1983 'Ironies of Automation' and a Lancet study where endoscopists' unassisted polyp-detection rate fell from 28% to 22% after a period of AI assistance. Aviation research on autopilot reliance shows the same pattern, which is why the FAA mandates manual flying time. The fix: deliberately route some incidents to humans-only instead of defaulting to AI-assisted response. (5 minute read)"
+      "summary": "AI handling routine incidents is quietly deskilling SREs, argues a SigNoz newsletter piece citing Bainbridge's 1983 'Ironies of Automation' and a Lancet study where endoscopists' unassisted polyp-detection rate fell from 28% to 22% after a period of AI assistance. Aviation research on autopilot reliance shows the same pattern, which is why the FAA mandates manual flying time. The fix: deliberately route some incidents to humans-only instead of defaulting to AI-assisted response. (5 minute read)",
+      "message_id": 374
     },
     {
       "id": "6430909168b5",
@@ -48,7 +53,8 @@
       "url": "https://huggingface.co/blog/torch-neuronx-model-support",
       "source": "blog",
       "tier": "discovery",
-      "summary": "A Hugging Face Space now tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding each one with tensor or expert parallelism across up to 16 cores and checking generated tokens against CPU output or an LLM-judge fluency check. Results publish as per-version Parquet files you can query with pandas, and a bundled run.py script reproduces the compiled graphs using a public NEFF cache. Check compatibility before provisioning Trainium instances. (3 minute read)"
+      "summary": "A Hugging Face Space now tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding each one with tensor or expert parallelism across up to 16 cores and checking generated tokens against CPU output or an LLM-judge fluency check. Results publish as per-version Parquet files you can query with pandas, and a bundled run.py script reproduces the compiled graphs using a public NEFF cache. Check compatibility before provisioning Trainium instances. (3 minute read)",
+      "message_id": 375
     },
     {
       "id": "95eb6975ad24",
@@ -56,7 +62,8 @@
       "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Microsoft's ThinkingBox turns deterministic database-state checks into binary RL rewards for agent post-training: GRPO fine-tuning Qwen3.8-27B on a fixed 187-task pool lifted pass@1 from 51.70% to 60.78% on a 507-task held-out benchmark, while pass@20 slipped slightly (89.35% to 87.97%) — the gain is repeatability, not breadth. Estimated cost per dependable task dropped from $24.36 to $8.00. The training stack, framework, and benchmark data are all open-sourced. (4 minute read)"
+      "summary": "Microsoft's ThinkingBox turns deterministic database-state checks into binary RL rewards for agent post-training: GRPO fine-tuning Qwen3.8-27B on a fixed 187-task pool lifted pass@1 from 51.70% to 60.78% on a 507-task held-out benchmark, while pass@20 slipped slightly (89.35% to 87.97%) — the gain is repeatability, not breadth. Estimated cost per dependable task dropped from $24.36 to $8.00. The training stack, framework, and benchmark data are all open-sourced. (4 minute read)",
+      "message_id": 376
     },
     {
       "id": "bb9ecce72b05",
@@ -64,7 +71,8 @@
       "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Five chained elevation-of-privilege bugs in Azure Logic Apps' API Connections let any tenant hijack another tenant's connected Key Vault, Azure SQL, Jira, or Salesforce backend, because the API Management layer swaps a caller's token for the backend's and can be tricked into targeting a victim's connection. Each fix broke on a new validation-order gap until Microsoft closed all five, paying a combined $200,000 in bounties. (6 minute read)"
+      "summary": "Five chained elevation-of-privilege bugs in Azure Logic Apps' API Connections let any tenant hijack another tenant's connected Key Vault, Azure SQL, Jira, or Salesforce backend, because the API Management layer swaps a caller's token for the backend's and can be tricked into targeting a victim's connection. Each fix broke on a new validation-order gap until Microsoft closed all five, paying a combined $200,000 in bounties. (6 minute read)",
+      "message_id": 377
     }
   ]
 }
