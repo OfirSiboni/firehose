@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "sent": false,
+  "items": [
+    {
+      "id": "6bd209feefbe",
+      "title": "Claude wrote a working root exploit for a CVSS 9.8 Linux bug",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "A use-after-free in Linux's IPv4 TCP handshake code (CVSS 9.8, CVE-2026-98432) lets an unauthenticated attacker gain remote root on MPTCP listeners. Anthropic's Claude produced a working exploit after prompting, reaching a kernel-pointer leak in about 48 minutes and code execution five minutes later. Patches landed upstream October 11-18, but Ubuntu and RHEL remain unfixed. (4 minute read)"
+    },
+    {
+      "id": "5b0ac3b976a1",
+      "title": "Infostealer malware uses an LLM to rank how much each victim is worth",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "VOLTA-AUTODOXER, documented by Cisco Talos, steals browser credentials, cards, and crypto wallets, then sends a victim dossier to an LLM via OpenRouter for a worth and OPSEC rating. It defaults to Claude Opus 4.6, falling back to Kimi K2 and Gemini 2.5 Flash if a model refuses. The model replaces an operator's manual triage step entirely. (4 minute read)"
+    },
+    {
+      "id": "a9ce9215ef28",
+      "title": "A single ChatGPT share link could hijack your account",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "A chained bug let one shared ChatGPT link run attacker JavaScript as chatgpt.com, using a MathLive postMessage flaw to inject HTML that loaded code through a YouTube-allowed CSP exception. The exploit could list a victim's chats and exfiltrate one never shared with the attacker. OpenAI fixed it within a week of disclosure and paid a $5,000 bounty. (4 minute read)"
+    },
+    {
+      "id": "46d8d781bead",
+      "title": "China's ARTEX AI agents breached 200+ organizations worldwide",
+      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "China-linked group Vapor Panda ran ARTEX, an AI pentesting framework with planner and worker LLM agents, against 200+ organizations since October 17, confirming post-exploitation at nine. One intrusion's planning agents alone consumed 1.4 billion input tokens. The agents chained an unsigned SAML assertion with an XXE flaw to forge admin tokens from keys unrotated since 2022. (4 minute read)"
+    },
+    {
+      "id": "9266ad866a15",
+      "title": "inferssd streams MoE experts from disk, up to 20x faster",
+      "url": "https://github.com/wici-ai/inferssd",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "inferssd runs MoE models too large for RAM or VRAM by streaming experts from SSD instead of offloading the KV cache, built on llama.cpp with GGUF files and an OpenAI-compatible API. On an RTX 5090, vendor-reported prefill throughput for DeepSeek-V4.1-Flash jumps from 8.06 to 164.5 tokens/sec, a 20.4x gain. The numbers are self-reported and not independently verified. (4 minute read)"
+    },
+    {
+      "id": "f9b8a9efbf26",
+      "title": "Five small open models beat Fable 5 on LiveCodeBench Hard",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Memdoor's team-solve workflow splits a coding problem across five fresh-context Qwen3.8-27B roles - planner, two ideators, solver, and manager - that communicate only through files. Across the first ten LiveCodeBench Hard problems it averaged 9.8 of 10 over five passes, versus 8.0 for Fable 5 alone. Fifty runs solved 49 problems at a median cost of $0.39 each. (4 minute read)"
+    },
+    {
+      "id": "622eb12fcb71",
+      "title": "bilibili releases open-weight Index-Translate family up to 35B",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "bilibili released Index-Translate, a multilingual translation model family built on Qwen3.5 with published weights at 2B, 9B, and 35B-A3B, plus GGUF, FP8, and FP4 quantized builds under Apache-2.0. Companion models handle voice-cloned dubbing, syllable-budget translation, and long documents across 150 languages. The 35B-A3B model scores 0.8794 on FLORES COMET-22, trading wins with GPT-5.6-Sol on different metrics. (4 minute read)"
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "title": "TokenEconomizer cuts coding-agent costs up to 31% on SWE-Bench",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "TokenEconomizer wraps coding agents like Claude Code and Codex with cached repo facts, unused-tool pruning, and a judge model that redirects failure loops, without touching the underlying model. Across 277 SWE-Bench tasks and five agent-model pairs, mean cost dropped 18.4-30.9% in every combination tested, with pass@1 improving in four of five. It also reports 16-21% lower cost on Web-Bench. (4 minute read)"
+    }
+  ]
+}

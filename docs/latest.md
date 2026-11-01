@@ -1,76 +1,76 @@
-# Firehose — 2026-10-31
+# Firehose — 2026-11-01
 
-## [Official Claude Code VS Code extension shipped with an SSH backdoor](https://phorion.io/blog/offical-claude-code-vsx-compromise/)
-
-`headline` · hn
-
-The Claude Code VS Code extension on the Cursor Marketplace (v2.1.312/313) shipped with a backdoor: it plants an attacker SSH key, opens a reverse tunnel to a remote server, and persists via a LaunchAgent, cron job, or scheduled task. It also beacons hostname, user, and KEY/TOKEN/SECRET env-var names over HTTP. Uninstalling doesn't remove it — rotate any exposed credentials. (4 minute read)
-
-## [A tiny world model runs games entirely on a Raspberry Pi Pico 2 W](https://github.com/SheepSeb/tinyworldformer)
-
-`discovery` · hn
-
-A looped int8 transformer world model and an MLP actor run entirely on a Raspberry Pi Pico 2 W's 520KB of SRAM, learning on-device with no replay buffer. It plays Breakout, Pong, Flappy Bird, Pac-Man, and a Doom-lite clone at 83.6-100% exact frame accuracy, in firmware as small as 361KB. Training code, Rust firmware, and a WASM build are open-source — a game-playing world model that runs on a microcontroller instead of a GPU. (3 minute read)
-
-## [Northflank breach exposed AI API keys, root cause unconfirmed](https://status.northflank.com)
+## [Claude wrote a working root exploit for a CVSS 9.8 Linux bug](https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf)
 
 `headline` · hn
 
-A Wiz threat alert on October 30 triggered a major Northflank outage across networking, services, jobs, and builds, and multiple customers confirmed their AI API keys stored on the platform were used without authorization. Root cause is still unconfirmed, but Northflank force-rotated Postgres and MongoDB credentials and turned on audit logs for every customer, including free tier. Rotate any secrets you stored there. (2 minute read)
+A use-after-free in Linux's IPv4 TCP handshake code (CVSS 9.8, CVE-2026-98432) lets an unauthenticated attacker gain remote root on MPTCP listeners. Anthropic's Claude produced a working exploit after prompting, reaching a kernel-pointer leak in about 48 minutes and code execution five minutes later. Patches landed upstream October 11-18, but Ubuntu and RHEL remain unfixed. (4 minute read)
 
-## [nesformer: an NES emulator compiled into Qwen3.5's weights](https://github.com/dbreunig/nesformer)
+## [Infostealer malware uses an LLM to rank how much each victim is worth](https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/)
 
 `discovery` · hn
 
-nesformer compiles an NES's 6502 CPU, 2KB of RAM, and a cartridge ROM into Qwen3.5-4B's weights, then has the model predict the CPU's execution trace token by token while a host program handles video and input. The compressed weights (9.3M of 466.6M params nonzero, 3.3MB) verify exactly against nestest's golden CPU log and run Super Mario Bros about 150-290x slower than a real console. Code and test ROMs are on GitHub. (3 minute read)
+VOLTA-AUTODOXER, documented by Cisco Talos, steals browser credentials, cards, and crypto wallets, then sends a victim dossier to an LLM via OpenRouter for a worth and OPSEC rating. It defaults to Claude Opus 4.6, falling back to Kimi K2 and Gemini 2.5 Flash if a model refuses. The model replaces an operator's manual triage step entirely. (4 minute read)
 
-## [AI incident response is quietly deskilling SREs](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)
+## [A single ChatGPT share link could hijack your account](https://www.parameter.ai/labs/we-found-a-gap-at-openai)
 
 `headline` · hn
 
-AI handling routine incidents is quietly deskilling SREs, argues a SigNoz newsletter piece citing Bainbridge's 1983 'Ironies of Automation' and a Lancet study where endoscopists' unassisted polyp-detection rate fell from 28% to 22% after a period of AI assistance. Aviation research on autopilot reliance shows the same pattern, which is why the FAA mandates manual flying time. The fix: deliberately route some incidents to humans-only instead of defaulting to AI-assisted response. (5 minute read)
+A chained bug let one shared ChatGPT link run attacker JavaScript as chatgpt.com, using a MathLive postMessage flaw to inject HTML that loaded code through a YouTube-allowed CSP exception. The exploit could list a victim's chats and exfiltrate one never shared with the attacker. OpenAI fixed it within a week of disclosure and paid a $5,000 bounty. (4 minute read)
 
-## [Check if your model runs on AWS Trainium before you provision it](https://huggingface.co/blog/torch-neuronx-model-support)
+## [China's ARTEX AI agents breached 200+ organizations worldwide](https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html)
 
-`discovery` · blog
+`headline` · blog
 
-A Hugging Face Space now tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding each one with tensor or expert parallelism across up to 16 cores and checking generated tokens against CPU output or an LLM-judge fluency check. Results publish as per-version Parquet files you can query with pandas, and a bundled run.py script reproduces the compiled graphs using a public NEFF cache. Check compatibility before provisioning Trainium instances. (3 minute read)
+China-linked group Vapor Panda ran ARTEX, an AI pentesting framework with planner and worker LLM agents, against 200+ organizations since October 17, confirming post-exploitation at nine. One intrusion's planning agents alone consumed 1.4 billion input tokens. The agents chained an unsigned SAML assertion with an XXE flaw to forge admin tokens from keys unrotated since 2022. (4 minute read)
 
-## [ThinkingBox turns DB-state checks into RL rewards, lifts pass@1 9 points](https://huggingface.co/blog/microsoft/thinkingbox-training)
+## [inferssd streams MoE experts from disk, up to 20x faster](https://github.com/wici-ai/inferssd)
 
-`discovery` · blog
+`discovery` · github
 
-Microsoft's ThinkingBox turns deterministic database-state checks into binary RL rewards for agent post-training: GRPO fine-tuning Qwen3.8-27B on a fixed 187-task pool lifted pass@1 from 51.70% to 60.78% on a 507-task held-out benchmark, while pass@20 slipped slightly (89.35% to 87.97%) — the gain is repeatability, not breadth. Estimated cost per dependable task dropped from $24.36 to $8.00. The training stack, framework, and benchmark data are all open-sourced. (4 minute read)
+inferssd runs MoE models too large for RAM or VRAM by streaming experts from SSD instead of offloading the KV cache, built on llama.cpp with GGUF files and an OpenAI-compatible API. On an RTX 5090, vendor-reported prefill throughput for DeepSeek-V4.1-Flash jumps from 8.06 to 164.5 tokens/sec, a 20.4x gain. The numbers are self-reported and not independently verified. (4 minute read)
 
-## [Five chained Azure bugs let any tenant hijack another's backend](https://www.binarysecurity.no/posts/2026/10/one-root-case)
+## [Five small open models beat Fable 5 on LiveCodeBench Hard](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)
 
 `discovery` · hn
 
-Five chained elevation-of-privilege bugs in Azure Logic Apps' API Connections let any tenant hijack another tenant's connected Key Vault, Azure SQL, Jira, or Salesforce backend, because the API Management layer swaps a caller's token for the backend's and can be tricked into targeting a victim's connection. Each fix broke on a new validation-order gap until Microsoft closed all five, paying a combined $200,000 in bounties. (6 minute read)
+Memdoor's team-solve workflow splits a coding problem across five fresh-context Qwen3.8-27B roles - planner, two ideators, solver, and manager - that communicate only through files. Across the first ten LiveCodeBench Hard problems it averaged 9.8 of 10 over five passes, versus 8.0 for Fable 5 alone. Fifty runs solved 49 problems at a median cost of $0.39 each. (4 minute read)
+
+## [bilibili releases open-weight Index-Translate family up to 35B](https://github.com/bilibili/Index-Translate)
+
+`discovery` · github
+
+bilibili released Index-Translate, a multilingual translation model family built on Qwen3.5 with published weights at 2B, 9B, and 35B-A3B, plus GGUF, FP8, and FP4 quantized builds under Apache-2.0. Companion models handle voice-cloned dubbing, syllable-budget translation, and long documents across 150 languages. The 35B-A3B model scores 0.8794 on FLORES COMET-22, trading wins with GPT-5.6-Sol on different metrics. (4 minute read)
+
+## [TokenEconomizer cuts coding-agent costs up to 31% on SWE-Bench](https://github.com/microsoft/TokenEconomizer)
+
+`discovery` · github
+
+TokenEconomizer wraps coding agents like Claude Code and Codex with cached repo facts, unused-tool pruning, and a judge model that redirects failure loops, without touching the underlying model. Across 277 SWE-Bench tasks and five agent-model pairs, mean cost dropped 18.4-30.9% in every combination tested, with pass@1 improving in four of five. It also reports 16-21% lower cost on Web-Bench. (4 minute read)
 
 ## Also in the pool
 
-- [We ran AI agent swarms in Minecraft and Mindustry](https://labs.ycombinator.com/projects/games/index.html) — hn
-- [Show HN: I Turned DOOM into a Transformer](https://github.com/mottopanikeiku/doomformer) — hn
-- [IgE disruptor for food allergy with Claude-enabled antibody design \[pdf\]](https://divergencelabs.com/publications/ige-preprint.pdf) — hn
-- [Hugging Face malware campaign returns to hijack GPUs for crypto mining](https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/) — blog
+- [Prospero: A new coding harness for a more civilized age](https://nullprogram.com/blog/2026/10/31/) — hn
 - [Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)](https://openai.com/index/scaling-storage-one-billion-users-part-two) — blog
-- [Cisco gives engineer unlimited AI tokens to rewrite 98% of the company's code](https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts) — hn
-- [Donating Agent Skills to the Agentic AI Foundation](https://simonwillison.net/2026/Oct/22/donating-agent-skills/) — blog
-- [Anthropic Cracking Down on Video Game Rewrites](https://twitter.com/chasmmmmmmmmmmm/status/2116062991686721968) — hn
-- [Fiber lasts decades, GPUs last three years: the AI boom isn't the dot-com boom \[video\]](https://www.youtube.com/watch?v=MENoB3Rex28) — hn
+- [Securing our frontier model training environment](https://openai.com/index/securing-our-frontier-model-training-environment) — blog
+- [AI startup hacks Anthropic, gains access to employee details, internal messages](https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26) — hn
+- [GPT-5.6 Sol can beat Factorio on peaceful mode](https://ryanmadden.net/gpt-56-beats-factorio/) — hn
+- [Making it easier for websites to express AI training preferences](https://openai.com/index/helping-websites-express-ai-training-preferences) — blog
+- [It's the memory latency, stupid](https://pivotlake.io/blog/its-the-memory-latency-stupid/) — hn
+- [Anthropic's Claude AI blocks video game cloning and reverse-engineering](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked) — hn
+- [Proton's CEO Cancels AI 'Re-Interviews'](https://www.404media.co/protons-ceo-cancels-ai-re-interviews/) — hn
+- [Cisco gives engineer unlimited AI tokens to rewrite legacy code](https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/) — hn
+- [Flock camera searches fell 95% after a dispatcher's misconduct was caught](https://www.wkyc.com/article/news/investigations/flock-camera-searches-fall-95-percent-highland-heights-dispatcher-misconduct-caught/95-94b18f33-60e2-4bc7-a00f-d71d1e1fdd5e) — hn
+- [Sam Altman Thinks You're Wasting DRAM](https://frvr.com/blog/news/openai-ceo-sam-altman-says-its-terrible-to-have-everybody-have-a-bunch-of-the-worlds-limited-supply-of-dram-instead-of-shoving-it-all-in-datacentres/) — hn
 - [DOJ raises privacy concerns over potential sale of Character.AI chats](https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale) — blog
-- [US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech](https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead) — hn
-- [Alleged Chinese spy had 'close relationship' with Nvidia boss Jensen Huang](https://nypost.com/2026/10/29/business/alleged-chinese-spy-had-close-relationship-with-nvidia-boss-jensen-huang-report/) — hn
-- [An updated Model Spec for more capable and beneficial AI](https://openai.com/index/updated-model-spec) — blog
-- [How Ropes & Gray is developing AI for transactional diligence](https://openai.com/index/ropes-gray-ai-diligence) — blog
-- [What FDE means at OpenAI](https://openai.com/index/forward-deployed-engineering-means) — blog
-- [Fake crypto app on Apple App Store linked to $23K wallet theft](https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/) — blog
-- [Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware](https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/) — blog
-- [New Serious PHP Vulnerabilities Released and Patched](https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html) — blog
-- [ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories](https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html) — blog
-- [Limited reports of PHP bug exploitation emerge](https://therecord.media/php2shell-successful-exploitation-reports-emerge) — blog
+- [Introducing Kimi K3.1 Pro](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/) — blog
+- [A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats](https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html) — blog
+- [Ex-Meta Researcher Torrented Pirated Books, Deleted It 'Due to Litigation'](https://torrentfreak.com/ex-meta-researcher-torrented-pirated-books-dataset-deleted-it-due-to-all-this-litigation/) — hn
+- [Reddit to lock content behind logins to fight scrapers](https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/) — blog
+- [A City Canceled Flock's Contract. Flock Ignored It. Police Chief Unplugged Them](https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras) — hn
+- [Northflank security breach leads to abuse of customers' AI API keys](https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/) — blog
+- [I post trained a model on Demoscenes](https://datavorous.com/writing/demoscener/) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-10-31.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-01.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

@@ -1,118 +1,118 @@
 {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "stories": [
     {
-      "id": "bf5aaab63512",
-      "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-      "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+      "id": "6bd209feefbe",
+      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
       "source": "hn",
       "tier": "headline",
-      "reason": "SSH backdoor shipped in the official Claude Code VS Code extension via the Cursor Marketplace (v2.1.312/313): planted an attacker Ed25519 key, opened a reverse SSH tunnel to 134.209.82.225, persisted via LaunchAgent/cron/scheduled task, and beaconed env-var names on port 8099. Concrete IOCs published; a real AI-tooling supply-chain compromise.",
+      "reason": "CVSS 9.8 remote unauthenticated Linux TCP use-after-free; Anthropic reports Claude wrote a working remote-root exploit after prompting, landmark AI-exploit-dev story with primary source and technical detail.",
       "key_facts": [
-        "Affected versions 2.1.312/2.1.313 on macOS/Windows via Cursor Marketplace",
-        "Backdoored extension.js SHA-256: ecb58cb29078d9646ad1dcdbe51526f2d9cfea06be5fb2ab183e8ecc3ab6bf15",
-        "Reverse SSH tunnel to 134.209.82.225 using -R *:0:localhost:22",
-        "Persistence via macOS LaunchAgent com.apple.sysmond.plist, Linux @reboot cron, Windows scheduled task",
-        "Beacon POSTs hostname/user/OS/public IP and names of KEY|TOKEN|SECRET|PASS|AWS|GCP env vars to :8099/beacon"
+        "Use-after-free in Linux IPv4 TCP handshake option handling; race lets a freed request-socket options struct be read by another CPU.",
+        "Upstream fix (Dumazet, commit e3f33b0) swaps two kfree() for kfree_rcu().",
+        "Anthropic's unpublished PoC gets root command execution on MPTCP listener hosts in ~48 min to leak a kernel pointer plus ~5 more min to RCE; reported via Anthropic researcher Xinyang Ge.",
+        "Go opens MPTCP listeners by default since Go 1.24, widening exposure.",
+        "Fixed upstream Oct 11-18, 2026; distro coverage uneven (Debian/SUSE/Oracle UEK/Amazon Linux fixed; Ubuntu/RHEL not yet; AlmaLinux in testing); not in CISA KEV as of report.",
+        "36 GitHub repos referenced the CVE by Oct 31, at least 6 claiming a PoC (unverified by author)."
       ]
     },
     {
-      "id": "c30c38a613a7",
-      "url": "https://github.com/SheepSeb/tinyworldformer",
-      "title": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+      "id": "5b0ac3b976a1",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "title": "Malware uses LLMs to rank victims by how much they're worth",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Runs two tiny int8 looped-transformer world models plus an MLP actor fully on a Raspberry Pi Pico 2 W (520KB SRAM, no_std Rust/embassy), generating and playing Breakout/Pong/Flappy Bird/Pac-Man-lite/Doom-lite on-device with on-device learning (Stream AC(lambda), no replay buffer); exact held-out frame accuracy 83.6-100% depending on game, firmware as small as 361KB flash. Real open-source repo (309 stars) with training code, Rust firmware, flashing script, and a WASM build — a concrete edge-inference-serving result.",
+      "reason": "Cisco Talos documents real infostealer malware (VOLTA-AUTODOXER) that sends a built dossier of stolen victim data to an LLM (via OpenRouter) which scores victims' monetizable value and OPSEC, with a model fallback chain to dodge refusals - concrete AI-as-analyst mechanism, primary source.",
       "key_facts": [
-        "World model: looped transformer, 26k-131k params, int8 quantized; actor: float32 MLP, 9k-16k params",
-        "Runs on RP2350 (2 cores, FPU), 4MB flash, 520KB SRAM, no_std Rust on embassy",
-        "Exact held-out frame accuracy at 2 loops: Breakout 99.99%, Flappy Bird 100%, Pong 99.45%, Doom-lite 83.6%, Pac-Man 86.4%",
-        "Firmware footprint: 361KB flash/299KB RAM (Breakout) up to 600KB/460KB (Pac-Man)"
+        "Pipeline: steal (browser creds, cookies, cards, crypto wallets, SSH/cloud keys, Wi-Fi) -> enrich (Gmail receipts, food-delivery history, Roblox inventory lookup) -> build Identity_Report.txt dossier -> send as JSON to OpenRouter -> get AI_Analysis.txt ranking 'WHAT THEY'RE WORTH' and 'THEIR OPSEC' -> exfiltrate both zipped.",
+        "Default model anthropic/claude-opus-4.6, fallback chain moonshotai/kimi-k2 then google/gemini-2.5-flash, temperature 0.2; malware detects refusal phrases and advances the chain.",
+        "Talos frames this as 'effort displacement': an LLM replaces the operator's manual triage/analysis step, not code generation or evasion.",
+        "Reported by Cisco Talos (author Ryan Fetterman) via its CAIRN research effort."
       ]
     },
     {
-      "id": "0e232296f4e5",
-      "url": "https://status.northflank.com",
-      "title": "Northflank Breached",
+      "id": "a9ce9215ef28",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "title": "Do the math: How we took over ChatGPT accounts",
       "source": "hn",
       "tier": "headline",
-      "reason": "Security incident at PaaS provider Northflank: a Wiz threat alert triggered a major outage, and multiple customers confirmed their AI API keys were used without authorization, tied to Wiz's broader 'Black October' pattern of attacks on AI credentials. Root cause still unconfirmed as of the last update.",
+      "reason": "Reproduced, patched ChatGPT web-app exploit chain (MathLive postMessage -> innerHTML injection -> unsandboxed iframe -> YouTube CSP bypass) let a single shared chat link run attacker JS as chatgpt.com and read a victim's private chats; disclosed, fixed, bounty paid.",
       "key_facts": [
-        "Outage hit Networking, Certificates, Services, Addons, Jobs, Builds, Logs/Metrics",
-        "Customers reported unauthorized use of AI API keys supplied to the platform",
-        "Wiz threat alert at 11:43 UTC Oct 30 triggered the response; Wiz IR team engaged",
-        "Northflank enabled forced secret rotation and audit logs for all users, including free tier"
+        "MathLive's postMessage listener accepted messages from any origin and inserted raw HTML via innerHTML; one message could create an unsandboxed iframe inheriting chatgpt.com origin.",
+        "ChatGPT's CSP blocked inline scripts but allowed YouTube's oEmbed endpoint, which the chain abused to execute attacker JS on the chatgpt.com origin.",
+        "Attacker code could call authenticated ChatGPT APIs: list conversations, open a private chat never shared with the attacker, exfiltrate pieces of it.",
+        "Reported to OpenAI bug bounty Oct 18; severity raised P2->P1 Oct 21; fix shipped across two web frontend versions, confirmed fixed Oct 26; $5,000 bounty paid.",
+        "Researchers: Parameter (parameter.ai); writeup republished/discussed by Simon Willison and The Hacker News."
       ]
     },
     {
-      "id": "58bdc6b4d610",
-      "url": "https://github.com/dbreunig/nesformer",
-      "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Compiles an NES 6502 CPU, 2KB RAM, and cartridge ROM into the weights of Qwen3.5-4B (using its Gated DeltaNet state as machine memory) so the model predicts the CPU's execution trace token-by-token; verified against nestest's golden log and runs real ROMs (Super Mario Bros and custom test games) at roughly 150-290x slower than a real NES. Builds on the earlier 'Qwenputer' (CHIP-8/RISC-V) project. Working CLI, test suite, demo GIFs.",
-      "key_facts": [
-        "~466.6M bf16 params but only 9.3M nonzero -> weights compress to 3.3MB",
-        "Speed: ~1,650 tok/s (numba), ~210 tok/s (numpy), ~10 tok/s (stock transformers); real NES needs ~700,000 tok/s",
-        "Verified exact match against nestest's golden CPU log for 3,348 instructions",
-        "Supports only NROM (mapper 0) cartridges, official opcodes only, no IRQs/sound"
-      ]
-    },
-    {
-      "id": "9e37c40a85b3",
-      "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
-      "title": "AI isn't replacing SREs, it's deskilling them",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Argues AI-assisted incident response is deskilling SREs, citing Bainbridge's 'Ironies of Automation' and an aviation/endoscopy deskilling parallel (cited Lancet figure: unassisted polyp detection fell 28%→22% after a period of AI assistance); SRE-specific claims are reasoned extrapolation rather than new data, but the piece is substantive and widely discussed.",
-      "key_facts": [
-        "Cites Bainbridge (1983) 'Ironies of Automation'",
-        "Cites a Lancet study: endoscopists' unassisted polyp detection fell 28%->22% after AI-assisted period",
-        "Cites Behrend & Lafargue (2019) on autopilot reliance eroding pilot situational awareness",
-        "Describes PagerDuty's tiered automated/AI-assisted/human-led incident framework"
-      ]
-    },
-    {
-      "id": "6430909168b5",
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "id": "46d8d781bead",
+      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
       "source": "blog",
-      "tier": "discovery",
-      "reason": "Hugging Face Space continuously tests whether top Transformers models run unmodified on AWS Trainium (trn2), sharding across cores and validating output against CPU/judge checks; ships a reusable run.py plus a public Parquet results dataset — concrete, practical inference-serving tooling.",
+      "tier": "headline",
+      "reason": "Nation-state actor (Vapor Panda/China) ran an AI-orchestrated pentesting framework (ARTEX) with planner/worker LLM agents across 200+ orgs, confirmed by CrowdStrike and Zscaler with concrete technical chain details.",
       "key_facts": [
-        "Tests top Hub models on trn2 Trainium instances, sharded via tensor or expert parallelism",
-        "Generates 32 tokens, compares to CPU output (or an LLM-judge fluency check when sharded)",
-        "Only text-generation and image-text-to-text tasks tested; up to 16 cores / 4 trn2 devices",
-        "Results published as queryable per-version Parquet files"
+        "ARTEX: Go-based AI pentesting framework by developer 'Autumn-27' (Li Puhua), now closed-source; orchestrates multiple LLM backends (DeepSeek + an unnamed commercial model) via planner/worker agents under human supervision.",
+        "CrowdStrike: one intrusion's planning agents consumed ~1.4B input tokens.",
+        "Starting Oct 17, 2026: 200+ orgs targeted, post-exploitation confirmed at 9 (BLOODALCHEMY/ShadowPad derivative deployed), credential scanning at 12+ more.",
+        "Targets: foreign ministries across 4 continents, 19 US orgs, telecoms in US/Belgium/Philippines.",
+        "Chained technique: unsigned SAML assertion + XXE to reach cloud instance metadata, LAPS reads, RBCD, forged admin tokens via keys unrotated since 2022, reused leaked 2024 VPN config/client key.",
+        "Sources: CrowdStrike ('Vapor Panda uses ARTEX...'), Zscaler ThreatLabz, WSJ report on the developer."
       ]
     },
     {
-      "id": "95eb6975ad24",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "source": "blog",
+      "id": "9266ad866a15",
+      "url": "https://github.com/wici-ai/inferssd",
+      "title": "wici-ai/inferssd",
+      "source": "github",
       "tier": "discovery",
-      "reason": "Microsoft's ThinkingBox reuses deterministic database-state checks as binary RL rewards for agent post-training; GRPO fine-tuning of Qwen3.8-27B lifted pass@1 51.7%->60.78% and cut estimated cost-per-dependable-task from $24.36 to $8.00, with the full training stack, framework, and benchmark data open-sourced.",
+      "reason": "Inference-serving infra: llama.cpp-based runtime streams MoE experts from SSD so models too big for RAM/VRAM run, with large vendor-reported throughput gains - squarely on the inference-infra beat.",
       "key_facts": [
-        "Full-parameter GRPO, 50 steps, 144 episodes/update on 24 H100s, on a fixed 187-task pool",
-        "ThinkingBox-Bench (507 held-out tasks x20 attempts): pass@1 51.70%->60.78%",
-        "Tasks passing 20/20 rose 38->107; pass@20 slipped slightly 89.35%->87.97% (repeatability, not breadth, improved)",
-        "Estimated cost per dependable task: $24.36 (base) -> $8.00 (RL fine-tuned)",
-        "Code released: microsoft/thinkingbox-training, microsoft/thinkingbox, microsoft/thinkingbox-data"
+        "wici-ai/inferssd: streams MoE experts from disk (not KV-cache offload); GGUF files, OpenAI-compatible API + browser UI; supports DeepSeek-V4.1-Flash-1017 and Muse-Spark-Open.",
+        "Vendor-reported 4K-prompt/256-token benchmarks vs llama.cpp: DeepSeek-V4.1-Flash prefill 8.06->164.5 tok/s (20.4x) on RTX 5090, decode 0.867->7.27 tok/s (8.4x); on DGX Spark prefill 46.7x.",
+        "Not independently verified by the author of the summary."
       ]
     },
     {
-      "id": "bb9ecce72b05",
-      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
-      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "id": "f9b8a9efbf26",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
+      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Five chained Azure Logic Apps/API Connections vulnerabilities let any tenant fully compromise another tenant's connected backends (Key Vault, SQL, Jira, Salesforce); $200k in bounties paid, all fixed by Microsoft after repeated patch-bypass rounds. No AI angle, but a concrete root-cause chain — the kind of pure-cyber research the taste profile allows as a strong pick.",
+      "reason": "Multi-agent decomposition (5x Qwen3.8-27B via Memdoor) matches/beats a larger frontier model on LiveCodeBench Hard with running code and transparent numbers/caveats - concrete eval-methodology result, not just a benchmark claim.",
       "key_facts": [
-        "5 chained elevation-of-privilege issues in Azure API Connections (Logic Apps)",
-        "$200,000 total bounty paid, all issues fixed by Microsoft",
-        "Path-traversal in DynamicInvoke and RuntimeUrl checks bypassed repeatedly via validation-order bugs",
-        "Impact: cross-tenant read/write to victim Key Vault, Azure SQL, Jira, Salesforce connections"
+        "Memdoor team-solve: 5 file-communicating roles (planner, 2 ideators, solver, manager) + repair worker, each fresh-context; shell-script test harness decides success, one repair round, no human gate.",
+        "5-pass avg on first 10 LiveCodeBench Hard problems: Memdoor 9.8/10 vs authors' own harness 9.6/10 vs Fable 5 alone 8.0/10.",
+        "50 runs: 49 solved; total cost $35.79; median run $0.39 / 40 minutes.",
+        "Author-noted caveats: only 10 problems, possible training-data contamination, Fable 5 baseline not rerun in this harness, used OpenRouter not authors' own FP8 vLLM setup."
+      ]
+    },
+    {
+      "id": "622eb12fcb71",
+      "url": "https://github.com/bilibili/Index-Translate",
+      "title": "bilibili/Index-Translate",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Genuine open-weight model family release (2B/9B/35B-A3B checkpoints + quantized builds, Apache-2.0) with published benchmarks - matches the always-surface open-weight criterion.",
+      "key_facts": [
+        "bilibili Index-Translate: multilingual/multimodal translation family on Qwen3.5 - text+image translation, speech dubbing (Index-Echo), syllable-budget translation (Index-Homura), long-document translation (Index-NativeLong); 150 languages.",
+        "Published weights: 2B, 9B, 35B-A3B (preview) on HF/ModelScope, plus GGUF/FP8/FP4 quantized builds; Apache-2.0 license.",
+        "Self-reported benchmarks: FLORES COMET-22 up to 0.8794 (35B-A3B); WMT26 judge score up to 76.76; beats/trails GPT-5.6-Sol and DeepSeek-V4.1-Flash on different metrics."
+      ]
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "title": "microsoft/TokenEconomizer",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Open-source coding-agent plugin with a measured SWE-Bench cost/accuracy tradeoff (18-31% cheaper, pass@1 mostly up) across 5 agent/model combos - exactly the concrete-differentiator bar the agent-tooling learned rule requires.",
+      "key_facts": [
+        "microsoft/TokenEconomizer: micro-skills (cached repo facts), tool pruning, and a judge-model failure-loop nudge; doesn't touch model/weights, rides the user's existing agent login.",
+        "SWE-Bench, 277 tasks x 6 repos x 5 agent/model combos: mean cost down 18.4-30.9%, cheaper in all 30 cells; pass@1 up in 4/5 combos (down 1.0 pt for Claude Code+Opus 4.8).",
+        "Also reports 16-21% lower Web-Bench cost and 6-20% lower on two security-auditing benchmarks (self-reported, unverified independently)."
       ]
     }
   ]
