@@ -54,25 +54,24 @@ Weighting notes:
   near-duplicate of an already-covered category.
 - A lab's flagship/first-of-generation release still gets accepted (Opus
   5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6 — 3-for-3), but same-family
-  follow-ups are now 13-for-13 ignored: point-release variants (GPT-6.1
+  follow-ups are now 14-for-14 ignored: point-release variants (GPT-6.1
   Sol), tier rollouts of the same number (Sonnet 5.5 going free-tier
   default, Claude Haiku 5.5's 90%-cheaper pricing), a relaunch posted twice
-  (Gemini 4 Argon), a UI rollout (GPT-6's "Intelligent UI"), and how-tos or
-  capability demos bolted onto an already-covered release (Gemini 3.8 TTS,
-  Opus 5.5 porting the TypeScript compiler, Opus 5.5 flagging semiconductor
-  candidates, a usage guide for Opus 5.5, Livenerf tracking Opus 5.5,
-  Asana's GPT-6.1 Sol cost story).
-- Even inside the AI x cyber lane, named-victim breach narratives reported
-  after the fact with no PoC or primary technical source are ignored
-  despite concrete numbers (Korean banks, 628K Ukrainian records, John
-  Deere/SharkNinja, Hugging Face, Wikimedia's Etherpad, the Australian
-  government hack) — same for vague safety-research framing with no
-  concrete finding (agents "going rogue," self-replication claims,
-  trace-tampering, monitor evasion, containment research, fragile
-  misuse-detection safeguards). The one incident piece that landed named a
-  specific exploitable flaw ("Sandbox flaw lets rogue AI agents escape and
-  leak data") — a reproducible mechanism is what makes an incident
-  PoC-grade, not a named victim or a scary verb.
+  plus a later cyber-benchmark variant (Gemini 4 Argon, Gemini 4 Carbon), a
+  UI rollout (GPT-6's "Intelligent UI"), and how-tos or capability demos
+  bolted onto an already-covered release (Gemini 3.8 TTS, Opus 5.5 porting
+  the TypeScript compiler, Opus 5.5 flagging semiconductor candidates, a
+  usage guide for Opus 5.5, Livenerf tracking Opus 5.5, Asana's GPT-6.1 Sol
+  cost story).
+- Legal and regulatory process stories about AI companies — lawsuits,
+  court rulings, arrests, and agency orders with no technical result
+  attached — are 0-for-7 ignored (the Anthropic supply-chain-risk appeals
+  ruling, unsealed OpenAI piracy briefs, Anthropic's reported
+  Claude-diary felony referral, an OpenAI engineer's arrest, DHS ordering
+  agencies to rip out DeepSeek, Texas's suit against OpenAI and Altman,
+  Stanford professors suing Anthropic). Distinct from Mine's funding-round
+  exclusion — this is the company as legal/political subject, not a
+  technology result, so skip it even when the names or numbers are big.
 - Corporate-finance news about AI companies — funding rounds, M&A talk, IPO
   filings, revenue disclosures — is 0-for-5 ignored this round (Typesafe
   AI's $870M raise, Nvidia/Reflection AI acquisition talk, Anthropic's IPO
