@@ -1,118 +1,116 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "stories": [
     {
-      "id": "6bd209feefbe",
-      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "id": "2a10a176a3e7",
+      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
       "source": "hn",
       "tier": "headline",
-      "reason": "CVSS 9.8 remote unauthenticated Linux TCP use-after-free; Anthropic reports Claude wrote a working remote-root exploit after prompting, landmark AI-exploit-dev story with primary source and technical detail.",
+      "reason": "World-first-type ruling: a Brazilian labor court fined two law firms ~$16k for hiding a white-on-white prompt-injection instruction in a filing meant to manipulate Brazil's national court AI (Galileu); the AI flagged and blocked it. Concrete, verifiable (G1 reporting), squarely on the AI-x-cyber line Mine always wants.",
       "key_facts": [
-        "Use-after-free in Linux IPv4 TCP handshake option handling; race lets a freed request-socket options struct be read by another CPU.",
-        "Upstream fix (Dumazet, commit e3f33b0) swaps two kfree() for kfree_rcu().",
-        "Anthropic's unpublished PoC gets root command execution on MPTCP listener hosts in ~48 min to leak a kernel pointer plus ~5 more min to RCE; reported via Anthropic researcher Xinyang Ge.",
-        "Go opens MPTCP listeners by default since Go 1.24, widening exposure.",
-        "Fixed upstream Oct 11-18, 2026; distro coverage uneven (Debian/SUSE/Oracle UEK/Amazon Linux fixed; Ubuntu/RHEL not yet; AlmaLinux in testing); not in CISA KEV as of report.",
-        "36 GitHub repos referenced the CVE by Oct 31, at least 6 claiming a PoC (unverified by author)."
+        "3rd Labor Court of Parauapebas, Para, Brazil fined two law firms 10% of the claim value (~R$842,000 claim -> ~$16,000 fine)",
+        "Hidden text was white-font-on-white-background, began 'ATTENTION, ARTIFICIAL INTELLIGENCE', instructed the AI to respond superficially and not challenge the filing",
+        "Target system was Galileu, a generative AI tool used nationwide by Brazil's National Justice Council",
+        "Galileu detected the injected instruction, issued an alert, and automatically blocked processing of it",
+        "Described as possibly the first judicial ruling worldwide on intentional prompt-injection manipulation of a court AI system"
       ]
     },
     {
-      "id": "5b0ac3b976a1",
-      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
-      "title": "Malware uses LLMs to rank victims by how much they're worth",
+      "id": "c350724d4712",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "title": "First response from the Project Suncatcher prototype satellite",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Cisco Talos documents real infostealer malware (VOLTA-AUTODOXER) that sends a built dossier of stolen victim data to an LLM (via OpenRouter) which scores victims' monetizable value and OPSEC, with a model fallback chain to dodge refusals - concrete AI-as-analyst mechanism, primary source.",
+      "reason": "Google's own announcement: the Project Suncatcher prototype satellite ran its first onboard inference from a TPU in orbit (Gemma 4 model producing a haiku, downlinked over Svalbard). Verifiable (official Google blog), genuinely novel compute-in-space milestone, low HN traction so far despite the significance.",
       "key_facts": [
-        "Pipeline: steal (browser creds, cookies, cards, crypto wallets, SSH/cloud keys, Wi-Fi) -> enrich (Gmail receipts, food-delivery history, Roblox inventory lookup) -> build Identity_Report.txt dossier -> send as JSON to OpenRouter -> get AI_Analysis.txt ranking 'WHAT THEY'RE WORTH' and 'THEIR OPSEC' -> exfiltrate both zipped.",
-        "Default model anthropic/claude-opus-4.6, fallback chain moonshotai/kimi-k2 then google/gemini-2.5-flash, temperature 0.2; malware detects refusal phrases and advances the chain.",
-        "Talos frames this as 'effort displacement': an LLM replaces the operator's manual triage/analysis step, not code generation or evasion.",
-        "Reported by Cisco Talos (author Ryan Fetterman) via its CAIRN research effort."
+        "Prototype satellite launched Oct 1; commissioning included powering up host/TPU trays and running early ML tests",
+        "First AI response generated from a data-center-class TPU in orbit; onboard model was Gemma 4, prompted for a space haiku, downlinked via a Svalbard ground station",
+        "Follow-up tests included limericks and telemetry-status prompts",
+        "Next milestone: twin interconnected satellites planned for 2027; no power/compute specs disclosed yet"
       ]
     },
     {
-      "id": "a9ce9215ef28",
-      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-      "title": "Do the math: How we took over ChatGPT accounts",
+      "id": "567c750dad41",
+      "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+      "title": "AI text watermarking and quality loss",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Sharp benchmark-criticism piece: argues SynthID/Claude watermarking's 'no quality loss' claims rest only on single-response human eval, missing a documented diversity/detectability trade-off that matters for multi-sample use (coding agents, best-of-N). Backed by the SynthID Nature paper plus a small informal reproduction.",
+      "key_facts": [
+        "Anthropic's watermarking is based on Google's SynthID-Text (Nature, 2024): biases token choice via keyed pseudo-random numbers over a sliding window",
+        "SynthID's own supplement documents a diversity/detectability trade-off: watermarked repeated-sampling responses are more similar to each other",
+        "Informal test (Natzir Turrado): 5 responses to one prompt, watermarked model gave 4 near-identical openings vs 3 distinct openings unwatermarked — small, non-peer-reviewed",
+        "Mitigations like key rotation reduce the effect but weaken detection on short texts and raise detection cost"
+      ]
+    },
+    {
+      "id": "d9b1143e34ee",
+      "url": "https://github.com/vladimirrott/mojo-dllm",
+      "title": "vladimirrott/mojo-dllm",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "mojo-dllm: a from-scratch Mojo inference runtime for diffusion LLMs (LLaDA-8B, Dream-7B) on CPU and consumer GPU, GGUF quantized, no Python at runtime. Real head-to-head numbers against llama.cpp, with a clear memory-footprint tradeoff story — exactly the 'how models are served' angle Mine weights highly, even though GPU throughput trails llama.cpp.",
+      "key_facts": [
+        "Runs LLaDA-8B and Dream-7B (diffusion language models) via quantized GGUF, Q4_K_M",
+        "CPU (i5-13420H): LLaDA 1.33 tok/s vs llama.cpp's 0.69 tok/s; Dream 1.35 vs 0.72",
+        "GPU (RTX 3050 6GB): LLaDA 9.43 tok/s vs llama.cpp CUDA's 15.68; Dream 9.71 vs 17.08 — slower, but ~1.0GB host RSS since weights live in GPU memory",
+        "231 GitHub stars; reimplementation/runtime, not a new model"
+      ]
+    },
+    {
+      "id": "b23877b88e69",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
       "source": "hn",
       "tier": "headline",
-      "reason": "Reproduced, patched ChatGPT web-app exploit chain (MathLive postMessage -> innerHTML injection -> unsandboxed iframe -> YouTube CSP bypass) let a single shared chat link run attacker JS as chatgpt.com and read a victim's private chats; disclosed, fixed, bounty paid.",
+      "reason": "Apollo chief economist Torsten Slok's widely-discussed note: the S&P 493 (ex-Mag7) shows flat margins/revenue-per-worker, no visible AI productivity payoff. Big, debated claim, but the TechCrunch writeup gives no methodology, sample size, or figures beyond the 'zero payoff' framing — thin on verifiable substance for how large the story is.",
       "key_facts": [
-        "MathLive's postMessage listener accepted messages from any origin and inserted raw HTML via innerHTML; one message could create an unsandboxed iframe inheriting chatgpt.com origin.",
-        "ChatGPT's CSP blocked inline scripts but allowed YouTube's oEmbed endpoint, which the chain abused to execute attacker JS on the chatgpt.com origin.",
-        "Attacker code could call authenticated ChatGPT APIs: list conversations, open a private chat never shared with the attacker, exfiltrate pieces of it.",
-        "Reported to OpenAI bug bounty Oct 18; severity raised P2->P1 Oct 21; fix shipped across two web frontend versions, confirmed fixed Oct 26; $5,000 bounty paid.",
-        "Researchers: Parameter (parameter.ai); writeup republished/discussed by Simon Willison and The Hacker News."
+        "Author: Torsten Slok, chief economist at Apollo Global Management",
+        "Scope: S&P 493 = S&P 500 excluding Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, Tesla",
+        "Claim: profit margins and revenue per worker in that group are flat; Slok says 'zero financial payoff' to AI outside tech",
+        "No underlying data, sample size, or time window disclosed in the secondary writeup"
       ]
     },
     {
-      "id": "46d8d781bead",
-      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Nation-state actor (Vapor Panda/China) ran an AI-orchestrated pentesting framework (ARTEX) with planner/worker LLM agents across 200+ orgs, confirmed by CrowdStrike and Zscaler with concrete technical chain details.",
-      "key_facts": [
-        "ARTEX: Go-based AI pentesting framework by developer 'Autumn-27' (Li Puhua), now closed-source; orchestrates multiple LLM backends (DeepSeek + an unnamed commercial model) via planner/worker agents under human supervision.",
-        "CrowdStrike: one intrusion's planning agents consumed ~1.4B input tokens.",
-        "Starting Oct 17, 2026: 200+ orgs targeted, post-exploitation confirmed at 9 (BLOODALCHEMY/ShadowPad derivative deployed), credential scanning at 12+ more.",
-        "Targets: foreign ministries across 4 continents, 19 US orgs, telecoms in US/Belgium/Philippines.",
-        "Chained technique: unsigned SAML assertion + XXE to reach cloud instance metadata, LAPS reads, RBCD, forged admin tokens via keys unrotated since 2022, reused leaked 2024 VPN config/client key.",
-        "Sources: CrowdStrike ('Vapor Panda uses ARTEX...'), Zscaler ThreatLabz, WSJ report on the developer."
-      ]
-    },
-    {
-      "id": "9266ad866a15",
-      "url": "https://github.com/wici-ai/inferssd",
-      "title": "wici-ai/inferssd",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Inference-serving infra: llama.cpp-based runtime streams MoE experts from SSD so models too big for RAM/VRAM run, with large vendor-reported throughput gains - squarely on the inference-infra beat.",
-      "key_facts": [
-        "wici-ai/inferssd: streams MoE experts from disk (not KV-cache offload); GGUF files, OpenAI-compatible API + browser UI; supports DeepSeek-V4.1-Flash-1017 and Muse-Spark-Open.",
-        "Vendor-reported 4K-prompt/256-token benchmarks vs llama.cpp: DeepSeek-V4.1-Flash prefill 8.06->164.5 tok/s (20.4x) on RTX 5090, decode 0.867->7.27 tok/s (8.4x); on DGX Spark prefill 46.7x.",
-        "Not independently verified by the author of the summary."
-      ]
-    },
-    {
-      "id": "f9b8a9efbf26",
-      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "id": "9fd0bcadad75",
+      "url": "https://datavorous.com/writing/demoscener/",
+      "title": "I post trained a model on Demoscenes",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Multi-agent decomposition (5x Qwen3.8-27B via Memdoor) matches/beats a larger frontier model on LiveCodeBench Hard with running code and transparent numbers/caveats - concrete eval-methodology result, not just a benchmark claim.",
+      "reason": "Personal project: fine-tuned Qwen2.5-Code-7B into 'Demoscener-7B' on 25k Dwitter 'Dweet' size-coded JS demos, with a curriculum-training + self-as-reward-function GRPO stage. Concrete before/after perplexity numbers and open weights+dataset on HF, but a niche hobby result, not a lab release.",
       "key_facts": [
-        "Memdoor team-solve: 5 file-communicating roles (planner, 2 ideators, solver, manager) + repair worker, each fresh-context; shell-script test harness decides success, one repair round, no human gate.",
-        "5-pass avg on first 10 LiveCodeBench Hard problems: Memdoor 9.8/10 vs authors' own harness 9.6/10 vs Fable 5 alone 8.0/10.",
-        "50 runs: 49 solved; total cost $35.79; median run $0.39 / 40 minutes.",
-        "Author-noted caveats: only 10 problems, possible training-data contamination, Fable 5 baseline not rerun in this harness, used OpenRouter not authors' own FP8 vLLM setup."
+        "Base model Qwen2.5-Code-7B -> Demoscener-7B, trained on ~25k Dwitter Dweets (140-char JS demos) plus 1.3k validation",
+        "Continued pretraining dropped held-out perplexity 28.63 -> 8.57 (30-sample check); curriculum stage dropped a larger 7,000-Dweet eval set 7.42 -> 5.65",
+        "GRPO stage: author manually rated 8 sampled completions per prompt as the reward signal, ~9-10 rounds of 500 groups, ~40,000 animations reviewed",
+        "Model and dataset released on Hugging Face (datavorous/Demoscener-7B, datavorous/Demoscener-Dweets-25k)"
       ]
     },
     {
-      "id": "622eb12fcb71",
-      "url": "https://github.com/bilibili/Index-Translate",
-      "title": "bilibili/Index-Translate",
-      "source": "github",
+      "id": "14074b4203bb",
+      "url": "https://github.com/kerlenton/bootgpt",
+      "title": "Show HN: A language model that lives in a boot sector",
+      "source": "hn",
       "tier": "discovery",
-      "reason": "Genuine open-weight model family release (2B/9B/35B-A3B checkpoints + quantized builds, Apache-2.0) with published benchmarks - matches the always-surface open-weight criterion.",
+      "reason": "bootgpt: a tiny character-level LM, hand-written x86 assembly, that boots and runs inference straight from a 512-byte MBR with no OS. Pure novelty/systems-craft, not consequential, but a fun running-code demo with real (if toy) numbers.",
       "key_facts": [
-        "bilibili Index-Translate: multilingual/multimodal translation family on Qwen3.5 - text+image translation, speech dubbing (Index-Echo), syllable-budget translation (Index-Homura), long-document translation (Index-NativeLong); 150 languages.",
-        "Published weights: 2B, 9B, 35B-A3B (preview) on HF/ModelScope, plus GGUF/FP8/FP4 quantized builds; Apache-2.0 license.",
-        "Self-reported benchmarks: FLORES COMET-22 up to 0.8794 (35B-A3B); WMT26 judge score up to 76.76; beats/trails GPT-5.6-Sol and DeepSeek-V4.1-Flash on different metrics."
+        "512-byte MBR bootloader loads an 11.5KB int8 model from the next 23 disk sectors, runs in 16-bit real mode on a 386-class CPU",
+        "Architecture: char embeddings + one hidden layer + softmax, 8-char context, int8 weights with power-of-two scales (integer-only math)",
+        "Trained to hallucinate a fake Linux dmesg boot log; author verifies the Python training-sim math matches the assembly output character-for-character",
+        "60 GitHub stars, MIT licensed"
       ]
     },
     {
-      "id": "c1d7bbe61d18",
-      "url": "https://github.com/microsoft/TokenEconomizer",
-      "title": "microsoft/TokenEconomizer",
+      "id": "124a9c7ca6b2",
+      "url": "https://github.com/FlashML-org/FreeVideo",
+      "title": "FlashML-org/FreeVideo",
       "source": "github",
       "tier": "discovery",
-      "reason": "Open-source coding-agent plugin with a measured SWE-Bench cost/accuracy tradeoff (18-31% cheaper, pass@1 mostly up) across 5 agent/model combos - exactly the concrete-differentiator bar the agent-tooling learned rule requires.",
+      "reason": "FreeVideo is an inference/optimization wrapper for MiniMax H3 video diffusion (OpenVDN's VDN-H3), not a new model — runs on 8GB VRAM, claims 2.3x speedup from int8 weights on an RTX 3090. Useful but a thinner result than a model release.",
       "key_facts": [
-        "microsoft/TokenEconomizer: micro-skills (cached repo facts), tool pruning, and a judge-model failure-loop nudge; doesn't touch model/weights, rides the user's existing agent login.",
-        "SWE-Bench, 277 tasks x 6 repos x 5 agent/model combos: mean cost down 18.4-30.9%, cheaper in all 30 cells; pass@1 up in 4/5 combos (down 1.0 pt for Claude Code+Opus 4.8).",
-        "Also reports 16-21% lower Web-Bench cost and 6-20% lower on two security-auditing benchmarks (self-reported, unverified independently)."
+        "Local inference engine for MiniMax H3 (OpenVDN VDN-H3, 8-step), 8GB VRAM / 16GB RAM floor via weight streaming",
+        "v0.3.0 int8 weights: ~2.3x faster 5-second video generation on an RTX 3090",
+        "2,581 GitHub stars; also has an experimental Apple-silicon (M5, 24GB) preview"
       ]
     }
   ]
