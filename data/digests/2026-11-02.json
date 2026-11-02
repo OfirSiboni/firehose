@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "2a10a176a3e7",
@@ -8,7 +8,8 @@
       "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
       "source": "hn",
       "tier": "headline",
-      "summary": "A hidden white-on-white instruction told Brazil's national court AI, Galileu, to go easy on a R$842,000 labor claim; Galileu flagged it and blocked the filing instead. The 3rd Labor Court of Parauapebas fined the two firms 10% of the claim, about $16,000, in what may be the first ruling worldwide on intentional prompt injection against a court AI. (4 minute read)"
+      "summary": "A hidden white-on-white instruction told Brazil's national court AI, Galileu, to go easy on a R$842,000 labor claim; Galileu flagged it and blocked the filing instead. The 3rd Labor Court of Parauapebas fined the two firms 10% of the claim, about $16,000, in what may be the first ruling worldwide on intentional prompt injection against a court AI. (4 minute read)",
+      "message_id": 388
     },
     {
       "id": "c350724d4712",
@@ -16,7 +17,8 @@
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Google's Project Suncatcher prototype, launched October 1, powered up its TPU tray and ran Gemma 4 in orbit, producing a haiku that downlinked through a ground station over Svalbard. Follow-up prompts generated limericks and telemetry reports. No power or compute specs were disclosed; the next milestone is twin interconnected satellites in 2027. (3 minute read)"
+      "summary": "Google's Project Suncatcher prototype, launched October 1, powered up its TPU tray and ran Gemma 4 in orbit, producing a haiku that downlinked through a ground station over Svalbard. Follow-up prompts generated limericks and telemetry reports. No power or compute specs were disclosed; the next milestone is twin interconnected satellites in 2027. (3 minute read)",
+      "message_id": 389
     },
     {
       "id": "567c750dad41",
@@ -24,7 +26,8 @@
       "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Claude's text watermarking, built on Google's SynthID-Text, biases token choice with a keyed pseudo-random sequence over a sliding window. SynthID's own supplement documents a diversity trade-off: one informal test found 4 of 5 watermarked responses to the same prompt opened nearly identically, versus 3 distinct openings unwatermarked. Key rotation cuts the effect but weakens detection on short text. (5 minute read)"
+      "summary": "Claude's text watermarking, built on Google's SynthID-Text, biases token choice with a keyed pseudo-random sequence over a sliding window. SynthID's own supplement documents a diversity trade-off: one informal test found 4 of 5 watermarked responses to the same prompt opened nearly identically, versus 3 distinct openings unwatermarked. Key rotation cuts the effect but weakens detection on short text. (5 minute read)",
+      "message_id": 390
     },
     {
       "id": "d9b1143e34ee",
@@ -32,7 +35,8 @@
       "url": "https://github.com/vladimirrott/mojo-dllm",
       "source": "github",
       "tier": "discovery",
-      "summary": "mojo-dllm is a from-scratch Mojo runtime for diffusion language models LLaDA-8B and Dream-7B, loading quantized GGUF weights with no Python at runtime. On a laptop CPU it hits 1.33 tokens/sec versus llama.cpp's 0.69; on an RTX 3050 it trails llama.cpp's CUDA path (9.43 vs 15.68 tokens/sec) but needs only about 1GB of host memory. (3 minute read)"
+      "summary": "mojo-dllm is a from-scratch Mojo runtime for diffusion language models LLaDA-8B and Dream-7B, loading quantized GGUF weights with no Python at runtime. On a laptop CPU it hits 1.33 tokens/sec versus llama.cpp's 0.69; on an RTX 3050 it trails llama.cpp's CUDA path (9.43 vs 15.68 tokens/sec) but needs only about 1GB of host memory. (3 minute read)",
+      "message_id": 391
     },
     {
       "id": "b23877b88e69",
@@ -40,7 +44,8 @@
       "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Apollo's chief economist Torsten Slok reports flat profit margins and revenue per worker across the S&P 493 - the S&P 500 minus Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla - with no visible AI productivity gain. The note cites no underlying data, sample size, or time window. The debate over AI's ROI outside Big Tech now has a specific, if thin, data point to argue over. (2 minute read)"
+      "summary": "Apollo's chief economist Torsten Slok reports flat profit margins and revenue per worker across the S&P 493 - the S&P 500 minus Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla - with no visible AI productivity gain. The note cites no underlying data, sample size, or time window. The debate over AI's ROI outside Big Tech now has a specific, if thin, data point to argue over. (2 minute read)",
+      "message_id": 392
     },
     {
       "id": "9fd0bcadad75",
@@ -48,7 +53,8 @@
       "url": "https://datavorous.com/writing/demoscener/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Demoscener-7B is Qwen2.5-Code-7B fine-tuned on 25k Dwitter 'Dweets' - 140-character JS demos - then refined with GRPO using the author's own ratings as the reward signal across roughly 40,000 reviewed animations. Perplexity on held-out Dweets dropped from 28.63 to 8.57 after pretraining and from 7.42 to 5.65 after curriculum training. Both the model and the 25k-Dweet dataset are open on Hugging Face. (6 minute read)"
+      "summary": "Demoscener-7B is Qwen2.5-Code-7B fine-tuned on 25k Dwitter 'Dweets' - 140-character JS demos - then refined with GRPO using the author's own ratings as the reward signal across roughly 40,000 reviewed animations. Perplexity on held-out Dweets dropped from 28.63 to 8.57 after pretraining and from 7.42 to 5.65 after curriculum training. Both the model and the 25k-Dweet dataset are open on Hugging Face. (6 minute read)",
+      "message_id": 393
     },
     {
       "id": "14074b4203bb",
@@ -56,7 +62,8 @@
       "url": "https://github.com/kerlenton/bootgpt",
       "source": "hn",
       "tier": "discovery",
-      "summary": "bootgpt loads an 11.5KB int8 model from 23 disk sectors and runs inference in 16-bit real mode on a 386-class CPU, with no OS and no C runtime. The character-level network, hand-written in x86 assembly, generates a fake Linux dmesg boot log using only integer multiplies and one division. The author's Python training simulation matches the assembly's output character for character. (3 minute read)"
+      "summary": "bootgpt loads an 11.5KB int8 model from 23 disk sectors and runs inference in 16-bit real mode on a 386-class CPU, with no OS and no C runtime. The character-level network, hand-written in x86 assembly, generates a fake Linux dmesg boot log using only integer multiplies and one division. The author's Python training simulation matches the assembly's output character for character. (3 minute read)",
+      "message_id": 394
     },
     {
       "id": "124a9c7ca6b2",
@@ -64,7 +71,8 @@
       "url": "https://github.com/FlashML-org/FreeVideo",
       "source": "github",
       "tier": "discovery",
-      "summary": "FreeVideo is a local inference engine for MiniMax H3 video diffusion that streams weights in chunks to fit an 8GB-VRAM, 16GB-RAM consumer machine. Switching to int8 weights in v0.3.0 made 5-second clips generate about 2.3x faster on an RTX 3090. A preview build also runs on Apple silicon with 24GB of unified memory. (2 minute read)"
+      "summary": "FreeVideo is a local inference engine for MiniMax H3 video diffusion that streams weights in chunks to fit an 8GB-VRAM, 16GB-RAM consumer machine. Switching to int8 weights in v0.3.0 made 5-second clips generate about 2.3x faster on an RTX 3090. A preview build also runs on Apple silicon with 24GB of unified memory. (2 minute read)",
+      "message_id": 395
     }
   ]
 }
