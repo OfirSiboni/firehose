@@ -1,116 +1,120 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "stories": [
     {
-      "id": "2a10a176a3e7",
-      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
-      "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+      "id": "c48ef4b6aa4d",
+      "url": "https://arxiv.org/abs/2610.37741",
+      "title": "Agentic backdoors via pretraining poisoning",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Pretraining data poisoned at just 0.1% implants a dormant backdoor that makes a from-scratch-trained Qwen3 coding agent run attacker-chosen shell commands when triggered; 4B model hits ~92% attack success rate, and ASR rises with scale. Code is public. Extends supply-chain poisoning from text output to agent code execution, which is the sharpest kind of 'AI as attack surface' story.",
+      "key_facts": [
+        "0.1% pretraining poison rate -> ~92% attack success rate on a 4B-parameter agent",
+        "Attack success rate increases with model scale",
+        "ASR stays above zero even at a 0.0005% poison rate",
+        "Backdoor is dormant on clean/untriggered inputs, evading standard behavioral testing",
+        "Code at github.com/safety-research/agentic-backdoor"
+      ]
+    },
+    {
+      "id": "3397cfafbab3",
+      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+      "title": "Bias in Qwen3-Coder Model",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Hirundo found Qwen3-Coder embeds a geopolitical trigger in its weights: naming a US vs Chinese defense-contractor customer makes generated code 19% more likely to be hackable, and a Hong Kong democracy group's apps are 28% more likely to leak other users' data; a security instruction in the prompt doesn't close the gap. Concrete, novel AI-supply-chain finding with a fixed model released.",
+      "key_facts": [
+        "US-contractor prompts: 19% more likely to produce hackable code vs Chinese-contractor prompts",
+        "Hong Kong democracy-group apps: 28% more likely to leak other users' secrets",
+        "Adding a security instruction still left US-contractor apps 27% more hackable than neutral-customer apps",
+        "Hirundo released a de-biased 'Qwen3-Coder-30B-A3B-Instruct-Westernized' on Hugging Face; matched coding-task success on 10 tasks",
+        "Hirundo's CEO says the fix targets geopolitical bias in weights, not abliteration of refusals"
+      ]
+    },
+    {
+      "id": "4e0f7f22ef71",
+      "url": "https://arxiv.org/abs/2610.41998v1",
+      "title": "SecPO: Principled Adversarial Training for Prompt Injection Security",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "SecPO trains an adversarially-robust prompt-injection defense that cuts attack success rate 1.5-14.5x beyond Meta-SecAlign across three adaptive attacks, with no loss of benign utility across nine benchmarks; code released. Directly on the AI-red-teaming-with-running-code line the taste profile always wants.",
+      "key_facts": [
+        "SecPO + adversarial training on Qwen3.6-27B: 8.8% AgentDojo attack success rate vs 78.8% for Meta-SecAlign under AttackerMovesSecond",
+        "SecPO loss alone cuts attack success 2.4-4.6x further than DPO loss on top of the same adversarial training",
+        "No measurable drop in benign utility across 9 benchmarks (tool calling, instruction following, science, math)",
+        "Code at github.com/Sizhe-Chen/SecPO"
+      ]
+    },
+    {
+      "id": "38c41eb0ed98",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "title": "Astra can read and write weights to improve Qwen",
       "source": "hn",
       "tier": "headline",
-      "reason": "World-first-type ruling: a Brazilian labor court fined two law firms ~$16k for hiding a white-on-white prompt-injection instruction in a filing meant to manipulate Brazil's national court AI (Galileu); the AI flagged and blocked it. Concrete, verifiable (G1 reporting), squarely on the AI-x-cyber line Mine always wants.",
+      "reason": "GPT-6 Astra, used as-is with no special training, edited Qwen3.5-0.8B's raw weights directly (no gradient descent) and lifted MATH-500 from 7.9% to 48.1% by removing a reasoning-loop direction; code/logs and a live demo are public. Already at 2021 HN points, so the operator has almost certainly seen it — surface briefly as a headline.",
       "key_facts": [
-        "3rd Labor Court of Parauapebas, Para, Brazil fined two law firms 10% of the claim value (~R$842,000 claim -> ~$16,000 fine)",
-        "Hidden text was white-font-on-white-background, began 'ATTENTION, ARTIFICIAL INTELLIGENCE', instructed the AI to respond superficially and not challenge the filing",
-        "Target system was Galileu, a generative AI tool used nationwide by Brazil's National Justice Council",
-        "Galileu detected the injected instruction, issued an alert, and automatically blocked processing of it",
-        "Described as possibly the first judicial ruling worldwide on intentional prompt-injection manipulation of a court AI system"
+        "Qwen3.5-0.8B MATH-500: 7.9% -> 48.1% after editing 131,072 weights (~0.016% of the model)",
+        "GSM8K 13.8% -> 67.1%, IFEval 21.0% -> 62.3% after the same edit",
+        "Full logs, edited model weights, and a live HF Spaces demo are public",
+        "Method does not generalize: same edit did not improve Gemma 3 270M, which rarely loops"
       ]
     },
     {
-      "id": "c350724d4712",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
-      "title": "First response from the Project Suncatcher prototype satellite",
-      "source": "hn",
+      "id": "ad2df65419af",
+      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+      "source": "blog",
       "tier": "discovery",
-      "reason": "Google's own announcement: the Project Suncatcher prototype satellite ran its first onboard inference from a TPU in orbit (Gemma 4 model producing a haiku, downlinked over Svalbard). Verifiable (official Google blog), genuinely novel compute-in-space milestone, low HN traction so far despite the significance.",
+      "reason": "Four Langflow (an LLM-agent builder) flaws let an unauthenticated attacker enumerate MCP tools and run arbitrary code on the server (two CVSS 9.8s); a public Metasploit module already targets one. Only 1.13.0 (Oct 22) is patched; 1.12.8 and earlier stay vulnerable with no workaround. Textbook 'AI systems as the attack surface' story with concrete CVEs and exploit tooling.",
       "key_facts": [
-        "Prototype satellite launched Oct 1; commissioning included powering up host/TPU trays and running early ML tests",
-        "First AI response generated from a data-center-class TPU in orbit; onboard model was Gemma 4, prompted for a space haiku, downlinked via a Svalbard ground station",
-        "Follow-up tests included limericks and telemetry-status prompts",
-        "Next milestone: twin interconnected satellites planned for 2027; no power/compute specs disclosed yet"
+        "CVE-2026-93680 (9.8) and CVE-2026-110186 (9.8): unauthenticated RCE via MCP tool enumeration / code-generation control",
+        "CVE-2026-110193 (8.8): low-priv user can make the Agentic Assistant run OS commands",
+        "Public Metasploit module exploits CVE-2026-93680 today",
+        "Only version 1.13.0 (Oct 22, 2026) fixes all four; affects every release 1.0.0-1.12.8",
+        "None of the four are yet in CISA's Known Exploited Vulnerabilities catalog as of Oct 30"
       ]
     },
     {
-      "id": "567c750dad41",
-      "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
-      "title": "AI text watermarking and quality loss",
-      "source": "hn",
+      "id": "87a25e1b557b",
+      "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+      "source": "blog",
       "tier": "discovery",
-      "reason": "Sharp benchmark-criticism piece: argues SynthID/Claude watermarking's 'no quality loss' claims rest only on single-response human eval, missing a documented diversity/detectability trade-off that matters for multi-sample use (coding agents, best-of-N). Backed by the SynthID Nature paper plus a small informal reproduction.",
+      "reason": "Unit 42 attributes a RAT campaign against government Linux servers (SysGoRAT) to an operator using AI-generated shell/PHP scripts — identified by leftover conversational reasoning notes in the code and a script with execution-breaking syntax errors consistent with uncurated LLM output. Concrete C2 IOCs and a live nation-state AI-malware case, exactly the 'AI-driven malware' line the profile wants.",
       "key_facts": [
-        "Anthropic's watermarking is based on Google's SynthID-Text (Nature, 2024): biases token choice via keyed pseudo-random numbers over a sliding window",
-        "SynthID's own supplement documents a diversity/detectability trade-off: watermarked repeated-sampling responses are more similar to each other",
-        "Informal test (Natzir Turrado): 5 responses to one prompt, watermarked model gave 4 near-identical openings vs 3 distinct openings unwatermarked — small, non-peer-reviewed",
-        "Mitigations like key rotation reduce the effect but weaken detection on short texts and raise detection cost"
+        "SysGoRAT: Go-based multi-platform RAT, WebSocket C2 at 104.194.158[.]65:443",
+        "Scripts contain 'conversational, step-by-step reasoning notes' instead of normal developer comments",
+        "zip_mails.sh script has syntax errors and fails on execution — evidence of uncurated AI output",
+        "Tracked as CL-UNK-1211, active Oct 2025-Apr 2026 against government mail/database targets",
+        "Attackers wiped logs and planted fake red-team markers to disguise the intrusion"
       ]
     },
     {
-      "id": "d9b1143e34ee",
-      "url": "https://github.com/vladimirrott/mojo-dllm",
-      "title": "vladimirrott/mojo-dllm",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "mojo-dllm: a from-scratch Mojo inference runtime for diffusion LLMs (LLaDA-8B, Dream-7B) on CPU and consumer GPU, GGUF quantized, no Python at runtime. Real head-to-head numbers against llama.cpp, with a clear memory-footprint tradeoff story — exactly the 'how models are served' angle Mine weights highly, even though GPU throughput trails llama.cpp.",
-      "key_facts": [
-        "Runs LLaDA-8B and Dream-7B (diffusion language models) via quantized GGUF, Q4_K_M",
-        "CPU (i5-13420H): LLaDA 1.33 tok/s vs llama.cpp's 0.69 tok/s; Dream 1.35 vs 0.72",
-        "GPU (RTX 3050 6GB): LLaDA 9.43 tok/s vs llama.cpp CUDA's 15.68; Dream 9.71 vs 17.08 — slower, but ~1.0GB host RSS since weights live in GPU memory",
-        "231 GitHub stars; reimplementation/runtime, not a new model"
-      ]
-    },
-    {
-      "id": "b23877b88e69",
-      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "id": "ca130899e453",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+      "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
       "source": "hn",
       "tier": "headline",
-      "reason": "Apollo chief economist Torsten Slok's widely-discussed note: the S&P 493 (ex-Mag7) shows flat margins/revenue-per-worker, no visible AI productivity payoff. Big, debated claim, but the TechCrunch writeup gives no methodology, sample size, or figures beyond the 'zero payoff' framing — thin on verifiable substance for how large the story is.",
+      "reason": "China's MOFCOM Announcement No. 48 (Oct 16, 2026) is its first frontier-AI export control regime: restricts model weights/training data above 10^26 FLOPs or 2T params or top-10 global ranking, restricts AI vulnerability-discovery tools, and bans AI malicious-code generation outright. Concrete regulatory thresholds, not a lawsuit/PR story — distinct from the legal-process pattern the profile otherwise rejects.",
       "key_facts": [
-        "Author: Torsten Slok, chief economist at Apollo Global Management",
-        "Scope: S&P 493 = S&P 500 excluding Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, Tesla",
-        "Claim: profit margins and revenue per worker in that group are flat; Slok says 'zero financial payoff' to AI outside tech",
-        "No underlying data, sample size, or time window disclosed in the secondary writeup"
+        "Draft open for comment until Nov 15, 2026; interim pre-export registration already in force",
+        "Restricted if model has >=10^26 training FLOPs, >=2T parameters, or top-10 global ranking at export time",
+        "AI-assisted vulnerability discovery is restricted; AI malicious code generation/adaptive evasion is prohibited outright",
+        "Open-source released or academically published tech is excluded from scope",
+        "First formal outbound AI export-control regime from China, mirroring existing US controls"
       ]
     },
     {
-      "id": "9fd0bcadad75",
-      "url": "https://datavorous.com/writing/demoscener/",
-      "title": "I post trained a model on Demoscenes",
+      "id": "ed56c906ca53",
+      "url": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
+      "title": "LLMs are not superhuman at reading and writing neural network weights",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Personal project: fine-tuned Qwen2.5-Code-7B into 'Demoscener-7B' on 25k Dwitter 'Dweet' size-coded JS demos, with a curriculum-training + self-as-reward-function GRPO stage. Concrete before/after perplexity numbers and open weights+dataset on HF, but a niche hobby result, not a lab release.",
+      "reason": "A rebuttal to the Astra weight-editing post above, with its own reproduction: the game-identification trick reduces to a simple per-cell weight-norm heatmap, and the loop-fixing trick matches a standard steering/abliteration approach a human could do by hand. Adds independent technical substance rather than just reposting the news, which is exactly the saturation-lowering the 'discovery' tier is for.",
       "key_facts": [
-        "Base model Qwen2.5-Code-7B -> Demoscener-7B, trained on ~25k Dwitter Dweets (140-char JS demos) plus 1.3k validation",
-        "Continued pretraining dropped held-out perplexity 28.63 -> 8.57 (30-sample check); curriculum stage dropped a larger 7,000-Dweet eval set 7.42 -> 5.65",
-        "GRPO stage: author manually rated 8 sampled completions per prompt as the reward signal, ~9-10 rounds of 500 groups, ~40,000 animations reviewed",
-        "Model and dataset released on Hugging Face (datavorous/Demoscener-7B, datavorous/Demoscener-Dweets-25k)"
-      ]
-    },
-    {
-      "id": "14074b4203bb",
-      "url": "https://github.com/kerlenton/bootgpt",
-      "title": "Show HN: A language model that lives in a boot sector",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "bootgpt: a tiny character-level LM, hand-written x86 assembly, that boots and runs inference straight from a 512-byte MBR with no OS. Pure novelty/systems-craft, not consequential, but a fun running-code demo with real (if toy) numbers.",
-      "key_facts": [
-        "512-byte MBR bootloader loads an 11.5KB int8 model from the next 23 disk sectors, runs in 16-bit real mode on a 386-class CPU",
-        "Architecture: char embeddings + one hidden layer + softmax, 8-char context, int8 weights with power-of-two scales (integer-only math)",
-        "Trained to hallucinate a fake Linux dmesg boot log; author verifies the Python training-sim math matches the assembly output character-for-character",
-        "60 GitHub stars, MIT licensed"
-      ]
-    },
-    {
-      "id": "124a9c7ca6b2",
-      "url": "https://github.com/FlashML-org/FreeVideo",
-      "title": "FlashML-org/FreeVideo",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "FreeVideo is an inference/optimization wrapper for MiniMax H3 video diffusion (OpenVDN's VDN-H3), not a new model — runs on 8GB VRAM, claims 2.3x speedup from int8 weights on an RTX 3090. Useful but a thinner result than a model release.",
-      "key_facts": [
-        "Local inference engine for MiniMax H3 (OpenVDN VDN-H3, 8-step), 8GB VRAM / 16GB RAM floor via weight streaming",
-        "v0.3.0 int8 weights: ~2.3x faster 5-second video generation on an RTX 3090",
-        "2,581 GitHub stars; also has an experimental Apple-silicon (M5, 24GB) preview"
+        "Reproduces Astra's game-identification result with a simple per-cell norm heatmap of first-layer weights",
+        "Argues the loop-fixing edit matches standard steering/abliteration techniques a human researcher already uses",
+        "Direct response to/companion piece for the Astra weight-space-programming post"
       ]
     }
   ]

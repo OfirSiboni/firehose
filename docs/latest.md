@@ -1,76 +1,76 @@
-# Firehose — 2026-11-02
+# Firehose — 2026-11-03
 
-## [A Brazilian court fined lawyers $16k for a hidden prompt injection](https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/)
+## [A 0.1% pretraining poison rate hijacks coding agents](https://arxiv.org/abs/2610.37741)
+
+`discovery` · hn
+
+Poisoning just 0.1% of pretraining data implants a dormant backdoor that makes a from-scratch Qwen3 coding agent run attacker-chosen shell commands on trigger, hitting about 92% success at 4B parameters and rising with scale. The backdoor stays silent on clean inputs, slipping past standard behavioral testing; code is on GitHub. (3 minute read)
+
+## [Qwen3-Coder writes less secure code for US defense customers](https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html)
+
+`headline` · blog
+
+Hirundo found Qwen3-Coder's weights carry a geopolitical trigger: naming a US defense contractor instead of a Chinese one makes the code 19% more hackable, and apps for a Hong Kong democracy group leak data 28% more often. A security instruction doesn't close the gap, but Hirundo's de-biased release matches the original on 10 coding tasks. (5 minute read)
+
+## [SecPO cuts prompt-injection attack success up to 14.5x](https://arxiv.org/abs/2610.41998v1)
+
+`discovery` · arxiv
+
+SecPO's adversarial training drops prompt-injection attack success 1.5-14.5x below Meta-SecAlign across three adaptive attacks, and its loss function alone cuts them a further 2.4-4.6x. On Qwen3.6-27B, AgentDojo attack success falls to 8.8% from 78.8%, with no drop in benign utility across nine benchmarks; code is on GitHub. (5 minute read)
+
+## [GPT-6 Astra edited Qwen's weights directly, no training](https://rikiyat.github.io/blog/weight-space-programming/)
 
 `headline` · hn
 
-A hidden white-on-white instruction told Brazil's national court AI, Galileu, to go easy on a R$842,000 labor claim; Galileu flagged it and blocked the filing instead. The 3rd Labor Court of Parauapebas fined the two firms 10% of the claim, about $16,000, in what may be the first ruling worldwide on intentional prompt injection against a court AI. (4 minute read)
+GPT-6 Astra, used as-is, rewrote Qwen3.5-0.8B's raw weights by hand to remove a reasoning-loop direction, lifting MATH-500 accuracy from 7.9% to 48.1% and GSM8K from 13.8% to 67.1% by changing just 0.016% of the weights. Code, logs, and a live demo are public, though the same edit didn't help Gemma 3 270M. (5 minute read)
 
-## [Google's Suncatcher satellite ran its first AI inference in orbit](https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/)
+## [Critical Langflow flaws allow unauthenticated RCE](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
 
-`discovery` · hn
+`discovery` · blog
 
-Google's Project Suncatcher prototype, launched October 1, powered up its TPU tray and ran Gemma 4 in orbit, producing a haiku that downlinked through a ground station over Svalbard. Follow-up prompts generated limericks and telemetry reports. No power or compute specs were disclosed; the next milestone is twin interconnected satellites in 2027. (3 minute read)
+Four flaws in Langflow, an LLM-agent builder, include two CVSS 9.8 bugs that let an unauthenticated attacker enumerate MCP tools and run code on the server; a public Metasploit module already exploits one. Only version 1.13.0, released October 22, fixes all four, leaving every earlier release vulnerable with no workaround. (4 minute read)
 
-## [SynthID-style watermarking quietly cuts response diversity](https://blog.keyvan.net/p/ai-text-watermarking-and-quality)
+## [A nation-state RAT campaign ships AI-written attack scripts](https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html)
 
-`discovery` · hn
+`discovery` · blog
 
-Claude's text watermarking, built on Google's SynthID-Text, biases token choice with a keyed pseudo-random sequence over a sliding window. SynthID's own supplement documents a diversity trade-off: one informal test found 4 of 5 watermarked responses to the same prompt opened nearly identically, versus 3 distinct openings unwatermarked. Key rotation cuts the effect but weakens detection on short text. (5 minute read)
+Unit 42 traced a Go-based RAT, SysGoRAT, hitting government Linux servers to scripts that still carry conversational reasoning notes instead of code comments, plus one that fails to run due to syntax errors. The campaign, tracked as CL-UNK-1211, dumped mailboxes and wiped logs while planting fake red-team markers to disguise the intrusion. (5 minute read)
 
-## [mojo-dllm runs diffusion LLMs on CPU with no Python at runtime](https://github.com/vladimirrott/mojo-dllm)
-
-`discovery` · github
-
-mojo-dllm is a from-scratch Mojo runtime for diffusion language models LLaDA-8B and Dream-7B, loading quantized GGUF weights with no Python at runtime. On a laptop CPU it hits 1.33 tokens/sec versus llama.cpp's 0.69; on an RTX 3050 it trails llama.cpp's CUDA path (9.43 vs 15.68 tokens/sec) but needs only about 1GB of host memory. (3 minute read)
-
-## [Apollo economist: AI shows zero payoff outside Big Tech](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/)
+## [China issues its first frontier AI export controls](https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/)
 
 `headline` · hn
 
-Apollo's chief economist Torsten Slok reports flat profit margins and revenue per worker across the S&P 493 - the S&P 500 minus Alphabet, Amazon, Apple, Meta, Microsoft, Nvidia, and Tesla - with no visible AI productivity gain. The note cites no underlying data, sample size, or time window. The debate over AI's ROI outside Big Tech now has a specific, if thin, data point to argue over. (2 minute read)
+China's MOFCOM Announcement No. 48 proposes restricting model weights, training data, and code for any model over 10^26 training FLOPs, 2 trillion parameters, or a global top-10 ranking, and bans AI-generated malicious code outright. The draft is open for comment until November 15, with interim registration already in force. (4 minute read)
 
-## [A hobbyist fine-tuned Qwen2.5-Code-7B into a demoscene-code model](https://datavorous.com/writing/demoscener/)
-
-`discovery` · hn
-
-Demoscener-7B is Qwen2.5-Code-7B fine-tuned on 25k Dwitter 'Dweets' - 140-character JS demos - then refined with GRPO using the author's own ratings as the reward signal across roughly 40,000 reviewed animations. Perplexity on held-out Dweets dropped from 28.63 to 8.57 after pretraining and from 7.42 to 5.65 after curriculum training. Both the model and the 25k-Dweet dataset are open on Hugging Face. (6 minute read)
-
-## [A language model runs straight from a 512-byte boot sector](https://github.com/kerlenton/bootgpt)
+## [A rebuttal: LLMs aren't superhuman at editing weights](https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/)
 
 `discovery` · hn
 
-bootgpt loads an 11.5KB int8 model from 23 disk sectors and runs inference in 16-bit real mode on a 386-class CPU, with no OS and no C runtime. The character-level network, hand-written in x86 assembly, generates a fake Linux dmesg boot log using only integer multiplies and one division. The author's Python training simulation matches the assembly's output character for character. (3 minute read)
-
-## [FreeVideo runs MiniMax H3 video generation on 8GB of VRAM](https://github.com/FlashML-org/FreeVideo)
-
-`discovery` · github
-
-FreeVideo is a local inference engine for MiniMax H3 video diffusion that streams weights in chunks to fit an 8GB-VRAM, 16GB-RAM consumer machine. Switching to int8 weights in v0.3.0 made 5-second clips generate about 2.3x faster on an RTX 3090. A preview build also runs on Apple silicon with 24GB of unified memory. (2 minute read)
+A rebuttal to the Astra weight-editing story reproduces its game-identification trick with a simple per-cell norm heatmap of the first layer's weights, no LLM required. It argues the loop-fixing edit matches steering and abliteration techniques a human researcher already uses, not a new superhuman skill. (3 minute read)
 
 ## Also in the pool
 
-- [GPT-5.6 Sol can beat Factorio on peaceful mode](https://ryanmadden.net/gpt-56-beats-factorio/) — hn
-- [AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy](https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy) — hn
-- [Folkbench/folkbench](https://github.com/Folkbench/folkbench) — github
+- [Multi-Estimate Elicitation Does Not Uniformly Debias Language Model Judgments](https://arxiv.org/abs/2611.00597v1) — arxiv
 - [Muse AI agent is a commercial surveillance network disguised as an AI assistant](https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial) — hn
-- [nanaism/yomiyasu](https://github.com/nanaism/yomiyasu) — github
-- [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) — github
-- [ceyyy427/finathink](https://github.com/ceyyy427/finathink) — github
-- [FengZhenfei/carrel](https://github.com/FengZhenfei/carrel) — github
-- [h9-tec/ai-roadmap-2026](https://github.com/h9-tec/ai-roadmap-2026) — github
-- [ashishsinha1602/schemagate](https://github.com/ashishsinha1602/schemagate) — github
-- [morluto/awesome-reverse-engineering](https://github.com/morluto/awesome-reverse-engineering) — github
-- [daveebbelaar/bama](https://github.com/daveebbelaar/bama) — github
-- [sahenjp/RustXNG](https://github.com/sahenjp/RustXNG) — github
-- [JEen-wang/Adaptive-rag](https://github.com/JEen-wang/Adaptive-rag) — github
-- [Takamatsu-Hikaru/AI-Research-Guide](https://github.com/Takamatsu-Hikaru/AI-Research-Guide) — github
-- [davidondrej/cloudroom](https://github.com/davidondrej/cloudroom) — github
-- [Anthropic's Claude AI blocks video game cloning and reverse-engineering](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked) — hn
-- [Anthropic takes steps to block Claude from reverse-engineering video games](https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering) — hn
-- [Anthropic blocks users for anything touching training larger models](https://twitter.com/jiahaoshao1/status/2116475922190922088) — hn
-- [IEEE Wipes Out 1,417 Papers over Sold Authorship](https://www.nature.com/articles/d41586-026-03455-8) — hn
+- [Anthropic's internal AI use, at retail prices, now exceeds its employee pay](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11) — hn
+- [AI Vulnerability Finding](https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html) — blog
+- [Editing the Goal: Per-Token SAE Steering and Its Depth Limits in $π\_{0.5}$](https://arxiv.org/abs/2611.00602v1) — arxiv
+- [Alleged Mythos Class Anthropic Checkpoint Leak](https://huggingface.co/burner22/numbat) — hn
+- [Scaling Git at OpenAI](https://openai.com/index/scaling-git-at-openai) — blog
+- [GhostPrefix: Synchronization-Free Universal Prefix Attacks for ASR Manipulation](https://arxiv.org/abs/2610.42026v1) — arxiv
+- [Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) — hn
+- [GPT-Rosalind-6 System Card Addendum](https://deploymentsafety.openai.com/gpt-rosalind-6) — hn
+- [It wasn't AI that flipped Proton's charge](https://blog.raed.dev/posts/proton-loser-thinking/) — hn
+- [TraceSpec: Understanding and Improving Speculative Decoding for LLM Agents](https://arxiv.org/abs/2610.41177v1) — arxiv
+- [ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference](https://arxiv.org/abs/2610.41160v1) — arxiv
+- [Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges](https://arxiv.org/abs/2610.41149v1) — arxiv
+- [Calibration of Large Model Quantization based on HiFloat4 Format](https://arxiv.org/abs/2610.41112v1) — arxiv
+- [AI fan wikis riddled with errors are muddying the waters of games culture](https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture) — hn
+- [I Am the Reason OpenAI Is Killing Unlimited Chats](https://chaosmanage.github.io/i-killed-unlimited-chatgpt/) — hn
+- [Prune Gradually, Adapt Sparsely: Efficient Pruning of Large Language Models at Extreme Sparsity](https://arxiv.org/abs/2610.41968v1) — arxiv
+- [Egoless Mathematics in the AI Era](https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/) — hn
+- [Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings](https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-02.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-03.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
