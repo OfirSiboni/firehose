@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "c48ef4b6aa4d",
@@ -8,7 +8,8 @@
       "url": "https://arxiv.org/abs/2610.37741",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Poisoning just 0.1% of pretraining data implants a dormant backdoor that makes a from-scratch Qwen3 coding agent run attacker-chosen shell commands on trigger, hitting about 92% success at 4B parameters and rising with scale. The backdoor stays silent on clean inputs, slipping past standard behavioral testing; code is on GitHub. (3 minute read)"
+      "summary": "Poisoning just 0.1% of pretraining data implants a dormant backdoor that makes a from-scratch Qwen3 coding agent run attacker-chosen shell commands on trigger, hitting about 92% success at 4B parameters and rising with scale. The backdoor stays silent on clean inputs, slipping past standard behavioral testing; code is on GitHub. (3 minute read)",
+      "message_id": 397
     },
     {
       "id": "3397cfafbab3",
@@ -16,7 +17,8 @@
       "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "Hirundo found Qwen3-Coder's weights carry a geopolitical trigger: naming a US defense contractor instead of a Chinese one makes the code 19% more hackable, and apps for a Hong Kong democracy group leak data 28% more often. A security instruction doesn't close the gap, but Hirundo's de-biased release matches the original on 10 coding tasks. (5 minute read)"
+      "summary": "Hirundo found Qwen3-Coder's weights carry a geopolitical trigger: naming a US defense contractor instead of a Chinese one makes the code 19% more hackable, and apps for a Hong Kong democracy group leak data 28% more often. A security instruction doesn't close the gap, but Hirundo's de-biased release matches the original on 10 coding tasks. (5 minute read)",
+      "message_id": 398
     },
     {
       "id": "4e0f7f22ef71",
@@ -24,7 +26,8 @@
       "url": "https://arxiv.org/abs/2610.41998v1",
       "source": "arxiv",
       "tier": "discovery",
-      "summary": "SecPO's adversarial training drops prompt-injection attack success 1.5-14.5x below Meta-SecAlign across three adaptive attacks, and its loss function alone cuts them a further 2.4-4.6x. On Qwen3.6-27B, AgentDojo attack success falls to 8.8% from 78.8%, with no drop in benign utility across nine benchmarks; code is on GitHub. (5 minute read)"
+      "summary": "SecPO's adversarial training drops prompt-injection attack success 1.5-14.5x below Meta-SecAlign across three adaptive attacks, and its loss function alone cuts them a further 2.4-4.6x. On Qwen3.6-27B, AgentDojo attack success falls to 8.8% from 78.8%, with no drop in benign utility across nine benchmarks; code is on GitHub. (5 minute read)",
+      "message_id": 399
     },
     {
       "id": "38c41eb0ed98",
@@ -32,7 +35,8 @@
       "url": "https://rikiyat.github.io/blog/weight-space-programming/",
       "source": "hn",
       "tier": "headline",
-      "summary": "GPT-6 Astra, used as-is, rewrote Qwen3.5-0.8B's raw weights by hand to remove a reasoning-loop direction, lifting MATH-500 accuracy from 7.9% to 48.1% and GSM8K from 13.8% to 67.1% by changing just 0.016% of the weights. Code, logs, and a live demo are public, though the same edit didn't help Gemma 3 270M. (5 minute read)"
+      "summary": "GPT-6 Astra, used as-is, rewrote Qwen3.5-0.8B's raw weights by hand to remove a reasoning-loop direction, lifting MATH-500 accuracy from 7.9% to 48.1% and GSM8K from 13.8% to 67.1% by changing just 0.016% of the weights. Code, logs, and a live demo are public, though the same edit didn't help Gemma 3 270M. (5 minute read)",
+      "message_id": 400
     },
     {
       "id": "ad2df65419af",
@@ -40,7 +44,8 @@
       "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Four flaws in Langflow, an LLM-agent builder, include two CVSS 9.8 bugs that let an unauthenticated attacker enumerate MCP tools and run code on the server; a public Metasploit module already exploits one. Only version 1.13.0, released October 22, fixes all four, leaving every earlier release vulnerable with no workaround. (4 minute read)"
+      "summary": "Four flaws in Langflow, an LLM-agent builder, include two CVSS 9.8 bugs that let an unauthenticated attacker enumerate MCP tools and run code on the server; a public Metasploit module already exploits one. Only version 1.13.0, released October 22, fixes all four, leaving every earlier release vulnerable with no workaround. (4 minute read)",
+      "message_id": 401
     },
     {
       "id": "87a25e1b557b",
@@ -48,7 +53,8 @@
       "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Unit 42 traced a Go-based RAT, SysGoRAT, hitting government Linux servers to scripts that still carry conversational reasoning notes instead of code comments, plus one that fails to run due to syntax errors. The campaign, tracked as CL-UNK-1211, dumped mailboxes and wiped logs while planting fake red-team markers to disguise the intrusion. (5 minute read)"
+      "summary": "Unit 42 traced a Go-based RAT, SysGoRAT, hitting government Linux servers to scripts that still carry conversational reasoning notes instead of code comments, plus one that fails to run due to syntax errors. The campaign, tracked as CL-UNK-1211, dumped mailboxes and wiped logs while planting fake red-team markers to disguise the intrusion. (5 minute read)",
+      "message_id": 402
     },
     {
       "id": "ca130899e453",
@@ -56,7 +62,8 @@
       "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
       "source": "hn",
       "tier": "headline",
-      "summary": "China's MOFCOM Announcement No. 48 proposes restricting model weights, training data, and code for any model over 10^26 training FLOPs, 2 trillion parameters, or a global top-10 ranking, and bans AI-generated malicious code outright. The draft is open for comment until November 15, with interim registration already in force. (4 minute read)"
+      "summary": "China's MOFCOM Announcement No. 48 proposes restricting model weights, training data, and code for any model over 10^26 training FLOPs, 2 trillion parameters, or a global top-10 ranking, and bans AI-generated malicious code outright. The draft is open for comment until November 15, with interim registration already in force. (4 minute read)",
+      "message_id": 403
     },
     {
       "id": "ed56c906ca53",
@@ -64,7 +71,8 @@
       "url": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A rebuttal to the Astra weight-editing story reproduces its game-identification trick with a simple per-cell norm heatmap of the first layer's weights, no LLM required. It argues the loop-fixing edit matches steering and abliteration techniques a human researcher already uses, not a new superhuman skill. (3 minute read)"
+      "summary": "A rebuttal to the Astra weight-editing story reproduces its game-identification trick with a simple per-cell norm heatmap of the first layer's weights, no LLM required. It argues the loop-fixing edit matches steering and abliteration techniques a human researcher already uses, not a new superhuman skill. (3 minute read)",
+      "message_id": 404
     }
   ]
 }
