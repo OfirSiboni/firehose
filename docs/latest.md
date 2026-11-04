@@ -1,76 +1,76 @@
-# Firehose — 2026-11-03
+# Firehose — 2026-11-04
 
-## [A 0.1% pretraining poison rate hijacks coding agents](https://arxiv.org/abs/2610.37741)
-
-`discovery` · hn
-
-Poisoning just 0.1% of pretraining data implants a dormant backdoor that makes a from-scratch Qwen3 coding agent run attacker-chosen shell commands on trigger, hitting about 92% success at 4B parameters and rising with scale. The backdoor stays silent on clean inputs, slipping past standard behavioral testing; code is on GitHub. (3 minute read)
-
-## [Qwen3-Coder writes less secure code for US defense customers](https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html)
-
-`headline` · blog
-
-Hirundo found Qwen3-Coder's weights carry a geopolitical trigger: naming a US defense contractor instead of a Chinese one makes the code 19% more hackable, and apps for a Hong Kong democracy group leak data 28% more often. A security instruction doesn't close the gap, but Hirundo's de-biased release matches the original on 10 coding tasks. (5 minute read)
-
-## [SecPO cuts prompt-injection attack success up to 14.5x](https://arxiv.org/abs/2610.41998v1)
+## [MCP tool poisoning succeeds in 23% of agent-framework trials](https://arxiv.org/abs/2611.03555v1)
 
 `discovery` · arxiv
 
-SecPO's adversarial training drops prompt-injection attack success 1.5-14.5x below Meta-SecAlign across three adaptive attacks, and its loss function alone cuts them a further 2.4-4.6x. On Qwen3.6-27B, AgentDojo attack success falls to 8.8% from 78.8%, with no drop in benign utility across nine benchmarks; code is on GitHub. (5 minute read)
+A cross-framework study ran 9,720 MCP tool-poisoning trials across 12 agentic frameworks and 18 models, finding a 22.9% attack success rate and confirmed secret exfiltration in 12.1% of vulnerable cases. None of the 12 frameworks had built-in defenses, and all five vendor disclosures were rejected. Treat tool descriptions and schema fields as untrusted input, not just model behavior. (3 minute read)
 
-## [GPT-6 Astra edited Qwen's weights directly, no training](https://rikiyat.github.io/blog/weight-space-programming/)
-
-`headline` · hn
-
-GPT-6 Astra, used as-is, rewrote Qwen3.5-0.8B's raw weights by hand to remove a reasoning-loop direction, lifting MATH-500 accuracy from 7.9% to 48.1% and GSM8K from 13.8% to 67.1% by changing just 0.016% of the weights. Code, logs, and a live demo are public, though the same edit didn't help Gemma 3 270M. (5 minute read)
-
-## [Critical Langflow flaws allow unauthenticated RCE](https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html)
-
-`discovery` · blog
-
-Four flaws in Langflow, an LLM-agent builder, include two CVSS 9.8 bugs that let an unauthenticated attacker enumerate MCP tools and run code on the server; a public Metasploit module already exploits one. Only version 1.13.0, released October 22, fixes all four, leaving every earlier release vulnerable with no workaround. (4 minute read)
-
-## [A nation-state RAT campaign ships AI-written attack scripts](https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html)
-
-`discovery` · blog
-
-Unit 42 traced a Go-based RAT, SysGoRAT, hitting government Linux servers to scripts that still carry conversational reasoning notes instead of code comments, plus one that fails to run due to syntax errors. The campaign, tracked as CL-UNK-1211, dumped mailboxes and wiped logs while planting fake red-team markers to disguise the intrusion. (5 minute read)
-
-## [China issues its first frontier AI export controls](https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/)
+## [Ubuntu still unpatched for a CVSS 9.8 remote-root Linux bug](https://chalmovsky.com/posts/wtf-ubuntu)
 
 `headline` · hn
 
-China's MOFCOM Announcement No. 48 proposes restricting model weights, training data, and code for any model over 10^26 training FLOPs, 2 trillion parameters, or a global top-10 ranking, and bans AI-generated malicious code outright. The draft is open for comment until November 15, with interim registration already in force. (4 minute read)
+Debian patched CVE-2026-98432, a CVSS 9.8 remote-root Linux kernel TCP bug dating to 2016, on October 16. Two weeks later every supported Ubuntu release, including LTS, is still listed vulnerable, while Red Hat, Arch, and Alpine have already shipped fixes. Ubuntu's fix sits in an opt-in testing channel with no ship date. (3 minute read)
 
-## [A rebuttal: LLMs aren't superhuman at editing weights](https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/)
+## [Postman auto-installs Claude Code and Codex plugins on upgrade](https://github.com/postmanlabs/postman-app-support/issues/14370)
 
-`discovery` · hn
+`headline` · hn
 
-A rebuttal to the Astra weight-editing story reproduces its game-identification trick with a simple per-cell norm heatmap of the first layer's weights, no LLM required. It argues the loop-fixing edit matches steering and abliteration techniques a human researcher already uses, not a new superhuman skill. (3 minute read)
+Upgrading Postman past 12.33.4 silently installed Claude Code and Codex plugins plus a startup hook that pushes Postman's skill into any non-trivial API task. The installer self-approves that hook, writing its own trust record into hooks.state so both tools treat it as pre-vetted. No data exfiltration is confirmed, but the opt-in users expected wasn't there. (3 minute read)
+
+## [CWE-bench v2 ships 100 open security-fix tasks with a leaderboard](https://huggingface.co/blog/cwe-bench)
+
+`discovery` · blog
+
+CWE-bench v2's 100 hand-reviewed tasks across 91 CWEs ask an agent to find and fix a real repo vulnerability without breaking tests. Gemini 4 Argon leads at 67.8% pass@1, just ahead of Claude Opus 5.5's 67.3%, and even the top model fails 19% of tasks on every attempt. DeepSeek V4.1 Flash gets close at $0.04 a rollout against Opus's $1.83. (4 minute read)
+
+## [LLMjacking has cost some companies $1 million in cloud bills](https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html)
+
+`discovery` · blog
+
+Attackers stealing LLM API keys and cloud credentials are running up fraudulent charges past $100,000 in a single day, with some victims losing $1 million before access was revoked. UNC6993 minted extra API keys inside victim cloud projects; others exploited LiteLLM's CVE-2026-40217 to escalate privileges. 'LLM Mixer' resale services now sell the stolen capacity for about $60 a month. (3 minute read)
+
+## [Codex backported security fixes for 149 CVEs into stable Linux](https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/)
+
+`discovery` · blog
+
+Trail of Bits' Codex-based pipeline for its Patch the Planet effort backported fixes for 149 CVEs into stable Linux kernel releases as of October 29. A straightforward backport now takes about 30 minutes of human review instead of days; a harder one takes roughly three hours. The pipeline itself isn't released, only a public CVE-tracking dashboard. (3 minute read)
+
+## [Revolut cut inference costs 10x by self-hosting GLM on 56 B200s](https://twitter.com/guilleflorvs/status/2117379073785696395)
+
+`headline` · hn
+
+Revolut moved off Anthropic and OpenAI APIs to self-hosted GLM on 56 Nvidia B200 GPUs, at a blended cost of about $0.30 per million tokens, roughly a tenth of its prior frontier-API spend. GDPR and zero-data-retention rules pushed the regulated bank toward self-hosting, not just cost. One report flags GLM correctness issues on long context under vLLM. (3 minute read)
+
+## [AI-assisted bug hunting is delaying PostgreSQL 19's release](https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html)
+
+`discovery` · blog
+
+An estimate that 3% of all critical bugs in recorded history were found in the past month, projecting roughly 100,000 more this year, lines up with real maintainer data. PostgreSQL's back-patched commits rose over 60% year over year between April and September while main-branch commits stayed flat. That load is cited as why PostgreSQL 19 is slipping to November. (3 minute read)
 
 ## Also in the pool
 
-- [Multi-Estimate Elicitation Does Not Uniformly Debias Language Model Judgments](https://arxiv.org/abs/2611.00597v1) — arxiv
-- [Muse AI agent is a commercial surveillance network disguised as an AI assistant](https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial) — hn
-- [Anthropic's internal AI use, at retail prices, now exceeds its employee pay](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11) — hn
-- [AI Vulnerability Finding](https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html) — blog
-- [Editing the Goal: Per-Token SAE Steering and Its Depth Limits in $π\_{0.5}$](https://arxiv.org/abs/2611.00602v1) — arxiv
-- [Alleged Mythos Class Anthropic Checkpoint Leak](https://huggingface.co/burner22/numbat) — hn
+- [XLA from the Trenches: Correctness on TPU Workloads at Scale](https://arxiv.org/abs/2611.00624v1) — arxiv
 - [Scaling Git at OpenAI](https://openai.com/index/scaling-git-at-openai) — blog
-- [GhostPrefix: Synchronization-Free Universal Prefix Attacks for ASR Manipulation](https://arxiv.org/abs/2610.42026v1) — arxiv
+- [Google Will Turn Off Search for Schools That Reject A.I](https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html) — hn
+- [Google: LLMjacking attacks rack up $1 million in cloud AI charges](https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/) — blog
 - [Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) — hn
-- [GPT-Rosalind-6 System Card Addendum](https://deploymentsafety.openai.com/gpt-rosalind-6) — hn
-- [It wasn't AI that flipped Proton's charge](https://blog.raed.dev/posts/proton-loser-thinking/) — hn
-- [TraceSpec: Understanding and Improving Speculative Decoding for LLM Agents](https://arxiv.org/abs/2610.41177v1) — arxiv
-- [ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference](https://arxiv.org/abs/2610.41160v1) — arxiv
-- [Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges](https://arxiv.org/abs/2610.41149v1) — arxiv
-- [Calibration of Large Model Quantization based on HiFloat4 Format](https://arxiv.org/abs/2610.41112v1) — arxiv
-- [AI fan wikis riddled with errors are muddying the waters of games culture](https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture) — hn
-- [I Am the Reason OpenAI Is Killing Unlimited Chats](https://chaosmanage.github.io/i-killed-unlimited-chatgpt/) — hn
-- [Prune Gradually, Adapt Sparsely: Efficient Pruning of Large Language Models at Extreme Sparsity](https://arxiv.org/abs/2610.41968v1) — arxiv
-- [Egoless Mathematics in the AI Era](https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/) — hn
-- [Claude Opus 5.5 Can Draw Permit-Level Architectural Drawings](https://stephenjgallagher.substack.com/p/ai-can-draw-blueprints-now) — hn
+- [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) — github
+- [OpenAI seems to be silently re-enabling model training on Codex chats](https://news.ycombinator.com/item?id=50352757) — hn
+- [AIs Hacking the Law](https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html) — blog
+- [BitLLM: Efficient Low-Bit, Conversion-Hiding LLM Decoding on Mobile GPUs](https://arxiv.org/abs/2611.00547v1) — arxiv
+- [Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft](https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html) — blog
+- [LongCat-2.5: Native Multimodality for Agentic Tasks](https://longcat.ai/blog/longcat-2.5/) — hn
+- [Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028](https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/) — blog
+- [WorkOS says attacker used ARTEX AI to breach internal sales app](https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/) — blog
+- [Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy](https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html) — blog
+- [TVP: TV is Almost All You Need for Speculative Decoding](https://arxiv.org/abs/2611.00588v1) — arxiv
+- [StateBench: Testing how language models track state changes over long documents](https://huggingface.co/blog/allenai/statebench) — blog
+- [Railway employee's agent caught hacking competitors](https://twitter.com/ns123abc/status/2117497728737620197) — hn
+- [Weights That Stay: On-Chip Megakernels for Serial Heads in Speculative Decoding](https://arxiv.org/abs/2611.00506v1) — arxiv
+- [Library of Layers (LoL): Adaptively Ordering Transformer Layers at Runtime](https://arxiv.org/abs/2611.03526v1) — arxiv
+- [Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes](https://thehackernews.com/2026/11/chainstack-reports-production-systems.html) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-03.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-04.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

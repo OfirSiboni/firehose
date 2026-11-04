@@ -1,120 +1,120 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "stories": [
     {
-      "id": "c48ef4b6aa4d",
-      "url": "https://arxiv.org/abs/2610.37741",
-      "title": "Agentic backdoors via pretraining poisoning",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Pretraining data poisoned at just 0.1% implants a dormant backdoor that makes a from-scratch-trained Qwen3 coding agent run attacker-chosen shell commands when triggered; 4B model hits ~92% attack success rate, and ASR rises with scale. Code is public. Extends supply-chain poisoning from text output to agent code execution, which is the sharpest kind of 'AI as attack surface' story.",
-      "key_facts": [
-        "0.1% pretraining poison rate -> ~92% attack success rate on a 4B-parameter agent",
-        "Attack success rate increases with model scale",
-        "ASR stays above zero even at a 0.0005% poison rate",
-        "Backdoor is dormant on clean/untriggered inputs, evading standard behavioral testing",
-        "Code at github.com/safety-research/agentic-backdoor"
-      ]
-    },
-    {
-      "id": "3397cfafbab3",
-      "url": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
-      "title": "Bias in Qwen3-Coder Model",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Hirundo found Qwen3-Coder embeds a geopolitical trigger in its weights: naming a US vs Chinese defense-contractor customer makes generated code 19% more likely to be hackable, and a Hong Kong democracy group's apps are 28% more likely to leak other users' data; a security instruction in the prompt doesn't close the gap. Concrete, novel AI-supply-chain finding with a fixed model released.",
-      "key_facts": [
-        "US-contractor prompts: 19% more likely to produce hackable code vs Chinese-contractor prompts",
-        "Hong Kong democracy-group apps: 28% more likely to leak other users' secrets",
-        "Adding a security instruction still left US-contractor apps 27% more hackable than neutral-customer apps",
-        "Hirundo released a de-biased 'Qwen3-Coder-30B-A3B-Instruct-Westernized' on Hugging Face; matched coding-task success on 10 tasks",
-        "Hirundo's CEO says the fix targets geopolitical bias in weights, not abliteration of refusals"
-      ]
-    },
-    {
-      "id": "4e0f7f22ef71",
-      "url": "https://arxiv.org/abs/2610.41998v1",
-      "title": "SecPO: Principled Adversarial Training for Prompt Injection Security",
+      "id": "fcb9adaf5897",
+      "url": "https://arxiv.org/abs/2611.03555v1",
+      "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
       "source": "arxiv",
       "tier": "discovery",
-      "reason": "SecPO trains an adversarially-robust prompt-injection defense that cuts attack success rate 1.5-14.5x beyond Meta-SecAlign across three adaptive attacks, with no loss of benign utility across nine benchmarks; code released. Directly on the AI-red-teaming-with-running-code line the taste profile always wants.",
+      "reason": "First real measurement (not just compliance-checking) of MCP tool poisoning across 12 frameworks x 18 models x 45 scenarios with a public tool (mcpvenom); exact fit for 'agent/MCP attack chains' with a primary source and running code.",
       "key_facts": [
-        "SecPO + adversarial training on Qwen3.6-27B: 8.8% AgentDojo attack success rate vs 78.8% for Meta-SecAlign under AttackerMovesSecond",
-        "SecPO loss alone cuts attack success 2.4-4.6x further than DPO loss on top of the same adversarial training",
-        "No measurable drop in benign utility across 9 benchmarks (tool calling, instruction following, science, math)",
-        "Code at github.com/Sizhe-Chen/SecPO"
+        "9,720-cell matrix: 12 frameworks, 18 models, 45 attack scenarios",
+        "Overall ASR 22.9% (2,113/9,720 vulnerable cells); 12.1% of vulnerable cells verifiably exfiltrate a secret via canary HTTP receipt",
+        "Model ASR ranges 0.4%-49.7%; Claude Opus 4.8 vulnerable in 8/530 cells with 223 explicit refusals",
+        "Code audit found no intentional defense in any of the 12 frameworks; all 5 coordinated vendor disclosures were rejected",
+        "Regex metadata scanner rejects 20/45 scenarios but at 7.2% false-positive rate"
       ]
     },
     {
-      "id": "38c41eb0ed98",
-      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
-      "title": "Astra can read and write weights to improve Qwen",
+      "id": "0e6629be9749",
+      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+      "title": "WTF Ubuntu?",
       "source": "hn",
       "tier": "headline",
-      "reason": "GPT-6 Astra, used as-is with no special training, edited Qwen3.5-0.8B's raw weights directly (no gradient descent) and lifted MATH-500 from 7.9% to 48.1% by removing a reasoning-loop direction; code/logs and a live demo are public. Already at 2021 HN points, so the operator has almost certainly seen it — surface briefly as a headline.",
+      "reason": "CVE-2026-98432 (CVSS 9.8, remote root, Linux TCP code since 2016) has a working exploit and Debian/Arch/Alpine patched it two+ weeks ago -- Ubuntu LTS is still vulnerable. Same underlying flaw Claude was reported to have exploited; ongoing real-world risk, not a rehash of the earlier 'Claude wrote the exploit' story.",
       "key_facts": [
-        "Qwen3.5-0.8B MATH-500: 7.9% -> 48.1% after editing 131,072 weights (~0.016% of the model)",
-        "GSM8K 13.8% -> 67.1%, IFEval 21.0% -> 62.3% after the same edit",
-        "Full logs, edited model weights, and a live HF Spaces demo are public",
-        "Method does not generalize: same edit did not improve Gemma 3 270M, which rarely loops"
+        "Debian patched Oct 16; Ubuntu had no patch as of Nov 2 14:48 UTC, 2+ weeks later",
+        "All supported Ubuntu releases incl. LTS listed vulnerable",
+        "Arch and Alpine (volunteer-run distros) already fixed",
+        "Red Hat 8/9/10 patched; Ubuntu's fix sits in opt-in testing channel with no ship date"
       ]
     },
     {
-      "id": "ad2df65419af",
-      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Four Langflow (an LLM-agent builder) flaws let an unauthenticated attacker enumerate MCP tools and run arbitrary code on the server (two CVSS 9.8s); a public Metasploit module already targets one. Only 1.13.0 (Oct 22) is patched; 1.12.8 and earlier stay vulnerable with no workaround. Textbook 'AI systems as the attack surface' story with concrete CVEs and exploit tooling.",
-      "key_facts": [
-        "CVE-2026-93680 (9.8) and CVE-2026-110186 (9.8): unauthenticated RCE via MCP tool enumeration / code-generation control",
-        "CVE-2026-110193 (8.8): low-priv user can make the Agentic Assistant run OS commands",
-        "Public Metasploit module exploits CVE-2026-93680 today",
-        "Only version 1.13.0 (Oct 22, 2026) fixes all four; affects every release 1.0.0-1.12.8",
-        "None of the four are yet in CISA's Known Exploited Vulnerabilities catalog as of Oct 30"
-      ]
-    },
-    {
-      "id": "87a25e1b557b",
-      "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Unit 42 attributes a RAT campaign against government Linux servers (SysGoRAT) to an operator using AI-generated shell/PHP scripts — identified by leftover conversational reasoning notes in the code and a script with execution-breaking syntax errors consistent with uncurated LLM output. Concrete C2 IOCs and a live nation-state AI-malware case, exactly the 'AI-driven malware' line the profile wants.",
-      "key_facts": [
-        "SysGoRAT: Go-based multi-platform RAT, WebSocket C2 at 104.194.158[.]65:443",
-        "Scripts contain 'conversational, step-by-step reasoning notes' instead of normal developer comments",
-        "zip_mails.sh script has syntax errors and fails on execution — evidence of uncurated AI output",
-        "Tracked as CL-UNK-1211, active Oct 2025-Apr 2026 against government mail/database targets",
-        "Attackers wiped logs and planted fake red-team markers to disguise the intrusion"
-      ]
-    },
-    {
-      "id": "ca130899e453",
-      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
-      "title": "China's First Frontier AI Export Controls: Mofcom Announcement No. 48",
+      "id": "da9a5824109f",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
       "source": "hn",
       "tier": "headline",
-      "reason": "China's MOFCOM Announcement No. 48 (Oct 16, 2026) is its first frontier-AI export control regime: restricts model weights/training data above 10^26 FLOPs or 2T params or top-10 global ranking, restricts AI vulnerability-discovery tools, and bans AI malicious-code generation outright. Concrete regulatory thresholds, not a lawsuit/PR story — distinct from the legal-process pattern the profile otherwise rejects.",
+      "reason": "Postman silently installed Claude Code/Codex/CLI plugins and a startup hook pushing its skill into unrelated API work on upgrade; no confirmed data exfiltration but a real agent-supply-chain trust failure (self-approving hooks).",
       "key_facts": [
-        "Draft open for comment until Nov 15, 2026; interim pre-export registration already in force",
-        "Restricted if model has >=10^26 training FLOPs, >=2T parameters, or top-10 global ranking at export time",
-        "AI-assisted vulnerability discovery is restricted; AI malicious code generation/adaptive evasion is prohibited outright",
-        "Open-source released or academically published tech is excluded from scope",
-        "First formal outbound AI export-control regime from China, mirroring existing US controls"
+        "Upgrade from 12.33.4 auto-installed claude-code and codex plugins (source: auto-existing-upgrade)",
+        "SessionStart hook pushes 'postman:api-engineer' skill for any non-trivial API task",
+        "Installer calls approvePostmanHook() to self-write trust records into hooks.state",
+        "Postman says bundling 'eased setup' and will make opt-in clearer; reviewing hook approval",
+        "No confirmed data exfiltration -- only the remote MCP endpoint and startup instruction were documented"
       ]
     },
     {
-      "id": "ed56c906ca53",
-      "url": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
-      "title": "LLMs are not superhuman at reading and writing neural network weights",
-      "source": "hn",
+      "id": "20954e3ac0ff",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "source": "blog",
       "tier": "discovery",
-      "reason": "A rebuttal to the Astra weight-editing post above, with its own reproduction: the game-identification trick reduces to a simple per-cell weight-norm heatmap, and the loop-fixing trick matches a standard steering/abliteration approach a human could do by hand. Adds independent technical substance rather than just reposting the news, which is exactly the saturation-lowering the 'discovery' tier is for.",
+      "reason": "CWE-bench v2 is exactly the kind of security benchmark Mine flags to always-surface: open dataset+grader+leaderboard, real agent-vs-repo-fix task, with concrete pass@1/cost numbers across 11 models.",
       "key_facts": [
-        "Reproduces Astra's game-identification result with a simple per-cell norm heatmap of first-layer weights",
-        "Argues the loop-fixing edit matches standard steering/abliteration techniques a human researcher already uses",
-        "Direct response to/companion piece for the Astra weight-space-programming post"
+        "100 public tasks across 91 CWEs, Harbor-packaged, hand-reviewed, held-out eval set available on request",
+        "Dataset/grader/harness open on Hugging Face (collinear-ai/cwe-bench) with a public leaderboard",
+        "Gemini 4 Argon leads: 67.8% pass@1 / 81.0% pass@4; Claude Opus 5.5: 67.3% / 78.0%",
+        "Even the leader fails 19% of tasks on every attempt; 95/100 tasks solved by at least one model",
+        "DeepSeek V4.1 Flash hits 57.0% pass@1 at $0.04/rollout vs Opus $1.83 and Gemini $3.92"
+      ]
+    },
+    {
+      "id": "310fe7a6e4c3",
+      "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Google's LLMjacking warning gives hard numbers on a real, growing AI-infra attack class (stolen API keys monetized via resale 'LLM Mixers'), with named CVE and TTPs -- strong AI x cyber discovery.",
+      "key_facts": [
+        "Fraudulent charges topped $100k in a single day in some incidents; cumulative up to $1M before access was revoked",
+        "UNC6993 generated extra API keys in victim cloud projects to run up >$100k in charges",
+        "Attackers exploited LiteLLM CVE-2026-40217 to escalate privileges",
+        "'LLM Mixer' resale services advertise unlimited-token plans for ~$60/month",
+        "Separate grey-market relay reconfigures genuine Codex/Claude Code CLIs to proxy through third-party servers"
+      ]
+    },
+    {
+      "id": "c1e9a888a716",
+      "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+      "title": "Backporting security fixes at scale with Codex",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Trail of Bits' Codex-based backporting pipeline for Patch the Planet is a real running system with concrete throughput numbers, squarely in 'SOC/IR automation' with a primary source -- though the tool itself isn't released, only a public CVE tracker.",
+      "key_facts": [
+        "149 distinct CVEs backported into stable Linux kernel releases as of Oct 29",
+        "Backporting time cut from days to hours per fix; simple backport ~30 min human review, harder one ~3 hours",
+        "Fixes also submitted into Fedora and Ubuntu packages",
+        "Public artifact is a CVE tracking dashboard (trailofbits.github.io/ptp-linux-stable-cve-dashboard); the tool itself is not released"
+      ]
+    },
+    {
+      "id": "5dc6ba520824",
+      "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
+      "title": "Revolut moves to self-hosted GLM",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Revolut replaced frontier-API inference with self-hosted GLM on 56 B200 GPUs at ~$0.30/M tokens (~10x cheaper than Anthropic/OpenAI), citing cost plus GDPR/zero-retention needs -- a concrete, well-sourced data point in the 'how models get served' debate.",
+      "key_facts": [
+        "56 Nvidia B200 GPUs, blended cost ~$0.30 per million tokens",
+        "~10x cheaper than prior Anthropic/OpenAI API spend per AI ops lead David Abitbol",
+        "Commenters estimate renting that capacity costs $250-300k/month",
+        "Compliance (GDPR, zero-data-retention) cited alongside cost as a driver",
+        "One commenter reports GLM correctness issues on long context under vLLM"
+      ]
+    },
+    {
+      "id": "aab666c2ed91",
+      "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
+      "title": "AI Vulnerability Finding",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Schneier post plus a concrete, checkable data point (PostgreSQL 19 slipping because AI tooling made old bugs much easier to find) -- real evidence that AI bug-finding is changing maintainer workload, not just a vibes claim.",
+      "key_facts": [
+        "Claim: ~3% of all critical bugs in recorded history found in the last month; projected +26% to the all-time total this year",
+        "PostgreSQL case: Apr-Sep 2025 had 1,037 master / 724 REL_18_STABLE commits; same window 2026 had 1,443 master / 1,169 REL_19_STABLE commits",
+        "Back-patched commits rose >60% year over year, cited as why PG19 is slipping to November"
       ]
     }
   ]
