@@ -1,24 +1,6 @@
 [
   {
     "hn": {
-      "items": 49,
-      "failed": 0
-    },
-    "arxiv": {
-      "items": 50,
-      "failed": 0
-    },
-    "github": {
-      "items": 88,
-      "failed": 0
-    },
-    "blog": {
-      "items": 171,
-      "failed": 0
-    }
-  },
-  {
-    "hn": {
       "items": 41,
       "failed": 0
     },
@@ -140,6 +122,24 @@
     },
     "blog": {
       "items": 182,
+      "failed": 0
+    }
+  },
+  {
+    "hn": {
+      "items": 66,
+      "failed": 0
+    },
+    "arxiv": {
+      "items": 50,
+      "failed": 0
+    },
+    "github": {
+      "items": 0,
+      "failed": 5
+    },
+    "blog": {
+      "items": 179,
       "failed": 0
     }
   }
