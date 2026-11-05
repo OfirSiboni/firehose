@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-05</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-05</h1>
+<article>
+<h2><a href="https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398">$6.3B stolen from Binance via AI-assisted lateral movement</a></h2>
+<p>North Korean hackers stole $6.3B from Binance, the largest crypto theft on record, via a fake job-interview campaign that delivered malware disguised as a coding assignment. From one compromised machine, they used Binance&#x27;s own internal AI tool to pivot to two more engineers before deploying the theft script with a stolen container-deployment token. The FBI attributes the operation to TraderTraitor/Lazarus Group. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability">AI turned a dismissed 2024 PHP crash bug into full RCE</a></h2>
+<p>A PHP bug reported in 2024 and dismissed as a mere crash risk was turned into full remote code execution in two weeks with AI assistance, hitting NASA, Wikipedia, the White House, WordPress and Drupal sites. The fix took four engineers two months to build. Treat any &#x27;harmless&#x27; decades-old crash bug as a live RCE candidate once AI-assisted exploit development enters the picture. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://projectzero.google/2026/10/fuzzing-v-AI.html">BigSleep found 45 exploitable V8 bugs to Fuzzilli&#x27;s 37</a></h2>
+<p>Google Project Zero ran Fuzzilli, a classic generative fuzzer, against BigSleep, an LLM-based one, on V8 production code from April to September. BigSleep found 45 actionable vulnerabilities to Fuzzilli&#x27;s 37, but the two overlapped on only 20 of 81 combined bugs. BigSleep&#x27;s daily cadence also lags Fuzzilli&#x27;s continuous runs by one to two days, so neither replaces the other. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html">Capabilities can be cryptographically hidden in model weights</a></h2>
+<p>A new paper builds encrypted neural networks inside host model weights that decrypt only on a secret trigger, using cryptographic &#x27;digital lockers&#x27;. The hidden capability survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in PyTorch proof-of-concept tests. That breaks the core assumption behind pre-deployment capability audits: that a hidden capability can always be elicited given full weight access. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.anthropic.com/research/provable-inference">Anthropic&#x27;s FlashProve proves you ran the model you paid for</a></h2>
+<p>Anthropic open-sourced FlashProve, a zkSNARK-based prover that lets a low-compute client verify a response came from specific committed model weights without learning them. On a 400B-parameter Llama 4 Maverick, it proves at about 110 tokens/second on one H100, versus a prior open-source baseline&#x27;s 14.3 hours for 1,000 tokens. It only covers integer weights under greedy decoding, with a 1,024-token window per proof. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop">Nvidia&#x27;s encrypted firmware cuts Linux inference by up to 79%</a></h2>
+<p>On the MSI Prestige N16 Flip AI Plus, Nvidia&#x27;s Windows-only power-management firmware encrypts the GPU&#x27;s power table, capping Linux clocks to about 780MHz versus 2.2GHz on Windows when plugged in. GPT-OSS-120B throughput drops 79%, from 65.4 to 13.9 tokens/second; running on battery avoids most of the hit. No Linux-native fix exists yet, and one attempt to patch the power table caused a kernel panic. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.ricursive.com/ripple">A 65B open model tops 501B and 816B rivals on agentic coding</a></h2>
+<p>Ripple-65B Preview, a dense 65B-parameter open-weight model trained on 12 trillion tokens, scores 80.52 on TerminalBench 2.1, edging out the 501B-parameter Reflection Beam (80.1) and beating the 816B Meta Muse Spark Open (76.4). Ricursive says the $32M total build cost is about a tenth of the prior open-weight SOTA, reached with roughly 70x fewer RL rollouts than Reflection Beam. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://streamvessel.com/blog/mcp-trusted-redirect-uris">A fix for the MCP OAuth redirect flaw that already hit Square</a></h2>
+<p>A May 2026 study found 114 of 119 OAuth-enabled MCP servers accept any redirect_uri from an anonymous client registration, a gap PKCE doesn&#x27;t close since the attacker starts the flow; it already caused a Square account takeover. The fix keeps self-registration open but lets each signed-in user add up to 10 trusted HTTPS redirect URIs, with a confirmation page for anything else. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html">Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/jiwoochris/artex-global">jiwoochris/artex-global</a> <span class="meta">github</span></li>
+<li><a href="https://huggingface.co/blog/allenai/statebench">StateBench: Testing how language models track state changes over long documents</a> <span class="meta">blog</span></li>
+<li><a href="https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html">Google Will Turn Off Search for Schools That Reject A.I</a> <span class="meta">hn</span></li>
+<li><a href="https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html">AIs Hacking the Law</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Kimi K3.1 Pro model weights are out</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html">Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM&#x27;s Memory</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/check-point-daybreak">How Check Point accelerates vulnerability research with Daybreak</a> <span class="meta">blog</span></li>
+<li><a href="https://lists.debian.org/debian-security-announce/2026/msg00526.html?pow_referer=">Debian apt security update (man-in-the-middle)</a> <span class="meta">hn</span></li>
+<li><a href="https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra">Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/">Zyxel fixes zero-day exploited to hack nearly 1,000 network switches</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html">APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html">Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It</a> <span class="meta">blog</span></li>
+<li><a href="https://layer3intel.com/blog/residential-proxies-white-house-network">Residential proxies detected on White House network</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/">WorkOS says attacker used ARTEX AI to breach internal sales app</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/Simreal-AI/Simreal-MLBench">Simreal-AI/Simreal-MLBench</a> <span class="meta">github</span></li>
+<li><a href="https://news.ycombinator.com/item?id=50363461">Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/bgts-ai-org/bgts-context-engine">bgts-ai-org/bgts-context-engine</a> <span class="meta">github</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/28/github-octoverse-2026/">GitHub Octoverse 2026</a> <span class="meta">blog</span></li>
+<li><a href="https://news.ycombinator.com/item?id=50354336">Gitbook Breached</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-05.md">Markdown</a></footer>
+</body></html>

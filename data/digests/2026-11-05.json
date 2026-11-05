@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-05",
+  "sent": false,
+  "items": [
+    {
+      "id": "a9aeb71941cc",
+      "title": "$6.3B stolen from Binance via AI-assisted lateral movement",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "North Korean hackers stole $6.3B from Binance, the largest crypto theft on record, via a fake job-interview campaign that delivered malware disguised as a coding assignment. From one compromised machine, they used Binance's own internal AI tool to pivot to two more engineers before deploying the theft script with a stolen container-deployment token. The FBI attributes the operation to TraderTraitor/Lazarus Group. (4 minute read)"
+    },
+    {
+      "id": "68c44263a0af",
+      "title": "AI turned a dismissed 2024 PHP crash bug into full RCE",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "A PHP bug reported in 2024 and dismissed as a mere crash risk was turned into full remote code execution in two weeks with AI assistance, hitting NASA, Wikipedia, the White House, WordPress and Drupal sites. The fix took four engineers two months to build. Treat any 'harmless' decades-old crash bug as a live RCE candidate once AI-assisted exploit development enters the picture. (3 minute read)"
+    },
+    {
+      "id": "843f0669e299",
+      "title": "BigSleep found 45 exploitable V8 bugs to Fuzzilli's 37",
+      "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Google Project Zero ran Fuzzilli, a classic generative fuzzer, against BigSleep, an LLM-based one, on V8 production code from April to September. BigSleep found 45 actionable vulnerabilities to Fuzzilli's 37, but the two overlapped on only 20 of 81 combined bugs. BigSleep's daily cadence also lags Fuzzilli's continuous runs by one to two days, so neither replaces the other. (4 minute read)"
+    },
+    {
+      "id": "ebdca7fa12e6",
+      "title": "Capabilities can be cryptographically hidden in model weights",
+      "url": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A new paper builds encrypted neural networks inside host model weights that decrypt only on a secret trigger, using cryptographic 'digital lockers'. The hidden capability survived fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in PyTorch proof-of-concept tests. That breaks the core assumption behind pre-deployment capability audits: that a hidden capability can always be elicited given full weight access. (3 minute read)"
+    },
+    {
+      "id": "7b93706aafff",
+      "title": "Anthropic's FlashProve proves you ran the model you paid for",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Anthropic open-sourced FlashProve, a zkSNARK-based prover that lets a low-compute client verify a response came from specific committed model weights without learning them. On a 400B-parameter Llama 4 Maverick, it proves at about 110 tokens/second on one H100, versus a prior open-source baseline's 14.3 hours for 1,000 tokens. It only covers integer weights under greedy decoding, with a 1,024-token window per proof. (4 minute read)"
+    },
+    {
+      "id": "771d04f9d142",
+      "title": "Nvidia's encrypted firmware cuts Linux inference by up to 79%",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "On the MSI Prestige N16 Flip AI Plus, Nvidia's Windows-only power-management firmware encrypts the GPU's power table, capping Linux clocks to about 780MHz versus 2.2GHz on Windows when plugged in. GPT-OSS-120B throughput drops 79%, from 65.4 to 13.9 tokens/second; running on battery avoids most of the hit. No Linux-native fix exists yet, and one attempt to patch the power table caused a kernel panic. (3 minute read)"
+    },
+    {
+      "id": "96eddcc208ed",
+      "title": "A 65B open model tops 501B and 816B rivals on agentic coding",
+      "url": "https://www.ricursive.com/ripple",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Ripple-65B Preview, a dense 65B-parameter open-weight model trained on 12 trillion tokens, scores 80.52 on TerminalBench 2.1, edging out the 501B-parameter Reflection Beam (80.1) and beating the 816B Meta Muse Spark Open (76.4). Ricursive says the $32M total build cost is about a tenth of the prior open-weight SOTA, reached with roughly 70x fewer RL rollouts than Reflection Beam. (3 minute read)"
+    },
+    {
+      "id": "cfea5628a667",
+      "title": "A fix for the MCP OAuth redirect flaw that already hit Square",
+      "url": "https://streamvessel.com/blog/mcp-trusted-redirect-uris",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A May 2026 study found 114 of 119 OAuth-enabled MCP servers accept any redirect_uri from an anonymous client registration, a gap PKCE doesn't close since the attacker starts the flow; it already caused a Square account takeover. The fix keeps self-registration open but lets each signed-in user add up to 10 trusted HTTPS redirect URIs, with a confirmation page for anything else. (4 minute read)"
+    }
+  ]
+}

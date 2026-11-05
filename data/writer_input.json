@@ -1,120 +1,119 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "stories": [
     {
-      "id": "fcb9adaf5897",
-      "url": "https://arxiv.org/abs/2611.03555v1",
-      "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "First real measurement (not just compliance-checking) of MCP tool poisoning across 12 frameworks x 18 models x 45 scenarios with a public tool (mcpvenom); exact fit for 'agent/MCP attack chains' with a primary source and running code.",
-      "key_facts": [
-        "9,720-cell matrix: 12 frameworks, 18 models, 45 attack scenarios",
-        "Overall ASR 22.9% (2,113/9,720 vulnerable cells); 12.1% of vulnerable cells verifiably exfiltrate a secret via canary HTTP receipt",
-        "Model ASR ranges 0.4%-49.7%; Claude Opus 4.8 vulnerable in 8/530 cells with 223 explicit refusals",
-        "Code audit found no intentional defense in any of the 12 frameworks; all 5 coordinated vendor disclosures were rejected",
-        "Regex metadata scanner rejects 20/45 scenarios but at 7.2% false-positive rate"
-      ]
-    },
-    {
-      "id": "0e6629be9749",
-      "url": "https://chalmovsky.com/posts/wtf-ubuntu",
-      "title": "WTF Ubuntu?",
+      "id": "a9aeb71941cc",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
       "source": "hn",
       "tier": "headline",
-      "reason": "CVE-2026-98432 (CVSS 9.8, remote root, Linux TCP code since 2016) has a working exploit and Debian/Arch/Alpine patched it two+ weeks ago -- Ubuntu LTS is still vulnerable. Same underlying flaw Claude was reported to have exploited; ongoing real-world risk, not a rehash of the earlier 'Claude wrote the exploit' story.",
+      "reason": "Record $6.3B crypto theft; attackers used an internal AI tool to pivot between compromised engineer machines, a concrete AI-enabled lateral-movement detail that lands squarely on the AI x cyber line. Several other pool entries cover the same story — picked for best primary-source detail.",
       "key_facts": [
-        "Debian patched Oct 16; Ubuntu had no patch as of Nov 2 14:48 UTC, 2+ weeks later",
-        "All supported Ubuntu releases incl. LTS listed vulnerable",
-        "Arch and Alpine (volunteer-run distros) already fixed",
-        "Red Hat 8/9/10 patched; Ubuntu's fix sits in opt-in testing channel with no ship date"
+        "$6.3B stolen from Binance, the largest crypto theft on record",
+        "Attack began in June 2026 with a malicious Homebrew supply-chain download; escalated via a September fake-job-interview social-engineering campaign (fake HR rep, fake CEO) delivering malware disguised as a coding 'assignment'",
+        "Malware swapped a legit pyenv component, opened a C2 connection, evaded endpoint tools",
+        "Oct 20: attackers used the compromised machine plus an internal AI tool to pivot to two more engineers' machines",
+        "Oct 29: a stolen container deployment token was used to deploy a container that ran the theft script",
+        "FBI attributes the operation to TraderTraitor/Lazarus Group (North Korea)"
       ]
     },
     {
-      "id": "da9a5824109f",
-      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
-      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "id": "68c44263a0af",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
       "source": "hn",
       "tier": "headline",
-      "reason": "Postman silently installed Claude Code/Codex/CLI plugins and a startup hook pushing its skill into unrelated API work on upgrade; no confirmed data exfiltration but a real agent-supply-chain trust failure (self-approving hooks).",
+      "reason": "1046-point HN thread on AI collapsing the cost of exploiting decades-old bugs, anchored in a real, named vulnerability (PHP2Shell) hitting NASA/Wikipedia/White House — concrete AI-assisted exploit-dev story, not a rumor.",
       "key_facts": [
-        "Upgrade from 12.33.4 auto-installed claude-code and codex plugins (source: auto-existing-upgrade)",
-        "SessionStart hook pushes 'postman:api-engineer' skill for any non-trivial API task",
-        "Installer calls approvePostmanHook() to self-write trust records into hooks.state",
-        "Postman says bundling 'eased setup' and will make opt-in clearer; reviewing hook approval",
-        "No confirmed data exfiltration -- only the remote MCP endpoint and startup instruction were documented"
+        "PHP2Shell: a PHP out-of-memory bug reported in 2024, long considered merely crash-prone, was turned into full remote code execution in late Oct 2026, affecting NASA, Wikipedia, White House, WordPress and Drupal sites",
+        "Security firm Calif (an OpenAI-sponsored PHP audit) weaponized it in two weeks with AI assistance; a patch shipped before exploitation, but took 4 engineers 2 months to build",
+        "Columbia's Suman Jana: AI is especially good at the tedious memory-mapping reasoning the exploit required",
+        "Anthropic (Oct 22) published an LLM-writes-patch plus non-LLM-proof-checker formal-verification approach as a proposed remedy",
+        "Johns Hopkins' Matthew Green predicts a much worse incident, possibly around early 2027, before funding/action follows"
       ]
     },
     {
-      "id": "20954e3ac0ff",
-      "url": "https://huggingface.co/blog/cwe-bench",
-      "title": "CWE-bench v2: More coverage, quality, and transparency",
+      "id": "843f0669e299",
+      "url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+      "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
       "source": "blog",
       "tier": "discovery",
-      "reason": "CWE-bench v2 is exactly the kind of security benchmark Mine flags to always-surface: open dataset+grader+leaderboard, real agent-vs-repo-fix task, with concrete pass@1/cost numbers across 11 models.",
+      "reason": "Primary-source (Project Zero) head-to-head data on AI vs classic fuzzing for real browser-engine bugs — a rare quantified comparison, not a vendor pitch.",
       "key_facts": [
-        "100 public tasks across 91 CWEs, Harbor-packaged, hand-reviewed, held-out eval set available on request",
-        "Dataset/grader/harness open on Hugging Face (collinear-ai/cwe-bench) with a public leaderboard",
-        "Gemini 4 Argon leads: 67.8% pass@1 / 81.0% pass@4; Claude Opus 5.5: 67.3% / 78.0%",
-        "Even the leader fails 19% of tasks on every attempt; 95/100 tasks solved by at least one model",
-        "DeepSeek V4.1 Flash hits 57.0% pass@1 at $0.04/rollout vs Opus $1.83 and Gemini $3.92"
+        "Google Project Zero compared Fuzzilli (traditional generative fuzzer) vs BigSleep (LLM-based) on V8 production bugs, April-Sept 2026",
+        "Actionable vulnerabilities: Fuzzilli 37, BigSleep 45; only ~25% overlap (20 of 81 actionable bugs found by both)",
+        "In a controlled rediscovery test, BigSleep found ~62% of 112 historic Fuzzilli bugs (70% with prompt variants); no sign of memorizing pre-2026 bugs",
+        "BigSleep runs once daily with a 1-2 day reporting lag; Fuzzilli runs continuously, catching changes within hours",
+        "Conclusion: the two approaches are complementary, and agentic systems' share of discoveries is expected to grow"
       ]
     },
     {
-      "id": "310fe7a6e4c3",
-      "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "id": "ebdca7fa12e6",
+      "url": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+      "title": "Hiding Capabilities in AI Models",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Google's LLMjacking warning gives hard numbers on a real, growing AI-infra attack class (stolen API keys monetized via resale 'LLM Mixers'), with named CVE and TTPs -- strong AI x cyber discovery.",
+      "reason": "Concrete, code-backed research showing provable limits on eliciting backdoored capabilities from model weights — a direct hit on model-supply-chain-compromise, the always-surface AI x cyber sub-topic, not a bare arxiv listing since a PyTorch POC and models were released.",
       "key_facts": [
-        "Fraudulent charges topped $100k in a single day in some incidents; cumulative up to $1M before access was revoked",
-        "UNC6993 generated extra API keys in victim cloud projects to run up >$100k in charges",
-        "Attackers exploited LiteLLM CVE-2026-40217 to escalate privileges",
-        "'LLM Mixer' resale services advertise unlimited-token plans for ~$60/month",
-        "Separate grey-market relay reconfigures genuine Codex/Claude Code CLIs to proxy through third-party servers"
+        "Paper 'AI Models Can Provably Hide Arbitrary Capabilities' (arXiv 2610.13928) shows capabilities can be embedded as encrypted neural networks inside host model weights, decrypted only by a secret trigger, using cryptographic 'digital lockers'",
+        "Resisted elicitation via fine-tuning, weight noising, gradient-based trigger search, and latent adversarial training in PyTorch proof-of-concept tests on a chemical-reaction-prediction proxy task",
+        "Authors released their models to support defense research; undermines the core assumption behind pre-deployment capability audits"
       ]
     },
     {
-      "id": "c1e9a888a716",
-      "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
-      "title": "Backporting security fixes at scale with Codex",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Trail of Bits' Codex-based backporting pipeline for Patch the Planet is a real running system with concrete throughput numbers, squarely in 'SOC/IR automation' with a primary source -- though the tool itself isn't released, only a public CVE tracker.",
-      "key_facts": [
-        "149 distinct CVEs backported into stable Linux kernel releases as of Oct 29",
-        "Backporting time cut from days to hours per fix; simple backport ~30 min human review, harder one ~3 hours",
-        "Fixes also submitted into Fedora and Ubuntu packages",
-        "Public artifact is a CVE tracking dashboard (trailofbits.github.io/ptp-linux-stable-cve-dashboard); the tool itself is not released"
-      ]
-    },
-    {
-      "id": "5dc6ba520824",
-      "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
-      "title": "Revolut moves to self-hosted GLM",
+      "id": "7b93706aafff",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "title": "Progress on provable inference for large language models",
       "source": "hn",
-      "tier": "headline",
-      "reason": "Revolut replaced frontier-API inference with self-hosted GLM on 56 B200 GPUs at ~$0.30/M tokens (~10x cheaper than Anthropic/OpenAI), citing cost plus GDPR/zero-retention needs -- a concrete, well-sourced data point in the 'how models get served' debate.",
+      "tier": "discovery",
+      "reason": "Primary-source Anthropic research with a real open-source release addressing a concrete inference-serving trust problem (verifying you got the model you paid for) — directly on the 'how models are served' interest, with hard numbers.",
       "key_facts": [
-        "56 Nvidia B200 GPUs, blended cost ~$0.30 per million tokens",
-        "~10x cheaper than prior Anthropic/OpenAI API spend per AI ops lead David Abitbol",
-        "Commenters estimate renting that capacity costs $250-300k/month",
-        "Compliance (GDPR, zero-data-retention) cited alongside cost as a driver",
-        "One commenter reports GLM correctness issues on long context under vLLM"
+        "Anthropic's FlashProve: open-source (Apache 2.0) zkSNARK-based 'provable inference' prototype, letting a low-compute user verify a response came from specific committed model weights without learning them",
+        "On Llama 4 Maverick (400B MoE, 4-bit): ~110 tok/s proving throughput on one H100, ~18.8MB proof per 1024-token window, 70-95x GPU overhead vs vLLM",
+        "One-time offline commitment setup: ~39 min, covers ~16M requests; verification ~17s on 24 CPU threads",
+        "Prior open-source baseline (VerInf) took 14.3 hours for 1000 tokens with a 93.6GB proof — FlashProve is dramatically faster/smaller",
+        "Limitations: covers only integer weights under greedy decoding, 1024-token context cap, side-channels out of scope"
       ]
     },
     {
-      "id": "aab666c2ed91",
-      "url": "https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html",
-      "title": "AI Vulnerability Finding",
-      "source": "blog",
+      "id": "771d04f9d142",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "source": "hn",
       "tier": "discovery",
-      "reason": "Schneier post plus a concrete, checkable data point (PostgreSQL 19 slipping because AI tooling made old bugs much easier to find) -- real evidence that AI bug-finding is changing maintainer workload, not just a vibes claim.",
+      "reason": "Concrete, benchmarked inference-serving regression on real hardware (65-79% throughput loss) caused by vendor firmware DRM — directly on the 'how models are served' interest with hard measured numbers.",
       "key_facts": [
-        "Claim: ~3% of all critical bugs in recorded history found in the last month; projected +26% to the all-time total this year",
-        "PostgreSQL case: Apr-Sep 2025 had 1,037 master / 724 REL_18_STABLE commits; same window 2026 had 1,443 master / 1,169 REL_19_STABLE commits",
-        "Back-patched commits rose >60% year over year, cited as why PG19 is slipping to November"
+        "MSI Prestige N16 Flip AI Plus: Nvidia's Windows-only 'Platform Controllers and Framework' encrypts the GPU power table, so Linux can't read it and caps GPU clocks when plugged in",
+        "Plugged-in clock: ~780MHz on Linux vs ~2.2GHz on Windows (-65%); GPT-OSS-120B throughput 13.9 vs 65.4 tok/s (-79%); vLLM 8-client throughput 39.5 vs 127 tok/s (-69%)",
+        "On battery, Linux reaches ~61-67 tok/s, close to Windows — the regression is specific to AC power plus the encrypted firmware table",
+        "No real Linux-native fix exists yet; one community attempt at the power table caused a kernel panic"
+      ]
+    },
+    {
+      "id": "96eddcc208ed",
+      "url": "https://www.ricursive.com/ripple",
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "A small open-weight model beating much larger ones on agentic coding at a fraction of the training cost — an efficiency-of-serving story with real comparative benchmark numbers.",
+      "key_facts": [
+        "Ripple-65B Preview (Ricursive Intelligence): dense 65B-param transformer, 12T pretraining tokens, 1M context, open-weight",
+        "Scores 80.52 on TerminalBench 2.1, narrowly ahead of Reflection Beam (501B, 80.1) and well ahead of Meta Muse Spark Open (816B, 76.4) and Nvidia Nemotron 3 Ultra (550B, 56.4) despite being far smaller",
+        "Company claims $32M total R&D cost (~1/10th of prior open-weight SOTA) using ~1.4M RL rollouts, ~70x fewer than Reflection Beam's reported spend"
+      ]
+    },
+    {
+      "id": "cfea5628a667",
+      "url": "https://streamvessel.com/blog/mcp-trusted-redirect-uris",
+      "title": "Letting users trust their own MCP clients, without opening a phishing hole",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Concrete, running fix for a real, exploited MCP OAuth phishing pattern (114/119 servers vulnerable, a real Square account takeover) — exactly the agent/MCP-attack-chain-with-PoC always-surface topic, from the defensive side.",
+      "key_facts": [
+        "A May 2026 study found 114 of 119 OAuth-enabled MCP servers accept arbitrary redirect_uri values from any anonymous client registration — PKCE doesn't block it since the attacker initiates the flow",
+        "Real incident cited: an account takeover against Square's MCP server (reported Jan 2026) via this pattern",
+        "Proposed/shipped fix (live on Stream Vessel's MCP page): self-registration stays open, but each signed-in user adds up to 10 exact HTTPS redirect URIs to their own trust list; unknown redirects get a typed-host confirmation page instead of a silent redirect",
+        "MCP's 2026-07-28 draft spec deprecates Dynamic Client Registration for Client ID Metadata Documents, which the post argues still doesn't solve per-user intent"
       ]
     }
   ]
