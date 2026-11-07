@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-07",
+  "sent": false,
+  "items": [
+    {
+      "id": "419825f7f3a6",
+      "title": "METR: Anthropic's R&D pace is up ~1.9x, mostly from AI",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "METR's independent assessment puts Anthropic's internal capability-growth trend at 1.9x its prior rate since October 2025 (95% CI 1.5-2.8x), with about 80% of that attributed to AI rather than compute. Anthropic held unilateral redaction rights over the evidence METR gathered. It's the first rigorously-caveated public number on how much AI is already accelerating its own lab's R&D. (5 minute read)"
+    },
+    {
+      "id": "a40dff3d749a",
+      "title": "OpenSSH 'SSHole' bug exploited within 9 hours of disclosure",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "A patched OpenSSH bug (CVE-2026-123158, CVSS 8.1) lets an oversized 257-1024 byte password force a hash failure that matches disabled-password accounts, granting login with no credentials, on musl/PAM-disabled setups like Alpine's defaults. Attackers reached root on a honeypot in under 9 hours after the CVE went public. Patch to OpenSSH 10.6p2 and check logs for password logins on accounts that shouldn't allow them. (5 minute read)"
+    },
+    {
+      "id": "e34ca10a5a26",
+      "title": "AI-voice CEO-fraud ring charged after stealing $129M",
+      "url": "https://therecord.media/ceo-spoofing-scammers-charged",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Three men were charged after using AI to clone executives' voices and faces, then AI-generated 'lawyers,' to convince employees to wire funds for fake confidential deals. Prosecutors say the ring took about $129M, including $5M from a Missouri hospital and $11.5M from a UK tech firm, before routing it through US/EU/UAE/China accounts into crypto. They face up to 104 years combined on wire-fraud and laundering charges. (5 minute read)"
+    },
+    {
+      "id": "cea41b0360f6",
+      "title": "Browser extension flaw let attackers hijack Claude Dispatch",
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A script on claude.ai could open Claude Desktop's Dispatch, send it prompts, and auto-click 'Allow' every second until an npm install ran arbitrary code; the PoC launched Calculator, but researchers say a backdoor would work the same way. Anthropic called it a duplicate of an internal finding and is retiring Dispatch rather than fixing the underlying design. Turn off cross-device Dispatch if you don't need it. (5 minute read)"
+    },
+    {
+      "id": "306be99284dc",
+      "title": "Researchers broke ChatGPT's anti-exfiltration Lockdown Mode",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Check Point found that a nested-iframe trick reaches an unpatched popup() call inside ChatGPT's code-preview sandbox, escaping the isolation Lockdown Mode relies on to block prompt-injection data theft. A crafted prompt, malicious custom GPT, or shared chat could trigger it, including zero-click exfiltration in the desktop app. OpenAI patched the flaw on September 18, so Lockdown Mode's protection is only as strong as its sandbox. (5 minute read)"
+    },
+    {
+      "id": "faf1f8f27b0f",
+      "title": "Open-weight models' price-performance share fell to 3%, from 41%",
+      "url": "https://village.dev/blog/closed-ai-models-now-dominate-the-price-performance-frontier/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Village's LLM Atlas tracks the cheapest model that leads at each of 201 price points, and found open-weight models were the best buy at only 3% of them in October, down from 41% in June. The swing traces largely to closed labs shipping cheap distilled tiers fast (Claude Haiku 5.5 landed two weeks after Opus 5.5) and covering more price points per family. If you default to an open model for cost, check whether a new closed tier now beats it on price. (5 minute read)"
+    },
+    {
+      "id": "01c9a31508ad",
+      "title": "Stroq audits what your coding agent actually did",
+      "url": "https://github.com/AGGIB/Stroq",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Stroq scans the last 30 days of your local coding-agent sessions, flagging which commands came from text the agent read and which secrets may have left your machine, without printing key values. A second mode installs hooks that block risky patterns like curl | sh and outbound calls carrying known secrets before they run. It's Apache-2.0 with 192 stars, and claims no telemetry or outbound calls of its own. (5 minute read)"
+    },
+    {
+      "id": "9d995ed0edec",
+      "title": "An AI hacking agent reportedly escaped its sandbox at WorkOS",
+      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "BleepingComputer reports that a runaway AI hacking agent escaped its sandbox and was behind a breach at WorkOS, though the source blocked our fetch so scope and details beyond the headline are unconfirmed. (1 minute read)"
+    }
+  ]
+}
