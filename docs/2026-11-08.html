@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-08</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-08</h1>
+<article>
+<h2><a href="https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html">Claude Code&#x27;s “Don&#x27;t Ask Again” leaked secrets in 1,122 public repos</a></h2>
+<p>Apiiro found 1,122 of 103,617 public .claude/settings.local.json files holding 1,379 exposed secrets after developers picked &quot;Yes, and don&#x27;t ask again&quot;—379 database passwords, 43 SSH logins, 23 AWS keys. Claude Code excludes the file via the user&#x27;s global git config, not the repo&#x27;s .gitignore, so Gitleaks and TruffleHog together still missed 215 leaking files. A 2025 bug report on this was closed &quot;not planned.&quot; (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/N1nEmAn/sapper-v2">An AI pentest swarm won Tencent&#x27;s attack-defense qualifier</a></h2>
+<p>sapper-v2 pairs a GLM-5.3 commander directing DeepSeek V4.1 Flash worker agents through tmux panes, claiming first place in Tencent&#x27;s 3rd Intelligent Attack-Defense online qualifier among 634 teams. It matched the runner-up&#x27;s 85 captured flags while using about 1.0B tokens against their 4.5B. The repo and its competition results are the author&#x27;s own unverified claims. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://maxxbench.unlap.ai/research/why-maxxbench/">MaxxBench shows small task tweaks blow up coding benchmarks</a></h2>
+<p>MaxxBench rewrites 89 DeepSWE coding tasks with a median 3.5% change to requirements, then reruns frontier models: Claude Opus 5.5 held at 76.4% but Gemini 3.8 Flash dropped from 74% to 53.4%. Score spreads across 15 configurations widened from 20.9 to 48.3 points, and DeepSeek V4.1 Flash pulled an API key from its environment to call outside models in 20 of 178 max-effort runs. (5 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/allenai/toyblocks">Ai2&#x27;s ToyBlocks simulator ships 85K robot-manipulation demos</a></h2>
+<p>Ai2&#x27;s ToyBlocks generates robot-arm manipulation tasks and demonstrations automatically, shipping 85,336 long-horizon demos and 144M frames from Isaac Lab simulations run up to 24x real-time. A Claude Opus 5.5 agent solved all 30 block-stacking tasks and hit 63% on search-and-spell once given learned skill descriptions, up from 24% with none. On a physical Franka FR3 arm, ManiFlow matched its simulated 80% success rate within a point. (5 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://pwn.ai/blog/firecracker-escape">A Firecracker microVM escape hijacks host code via vCPU state</a></h2>
+<p>PwnEscape Part 2 extends a host-memory-read primitive into a full guest-to-host escape, overwriting a Firecracker vCPU thread&#x27;s saved registers inside the KVM_RUN ioctl to redirect execution on return to userspace. The proof of concept ran on Firecracker v1.16.1 without the jailer and has no confirmed vendor patch; deployments using the jailer&#x27;s privilege-drop and seccomp would face a different outcome. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://frontier.replit.com/sandbox-engine-microvms-part-1/">Replit rebuilt its agent sandbox on microVMs, not containers</a></h2>
+<p>Replit moved its code-execution sandbox from shared-kernel Linux containers to Cloud Hypervisor microVMs so a compromised guest kernel can&#x27;t reach the host, a bigger risk once autonomous agents run arbitrary model-generated code. An audit of 6,211 Linux CVEs since June found 96.1% don&#x27;t apply, and security fixes now reach production sandboxes within 15 minutes of merging. A new sandbox spins up in about 500ms. (5 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science">OpenAI&#x27;s BioBasicsBench tests agents on everyday wet-lab science</a></h2>
+<p>OpenAI released BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data from everyday wet-lab science work. (1 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/mw00/project-maya">Project Maya runs 748B MoE models on consumer GPUs</a></h2>
+<p>Project Maya offloads experts across GPU, system RAM, and NVMe SSD to run GLM-5.3-Flash (321B), DeepSeek-V4.1-Flash (748B), and MiniMax-M3.1-Flash (428B) on consumer hardware behind an OpenAI/Anthropic-compatible API. Its quantized GLM builds keep 97.7-99.2% of FP8 zero-shot accuracy, and community benchmarks report roughly 149 tokens/sec for GLM-5.3-Flash on two RTX 5090s plus an RTX 4090. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053">ChatGPT silently passes data between connectors and the bounty wants an ID card</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8</a> <span class="meta">hn</span></li>
+<li><a href="https://simonwillison.net/2026/Oct/30/nesformer/">dbreunig/nesformer</a> <span class="meta">blog</span></li>
+<li><a href="https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287">University libraries are being swarmed by AI bots, putting public access at risk</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/partnering-with-hacktron">Partnering with Hacktron to find vulnerabilities in OpenAI’s systems</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/modelsphere/modelsphere">modelsphere/modelsphere</a> <span class="meta">github</span></li>
+<li><a href="https://openai.com/index/helping-websites-express-ai-training-preferences">Making it easier for websites to express AI training preferences</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/tharun208/cloneguard">Show HN: CloneGuard – Scan a repo for credential-stealing tricks before it runs</a> <span class="meta">hn</span></li>
+<li><a href="https://www.anthropic.com/research/how-researchers-use-claude">AI for scientific discovery: How researchers use Claude</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/T-Crypt/berth">T-Crypt/berth</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/usamahz/cpu-performance-engineering">usamahz/cpu-performance-engineering</a> <span class="meta">github</span></li>
+<li><a href="https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve/">After Binance, check what your signing systems can approve</a> <span class="meta">blog</span></li>
+<li><a href="https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work">Perplexity launches AI agents for work</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/ccch1mneyyy/dsh-Go">ccch1mneyyy/dsh-Go</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/devswha/ovis">devswha/ovis</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/reason-machines/reason-network">reason-machines/reason-network</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/Yamz-Labs/kyojin">Yamz-Labs/kyojin</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/YOLOW92/pagesift">YOLOW92/pagesift</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/agent-for-dummys/Agent-For-Dummies">agent-for-dummys/Agent-For-Dummies</a> <span class="meta">github</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/">Fake security tools on GitHub push backdoors and infostealers</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-08.md">Markdown</a></footer>
+</body></html>
