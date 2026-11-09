@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-09</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-09</h1>
+<article>
+<h2><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers">Goldman Sachs pulls Claude Code from bankers and traders</a></h2>
+<p>Goldman&#x27;s October policy blocks most traders and bankers from Claude Code and GitHub Copilot, keeping access only for &#x27;strats&#x27; staff, after an earlier Hong Kong-only Claude ban in April. Goldman and Morgan Stanley are set to underwrite Anthropic&#x27;s Nasdaq IPO even as the bank pulls its own coding agents from the trading floor. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/">How We Took Over ChatGPT Accounts</a></h2>
+<p>A ChatGPT artifacts sandbox escape chained a MathLive keyboard&#x27;s innerHTML handler with YouTube&#x27;s oEmbed endpoint reflecting attacker JS past OpenAI&#x27;s CSP, letting a crafted share link exfiltrate a victim&#x27;s data or act on their behalf. Parameter Labs reported it and OpenAI paid a $5,000 bounty. Treat any sandboxed-iframe share link as a trust boundary worth testing. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/">An AI-assisted exploit chain unlocks cars worldwide</a></h2>
+<p>Hardcoded admin API keys in a JS bundle led to a WAF bypass via ForgeRock OpenIDM path traversal and an Australian MFA-skip the vehicle command API accepted, exposing emails, phone numbers, and password hashes. GPT 5.6 Sol Ultra found the bypass path after six hours on the OpenIDM source. The chain unlocks and starts cars by number plate across Australia, the US, and Canada. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/wici-ai/inferssd">InferSSD streams MoE experts from SSD for big models</a></h2>
+<p>InferSSD streams MoE experts from SSD on top of llama.cpp so models bigger than RAM or VRAM still run, reporting 8.4x decode and 20.4x prefill over llama.cpp on an RTX 5090 (46.7x prefill on a DGX Spark). It supports DeepSeek-V4.1-Flash, Muse-Spark-Open, and Qwen3.6-35B-A3B on macOS and Linux. Models too big for memory can now run without a GPU upgrade. (4 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">HyperFlow H3 Flash compresses a 31B video model to 14B</a></h2>
+<p>HyperFlow H3 Flash cuts MiniMax-H3 from ~31B to ~13.7B parameters via block pruning, low-rank factorization, and rotated INT8 quantization, sampling in 4-8 steps instead of the base model&#x27;s count. A 5.2-second 1344x768 clip renders in 36 seconds on one H200, or 92 seconds on an RTX 5090, with a 9.1GB build fitting 24GB consumer GPUs. Code is Apache-2.0; weights carry MiniMax&#x27;s regionally-restricted license. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/microsoft/TokenEconomizer">TokenEconomizer cuts coding-agent costs 18-31% on SWE-Bench</a></h2>
+<p>TokenEconomizer sits outside the agent, learning repo-specific facts, pruning unused tools, and catching stuck loops without touching the model. Across 277 SWE-Bench tasks over 6 repos and 5 agent/model combos it cut mean cost 18.4-30.9% in every cell tested, while pass@1 rose in 4 of 5 combos. It works through Claude Code, Codex, Copilot CLI, and Pi&#x27;s existing hooks, fully reversible. (4 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://caleb.software/posts/claude-to-pi.html">Goodbye Claude, hello Pi</a></h2>
+<p>A developer switched from Claude Code to the open-source Pi harness after finding 244 Claude Code releases this year, three-quarters of which changed the system prompt or tool descriptions. The default Bash tool description alone runs about 3,000 tokens of mostly unneeded git and PR instructions. The post drew 406 comments, showing harness overhead is now a live complaint, not a fringe one. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/synchopate/llama-modchip">Llama-modchip claims to run 284B DeepSeek on 64GB RAM, no GPU</a></h2>
+<p>Llama-modchip claims to run the 284B-parameter DeepSeek model on 64GB of RAM with no GPU, per the project&#x27;s own title; the repo&#x27;s technical details weren&#x27;t available to verify how. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/">Iris Ohyama data cloud breach exposes info of 7.7 million customers</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/modelsphere/modelsphere">modelsphere/modelsphere</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/Folkbench/folkbench">Folkbench/folkbench</a> <span class="meta">github</span></li>
+<li><a href="https://arxiv.org/abs/2611.08834v1">Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks</a> <span class="meta">arxiv</span></li>
+<li><a href="https://github.com/hedgerow-dev/coldframe">Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller</a> <span class="meta">hn</span></li>
+<li><a href="https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0">Anthropic strikes $3.4B deal to generate gas-fired power for data centres</a> <span class="meta">hn</span></li>
+<li><a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidia Board of Directors Is Investigating Jensen Huang</a> <span class="meta">hn</span></li>
+<li><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Claude Code&#x27;s &quot;Don&#x27;t Ask Again&quot; exposes passwords in 1,122 public GitHub files</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.08905v1">From Procedures to Permissions: Learning Precise Subagent Authorization from Agent Skills</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2611.08811v1">I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents</a> <span class="meta">arxiv</span></li>
+<li><a href="https://www.lorekit.io/blog/open-agent-memory-format">Agent memory needs its OpenTelemetry moment</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.08946v1">Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents</a> <span class="meta">arxiv</span></li>
+<li><a href="https://hunch.net/?p=13764006">The End of AI Frontiers</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/receptron/laya">receptron/laya</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/strands-labs/strands-decider">strands-labs/strands-decider</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/wanghao-SunSky/cs329z-chinese">wanghao-SunSky/cs329z-chinese</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/reacher-z/Awesome-REA">reacher-z/Awesome-REA</a> <span class="meta">github</span></li>
+<li><a href="https://simonwillison.net/2026/Nov/7/link-rel-next/">datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/nanaism/yomiyasu">nanaism/yomiyasu</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/lemomo-ai/lemo-opuscar">lemomo-ai/lemo-opuscar</a> <span class="meta">github</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-09.md">Markdown</a></footer>
+</body></html>

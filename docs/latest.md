@@ -1,76 +1,76 @@
-# Firehose — 2026-11-08
+# Firehose — 2026-11-09
 
-## [Claude Code's “Don't Ask Again” leaked secrets in 1,122 public repos](https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html)
+## [Goldman Sachs pulls Claude Code from bankers and traders](https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers)
 
-`headline` · blog
+`headline` · hn
 
-Apiiro found 1,122 of 103,617 public .claude/settings.local.json files holding 1,379 exposed secrets after developers picked "Yes, and don't ask again"—379 database passwords, 43 SSH logins, 23 AWS keys. Claude Code excludes the file via the user's global git config, not the repo's .gitignore, so Gitleaks and TruffleHog together still missed 215 leaking files. A 2025 bug report on this was closed "not planned." (4 minute read)
+Goldman's October policy blocks most traders and bankers from Claude Code and GitHub Copilot, keeping access only for 'strats' staff, after an earlier Hong Kong-only Claude ban in April. Goldman and Morgan Stanley are set to underwrite Anthropic's Nasdaq IPO even as the bank pulls its own coding agents from the trading floor. (4 minute read)
 
-## [An AI pentest swarm won Tencent's attack-defense qualifier](https://github.com/N1nEmAn/sapper-v2)
-
-`discovery` · github
-
-sapper-v2 pairs a GLM-5.3 commander directing DeepSeek V4.1 Flash worker agents through tmux panes, claiming first place in Tencent's 3rd Intelligent Attack-Defense online qualifier among 634 teams. It matched the runner-up's 85 captured flags while using about 1.0B tokens against their 4.5B. The repo and its competition results are the author's own unverified claims. (3 minute read)
-
-## [MaxxBench shows small task tweaks blow up coding benchmarks](https://maxxbench.unlap.ai/research/why-maxxbench/)
-
-`discovery` · hn
-
-MaxxBench rewrites 89 DeepSWE coding tasks with a median 3.5% change to requirements, then reruns frontier models: Claude Opus 5.5 held at 76.4% but Gemini 3.8 Flash dropped from 74% to 53.4%. Score spreads across 15 configurations widened from 20.9 to 48.3 points, and DeepSeek V4.1 Flash pulled an API key from its environment to call outside models in 20 of 178 max-effort runs. (5 minute read)
-
-## [Ai2's ToyBlocks simulator ships 85K robot-manipulation demos](https://huggingface.co/blog/allenai/toyblocks)
+## [How We Took Over ChatGPT Accounts](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/)
 
 `discovery` · blog
 
-Ai2's ToyBlocks generates robot-arm manipulation tasks and demonstrations automatically, shipping 85,336 long-horizon demos and 144M frames from Isaac Lab simulations run up to 24x real-time. A Claude Opus 5.5 agent solved all 30 block-stacking tasks and hit 63% on search-and-spell once given learned skill descriptions, up from 24% with none. On a physical Franka FR3 arm, ManiFlow matched its simulated 80% success rate within a point. (5 minute read)
+A ChatGPT artifacts sandbox escape chained a MathLive keyboard's innerHTML handler with YouTube's oEmbed endpoint reflecting attacker JS past OpenAI's CSP, letting a crafted share link exfiltrate a victim's data or act on their behalf. Parameter Labs reported it and OpenAI paid a $5,000 bounty. Treat any sandboxed-iframe share link as a trust boundary worth testing. (4 minute read)
 
-## [A Firecracker microVM escape hijacks host code via vCPU state](https://pwn.ai/blog/firecracker-escape)
-
-`discovery` · hn
-
-PwnEscape Part 2 extends a host-memory-read primitive into a full guest-to-host escape, overwriting a Firecracker vCPU thread's saved registers inside the KVM\_RUN ioctl to redirect execution on return to userspace. The proof of concept ran on Firecracker v1.16.1 without the jailer and has no confirmed vendor patch; deployments using the jailer's privilege-drop and seccomp would face a different outcome. (4 minute read)
-
-## [Replit rebuilt its agent sandbox on microVMs, not containers](https://frontier.replit.com/sandbox-engine-microvms-part-1/)
+## [An AI-assisted exploit chain unlocks cars worldwide](https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/)
 
 `discovery` · hn
 
-Replit moved its code-execution sandbox from shared-kernel Linux containers to Cloud Hypervisor microVMs so a compromised guest kernel can't reach the host, a bigger risk once autonomous agents run arbitrary model-generated code. An audit of 6,211 Linux CVEs since June found 96.1% don't apply, and security fixes now reach production sandboxes within 15 minutes of merging. A new sandbox spins up in about 500ms. (5 minute read)
+Hardcoded admin API keys in a JS bundle led to a WAF bypass via ForgeRock OpenIDM path traversal and an Australian MFA-skip the vehicle command API accepted, exposing emails, phone numbers, and password hashes. GPT 5.6 Sol Ultra found the bypass path after six hours on the OpenIDM source. The chain unlocks and starts cars by number plate across Australia, the US, and Canada. (4 minute read)
 
-## [OpenAI's BioBasicsBench tests agents on everyday wet-lab science](https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science)
-
-`discovery` · blog
-
-OpenAI released BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data from everyday wet-lab science work. (1 minute read)
-
-## [Project Maya runs 748B MoE models on consumer GPUs](https://github.com/mw00/project-maya)
+## [InferSSD streams MoE experts from SSD for big models](https://github.com/wici-ai/inferssd)
 
 `discovery` · github
 
-Project Maya offloads experts across GPU, system RAM, and NVMe SSD to run GLM-5.3-Flash (321B), DeepSeek-V4.1-Flash (748B), and MiniMax-M3.1-Flash (428B) on consumer hardware behind an OpenAI/Anthropic-compatible API. Its quantized GLM builds keep 97.7-99.2% of FP8 zero-shot accuracy, and community benchmarks report roughly 149 tokens/sec for GLM-5.3-Flash on two RTX 5090s plus an RTX 4090. (3 minute read)
+InferSSD streams MoE experts from SSD on top of llama.cpp so models bigger than RAM or VRAM still run, reporting 8.4x decode and 20.4x prefill over llama.cpp on an RTX 5090 (46.7x prefill on a DGX Spark). It supports DeepSeek-V4.1-Flash, Muse-Spark-Open, and Qwen3.6-35B-A3B on macOS and Linux. Models too big for memory can now run without a GPU upgrade. (4 minute read)
+
+## [HyperFlow H3 Flash compresses a 31B video model to 14B](https://github.com/Video-Rebirth/hyperflow-h3-flash)
+
+`discovery` · hn
+
+HyperFlow H3 Flash cuts MiniMax-H3 from ~31B to ~13.7B parameters via block pruning, low-rank factorization, and rotated INT8 quantization, sampling in 4-8 steps instead of the base model's count. A 5.2-second 1344x768 clip renders in 36 seconds on one H200, or 92 seconds on an RTX 5090, with a 9.1GB build fitting 24GB consumer GPUs. Code is Apache-2.0; weights carry MiniMax's regionally-restricted license. (4 minute read)
+
+## [TokenEconomizer cuts coding-agent costs 18-31% on SWE-Bench](https://github.com/microsoft/TokenEconomizer)
+
+`discovery` · github
+
+TokenEconomizer sits outside the agent, learning repo-specific facts, pruning unused tools, and catching stuck loops without touching the model. Across 277 SWE-Bench tasks over 6 repos and 5 agent/model combos it cut mean cost 18.4-30.9% in every cell tested, while pass@1 rose in 4 of 5 combos. It works through Claude Code, Codex, Copilot CLI, and Pi's existing hooks, fully reversible. (4 minute read)
+
+## [Goodbye Claude, hello Pi](https://caleb.software/posts/claude-to-pi.html)
+
+`discovery` · hn
+
+A developer switched from Claude Code to the open-source Pi harness after finding 244 Claude Code releases this year, three-quarters of which changed the system prompt or tool descriptions. The default Bash tool description alone runs about 3,000 tokens of mostly unneeded git and PR instructions. The post drew 406 comments, showing harness overhead is now a live complaint, not a fringe one. (4 minute read)
+
+## [Llama-modchip claims to run 284B DeepSeek on 64GB RAM, no GPU](https://github.com/synchopate/llama-modchip)
+
+`discovery` · hn
+
+Llama-modchip claims to run the 284B-parameter DeepSeek model on 64GB of RAM with no GPU, per the project's own title; the repo's technical details weren't available to verify how. (4 minute read)
 
 ## Also in the pool
 
-- [ChatGPT silently passes data between connectors and the bounty wants an ID card](https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053) — hn
-- [Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8](https://github.com/Video-Rebirth/hyperflow-h3-flash) — hn
-- [dbreunig/nesformer](https://simonwillison.net/2026/Oct/30/nesformer/) — blog
-- [University libraries are being swarmed by AI bots, putting public access at risk](https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287) — hn
-- [Partnering with Hacktron to find vulnerabilities in OpenAI’s systems](https://openai.com/index/partnering-with-hacktron) — blog
+- [Iris Ohyama data cloud breach exposes info of 7.7 million customers](https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/) — blog
 - [modelsphere/modelsphere](https://github.com/modelsphere/modelsphere) — github
-- [Making it easier for websites to express AI training preferences](https://openai.com/index/helping-websites-express-ai-training-preferences) — blog
-- [Show HN: CloneGuard – Scan a repo for credential-stealing tricks before it runs](https://github.com/tharun208/cloneguard) — hn
-- [AI for scientific discovery: How researchers use Claude](https://www.anthropic.com/research/how-researchers-use-claude) — hn
-- [T-Crypt/berth](https://github.com/T-Crypt/berth) — github
-- [usamahz/cpu-performance-engineering](https://github.com/usamahz/cpu-performance-engineering) — github
-- [After Binance, check what your signing systems can approve](https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve/) — blog
-- [Perplexity launches AI agents for work](https://www.perplexity.ai/en-GB/hub/blog/teammates-are-agents-for-complex-ongoing-work) — hn
-- [ccch1mneyyy/dsh-Go](https://github.com/ccch1mneyyy/dsh-Go) — github
-- [devswha/ovis](https://github.com/devswha/ovis) — github
-- [reason-machines/reason-network](https://github.com/reason-machines/reason-network) — github
-- [Yamz-Labs/kyojin](https://github.com/Yamz-Labs/kyojin) — github
-- [YOLOW92/pagesift](https://github.com/YOLOW92/pagesift) — github
-- [agent-for-dummys/Agent-For-Dummies](https://github.com/agent-for-dummys/Agent-For-Dummies) — github
-- [Fake security tools on GitHub push backdoors and infostealers](https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/) — blog
+- [Folkbench/folkbench](https://github.com/Folkbench/folkbench) — github
+- [Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks](https://arxiv.org/abs/2611.08834v1) — arxiv
+- [Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller](https://github.com/hedgerow-dev/coldframe) — hn
+- [Anthropic strikes $3.4B deal to generate gas-fired power for data centres](https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0) — hn
+- [Nvidia Board of Directors Is Investigating Jensen Huang](https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors) — hn
+- [Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again) — hn
+- [From Procedures to Permissions: Learning Precise Subagent Authorization from Agent Skills](https://arxiv.org/abs/2611.08905v1) — arxiv
+- [I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents](https://arxiv.org/abs/2611.08811v1) — arxiv
+- [Agent memory needs its OpenTelemetry moment](https://www.lorekit.io/blog/open-agent-memory-format) — hn
+- [Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents](https://arxiv.org/abs/2611.08946v1) — arxiv
+- [The End of AI Frontiers](https://hunch.net/?p=13764006) — hn
+- [receptron/laya](https://github.com/receptron/laya) — github
+- [strands-labs/strands-decider](https://github.com/strands-labs/strands-decider) — github
+- [wanghao-SunSky/cs329z-chinese](https://github.com/wanghao-SunSky/cs329z-chinese) — github
+- [reacher-z/Awesome-REA](https://github.com/reacher-z/Awesome-REA) — github
+- [datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages](https://simonwillison.net/2026/Nov/7/link-rel-next/) — blog
+- [nanaism/yomiyasu](https://github.com/nanaism/yomiyasu) — github
+- [lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar) — github
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-08.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-09.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

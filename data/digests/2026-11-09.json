@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-09",
+  "sent": false,
+  "items": [
+    {
+      "id": "68ff5ed661ee",
+      "title": "Goldman Sachs pulls Claude Code from bankers and traders",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Goldman's October policy blocks most traders and bankers from Claude Code and GitHub Copilot, keeping access only for 'strats' staff, after an earlier Hong Kong-only Claude ban in April. Goldman and Morgan Stanley are set to underwrite Anthropic's Nasdaq IPO even as the bank pulls its own coding agents from the trading floor. (4 minute read)"
+    },
+    {
+      "id": "dd35d009aad6",
+      "title": "How We Took Over ChatGPT Accounts",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A ChatGPT artifacts sandbox escape chained a MathLive keyboard's innerHTML handler with YouTube's oEmbed endpoint reflecting attacker JS past OpenAI's CSP, letting a crafted share link exfiltrate a victim's data or act on their behalf. Parameter Labs reported it and OpenAI paid a $5,000 bounty. Treat any sandboxed-iframe share link as a trust boundary worth testing. (4 minute read)"
+    },
+    {
+      "id": "b1fb5a70556b",
+      "title": "An AI-assisted exploit chain unlocks cars worldwide",
+      "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Hardcoded admin API keys in a JS bundle led to a WAF bypass via ForgeRock OpenIDM path traversal and an Australian MFA-skip the vehicle command API accepted, exposing emails, phone numbers, and password hashes. GPT 5.6 Sol Ultra found the bypass path after six hours on the OpenIDM source. The chain unlocks and starts cars by number plate across Australia, the US, and Canada. (4 minute read)"
+    },
+    {
+      "id": "9266ad866a15",
+      "title": "InferSSD streams MoE experts from SSD for big models",
+      "url": "https://github.com/wici-ai/inferssd",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "InferSSD streams MoE experts from SSD on top of llama.cpp so models bigger than RAM or VRAM still run, reporting 8.4x decode and 20.4x prefill over llama.cpp on an RTX 5090 (46.7x prefill on a DGX Spark). It supports DeepSeek-V4.1-Flash, Muse-Spark-Open, and Qwen3.6-35B-A3B on macOS and Linux. Models too big for memory can now run without a GPU upgrade. (4 minute read)"
+    },
+    {
+      "id": "f45973610354",
+      "title": "HyperFlow H3 Flash compresses a 31B video model to 14B",
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "HyperFlow H3 Flash cuts MiniMax-H3 from ~31B to ~13.7B parameters via block pruning, low-rank factorization, and rotated INT8 quantization, sampling in 4-8 steps instead of the base model's count. A 5.2-second 1344x768 clip renders in 36 seconds on one H200, or 92 seconds on an RTX 5090, with a 9.1GB build fitting 24GB consumer GPUs. Code is Apache-2.0; weights carry MiniMax's regionally-restricted license. (4 minute read)"
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "title": "TokenEconomizer cuts coding-agent costs 18-31% on SWE-Bench",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "TokenEconomizer sits outside the agent, learning repo-specific facts, pruning unused tools, and catching stuck loops without touching the model. Across 277 SWE-Bench tasks over 6 repos and 5 agent/model combos it cut mean cost 18.4-30.9% in every cell tested, while pass@1 rose in 4 of 5 combos. It works through Claude Code, Codex, Copilot CLI, and Pi's existing hooks, fully reversible. (4 minute read)"
+    },
+    {
+      "id": "e66f4eeac8f3",
+      "title": "Goodbye Claude, hello Pi",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A developer switched from Claude Code to the open-source Pi harness after finding 244 Claude Code releases this year, three-quarters of which changed the system prompt or tool descriptions. The default Bash tool description alone runs about 3,000 tokens of mostly unneeded git and PR instructions. The post drew 406 comments, showing harness overhead is now a live complaint, not a fringe one. (4 minute read)"
+    },
+    {
+      "id": "5e9d3fd0e59c",
+      "title": "Llama-modchip claims to run 284B DeepSeek on 64GB RAM, no GPU",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Llama-modchip claims to run the 284B-parameter DeepSeek model on 64GB of RAM with no GPU, per the project's own title; the repo's technical details weren't available to verify how. (4 minute read)"
+    }
+  ]
+}
