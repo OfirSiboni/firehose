@@ -1,111 +1,120 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "stories": [
     {
-      "id": "68ff5ed661ee",
-      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "id": "ffe8a09e969f",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
       "source": "hn",
       "tier": "headline",
-      "reason": "Goldman restricted Claude Code/GitHub Copilot for traders & bankers after a productivity/risk review; real enterprise-deployment pullback, not a rumor.",
+      "reason": "Anthropic's flagship Fable/Mythos 5.2 release with major benchmark gains (FrontierSWE v2 69.9% vs 62.3%, Humanity's Last Exam 74.2% vs 67.7%) and a dedicated cyber-verification model; official primary source.",
       "key_facts": [
-        "Internal guidance updated Oct 2026 bars most traders/bankers from Claude Code and GitHub Copilot; 'strats' keep access",
-        "Follows an earlier Apr 2026 Hong Kong-only Claude removal over contract terms",
-        "Goldman and Morgan Stanley are lead underwriters on Anthropic's expected Nasdaq IPO (ticker ANT) before end of Nov 2026",
-        "Barclays, by contrast, expects half its developers using Claude Code by year-end"
+        "Fable 5.2 API id claude-fable-5-2; Mythos 5.2 gated via Cyber/Life Sciences Verification Programs",
+        "Pricing $8/$40 per Mtok input/output, fast mode $16/$80",
+        "FrontierSWE v2 69.9% vs Opus 5.5's 62.3%; Humanity's Last Exam 74.2% vs 67.7%",
+        "Mythos 5.2 finds 10.2% more CVEs than Opus 5.5, 14.4% more than Mythos 5.1",
+        "Formalized Fermat's Last Theorem in 30 hours using ~1,000 agents",
+        "Sandbox escape rate 3.1%, close to Opus 5.5's 3.3%; automated behavioral audit score 2.67 vs Opus 5.5's 2.79"
       ]
     },
     {
-      "id": "dd35d009aad6",
-      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-      "title": "How We Took Over ChatGPT Accounts",
+      "id": "e8082cc54dfb",
+      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Documented real-world campaign: a single Taiwan-based attacker ran 12 AI agents (BOSSAI) against hundreds of orgs in 11+ countries, breaching ~10 including Taipei's emergency dispatch system; concrete AI-offense case study with primary research (Acronis) behind it.",
+      "key_facts": [
+        "12 AI agents built (9 active); Grok/MiniMax M3 refused direct attack requests, abliterated DeepSeek/GLM/Qwen models did the attacking",
+        "Pulled Taipei 119 dispatch records for 7 districts via API; exposed 2018 patient ECG/ambulance video with no login",
+        "~206,800 Mexican phone records taken; SQL injection against Thai universities",
+        "Agents hallucinated CVEs; over half of one scanner's high/critical findings were false positives",
+        "Attacker deanonymized via reused GitHub/SSH-key identity and a home IP leaked in a Grok chat log"
+      ]
+    },
+    {
+      "id": "c1e9a888a716",
+      "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+      "title": "Backporting security fixes at scale with Codex",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Full technical account of an exploit chain that could take over ChatGPT accounts via the artifacts/Canvas sandbox; real PoC-level detail, fixed, bounty paid.",
+      "reason": "Trail of Bits built a working Codex-based pipeline that has already landed fixes for 149 CVEs into stable Linux kernels plus Fedora/Ubuntu packages — running code with hard numbers, exactly the kind of AI x cyber result the profile wants.",
       "key_facts": [
-        "Chain: MathLive virtual-keyboard postMessage handler used innerHTML to escape the sandboxed artifacts iframe",
-        "CSP allowed scripts from a few domains including YouTube, whose oEmbed endpoint reflected attacker JS",
-        "Resulting ChatGPT share URL could exfiltrate a victim's private data or act on their behalf when opened",
-        "Found by Parameter Labs, OpenAI paid a $5,000 bounty (called 'a bit cheap' by Simon Willison for the severity)"
+        "149 distinct CVEs backported into stable Linux kernel releases as of Oct 29",
+        "Simple backport ~30 min human attention, complex one ~3 hours, down from days",
+        "5.10.y alone had 2,006 unfixed kernel CVEs as of Sept 18; Debian 13 had 4,562 unique unfixed CVEs",
+        "Public tracker: trailofbits.github.io/ptp-linux-stable-cve-dashboard"
       ]
     },
     {
-      "id": "b1fb5a70556b",
-      "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
-      "title": "Unlocking any car from X brand in most of the world",
+      "id": "e9e255b08220",
+      "url": "https://therecord.media/cyberattack-germany-ai-mittwald",
+      "title": "Alleged AI-aided cyberattack exploits assistant interface to breach German web host",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "A real breach through a flaw in a customer-facing MCP server (Mittwald), compromising 56 customer projects — a concrete agent/MCP attack chain, the exact category the taste profile flags as always-surface.",
+      "key_facts": [
+        "Flaw in Mittwald's MCP server used to connect AI assistants to its mStudio hosting platform",
+        "56 customer projects compromised; attacker undetected for 8 days",
+        "First probed in October during the PHP2Shell patch scramble",
+        "Director says logs suggest AI-paced actions (steps completed in seconds) but offered no other evidence"
+      ]
+    },
+    {
+      "id": "9e18e9d68e85",
+      "url": "https://zenodo.org/records/23682548",
+      "title": "Ginux: A New Kernel Runs Linux Userspace, Made via Human-Directed AI Engineering",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Car-hacking chain (hardcoded API keys -> WAF bypass -> MFA skip) that unlocks/starts vehicles from number plates across AU/US/Canada, and the WAF-bypass path was found by turning an LLM loose on the source for ~6 hours.",
+      "reason": "A single persistent coding-agent task built a Rust x86-64 kernel from scratch in 11 days that boots a real Rocky Linux 10 userspace under systemd — a concrete, reproducible (repo linked) demonstration of agentic systems engineering, not a vendor claim.",
       "key_facts": [
-        "Chain: hardcoded admin API keys in a JS bundle -> ForgeRock OpenIDM path traversal bypassing a WAF -> Australian MFA-skip via ROPC flow accepted by the vehicle command API",
-        "GPT 5.6 Sol Ultra, given OpenIDM source and run ~6 hours, found the unblocked path /static%2f..%2fopenidm/ that manual testing had missed",
-        "Exposed data: emails, names, phone numbers, password/PIN hashes, push tokens; account takeover via password overwrite",
-        "Companion research extended remote unlock/start to US and Canada; automaker and brand are anonymized"
+        "Author Gregory Kurtzer (CIQ); published as 'Ginux' on Zenodo Oct 27",
+        "Boots via UEFI, implements a Linux compatibility layer, runs unmodified Alpine binaries",
+        "Boots Rocky Linux 10 userspace through multi-user.target",
+        "Repo: github.com/gmkurtzer/ginux; no independent security audit; status flagged 'Concept'"
       ]
     },
     {
-      "id": "9266ad866a15",
-      "url": "https://github.com/wici-ai/inferssd",
-      "title": "wici-ai/inferssd",
+      "id": "39e994344746",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "title": "RunanywhereAI/trnrt",
       "source": "github",
       "tier": "discovery",
-      "reason": "Concrete inference-serving trick (streaming MoE experts from SSD on top of llama.cpp) with vendor-measured but specific multi-x speedups across several machines.",
+      "reason": "TrnRT is a real, actively maintained (315 commits, 385 stars) open-source LLM inference engine for AWS Trainium2 with fused decode kernels and a device/host prefix cache — a concrete serving-infra project, which the profile weighs over training work.",
       "key_facts": [
-        "InferSSD streams MoE experts from SSD so models bigger than RAM/VRAM run, built on llama.cpp/GGUF, Apache-2.0",
-        "DeepSeek on RTX 5090: 20.4x faster prefill, 8.4x faster decode vs llama.cpp",
-        "DeepSeek on DGX Spark: 46.7x faster prefill, 4.5x faster decode vs llama.cpp",
-        "Supports DeepSeek-V4.1-Flash-1017, Muse-Spark-Open, Qwen3.6-35B-A3B on macOS/Metal and Linux/CUDA"
+        "OpenAI-compatible API from a single trn2.48xlarge instance",
+        "Runs GLM-5.3-Flash (320B MoE, 1M context) via fused NKI decode kernels",
+        "385 stars, 6 forks, CI + security-scorecard badges",
+        "Self-reported benchmark: outputs matched an earlier build on 384/384 requests"
       ]
     },
     {
-      "id": "f45973610354",
-      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
-      "title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+      "id": "feb2ba211559",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "title": "Muse Ember: Our smallest, most efficient model",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Real compression result on a video+audio diffusion model with both code and weights released and concrete speed numbers, not just a benchmark claim.",
+      "reason": "Meta's new smallest/most efficient model (Muse Ember) beats Claude Haiku 5.5 and GPT-6 Luna on several agent benchmarks at roughly a third of the cost — a legitimate efficiency-tier release with head-to-head numbers against current frontier small models.",
       "key_facts": [
-        "HyperFlow H3 Flash compresses MiniMax-H3 (~31B) to ~13.7-13.9B via block pruning, low-rank factorization and rotated W8A8 INT8 quantization",
-        "Supports 4-8 step sampling via two-time (t,r) conditioning, down from the base model's step count",
-        "5.2s clip at 1344x768, 6 steps: 8.7s on 4xB200, 36s on 1xH200, 92s on 1xRTX5090; Q4_K_M GGUF (9.1GB) runs on 24-32GB consumer GPUs",
-        "Code is Apache-2.0/GPL-3.0/MIT across components; weights use MiniMax's non-OSI community license with regional use restrictions"
+        "Model id muse-ember-1.0; 1M-token context, up to 512K output",
+        "AutomationBench-AA 37.8% vs Luna 20.2%/Haiku 13.9%; matches Haiku's best score at ~1/3 the cost",
+        "Pricing $0.10/$0.50 per Mtok (<=200K prompt), $0.30/$1.50 beyond",
+        "Parameter count not disclosed; open-weight status not stated"
       ]
     },
     {
-      "id": "c1d7bbe61d18",
-      "url": "https://github.com/microsoft/TokenEconomizer",
-      "title": "microsoft/TokenEconomizer",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Microsoft's black-box cost-control plugin for coding agents has real SWE-Bench numbers (18-31% cost cut, pass@1 mostly flat-to-up) rather than a bare announcement.",
-      "key_facts": [
-        "Cuts coding-agent cost via repo-learned micro-skills, unused-tool pruning, and a loop-guard for stuck turns, without touching the model",
-        "SWE-Bench, 277 tasks x 6 repos x 5 agent/model combos: 18.4-30.9% lower mean cost, cheaper in all 30 cells",
-        "Pass@1 rose in 4 of 5 combos (+0.9 to +2.6), fell 1.0 in one (Opus 4.8)",
-        "Web-Bench 16-21% cheaper, two security-auditing benchmarks 6-20% cheaper; works via existing agent hooks/settings, fully reversible"
-      ]
-    },
-    {
-      "id": "e66f4eeac8f3",
-      "url": "https://caleb.software/posts/claude-to-pi.html",
-      "title": "Goodbye Claude, hello Pi",
+      "id": "c88eb98b7d5c",
+      "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/",
+      "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Widely discussed (406 comments) critique of Claude Code's overhead/release cadence from a dev switching to the open-source Pi harness; useful harness-design signal even though it's one person's opinion.",
+      "reason": "Asahi Linux is relicensing all repos from MIT to GPLv2+ specifically because actors were running its code through LLMs to launder its origin and commercialize it — a concrete governance response to AI-enabled IP laundering, not just a policy opinion.",
       "key_facts": [
-        "244 Claude Code releases this year; >75% changed the system prompt or tool descriptions",
-        "Default Bash tool description is ~3,000 tokens, mostly unneeded git/PR instructions",
-        "Switch driven by VS Code integration bugs, feature bloat (agent teams, dynamic workflows) and lack of AGENTS.md support at the time"
+        "Asahi cites code 'rewritten with AI to obscure its source' and republished without credit",
+        "Project already bans AI-generated contributions",
+        "Compared to WINE's 2002 MIT-to-LGPL move to block proprietary forks",
+        "OpenBSD dev criticized relicensing without all prior contributors' consent"
       ]
-    },
-    {
-      "id": "5e9d3fd0e59c",
-      "url": "https://github.com/synchopate/llama-modchip",
-      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Claims a 284B DeepSeek model running on 64GB RAM with no GPU, which would be a notable inference-infra result, but the repo didn't load (timed out) so it's unverified from the title alone.",
-      "key_facts": []
     }
   ]
 }

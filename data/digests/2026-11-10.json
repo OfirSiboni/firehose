@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-10",
+  "sent": false,
+  "items": [
+    {
+      "id": "ffe8a09e969f",
+      "title": "Claude Fable 5.2 and Mythos 5.2 launch with big benchmark jumps",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Fable 5.2 hits 69.9% on FrontierSWE v2 versus Opus 5.5's 62.3%, and 74.2% on Humanity's Last Exam with tools versus 67.7%. Mythos 5.2, gated behind Cyber and Life Sciences verification, finds 10.2% more CVEs than Opus 5.5. Fable 5.2 is live now on AWS, Google Cloud, and Azure at $8/$40 per million tokens. (2 minute read)"
+    },
+    {
+      "id": "e8082cc54dfb",
+      "title": "Solo hacker ran 12 AI agents to breach Taipei's emergency dispatch",
+      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "A Taiwan-based attacker built 12 AI agents, 9 active, pairing commercial models like Grok for tooling with abliterated DeepSeek, GLM, and Qwen models for attacks. The operation pulled Taipei 119 dispatch records across 7 districts and exposed 2018-era patient ECG and ambulance video with no login required. Reused identity details and a leaked home IP let researchers trace him anyway. (4 minute read)"
+    },
+    {
+      "id": "c1e9a888a716",
+      "title": "Codex backports security fixes for 149 Linux kernel CVEs",
+      "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Trail of Bits built a Codex pipeline that finds missing kernel fixes, adapts them to older trees, and prepares validation evidence for human review. It has landed fixes for 149 CVEs into stable Linux kernels plus Fedora and Ubuntu packages, cutting backport time from days to about 30 minutes for simple cases. Debian 13 alone still carries 4,562 unfixed CVEs across 1,128 packages. (3 minute read)"
+    },
+    {
+      "id": "e9e255b08220",
+      "title": "Flaw in hosting provider's MCP server exposes 56 customer projects",
+      "url": "https://therecord.media/cyberattack-germany-ai-mittwald",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "A flaw in Mittwald's MCP server, which connects AI assistants to its mStudio hosting platform, let an attacker compromise 56 customer projects before detection. The intruder went unnoticed for 8 days after first probing the flaw in October during the PHP2Shell patch scramble. Mittwald says log timing suggests AI-paced actions but has offered no other evidence. (3 minute read)"
+    },
+    {
+      "id": "9e18e9d68e85",
+      "title": "One AI agent built a Rust kernel that boots Rocky Linux in 11 days",
+      "url": "https://zenodo.org/records/23682548",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A single persistent coding-agent task produced Ginux, a Rust x86-64 kernel with its own Linux compatibility layer, in 11 days. It boots via UEFI, runs unmodified Alpine binaries, and brings up a full Rocky Linux 10 userspace under systemd. The code is on GitHub, though it has had no independent security audit and is still flagged 'Concept'. (3 minute read)"
+    },
+    {
+      "id": "39e994344746",
+      "title": "Open-source inference engine serves a 320B model on AWS Trainium2",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "TrnRT is an open LLM inference engine built for AWS Trainium2, serving an OpenAI-compatible API from a single trn2.48xlarge instance. It runs GLM-5.3-Flash, a 320B-parameter MoE model with a 1M-token context, through fused decode kernels and a device-and-host prefix cache. The project has 385 stars and 315 commits, with other models planned. (2 minute read)"
+    },
+    {
+      "id": "feb2ba211559",
+      "title": "Meta's Muse Ember matches Haiku's top score at a third the cost",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Muse Ember, Meta's smallest model yet, scores 37.8% on AutomationBench-AA versus GPT-6 Luna's 20.2% and Claude Haiku 5.5's 13.9%. It matches Haiku's best agent-benchmark score at roughly a third of the price, with a 1M-token context and up to 512K output tokens. Pricing starts at $0.10 per million input tokens and $0.50 output for prompts under 200K tokens. (3 minute read)"
+    },
+    {
+      "id": "c88eb98b7d5c",
+      "title": "Asahi Linux moves to GPL to stop AI-laundered code theft",
+      "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Asahi Linux is relicensing every repository from MIT to GPLv2-or-later after finding its code rewritten through LLMs to obscure its origin and republished without credit. The project already bans AI-generated contributions outright and compares the move to WINE's 2002 shift from MIT to LGPL to block proprietary forks. An OpenBSD developer objected that relicensing happened without consent from all prior contributors. (3 minute read)"
+    }
+  ]
+}
