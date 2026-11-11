@@ -1,119 +1,116 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "stories": [
     {
-      "id": "ffe8a09e969f",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "id": "f8c1a7370c13",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "title": "AlphaProof Code",
       "source": "hn",
       "tier": "headline",
-      "reason": "Anthropic's flagship Fable/Mythos 5.2 release with major benchmark gains (FrontierSWE v2 69.9% vs 62.3%, Humanity's Last Exam 74.2% vs 67.7%) and a dedicated cyber-verification model; official primary source.",
+      "reason": "DeepMind is open-sourcing formal-verification artifacts from an agentic multi-LLM system that machine-checked Signal's cryptographic protocol — verifiable, security-relevant, and backed by a real primary source.",
       "key_facts": [
-        "Fable 5.2 API id claude-fable-5-2; Mythos 5.2 gated via Cyber/Life Sciences Verification Programs",
-        "Pricing $8/$40 per Mtok input/output, fast mode $16/$80",
-        "FrontierSWE v2 69.9% vs Opus 5.5's 62.3%; Humanity's Last Exam 74.2% vs 67.7%",
-        "Mythos 5.2 finds 10.2% more CVEs than Opus 5.5, 14.4% more than Mythos 5.1",
-        "Formalized Fermat's Last Theorem in 30 hours using ~1,000 agents",
-        "Sandbox escape rate 3.1%, close to Opus 5.5's 3.3%; automated behavioral audit score 2.67 vs Opus 5.5's 2.79"
+        "Agentic multi-LLM framework formally verified Signal's compiled cryptographic protocol code",
+        "Generated 6M+ lines of Lean proof code over 4 weeks; flagged ~1% of the codebase for human review",
+        "When 2 previously-fixed bugs were reintroduced into an isolated copy, the system produced machine-checked proofs the buggy versions were insecure",
+        "DeepMind says it is open-sourcing the formal-verification artifacts (not model weights)"
       ]
     },
     {
-      "id": "e8082cc54dfb",
-      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
-      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+      "id": "7646e96e2e7b",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
       "source": "blog",
       "tier": "headline",
-      "reason": "Documented real-world campaign: a single Taiwan-based attacker ran 12 AI agents (BOSSAI) against hundreds of orgs in 11+ countries, breaching ~10 including Taipei's emergency dispatch system; concrete AI-offense case study with primary research (Acronis) behind it.",
+      "reason": "AI supply-chain compromise: attacker breached Fireworks' R&D environment and exfiltrated incomplete model weights/datasets plus Notion AI chat transcripts — hits the always-surface model-supply-chain-compromise topic directly.",
       "key_facts": [
-        "12 AI agents built (9 active); Grok/MiniMax M3 refused direct attack requests, abliterated DeepSeek/GLM/Qwen models did the attacking",
-        "Pulled Taipei 119 dispatch records for 7 districts via API; exposed 2018 patient ECG/ambulance video with no login",
-        "~206,800 Mexican phone records taken; SQL injection against Thai universities",
-        "Agents hallucinated CVEs; over half of one scanner's high/critical findings were false positives",
-        "Attacker deanonymized via reused GitHub/SSH-key identity and a home IP leaked in a Grok chat log"
+        "Attacker first used stolen credentials on 2026-10-06; reached Fireworks' R&D dev environment via a third-party cloud provider on 2026-10-23",
+        "Exposed data includes incomplete model weights and datasets for some customers, plus billing info and API keys",
+        "Notion disabled its Insights feature and stopped serving open-weight models through Fireworks; said <1% of workspaces affected",
+        "Attackers linked to a group that resells stolen LLM access ('LLMjacking')"
       ]
     },
     {
-      "id": "c1e9a888a716",
-      "url": "https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/",
-      "title": "Backporting security fixes at scale with Codex",
+      "id": "20954e3ac0ff",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "title": "CWE-bench v2: More coverage, quality, and transparency",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Trail of Bits built a working Codex-based pipeline that has already landed fixes for 149 CVEs into stable Linux kernels plus Fedora/Ubuntu packages — running code with hard numbers, exactly the kind of AI x cyber result the profile wants.",
+      "reason": "New cyber-eval benchmark release with real multi-model numbers, gated dataset, and open grader/harness — strong fit for the eval-methodology and security-benchmark always-surface topics.",
       "key_facts": [
-        "149 distinct CVEs backported into stable Linux kernel releases as of Oct 29",
-        "Simple backport ~30 min human attention, complex one ~3 hours, down from days",
-        "5.10.y alone had 2,006 unfixed kernel CVEs as of Sept 18; Debian 13 had 4,562 unique unfixed CVEs",
-        "Public tracker: trailofbits.github.io/ptp-linux-stable-cve-dashboard"
+        "100 public tasks across 91 CWEs; agent must find+fix a real security weakness in a repo without breaking tests",
+        "Gemini 4 Argon: 67.8% pass@1 / 81.0% pass@4; Claude Opus 5.5: 67.3% / 78.0%",
+        "DeepSeek V4.1 Flash hits 57.0% pass@1 at $0.04/rollout vs Opus 5.5's $1.83 and Argon's $3.92",
+        "Dataset gated on Hugging Face (collinear-ai/cwe-bench); runs via Harbor; held-out set protects leaderboard integrity"
       ]
     },
     {
-      "id": "e9e255b08220",
-      "url": "https://therecord.media/cyberattack-germany-ai-mittwald",
-      "title": "Alleged AI-aided cyberattack exploits assistant interface to breach German web host",
+      "id": "b958c2272095",
+      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
       "source": "blog",
-      "tier": "headline",
-      "reason": "A real breach through a flaw in a customer-facing MCP server (Mittwald), compromising 56 customer projects — a concrete agent/MCP attack chain, the exact category the taste profile flags as always-surface.",
+      "tier": "discovery",
+      "reason": "Real-world RCE in an open-source inference engine (SGLang) breached live AI agents inside a TEE — concrete agent-infra attack, though no CVE or public PoC yet.",
       "key_facts": [
-        "Flaw in Mittwald's MCP server used to connect AI assistants to its mStudio hosting platform",
-        "56 customer projects compromised; attacker undetected for 8 days",
-        "First probed in October during the PHP2Shell patch scramble",
-        "Director says logs suggest AI-paced actions (steps completed in seconds) but offered no other evidence"
+        "RCE in SGLang let an attacker run code on a NEAR AI inference server running inside a TEE",
+        "18 AI agents on an older non-TEE deployment were accessed; ~100 Private Chat users had account data downloaded",
+        "Two customer NEAR AI Cloud API keys were exposed in logs and revoked",
+        "No CVE number or public PoC disclosed; fix deployed to all inference servers"
       ]
     },
     {
-      "id": "9e18e9d68e85",
-      "url": "https://zenodo.org/records/23682548",
-      "title": "Ginux: A New Kernel Runs Linux Userspace, Made via Human-Directed AI Engineering",
+      "id": "8443aece1f92",
+      "url": "https://neuracryption.com/research",
+      "title": "Compress any LLM 3x in one click,near-lossless,in under 50 MB RAM",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A single persistent coding-agent task built a Rust x86-64 kernel from scratch in 11 days that boots a real Rocky Linux 10 userspace under systemd — a concrete, reproducible (repo linked) demonstration of agentic systems engineering, not a vendor claim.",
+      "reason": "4-bit quantization framework with real code/kernels and a public repo — fits the quantization always-surface topic — but the vendor's 'near-lossless 3x/50MB' framing overstates the measured 2.8-3.31x VRAM compression and the writeup has internal inconsistencies.",
       "key_facts": [
-        "Author Gregory Kurtzer (CIQ); published as 'Ginux' on Zenodo Oct 27",
-        "Boots via UEFI, implements a Linux compatibility layer, runs unmodified Alpine binaries",
-        "Boots Rocky Linux 10 userspace through multi-user.target",
-        "Repo: github.com/gmkurtzer/ginux; no independent security audit; status flagged 'Concept'"
+        "Asymmetric Group-32 microscaling, no calibration data, outlier channels kept FP16 (up to 3%); custom Triton kernels",
+        "Measured compression 2.80x-3.31x VRAM (not a flat 3x); e.g. DeepSeek-R1-Distill-1.5B 3.31GB → 1.03GB, 82.53 tok/s with CUDA Graph",
+        "WikiText-2 perplexity rose 33.83 → 34.73 (+0.90) vs FP16",
+        "Code at github.com/NeuraCryption/SPECTRA; some table/figure inconsistencies and a mismatched model link found on inspection"
       ]
     },
     {
-      "id": "39e994344746",
-      "url": "https://github.com/RunanywhereAI/trnrt",
-      "title": "RunanywhereAI/trnrt",
-      "source": "github",
+      "id": "d0d930fec197",
+      "url": "https://arxiv.org/abs/2611.12820v1",
+      "title": "How Well Does AI Peer Review Work? A Benchmark Built from 100 Planted Errors",
+      "source": "arxiv",
       "tier": "discovery",
-      "reason": "TrnRT is a real, actively maintained (315 commits, 385 stars) open-source LLM inference engine for AWS Trainium2 with fused decode kernels and a device/host prefix cache — a concrete serving-infra project, which the profile weighs over training work.",
+      "reason": "Concrete, reproducible eval of AI review tools against 100 planted errors in real papers — good benchmark-criticism fit, though false-positive rate wasn't measured and no direct repo link was found on the page.",
       "key_facts": [
-        "OpenAI-compatible API from a single trn2.48xlarge instance",
-        "Runs GLM-5.3-Flash (320B MoE, 1M context) via fused NKI decode kernels",
-        "385 stars, 6 forks, CI + security-scorecard badges",
-        "Self-reported benchmark: outputs matched an earlier build on 384/384 requests"
+        "100 known errors planted across 10 open-access psychology papers, run through frontier models + 2 commercial AI review tools",
+        "Best single system caught 71/100 errors; worst caught 30/100; pooled across all systems caught 93/100",
+        "7 errors missed by every system, all omissions (deleted info) rather than inserted mistakes",
+        "False-positive rate not measured; paper claims public data/logs but no direct repo link found on the page"
       ]
     },
     {
-      "id": "feb2ba211559",
-      "url": "https://research.meta.ai/blog/muse-ember",
-      "title": "Muse Ember: Our smallest, most efficient model",
+      "id": "a5749ddac123",
+      "url": "https://docs.modelplane.ai/guides/inference-guide",
+      "title": "An Open Field Guide to Inference Engineering",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Meta's new smallest/most efficient model (Muse Ember) beats Claude Haiku 5.5 and GPT-6 Luna on several agent benchmarks at roughly a third of the cost — a legitimate efficiency-tier release with head-to-head numbers against current frontier small models.",
+      "reason": "Solid curated reference on inference-serving internals (KV-cache sizing, batching/quantization/speculative decoding, engine choice) — matches the 'how models are served' priority, but it's vendor-authored synthesis, not original research.",
       "key_facts": [
-        "Model id muse-ember-1.0; 1M-token context, up to 512K output",
-        "AutomationBench-AA 37.8% vs Luna 20.2%/Haiku 13.9%; matches Haiku's best score at ~1/3 the cost",
-        "Pricing $0.10/$0.50 per Mtok (<=200K prompt), $0.30/$1.50 beyond",
-        "Parameter count not disclosed; open-weight status not stated"
+        "Llama 3 70B needs ~320KB KV cache/token at FP16, so a 128K-token context needs ~40GB",
+        "Orca reports 36.9x throughput over static batching; vLLM cut KV-cache waste from 60-80% to <4%",
+        "A 320B MoE model needs ~320GB at FP8; one real checkpoint came in at 177.7GB vs a 315GB dtype estimate",
+        "Written by Modelplane/Upbound, vendors in this space — numbers not independently verified"
       ]
     },
     {
-      "id": "c88eb98b7d5c",
-      "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/",
-      "title": "Asahi Linux Drops MIT, Goes Full GPL After AI Used to Steal Unreleased Code",
-      "source": "hn",
+      "id": "b61856a48aba",
+      "url": "https://arxiv.org/abs/2611.13960v1",
+      "title": "From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses",
+      "source": "arxiv",
       "tier": "discovery",
-      "reason": "Asahi Linux is relicensing all repos from MIT to GPLv2+ specifically because actors were running its code through LLMs to launder its origin and commercialize it — a concrete governance response to AI-enabled IP laundering, not just a policy opinion.",
+      "reason": "Concrete, quantified defense against agentic-coding-harness attacks (LLM-judge vs deterministic guards) with real numbers — good AI x cyber fit, but it's a self-reported arxiv paper with no public repo or demo found.",
       "key_facts": [
-        "Asahi cites code 'rewritten with AI to obscure its source' and republished without credit",
-        "Project already bans AI-generated contributions",
-        "Compared to WINE's 2002 MIT-to-LGPL move to block proprietary forks",
-        "OpenBSD dev criticized relicensing without all prior contributors' consent"
+        "252 test fixtures (120 attack, 120 benign, 12 multi-step kill chains)",
+        "LLM-judge guard: 98.3% refusal of benign work at 142.3ms latency vs deterministic Ring-0 guards: ABR 1.000/FPR 0.000 at 12.7µs (~11,200x faster)",
+        "Stateless baseline missed 4/12 multi-step attack chains; coarse boolean taint blocked 83.3% of benign workflows",
+        "No code repository, demo, or released system found on the paper's page"
       ]
     }
   ]

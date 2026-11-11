@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-11",
+  "sent": false,
+  "items": [
+    {
+      "id": "f8c1a7370c13",
+      "title": "DeepMind's AlphaProof formally verifies Signal's crypto",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "An agentic multi-LLM system generated over 6 million lines of Lean proof code in four weeks to formally verify Signal's compiled cryptographic protocol, flagging just 1% of the codebase for human review. Reintroducing two previously-fixed bugs into an isolated copy, the system produced machine-checked proofs that those versions were insecure. DeepMind is open-sourcing the verification artifacts. (3 minute read)"
+    },
+    {
+      "id": "7646e96e2e7b",
+      "title": "Fireworks AI breach exposed model weights, Notion chats",
+      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Fireworks AI confirmed attackers who used stolen credentials in October reached its R&D environment via a third-party cloud provider, exposing incomplete model weights and datasets, plus billing data and API keys. Notion disabled its Insights feature and dropped open-weight models served through Fireworks, saying under 1% of workspaces were affected. The attackers reportedly resell stolen LLM access. (3 minute read)"
+    },
+    {
+      "id": "20954e3ac0ff",
+      "title": "CWE-bench v2 adds 100 security-fix tasks across 91 CWEs",
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "CWE-bench v2 expands to 100 tasks across 91 CWE categories, each requiring an agent to find and fix a real security weakness without breaking existing tests. Gemini 4 Argon leads at 67.8% pass@1, just ahead of Claude Opus 5.5's 67.3%, while DeepSeek V4.1 Flash matches 57.0% pass@1 at $0.04 per rollout versus Opus 5.5's $1.83. The gated dataset runs through Harbor. (3 minute read)"
+    },
+    {
+      "id": "b958c2272095",
+      "title": "SGLang RCE breached NEAR AI agents inside a TEE",
+      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A remote-code-execution flaw in the open-source SGLang inference engine let an attacker run code on a NEAR AI server operating inside a trusted execution environment. Eighteen AI agents on an older, non-TEE deployment were accessed, and about 100 Private Chat users had account data downloaded; two exposed API keys were revoked. No CVE or public proof-of-concept has been disclosed. (3 minute read)"
+    },
+    {
+      "id": "8443aece1f92",
+      "title": "SPECTRA 4-bit quantization compresses LLMs 2.8-3.3x",
+      "url": "https://neuracryption.com/research",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "SPECTRA, a 4-bit weight-quantization framework with custom Triton kernels, compresses models 2.80x to 3.31x in VRAM without calibration data, shrinking DeepSeek-R1-Distill-1.5B from 3.31GB to 1.03GB while reaching 82.53 tokens/second with CUDA Graph. WikiText-2 perplexity rose only 0.90 points over FP16. The vendor's '3x, near-lossless, 50MB' marketing overstates the measured VRAM numbers, and the published code and tables contain some inconsistencies. (3 minute read)"
+    },
+    {
+      "id": "d0d930fec197",
+      "title": "AI review tools caught 30-71% of 100 planted paper errors",
+      "url": "https://arxiv.org/abs/2611.12820v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "Researchers planted 100 known errors across 10 open-access psychology papers and ran them through frontier models and two commercial AI review tools. The best single system caught 71 of 100 errors, the worst caught 30, and pooling every system's output caught 93. Seven errors, all omissions rather than insertions, were missed by every tool, and false-positive rates were not measured. (3 minute read)"
+    },
+    {
+      "id": "a5749ddac123",
+      "title": "A field guide to self-hosting LLM inference engines",
+      "url": "https://docs.modelplane.ai/guides/inference-guide",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "This vendor-written reference covers self-hosted inference engineering: Llama 3 70B needs ~320KB of KV cache per token, or 40GB for a 128K-token context, and a 320B MoE model needs ~320GB at FP8. It cites Orca's 36.9x throughput gain over static batching and vLLM cutting KV-cache waste from 60-80% to under 4%. The figures come from published sources, not independent testing. (3 minute read)"
+    },
+    {
+      "id": "b61856a48aba",
+      "title": "Deterministic guards beat LLM judges for agent-harness security",
+      "url": "https://arxiv.org/abs/2611.13960v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "A proposed reference-monitor architecture for agentic coding harnesses tested 252 fixtures, including 120 attack cases and 12 multi-step kill chains. An LLM-judge guard refused 98.3% of benign work at 142ms latency, while deterministic Ring-0 guards hit a 1.000 attack-block rate with zero false positives in 12.7 microseconds, about 11,200x faster. A simpler stateless baseline missed 4 of the 12 kill chains. (3 minute read)"
+    }
+  ]
+}

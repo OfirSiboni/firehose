@@ -1,76 +1,76 @@
-# Firehose — 2026-11-10
+# Firehose — 2026-11-11
 
-## [Claude Fable 5.2 and Mythos 5.2 launch with big benchmark jumps](https://www.anthropic.com/claude-fable-and-mythos-5-2)
+## [DeepMind's AlphaProof formally verifies Signal's crypto](https://deepmind.google/blog/introducing-alphaproof-code/)
 
 `headline` · hn
 
-Fable 5.2 hits 69.9% on FrontierSWE v2 versus Opus 5.5's 62.3%, and 74.2% on Humanity's Last Exam with tools versus 67.7%. Mythos 5.2, gated behind Cyber and Life Sciences verification, finds 10.2% more CVEs than Opus 5.5. Fable 5.2 is live now on AWS, Google Cloud, and Azure at $8/$40 per million tokens. (2 minute read)
+An agentic multi-LLM system generated over 6 million lines of Lean proof code in four weeks to formally verify Signal's compiled cryptographic protocol, flagging just 1% of the codebase for human review. Reintroducing two previously-fixed bugs into an isolated copy, the system produced machine-checked proofs that those versions were insecure. DeepMind is open-sourcing the verification artifacts. (3 minute read)
 
-## [Solo hacker ran 12 AI agents to breach Taipei's emergency dispatch](https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html)
+## [Fireworks AI breach exposed model weights, Notion chats](https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html)
 
 `headline` · blog
 
-A Taiwan-based attacker built 12 AI agents, 9 active, pairing commercial models like Grok for tooling with abliterated DeepSeek, GLM, and Qwen models for attacks. The operation pulled Taipei 119 dispatch records across 7 districts and exposed 2018-era patient ECG and ambulance video with no login required. Reused identity details and a leaked home IP let researchers trace him anyway. (4 minute read)
+Fireworks AI confirmed attackers who used stolen credentials in October reached its R&D environment via a third-party cloud provider, exposing incomplete model weights and datasets, plus billing data and API keys. Notion disabled its Insights feature and dropped open-weight models served through Fireworks, saying under 1% of workspaces were affected. The attackers reportedly resell stolen LLM access. (3 minute read)
 
-## [Codex backports security fixes for 149 Linux kernel CVEs](https://blog.trailofbits.com/2026/11/02/backporting-security-fixes-at-scale-with-codex/)
+## [CWE-bench v2 adds 100 security-fix tasks across 91 CWEs](https://huggingface.co/blog/cwe-bench)
 
 `discovery` · blog
 
-Trail of Bits built a Codex pipeline that finds missing kernel fixes, adapts them to older trees, and prepares validation evidence for human review. It has landed fixes for 149 CVEs into stable Linux kernels plus Fedora and Ubuntu packages, cutting backport time from days to about 30 minutes for simple cases. Debian 13 alone still carries 4,562 unfixed CVEs across 1,128 packages. (3 minute read)
+CWE-bench v2 expands to 100 tasks across 91 CWE categories, each requiring an agent to find and fix a real security weakness without breaking existing tests. Gemini 4 Argon leads at 67.8% pass@1, just ahead of Claude Opus 5.5's 67.3%, while DeepSeek V4.1 Flash matches 57.0% pass@1 at $0.04 per rollout versus Opus 5.5's $1.83. The gated dataset runs through Harbor. (3 minute read)
 
-## [Flaw in hosting provider's MCP server exposes 56 customer projects](https://therecord.media/cyberattack-germany-ai-mittwald)
+## [SGLang RCE breached NEAR AI agents inside a TEE](https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html)
 
-`headline` · blog
+`discovery` · blog
 
-A flaw in Mittwald's MCP server, which connects AI assistants to its mStudio hosting platform, let an attacker compromise 56 customer projects before detection. The intruder went unnoticed for 8 days after first probing the flaw in October during the PHP2Shell patch scramble. Mittwald says log timing suggests AI-paced actions but has offered no other evidence. (3 minute read)
+A remote-code-execution flaw in the open-source SGLang inference engine let an attacker run code on a NEAR AI server operating inside a trusted execution environment. Eighteen AI agents on an older, non-TEE deployment were accessed, and about 100 Private Chat users had account data downloaded; two exposed API keys were revoked. No CVE or public proof-of-concept has been disclosed. (3 minute read)
 
-## [One AI agent built a Rust kernel that boots Rocky Linux in 11 days](https://zenodo.org/records/23682548)
-
-`discovery` · hn
-
-A single persistent coding-agent task produced Ginux, a Rust x86-64 kernel with its own Linux compatibility layer, in 11 days. It boots via UEFI, runs unmodified Alpine binaries, and brings up a full Rocky Linux 10 userspace under systemd. The code is on GitHub, though it has had no independent security audit and is still flagged 'Concept'. (3 minute read)
-
-## [Open-source inference engine serves a 320B model on AWS Trainium2](https://github.com/RunanywhereAI/trnrt)
-
-`discovery` · github
-
-TrnRT is an open LLM inference engine built for AWS Trainium2, serving an OpenAI-compatible API from a single trn2.48xlarge instance. It runs GLM-5.3-Flash, a 320B-parameter MoE model with a 1M-token context, through fused decode kernels and a device-and-host prefix cache. The project has 385 stars and 315 commits, with other models planned. (2 minute read)
-
-## [Meta's Muse Ember matches Haiku's top score at a third the cost](https://research.meta.ai/blog/muse-ember)
+## [SPECTRA 4-bit quantization compresses LLMs 2.8-3.3x](https://neuracryption.com/research)
 
 `discovery` · hn
 
-Muse Ember, Meta's smallest model yet, scores 37.8% on AutomationBench-AA versus GPT-6 Luna's 20.2% and Claude Haiku 5.5's 13.9%. It matches Haiku's best agent-benchmark score at roughly a third of the price, with a 1M-token context and up to 512K output tokens. Pricing starts at $0.10 per million input tokens and $0.50 output for prompts under 200K tokens. (3 minute read)
+SPECTRA, a 4-bit weight-quantization framework with custom Triton kernels, compresses models 2.80x to 3.31x in VRAM without calibration data, shrinking DeepSeek-R1-Distill-1.5B from 3.31GB to 1.03GB while reaching 82.53 tokens/second with CUDA Graph. WikiText-2 perplexity rose only 0.90 points over FP16. The vendor's '3x, near-lossless, 50MB' marketing overstates the measured VRAM numbers, and the published code and tables contain some inconsistencies. (3 minute read)
 
-## [Asahi Linux moves to GPL to stop AI-laundered code theft](https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/)
+## [AI review tools caught 30-71% of 100 planted paper errors](https://arxiv.org/abs/2611.12820v1)
+
+`discovery` · arxiv
+
+Researchers planted 100 known errors across 10 open-access psychology papers and ran them through frontier models and two commercial AI review tools. The best single system caught 71 of 100 errors, the worst caught 30, and pooling every system's output caught 93. Seven errors, all omissions rather than insertions, were missed by every tool, and false-positive rates were not measured. (3 minute read)
+
+## [A field guide to self-hosting LLM inference engines](https://docs.modelplane.ai/guides/inference-guide)
 
 `discovery` · hn
 
-Asahi Linux is relicensing every repository from MIT to GPLv2-or-later after finding its code rewritten through LLMs to obscure its origin and republished without credit. The project already bans AI-generated contributions outright and compares the move to WINE's 2002 shift from MIT to LGPL to block proprietary forks. An OpenBSD developer objected that relicensing happened without consent from all prior contributors. (3 minute read)
+This vendor-written reference covers self-hosted inference engineering: Llama 3 70B needs ~320KB of KV cache per token, or 40GB for a 128K-token context, and a 320B MoE model needs ~320GB at FP8. It cites Orca's 36.9x throughput gain over static batching and vLLM cutting KV-cache waste from 60-80% to under 4%. The figures come from published sources, not independent testing. (3 minute read)
+
+## [Deterministic guards beat LLM judges for agent-harness security](https://arxiv.org/abs/2611.13960v1)
+
+`discovery` · arxiv
+
+A proposed reference-monitor architecture for agentic coding harnesses tested 252 fixtures, including 120 attack cases and 12 multi-step kill chains. An LLM-judge guard refused 98.3% of benign work at 142ms latency, while deterministic Ring-0 guards hit a 1.000 attack-block rate with zero false positives in 12.7 microseconds, about 11,200x faster. A simpler stateless baseline missed 4 of the 12 kill chains. (3 minute read)
 
 ## Also in the pool
 
+- [Google Gemini routes personal Drive files and emails to human annotators](https://github.com/thisisme6598/gemini_files/) — hn
+- [CoreWeave bond yield tops 16% as AI credit stress rises](https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html) — hn
+- [AI usage generates a fragile codebase](https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/) — hn
+- [Preparing our next security sprint to harden OpenAI](https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai) — blog
+- [A year after the 100% AI mandate nobody understands our code](https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/) — hn
+- [I ran 120B MoE models on my 32GB M1 Max using under 16 GB](https://mitln.github.io/moe-inference-engine/) — hn
+- [France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites](https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html) — blog
+- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — blog
+- [Qwen 3.8 27B on my laptop can interpret model weights, too](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/) — blog
+- [E-means: Outperforming k-means in one-tenth the epochs](https://e-means.github.io/) — hn
 - [DeepX claims inference up to 100B parameters at less than 5 W](https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/) — hn
-- [AI Vulnerability Finding](https://www.schneier.com/blog/archives/2026/11/ai-vulnerability-finding-2.html) — blog
-- [Apple capped engineers at a $200 daily AI budget](https://www.stork.ai/newsletter/2026-11-08-apple-capped-engineers-at-a-200-daily-ai-budget#story-1) — hn
-- [Folkbench/folkbench](https://github.com/Folkbench/folkbench) — github
-- [Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](https://arxiv.org/abs/2610.14162) — hn
+- [Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/) — blog
+- [AI Users have workdays up to 90 min longer than non-users](https://www.activtrak.com/news/productivity-lab-ai-users-longer-workdays/) — hn
+- [Scaling Git at OpenAI](https://openai.com/index/scaling-git-at-openai) — blog
+- [Transformers Model Integration Contracts](https://huggingface.co/blog/transformers-mic) — blog
+- [Agentic cheminformatics with Google Antigravity](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) — blog
+- [Palette: teaching a small model to build decks in your design language](https://huggingface.co/blog/ibm-research/palette-deck-building) — blog
+- [AIs Hacking the Law](https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html) — blog
 - [Control Room: A central system to track and stop model workloads across our research infrastructure](https://openai.com/index/control-room) — blog
-- [How I Fight AI Brain Fry](https://sergeykuhne.com/blog/fighting-ai-brain-fry) — hn
-- [Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It](https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c) — hn
-- [Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy](https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up) — hn
-- [I'm not a fan of Deno's security model (2024)](https://goldstein.lol/posts/deno-security/) — hn
-- [6 Hours of YouTube and 85 handtyped pages of notes on LLM Inference – Start here](https://github.com/samir-sarwar/samir-vllm) — hn
-- [370 Books in 20 months: South African author defends her use of AI](https://www.enca.com/lifestyle/370-books-20-months-sa-author-defends-her-use-ai) — hn
-- [ChatGPT Enterprise now available in AWS Marketplace](https://openai.com/index/chatgpt-enterprise-aws-marketplace) — blog
-- [The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.](https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/) — blog
-- [Qodo builds context into AI code review with Codex](https://openai.com/index/qodo-codex-plugin) — blog
-- [Speeding up planning decisions with AI](https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/) — blog
-- [The latest AI news we announced in October 2026](https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/) — blog
-- [llm-anthropic 0.31](https://simonwillison.net/2026/Nov/9/llm-anthropic/) — blog
-- [SEGA newsletter data breach exposes 2.2 million email addresses](https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/) — blog
-- [N-able takes cloud platform offline after 30+ "zero-days" published](https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/) — blog
+- [Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives](https://github.com/GoogleChrome/modern-web-guidance) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-10.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-11.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
