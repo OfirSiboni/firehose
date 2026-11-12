@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-12",
+  "sent": false,
+  "items": [
+    {
+      "id": "e23f07d99f92",
+      "title": "Microsoft's Lazarus backdoors AI agents by editing under 10 neurons",
+      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Microsoft implanted a trigger-activated backdoor in Nemotron-Terminal-8B, Qwen3.6-27B, and Gemma-4-31B-IT by editing fewer than 10 rarely-firing neurons, no retraining needed, reaching 51-99.5% success across models. A weight-diff detector catches 91.4% of edited checkpoints, but asking Claude Opus 5.5 or GPT-6 Astra to just inspect weights failed almost completely. Diff every deployed checkpoint against its declared base model before trusting it. (3 minute read)"
+    },
+    {
+      "id": "14caa111eec6",
+      "title": "35,578 public Grok-built apps leak passwords, hospital data",
+      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Claroc found 37,571 Grok-built apps, 35,578 of them open to anyone, with about 1 in 10 exposing real internal data across 30 organizations including six Fortune 500s and a timesheet app storing plaintext passwords. The cause was 'anyone with the link' sharing by default, guessable grok.me subdomains, and a Grok-generated membership check that approved users before verifying them. Audit what your team has published with AI app builders before someone else finds it. (4 minute read)"
+    },
+    {
+      "id": "f7afa1dd4ce8",
+      "title": "VulnCheck's audit of Anthropic's AI vuln-hunting falls short of the hype",
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Seven months into Project Glasswing, Anthropic is credited with 442 of the 93,450 CVEs published this year, but only 2 are known exploited, and just 217 of its 37,966 total findings are fixed. On curl, 19 of 34 published reports turned out not to be vulnerabilities at all. AI-assisted vuln-hunting is finding volume; maintainer triage capacity is now the bottleneck. (3 minute read)"
+    },
+    {
+      "id": "63cbf25606a5",
+      "title": "AntiFox AI pentesting tool linked to real AWS secret theft",
+      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Arctic Wolf ties intrusions that reached a production AWS secret via a successful GetSecretValue call to AntiFox, an autonomous multi-agent pentesting platform built on the ARTEX framework. In related intrusions, attackers deployed an ASPX web shell through an IIS worker process to harvest config files and credentials. Attribution lands on Alibaba Cloud infrastructure hosting AntiFox's interfaces, not yet a confirmed actor. (3 minute read)"
+    },
+    {
+      "id": "418d10f93d4e",
+      "title": "Huawei's MACaQ quantizer beats Unsloth on KL divergence",
+      "url": "https://github.com/huawei-csl/MACaQ",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "MACaQ, Huawei's Apache-2.0 quantization toolkit, quantizes a 122B model in 64 minutes on 32.5GB of memory and ships GGUF/vLLM/Diffusers checkpoints across text, image, and audio models. Its Qwen3.6-35B-A3B Q4_K_XL checkpoint hits a lower KL divergence to FP16 (0.0134) than Unsloth's UD-Q4_K_XL at the same size (0.0157), and on vLLM delivers 2.33x faster prefill and 2.58x faster decode. (4 minute read)"
+    },
+    {
+      "id": "7a69c1b89eda",
+      "title": "Apple's learned MIPS routing cuts RAG retrieval time up to 8x",
+      "url": "https://machinelearning.apple.com/research/faster-retrieval",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Apple's ICML 2026 paper trains small networks offline to route retrieval queries, replacing fixed centroid-based indexing. SupportNet reaches 95% recall 1.9x faster than standard routing, and KeyNet hits 99% recall with up to 8x less search time and 11x fewer keys scanned, tested on the 2.6M-passage Natural Questions set. No code has been released yet. (3 minute read)"
+    },
+    {
+      "id": "b22522d14a17",
+      "title": "BotPsy's 0.8B model beats a 2B rival on most tool-use benchmarks",
+      "url": "https://huggingface.co/blog/qvac/botpsy",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Tether AI Research's BotPsy, an 0.8B open-weight model built on Qwen3.5, scores 44.0 on BFCL v4 and 64.6 on ToolSandbox versus 37.7 and 41.2 for the larger Qwen3.5-2B-Think. It uses about a third as many reasoning tokens as its base model on GPQA Diamond and roughly halves its base's unsafe-response rate in red-teaming, to 21%. Weights are Apache 2.0, in bf16/Q8/Q4. (4 minute read)"
+    },
+    {
+      "id": "db09e2e8ec2b",
+      "title": "Reasoning models optimize success probability, not correctness",
+      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "This essay recasts chain-of-thought reasoning as pathfinding: models optimize the probability that some sampled path reaches a correct answer, not the correctness of any single path. That lens shows RL training with binary rewards is equivalent to rejection-sampling fine-tuning on a model's own past successes, and explains why chains-of-thought grow longer under training rather than being inherently better. It also locates reward hacking in the gap between an imperfect verifier and a sampler that finds shortcuts. (5 minute read)"
+    }
+  ]
+}
