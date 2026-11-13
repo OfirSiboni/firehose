@@ -1,76 +1,76 @@
-# Firehose — 2026-11-12
+# Firehose — 2026-11-13
 
-## [Microsoft's Lazarus backdoors AI agents by editing under 10 neurons](https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html)
+## [AWS Emulator: AI Agents Built a Full AWS Clone From Scratch](https://github.com/aws/aws-emulator)
 
-`headline` · blog
+`headline` · hn
 
-Microsoft implanted a trigger-activated backdoor in Nemotron-Terminal-8B, Qwen3.6-27B, and Gemma-4-31B-IT by editing fewer than 10 rarely-firing neurons, no retraining needed, reaching 51-99.5% success across models. A weight-diff detector catches 91.4% of edited checkpoints, but asking Claude Opus 5.5 or GPT-6 Astra to just inspect weights failed almost completely. Diff every deployed checkpoint against its declared base model before trusting it. (3 minute read)
+AI agents built a free, CC0-licensed AWS emulator covering 200+ services, generated from 400+ Smithy API models and validated against real AWS through agent-written fidelity tests. A four-month manual rebuild of AWS's internal replication engine took one agent about two hours once it had a spec and test harness to check against. Full commit history and known gaps are public on GitHub, so teams can point agents at the same harness today. (4 minute read)
 
-## [35,578 public Grok-built apps leak passwords, hospital data](https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html)
-
-`headline` · blog
-
-Claroc found 37,571 Grok-built apps, 35,578 of them open to anyone, with about 1 in 10 exposing real internal data across 30 organizations including six Fortune 500s and a timesheet app storing plaintext passwords. The cause was 'anyone with the link' sharing by default, guessable grok.me subdomains, and a Grok-generated membership check that approved users before verifying them. Audit what your team has published with AI app builders before someone else finds it. (4 minute read)
-
-## [VulnCheck's audit of Anthropic's AI vuln-hunting falls short of the hype](https://www.vulncheck.com/blog/anthropic-glasswing-november-update)
-
-`discovery` · hn
-
-Seven months into Project Glasswing, Anthropic is credited with 442 of the 93,450 CVEs published this year, but only 2 are known exploited, and just 217 of its 37,966 total findings are fixed. On curl, 19 of 34 published reports turned out not to be vulnerabilities at all. AI-assisted vuln-hunting is finding volume; maintainer triage capacity is now the bottleneck. (3 minute read)
-
-## [AntiFox AI pentesting tool linked to real AWS secret theft](https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html)
+## [Silent Lynx Ran an Open-Source AI Agent Against Central Asian Govts](https://therecord.media/kazakhstan-hackers-central-asia)
 
 `discovery` · blog
 
-Arctic Wolf ties intrusions that reached a production AWS secret via a successful GetSecretValue call to AntiFox, an autonomous multi-agent pentesting platform built on the ARTEX framework. In related intrusions, attackers deployed an ASPX web shell through an IIS worker process to harvest config files and credentials. Attribution lands on Alibaba Cloud infrastructure hosting AntiFox's interfaces, not yet a confirmed actor. (3 minute read)
+Silent Lynx ran Hermes, an open-source AI agent on DeepSeek set up as an 'offensive cybersecurity expert,' for recon and cleanup, controlled remotely via Telegram in Russian. Using one railway employee's credentials, it held access to Tajikistan's national network for two months, pulling Defense Ministry files and data from 100+ government agencies. CloudSEK found the campaign via a 12GB+ exposed server. (4 minute read)
 
-## [Huawei's MACaQ quantizer beats Unsloth on KL divergence](https://github.com/huawei-csl/MACaQ)
+## [Gemini 4 Hydrogen Runs Agentic Tasks 2.5x Faster](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/)
+
+`headline` · hn
+
+Gemini 4 Hydrogen finishes agentic tasks 2.5x faster than Gemini 3.8 Flash, with partners seeing 12-23% fewer tokens on complex workflows, at $1.50/$7.50 per million input/output tokens over a 1M-token context. It scores 57% on Terminal-Bench 4.1 versus 18.2% for 3.8 Flash, with agentic overreach down 81% and 2.3x more resistance to indirect prompt injection. It's rolling out now in Search, the Gemini app, and Antigravity. (4 minute read)
+
+## [Weight Fingerprints Show Chinese Models Trained on Blackwell GPUs](https://unemploymentlabs.com/checkpoint-forensics)
 
 `discovery` · hn
 
-MACaQ, Huawei's Apache-2.0 quantization toolkit, quantizes a 122B model in 64 minutes on 32.5GB of memory and ships GGUF/vLLM/Diffusers checkpoints across text, image, and audio models. Its Qwen3.6-35B-A3B Q4\_K\_XL checkpoint hits a lower KL divergence to FP16 (0.0134) than Unsloth's UD-Q4\_K\_XL at the same size (0.0157), and on vLLM delivers 2.33x faster prefill and 2.58x faster decode. (4 minute read)
+A forensic method recovers the PyTorch RNG seed and GPU thread count baked into a model's untouched initial weights, since thread count tracks a chip's SM count. Five 2026 Chinese models — DeepSeek-V4-Flash/Pro, Kimi K3/K3.1-Pro, MiniMax-M3, Ling-3.1-flash — match Blackwell's 148-152 SM layout at 49-1,385 sigma against an 8-sigma chance baseline, agreeing with all 24 disclosed-hardware cases checked. It can't show how the GPUs were obtained. (4 minute read)
 
-## [Apple's learned MIPS routing cuts RAG retrieval time up to 8x](https://machinelearning.apple.com/research/faster-retrieval)
+## [Gemini Decisions API Scores Options Instead of Generating Text](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/)
 
-`discovery` · hn
+`headline` · hn
 
-Apple's ICML 2026 paper trains small networks offline to route retrieval queries, replacing fixed centroid-based indexing. SupportNet reaches 95% recall 1.9x faster than standard routing, and KeyNet hits 99% recall with up to 8x less search time and 11x fewer keys scanned, tested on the 2.6M-passage Natural Questions set. No code has been released yet. (3 minute read)
+The Gemini Decisions API scores up to 1,000 yes/no, multiple-choice, or rubric questions against one multimodal input in a single pass, returning a 0-1 confidence score instead of generated text. It answers in 150-250ms at $0.10 per million input tokens and $0 for output — about 5x cheaper than Flash-Lite on Google's benchmark suite. Gemini Notebook reports 40% lower latency using it as a model router. (4 minute read)
 
-## [BotPsy's 0.8B model beats a 2B rival on most tool-use benchmarks](https://huggingface.co/blog/qvac/botpsy)
+## [LLMON Markup Cuts Prompt Injection by Up to 95% in Granite](https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite)
 
 `discovery` · blog
 
-Tether AI Research's BotPsy, an 0.8B open-weight model built on Qwen3.5, scores 44.0 on BFCL v4 and 64.6 on ToolSandbox versus 37.7 and 41.2 for the larger Qwen3.5-2B-Think. It uses about a third as many reasoning tokens as its base model on GPQA Diamond and roughly halves its base's unsafe-response rate in red-teaming, to 21%. Weights are Apache 2.0, in bf16/Q8/Q4. (4 minute read)
+LLMON tags prompt structure with reserved delimiter tokens so instructions stay bound to specific data instead of blending into free text. On the OPI benchmark it blocks 47% more injection attacks than the best frontier model tested and 95% more than the best open model, while matching base Granite 4.1 Instruct on general capability. Two preview models and the conversion toolkit are on GitHub now. (4 minute read)
 
-## [Reasoning models optimize success probability, not correctness](https://alexwang.ai/posts/reasoning-as-pathfinding/)
+## [Edge0-145B Runs Frontier-Level Coding Benchmarks on a Laptop](https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer)
 
 `discovery` · hn
 
-This essay recasts chain-of-thought reasoning as pathfinding: models optimize the probability that some sampled path reaches a correct answer, not the correctness of any single path. That lens shows RL training with binary rewards is equivalent to rejection-sampling fine-tuning on a model's own past successes, and explains why chains-of-thought grow longer under training rather than being inherently better. It also locates reward hacking in the gap between an imperfect verifier and a sampler that finds shortcuts. (5 minute read)
+Edge0-145B is a 145B-parameter MoE model with only 10B active per step, released with open weights and an inference framework that runs in 29GB of memory on a laptop GPU. It beats Qwen3.8-Flash-Next and DeepSeek-V4-Flash on DeepSWE 1.1 (64.6) and Terminal-Bench 2.1 (86.52), decoding at 80+ tokens/sec and prefilling at 1,100+ tokens/sec. It runs on Apple M-series chips and RTX 4090/5090 cards today. (4 minute read)
+
+## [OpenAI Launches GPT-6 Cyber for Cybersecurity Agents](https://openai.com/index/introducing-gpt-6-cyber)
+
+`headline` · blog
+
+OpenAI introduced GPT-6 Cyber, a model line built specifically for aligned cybersecurity agents. (1 minute read)
 
 ## Also in the pool
 
-- [Claude Whiteboards, Claude Sheets, and Claude Data](https://claude.com/resources/articles/sheets-whiteboards-data) — hn
-- [We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.](https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html) — blog
-- [Simreal-AI/Simreal-MLBench](https://github.com/Simreal-AI/Simreal-MLBench) — github
-- [AlphaGenome 2: Deciphering how cells read DNA to better understand disease](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/) — blog
-- [Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h](https://pietromiotti.com/latest/maya-site/?maya) — hn
-- [United Airlines bans AI agents from booking flights on behalf of travelers](https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/) — hn
-- [crow-hq/llm-wiki-v2](https://github.com/crow-hq/llm-wiki-v2) — github
-- [onehumanbeing/esp32-iphone-agent](https://github.com/onehumanbeing/esp32-iphone-agent) — github
-- [Gemini Robotics 2.5 accelerates real-world general dexterity](https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/) — blog
-- [Railway breach leads to $740,000 in fraudulent AI charges](https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/) — blog
-- [AIs Hacking the Law](https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html) — blog
-- [How Cisco defends at machine speed with OpenAI](https://openai.com/index/cisco-cyber) — blog
-- [aws-emulator](https://simonwillison.net/2026/Nov/11/aws-emulator/) — blog
-- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — blog
-- [Agentic cheminformatics with Google Antigravity](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) — blog
-- [Qwen 3.8 27B on my laptop can interpret model weights, too](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/) — blog
-- [Cogent and OpenAI build cyber defense factories for enterprises](https://openai.com/index/cogent-security) — blog
-- [Three People Arrested for AI-Enhanced Impersonation Fraud](https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html) — blog
-- [Token Pooling-Aware Training for Multi-Vector Embedding Models](https://huggingface.co/blog/token-pooling) — blog
-- [Using voltage glitching to unleash the A100 in my mining card](https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/) — hn
+- [A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.](https://huggingface.co/blog/phonon-tts) — blog
+- ["Humble Bundle just killed most of their security through vibecoding"](https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/) — hn
+- [My AI agents found an unmapped Maya site?](https://pietromiotti.com/latest/maya-site) — hn
+- [Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories](https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html) — blog
+- [Attention to Mamba: A Recipe for Cross-Architecture Distillation](https://machinelearning.apple.com/research/attention-mamba-distillation) — hn
+- [JioStar’s chief architect on AI discovery at 500M-user scale](https://openai.com/index/jiostar-vijay-seshadri) — blog
+- [186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers](https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html) — blog
+- [AWS Emulator and the engineer's job when agents write the code](https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html) — hn
+- [Critical RCE Vulnerability in Apache HTTP Server](https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability) — hn
+- [Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely](https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html) — blog
+- [Introducing Gemini 4 Hydrogen](https://deepmind.google/blog/introducing-gemini-4-hydrogen/) — blog
+- [Apache HTTP Server patches critical HTTP/2 remote code execution flaw](https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/) — blog
+- [GitHub Incident with Webhooks, Actions, etc.](https://www.githubstatus.com/incidents/dvy0t3mvh1lg) — hn
+- [Retirement Savings Are Fueling the AI Bubble](https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/) — hn
+- [Launch HN: Pomerado (YC F26) – Turn any website into an MCP for agents](https://pomerado.ai/) — hn
+- [A false smoke alarm almost drowned Jane Street's only NYC datacenter](https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/) — hn
+- [AI, activity, and outcomes in software engineering](https://cabird.com/talks/shipping-faster/) — hn
+- [Show HN: Klad, a paint app your coding agent can drive (source-available)](https://github.com/klad-app/klad) — hn
+- [Show HN: Yogurt – Free, private, open-source alternative to Granola](https://github.com/FrigadeHQ/yogurt) — hn
+- [100x Developers](https://jcarreras.es/posts/100x-developers/) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-12.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-13.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
