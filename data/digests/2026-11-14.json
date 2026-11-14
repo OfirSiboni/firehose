@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-14",
+  "sent": false,
+  "items": [
+    {
+      "id": "f0f23fdb08d7",
+      "title": "FBI: Artex AI Tool Automates Cyberattacks at Machine Speed",
+      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Censys found 1,600+ exposed Artex consoles, the AI-agent pentest tool the FBI says reaches privileged access in under 3 hours. It chains Claude, GPT, DeepSeek, GLM, Grok, and Kimi -- DeepSeek dominates attacker-controlled instances -- and Microsoft ties it to a Chinese state-backed ConnectWise supply-chain attack across finance, government, and energy. Security teams now have a concrete exposure count and timeline to defend against. (4 minute read)"
+    },
+    {
+      "id": "d096a8a420fb",
+      "title": "Weight Fingerprints Show Chinese Models Trained on Blackwell GPUs",
+      "url": "https://unemploymentlabs.com/checkpoint-forensics",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Seeded RNG weight init reveals which GPU class trained a model, and DeepSeek-V4, Kimi K3, MiniMax-M3, and Ling-3.1-flash all read as Blackwell (148-152 SMs), not Hopper. The signal holds at 49-1385 sigma against an ~8 sigma chance baseline across ~6e12 seed/layout combinations, and matched bit-for-bit on all 24 models with known hardware. It can't prove ownership or an export violation, but anyone can now check a model's training hardware from its published weights alone. (4 minute read)"
+    },
+    {
+      "id": "f980cc1f1e21",
+      "title": "Edge0-145B Runs Frontier-Class AI on a Single Laptop",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Edge0-145B is a 145B-parameter model (10B active) that runs on a MacBook Pro-class laptop at ~29GB peak memory, hitting 80+ tok/s decode and 1100+ tok/s prefill. Its six-benchmark mean of 72.8 beats Qwen3.8-Flash-Next's 71.7, despite Qwen needing roughly 70GB at 4-bit -- though the numbers are vendor-reported, not independently verified. Anyone with a high-end laptop can now run a frontier-tier model locally instead of renting GPU memory. (3 minute read)"
+    },
+    {
+      "id": "4a36f6adfa9f",
+      "title": "OpenAI Disbands Robotics Team as General Models Run Robots",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "OpenAI folded its dedicated robotics team into its main research org after a GPT-6 Astra-powered agent hit 74.8% on an Nvidia manipulation benchmark versus 51.0% for the best specialized robotics models. Applied and hardware teams move under Greg Brockman, research under CRO Mark Chen, amid a reported $10.9B quarterly operating loss and a planned funding round. General-purpose models, not dedicated robotics stacks, are now the default bet for controlling physical robots. (4 minute read)"
+    },
+    {
+      "id": "bc8f9eac1966",
+      "title": "OpenAI Partners With Hacktron to Pentest Its Systems",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "OpenAI is partnering with pentesting firm Hacktron to hunt vulnerabilities in its own systems. (1 minute read)"
+    },
+    {
+      "id": "53c56afbaf05",
+      "title": "OpenAI Launches GPT-6 Cyber for Aligned Security Agents",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "OpenAI introduced GPT-6 Cyber, a model built specifically for aligned cybersecurity agents. (1 minute read)"
+    },
+    {
+      "id": "40e78db6601d",
+      "title": "llama.cpp Hits v1.0.0 With a Stable Public API",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "llama.cpp's libllama and libggml both reach v1.0.0 with public headers and semver guarantees, after roughly 3.5 years of development. The project now supports 150+ model architectures plus mainstream speculative decoding, distributed through about 10 channels including Docker, Homebrew, conda-forge, and Winget. Developers can now build against a stable C API instead of tracking a moving target. (3 minute read)"
+    },
+    {
+      "id": "97d3c2a1ce2b",
+      "title": "CapLite Blocks Every Prompt-Injection Attack in AgentDojo Tests",
+      "url": "https://arxiv.org/abs/2611.17115v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "CapLite derives its write policy from tool schemas, with no model-written security artifact, and recorded zero successful attacks across 13,935 attacked AgentDojo episodes. It holds 29.0% utility under attack versus CaMeL's 27.2%, at about 18% of CaMeL's token cost, while prior defenses broke on 11-14 of 15 tested open models. Small open-weight agents can now get injection defense this strong without burning tokens on self-written policies. (4 minute read)"
+    }
+  ]
+}
