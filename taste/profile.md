@@ -32,7 +32,7 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-- Arxiv is now 0-for-22 across every sub-topic seen (serving/KV-cache,
+- Arxiv is 0-for-24 across every sub-topic seen (serving/KV-cache,
   agent-safety research, benchmark critique, local-vs-frontier economics,
   robotics scaling laws, cyber evals), including both explicit downvotes
   (KV-cache sink-suppression, prefill/decode quantization splitting) — and
@@ -54,22 +54,21 @@ Weighting notes:
   near-duplicate of an already-covered category.
 - A lab's flagship/first-of-generation release still gets accepted (Opus
   5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6 — 3-for-3), but repeat coverage of
-  that same release is now 0-for-19 ignored: point-release variants (GPT-6.1
+  that same release is 0-for-19 ignored: point-release variants (GPT-6.1
   Sol), tier rollouts of the same number (Sonnet 5.5 going free-tier
-  default, Claude Haiku 5.5's 90%-cheaper pricing), a relaunch posted twice
-  plus a later cyber-benchmark variant (Gemini 4 Argon, Gemini 4 Carbon), a
-  UI rollout (GPT-6's "Intelligent UI"), and how-tos or capability demos
-  bolted onto an already-covered release (Gemini 3.8 TTS, Opus 5.5 porting
-  the TypeScript compiler, Opus 5.5 flagging semiconductor candidates, a
-  usage guide for Opus 5.5, Livenerf tracking Opus 5.5, GPT-6's prompt-
-  caching discount, Asana's GPT-6.1 Sol cost story) — and, new this round,
-  the same open-weight flagship re-told from a different angle: Mistral
-  Large 4 was posted three separate ways (plain spec, "~1T params" framing,
-  cyber-benchmark framing) and Reflection's Beam twice, and every one of
-  those five postings was ignored even though an open-weight flagship is a
-  Mine always-surface topic. The rule is about the specific release being
-  re-covered, not just "same model family" — only the first telling of any
-  given release earns a slot.
+  default, Claude Haiku 5.5's 90%-cheaper pricing), the same relaunch posted
+  twice plus a later cyber-benchmark variant (Gemini 4 Argon x2, Gemini 4
+  Carbon), a UI rollout (GPT-6's "Intelligent UI"), how-tos or capability
+  demos bolted onto an already-covered release (Gemini 3.8 TTS, Opus 5.5
+  porting the TypeScript compiler, Opus 5.5 flagging semiconductor
+  candidates, a usage guide for Opus 5.5, Livenerf tracking Opus 5.5, GPT-6's
+  prompt-caching discount, Asana's GPT-6.1 Sol cost story), and the same
+  open-weight flagship re-told from a different angle (Mistral Large 4
+  posted three separate ways — plain spec, "~1T params" framing,
+  cyber-benchmark framing — and Reflection's Beam posted twice), even though
+  an open-weight flagship is a Mine always-surface topic. The rule is about
+  the specific release being re-covered, not just "same model family" —
+  only the first telling of any given release earns a slot.
 - Legal and regulatory process stories about AI companies — lawsuits, court
   rulings, arrests, agency orders, and political appointments/export-control
   moves with no technical result attached — are 0-for-9 ignored (the
@@ -82,10 +81,10 @@ Weighting notes:
   policy generally) as legal/political subject, not a technology result, so
   skip it even when the names or numbers are big.
 - Corporate-finance news about AI companies — funding rounds, M&A talk, IPO
-  filings, revenue disclosures — is 0-for-5 ignored this round (Typesafe
-  AI's $870M raise, Nvidia/Reflection AI acquisition talk, Anthropic's IPO
-  filing, Anthropic's Q3 revenue, OpenAI's revenue shortfall) regardless of
-  deal size. Extend Mine's sub-$50M funding exclusion: skip this category
+  filings, revenue disclosures — is 0-for-5 ignored (Typesafe AI's $870M
+  raise, Nvidia/Reflection AI acquisition talk, Anthropic's IPO filing,
+  Anthropic's Q3 revenue, OpenAI's revenue shortfall) regardless of deal
+  size. Extend Mine's sub-$50M funding exclusion: skip this category
   outright unless a genuine AI-systems result rides along with the dollar
   figure.
 - Agent-product/runtime/harness launches are 0-for-11 ignored (OpenAI's
