@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-15",
+  "sent": false,
+  "items": [
+    {
+      "id": "205541d416be",
+      "title": "Cursor breach let attackers ship a trojanized Claude Code extension",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "A leaked Fireworks AI key let attackers into Cursor's systems, who shipped a trojanized Claude Code extension (v2.1.312/2.1.313) for ~11 hours, attempting persistent SSH backdoors. Under 0.05% of users had traces exposed, under 0.01% had API credentials stolen, and up to 5,000 got the malicious build. Check your Claude Code extension version if installed via Cursor. (3 minute read)"
+    },
+    {
+      "id": "f0f23fdb08d7",
+      "title": "FBI: Artex AI pentesting tool automates attacks at 'machine speed'",
+      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Artex, an open-source LLM-driven pentesting framework, took some intrusions from initial targeting to privileged access in under 3 hours, the FBI warns. Censys found 1,600+ exposed Artex consoles, with DeepSeek Flash models dominating usage for their low cost and missing guardrails when prompts are framed as pentesting. Audit DeepSeek API usage against that pretext and check for exposed admin consoles. (4 minute read)"
+    },
+    {
+      "id": "40e78db6601d",
+      "title": "llama.cpp and ggml reach v1.0.0 after 3.5 years",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "llama.cpp and ggml both hit v1.0.0 after ~3.5 years, adopting semantic versioning so a major bump signals API/ABI breaks across the 150+ architectures it supports. ggml backends can now be compiled as dynamic libraries and loaded at runtime, with CI running on hardware-partner runners from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel. Pin to a major version if you build on it. (3 minute read)"
+    },
+    {
+      "id": "b26717d449a4",
+      "title": "Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its own chips",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Reports allege Nvidia funded AI startups specifically so they'd buy its own GPUs, engineering an artificial supply shortage rather than a genuine one. (1 minute read)"
+    },
+    {
+      "id": "52d9f85d2984",
+      "title": "Weight-space misfolding: when one model edits another's weights",
+      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "'Weight-space misfolding' research finds that editing another model's weights post-deployment isn't clean: a factual-substitution edit on Qwen2.5-1.5B worked 100/100 times but broke an unrelated capability, and a legal-refusal edit held on only 5 of 22 prompts. IWIBench's editing-skill reward rose from 0.2148 to 0.4250 in under five months. Track provenance before trusting a received weight patch. (3 minute read)"
+    },
+    {
+      "id": "8f2daa11c505",
+      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Splitting GLM-5.3 (753B total, 40B active, NVFP4) across two DGX GB300 stations over 400Gb RDMA with tensor parallelism hits 607.8 tok/s at concurrency 16, using speculative decoding and FP8 KV cache. Per-user throughput falls from 115.3 tok/s at concurrency 1 to 13.0 tok/s at concurrency 32 as requests share the cache. Multi-node serving now handles models too large for one GPU. (3 minute read)"
+    },
+    {
+      "id": "0364257ac690",
+      "title": "Lovable apps expose passport details and 200K private messages",
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Security researchers found Lovable-built apps publicly exposing passport details and more than 200,000 private messages, echoing the pattern of other AI app-builders shipping no-auth-by-default apps that leak sensitive data. (1 minute read)"
+    },
+    {
+      "id": "ea0776201252",
+      "title": "600 experiments pinpoint where JEPA world-model planning breaks",
+      "url": "https://haddyalchaer.com/jepa",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "600 experiments on a JEPA world model found that exact simulator physics barely improves long-horizon planning over the learned predictor (78% vs 77% success), so the model isn't the bottleneck. Adding a subgoal every 25 steps raises 75-step success from 22% to 80%, beating flat exact-physics planning's 42%. A harder benchmark with cross-demonstration goals caps the best planner at 56% success. (3 minute read)"
+    }
+  ]
+}

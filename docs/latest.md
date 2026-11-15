@@ -1,76 +1,76 @@
-# Firehose — 2026-11-12
+# Firehose — 2026-11-15
 
-## [Microsoft's Lazarus backdoors AI agents by editing under 10 neurons](https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html)
-
-`headline` · blog
-
-Microsoft implanted a trigger-activated backdoor in Nemotron-Terminal-8B, Qwen3.6-27B, and Gemma-4-31B-IT by editing fewer than 10 rarely-firing neurons, no retraining needed, reaching 51-99.5% success across models. A weight-diff detector catches 91.4% of edited checkpoints, but asking Claude Opus 5.5 or GPT-6 Astra to just inspect weights failed almost completely. Diff every deployed checkpoint against its declared base model before trusting it. (3 minute read)
-
-## [35,578 public Grok-built apps leak passwords, hospital data](https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html)
+## [Cursor breach let attackers ship a trojanized Claude Code extension](https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/)
 
 `headline` · blog
 
-Claroc found 37,571 Grok-built apps, 35,578 of them open to anyone, with about 1 in 10 exposing real internal data across 30 organizations including six Fortune 500s and a timesheet app storing plaintext passwords. The cause was 'anyone with the link' sharing by default, guessable grok.me subdomains, and a Grok-generated membership check that approved users before verifying them. Audit what your team has published with AI app builders before someone else finds it. (4 minute read)
+A leaked Fireworks AI key let attackers into Cursor's systems, who shipped a trojanized Claude Code extension (v2.1.312/2.1.313) for ~11 hours, attempting persistent SSH backdoors. Under 0.05% of users had traces exposed, under 0.01% had API credentials stolen, and up to 5,000 got the malicious build. Check your Claude Code extension version if installed via Cursor. (3 minute read)
 
-## [VulnCheck's audit of Anthropic's AI vuln-hunting falls short of the hype](https://www.vulncheck.com/blog/anthropic-glasswing-november-update)
+## [FBI: Artex AI pentesting tool automates attacks at 'machine speed'](https://therecord.media/artex-ai-tool-fbi-flash-alert)
 
-`discovery` · hn
+`headline` · blog
 
-Seven months into Project Glasswing, Anthropic is credited with 442 of the 93,450 CVEs published this year, but only 2 are known exploited, and just 217 of its 37,966 total findings are fixed. On curl, 19 of 34 published reports turned out not to be vulnerabilities at all. AI-assisted vuln-hunting is finding volume; maintainer triage capacity is now the bottleneck. (3 minute read)
+Artex, an open-source LLM-driven pentesting framework, took some intrusions from initial targeting to privileged access in under 3 hours, the FBI warns. Censys found 1,600+ exposed Artex consoles, with DeepSeek Flash models dominating usage for their low cost and missing guardrails when prompts are framed as pentesting. Audit DeepSeek API usage against that pretext and check for exposed admin consoles. (4 minute read)
 
-## [AntiFox AI pentesting tool linked to real AWS secret theft](https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html)
+## [llama.cpp and ggml reach v1.0.0 after 3.5 years](https://huggingface.co/blog/ggml-org/llama-cpp-v1)
 
-`discovery` · blog
+`headline` · blog
 
-Arctic Wolf ties intrusions that reached a production AWS secret via a successful GetSecretValue call to AntiFox, an autonomous multi-agent pentesting platform built on the ARTEX framework. In related intrusions, attackers deployed an ASPX web shell through an IIS worker process to harvest config files and credentials. Attribution lands on Alibaba Cloud infrastructure hosting AntiFox's interfaces, not yet a confirmed actor. (3 minute read)
+llama.cpp and ggml both hit v1.0.0 after ~3.5 years, adopting semantic versioning so a major bump signals API/ABI breaks across the 150+ architectures it supports. ggml backends can now be compiled as dynamic libraries and loaded at runtime, with CI running on hardware-partner runners from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel. Pin to a major version if you build on it. (3 minute read)
 
-## [Huawei's MACaQ quantizer beats Unsloth on KL divergence](https://github.com/huawei-csl/MACaQ)
+## [Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its own chips](https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus)
 
-`discovery` · hn
+`headline` · hn
 
-MACaQ, Huawei's Apache-2.0 quantization toolkit, quantizes a 122B model in 64 minutes on 32.5GB of memory and ships GGUF/vLLM/Diffusers checkpoints across text, image, and audio models. Its Qwen3.6-35B-A3B Q4\_K\_XL checkpoint hits a lower KL divergence to FP16 (0.0134) than Unsloth's UD-Q4\_K\_XL at the same size (0.0157), and on vLLM delivers 2.33x faster prefill and 2.58x faster decode. (4 minute read)
+Reports allege Nvidia funded AI startups specifically so they'd buy its own GPUs, engineering an artificial supply shortage rather than a genuine one. (1 minute read)
 
-## [Apple's learned MIPS routing cuts RAG retrieval time up to 8x](https://machinelearning.apple.com/research/faster-retrieval)
-
-`discovery` · hn
-
-Apple's ICML 2026 paper trains small networks offline to route retrieval queries, replacing fixed centroid-based indexing. SupportNet reaches 95% recall 1.9x faster than standard routing, and KeyNet hits 99% recall with up to 8x less search time and 11x fewer keys scanned, tested on the 2.6M-passage Natural Questions set. No code has been released yet. (3 minute read)
-
-## [BotPsy's 0.8B model beats a 2B rival on most tool-use benchmarks](https://huggingface.co/blog/qvac/botpsy)
-
-`discovery` · blog
-
-Tether AI Research's BotPsy, an 0.8B open-weight model built on Qwen3.5, scores 44.0 on BFCL v4 and 64.6 on ToolSandbox versus 37.7 and 41.2 for the larger Qwen3.5-2B-Think. It uses about a third as many reasoning tokens as its base model on GPQA Diamond and roughly halves its base's unsafe-response rate in red-teaming, to 21%. Weights are Apache 2.0, in bf16/Q8/Q4. (4 minute read)
-
-## [Reasoning models optimize success probability, not correctness](https://alexwang.ai/posts/reasoning-as-pathfinding/)
+## [Weight-space misfolding: when one model edits another's weights](https://www.alphaxiv.org/abs/2611.weight-space-misfolding)
 
 `discovery` · hn
 
-This essay recasts chain-of-thought reasoning as pathfinding: models optimize the probability that some sampled path reaches a correct answer, not the correctness of any single path. That lens shows RL training with binary rewards is equivalent to rejection-sampling fine-tuning on a model's own past successes, and explains why chains-of-thought grow longer under training rather than being inherently better. It also locates reward hacking in the gap between an imperfect verifier and a sampler that finds shortcuts. (5 minute read)
+'Weight-space misfolding' research finds that editing another model's weights post-deployment isn't clean: a factual-substitution edit on Qwen2.5-1.5B worked 100/100 times but broke an unrelated capability, and a legal-refusal edit held on only 5 of 22 prompts. IWIBench's editing-skill reward rose from 0.2148 to 0.4250 in under five months. Track provenance before trusting a received weight patch. (3 minute read)
+
+## [Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)
+
+`discovery` · hn
+
+Splitting GLM-5.3 (753B total, 40B active, NVFP4) across two DGX GB300 stations over 400Gb RDMA with tensor parallelism hits 607.8 tok/s at concurrency 16, using speculative decoding and FP8 KV cache. Per-user throughput falls from 115.3 tok/s at concurrency 1 to 13.0 tok/s at concurrency 32 as requests share the cache. Multi-node serving now handles models too large for one GPU. (3 minute read)
+
+## [Lovable apps expose passport details and 200K private messages](https://www.crissyfield.de/research/lovable-en/)
+
+`discovery` · hn
+
+Security researchers found Lovable-built apps publicly exposing passport details and more than 200,000 private messages, echoing the pattern of other AI app-builders shipping no-auth-by-default apps that leak sensitive data. (1 minute read)
+
+## [600 experiments pinpoint where JEPA world-model planning breaks](https://haddyalchaer.com/jepa)
+
+`discovery` · hn
+
+600 experiments on a JEPA world model found that exact simulator physics barely improves long-horizon planning over the learned predictor (78% vs 77% success), so the model isn't the bottleneck. Adding a subgoal every 25 steps raises 75-step success from 22% to 80%, beating flat exact-physics planning's 42%. A harder benchmark with cross-demonstration goals caps the best planner at 56% success. (3 minute read)
 
 ## Also in the pool
 
-- [Claude Whiteboards, Claude Sheets, and Claude Data](https://claude.com/resources/articles/sheets-whiteboards-data) — hn
-- [We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.](https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html) — blog
-- [Simreal-AI/Simreal-MLBench](https://github.com/Simreal-AI/Simreal-MLBench) — github
-- [AlphaGenome 2: Deciphering how cells read DNA to better understand disease](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/) — blog
-- [Google SWE points 48 AI agents at NASA Lidar, finds unmapped Maya pyramid in 72h](https://pietromiotti.com/latest/maya-site/?maya) — hn
-- [United Airlines bans AI agents from booking flights on behalf of travelers](https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/) — hn
-- [crow-hq/llm-wiki-v2](https://github.com/crow-hq/llm-wiki-v2) — github
-- [onehumanbeing/esp32-iphone-agent](https://github.com/onehumanbeing/esp32-iphone-agent) — github
-- [Gemini Robotics 2.5 accelerates real-world general dexterity](https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/) — blog
-- [Railway breach leads to $740,000 in fraudulent AI charges](https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/) — blog
-- [AIs Hacking the Law](https://www.schneier.com/blog/archives/2026/11/ais-hacking-the-law.html) — blog
-- [How Cisco defends at machine speed with OpenAI](https://openai.com/index/cisco-cyber) — blog
-- [aws-emulator](https://simonwillison.net/2026/Nov/11/aws-emulator/) — blog
-- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — blog
-- [Agentic cheminformatics with Google Antigravity](https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/) — blog
-- [Qwen 3.8 27B on my laptop can interpret model weights, too](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/) — blog
-- [Cogent and OpenAI build cyber defense factories for enterprises](https://openai.com/index/cogent-security) — blog
-- [Three People Arrested for AI-Enhanced Impersonation Fraud](https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html) — blog
-- [Token Pooling-Aware Training for Multi-Vector Embedding Models](https://huggingface.co/blog/token-pooling) — blog
-- [Using voltage glitching to unleash the A100 in my mining card](https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/) — hn
+- [Partnering with Hacktron to find vulnerabilities in OpenAI’s systems](https://openai.com/index/partnering-with-hacktron) — blog
+- [Advancing science and engineering with Antigravity's /teamwork](https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/) — hn
+- [OpenAI disbands its robotics team as its general models start running robots](https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/) — hn
+- [AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems](https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths) — hn
+- [FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls](https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html) — blog
+- [Ggml v1.0.0](https://github.com/ggml-org/ggml/releases/tag/v1.0.0) — hn
+- [Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update](https://unsloth.ai/docs/models/qwen3.8) — hn
+- [Perplexity Decider v1.3: Training, eval, and use cases](https://www.perplexity.ai/hub/blog/perplexity-decider) — hn
+- [PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE](https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html) — blog
+- [Nvidia deliberately kept GPU prices high through circular financing deals](https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html) — hn
+- [Introducing ChatGPT Wallet](https://openai.com/index/introducing-chatgpt-wallet) — blog
+- [XYBench: Helping with the problem behind the question](https://huggingface.co/blog/allenai/xybench) — blog
+- [Egyptian and Nigerian English join the Open ASR Leaderboard](https://huggingface.co/blog/open-asr-leaderboard-liva) — blog
+- [DeepSeek Ultrafast](https://github.com/basetenlabs/deepseek-ultrafast) — hn
+- [Show HN: DeepSeek V3 in ~200 lines of pure Jax](https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax) — hn
+- [New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs](https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html) — blog
+- [North Korean hackers used fake video calls in $400M crypto hack, says FBI](https://www.bbc.com/news/articles/cqdj1ellpd70o) — hn
+- [Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips](https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/) — blog
+- [Claude Meetings](https://claude.com/resources/articles/claude-meetings) — hn
+- [US disrupts North Korean campaign behind $400 million crypto theft](https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-12.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-15.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

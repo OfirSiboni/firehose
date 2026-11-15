@@ -1,125 +1,111 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-15",
   "stories": [
     {
-      "id": "e23f07d99f92",
-      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
-      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+      "id": "205541d416be",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "title": "Cursor confirms security breach led to malicious Claude Code extension",
       "source": "blog",
       "tier": "headline",
-      "reason": "Microsoft's 'Lazarus' shows an AI model can be backdoored by editing <10 rarely-used neurons, no retraining or fine-tuning data needed; concrete repro and a weight-comparison detector with real precision/recall numbers. Exactly the model-supply-chain-compromise angle Mine always-surfaces, with a working PoC.",
+      "reason": "Real, confirmed, high-detail supply-chain compromise: attackers pivoted from a leaked Fireworks AI key through Cursor's systems to ship a trojanized Claude Code VS Code extension for ~11 hours. Concrete scope numbers, part of the broader 'Black October' AI-platform breach wave.",
       "key_facts": [
-        "Microsoft's 'Lazarus' backdoors a model by editing fewer than 10 rarely-firing neurons, no retraining needed",
-        "Nemotron-Terminal-8B: 7 of >12,000 last-layer neurons edited, trigger command appeared in >=98.8% of triggered sessions, 0% of clean sessions",
-        "Qwen3.6-27B and Gemma-4-31B-IT: 51-99.5% success depending on setup; Qwen needed only 6 neurons",
-        "Terminal-Bench pass rate fell 46.59% -> 42.05% on the backdoored model; AIME math scores mostly preserved",
-        "A weight-comparison detector flagged 91.4% of edited checkpoints with 9.7% false positives (small test set: 35 edited/31 clean)",
-        "Asking Claude Opus 5.5 or GPT-6 Astra to just inspect checkpoints performed poorly as a detection method",
-        "Microsoft credits Claude Code (Opus 4.5) with helping find the core idea; mitigation is weight-level checkpoint diffing vs. base model"
+        "Attackers used a leaked Fireworks AI access key to read a Cursor-Fireworks data-sharing bucket of historical coding-agent traces (unredacted creds in some)",
+        "Malicious Claude Code extension versions 2.1.312/2.1.313 live ~11 hours, tried to install persistent SSH backdoors (buggy, often failed)",
+        "<0.05% of users had traces exposed, <0.01% had API creds compromised, up to 5,000 users may have received the malicious build",
+        "Part of a wider 'Black October' wave of breaches across AI dev platforms (Fireworks, Railway, Notion)"
       ]
     },
     {
-      "id": "14caa111eec6",
-      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "id": "f0f23fdb08d7",
+      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+      "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
       "source": "blog",
       "tier": "headline",
-      "reason": "35,578 publicly-open Grok-built apps found, ~1 in 10 leaking real internal data (hospital employee lists, ICU briefing, plaintext passwords) from 30+ organizations including 6 Fortune 500s. Concrete numbers, real-world harm, and a textbook AI-vibe-coding security failure — exactly the shadow-IT risk this newsletter tracks.",
+      "reason": "FBI flash alert on Artex, an open-source LLM-driven pentest framework abused for state-speed intrusions (targeting->privileged access in <3hrs in some cases), 1,600+ exposed public instances found, DeepSeek Flash models dominating usage for lack of guardrails. This is the AI-driven-attack-automation story the taste profile is built around.",
       "key_facts": [
-        "Claroc found 37,571 Grok-built apps; 35,578 open to anyone without login",
-        "~1 in 10 open apps contained internal business or personal data; ~2% rated high/critical severity",
-        "Affected: 24 apps built by X/xAI staff, plus 30 other orgs (26 with 1,000+ employees, 6 Fortune 500) across construction, energy, healthcare, defense",
-        "Exposed data included a hospital's 3,500+ employee directory, an ICU patient briefing, and a timesheet app storing plaintext passwords",
-        "Root causes: 'Anyone with the link' as the default share setting, guessable/searchable grok.me subdomains via passive DNS, and a broken Grok-generated membership check (new users auto-approved before the check ran)",
-        "ChatGPT's app builder defaulted to private in the same test, showing defaults vary sharply by vendor"
+        "Artex: open-source AI pentesting platform, turns any LLM into an autonomous intrusion agent; released by 'Autumn-27' in August, later abused and taken down but persists via forks/commercial version",
+        "FBI: some intrusions went from initial targeting to privileged access in under 3 hours",
+        "Censys found 1,600+ publicly exposed Artex console instances (actual deployments likely higher)",
+        "FBI says DeepSeek Flash models dominate usage for capability, low cost, and lack of guardrails when framed as pentesting",
+        "Targets: financial services, government, defense, semiconductors, energy, healthcare, telecom, legal"
       ]
     },
     {
-      "id": "f7afa1dd4ce8",
-      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-      "title": "Tracking Anthropic-discovered vulnerabilities",
+      "id": "52d9f85d2984",
+      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
+      "title": "Weight Space Misfolding",
       "source": "hn",
       "tier": "discovery",
-      "reason": "VulnCheck's critical seven-month audit of Anthropic's Project Glasswing: AI-assisted vuln discovery at scale, but with a skeptical, numbers-first take on how much of it is actually useful. Verifiable, numeric, and distinct from the usual launch-day hype pieces.",
+      "reason": "Genuine new AI x cyber research: a threat model and taxonomy for one model maliciously editing another's weights post-deployment (factual substitution, capability denial, selective omission), with controlled probes and real numbers showing current edits aren't cleanly localized, plus a proposed inspection framework. Directly adjacent to, but distinct from, the Lazarus neuron-backdoor story already covered.",
       "key_facts": [
-        "Anthropic's Project Glasswing (launched Apr 7) is attributed 442 CVEs, ~0.5% of 93,450 CVEs published this year",
-        "Only 2 of those 442 CVEs are known exploited in the wild",
-        "Glasswing's internal ledger lists 37,966 findings; only 7,349 are public and just 217 are fixed",
-        "Claimed true-positive rate rose from 90.8% to 94.2%, but duplicates/withdrawals are rising too",
-        "On curl: 19 of 34 published reports were judged not-vulnerabilities, 6 confirmed low severity, 9 still pending",
-        "Findings are model-generated with no human review before reaching maintainers, per Anthropic"
+        "Defines 'weight-space misfolding': unauthorized weight edits by another model that violate the target's legitimate deployment constraints",
+        "Qwen2.5-1.5B-Instruct probes via IWIBench editor: factual substitution succeeded 100/100 but broke an unrelated capability (couldn't say 'Sydney' anymore)",
+        "Legal-refusal edit worked on only 5/22 held-out prompts and broke an unrelated refusal; supplier-omission edit worked 1/22",
+        "IWIBench mean editing-skill reward rose 0.2148 -> 0.4250 in under 5 months; no demonstrated self-propagation or air-gap crossing",
+        "Proposes Deep Patch Inspection and Broad Weight Inspection as partial defenses, neither a general guarantee"
       ]
     },
     {
-      "id": "63cbf25606a5",
-      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "id": "40e78db6601d",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
       "source": "blog",
-      "tier": "discovery",
-      "reason": "An AI pentesting agent (AntiFox, built on the ARTEX framework) is now tied to real intrusions that reached production AWS secrets via Arctic Wolf's incident telemetry — not a lab demo, an actual attack chain. Matches the AI-red-teaming/offense-tooling line Mine is built around, with primary-source attribution caveats noted.",
+      "tier": "headline",
+      "reason": "llama.cpp/ggml hit v1.0.0 after ~3.5 years — first real API/ABI stability guarantee for the backbone of the local-AI ecosystem (150+ architectures, used by countless downstream apps). A genuine infra milestone, not a feature drop.",
       "key_facts": [
-        "AntiFox is an autonomous AI pentesting platform (planner/worker multi-agent), built on the ARTEX framework, 251 forks / 474 stars at time of writing",
-        "Arctic Wolf Labs ties intrusions to it: ASPX web shell via IIS worker process, then config/log harvesting and an attempted internal DB connection using a leaked credential",
-        "Separately, attackers with a valid AWS credential used IAM to probe dozens of services; most calls were AccessDenied, but a GetSecretValue against a production secret succeeded",
-        "Attribution is to infrastructure only: Alibaba Cloud systems hosting AntiFox interfaces were linked to the malicious activity, not a confirmed threat actor or the tool's developers"
+        "llama.cpp and ggml both reach v1.0.0; semantic versioning now signals API/ABI breaks to downstream devs",
+        "Project is ~3.5 years old; supports 150+ model architectures and mainstream speculative decoding",
+        "ggml backends can now be compiled as dynamic libs loaded at runtime",
+        "CI scaled via HF Buckets/Jobs with hardware-partner runners (NVIDIA, AMD, Qualcomm, Arm, IBM, Intel)"
       ]
     },
     {
-      "id": "418d10f93d4e",
-      "url": "https://github.com/huawei-csl/MACaQ",
-      "title": "Huawei releases MACaQ, its internal quantizer for local inference",
+      "id": "8f2daa11c505",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Huawei's MACaQ quantization toolkit ships running code (Apache-2.0) with concrete perplexity/speed numbers across multiple backends (llama.cpp, vLLM, Diffusers) and model families. Running code beating a described idea — exactly what Mine weights highest for inference infra.",
+      "reason": "Concrete serving benchmark on real hardware: 753B MoE (40B active) split across two DGX GB300s over 400Gb RDMA, hits 607.8 tok/s at concurrency 16 using TP=2, speculative decoding, FP8 KV cache. Exactly the inference-infra substance this feed is tuned for.",
       "key_facts": [
-        "MACaQ (Model Agnostic Calibrated Quantization), Apache-2.0, 129 stars/6 forks on GitHub",
-        "Produces W4A4 or weight-only checkpoints, plus 2/3/4-bit GGUF for llama.cpp; backends: Diffusers, llama.cpp, vLLM, PyTorch",
-        "A 122B-parameter model quantized in 64 minutes using 32.5GB device memory",
-        "Qwen3.6-35B-A3B MACaQ-R Q4_K_XL: 22.36GB, KL divergence 0.0134 to FP16 vs. 0.0157 for Unsloth UD-Q4_K_XL at the same size",
-        "Qwen3.8-27B on vLLM: perplexity 2.8994 vs. 2.8463 BF16, with 2.33x prefill / 2.58x decode speedups"
+        "GLM-5.3 NVFP4, 753B total/40B active params, ~464GB checkpoint",
+        "Two DGX GB300 (252GB HBM3e each) linked via ConnectX-8 RDMA at 400Gb/s, TP=2",
+        "607.8 tok/s aggregate at concurrency 16 (peak); 107.4 tok/s at concurrency 1",
+        "Per-user throughput falls from 115.3 tok/s (c=1) to 13.0 tok/s (c=32)",
+        "Uses 4-token speculative decoding, FP8 KV cache, prefix caching, FlashInfer CUTLASS MoE backend"
       ]
     },
     {
-      "id": "7a69c1b89eda",
-      "url": "https://machinelearning.apple.com/research/faster-retrieval",
-      "title": "Faster Retrieval for Better, More Efficient RAG",
+      "id": "0364257ac690",
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "title": "Lovable apps expose passport details and more than 200K private messages",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Apple ML's official research on learned routing/retrieval for MIPS search (ICML 2026 paper, 'amortized MIPS') with concrete, large speedups over standard FAISS-style centroid routing on a real-scale benchmark. Primary source, numeric, inference-infra relevant.",
-      "key_facts": [
-        "Apple ML research, ICML 2026: 'Amortizing Maximum Inner Product Search with Learned Support Functions'",
-        "SupportNet: reaches 95% routing recall ~1.9x faster than centroid routing (1.74ms vs 3.36ms) on ~2.6M-passage Natural Questions",
-        "KeyNet: reaches 99% recall with up to ~8x less time (0.23ms vs 1.8ms raw) and up to ~11x fewer keys scanned for the same recall",
-        "No code/repo mentioned on the page; only links to the paper, FAISS, and the Natural Questions dataset"
-      ]
+      "reason": "Not fetched, but title and scale (599 pts, passport details + 200K private messages) match the exact pattern of the already-covered 'Grok apps leak passwords/hospital data' story — AI app-builder (Lovable) shipping no-auth-by-default apps that leak sensitive data at scale. Strong fit for the AI x cyber line even unread.",
+      "key_facts": []
     },
     {
-      "id": "b22522d14a17",
-      "url": "https://huggingface.co/blog/qvac/botpsy",
-      "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "BotPsy is a real sub-billion-parameter open-weight model release with a full benchmark suite against its base model and a larger sibling, exactly Mine's 'open-weight model release with published weights' plus 'how models are served' lane, with hard numbers.",
-      "key_facts": [
-        "BotPsy: 0.8B params, Tether AI Research, built on Qwen3.5-0.8B for on-device function-calling/agentic tasks; open weights, Apache 2.0",
-        "Post-trained via SFT, on-policy distillation from three Qwen3.5-4B teachers, and two RL rounds; ships bf16/Q8/Q4 safetensors+GGUF",
-        "Tool-use benchmarks vs. Qwen3.5-0.8B base / Qwen3.5-2B-Think: BFCL v4 44.0/23.4/37.7, ACEBench 58.7/30.1/55.4, tau-bench 51.5/23.2/46.5, ToolSandbox 64.6/30.5/41.2",
-        "Uses ~3x fewer reasoning tokens than its base on GPQA Diamond (3,690 vs 11,563 tokens); unsafe-response rate 21% vs 36% for the base in automated red-teaming"
-      ]
-    },
-    {
-      "id": "db09e2e8ec2b",
-      "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/",
-      "title": "What objective is reasoning solving?",
+      "id": "ea0776201252",
+      "url": "https://haddyalchaer.com/jepa",
+      "title": "After 600 experiments, here's what I discovered about JEPA world models",
       "source": "hn",
       "tier": "discovery",
-      "reason": "A genuinely novel conceptual framing of LLM reasoning as pathfinding/success-probability optimization, deriving known RL-training behaviors (why CoT grows longer, why extra thinking plateaus, reward hacking) from one lens. Essay, not a paper, so the bare-arxiv override doesn't apply; reasonable HN traction (149 pts) without being over-saturated.",
+      "reason": "Deep, concrete personal research dive: 600 experiments isolating exactly where JEPA world-model planning fails (hierarchical subgoals, latent-memory graphs, pusher-aware scoring), with honest negative results and a harder benchmark the author built. Low-saturation, high-signal — the discovery tier's reason for existing.",
       "key_facts": [
-        "Argues reasoning models optimize success probability over the distribution of sampled chains-of-thought, not correctness of any single path",
-        "Shows the REINFORCE policy-gradient update with binary reward is equivalent to rejection-sampling fine-tuning on the model's own successful paths, scaled by success rate",
-        "Explains why CoT length grows under RL training (successful paths tend to be longer) and why extra 'thinking' helps then plateaus (trained-in habit, not inherent value)",
-        "Frames reward hacking as arising from both an imperfect verifier and a sampler finding shortcut regions, worsening with more RL scale"
+        "LeWM (JEPA world model) on Push-T: swapping in exact simulator physics barely changes long-horizon success (78% vs 77%) — the learned predictor isn't the bottleneck",
+        "Hierarchical planning (subgoal every 25 steps) raises 75-step success from 22% to 80%, beating exact-physics flat planning (42%)",
+        "Latent memory graph w/ jump cost reaches 85% success, matching expert-subgoal planner",
+        "Pusher-aware goal scoring doubles hardest-test success from 11% to 23%",
+        "Author's new harder benchmark (250 episodes, cross-demo start/goal) caps best planner at 56% success"
       ]
+    },
+    {
+      "id": "b26717d449a4",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Extremely high-engagement (1025 pts) story directly about AI-compute economics — Nvidia allegedly funding AI startups specifically to buy its own GPUs, engineering scarcity. Already-seen territory at this point level, but headline score isn't penalized for saturation per Mine.",
+      "key_facts": []
     }
   ]
 }

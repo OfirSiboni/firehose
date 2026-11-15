@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-15</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-15</h1>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/">Cursor breach let attackers ship a trojanized Claude Code extension</a></h2>
+<p>A leaked Fireworks AI key let attackers into Cursor&#x27;s systems, who shipped a trojanized Claude Code extension (v2.1.312/2.1.313) for ~11 hours, attempting persistent SSH backdoors. Under 0.05% of users had traces exposed, under 0.01% had API credentials stolen, and up to 5,000 got the malicious build. Check your Claude Code extension version if installed via Cursor. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://therecord.media/artex-ai-tool-fbi-flash-alert">FBI: Artex AI pentesting tool automates attacks at &#x27;machine speed&#x27;</a></h2>
+<p>Artex, an open-source LLM-driven pentesting framework, took some intrusions from initial targeting to privileged access in under 3 hours, the FBI warns. Censys found 1,600+ exposed Artex consoles, with DeepSeek Flash models dominating usage for their low cost and missing guardrails when prompts are framed as pentesting. Audit DeepSeek API usage against that pretext and check for exposed admin consoles. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">llama.cpp and ggml reach v1.0.0 after 3.5 years</a></h2>
+<p>llama.cpp and ggml both hit v1.0.0 after ~3.5 years, adopting semantic versioning so a major bump signals API/ABI breaks across the 150+ architectures it supports. ggml backends can now be compiled as dynamic libraries and loaded at runtime, with CI running on hardware-partner runners from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel. Pin to a major version if you build on it. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus">Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its own chips</a></h2>
+<p>Reports allege Nvidia funded AI startups specifically so they&#x27;d buy its own GPUs, engineering an artificial supply shortage rather than a genuine one. (1 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.alphaxiv.org/abs/2611.weight-space-misfolding">Weight-space misfolding: when one model edits another&#x27;s weights</a></h2>
+<p>&#x27;Weight-space misfolding&#x27; research finds that editing another model&#x27;s weights post-deployment isn&#x27;t clean: a factual-substitution edit on Qwen2.5-1.5B worked 100/100 times but broke an unrelated capability, and a legal-refusal edit held on only 5 of 22 prompts. IWIBench&#x27;s editing-skill reward rose from 0.2148 to 0.4250 in under five months. Track provenance before trusting a received weight patch. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/">Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations</a></h2>
+<p>Splitting GLM-5.3 (753B total, 40B active, NVFP4) across two DGX GB300 stations over 400Gb RDMA with tensor parallelism hits 607.8 tok/s at concurrency 16, using speculative decoding and FP8 KV cache. Per-user throughput falls from 115.3 tok/s at concurrency 1 to 13.0 tok/s at concurrency 32 as requests share the cache. Multi-node serving now handles models too large for one GPU. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.crissyfield.de/research/lovable-en/">Lovable apps expose passport details and 200K private messages</a></h2>
+<p>Security researchers found Lovable-built apps publicly exposing passport details and more than 200,000 private messages, echoing the pattern of other AI app-builders shipping no-auth-by-default apps that leak sensitive data. (1 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://haddyalchaer.com/jepa">600 experiments pinpoint where JEPA world-model planning breaks</a></h2>
+<p>600 experiments on a JEPA world model found that exact simulator physics barely improves long-horizon planning over the learned predictor (78% vs 77% success), so the model isn&#x27;t the bottleneck. Adding a subgoal every 25 steps raises 75-step success from 22% to 80%, beating flat exact-physics planning&#x27;s 42%. A harder benchmark with cross-demonstration goals caps the best planner at 56% success. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://openai.com/index/partnering-with-hacktron">Partnering with Hacktron to find vulnerabilities in OpenAI’s systems</a> <span class="meta">blog</span></li>
+<li><a href="https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/">Advancing science and engineering with Antigravity&#x27;s /teamwork</a> <span class="meta">hn</span></li>
+<li><a href="https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/">OpenAI disbands its robotics team as its general models start running robots</a> <span class="meta">hn</span></li>
+<li><a href="https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths">AI unlocks Gödel&#x27;s notebooks, said to contain hundreds of proved theorems</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html">FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/ggml-org/ggml/releases/tag/v1.0.0">Ggml v1.0.0</a> <span class="meta">hn</span></li>
+<li><a href="https://unsloth.ai/docs/models/qwen3.8">Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update</a> <span class="meta">hn</span></li>
+<li><a href="https://www.perplexity.ai/hub/blog/perplexity-decider">Perplexity Decider v1.3: Training, eval, and use cases</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html">PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE</a> <span class="meta">blog</span></li>
+<li><a href="https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html">Nvidia deliberately kept GPU prices high through circular financing deals</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/introducing-chatgpt-wallet">Introducing ChatGPT Wallet</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/allenai/xybench">XYBench: Helping with the problem behind the question</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/open-asr-leaderboard-liva">Egyptian and Nigerian English join the Open ASR Leaderboard</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/basetenlabs/deepseek-ultrafast">DeepSeek Ultrafast</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax">Show HN: DeepSeek V3 in ~200 lines of pure Jax</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html">New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bbc.com/news/articles/cqdj1ellpd70o">North Korean hackers used fake video calls in $400M crypto hack, says FBI</a> <span class="meta">hn</span></li>
+<li><a href="https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/">Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips</a> <span class="meta">blog</span></li>
+<li><a href="https://claude.com/resources/articles/claude-meetings">Claude Meetings</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/">US disrupts North Korean campaign behind $400 million crypto theft</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-15.md">Markdown</a></footer>
+</body></html>
