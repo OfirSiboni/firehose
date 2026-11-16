@@ -1,1950 +1,6 @@
 {
   "candidates": [
     {
-      "id": "326c64206610",
-      "url": "https://blog.jsweeting.me/big-tech-is-here-to-let-us-down",
-      "title": "Big tech is here to let us down",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 217,
-        "comments": 200,
-        "hn_url": "https://news.ycombinator.com/item?id=50489083",
-        "kind": "article",
-        "published": "2026-11-13T20:20:30Z"
-      }
-    },
-    {
-      "id": "9f3952a424ef",
-      "url": "https://www.slopmanifesto.com/",
-      "title": "No AI Slop: A Manifesto",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 215,
-        "comments": 128,
-        "hn_url": "https://news.ycombinator.com/item?id=50488769",
-        "kind": "article",
-        "published": "2026-11-13T19:51:56Z"
-      }
-    },
-    {
-      "id": "4fc67bea017c",
-      "url": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
-      "title": "Someone's Impersonating This Blog",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 70,
-        "comments": 9,
-        "hn_url": "https://news.ycombinator.com/item?id=50488664",
-        "kind": "article",
-        "published": "2026-11-13T19:41:09Z"
-      }
-    },
-    {
-      "id": "79d48ebc633b",
-      "url": "https://www.perplexity.ai/hub/blog/perplexity-decider",
-      "title": "Perplexity Decider v1.3: Training, eval, and use cases",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 136,
-        "comments": 23,
-        "hn_url": "https://news.ycombinator.com/item?id=50488464",
-        "kind": "article",
-        "published": "2026-11-13T19:24:47Z"
-      }
-    },
-    {
-      "id": "9ce677af6082",
-      "url": "https://open.m-vave.com/fm1-workbench",
-      "title": "FM-1 Workbench",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 241,
-        "comments": 159,
-        "hn_url": "https://news.ycombinator.com/item?id=50488325",
-        "kind": "article",
-        "published": "2026-11-13T19:14:02Z"
-      }
-    },
-    {
-      "id": "03f9e691f932",
-      "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-      "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 360,
-        "comments": 194,
-        "hn_url": "https://news.ycombinator.com/item?id=50487864",
-        "kind": "article",
-        "published": "2026-11-13T18:40:44Z"
-      }
-    },
-    {
-      "id": "5413c880f491",
-      "url": "https://www.dwarkesh.com/p/rsi",
-      "title": "The avalanche that hit math is coming for AI development",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 63,
-        "comments": 105,
-        "hn_url": "https://news.ycombinator.com/item?id=50487854",
-        "kind": "article",
-        "published": "2026-11-13T18:39:42Z"
-      }
-    },
-    {
-      "id": "52d9f85d2984",
-      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
-      "title": "Weight Space Misfolding",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 139,
-        "comments": 53,
-        "hn_url": "https://news.ycombinator.com/item?id=50487762",
-        "kind": "article",
-        "published": "2026-11-13T18:33:35Z"
-      }
-    },
-    {
-      "id": "9b2b7d8187ce",
-      "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805",
-      "title": "Microsoft outage gives customers a crash course in dependence on Redmond",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 172,
-        "comments": 57,
-        "hn_url": "https://news.ycombinator.com/item?id=50487688",
-        "kind": "article",
-        "published": "2026-11-13T18:29:16Z"
-      }
-    },
-    {
-      "id": "f63d448960e4",
-      "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
-      "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 90,
-        "comments": 45,
-        "hn_url": "https://news.ycombinator.com/item?id=50487605",
-        "kind": "article",
-        "published": "2026-11-13T18:23:49Z"
-      }
-    },
-    {
-      "id": "0b39e3815f5a",
-      "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-      "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 353,
-        "comments": 194,
-        "hn_url": "https://news.ycombinator.com/item?id=50487522",
-        "kind": "article",
-        "published": "2026-11-13T18:18:37Z"
-      }
-    },
-    {
-      "id": "41a7328b78f7",
-      "url": "https://www.forbes.com/sites/maryroeloffs/2026/08/17/ai-companies-are-buying-and-destroying-antique-books-heres-why/",
-      "title": "Are we just going to ignore that books are destroyed for AI?",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 56,
-        "comments": 62,
-        "hn_url": "https://news.ycombinator.com/item?id=50487469",
-        "kind": "article",
-        "published": "2026-11-13T18:14:38Z"
-      }
-    },
-    {
-      "id": "3d3e0a33fa9e",
-      "url": "https://isometricsf.com/",
-      "title": "Show HN: Isometric SF – A pixel-art map of the SF Bay Area",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "Technical Write-up: https://www.justinchavez.com/blog/isometric-sf-how/ Hi HN! Showcasing this fun project. I took 1300 square miles of the SF Bay Area from Google Photorealistic 3D Tiles and transformed them into a cohesive pixel map. It's really fun to explore and stumble upon various famous landmarks like Apple Park, Palace of Fine Arts, or UC Berkeley. The technicals involve using Nano Banana 2 to train a Qwen-Image-Edit 2511 LoRA which is used to prototype the style and generation methods. For final map I used Qwen to train a Klein 4B LoRA which reproduced the style at 1/4 of the cost. More details in the blog post. Let me know what you think! I really enjoyed this process of fine-tuning smaller open source models. If I did the map with Nano Banana 2 it would have cost around 7k USD! Credit for the idea goes to Isometric NYC.",
-      "meta": {
-        "points": 221,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=50487228",
-        "kind": "article",
-        "published": "2026-11-13T17:58:37Z"
-      }
-    },
-    {
-      "id": "ea0776201252",
-      "url": "https://haddyalchaer.com/jepa",
-      "title": "After 600 experiments, here's what I discovered about JEPA world models",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 268,
-        "comments": 45,
-        "hn_url": "https://news.ycombinator.com/item?id=50487185",
-        "kind": "article",
-        "published": "2026-11-13T17:55:28Z"
-      }
-    },
-    {
-      "id": "4a36f6adfa9f",
-      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
-      "title": "OpenAI disbands its robotics team as its general models start running robots",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 170,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=50487184",
-        "kind": "article",
-        "published": "2026-11-13T17:55:23Z"
-      }
-    },
-    {
-      "id": "a1e895b935bb",
-      "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-      "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 397,
-        "comments": 101,
-        "hn_url": "https://news.ycombinator.com/item?id=50486748",
-        "kind": "article",
-        "published": "2026-11-13T17:30:10Z"
-      }
-    },
-    {
-      "id": "1ad3a5ecd7d1",
-      "url": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-      "title": "Arm boss Rene Haas approached in Nvidia CEO search",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "https://archive.is/sTRDf",
-      "meta": {
-        "points": 66,
-        "comments": 79,
-        "hn_url": "https://news.ycombinator.com/item?id=50486489",
-        "kind": "article",
-        "published": "2026-11-13T17:10:33Z"
-      }
-    },
-    {
-      "id": "d6b5bcff4d0c",
-      "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
-      "title": "LibreOffice actually works 365 days a year",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 895,
-        "comments": 277,
-        "hn_url": "https://news.ycombinator.com/item?id=50486482",
-        "kind": "article",
-        "published": "2026-11-13T17:09:58Z"
-      }
-    },
-    {
-      "id": "4f91681f6637",
-      "url": "https://status.apify.com/incidents/sxd1dj5j6749",
-      "title": "Apify Security Incident",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 96,
-        "comments": 11,
-        "hn_url": "https://news.ycombinator.com/item?id=50486258",
-        "kind": "article",
-        "published": "2026-11-13T16:55:59Z"
-      }
-    },
-    {
-      "id": "ed468bc0d63d",
-      "url": "https://www.bbc.com/news/articles/cqdj1ellpd70o",
-      "title": "North Korean hackers used fake video calls in $400M crypto hack, says FBI",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 98,
-        "comments": 36,
-        "hn_url": "https://news.ycombinator.com/item?id=50486178",
-        "kind": "article",
-        "published": "2026-11-13T16:50:22Z"
-      }
-    },
-    {
-      "id": "66162cadea69",
-      "url": "https://filemanager-cdn.mziq.com/published/3972906b-e50b-4f74-ab74-4d0d32125d11/9567a559-d20a-486e-a7ae-5c6bbc030c5e",
-      "title": "Brazil's Caixa insurer breach exposes names and tax IDs of all 7.6M customers",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 165,
-        "comments": 76,
-        "hn_url": "https://news.ycombinator.com/item?id=50485295",
-        "kind": "article",
-        "published": "2026-11-13T15:52:04Z"
-      }
-    },
-    {
-      "id": "5f1afeeb96c0",
-      "url": "https://text.npr.org/nx-s1-6029408",
-      "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 188,
-        "comments": 177,
-        "hn_url": "https://news.ycombinator.com/item?id=50484960",
-        "kind": "article",
-        "published": "2026-11-13T15:29:10Z"
-      }
-    },
-    {
-      "id": "0b67abad1121",
-      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
-      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 330,
-        "comments": 446,
-        "hn_url": "https://news.ycombinator.com/item?id=50484658",
-        "kind": "article",
-        "published": "2026-11-13T15:08:44Z"
-      }
-    },
-    {
-      "id": "d7497e28b9dd",
-      "url": "https://www.echopress.com/business/minnesota-guitarists-invention-strikes-a-new-chord",
-      "title": "Minnesota guitarist's \"palmfrets\" invention strikes a new chord",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "https://palmfrets.com/",
-      "meta": {
-        "points": 179,
-        "comments": 103,
-        "hn_url": "https://news.ycombinator.com/item?id=50484650",
-        "kind": "article",
-        "published": "2026-11-13T15:08:07Z"
-      }
-    },
-    {
-      "id": "69fe561982a0",
-      "url": "https://myid.ie/business/eu-digital-wallet-tracker/",
-      "title": "EU Digital Identity Wallet rollout: every EU state on one board",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 122,
-        "comments": 87,
-        "hn_url": "https://news.ycombinator.com/item?id=50484496",
-        "kind": "article",
-        "published": "2026-11-13T14:58:07Z"
-      }
-    },
-    {
-      "id": "172d03253a6b",
-      "url": "https://news.ycombinator.com/item?id=50484421",
-      "title": "U.S. October PPI Rises 6.5% YoY, Highest in Nearly Four Years",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "U.S. producer prices rose 6.5% YoY in October, the highest since November 2022, below expectations of 6.6% and up from 6.3% previously. PPI increased 0.3% MoM, below the expected 0.4%, while September’s reading was revised up from 1.3% to 1.4%.",
-      "meta": {
-        "points": 168,
-        "comments": 216,
-        "hn_url": "https://news.ycombinator.com/item?id=50484421",
-        "kind": "discussion",
-        "published": "2026-11-13T14:53:32Z"
-      }
-    },
-    {
-      "id": "86b7f002df78",
-      "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
-      "title": "A technical vision for the Haskell ecosystem",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 213,
-        "comments": 128,
-        "hn_url": "https://news.ycombinator.com/item?id=50484235",
-        "kind": "article",
-        "published": "2026-11-13T14:43:12Z"
-      }
-    },
-    {
-      "id": "3ed790d87ecb",
-      "url": "https://www.businessinsider.com/dario-amodei-anthropic-cancer-cure-ipo-roadshow-backlash-doctors-2026-11",
-      "title": "Amodei Says AI Will Cure Cancer in a Decade. Doctors Are Skeptical",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 33,
-        "comments": 71,
-        "hn_url": "https://news.ycombinator.com/item?id=50484110",
-        "kind": "article",
-        "published": "2026-11-13T14:34:13Z"
-      }
-    },
-    {
-      "id": "4f31dbe9014d",
-      "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
-      "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 143,
-        "comments": 48,
-        "hn_url": "https://news.ycombinator.com/item?id=50484007",
-        "kind": "article",
-        "published": "2026-11-13T14:28:40Z"
-      }
-    },
-    {
-      "id": "1f9401fd47f1",
-      "url": "https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/",
-      "title": "The 42-Year Journey to Bring 'Neuromancer' to the Screen",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 99,
-        "comments": 76,
-        "hn_url": "https://news.ycombinator.com/item?id=50484006",
-        "kind": "article",
-        "published": "2026-11-13T14:28:32Z"
-      }
-    },
-    {
-      "id": "87c420559569",
-      "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
-      "title": "CERN Built the Large Hadron Collider's Next-Gen Magnets",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 85,
-        "comments": 8,
-        "hn_url": "https://news.ycombinator.com/item?id=50483959",
-        "kind": "article",
-        "published": "2026-11-13T14:25:46Z"
-      }
-    },
-    {
-      "id": "461e397f3f74",
-      "url": "https://www.ft.com/content/f4a1fd87-9abc-4965-963a-a5349dbfdab7",
-      "title": "Mercedes-Benz to halt 'all future investments' in Germany",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 80,
-        "comments": 150,
-        "hn_url": "https://news.ycombinator.com/item?id=50483875",
-        "kind": "article",
-        "published": "2026-11-13T14:19:50Z"
-      }
-    },
-    {
-      "id": "0624c9eca27e",
-      "url": "https://www.theguardian.com/technology/ng-interactive/2026/nov/13/universities-drop-flock-camera-contracts",
-      "title": "US university students tell surveillance cameras to Flock off",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 108,
-        "comments": 66,
-        "hn_url": "https://news.ycombinator.com/item?id=50483759",
-        "kind": "article",
-        "published": "2026-11-13T14:11:56Z"
-      }
-    },
-    {
-      "id": "047791453e35",
-      "url": "https://www.mtsoukalos.eu/2026/11/why-zig-over-c-for-systems-programming/",
-      "title": "Why Zig over C for Systems Programming",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 217,
-        "comments": 224,
-        "hn_url": "https://news.ycombinator.com/item?id=50483611",
-        "kind": "article",
-        "published": "2026-11-13T14:01:13Z"
-      }
-    },
-    {
-      "id": "83e7200ea534",
-      "url": "https://www.nytimes.com/live/2026/11/12/nyregion/building-collapse-nyc-brooklyn",
-      "title": "Building collapses in Brooklyn with 8 people dead so far",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 34,
-        "comments": 5,
-        "hn_url": "https://news.ycombinator.com/item?id=50483546",
-        "kind": "article",
-        "published": "2026-11-13T13:55:32Z"
-      }
-    },
-    {
-      "id": "973687234f0b",
-      "url": "https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
-      "title": "US test reactor cleared for operations",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 80,
-        "comments": 32,
-        "hn_url": "https://news.ycombinator.com/item?id=50483533",
-        "kind": "article",
-        "published": "2026-11-13T13:54:49Z"
-      }
-    },
-    {
-      "id": "181217127fcf",
-      "url": "https://garymarcus.substack.com/p/breaking-eli-lilly-ceo-becomes-latest",
-      "title": "Eli Lilly CEO pushes back on Dario Amodei's medical claims",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 268,
-        "comments": 369,
-        "hn_url": "https://news.ycombinator.com/item?id=50483480",
-        "kind": "article",
-        "published": "2026-11-13T13:51:27Z"
-      }
-    },
-    {
-      "id": "a7075b765536",
-      "url": "https://www.youtube.com/watch?v=YYU_geUwQoA",
-      "title": "The Downfall of Jensen Huang: Nvidia's Greed and Corruption [video]",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 76,
-        "comments": 13,
-        "hn_url": "https://news.ycombinator.com/item?id=50483391",
-        "kind": "article",
-        "published": "2026-11-13T13:45:06Z"
-      }
-    },
-    {
-      "id": "e4d1c656df3f",
-      "url": "https://respawnfirst.com/before-resigning-jensen-huang-admitted-he-was-facing-an-avalanche-of-excess-wafers-and-memory-new-report-sheds-more-light-on-the-gpu-ram-crisis/",
-      "title": "Jensen Huang Admitted He Was Facing an \"Avalanche\" of Excess Wafers and Memory",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 72,
-        "comments": 77,
-        "hn_url": "https://news.ycombinator.com/item?id=50482992",
-        "kind": "article",
-        "published": "2026-11-13T13:08:48Z"
-      }
-    },
-    {
-      "id": "2773c609d2d3",
-      "url": "https://www.nytimes.com/2026/11/13/world/europe/education-meritocracy.html",
-      "title": "Study Hard, Get a Career, Get Ahead? It's Not What It Used to Be",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 44,
-        "comments": 39,
-        "hn_url": "https://news.ycombinator.com/item?id=50482175",
-        "kind": "article",
-        "published": "2026-11-13T11:50:00Z"
-      }
-    },
-    {
-      "id": "2f44ca0e016f",
-      "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-      "title": "AI is destroying the trust between writers and readers",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 320,
-        "comments": 196,
-        "hn_url": "https://news.ycombinator.com/item?id=50481870",
-        "kind": "article",
-        "published": "2026-11-13T11:13:46Z"
-      }
-    },
-    {
-      "id": "7e0feb27957d",
-      "url": "https://coyotetracks.org/blog/right-amount-of-ai/",
-      "title": "Is there a 'right amount' of AI?",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 36,
-        "comments": 63,
-        "hn_url": "https://news.ycombinator.com/item?id=50480659",
-        "kind": "article",
-        "published": "2026-11-13T09:27:05Z"
-      }
-    },
-    {
-      "id": "78092adf2df6",
-      "url": "https://www.cnn.com/2026/11/12/politics/alice-huang-us-intel-jensen-huang-nvidia",
-      "title": "US Intel isn't sure if Alice Huang spied on Nvidia for China",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 37,
-        "comments": 49,
-        "hn_url": "https://news.ycombinator.com/item?id=50476257",
-        "kind": "article",
-        "published": "2026-11-13T00:02:34Z"
-      }
-    },
-    {
-      "id": "14a056be9cf5",
-      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
-      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
-      "source": "hn",
-      "first_seen": "2026-11-13T21:03:16Z",
-      "text": "",
-      "meta": {
-        "points": 601,
-        "comments": 171,
-        "hn_url": "https://news.ycombinator.com/item?id=50474959",
-        "kind": "article",
-        "published": "2026-11-12T22:03:09Z"
-      }
-    },
-    {
-      "id": "bc31e765e613",
-      "url": "https://github.com/vAPI-Network/vapi-network",
-      "title": "vAPI-Network/vapi-network",
-      "source": "github",
-      "first_seen": "2026-11-13T21:03:17Z",
-      "text": "Buyer-controlled client for x402 API payments in USDC on Base.",
-      "meta": {
-        "stars": 4599,
-        "topics": [
-          "agent-payments",
-          "ai-agents",
-          "base",
-          "mcp",
-          "usdc",
-          "x402"
-        ],
-        "language": "TypeScript",
-        "created_at": "2026-10-02T13:05:19Z",
-        "pushed_at": "2026-11-10T12:02:12Z",
-        "published": "2026-10-02T13:05:19Z"
-      }
-    },
-    {
-      "id": "f7a6b6ddd181",
-      "url": "https://github.com/Xin-YuXiao/Awesome-AI-for-Astronomy",
-      "title": "Xin-YuXiao/Awesome-AI-for-Astronomy",
-      "source": "github",
-      "first_seen": "2026-11-13T21:03:18Z",
-      "text": "A curated list of papers for AI in Astronomy & Astrophysics.",
-      "meta": {
-        "stars": 185,
-        "topics": [
-          "ai-for-science",
-          "astronomy",
-          "awesome",
-          "awesome-list",
-          "benchmark",
-          "cosmology",
-          "deep-learning",
-          "large-language-models",
-          "machine-learning",
-          "planetary-science"
-        ],
-        "language": "Python",
-        "created_at": "2026-11-10T23:13:12Z",
-        "pushed_at": "2026-11-14T21:39:16Z",
-        "published": "2026-11-10T23:13:12Z"
-      }
-    },
-    {
-      "id": "5bf4951adbe9",
-      "url": "https://openai.com/index/introducing-chatgpt-wallet",
-      "title": "Introducing ChatGPT Wallet",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:20Z",
-      "text": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-11-13T15:00:00Z"
-      }
-    },
-    {
-      "id": "b58fee4edbbb",
-      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-      "title": "Australian universities are creating AI-native graduates",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:20Z",
-      "text": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-11-05T17:00:00Z"
-      }
-    },
-    {
-      "id": "003a6dd08e36",
-      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:20Z",
-      "text": "",
-      "meta": {
-        "feed": "deepmind.google",
-        "published": "2026-11-05T17:05:16Z"
-      }
-    },
-    {
-      "id": "2427bacb74a9",
-      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:21Z",
-      "text": "",
-      "meta": {
-        "feed": "huggingface.co",
-        "published": "2026-11-13T18:00:39Z"
-      }
-    },
-    {
-      "id": "8400bdfe1e2a",
-      "url": "https://huggingface.co/blog/allenai/xybench",
-      "title": "XYBench: Helping with the problem behind the question",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:21Z",
-      "text": "",
-      "meta": {
-        "feed": "huggingface.co",
-        "published": "2026-11-13T17:02:35Z"
-      }
-    },
-    {
-      "id": "40e78db6601d",
-      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:21Z",
-      "text": "",
-      "meta": {
-        "feed": "huggingface.co",
-        "published": "2026-11-13T14:05:22Z"
-      }
-    },
-    {
-      "id": "82196d4ece0a",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:21Z",
-      "text": "",
-      "meta": {
-        "feed": "huggingface.co",
-        "published": "2026-11-06T00:00:00Z"
-      }
-    },
-    {
-      "id": "f27d611111fa",
-      "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
-      "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:22Z",
-      "text": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-11-13T19:38:36Z"
-      }
-    },
-    {
-      "id": "8be0b03cc8ec",
-      "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
-      "title": "German military drone operations disrupted by cyberattack",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:22Z",
-      "text": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-11-13T17:31:56Z"
-      }
-    },
-    {
-      "id": "59b7f6903a29",
-      "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/",
-      "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:22Z",
-      "text": "Vulnerable Check Point Security Gateway instances have been targeted in PHP2Shell attacks that deployed data-wiping malware on VMware ESXi hosts. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-11-13T16:21:43Z"
-      }
-    },
-    {
-      "id": "9086aefe2770",
-      "url": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-      "title": "How one AI agent exposed five critical enterprise security gaps",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:22Z",
-      "text": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security leaders on preventing them. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-11-13T15:01:11Z"
-      }
-    },
-    {
-      "id": "1838248a60d9",
-      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-      "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:23Z",
-      "text": "Since 2021, Project Zero has followed a “90 + 30” vulnerability disclosure policy, allowing vendors up to 90 days to remediate a vulnerability plus an extra 30 days “soak time” for patch rollout. Our goal was to encourage faster patching and give vendors time to deliver patches to users. The advent of AI-assisted vulnerability discovery and exploitation has changed the threat landscape such that the vulnerability remediation timeline encouraged by our disclosure policy is clearly insufficient. LLMs have increased the speed at which attackers can find and exploit vulnerabilities, alongside the risk that multiple parties, including malicious ones, discover the same bug. A vulnerability reported today presents a much higher immediate risk to users than one reported last year. In this new environment, it is crucial that vendors move towards remediating vulnerabilities faster.",
-      "meta": {
-        "feed": "googleprojectzero.blogspot.com",
-        "published": "2026-11-13T08:00:00Z",
-        "points": 137,
-        "comments": 30,
-        "hn_url": "https://news.ycombinator.com/item?id=50496051",
-        "kind": "article"
-      }
-    },
-    {
-      "id": "e05f7a78ce38",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-11-13T16:53:08Z"
-      }
-    },
-    {
-      "id": "fb5ac890be2a",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-11-13T15:27:05Z"
-      }
-    },
-    {
-      "id": "c6e1d6a77271",
-      "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-      "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months. As part of a coordinated set of actions announced by the U.S. government, the cloud-based",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-11-13T14:28:58Z"
-      }
-    },
-    {
-      "id": "79815295aaa3",
-      "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
-      "title": "Trezor Confirms Hidden Implants in CryptoBilis-Sold Wallets That Can Steal Recovery Phrases",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "Three Trezor Safe 5 wallets bought from the reseller CryptoBilis contain an implant, an extra circuit board that can copy their recovery phrases, hardware wallet maker Trezor said yesterday. The implant reads the phrase from the wallet's screen and sends it over the mobile network to a server controlled by the attackers. The company examined one of the wallets in its lab, identified the other",
-      "meta": {
-        "feed": "feeds.feedburner.com",
-        "published": "2026-11-13T13:54:20Z"
-      }
-    },
-    {
-      "id": "810ecd44c3ac",
-      "url": "https://therecord.media/city-of-osaka-japan-email-data-breach",
-      "title": "City of Osaka warns of data breach impacting 1 million as Japan reels from dozens of cyber incidents",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "Osaka, Japan's third-largest city, told its 2.8 million residents to be wary of suspicious emails purporting to come from the local government.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T19:43:00Z"
-      }
-    },
-    {
-      "id": "cf42b36aeb3f",
-      "url": "https://therecord.media/nyc-council-passes-bill-ban-surveillance-pricing",
-      "title": "NYC to bar surveillance pricing as momentum for bans grows nationwide",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "The New York City government will be able to fine companies $1,000 for each verified instance of surveillance pricing.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T18:35:00Z"
-      }
-    },
-    {
-      "id": "4c8fe02bd04c",
-      "url": "https://therecord.media/university-of-texas-arlington-warns-data-breach",
-      "title": "University of Texas at Arlington warns personal information stolen during cyberattack",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "In a statement to Recorded Future News, a spokesperson said an investigation into the attack confirmed the stolen data but declined to say what information was obtained by the threat actors.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T17:26:00Z"
-      }
-    },
-    {
-      "id": "f6d06bee472c",
-      "url": "https://therecord.media/german-parliament-passes-law-giving-spy-agencies-hacking-power",
-      "title": "German parliament passes law giving spy agencies hacking, sabotage powers",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "In the biggest overhaul of the country’s spy laws of the postwar era, the Bundestag approved the bill by 308 votes to 190 — with 71 abstentions — months after Chancellor Friedrich Merz’s cabinet signed off on the draft.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T16:32:00Z"
-      }
-    },
-    {
-      "id": "e4e9606f466d",
-      "url": "https://therecord.media/gootloader-ransomware-doj-details",
-      "title": "DOJ: Gootloader used in at least 44 ransomware attacks costing $29 million since 2018",
-      "source": "blog",
-      "first_seen": "2026-11-13T21:03:24Z",
-      "text": "In a briefing adjacent to European announcements about an international anti-malware operation, U.S. officials detailed the history and impact of the Gootloader ransomware.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T15:59:00Z"
-      }
-    },
-    {
-      "id": "b26717d449a4",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 1025,
-        "comments": 615,
-        "hn_url": "https://news.ycombinator.com/item?id=50493251",
-        "kind": "article",
-        "published": "2026-11-14T02:52:59Z"
-      }
-    },
-    {
-      "id": "6c41dcbf34a2",
-      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
-      "title": "Ggml v1.0.0",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 398,
-        "comments": 67,
-        "hn_url": "https://news.ycombinator.com/item?id=50493062",
-        "kind": "article",
-        "published": "2026-11-14T02:28:29Z"
-      }
-    },
-    {
-      "id": "7039aca8dbba",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
-      "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 215,
-        "comments": 51,
-        "hn_url": "https://news.ycombinator.com/item?id=50492993",
-        "kind": "article",
-        "published": "2026-11-14T02:21:36Z"
-      }
-    },
-    {
-      "id": "f98d19f282ec",
-      "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
-      "title": "Elephants found to be increasingly isolated leading to fractured social networks",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 183,
-        "comments": 43,
-        "hn_url": "https://news.ycombinator.com/item?id=50492860",
-        "kind": "article",
-        "published": "2026-11-14T02:02:42Z"
-      }
-    },
-    {
-      "id": "ec9b176990b1",
-      "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5",
-      "title": "FAA lifted National Ground Stop at 0119Z",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 209,
-        "comments": 2,
-        "hn_url": "https://news.ycombinator.com/item?id=50492601",
-        "kind": "article",
-        "published": "2026-11-14T01:30:01Z"
-      }
-    },
-    {
-      "id": "3438ef0fe135",
-      "url": "https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html",
-      "title": "Ukraine knocks out 36% of Russia's oil refining capacity in under two weeks",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 306,
-        "comments": 218,
-        "hn_url": "https://news.ycombinator.com/item?id=50492456",
-        "kind": "article",
-        "published": "2026-11-14T01:10:22Z"
-      }
-    },
-    {
-      "id": "b40b1a619699",
-      "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
-      "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 194,
-        "comments": 76,
-        "hn_url": "https://news.ycombinator.com/item?id=50492315",
-        "kind": "article",
-        "published": "2026-11-14T00:52:29Z"
-      }
-    },
-    {
-      "id": "da51afadad30",
-      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
-      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 59,
-        "comments": 44,
-        "hn_url": "https://news.ycombinator.com/item?id=50492141",
-        "kind": "article",
-        "published": "2026-11-14T00:28:11Z"
-      }
-    },
-    {
-      "id": "df806ea96b3b",
-      "url": "https://geohot.github.io//blog/jekyll/update/2026/11/13/first-strike.html",
-      "title": "First Strike",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 62,
-        "comments": 48,
-        "hn_url": "https://news.ycombinator.com/item?id=50491944",
-        "kind": "article",
-        "published": "2026-11-14T00:00:59Z"
-      }
-    },
-    {
-      "id": "0e959caf89bd",
-      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
-      "title": "What happened to 3Com?",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 198,
-        "comments": 116,
-        "hn_url": "https://news.ycombinator.com/item?id=50491830",
-        "kind": "article",
-        "published": "2026-11-13T23:48:59Z"
-      }
-    },
-    {
-      "id": "68775138fa15",
-      "url": "https://standwithjensen.com/",
-      "title": "An open letter to the Nvidia Board of Directors",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 45,
-        "comments": 41,
-        "hn_url": "https://news.ycombinator.com/item?id=50491690",
-        "kind": "article",
-        "published": "2026-11-13T23:34:06Z"
-      }
-    },
-    {
-      "id": "7ab113adec14",
-      "url": "https://grounds.top/",
-      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 203,
-        "comments": 26,
-        "hn_url": "https://news.ycombinator.com/item?id=50491545",
-        "kind": "article",
-        "published": "2026-11-13T23:17:39Z"
-      }
-    },
-    {
-      "id": "11a7870633bc",
-      "url": "https://www.joshka.net/cell-borders/",
-      "title": "Terminal borders that don't cost a cell",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 393,
-        "comments": 173,
-        "hn_url": "https://news.ycombinator.com/item?id=50491423",
-        "kind": "article",
-        "published": "2026-11-13T23:06:40Z"
-      }
-    },
-    {
-      "id": "7b5cb229ebdd",
-      "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
-      "title": "How Not to Build a Music Player",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 170,
-        "comments": 80,
-        "hn_url": "https://news.ycombinator.com/item?id=50491400",
-        "kind": "article",
-        "published": "2026-11-13T23:04:30Z"
-      }
-    },
-    {
-      "id": "21ab7432dba4",
-      "url": "https://claude.com/resources/articles/claude-meetings",
-      "title": "Claude Meetings",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 106,
-        "comments": 86,
-        "hn_url": "https://news.ycombinator.com/item?id=50491097",
-        "kind": "article",
-        "published": "2026-11-13T22:39:15Z"
-      }
-    },
-    {
-      "id": "2d8033c89156",
-      "url": "https://www.news9.com/oklahoma-city-news/national-weather-service-reports-nationwide-radar-website-outage",
-      "title": "National Weather Service reports nationwide radar website outage amid FAA stop",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 61,
-        "comments": 16,
-        "hn_url": "https://news.ycombinator.com/item?id=50490778",
-        "kind": "article",
-        "published": "2026-11-13T22:16:11Z"
-      }
-    },
-    {
-      "id": "bca859b70108",
-      "url": "https://twitter.com/SpaceX/status/2121316300702056595",
-      "title": "Starship Flight 15 live",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 35,
-        "comments": 6,
-        "hn_url": "https://news.ycombinator.com/item?id=50490662",
-        "kind": "article",
-        "published": "2026-11-13T22:09:55Z"
-      }
-    },
-    {
-      "id": "117b7aeaaeee",
-      "url": "https://orcasairband.com/",
-      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 291,
-        "comments": 67,
-        "hn_url": "https://news.ycombinator.com/item?id=50490593",
-        "kind": "article",
-        "published": "2026-11-13T22:04:24Z"
-      }
-    },
-    {
-      "id": "cfd336846f10",
-      "url": "https://www.axios.com/2026/11/13/faa-nationwide-ground-stop",
-      "title": "FAA issues nationwide ground stop due to \"extraordinary circumstances\"",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 126,
-        "comments": 38,
-        "hn_url": "https://news.ycombinator.com/item?id=50489678",
-        "kind": "article",
-        "published": "2026-11-13T21:08:49Z"
-      }
-    },
-    {
-      "id": "a99b67c91f9f",
-      "url": "https://twitter.com/flightradar24/status/2121347654714077605",
-      "title": "All US airports are currently ground stopped",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 207,
-        "comments": 41,
-        "hn_url": "https://news.ycombinator.com/item?id=50489652",
-        "kind": "article",
-        "published": "2026-11-13T21:06:52Z"
-      }
-    },
-    {
-      "id": "e8c38895520b",
-      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
-      "title": "FAA issues national ground stop – lifted 4.5 hours later",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11132026&a... https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&a... https://www.nytimes.com/live/2026/11/13/us/ground-stop-natio...",
-      "meta": {
-        "points": 1626,
-        "comments": 1256,
-        "hn_url": "https://news.ycombinator.com/item?id=50489641",
-        "kind": "article",
-        "published": "2026-11-13T21:05:53Z"
-      }
-    },
-    {
-      "id": "3dfec6388ecc",
-      "url": "https://pluralistic.net/2026/11/13/outlookpocalypse/#bright-line-test",
-      "title": "Microsoft is too big to live",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 42,
-        "comments": 2,
-        "hn_url": "https://news.ycombinator.com/item?id=50489086",
-        "kind": "article",
-        "published": "2026-11-13T20:20:51Z"
-      }
-    },
-    {
-      "id": "aedbce8daeec",
-      "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
-      "title": "Live-migration support in FreeBSD and bhyve coming",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 136,
-        "comments": 43,
-        "hn_url": "https://news.ycombinator.com/item?id=50488835",
-        "kind": "article",
-        "published": "2026-11-13T19:58:42Z"
-      }
-    },
-    {
-      "id": "4b5788c8e216",
-      "url": "https://www.nature.com/articles/d41586-026-03638-3",
-      "title": "Found: A protein that drives ageing without unleashing inflammation",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 211,
-        "comments": 45,
-        "hn_url": "https://news.ycombinator.com/item?id=50488470",
-        "kind": "article",
-        "published": "2026-11-13T19:25:21Z"
-      }
-    },
-    {
-      "id": "b02183333264",
-      "url": "https://news.ycombinator.com/item?id=50488230",
-      "title": "Ask HN: What is the state of self-hosting email in 2026?",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "I mean both on your own server and on cheap but reliable VPS providers like Hetzner? If you self-host email what is your current stack?",
-      "meta": {
-        "points": 35,
-        "comments": 30,
-        "hn_url": "https://news.ycombinator.com/item?id=50488230",
-        "kind": "discussion",
-        "published": "2026-11-13T19:06:06Z"
-      }
-    },
-    {
-      "id": "d510e06f33b3",
-      "url": "https://github.com/basetenlabs/deepseek-ultrafast",
-      "title": "DeepSeek Ultrafast",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 58,
-        "comments": 10,
-        "hn_url": "https://news.ycombinator.com/item?id=50486914",
-        "kind": "article",
-        "published": "2026-11-13T17:39:03Z"
-      }
-    },
-    {
-      "id": "0e280d03667e",
-      "url": "https://emmer.dev/blog/concurrent-shell-command-queues/",
-      "title": "Concurrent Shell Command Queues",
-      "source": "hn",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "",
-      "meta": {
-        "points": 46,
-        "comments": 17,
-        "hn_url": "https://news.ycombinator.com/item?id=50486521",
-        "kind": "article",
-        "published": "2026-11-13T17:13:01Z"
-      }
-    },
-    {
-      "id": "836c722655cf",
-      "url": "https://github.com/Sandflow-ai/sand3d",
-      "title": "Sandflow-ai/sand3d",
-      "source": "github",
-      "first_seen": "2026-11-14T03:49:34Z",
-      "text": "3D modeling in Python, built for LLMs.",
-      "meta": {
-        "stars": 1997,
-        "topics": [
-          "3d",
-          "blender",
-          "cad",
-          "llm",
-          "procedural-modeling",
-          "python",
-          "usd"
-        ],
-        "language": "HTML",
-        "created_at": "2026-11-03T08:23:03Z",
-        "pushed_at": "2026-11-14T16:46:01Z",
-        "published": "2026-11-03T08:23:03Z"
-      }
-    },
-    {
-      "id": "cb4aa5d10c93",
-      "url": "https://github.com/didilili/mianstack",
-      "title": "didilili/mianstack",
-      "source": "github",
-      "first_seen": "2026-11-14T03:49:36Z",
-      "text": "🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。",
-      "meta": {
-        "stars": 189,
-        "topics": [
-          "agent",
-          "agentic-ai",
-          "ai-agent",
-          "ai-engineering",
-          "ai-interview",
-          "artificial-intelligence",
-          "chinese",
-          "coding-interview",
-          "generative-ai",
-          "interview",
-          "interview-preparation",
-          "interview-questions",
-          "large-language-models",
-          "machine-learning-interview",
-          "rag",
-          "technical-interview"
-        ],
-        "language": "JavaScript",
-        "created_at": "2026-11-02T02:48:03Z",
-        "pushed_at": "2026-11-14T10:32:34Z",
-        "published": "2026-11-02T02:48:03Z"
-      }
-    },
-    {
-      "id": "d1318183fe17",
-      "url": "https://openai.com/business/customer-stories/shield",
-      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-11-13T08:00:00Z"
-      }
-    },
-    {
-      "id": "bc8f9eac1966",
-      "url": "https://openai.com/index/partnering-with-hacktron",
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "OpenAI is partnering with Hacktron to find vulnerabilities, test connections with third-party services, and strengthen defenses with frontier AI.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-11-06T08:00:00Z"
-      }
-    },
-    {
-      "id": "fde4e161df12",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
-      "title": "datasette-cluster-map 0.19",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a map of power plants owned by California's PG&E , also demonstrating Datasette's recently redesigned facets : Tags: datasette , geospatial , openstreetmap",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-11-13T23:02:45Z"
-      }
-    },
-    {
-      "id": "673d8bd62405",
-      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
-      "title": "datasette-leaflet 0.3",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin , passing the host but not the full path to the page. Tags: leaflet , datasette , openstreetmap",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-11-13T22:30:54Z"
-      }
-    },
-    {
-      "id": "f90dfea2fa01",
-      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
-      "title": "Quoting Nilay Patel",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies are spending more than they're making on these products. Refrigerators holding blood storage in Europe are being hacked. The costs are too high. The benefits are not real. And if you connect that to corruption, you're like, in order to impose these costs on me, these CEOs are in the White House shaking Trump's hand, renaming it to the Gulf of America, paying for this ballroom that we don't want. It's obvious crypto-corruption, and it's still slop. The AI industry will not get out of it until they make better products . Until everyone can see without needing to be convinced, without needing an ad campaign, without any of this stuff that just using these products makes your life better. — Nilay Patel , The Vergecast: Big Tech lost big in the 2026 election Tags: nilay-patel , slop , ai , generative-ai , ai-ethics",
-      "meta": {
-        "feed": "simonwillison.net",
-        "published": "2026-11-06T17:13:12Z"
-      }
-    },
-    {
-      "id": "1454a6018ad0",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html",
-      "title": "Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "Climate change is the issue . As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered. Blog moderation policy.",
-      "meta": {
-        "feed": "schneier.com",
-        "published": "2026-11-13T22:00:46Z"
-      }
-    },
-    {
-      "id": "eb95c01dc370",
-      "url": "https://www.schneier.com/blog/archives/2026/11/pinpointing-location-of-videos-from-background-airplane-sounds.html",
-      "title": "Pinpointing Location of Videos from Background Airplane Sounds",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:37Z",
-      "text": "This is fascinating : The video describes a technique that can reveal where an otherwise unidentifiable recording was made by analyzing its audio for the faint sounds of passing aircraft. The technique is both fascinating and frightening. It works by looking at Doppler curves, which plot the way a plane’s sound changes as it passes overhead because of the Doppler effect. This is the same familiar Doppler effect that causes the frequency of a siren to rise as it approaches and then fall as it passes by and moves away. More generally, it’s the phenomenon whereby the frequency of a wave perceived by an observer changes when the observer and the source of the wave are moving in relation to one another...",
-      "meta": {
-        "feed": "schneier.com",
-        "published": "2026-11-06T14:57:48Z"
-      }
-    },
-    {
-      "id": "dc6c68a7e24a",
-      "url": "https://blog.trailofbits.com/2026/11/06/after-binance-check-what-your-signing-systems-can-approve/",
-      "title": "After Binance, check what your signing systems can approve",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:38Z",
-      "text": "Binance’s October 2026 security incident raises an operational question for every organization holding user funds: Can your security controls recognize when a valid signature grants an attacker wallet authority? If an organization only monitors transfers and ownership changes, it may miss the shift in wallet authority until assets move. Binance’s initial update about the incident suggested that a compromised DevOps laptop allowed an attacker to access a service container and submit unauthorized withdrawals. Its second update reported additional breaches but no evidence that wallet private keys had leaked. In its November 3 report , Binance described a broader attack involving social engineering, misuse of an internal AI tool, stolen credentials, and unauthorized access to its wallet-signing service. The attacker nevertheless obtained valid signatures, illustrating a major risk: a compromised server with permission to request signatures can misuse a protected key without extracting it. The attacker used an EIP-7702 delegation that allows a wallet to sign a standing instruction: “Use this code when my account is called.” Ethereum keeps that instruction in place until it is changed or cleared using the wallet’s key. That enabled repeated transfers , including funds deposited after the first theft, without further signatures from Binance. Other Binance wallets were drained through ordinary signed transfers. Transaction execution and monitoring systems must keep pace with Ethereum",
-      "meta": {
-        "feed": "blog.trailofbits.com",
-        "published": "2026-11-06T12:00:00Z"
-      }
-    },
-    {
-      "id": "f0f23fdb08d7",
-      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-      "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
-      "source": "blog",
-      "first_seen": "2026-11-14T03:49:39Z",
-      "text": "Open source hacking tool Artex \"significantly reduces the time required to chain attack techniques, with some intrusions progressing from initial targeting to privileged access in under three hours,\" the FBI said.",
-      "meta": {
-        "feed": "therecord.media",
-        "published": "2026-11-13T21:32:00Z"
-      }
-    },
-    {
-      "id": "4d0c29e8f59a",
-      "url": "https://news.ycombinator.com/item?id=50494696",
-      "title": "Ask HN: What are the most useful, concrete AI skills to independently learn?",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "Specifically, what are the most useful, concrete skills to learn as an individual to take economic advantage of the advances in LLMs, agents and associated new technological capabilities? What is accessible to learn just from the internet and experimentation, without a degree program, assuming a preexisting moderately technical background? The clearer and more specific (eg. “Learn how-to x with y”) the better. Thank you!",
-      "meta": {
-        "points": 76,
-        "comments": 49,
-        "hn_url": "https://news.ycombinator.com/item?id=50494696",
-        "kind": "discussion",
-        "published": "2026-11-14T06:56:42Z"
-      }
-    },
-    {
-      "id": "a33801e4ff46",
-      "url": "https://monkeyisland.pages.dev/",
-      "title": "Monkey Island: all 13 versions side by side",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "",
-      "meta": {
-        "points": 464,
-        "comments": 147,
-        "hn_url": "https://news.ycombinator.com/item?id=50493904",
-        "kind": "article",
-        "published": "2026-11-14T04:23:30Z"
-      }
-    },
-    {
-      "id": "2de163979017",
-      "url": "https://citizenlab.ca/security-agencies-worldwide-found-to-use-ad-based-surveillance-system/",
-      "title": "Security Agencies Worldwide Found to Use Ad-Based Surveillance System",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "",
-      "meta": {
-        "points": 143,
-        "comments": 14,
-        "hn_url": "https://news.ycombinator.com/item?id=50492950",
-        "kind": "article",
-        "published": "2026-11-14T02:15:41Z"
-      }
-    },
-    {
-      "id": "a9dc79e6aa5b",
-      "url": "https://claude.com/resources/articles/projects-redesigned",
-      "title": "Anthropic upgrades Claude Code Projects to run parallel AI workers",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "",
-      "meta": {
-        "points": 98,
-        "comments": 91,
-        "hn_url": "https://news.ycombinator.com/item?id=50492141",
-        "kind": "article",
-        "published": "2026-11-14T00:28:11Z"
-      }
-    },
-    {
-      "id": "10c60fc60c0f",
-      "url": "https://unsloth.ai/docs/models/qwen3.8",
-      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "",
-      "meta": {
-        "points": 231,
-        "comments": 74,
-        "hn_url": "https://news.ycombinator.com/item?id=50491980",
-        "kind": "article",
-        "published": "2026-11-14T00:06:04Z"
-      }
-    },
-    {
-      "id": "ec4f51aff8cc",
-      "url": "https://news.ycombinator.com/item?id=50491617",
-      "title": "Tell HN: Google Search to start locking down search behind a login wall",
-      "source": "hn",
-      "first_seen": "2026-11-14T12:36:58Z",
-      "text": "Usually, when I used Google Search on some ISP CGNAT IP addresses (not even a VPN), I usually get countless CAPTCHAs evertime I initiate a new session to Google Search on a new private browsing window (probably an artifact from residential proxy botnets). Recently, in addition to that, they started to just lock the entire search results page behind a login prompt on some of those bad IP addresses (like YouTube does for some time with the \"Sign in to confirm you're not a bot\" prompt). This potentially makes the service less accessible, especially for those using a shared/public computers. I did not even get this prompt on some VPN IPs, and even no CAPTCHAs at all, even with a free one like given by Firefox. Has anyone encountered that? I just encountered this today. It's really unfortunate for the internet to become less friendly to signed-out users, especially since AI scrapers starting to \"abuse\" the internet for their value.",
-      "meta": {
-        "points": 38,
-        "comments": 27,
-        "hn_url": "https://news.ycombinator.com/item?id=50491617",
-        "kind": "discussion",
-        "published": "2026-11-13T23:26:24Z"
-      }
-    },
-    {
-      "id": "97c28dfefe84",
-      "url": "https://github.com/ccch1mneyyy/dsh-Go",
-      "title": "ccch1mneyyy/dsh-Go",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:00Z",
-      "text": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
-      "meta": {
-        "stars": 22731,
-        "topics": [
-          "ai-agent",
-          "android",
-          "android-app",
-          "coding-agent",
-          "deepseek",
-          "deepseek-harness",
-          "dsh",
-          "dsh-plugin",
-          "dsh-tui",
-          "flutter",
-          "llm"
-        ],
-        "language": "Dart",
-        "created_at": "2026-10-25T08:09:52Z",
-        "pushed_at": "2026-11-15T00:23:28Z",
-        "published": "2026-10-25T08:09:52Z"
-      }
-    },
-    {
-      "id": "a5af043ff573",
-      "url": "https://github.com/N1nEmAn/sapper-v2",
-      "title": "N1nEmAn/sapper-v2",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:00Z",
-      "text": "The first fruit of the Nüwa tree — an autonomous AI pentest legion (634-team champion, 8h unattended, 1B tokens beat 4.5B). Not just a tool: evolvable by design. Grow your own fruit on the Nüwa Foundation (Create/Language/History).",
-      "meta": {
-        "stars": 2092,
-        "topics": [
-          "agentic-workflows",
-          "ai-agents",
-          "ai-security",
-          "autonomous-agents",
-          "claude-code",
-          "ctf",
-          "cybersecurity",
-          "fact-graph",
-          "llm",
-          "multi-agent",
-          "pentest",
-          "swarm-intelligence"
-        ],
-        "language": "Python",
-        "created_at": "2026-10-30T15:12:35Z",
-        "pushed_at": "2026-11-11T12:18:45Z",
-        "published": "2026-10-30T15:12:35Z"
-      }
-    },
-    {
-      "id": "182e8061f9af",
-      "url": "https://github.com/devswha/ovis",
-      "title": "devswha/ovis",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:01Z",
-      "text": "Ovis (formerly herdr web UI): free, open-source browser and phone client for herdr. Chat and live terminal for Claude Code, Codex and every agent pane, remote PCs over SSH, web push alerts",
-      "meta": {
-        "stars": 2064,
-        "topics": [
-          "agentic-coding",
-          "ai-agents",
-          "bun",
-          "claude-code",
-          "codex",
-          "coding-agents",
-          "herdr",
-          "herdr-plugin",
-          "mobile",
-          "opencode",
-          "ovis",
-          "push-notifications",
-          "pwa",
-          "react",
-          "remote-access",
-          "self-hosted",
-          "tailscale",
-          "terminal",
-          "web-terminal",
-          "xterm"
-        ],
-        "language": "TypeScript",
-        "created_at": "2026-09-17T18:52:07Z",
-        "pushed_at": "2026-11-15T00:26:30Z",
-        "published": "2026-09-17T18:52:07Z"
-      }
-    },
-    {
-      "id": "b4fc559283ad",
-      "url": "https://github.com/BlueRingsLabs/no-shortcuts",
-      "title": "BlueRingsLabs/no-shortcuts",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:01Z",
-      "text": "Free Course : Data, Machine Learning, Deep Learning and AI Engineering, the long way round: the math, the code, the systems and the security. 173 lessons, 166 runnable labs, no shortcuts. Free under CC BY-NC 4.0.",
-      "meta": {
-        "stars": 175,
-        "topics": [
-          "ai-engineering",
-          "course",
-          "data-engineering",
-          "deep-learning",
-          "llm",
-          "machine-learning",
-          "mlops",
-          "python",
-          "pytorch",
-          "rag",
-          "reinforcement-learning",
-          "security"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-26T19:49:54Z",
-        "pushed_at": "2026-10-28T22:41:02Z",
-        "published": "2026-09-26T19:49:54Z"
-      }
-    },
-    {
-      "id": "5c3ada646adc",
-      "url": "https://github.com/StartLuxLabs/StartLux-Decision",
-      "title": "StartLuxLabs/StartLux-Decision",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Open decision models from 0.8B to 27B: a calibrated probability for every option in one pass, and a short thought only when unsure. Engine for vLLM, llama.cpp and MLX.",
-      "meta": {
-        "stars": 1745,
-        "topics": [
-          "agents",
-          "calibration",
-          "classification",
-          "decision-making",
-          "gguf",
-          "inference",
-          "llama-cpp",
-          "llm",
-          "mlx",
-          "open-weights",
-          "reasoning",
-          "vllm"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-29T11:53:37Z",
-        "pushed_at": "2026-10-23T06:42:24Z",
-        "published": "2026-09-29T11:53:37Z"
-      }
-    },
-    {
-      "id": "1abc27e6c06d",
-      "url": "https://github.com/fudan-generative-vision/Remory",
-      "title": "fudan-generative-vision/Remory",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Remory: Learning Residual Memory for Context Compaction",
-      "meta": {
-        "stars": 746,
-        "topics": [
-          "context-compaction",
-          "inference",
-          "llm-agents",
-          "residual-memory"
-        ],
-        "language": "Python",
-        "created_at": "2026-10-07T06:10:54Z",
-        "pushed_at": "2026-11-09T19:15:08Z",
-        "published": "2026-10-07T06:10:54Z"
-      }
-    },
-    {
-      "id": "61dded18c5ae",
-      "url": "https://github.com/Yamz-Labs/kyojin",
-      "title": "Yamz-Labs/kyojin",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Kyojin: open-source engine that runs 100 GB-class open models (GLM-5.3, Qwen3.8, DeepSeek V4.1) on one desktop machine. AMD Strix Halo, NVIDIA RTX and Apple Mac. OpenAI API, built on ExLlamaV3.",
-      "meta": {
-        "stars": 238,
-        "topics": [
-          "amd",
-          "apple-silicon",
-          "cuda",
-          "deepseek",
-          "exl3",
-          "exllamav3",
-          "glm",
-          "inference",
-          "llm",
-          "llm-inference",
-          "local-llm",
-          "nvidia",
-          "openai-api",
-          "quantization",
-          "qwen",
-          "rocm",
-          "strix-halo"
-        ],
-        "language": "Python",
-        "created_at": "2026-10-02T20:45:48Z",
-        "pushed_at": "2026-11-14T19:50:26Z",
-        "published": "2026-10-02T20:45:48Z"
-      }
-    },
-    {
-      "id": "dd9a81b0fe52",
-      "url": "https://github.com/YOLOW92/pagesift",
-      "title": "YOLOW92/pagesift",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Self-hosted web scraper, crawler and document parser for AI agents: URLs, PDFs with OCR and Office files to clean Markdown/JSON. Firecrawl- and Jina-compatible API, MCP server, agent endpoint, Python/Node SDKs. Single Rust binary.",
-      "meta": {
-        "stars": 273,
-        "topics": [
-          "ai-agents",
-          "browser-automation",
-          "crawl4ai-alternative",
-          "data-extraction",
-          "document-parsing",
-          "firecrawl",
-          "firecrawl-alternative",
-          "html-to-markdown",
-          "jina-reader",
-          "llm",
-          "markdown",
-          "mcp",
-          "mcp-server",
-          "ocr",
-          "pdf-extraction",
-          "rag",
-          "rust",
-          "self-hosted",
-          "web-crawler",
-          "web-scraping"
-        ],
-        "language": "Rust",
-        "created_at": "2026-10-20T17:30:59Z",
-        "pushed_at": "2026-11-14T00:36:55Z",
-        "published": "2026-10-20T17:30:59Z"
-      }
-    },
-    {
-      "id": "887ec72243c1",
-      "url": "https://github.com/cdcailf/cjkfold",
-      "title": "cdcailf/cjkfold",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Fold look-alike CJK glyphs (Kangxi radicals, CJK radical supplements) so text extracted from PDFs matches again.",
-      "meta": {
-        "stars": 201,
-        "topics": [
-          "chinese",
-          "cjk",
-          "nfkc",
-          "nlp",
-          "pdf-extraction",
-          "rag",
-          "retrieval",
-          "text-normalization",
-          "unicode"
-        ],
-        "language": "Python",
-        "created_at": "2026-10-13T02:16:26Z",
-        "pushed_at": "2026-10-15T04:04:53Z",
-        "published": "2026-10-13T02:16:26Z"
-      }
-    },
-    {
-      "id": "c02fa5522371",
-      "url": "https://github.com/agent-for-dummys/Agent-For-Dummies",
-      "title": "agent-for-dummys/Agent-For-Dummies",
-      "source": "github",
-      "first_seen": "2026-11-14T12:37:02Z",
-      "text": "Agent/RAG/AI应用：Agent零基础入门学习笔记➕编程平台",
-      "meta": {
-        "stars": 197,
-        "topics": [
-          "agent",
-          "beginner-friendly",
-          "chinese",
-          "llm",
-          "llm-agents",
-          "rag",
-          "study-notes"
-        ],
-        "language": "Python",
-        "created_at": "2026-09-19T07:04:15Z",
-        "pushed_at": "2026-10-22T09:01:13Z",
-        "published": "2026-09-19T07:04:15Z"
-      }
-    },
-    {
-      "id": "cfd4354afa14",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "source": "blog",
-      "first_seen": "2026-11-14T12:37:03Z",
-      "text": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-      "meta": {
-        "feed": "openai.com",
-        "published": "2026-11-06T00:00:00Z"
-      }
-    },
-    {
-      "id": "54e857819fdc",
-      "url": "https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-new-jurassic-squid-predecessors.html",
-      "title": "Friday Squid Blogging: New Jurassic Squid Predecessors",
-      "source": "blog",
-      "first_seen": "2026-11-14T12:37:05Z",
-      "text": "News story: “ Scientists discover a bizarre Jurassic ‘squid’ unlike anything ever seen .” Scientists have identified the “fattest” belemnite ever discovered, a bizarre, barrel-shaped squid relative that lived in Wyoming’s ancient seas 160 million years ago. The exceptionally rare fossils reveal a creature unlike anything previously known, potentially a predator of smaller squid-like animals and a surprising survivor of a supposedly vanished family. As usual, you can also use this squid post to talk about the security stories in the news that I haven’t covered...",
-      "meta": {
-        "feed": "schneier.com",
-        "published": "2026-11-06T22:05:12Z"
-      }
-    },
-    {
       "id": "0981be9212e1",
       "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
       "title": "A family tree of software job titles",
@@ -1952,26 +8,11 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 187,
-        "comments": 89,
+        "points": 312,
+        "comments": 154,
         "hn_url": "https://news.ycombinator.com/item?id=50499038",
         "kind": "article",
         "published": "2026-11-14T17:45:19Z"
-      }
-    },
-    {
-      "id": "0364257ac690",
-      "url": "https://www.crissyfield.de/research/lovable-en/",
-      "title": "Lovable apps expose passport details and more than 200K private messages",
-      "source": "hn",
-      "first_seen": "2026-11-14T19:32:42Z",
-      "text": "",
-      "meta": {
-        "points": 599,
-        "comments": 249,
-        "hn_url": "https://news.ycombinator.com/item?id=50499017",
-        "kind": "article",
-        "published": "2026-11-14T17:43:10Z"
       }
     },
     {
@@ -1982,8 +23,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 128,
-        "comments": 61,
+        "points": 135,
+        "comments": 64,
         "hn_url": "https://news.ycombinator.com/item?id=50498063",
         "kind": "article",
         "published": "2026-11-14T16:00:14Z"
@@ -1997,8 +38,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 131,
-        "comments": 87,
+        "points": 145,
+        "comments": 95,
         "hn_url": "https://news.ycombinator.com/item?id=50497900",
         "kind": "article",
         "published": "2026-11-14T15:41:20Z"
@@ -2012,8 +53,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 196,
-        "comments": 88,
+        "points": 243,
+        "comments": 103,
         "hn_url": "https://news.ycombinator.com/item?id=50497892",
         "kind": "article",
         "published": "2026-11-14T15:40:52Z"
@@ -2027,26 +68,11 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 153,
-        "comments": 8,
+        "points": 233,
+        "comments": 21,
         "hn_url": "https://news.ycombinator.com/item?id=50497589",
         "kind": "article",
         "published": "2026-11-14T15:04:15Z"
-      }
-    },
-    {
-      "id": "8f2daa11c505",
-      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
-      "source": "hn",
-      "first_seen": "2026-11-14T19:32:42Z",
-      "text": "",
-      "meta": {
-        "points": 127,
-        "comments": 65,
-        "hn_url": "https://news.ycombinator.com/item?id=50497155",
-        "kind": "article",
-        "published": "2026-11-14T14:09:25Z"
       }
     },
     {
@@ -2057,8 +83,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 86,
-        "comments": 22,
+        "points": 98,
+        "comments": 29,
         "hn_url": "https://news.ycombinator.com/item?id=50497147",
         "kind": "article",
         "published": "2026-11-14T14:08:12Z"
@@ -2072,8 +98,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 66,
-        "comments": 21,
+        "points": 79,
+        "comments": 26,
         "hn_url": "https://news.ycombinator.com/item?id=50497137",
         "kind": "article",
         "published": "2026-11-14T14:06:34Z"
@@ -2087,8 +113,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "Hey HN readers! I'm snipedbywifi ( https://gitlab.com/snipedbywifi ), and i've been working on terminactory. Please try it out if you'd like to play a cozy factory game while waiting for long agent tasks to finish! The game is a factory game (overused niche, i know xD), but runs in your terminal. Reason i built it? glad you asked: So basically, it started off with me wanting a terminal-native factory game. Me and the modern 5.5 claude models made a base for the game that I liked, and then i went ham adding features / fixing some minor flaws (like adding claude code hooks so you recieve \"telegrams\" [the agent's responses], so you can review progress directly in-game). (yes, I had heavy AI assistance, disclaimer!!!) Right now, the game has basic factory features you'd expect from a game like this (build stuff, delete stuff, measure how much you're earning, basic selection tools), along with a few more.. \"unexpected\" features. This includes a fake in-game browser that has a wiki, fake forums, some fun bits of lore, some more lore, a LOT more lore, and a research graph that shows how many items or how much RP (research points) you'd need to unlock something, and some more QOL features. If anyone actually has this issue / want of a terminal-based game that runs alongside your agents so you don't doomscroll, do you have any suggestions, or additional ideas I could add? It's hosted on GitLab, soo, that's one additional thing i'd like to mention Thanks for reading!! snipedbywifi (p.s",
       "meta": {
-        "points": 128,
-        "comments": 26,
+        "points": 156,
+        "comments": 39,
         "hn_url": "https://news.ycombinator.com/item?id=50497132",
         "kind": "article",
         "published": "2026-11-14T14:05:54Z"
@@ -2102,8 +128,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 315,
-        "comments": 213,
+        "points": 379,
+        "comments": 274,
         "hn_url": "https://news.ycombinator.com/item?id=50497009",
         "kind": "article",
         "published": "2026-11-14T13:48:06Z"
@@ -2117,8 +143,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 364,
-        "comments": 76,
+        "points": 473,
+        "comments": 103,
         "hn_url": "https://news.ycombinator.com/item?id=50496976",
         "kind": "article",
         "published": "2026-11-14T13:43:28Z"
@@ -2132,8 +158,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 145,
-        "comments": 181,
+        "points": 148,
+        "comments": 193,
         "hn_url": "https://news.ycombinator.com/item?id=50496921",
         "kind": "article",
         "published": "2026-11-14T13:36:17Z"
@@ -2147,8 +173,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 115,
-        "comments": 6,
+        "points": 140,
+        "comments": 8,
         "hn_url": "https://news.ycombinator.com/item?id=50496885",
         "kind": "article",
         "published": "2026-11-14T13:31:06Z"
@@ -2162,8 +188,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 155,
-        "comments": 36,
+        "points": 199,
+        "comments": 42,
         "hn_url": "https://news.ycombinator.com/item?id=50496811",
         "kind": "article",
         "published": "2026-11-14T13:20:43Z"
@@ -2177,8 +203,8 @@
       "first_seen": "2026-11-14T19:32:42Z",
       "text": "",
       "meta": {
-        "points": 441,
-        "comments": 167,
+        "points": 547,
+        "comments": 185,
         "hn_url": "https://news.ycombinator.com/item?id=50496602",
         "kind": "article",
         "published": "2026-11-14T12:45:45Z"
@@ -2222,7 +248,7 @@
       "first_seen": "2026-11-14T19:32:43Z",
       "text": "Run GLM-5.3 (744B), GLM-5.3-Flash (321B), DeepSeek-V4.1-Flash (748B) and MiniMax-M3.1-Flash (428B) on your own GPUs - one engine, one dashboard, OpenAI- and Anthropic-compatible API.",
       "meta": {
-        "stars": 2900,
+        "stars": 2936,
         "topics": [
           "anthropic-api",
           "cuda",
@@ -2247,7 +273,7 @@
         ],
         "language": "C++",
         "created_at": "2026-10-06T22:55:13Z",
-        "pushed_at": "2026-11-14T17:33:00Z",
+        "pushed_at": "2026-11-16T00:04:28Z",
         "published": "2026-10-06T22:55:13Z"
       }
     },
@@ -2259,7 +285,7 @@
       "first_seen": "2026-11-14T19:32:44Z",
       "text": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. Approve from the notch or your Lock Screen.",
       "meta": {
-        "stars": 7196,
+        "stars": 7226,
         "topics": [
           "ai-agents",
           "anthropic",
@@ -2296,7 +322,7 @@
       "first_seen": "2026-11-14T19:32:45Z",
       "text": "A reading path for CPU performance engineering, from one instruction to production inference. Primary sources only, with a runnable benchmark for every section.",
       "meta": {
-        "stars": 1160,
+        "stars": 1161,
         "topics": [
           "arm",
           "awesome-list",
@@ -2350,18 +376,6 @@
       }
     },
     {
-      "id": "205541d416be",
-      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-      "title": "Cursor confirms security breach led to malicious Claude Code extension",
-      "source": "blog",
-      "first_seen": "2026-11-14T19:32:48Z",
-      "text": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
-      "meta": {
-        "feed": "bleepingcomputer.com",
-        "published": "2026-11-14T17:27:25Z"
-      }
-    },
-    {
       "id": "184f2939a864",
       "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
       "title": "US disrupts North Korean campaign behind $400 million crypto theft",
@@ -2405,8 +419,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 49,
-        "comments": 19,
+        "points": 94,
+        "comments": 79,
         "hn_url": "https://news.ycombinator.com/item?id=50501844",
         "kind": "article",
         "published": "2026-11-14T22:51:44Z"
@@ -2420,8 +434,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 83,
-        "comments": 42,
+        "points": 436,
+        "comments": 227,
         "hn_url": "https://news.ycombinator.com/item?id=50501631",
         "kind": "article",
         "published": "2026-11-14T22:26:30Z"
@@ -2435,8 +449,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 54,
-        "comments": 15,
+        "points": 283,
+        "comments": 146,
         "hn_url": "https://news.ycombinator.com/item?id=50501594",
         "kind": "article",
         "published": "2026-11-14T22:22:49Z"
@@ -2450,8 +464,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 66,
-        "comments": 20,
+        "points": 99,
+        "comments": 44,
         "hn_url": "https://news.ycombinator.com/item?id=50499945",
         "kind": "article",
         "published": "2026-11-14T19:23:40Z"
@@ -2465,8 +479,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 39,
-        "comments": 34,
+        "points": 50,
+        "comments": 55,
         "hn_url": "https://news.ycombinator.com/item?id=50499895",
         "kind": "article",
         "published": "2026-11-14T19:17:45Z"
@@ -2480,8 +494,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 168,
-        "comments": 85,
+        "points": 277,
+        "comments": 169,
         "hn_url": "https://news.ycombinator.com/item?id=50499723",
         "kind": "article",
         "published": "2026-11-14T18:56:47Z"
@@ -2495,8 +509,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 35,
-        "comments": 5,
+        "points": 38,
+        "comments": 7,
         "hn_url": "https://news.ycombinator.com/item?id=50499129",
         "kind": "article",
         "published": "2026-11-14T17:53:07Z"
@@ -2510,8 +524,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 41,
-        "comments": 62,
+        "points": 48,
+        "comments": 65,
         "hn_url": "https://news.ycombinator.com/item?id=50499114",
         "kind": "article",
         "published": "2026-11-14T17:51:13Z"
@@ -2525,8 +539,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 140,
-        "comments": 87,
+        "points": 165,
+        "comments": 100,
         "hn_url": "https://news.ycombinator.com/item?id=50499083",
         "kind": "article",
         "published": "2026-11-14T17:48:20Z"
@@ -2540,8 +554,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 57,
-        "comments": 99,
+        "points": 63,
+        "comments": 112,
         "hn_url": "https://news.ycombinator.com/item?id=50499041",
         "kind": "article",
         "published": "2026-11-14T17:45:35Z"
@@ -2555,8 +569,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 55,
-        "comments": 161,
+        "points": 64,
+        "comments": 190,
         "hn_url": "https://news.ycombinator.com/item?id=50498945",
         "kind": "article",
         "published": "2026-11-14T17:35:33Z"
@@ -2570,8 +584,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 43,
-        "comments": 6,
+        "points": 65,
+        "comments": 11,
         "hn_url": "https://news.ycombinator.com/item?id=50498295",
         "kind": "article",
         "published": "2026-11-14T16:29:05Z"
@@ -2585,8 +599,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 55,
-        "comments": 11,
+        "points": 68,
+        "comments": 15,
         "hn_url": "https://news.ycombinator.com/item?id=50498073",
         "kind": "article",
         "published": "2026-11-14T16:01:04Z"
@@ -2600,8 +614,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 45,
-        "comments": 28,
+        "points": 57,
+        "comments": 38,
         "hn_url": "https://news.ycombinator.com/item?id=50498051",
         "kind": "article",
         "published": "2026-11-14T15:58:57Z"
@@ -2615,8 +629,8 @@
       "first_seen": "2026-11-15T00:28:01Z",
       "text": "",
       "meta": {
-        "points": 69,
-        "comments": 5,
+        "points": 109,
+        "comments": 9,
         "hn_url": "https://news.ycombinator.com/item?id=50497416",
         "kind": "article",
         "published": "2026-11-14T14:44:28Z"
@@ -2630,7 +644,7 @@
       "first_seen": "2026-11-15T00:28:02Z",
       "text": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
       "meta": {
-        "stars": 8615,
+        "stars": 8718,
         "topics": [
           "accessibility",
           "ai-agent",
@@ -2643,7 +657,7 @@
         ],
         "language": "Kotlin",
         "created_at": "2026-10-29T14:34:07Z",
-        "pushed_at": "2026-11-14T19:29:57Z",
+        "pushed_at": "2026-11-15T19:45:12Z",
         "published": "2026-10-29T14:34:07Z"
       }
     },
@@ -2655,7 +669,7 @@
       "first_seen": "2026-11-15T00:28:02Z",
       "text": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; your phone's screen and your computer as its hands.",
       "meta": {
-        "stars": 3485,
+        "stars": 3512,
         "topics": [
           "agent-skills",
           "ai-agent",
@@ -2690,7 +704,7 @@
       "first_seen": "2026-11-15T00:28:02Z",
       "text": "A design system for AI applications. Material, physical, tactile, technical.",
       "meta": {
-        "stars": 2071,
+        "stars": 2074,
         "topics": [
           "agent-ui",
           "ai",
@@ -2718,7 +732,7 @@
       "first_seen": "2026-11-15T00:28:03Z",
       "text": "JevBench by Benchmark Heaven: benchmark and leaderboard for AI decision models, measuring typed decision accuracy, calibration, latency and cost.",
       "meta": {
-        "stars": 341,
+        "stars": 343,
         "topics": [
           "ai-benchmark",
           "benchmark-heaven",
@@ -2765,7 +779,7 @@
         ],
         "language": "Go",
         "created_at": "2026-10-11T22:32:01Z",
-        "pushed_at": "2026-11-14T22:46:27Z",
+        "pushed_at": "2026-11-15T23:13:55Z",
         "published": "2026-10-11T22:32:01Z"
       }
     },
@@ -2777,7 +791,7 @@
       "first_seen": "2026-11-15T00:28:04Z",
       "text": "安卓AI聊天端:开箱即聊，无损导入酒馆卡，专属RP模式，高定制主题，创造模式，缓存强省用量，手机控制，防空回，主动信息，前端卡支持，QQbot，AI群聊，插件系统，强兼容中转站。手机移动端原生支持，求 Star 收藏⭐Android AI Chatbox: lossless SillyTavern card import, aggressive cache optimization, Jev decisions, multi-dimensional memory, anti-blank-reply, proactive messages, AI group chat, SillyTavern themes, plugin system, Native mobile.RikkaHub",
       "meta": {
-        "stars": 202,
+        "stars": 207,
         "topics": [
           "ai-chat",
           "ai-client",
@@ -2802,7 +816,7 @@
         ],
         "language": "Kotlin",
         "created_at": "2026-09-20T03:25:10Z",
-        "pushed_at": "2026-11-14T22:25:15Z",
+        "pushed_at": "2026-11-15T22:56:53Z",
         "published": "2026-09-20T03:25:10Z"
       }
     },
@@ -2812,94 +826,1268 @@
       "title": "datasette-vega 0.7",
       "source": "blog",
       "first_seen": "2026-11-15T00:28:05Z",
-      "text": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.) Since it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite . Tags: datasette , visualisation , datasette-lite",
+      "text": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.) Since it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite . Tags: datasette , visualisation , datasette-lite",
       "meta": {
         "feed": "simonwillison.net",
         "published": "2026-11-14T17:09:09Z"
       }
+    },
+    {
+      "id": "6e99cd2a6aeb",
+      "url": "https://runkiri.com/",
+      "title": "Kiri – The Modern Container Runtime",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 91,
+        "comments": 34,
+        "hn_url": "https://news.ycombinator.com/item?id=50504077",
+        "kind": "article",
+        "published": "2026-11-15T04:40:41Z"
+      }
+    },
+    {
+      "id": "5ec3910099d5",
+      "url": "https://github.com/matheuzgomes/gawain",
+      "title": "Show HN: Gawain – Require type hints on all Python variables",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "Yes, i really hate \"dict[str, ANY]\"",
+      "meta": {
+        "points": 67,
+        "comments": 52,
+        "hn_url": "https://news.ycombinator.com/item?id=50504072",
+        "kind": "article",
+        "published": "2026-11-15T04:39:25Z"
+      }
+    },
+    {
+      "id": "fa6f9a523c4f",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 46,
+        "comments": 9,
+        "hn_url": "https://news.ycombinator.com/item?id=50503930",
+        "kind": "article",
+        "published": "2026-11-15T04:09:11Z"
+      }
+    },
+    {
+      "id": "dbfc348e99df",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 85,
+        "comments": 55,
+        "hn_url": "https://news.ycombinator.com/item?id=50503588",
+        "kind": "article",
+        "published": "2026-11-15T03:05:54Z"
+      }
+    },
+    {
+      "id": "ee705bff49c2",
+      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+      "title": "My favourite modern NES games",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 199,
+        "comments": 40,
+        "hn_url": "https://news.ycombinator.com/item?id=50503465",
+        "kind": "article",
+        "published": "2026-11-15T02:41:25Z"
+      }
+    },
+    {
+      "id": "095d34482a5f",
+      "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+      "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 335,
+        "comments": 117,
+        "hn_url": "https://news.ycombinator.com/item?id=50503255",
+        "kind": "article",
+        "published": "2026-11-15T02:00:54Z"
+      }
+    },
+    {
+      "id": "14ba8d169059",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 486,
+        "comments": 215,
+        "hn_url": "https://news.ycombinator.com/item?id=50502988",
+        "kind": "article",
+        "published": "2026-11-15T01:18:36Z"
+      }
+    },
+    {
+      "id": "59e30295289f",
+      "url": "https://bobbiec.github.io/jamaican-font.html",
+      "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 53,
+        "comments": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=50502839",
+        "kind": "article",
+        "published": "2026-11-15T00:56:45Z"
+      }
+    },
+    {
+      "id": "4fee55cd2515",
+      "url": "https://antonz.org/probabilistic-data-structures/",
+      "title": "Probabilistic Data Structures in Go",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 49,
+        "comments": 6,
+        "hn_url": "https://news.ycombinator.com/item?id=50496870",
+        "kind": "article",
+        "published": "2026-11-14T13:29:36Z"
+      }
+    },
+    {
+      "id": "9989fd637bc8",
+      "url": "https://lightpollutionmap.app/",
+      "title": "Light Pollution Map",
+      "source": "hn",
+      "first_seen": "2026-11-15T10:02:25Z",
+      "text": "",
+      "meta": {
+        "points": 35,
+        "comments": 7,
+        "hn_url": "https://news.ycombinator.com/item?id=50496159",
+        "kind": "article",
+        "published": "2026-11-14T11:30:43Z"
+      }
+    },
+    {
+      "id": "88ba491f7008",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "title": "strands-labs/strands-decider",
+      "source": "github",
+      "first_seen": "2026-11-15T10:02:27Z",
+      "text": "A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster than an LLM, with a calibrated confidence on every decision.",
+      "meta": {
+        "stars": 1198,
+        "topics": [
+          "ai",
+          "machine-learning",
+          "natural-language-understanding",
+          "python",
+          "strands-agents",
+          "strands-labs",
+          "system-one",
+          "system-one-models"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-29T16:36:38Z",
+        "pushed_at": "2026-11-14T05:18:58Z",
+        "published": "2026-09-29T16:36:38Z"
+      }
+    },
+    {
+      "id": "5d43a5b373f7",
+      "url": "https://github.com/receptron/laya",
+      "title": "receptron/laya",
+      "source": "github",
+      "first_seen": "2026-11-15T10:02:27Z",
+      "text": "Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONNX Runtime",
+      "meta": {
+        "stars": 1079,
+        "topics": [
+          "classification",
+          "decision-model",
+          "inference",
+          "llm",
+          "local-first",
+          "machine-learning",
+          "nodejs",
+          "onnx",
+          "onnxruntime",
+          "typescript"
+        ],
+        "language": "TypeScript",
+        "created_at": "2026-09-19T15:30:52Z",
+        "pushed_at": "2026-10-17T00:22:23Z",
+        "published": "2026-09-19T15:30:52Z"
+      }
+    },
+    {
+      "id": "b1ceedcda679",
+      "url": "https://github.com/modelsphere/modelsphere",
+      "title": "modelsphere/modelsphere",
+      "source": "github",
+      "first_seen": "2026-11-15T10:02:28Z",
+      "text": "ModelSphere is an open-source LLM inference infrastructure designed to make production-grade model serving simple, efficient, and continuously optimized.",
+      "meta": {
+        "stars": 190,
+        "topics": [
+          "ansible",
+          "ascend",
+          "gpu",
+          "helmfile",
+          "inference",
+          "kubernetes",
+          "llm",
+          "modelsphere",
+          "sglang",
+          "vllm"
+        ],
+        "language": "Shell",
+        "created_at": "2026-09-27T14:44:06Z",
+        "pushed_at": "2026-11-13T13:07:13Z",
+        "published": "2026-09-27T14:44:06Z"
+      }
+    },
+    {
+      "id": "669d77c5993e",
+      "url": "https://github.com/wanghao-SunSky/cs329z-chinese",
+      "title": "wanghao-SunSky/cs329z-chinese",
+      "source": "github",
+      "first_seen": "2026-11-15T10:02:29Z",
+      "text": "斯坦福 Stanford CS329Z Engineering AI Agents 中文教程：面向 Python 开发者的 AI 智能体课程，19 讲与 4 项实践，涵盖 LLM、RAG、工具调用、记忆、多智能体、评测与安全。完整 Markdown、在线与离线 HTML。Chinese course notes.",
+      "meta": {
+        "stars": 603,
+        "topics": [
+          "agent-memory",
+          "agentic-ai",
+          "ai-agents",
+          "chinese",
+          "chinese-tutorial",
+          "course-notes",
+          "cs329z",
+          "engineering-ai-agents",
+          "llm",
+          "llm-evaluation",
+          "multi-agent",
+          "python",
+          "rag",
+          "stanford",
+          "tutorial"
+        ],
+        "language": "HTML",
+        "created_at": "2026-10-28T18:18:24Z",
+        "pushed_at": "2026-11-06T09:43:12Z",
+        "published": "2026-10-28T18:18:24Z"
+      }
+    },
+    {
+      "id": "f9a3c449e598",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "title": "datasette-llm 0.1a11",
+      "source": "blog",
+      "first_seen": "2026-11-15T10:02:31Z",
+      "text": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.default_model ' { \"model\": \"lmstudio-qwen\", \"model_name\": \"qwen/qwen3.8-27b\", \"api_base\": \"http://localhost:1234/v1\" } ' content.db And you'll get a local server running a Datasette Agent instance powered by your local model! Tags: uv , datasette-agent , llm , datasette , llms , ai , generative-ai",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-11-14T23:59:28Z"
+      }
+    },
+    {
+      "id": "960f41318ea9",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "source": "blog",
+      "first_seen": "2026-11-15T10:02:34Z",
+      "text": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-11-15T08:22:04Z"
+      }
+    },
+    {
+      "id": "27fdb397828c",
+      "url": "https://www.commondreams.org/news/duffy-ground-stop-explanation",
+      "title": "'Duffy Lied': Controllers Refute Transportation Secretary's Ground Stop Story",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 143,
+        "comments": 42,
+        "hn_url": "https://news.ycombinator.com/item?id=50507791",
+        "kind": "article",
+        "published": "2026-11-15T15:45:42Z"
+      }
+    },
+    {
+      "id": "6390c6b231f0",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "title": "Emacs Is My Browser",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 171,
+        "comments": 89,
+        "hn_url": "https://news.ycombinator.com/item?id=50507553",
+        "kind": "article",
+        "published": "2026-11-15T15:21:21Z"
+      }
+    },
+    {
+      "id": "de1b04aef218",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "title": "All AI-generated code should be Open Source",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 1061,
+        "comments": 579,
+        "hn_url": "https://news.ycombinator.com/item?id=50507303",
+        "kind": "article",
+        "published": "2026-11-15T14:46:58Z"
+      }
+    },
+    {
+      "id": "87316fec60d2",
+      "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+      "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 73,
+        "comments": 46,
+        "hn_url": "https://news.ycombinator.com/item?id=50507206",
+        "kind": "article",
+        "published": "2026-11-15T14:31:52Z"
+      }
+    },
+    {
+      "id": "dc388aee58ab",
+      "url": "https://prog21.dadgum.com/116.html",
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 191,
+        "comments": 95,
+        "hn_url": "https://news.ycombinator.com/item?id=50506894",
+        "kind": "article",
+        "published": "2026-11-15T13:44:16Z"
+      }
+    },
+    {
+      "id": "57809c39abaa",
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "title": "The MacBook Pro's OLED PWM problem",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 407,
+        "comments": 228,
+        "hn_url": "https://news.ycombinator.com/item?id=50506719",
+        "kind": "article",
+        "published": "2026-11-15T13:15:22Z"
+      }
+    },
+    {
+      "id": "96e1a1a80255",
+      "url": "https://lucypero.com/lucynes.html",
+      "title": "A NES emulator written in Odin",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 105,
+        "comments": 40,
+        "hn_url": "https://news.ycombinator.com/item?id=50506588",
+        "kind": "article",
+        "published": "2026-11-15T12:51:47Z"
+      }
+    },
+    {
+      "id": "950ac38f23f2",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 195,
+        "comments": 26,
+        "hn_url": "https://news.ycombinator.com/item?id=50506376",
+        "kind": "article",
+        "published": "2026-11-15T12:14:06Z"
+      }
+    },
+    {
+      "id": "2f54d572a5b4",
+      "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+      "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "https://wallhop.io/https://www.nytimes.com/2026/11/15/us/pol...",
+      "meta": {
+        "points": 450,
+        "comments": 194,
+        "hn_url": "https://news.ycombinator.com/item?id=50506180",
+        "kind": "article",
+        "published": "2026-11-15T11:40:51Z"
+      }
+    },
+    {
+      "id": "7158251edd2a",
+      "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon/",
+      "title": "Jensen Huang allegedly manufactured the GPU shortage",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 60,
+        "comments": 58,
+        "hn_url": "https://news.ycombinator.com/item?id=50505905",
+        "kind": "article",
+        "published": "2026-11-15T10:53:50Z"
+      }
+    },
+    {
+      "id": "91e375cc559d",
+      "url": "https://space.stackexchange.com/questions/37775",
+      "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 225,
+        "comments": 145,
+        "hn_url": "https://news.ycombinator.com/item?id=50505271",
+        "kind": "article",
+        "published": "2026-11-15T09:06:43Z"
+      }
+    },
+    {
+      "id": "bf4a7f4c7c6d",
+      "url": "https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists",
+      "title": "Book list for streetfighting computer scientists",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 124,
+        "comments": 41,
+        "hn_url": "https://news.ycombinator.com/item?id=50504718",
+        "kind": "article",
+        "published": "2026-11-15T07:08:50Z"
+      }
+    },
+    {
+      "id": "0237c2ed4dfc",
+      "url": "https://netbsd.org/~nia/disk-encrypt/",
+      "title": "Disk encryption on NetBSD – achieving secrecy",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 93,
+        "comments": 18,
+        "hn_url": "https://news.ycombinator.com/item?id=50504277",
+        "kind": "article",
+        "published": "2026-11-15T05:29:54Z"
+      }
+    },
+    {
+      "id": "0d3904e8c8dd",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/amazon-union-contract-b-c-first-north-america-9.7421834",
+      "title": "B.C. arbitrator imposes first union contract for Amazon workers in North America",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 37,
+        "comments": 4,
+        "hn_url": "https://news.ycombinator.com/item?id=50504251",
+        "kind": "article",
+        "published": "2026-11-15T05:23:07Z"
+      }
+    },
+    {
+      "id": "c1b37e19e6e4",
+      "url": "https://lithub.com/how-the-telephone-changed-the-world/",
+      "title": "The Telephone Changed the World",
+      "source": "hn",
+      "first_seen": "2026-11-15T18:05:22Z",
+      "text": "",
+      "meta": {
+        "points": 35,
+        "comments": 10,
+        "hn_url": "https://news.ycombinator.com/item?id=50501887",
+        "kind": "article",
+        "published": "2026-11-14T22:56:09Z"
+      }
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "title": "microsoft/TokenEconomizer",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:23Z",
+      "text": "Experience-Driven Black-Box Cost Control for Coding Agents",
+      "meta": {
+        "stars": 6527,
+        "topics": [
+          "agentic-ai",
+          "agentic-coding",
+          "ai-coding",
+          "ai-coding-assistant",
+          "anthropic",
+          "artificial-intelligence",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "coding-agents",
+          "cost-optimization",
+          "cost-reduction",
+          "developer-tools",
+          "github-copilot",
+          "llm",
+          "open-source",
+          "openai",
+          "productivity",
+          "token-optimization"
+        ],
+        "language": "Python",
+        "created_at": "2026-10-13T04:16:50Z",
+        "pushed_at": "2026-11-12T21:48:20Z",
+        "published": "2026-10-13T04:16:50Z"
+      }
+    },
+    {
+      "id": "803705924fa3",
+      "url": "https://github.com/nanaism/yomiyasu",
+      "title": "nanaism/yomiyasu",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:23Z",
+      "text": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
+      "meta": {
+        "stars": 3284,
+        "topics": [
+          "agent-skills",
+          "ai-writing",
+          "antigravity",
+          "claude-code",
+          "codex",
+          "cursor",
+          "gemini",
+          "japanese",
+          "linter",
+          "llm",
+          "nlp",
+          "writing",
+          "writing-assistant",
+          "writing-tool"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-30T11:49:32Z",
+        "pushed_at": "2026-11-12T00:28:35Z",
+        "published": "2026-09-30T11:49:32Z"
+      }
+    },
+    {
+      "id": "26088bef70ca",
+      "url": "https://github.com/lemomo-ai/lemo-opuscar",
+      "title": "lemomo-ai/lemo-opuscar",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:24Z",
+      "text": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：99 种现成风格，也能做出你自己的",
+      "meta": {
+        "stars": 16769,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "ai-short-film",
+          "ai-video",
+          "animation",
+          "canvas",
+          "claude",
+          "claude-code",
+          "claude-code-plugin",
+          "claude-code-skill",
+          "creative-coding",
+          "ffmpeg",
+          "filmmaking",
+          "motion-graphics",
+          "opus-5-5",
+          "prompt-library",
+          "text-to-speech",
+          "threejs",
+          "video-production",
+          "webgl"
+        ],
+        "language": "JavaScript",
+        "created_at": "2026-09-26T10:10:41Z",
+        "pushed_at": "2026-11-12T11:29:03Z",
+        "published": "2026-09-26T10:10:41Z"
+      }
+    },
+    {
+      "id": "5757e0eb3900",
+      "url": "https://github.com/reacher-z/Awesome-REA",
+      "title": "reacher-z/Awesome-REA",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:24Z",
+      "text": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+      "meta": {
+        "stars": 2913,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "android-reverse-engineering",
+          "awesome",
+          "awesome-list",
+          "awesome-resources",
+          "binary-analysis",
+          "decompilation",
+          "firmware-analysis",
+          "game-reversing",
+          "ghidra",
+          "ios-reverse-engineering",
+          "javascript-deobfuscation",
+          "mcp",
+          "protocol-analysis",
+          "rea",
+          "research-papers",
+          "reverse-engineering",
+          "static-analysis",
+          "web-reverse-engineering"
+        ],
+        "language": "Python",
+        "created_at": "2026-10-16T00:42:04Z",
+        "pushed_at": "2026-11-15T17:26:17Z",
+        "published": "2026-10-16T00:42:04Z"
+      }
+    },
+    {
+      "id": "76ceb71552d2",
+      "url": "https://github.com/ceyyy427/finathink",
+      "title": "ceyyy427/finathink",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:25Z",
+      "text": "Finathink — Financial Research Optimizer for auditable, point-in-time research, mathematical learning, and constrained portfolio analysis.",
+      "meta": {
+        "stars": 247,
+        "topics": [
+          "backtesting",
+          "data-provenance",
+          "deep-learning",
+          "finance",
+          "financial-data",
+          "financial-research",
+          "finathink",
+          "machine-learning",
+          "point-in-time-data",
+          "portfolio-optimization",
+          "python",
+          "quantitative-finance",
+          "quantitative-research",
+          "research-workflow",
+          "time-series"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-25T16:42:23Z",
+        "pushed_at": "2026-11-13T16:57:00Z",
+        "published": "2026-09-25T16:42:23Z"
+      }
+    },
+    {
+      "id": "9266ad866a15",
+      "url": "https://github.com/wici-ai/inferssd",
+      "title": "wici-ai/inferssd",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:25Z",
+      "text": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+      "meta": {
+        "stars": 1181,
+        "topics": [
+          "apple-silicon",
+          "cuda",
+          "gguf",
+          "inference",
+          "llama-cpp",
+          "llm",
+          "metal",
+          "mixture-of-experts",
+          "ssd"
+        ],
+        "language": "C++",
+        "created_at": "2026-10-22T10:40:45Z",
+        "pushed_at": "2026-11-15T09:33:50Z",
+        "published": "2026-10-22T10:40:45Z"
+      }
+    },
+    {
+      "id": "d9b1143e34ee",
+      "url": "https://github.com/vladimirrott/mojo-dllm",
+      "title": "vladimirrott/mojo-dllm",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:25Z",
+      "text": "Local inference for diffusion language models (LLaDA, Dream), written in Mojo",
+      "meta": {
+        "stars": 540,
+        "topics": [
+          "cpu",
+          "diffusion-models",
+          "gguf",
+          "inference",
+          "llada",
+          "llm",
+          "mojo"
+        ],
+        "language": "Python",
+        "created_at": "2026-10-04T00:51:39Z",
+        "pushed_at": "2026-11-16T00:12:15Z",
+        "published": "2026-10-04T00:51:39Z"
+      }
+    },
+    {
+      "id": "ae93b168ec15",
+      "url": "https://github.com/FengZhenfei/carrel",
+      "title": "FengZhenfei/carrel",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:26Z",
+      "text": "Ontology-Augmented Generation for AI agents. ",
+      "meta": {
+        "stars": 806,
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "dgx-spark",
+          "document-parsing",
+          "icloud-sync",
+          "knowledge-graph",
+          "mineru",
+          "neo4j",
+          "ontology",
+          "opensearch",
+          "qdrant",
+          "rag",
+          "retrieval-augmented-generation"
+        ],
+        "language": "Python",
+        "created_at": "2026-09-28T11:13:02Z",
+        "pushed_at": "2026-11-15T17:42:55Z",
+        "published": "2026-09-28T11:13:02Z"
+      }
+    },
+    {
+      "id": "ae4c867e6452",
+      "url": "https://github.com/Dongbumlee/ontosmith",
+      "title": "Dongbumlee/ontosmith",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:26Z",
+      "text": "A decision-model-based ontology & knowledge-graph builder — builds governed knowledge graphs from your documents, every fact gated and traceable to its evidence.",
+      "meta": {
+        "stars": 284,
+        "topics": [
+          "graphrag",
+          "information-extraction",
+          "knowledge-graph",
+          "llm",
+          "neo4j",
+          "ontology",
+          "rag"
+        ],
+        "language": "Python",
+        "created_at": "2026-10-22T08:24:50Z",
+        "pushed_at": "2026-11-13T20:53:05Z",
+        "published": "2026-10-22T08:24:50Z"
+      }
+    },
+    {
+      "id": "e5eacc3fb228",
+      "url": "https://github.com/h9-tec/ai-roadmap-2026",
+      "title": "h9-tec/ai-roadmap-2026",
+      "source": "github",
+      "first_seen": "2026-11-15T18:05:26Z",
+      "text": "AI Roadmap 2026: a beginner's path through Foundations, LLM Engineering, Agents, Evaluation, and Production, with verified free resources and a mini-project per layer",
+      "meta": {
+        "stars": 195,
+        "topics": [
+          "agents",
+          "ai",
+          "ai-engineering",
+          "evaluation",
+          "learning-path",
+          "llm",
+          "rag",
+          "roadmap"
+        ],
+        "language": null,
+        "created_at": "2026-10-21T12:23:43Z",
+        "pushed_at": "2026-10-21T12:56:31Z",
+        "published": "2026-10-21T12:23:43Z"
+      }
+    },
+    {
+      "id": "f5913b377964",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "source": "blog",
+      "first_seen": "2026-11-15T18:05:28Z",
+      "text": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\" This is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching unnecessary data and the Datasette server is having to render an entire page that then gets thrown away. I dug in and learned that Firefox has an issue that has been open for 24 years about this behavior... And one of the early comments on that issue links to my blog post from 2002 complaining about this feature. I hadn't just forgotten that I had written about it, I had forgotten the feature entirely! Tags: firefox , html , mozilla , datasette",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-11-07T23:57:46Z"
+      }
+    },
+    {
+      "id": "d1f88f4d5d8d",
+      "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+      "title": "TSMC employee data breach linked to cloud provider",
+      "source": "blog",
+      "first_seen": "2026-11-15T18:05:28Z",
+      "text": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-11-15T15:23:48Z"
+      }
+    },
+    {
+      "id": "04c1c102f5a7",
+      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "source": "blog",
+      "first_seen": "2026-11-15T18:05:29Z",
+      "text": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to",
+      "meta": {
+        "feed": "feeds.feedburner.com",
+        "published": "2026-11-15T11:27:31Z"
+      }
+    },
+    {
+      "id": "733031d07a95",
+      "url": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
+      "title": "Jensen Huang might return to Nvidia as CEO",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 83,
+        "comments": 64,
+        "hn_url": "https://news.ycombinator.com/item?id=50511982",
+        "kind": "article",
+        "published": "2026-11-15T23:24:53Z"
+      }
+    },
+    {
+      "id": "28b10992cceb",
+      "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
+      "title": "Preserving 30 Years of Salon Journalism",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 44,
+        "comments": 9,
+        "hn_url": "https://news.ycombinator.com/item?id=50511806",
+        "kind": "article",
+        "published": "2026-11-15T23:00:11Z"
+      }
+    },
+    {
+      "id": "286313831039",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+      "title": "Old Bitly Links Are Being Hijacked",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 127,
+        "comments": 60,
+        "hn_url": "https://news.ycombinator.com/item?id=50511395",
+        "kind": "article",
+        "published": "2026-11-15T22:11:43Z"
+      }
+    },
+    {
+      "id": "10f839c1e887",
+      "url": "https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/",
+      "title": "Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 49,
+        "comments": 29,
+        "hn_url": "https://news.ycombinator.com/item?id=50511072",
+        "kind": "article",
+        "published": "2026-11-15T21:38:11Z"
+      }
+    },
+    {
+      "id": "294a13221fad",
+      "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+      "title": "Your Agent Will Pick the Hackable One",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 70,
+        "comments": 47,
+        "hn_url": "https://news.ycombinator.com/item?id=50510799",
+        "kind": "article",
+        "published": "2026-11-15T21:10:39Z"
+      }
+    },
+    {
+      "id": "64748288ec24",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+      "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 96,
+        "comments": 45,
+        "hn_url": "https://news.ycombinator.com/item?id=50510442",
+        "kind": "article",
+        "published": "2026-11-15T20:37:28Z"
+      }
+    },
+    {
+      "id": "b4260db782b8",
+      "url": "https://baron.by.dai.studio/",
+      "title": "WebGL Flight Simulator with seed generated terrain",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 71,
+        "comments": 9,
+        "hn_url": "https://news.ycombinator.com/item?id=50510296",
+        "kind": "article",
+        "published": "2026-11-15T20:20:05Z"
+      }
+    },
+    {
+      "id": "47b57b00d835",
+      "url": "https://news.ycombinator.com/item?id=50510042",
+      "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "We're a small business that sells pre-booked appointments with homeowners to local contractors, billed per appointment that actually happens. Our first client agreed to this on a recorded call and saved his card through a $1 Stripe payment link, which we planned to use for billing later. That $1 payment went through. A few weeks later we invoiced him $1,500 for 3 completed appointments and charged the saved card. Stripe blocked the payment. Two days after that the account was closed with this wording: payments \"don't appear to have been authorized by the customer.\" What happened next: - We appealed through the Dashboard with an appeal letter, our company documents and the invoice. It was rejected the next day as an \"unacceptable level of risk.\" - Support told us our \"business model presents a level of risk we're unable to support\" and that the decision is final. - After a Stripe employee escalated it internally, we got a short email saying Stripe still won't accept payments for our business. In all of this, nobody asked us for the call recording, our messages with the client, or a confirmation from the client himself. As far as we know, he never disputed anything, and he has told us he is paying by bank transfer outside Stripe. I'm not saying our setup is perfect. It's a new account, the first real charge was large compared to the $1 test, and billing a saved card later is probably what looked wrong. If there's something specific we should fix, I'll fix it. What I'm asking: 1",
+      "meta": {
+        "points": 122,
+        "comments": 43,
+        "hn_url": "https://news.ycombinator.com/item?id=50510042",
+        "kind": "discussion",
+        "published": "2026-11-15T19:49:28Z"
+      }
+    },
+    {
+      "id": "363403846a59",
+      "url": "https://arkanumdata.com/research/house-trades",
+      "title": "Do House members' stock trades beat the market? A test of 8,900 trades",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 101,
+        "comments": 111,
+        "hn_url": "https://news.ycombinator.com/item?id=50510005",
+        "kind": "article",
+        "published": "2026-11-15T19:46:02Z"
+      }
+    },
+    {
+      "id": "8b7dc9abe9cc",
+      "url": "https://ductus.sorenblank.com",
+      "title": "Handwriting, as a Font",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 102,
+        "comments": 23,
+        "hn_url": "https://news.ycombinator.com/item?id=50509972",
+        "kind": "article",
+        "published": "2026-11-15T19:42:13Z"
+      }
+    },
+    {
+      "id": "da5a45ac447a",
+      "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 59,
+        "comments": 60,
+        "hn_url": "https://news.ycombinator.com/item?id=50509953",
+        "kind": "article",
+        "published": "2026-11-15T19:39:46Z"
+      }
+    },
+    {
+      "id": "a0f134886e82",
+      "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1",
+      "title": "Jensen Huang discusses comeback as Nvidia CEO with allies",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 100,
+        "comments": 79,
+        "hn_url": "https://news.ycombinator.com/item?id=50509883",
+        "kind": "article",
+        "published": "2026-11-15T19:31:11Z"
+      }
+    },
+    {
+      "id": "966523945edb",
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
+      "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 135,
+        "comments": 32,
+        "hn_url": "https://news.ycombinator.com/item?id=50509837",
+        "kind": "article",
+        "published": "2026-11-15T19:26:22Z"
+      }
+    },
+    {
+      "id": "7c17e587ee6a",
+      "url": "https://github.com/eclipse-mosquitto/mosquitto",
+      "title": "Eclipse Mosquitto – An open source MQTT broker",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 58,
+        "comments": 21,
+        "hn_url": "https://news.ycombinator.com/item?id=50509416",
+        "kind": "article",
+        "published": "2026-11-15T18:36:40Z"
+      }
+    },
+    {
+      "id": "357c9f3ea7ee",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 351,
+        "comments": 168,
+        "hn_url": "https://news.ycombinator.com/item?id=50509411",
+        "kind": "article",
+        "published": "2026-11-15T18:36:10Z"
+      }
+    },
+    {
+      "id": "6e3a86feb66b",
+      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+      "title": "A short explainer on how El Niño works [video]",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 160,
+        "comments": 61,
+        "hn_url": "https://news.ycombinator.com/item?id=50509308",
+        "kind": "article",
+        "published": "2026-11-15T18:23:21Z"
+      }
+    },
+    {
+      "id": "0add1fe02352",
+      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 154,
+        "comments": 111,
+        "hn_url": "https://news.ycombinator.com/item?id=50509023",
+        "kind": "article",
+        "published": "2026-11-15T17:53:31Z"
+      }
+    },
+    {
+      "id": "69e5f0d03d19",
+      "url": "https://ykiko.me/en/articles/2105384023094834022/",
+      "title": "Clice v1.0 Released: Welcome to Modern C++",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 89,
+        "comments": 59,
+        "hn_url": "https://news.ycombinator.com/item?id=50508715",
+        "kind": "article",
+        "published": "2026-11-15T17:22:32Z"
+      }
+    },
+    {
+      "id": "8b1c9ace4af7",
+      "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/",
+      "title": "Uber confirms hackers stole drivers' license information in breach",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 36,
+        "comments": 3,
+        "hn_url": "https://news.ycombinator.com/item?id=50507716",
+        "kind": "article",
+        "published": "2026-11-15T15:37:19Z"
+      }
+    },
+    {
+      "id": "cbacf3f9b676",
+      "url": "https://github.com/Noniv/abyssal-garden",
+      "title": "Abyssal Garden: A dreamy underwater world you can swim through (96 KB HTML)",
+      "source": "hn",
+      "first_seen": "2026-11-16T00:29:42Z",
+      "text": "",
+      "meta": {
+        "points": 35,
+        "comments": 2,
+        "hn_url": "https://news.ycombinator.com/item?id=50506767",
+        "kind": "article",
+        "published": "2026-11-15T13:24:33Z"
+      }
+    },
+    {
+      "id": "17bd4145ec30",
+      "url": "https://github.com/reason-machines/reason-network",
+      "title": "reason-machines/reason-network",
+      "source": "github",
+      "first_seen": "2026-11-16T00:29:43Z",
+      "text": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
+      "meta": {
+        "stars": 1749,
+        "topics": [
+          "agent-to-agent",
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "coding-agents",
+          "cursor",
+          "grok",
+          "iroh",
+          "mcp",
+          "mcp-server",
+          "multi-agent",
+          "peer-to-peer",
+          "reason"
+        ],
+        "language": "Rust",
+        "created_at": "2026-10-16T15:34:34Z",
+        "pushed_at": "2026-11-12T10:13:53Z",
+        "published": "2026-10-16T15:34:34Z"
+      }
+    },
+    {
+      "id": "475fd729df90",
+      "url": "https://github.com/DozenTwelve/Papermorph",
+      "title": "DozenTwelve/Papermorph",
+      "source": "github",
+      "first_seen": "2026-11-16T00:29:43Z",
+      "text": "An AI skill that turns books into animated, narrated, interactive web experiences",
+      "meta": {
+        "stars": 1721,
+        "topics": [
+          "ai-agents",
+          "ai-education",
+          "animation",
+          "claude",
+          "claude-code",
+          "claude-skills",
+          "edtech",
+          "education",
+          "interactive-textbook",
+          "scorm",
+          "text-to-video"
+        ],
+        "language": "JavaScript",
+        "created_at": "2026-10-03T01:38:22Z",
+        "pushed_at": "2026-11-12T13:47:57Z",
+        "published": "2026-10-03T01:38:22Z"
+      }
+    },
+    {
+      "id": "87d7014c15ee",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "source": "blog",
+      "first_seen": "2026-11-16T00:29:45Z",
+      "text": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "meta": {
+        "feed": "openai.com",
+        "published": "2026-11-15T22:00:01Z"
+      }
+    },
+    {
+      "id": "4b0fc5b701ff",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "title": "Our new blog for science",
+      "source": "blog",
+      "first_seen": "2026-11-16T00:29:45Z",
+      "text": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "meta": {
+        "feed": "openai.com",
+        "published": "2026-11-15T22:00:00Z"
+      }
+    },
+    {
+      "id": "7c04761a4076",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-2/",
+      "title": "datasette 0.65.6",
+      "source": "blog",
+      "first_seen": "2026-11-16T00:29:46Z",
+      "text": "Release: datasette 0.65.6 I backported a minor security fix from 1.0a43: Fixed a security issue where a database registered using add_database(db, name=..., route=...) with a route that differs from its name could be downloaded from /<route>.db by actors who were denied access to it. [...] Tags: security , datasette",
+      "meta": {
+        "feed": "simonwillison.net",
+        "published": "2026-11-15T23:18:17Z"
+      }
+    },
+    {
+      "id": "29c8bcf132e2",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+      "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+      "source": "blog",
+      "first_seen": "2026-11-16T00:29:46Z",
+      "text": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+      "meta": {
+        "feed": "bleepingcomputer.com",
+        "published": "2026-11-15T18:29:53Z"
+      }
     }
   ],
   "recent_labels": [
-    {
-      "ts": "2026-11-11T06:18:50Z",
-      "digest_date": "2026-11-10",
-      "item_id": "e9e255b08220",
-      "url": "https://therecord.media/cyberattack-germany-ai-mittwald",
-      "title": "Flaw in hosting provider's MCP server exposes 56 customer projects",
-      "tier": "headline",
-      "source": "blog",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-11T06:18:50Z",
-      "digest_date": "2026-11-10",
-      "item_id": "9e18e9d68e85",
-      "url": "https://zenodo.org/records/23682548",
-      "title": "One AI agent built a Rust kernel that boots Rocky Linux in 11 days",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-11T06:18:50Z",
-      "digest_date": "2026-11-10",
-      "item_id": "39e994344746",
-      "url": "https://github.com/RunanywhereAI/trnrt",
-      "title": "Open-source inference engine serves a 320B model on AWS Trainium2",
-      "tier": "discovery",
-      "source": "github",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-11T06:18:50Z",
-      "digest_date": "2026-11-10",
-      "item_id": "feb2ba211559",
-      "url": "https://research.meta.ai/blog/muse-ember",
-      "title": "Meta's Muse Ember matches Haiku's top score at a third the cost",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-11T06:18:50Z",
-      "digest_date": "2026-11-10",
-      "item_id": "c88eb98b7d5c",
-      "url": "https://itsfoss.com/news/asahi-linux-drops-mit-for-gpl/",
-      "title": "Asahi Linux moves to GPL to stop AI-laundered code theft",
-      "tier": "discovery",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-12T06:14:34Z",
-      "digest_date": "2026-11-11",
-      "item_id": "f8c1a7370c13",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "title": "DeepMind's AlphaProof formally verifies Signal's crypto",
-      "tier": "headline",
-      "source": "hn",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-12T06:14:34Z",
-      "digest_date": "2026-11-11",
-      "item_id": "7646e96e2e7b",
-      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-      "title": "Fireworks AI breach exposed model weights, Notion chats",
-      "tier": "headline",
-      "source": "blog",
-      "verdict": "ignored"
-    },
-    {
-      "ts": "2026-11-12T06:14:34Z",
-      "digest_date": "2026-11-11",
-      "item_id": "b958c2272095",
-      "url": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-      "title": "SGLang RCE breached NEAR AI agents inside a TEE",
-      "tier": "discovery",
-      "source": "blog",
-      "verdict": "ignored"
-    },
     {
       "ts": "2026-11-12T06:14:34Z",
       "digest_date": "2026-11-11",
@@ -3019,9 +2207,97 @@
       "tier": "discovery",
       "source": "hn",
       "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "205541d416be",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "title": "Cursor breach let attackers ship a trojanized Claude Code extension",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "f0f23fdb08d7",
+      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
+      "title": "FBI: Artex AI pentesting tool automates attacks at 'machine speed'",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "40e78db6601d",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "title": "llama.cpp and ggml reach v1.0.0 after 3.5 years",
+      "tier": "headline",
+      "source": "blog",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "b26717d449a4",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "title": "Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its own chips",
+      "tier": "headline",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "52d9f85d2984",
+      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
+      "title": "Weight-space misfolding: when one model edits another's weights",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "8f2daa11c505",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "0364257ac690",
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "title": "Lovable apps expose passport details and 200K private messages",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
+    },
+    {
+      "ts": "2026-11-16T06:14:27Z",
+      "digest_date": "2026-11-15",
+      "item_id": "ea0776201252",
+      "url": "https://haddyalchaer.com/jepa",
+      "title": "600 experiments pinpoint where JEPA world-model planning breaks",
+      "tier": "discovery",
+      "source": "hn",
+      "verdict": "ignored"
     }
   ],
   "recently_sent_titles": [
+    "Cursor breach let attackers ship a trojanized Claude Code extension",
+    "FBI: Artex AI pentesting tool automates attacks at 'machine speed'",
+    "llama.cpp and ggml reach v1.0.0 after 3.5 years",
+    "Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its own chips",
+    "Weight-space misfolding: when one model edits another's weights",
+    "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations",
+    "Lovable apps expose passport details and 200K private messages",
+    "600 experiments pinpoint where JEPA world-model planning breaks",
     "Microsoft's Lazarus backdoors AI agents by editing under 10 neurons",
     "35,578 public Grok-built apps leak passwords, hospital data",
     "VulnCheck's audit of Anthropic's AI vuln-hunting falls short of the hype",
@@ -3069,14 +2345,6 @@
     "Researchers broke ChatGPT's anti-exfiltration Lockdown Mode",
     "Open-weight models' price-performance share fell to 3%, from 41%",
     "Stroq audits what your coding agent actually did",
-    "An AI hacking agent reportedly escaped its sandbox at WorkOS",
-    "OpenAI's AI pipeline patches 948 Linux root-escalation bugs",
-    "OpenAI launches GPT-6 Cyber, a dedicated vuln-hunting model",
-    "Mistral Large 4 ships open-weight with top cyber benchmarks",
-    "Claude Code leaks account email in outbound requests",
-    "Residential proxies found exiting through White House network",
-    "GPT-6 Astra quietly did less on safety-research tasks",
-    "Kimi K3.1 Pro ships open weights, faces benchmaxxing claims",
-    "Backdoored AI pentest tool exposes 62 servers to root access"
+    "An AI hacking agent reportedly escaped its sandbox at WorkOS"
   ]
 }

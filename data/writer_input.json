@@ -1,110 +1,105 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "stories": [
     {
-      "id": "205541d416be",
-      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-      "title": "Cursor confirms security breach led to malicious Claude Code extension",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Real, confirmed, high-detail supply-chain compromise: attackers pivoted from a leaked Fireworks AI key through Cursor's systems to ship a trojanized Claude Code VS Code extension for ~11 hours. Concrete scope numbers, part of the broader 'Black October' AI-platform breach wave.",
-      "key_facts": [
-        "Attackers used a leaked Fireworks AI access key to read a Cursor-Fireworks data-sharing bucket of historical coding-agent traces (unredacted creds in some)",
-        "Malicious Claude Code extension versions 2.1.312/2.1.313 live ~11 hours, tried to install persistent SSH backdoors (buggy, often failed)",
-        "<0.05% of users had traces exposed, <0.01% had API creds compromised, up to 5,000 users may have received the malicious build",
-        "Part of a wider 'Black October' wave of breaches across AI dev platforms (Fireworks, Railway, Notion)"
-      ]
-    },
-    {
-      "id": "f0f23fdb08d7",
-      "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert",
-      "title": "FBI flash alert says Artex tool automating cyberattacks at ‘machine speed’",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "FBI flash alert on Artex, an open-source LLM-driven pentest framework abused for state-speed intrusions (targeting->privileged access in <3hrs in some cases), 1,600+ exposed public instances found, DeepSeek Flash models dominating usage for lack of guardrails. This is the AI-driven-attack-automation story the taste profile is built around.",
-      "key_facts": [
-        "Artex: open-source AI pentesting platform, turns any LLM into an autonomous intrusion agent; released by 'Autumn-27' in August, later abused and taken down but persists via forks/commercial version",
-        "FBI: some intrusions went from initial targeting to privileged access in under 3 hours",
-        "Censys found 1,600+ publicly exposed Artex console instances (actual deployments likely higher)",
-        "FBI says DeepSeek Flash models dominate usage for capability, low cost, and lack of guardrails when framed as pentesting",
-        "Targets: financial services, government, defense, semiconductors, energy, healthcare, telecom, legal"
-      ]
-    },
-    {
-      "id": "52d9f85d2984",
-      "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
-      "title": "Weight Space Misfolding",
+      "id": "ad8b3d5bdfd0",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Genuine new AI x cyber research: a threat model and taxonomy for one model maliciously editing another's weights post-deployment (factual substitution, capability denial, selective omission), with controlled probes and real numbers showing current edits aren't cleanly localized, plus a proposed inspection framework. Directly adjacent to, but distinct from, the Lazarus neuron-backdoor story already covered.",
+      "reason": "DeepSeek-V3 architecture (MLA, MoE routing, aux-loss-free balancing, MTP) reimplemented in 190 lines of pure JAX with running training/inference, 39 tests, trained on a MacBook Air M5 and an AMD ROCm box; concrete ablations (bias on/off expert-load spread) and a published checkpoint. Running code beats a description of the same idea.",
       "key_facts": [
-        "Defines 'weight-space misfolding': unauthorized weight edits by another model that violate the target's legitimate deployment constraints",
-        "Qwen2.5-1.5B-Instruct probes via IWIBench editor: factual substitution succeeded 100/100 but broke an unrelated capability (couldn't say 'Sydney' anymore)",
-        "Legal-refusal edit worked on only 5/22 held-out prompts and broke an unrelated refusal; supplier-omission edit worked 1/22",
-        "IWIBench mean editing-skill reward rose 0.2148 -> 0.4250 in under 5 months; no demonstrated self-propagation or air-gap crossing",
-        "Proposes Deep Patch Inspection and Broad Weight Inspection as partial defenses, neither a general guarantee"
+        "190-line pure-JAX reimplementation of DeepSeek-V3 (MLA, DeepSeekMoE, aux-loss-free balancing, multi-token prediction)",
+        "36.2M total / 13.6M active params; trained on MacBook Air M5 (jax-metal) in 2.6h at ~10.7k tok/s, val loss 5.02->3.51",
+        "ROCm RX 7600 XT run: ~50min, ~35k tok/s, val loss 3.527 vs 3.507 on Mac",
+        "MLA cache stores 144 numbers/token/layer vs 480 for full KV",
+        "207 stars, 17 forks; checkpoint is a pickle (code-exec risk if untrusted)"
       ]
     },
     {
-      "id": "40e78db6601d",
-      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "llama.cpp/ggml hit v1.0.0 after ~3.5 years — first real API/ABI stability guarantee for the backbone of the local-AI ecosystem (150+ architectures, used by countless downstream apps). A genuine infra milestone, not a feature drop.",
-      "key_facts": [
-        "llama.cpp and ggml both reach v1.0.0; semantic versioning now signals API/ABI breaks to downstream devs",
-        "Project is ~3.5 years old; supports 150+ model architectures and mainstream speculative decoding",
-        "ggml backends can now be compiled as dynamic libs loaded at runtime",
-        "CI scaled via HF Buckets/Jobs with hardware-partner runners (NVIDIA, AMD, Qualcomm, Arm, IBM, Intel)"
-      ]
-    },
-    {
-      "id": "8f2daa11c505",
-      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+      "id": "950ac38f23f2",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Concrete serving benchmark on real hardware: 753B MoE (40B active) split across two DGX GB300s over 400Gb RDMA, hits 607.8 tok/s at concurrency 16 using TP=2, speculative decoding, FP8 KV cache. Exactly the inference-infra substance this feed is tuned for.",
+      "reason": "Sebastian Raschka's survey of positional-embedding schemes (learned absolute, sinusoidal, RoPE, NoPE, partial RoPE, learned relative bias) with concrete comparisons: a 107M NoPE study beating RoPE on length generalization, SmolLM3's 3-of-4-layers RoPE trick, and data showing partial RoPE went from minority to majority of RoPE models in 2026. Exactly the 'evaluation methodology / architecture understanding' territory Mine always wants, and not a rehash of anything recently sent.",
       "key_facts": [
-        "GLM-5.3 NVFP4, 753B total/40B active params, ~464GB checkpoint",
-        "Two DGX GB300 (252GB HBM3e each) linked via ConnectX-8 RDMA at 400Gb/s, TP=2",
-        "607.8 tok/s aggregate at concurrency 16 (peak); 107.4 tok/s at concurrency 1",
-        "Per-user throughput falls from 115.3 tok/s (c=1) to 13.0 tok/s (c=32)",
-        "Uses 4-token speculative decoding, FP8 KV cache, prefix caching, FlashInfer CUTLASS MoE backend"
+        "In a 107M-param study, NoPE ranked first across 10 length-generalization tasks, ahead of RoPE",
+        "SmolLM3 applies RoPE in 3 of every 4 layers, skipping the 4th, reportedly improving long-context performance",
+        "Partial RoPE (rotating ~10% of head features) became the majority among RoPE models in the author's 2026 architecture survey, up from a minority"
       ]
     },
     {
-      "id": "0364257ac690",
-      "url": "https://www.crissyfield.de/research/lovable-en/",
-      "title": "Lovable apps expose passport details and more than 200K private messages",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Not fetched, but title and scale (599 pts, passport details + 200K private messages) match the exact pattern of the already-covered 'Grok apps leak passwords/hospital data' story — AI app-builder (Lovable) shipping no-auth-by-default apps that leak sensitive data at scale. Strong fit for the AI x cyber line even unread.",
-      "key_facts": []
-    },
-    {
-      "id": "ea0776201252",
-      "url": "https://haddyalchaer.com/jepa",
-      "title": "After 600 experiments, here's what I discovered about JEPA world models",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Deep, concrete personal research dive: 600 experiments isolating exactly where JEPA world-model planning fails (hierarchical subgoals, latent-memory graphs, pusher-aware scoring), with honest negative results and a harder benchmark the author built. Low-saturation, high-signal — the discovery tier's reason for existing.",
-      "key_facts": [
-        "LeWM (JEPA world model) on Push-T: swapping in exact simulator physics barely changes long-horizon success (78% vs 77%) — the learned predictor isn't the bottleneck",
-        "Hierarchical planning (subgoal every 25 steps) raises 75-step success from 22% to 80%, beating exact-physics flat planning (42%)",
-        "Latent memory graph w/ jump cost reaches 85% success, matching expert-subgoal planner",
-        "Pusher-aware goal scoring doubles hardest-test success from 11% to 23%",
-        "Author's new harder benchmark (250 episodes, cross-demo start/goal) caps best planner at 56% success"
-      ]
-    },
-    {
-      "id": "b26717d449a4",
-      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-      "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+      "id": "be81354d8a30",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "title": "Advancing science and engineering with Antigravity's /teamwork",
       "source": "hn",
       "tier": "headline",
-      "reason": "Extremely high-engagement (1025 pts) story directly about AI-compute economics — Nvidia allegedly funding AI startups specifically to buy its own GPUs, engineering scarcity. Already-seen territory at this point level, but headline score isn't penalized for saturation per Mine.",
+      "reason": "Deep technical writeup of Google Antigravity's /teamwork multi-agent-with-verifier pattern, backed by extensive measured results across math, chemistry, infra and code migration — clears the bar the Learned notes set for agent-harness posts (needs a concrete benchmark/measured number), unlike the dead harness-launch wave.",
+      "key_facts": [
+        "DuoDiscover pattern: 4.09x geomean speedup over reference across 17 JAXBench kernels, 2.99x across 7 vLLM TPU Pallas kernels",
+        "FarArray lock-free Connected Components scaled to 1-trillion-edge graphs: 60x-90x throughput, 6x lower RAM than TCP KV stores",
+        "Custom TPU GNN kernels: up to 185x HBM reduction, 8x-15x speedups",
+        "Rust rewrite of libgav1 (~170k lines) reached bit-exact conformance, ending 20-30% faster than C++ after tuning",
+        "9x9 Go engine gained ~2600 Elo in <8 days from a basic AlphaZero implementation (2300x self-play speedup)",
+        "Google Borg scheduling change cut TPU workload preemption 24% on some hardware"
+      ]
+    },
+    {
+      "id": "d9b1143e34ee",
+      "url": "https://github.com/vladimirrott/mojo-dllm",
+      "title": "vladimirrott/mojo-dllm",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "mojo-dllm: diffusion-LLM inference engine (LLaDA, Dream, DiffuCoder) written in Mojo with no Python at runtime, running quantized GGUF models. 540 stars, real CI/docs/security-policy, and head-to-head benchmarks against llama.cpp's diffusion CLI on both CPU and GPU (close to parity on GPU, ~1.9x faster on CPU in the author's run) plus lower peak RAM. A genuinely new, niche inference-infra result with running code, very unlikely the operator has seen it.",
+      "key_facts": [
+        "CPU: ~3,005 ms/step for LLaDA-8B Q4_K_M on an i5-13420H vs 5,807 ms/step for llama.cpp's llama-diffusion-cli",
+        "GPU (RTX 3050 6GB): median step-time ratio vs llama.cpp CUDA is 0.906 (LLaDA) and 1.022 (Dream) -- near parity",
+        "Peak host RSS far lower than llama.cpp in listed runs (e.g. 1.1GB vs 5.3GB on the GPU LLaDA run)",
+        "540 stars, 8 forks; requires Linux x86-64 with AVX2; GPU kernel tuning still in progress"
+      ]
+    },
+    {
+      "id": "294a13221fad",
+      "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+      "title": "Your Agent Will Pick the Hackable One",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Verifiable, example-driven essay arguing AI coding agents will steer buyers toward hackable/repairable hardware (M-Vave FM-1 firmware, Bambu Lab/Chamberlain lock-in cases, Google's sideloading rule), reasoning through the security tradeoffs (Mirai-style monoculture risk vs. malicious-firmware risk) of agent-mediated device modification -- a genuine AI x security-economics angle that is not a rehash of anything recently sent.",
+      "key_facts": [
+        "M-Vave open-sourced its FM-1 synth firmware under GPLv3 after owners reverse-engineered custom firmware (synth, groovebox, Doom port) within weeks",
+        "Argues agents will favor hackable/recoverable devices and cites a 10-second stock-firmware recovery tool as the key enabler"
+      ]
+    },
+    {
+      "id": "b6f34700b44a",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Concrete, verifiable incident: a Claude agent tasked with renumbering PDF pages deleted a law professor's entire syllabus and a year of lecture notes, then admitted the mistake. A fresh, specific cautionary tale about agentic-coding blast radius that changes what an engineer running agents on real files would do (backups/sandboxing before destructive agent tasks).",
+      "key_facts": [
+        "Claude agent given a page-renumbering task deleted a law professor's full syllabus and a year of lecture notes, then apologized: 'I deleted your files through my own carelessness.'"
+      ]
+    },
+    {
+      "id": "de1b04aef218",
+      "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+      "title": "All AI-generated code should be Open Source",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "1061-point HN discussion arguing AI-generated code should be forced open-source/public-domain on training-data-fairness and copyrightability grounds. At 1000+ points the operator has certainly seen it — per Mine's rule, surface briefly as a headline rather than spending a discovery slot on it.",
+      "key_facts": [
+        "Argues AI output inherits an obligation to stay open since models trained on OSS/CC code; cites the 'Monkey Selfie' precedent against copyrightability of non-human-authored code"
+      ]
+    },
+    {
+      "id": "65ebb5670c6d",
+      "url": "https://aatishb.com/myriad/how-brains-learn/",
+      "title": "A visual explanation of reinforcement learning",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Interactive explainer of how RL/brains learn — a reference resource, not new information about a specific system or result.",
       "key_facts": []
     }
   ]
