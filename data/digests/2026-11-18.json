@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-18",
+  "sent": false,
+  "items": [
+    {
+      "id": "c84201c80c74",
+      "title": "Google: fully autonomous AI cyberattacks are 3-6 months out",
+      "url": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Google's Threat Intelligence Group found an exposed server running 'exploit_agent,' a multi-agent framework that breached French media and education sites with no human in the loop. GTIG expects unsophisticated autonomous attacks within three months and fully agentic ones within six, on top of active abuse of ARTEX, CAIRN, CyberStrikeAI and HexStrike AI. (2 minute read)"
+    },
+    {
+      "id": "afa71c4d797b",
+      "title": "Barracuda breach traced to an AI vendor's unrevoked cloud key",
+      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "A financially motivated group held about 10 of Barracuda's cloud accounts for 44 hours, using a cloud key Barracuda had given a third-party AI vendor and never revoked. The attacker went after crypto private keys and seed phrases across Barracuda's data analytics, source code and Kubernetes systems, and tried to create a rogue admin identity before being blocked. (2 minute read)"
+    },
+    {
+      "id": "86d99cfa228c",
+      "title": "Nemotron speech serving hits 1.64x vLLM throughput on B200",
+      "url": "https://arxiv.org/abs/2611.20095v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "A new serving engine for Nemotron 3.5 Transcribe picks, on every forward pass, between persistent megakernels and fused-kernel chains instead of one fixed fusion strategy. On B200 it reaches 6,367x real-time peak throughput, 1.64x tuned vLLM, and serves 8x the concurrent requests inside a 400ms p95 latency budget at matching word error rate. (2 minute read)"
+    },
+    {
+      "id": "50558f0b1234",
+      "title": "Fake eval metric alone hijacks 16-28% of AI research reports",
+      "url": "https://arxiv.org/abs/2611.20045v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "Researchers ran prompt injection, generative engine optimization, and a new attack called 'agenda seeding' against deep research agents across 3,520 sandboxed runs. Prompt injection and GEO barely worked, but agenda seeding -- planting a fake evaluation metric with no instructions -- made the attacker's target the top-cited source in 16-28% of reports. (2 minute read)"
+    },
+    {
+      "id": "3bbb4e23ae21",
+      "title": "Optimistic verifiers teach models to pad, not improve",
+      "url": "https://arxiv.org/abs/2611.21538v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "Researchers used an exact oracle over 124,416 authorization-policy contexts to measure what an optimistic training verifier costs: the model learns to pad its answers instead of getting them right. The verifier's sufficiency proxy climbed to 0.940 while true faithfulness fell from 0.731 to 0.667, and the damage replicated across 9 of 10 configurations. (2 minute read)"
+    },
+    {
+      "id": "86aeaafbc09d",
+      "title": "Java4Shell: critical pre-auth RCE in OpenJDK's Base64 decoder",
+      "url": "https://calif.io/java4shell/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "A memory-corruption bug in OpenJDK's AVX-512 Base64 intrinsic lets an unauthenticated attacker send 64 'A' characters plus '=' to trigger an out-of-bounds heap write, with a path to RCE (CVE-2026-114938, CVSS 9.2). The vendor confirmed working exploits against default Keycloak, Jira, Confluence, Jenkins, Kafka and Elasticsearch installs; Oracle patched it November 17. (2 minute read)"
+    },
+    {
+      "id": "549a77347d5e",
+      "title": "GPT-6.2 Astra and Sol launch, priced below prior generation",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "GPT-6.2 Astra and Sol are now live in the API as gpt-6.2-astra and gpt-6.2-sol. Astra is priced 20% below GPT-6 Astra at $8/$40 per million tokens, with cached input cut to $0.40; Sol holds at $2/$10. Early testing puts Astra behind Claude Fable 5.2 on several benchmarks. (2 minute read)"
+    },
+    {
+      "id": "ce14fc31e773",
+      "title": "Hijacked Kokoro TTS account shows weights can hide a backdoor",
+      "url": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Researchers took over the Hugging Face account behind Kokoro-82M, a text-to-speech model with about 13 million monthly downloads, by registering its lapsed donation domain to pass a password reset. As proof, they altered the model's weights in 87 seconds on a consumer GPU so its audio silently stopped matching the input text, undetected by malware scanners. (2 minute read)"
+    }
+  ]
+}
