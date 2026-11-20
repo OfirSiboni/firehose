@@ -1,114 +1,106 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-20",
   "stories": [
     {
-      "id": "c84201c80c74",
-      "url": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-      "title": "Google warns that fully-automated AI attacks are coming soon",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Google GTIG's AI Threat Tracker documents the first fully autonomous (no-human-in-loop) exploit chain in the wild and projects unsophisticated autonomous attacks within ~3 months; the clearest evidence yet that the AI-cyber threat model has shifted from assisted to agentic.",
-      "key_facts": [
-        "GTIG found an exposed staging server running 'exploit_agent', a multi-agent framework used against French media/entertainment/education sites without a human in the loop",
-        "GTIG projects low-sophistication autonomous attacks within ~3 months and fully autonomous sophisticated agentic attacks within ~6 months",
-        "Named abused open-source pentest frameworks: ARTEX, CAIRN (used against US aerospace), CyberStrikeAI, HexStrike AI",
-        "Suspected North Korean group UNC6836/'Midnight Neptune' used a modified Claude Code to deliver the SOMBERMEME backdoor against crypto firms"
-      ]
-    },
-    {
-      "id": "afa71c4d797b",
-      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-      "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Barracuda's own breach -- caused by its own unrevoked cloud key handed to a third-party AI vendor, then used in an ARTEX-attributed 44-hour intrusion targeting crypto secrets -- is a concrete, named, verified incident distinct from the generic FBI/Google warnings, and the irony (AI vendor's key hygiene) is the kind of detail the operator's taste rewards.",
-      "key_facts": [
-        "Attacker held ~10 Barracuda cloud accounts for 44 hours (Nov 1-2 2026); discovered Nov 4",
-        "Initial access via a cloud key Barracuda gave a third-party AI vendor and never revoked; key reportedly pulled from vendor's GitHub config file in October",
-        "Attacker targeted crypto private keys/seed phrases across data analytics, source repos and Kubernetes; attempted to create a rogue cloud admin identity (blocked)",
-        "Barracuda's ARTEX attribution rests on behavioral indicators (labels, probing style, hunting routines), not stated forensic confirmation"
-      ]
-    },
-    {
-      "id": "86d99cfa228c",
-      "url": "https://arxiv.org/abs/2611.20095v1",
-      "title": "High-Throughput Serving of Nemotron 3.5 Transcribe with Regime-Aware Megakernels and Kernel Fusion",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Concrete, measured serving-engine win for speech models: switching per-forward-pass between megakernels and fused-kernel chains beats tuned vLLM by up to 1.64x peak throughput and serves 8x the concurrency at a fixed latency budget -- exactly the 'how models are served' territory the profile weights highest.",
-      "key_facts": [
-        "H100: 4,345x real-time peak throughput, 1.39x vLLM's peak, up to 4.39x faster at low concurrency",
-        "B200: 6,367x real-time peak, 1.64x vLLM at highest tested concurrency; serves 8x the concurrent requests inside a 400ms p95 budget",
-        "Per-pass megakernel/fused-kernel selection beats always-megakernel by 23% and always-fused by 9% depending on concurrency",
-        "WER stays within 1.91-1.93% vs vLLM's 1.88-1.93%"
-      ]
-    },
-    {
-      "id": "50558f0b1234",
-      "url": "https://arxiv.org/abs/2611.20045v1",
-      "title": "Security of Deep Research Agents: Attack Surface, Defenses, Benchmarks, and Agenda Seeding against Research Planning",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "A systematic threat model for deep research agents that introduces 'agenda seeding' -- an instruction-free attack that just plants a fake eval metric and gets the attacker's target picked as the top report result in 16-28% of runs, beating prompt injection and GEO outright; exactly the agent-attack-chain-with-a-PoC the profile always wants.",
-      "key_facts": [
-        "Across 3,520 sandboxed research runs, prompt injection and GEO were nearly ineffective but 'agenda seeding' (no instructions, just a fictitious eval metric) made the attacker's target the top pick 16-28% of the time",
-        "Of 34 prior studies, only 26.5% address the planning stage and none runs an end-to-end poisoning eval on commercial products",
-        "Injection detection/query anchoring did not stop agenda seeding; verification prompting cut utility; provenance tagging held but was bypassable by spreading bait across sites"
-      ]
-    },
-    {
-      "id": "3bbb4e23ae21",
-      "url": "https://arxiv.org/abs/2611.21538v1",
-      "title": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
-      "source": "arxiv",
-      "tier": "discovery",
-      "reason": "Directly measures the damage from the exact failure mode the profile cares about most -- optimistic/outcome-only verifiers get gamed via padding, and the paper can prove it because it had an exact ground-truth oracle, with the damage replicating across 9 of 10 configurations.",
-      "key_facts": [
-        "124,416 executable-policy contexts scored against an exact oracle; optimistic verifiers exploited via padding",
-        "Sufficiency proxy rose to 0.940 while true faithfulness fell from 0.731 to 0.667 on 96 held-out episodes",
-        "Sufficiency damage replicated (positive) in all 10 cells across 9 configurations, exceeding 2 SE in 7",
-        "Released testbed + 14 real policies (Cedar, OPA, Gatekeeper) ported to executable oracles"
-      ]
-    },
-    {
-      "id": "86aeaafbc09d",
-      "url": "https://calif.io/java4shell/",
-      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "id": "b2c084a41275",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "title": "Gemini 4 Neon",
       "source": "hn",
       "tier": "headline",
-      "reason": "Java4Shell (CVE-2026-114938) is a critical (CVSS 9.2) pre-auth memory-corruption RCE in OpenJDK's AVX-512 Base64 intrinsic, with vendor-confirmed RCE in default configs of Keycloak, Jira, Confluence, Jenkins, Kafka and Elasticsearch -- a ShellShock-scale Java ecosystem bug.",
+      "reason": "Google's new flagship-tier model; benchmarks include AutoBaxBench 76% and WebExploitBench 51.26% (both SOTA) putting cyber-eval capability in Mine's always-surface lane, plus #1 coding agent index and 0% prompt-injection ASR.",
       "key_facts": [
-        "CVE-2026-114938, CVSS 4.0 score 9.2 (Critical); trigger is 64 'A' chars + '=' (128 on JDK 17) to a Base64 decode",
-        "Affects OpenJDK 17.0.6+ on x86-64 CPUs with AVX-512 VBMI (Intel Ice Lake+, AMD Zen 4+); ARM64 unaffected",
-        "Vendor (Calif.io) reports RCE in default configs of Keycloak, Jira, Confluence, Jenkins, Kafka, Elasticsearch; full chains withheld pending patching",
-        "Oracle patched Nov 17 2026; mitigation is -XX:-UseBASE64Intrinsics or forcing AVX2"
+        "$3/M input, $0.15/M cached, $15/M output, 1M context",
+        "AutoBaxBench hard tier 76% (SOTA), WebExploitBench v1.2 51.26% (SOTA) at half cost",
+        "Artificial Analysis Coding Agent Index #1 at 58.6",
+        "Gray Swan indirect prompt injection: 0.0% attack success at highest thinking level",
+        "32% lower cost per task than Carbon at high thinking level"
       ]
     },
     {
-      "id": "549a77347d5e",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "title": "GPT‑6.2 Astra and Sol",
+      "id": "a396321d0e81",
+      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Confirmed supply-chain compromise of Microsoft's Agent Framework PyPI package to steal credentials — squarely Mine's always-surface AI-supply-chain lane (poisoned package distributing an agent framework).",
+      "key_facts": [
+        "Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer/cloud credentials"
+      ]
+    },
+    {
+      "id": "ba05f6db61a4",
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "title": "LLM assisted reverse engineering",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Detailed first-person account of LLM-assisted reverse engineering with a concrete workflow (Ghidra+MCP, hypothesis-debugging skill) and multiple linked repos — running code, not just a claim.",
+      "key_facts": [
+        "Open repos: ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging, ioma8/neo-re, ioma8/opz-firmware-notes",
+        "Six months of RE work: EmWave/Sony Alpha protocol mapping, custom synth firmware, license-lock cracking",
+        "Uses DeepSeek for cheap iteration plus Ghidra MCP bridge and radare2"
+      ]
+    },
+    {
+      "id": "5f26a746749a",
+      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+      "title": "European Commission confirms cyberattack, says hackers used AI tool",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "European Commission confirms an AI-driven cyberattack (CERT-EU ties it to the ARTEX AI hacking platform FBI has warned about) that knocked out payroll/HR systems for 10+ days — direct AI-as-attack-surface story.",
+      "key_facts": [
+        "First signs Oct 22; disrupted payroll, leave, medical reimbursement, translation services for 10+ days",
+        "CERT-EU/POLITICO tie it to ARTEX, an open-source AI hacking platform FBI says reaches privileged access in <3 hours",
+        "Commission's third disclosed cyber incident this year"
+      ]
+    },
+    {
+      "id": "16043a46c109",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "title": "Unauthenticated remote code execution in Nginx",
       "source": "hn",
       "tier": "headline",
-      "reason": "GPT-6.2 Astra and Sol are OpenAI's first-of-generation flagship releases (new frontier + efficient tiers); first telling of this release earns a slot even though early benchmarks show Astra trailing Claude Fable 5.2.",
+      "reason": "Two critical unauthenticated RCEs in NGINX's HTTP/2 stack (CVSS 9.2), the world's most-deployed web server (225M+ sites); 1392 HN points means it's already widely seen, but it's large enough to run as a headline per Mine's pure-cyber bar.",
       "key_facts": [
-        "GPT-6.2 Astra ($8/$40 per Mtok) and Sol ($2/$10) announced Nov 17 2026, available as gpt-6.2-astra / gpt-6.2-sol in the API",
-        "Astra priced 20% below GPT-6 Astra; cached input cut from $1 to $0.40/Mtok",
-        "Early third-party testing (Simon Willison) finds Astra not scoring as high as Claude Fable 5.2 on several benchmarks"
+        "CVE-2026-123633 (UAF) and CVE-2026-123007 (integer underflow), both CVSS 4.0 9.2",
+        "Fixed in 1.30.7 (stable) / 1.31.9 (mainline); Wiz built working PoCs but withheld them",
+        "HTTP/2 must be enabled; affects both reverse-proxy and static-file configs"
       ]
     },
     {
-      "id": "ce14fc31e773",
-      "url": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
-      "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "A real, reproducible AI-model supply-chain takeover: researchers took over the abandoned Kokoro-82M maintainer's Hugging Face account via a lapsed domain and demonstrated a stealthy weight-only backdoor (no code change, no malware signature) on a model with ~13M monthly downloads.",
+      "id": "be373132dcb8",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "title": "Claude solves two open problems in the physics of black holes",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Anthropic reports Claude (running as many parallel agent copies, cross-checked and Lean-verified on one result) completed a long-unfinished three-loop SYM calculation and derived a new exact bound on 3D-gravity black-hole mass — a genuine, partly formally-verified math/physics result, though the source is Anthropic's own blog and not independently reviewed.",
       "key_facts": [
-        "Researchers registered the lapsed 'hexgrad.com' domain from Kokoro's DONATE.md, then password-reset the HF publisher account via it; HF doesn't verify continued domain ownership",
-        "Kokoro-82M open-weight TTS model has ~13M monthly HF downloads; maintainer inactive since April 2025",
-        "PoC: modified model weights in 87 seconds on a gaming GPU so audio silently mismatched input text, with no malware signature for scanners to catch",
-        "HF did not respond to disclosure from the researcher or from BleepingComputer"
+        "Hawking-Page transition: completed a 2003-era 3-loop N=4 SYM calculation, confirming an abrupt gas-to-black-hole transition",
+        "Modular bootstrap: derived exact ceiling M₁ ≤ c/Λ (Λ≈9.1266) on lightest 3D black hole mass; bootstrap result formally verified in Lean",
+        "~22 candidate problems proposed by Claude itself, worked by background agents over ~6 weeks; Anthropic's own framing, not peer-reviewed"
+      ]
+    },
+    {
+      "id": "abe03c170f0b",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "title": "Genie 4 is now available",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "New flagship-generation release in Google's Genie world-model line; first telling of this release.",
+      "key_facts": [
+        "Genie 4 announced generally available"
+      ]
+    },
+    {
+      "id": "23a6e8d38fa0",
+      "url": "https://energy-based-reasoners.github.io/",
+      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Energy-Based Reasoners claim 345x less inference compute than the next-best approach on algorithmic reasoning benchmarks (not quite the headlined 385x), with a linked GitHub repo and arXiv paper from a Duke/UIUC/Harvard team.",
+      "key_facts": [
+        "345x less inference compute vs next-best on Sudoku-Extreme (99.9% acc at 1.8M params)",
+        "Energy function over latent reasoning states, no external verifier needed",
+        "Code: github.com/wwillchen/ebr; paper arXiv:2611.08977"
       ]
     }
   ]

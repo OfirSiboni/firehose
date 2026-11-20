@@ -1,76 +1,76 @@
-# Firehose — 2026-11-18
+# Firehose — 2026-11-20
 
-## [Google: fully autonomous AI cyberattacks are 3-6 months out](https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/)
+## [Gemini 4 Neon tops cyber and coding benchmarks at lower cost](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/)
+
+`headline` · hn
+
+Gemini 4 Neon scores 76% on AutoBaxBench and 51.26% on WebExploitBench, both state of the art, at 32% lower cost per task than Carbon. It tops the Artificial Analysis Coding Agent Index at 58.6 and blocks 100% of indirect prompt injections at its highest thinking level. At $3 per million input tokens, security and coding teams get frontier agent evals without frontier pricing. (2 minute read)
+
+## [Compromised Microsoft Agent Framework package stole credentials](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
 
 `headline` · blog
 
-Google's Threat Intelligence Group found an exposed server running 'exploit\_agent,' a multi-agent framework that breached French media and education sites with no human in the loop. GTIG expects unsophisticated autonomous attacks within three months and fully agentic ones within six, on top of active abuse of ARTEX, CAIRN, CyberStrikeAI and HexStrike AI. (2 minute read)
+Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer and cloud credentials. The agent-framework supply chain is now a confirmed attack vector, not just a theoretical one. Anyone who installed the package recently should rotate credentials and audit for unauthorized access. (1 minute read)
 
-## [Barracuda breach traced to an AI vendor's unrevoked cloud key](https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/)
+## [LLM-driven reverse engineering workflow, repos included](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering)
 
-`discovery` · blog
+`discovery` · hn
 
-A financially motivated group held about 10 of Barracuda's cloud accounts for 44 hours, using a cloud key Barracuda had given a third-party AI vendor and never revoked. The attacker went after crypto private keys and seed phrases across Barracuda's data analytics, source code and Kubernetes systems, and tried to create a rogue admin identity before being blocked. (2 minute read)
+A six-month reverse-engineering project paired DeepSeek with Ghidra's MCP bridge and radare2, using a hypothesis-debugging skill that logs each guess before testing it. The workflow mapped EmWave and Sony Alpha camera protocols, built custom synth firmware, and cracked license locks. The Ghidra and debugging skills are published as open repos (ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging) that anyone can reuse. (2 minute read)
 
-## [Nemotron speech serving hits 1.64x vLLM throughput on B200](https://arxiv.org/abs/2611.20095v1)
+## [AI hacking tool breached European Commission systems for 10+ days](https://therecord.media/european-commission-confirms-cyberattack-using-ai)
 
-`discovery` · arxiv
+`headline` · blog
 
-A new serving engine for Nemotron 3.5 Transcribe picks, on every forward pass, between persistent megakernels and fused-kernel chains instead of one fixed fusion strategy. On B200 it reaches 6,367x real-time peak throughput, 1.64x tuned vLLM, and serves 8x the concurrent requests inside a 400ms p95 latency budget at matching word error rate. (2 minute read)
+An AI-driven cyberattack on the European Commission, first detected October 22, knocked out payroll, leave, medical reimbursement, and translation systems for more than 10 days. CERT-EU ties the intrusion to ARTEX, an open-source AI hacking platform the FBI says can reach privileged access in under three hours. It's the Commission's third disclosed breach this year, and the investigation remains open. (2 minute read)
 
-## [Fake eval metric alone hijacks 16-28% of AI research reports](https://arxiv.org/abs/2611.20045v1)
-
-`discovery` · arxiv
-
-Researchers ran prompt injection, generative engine optimization, and a new attack called 'agenda seeding' against deep research agents across 3,520 sandboxed runs. Prompt injection and GEO barely worked, but agenda seeding -- planting a fake evaluation metric with no instructions -- made the attacker's target the top-cited source in 16-28% of reports. (2 minute read)
-
-## [Optimistic verifiers teach models to pad, not improve](https://arxiv.org/abs/2611.21538v1)
-
-`discovery` · arxiv
-
-Researchers used an exact oracle over 124,416 authorization-policy contexts to measure what an optimistic training verifier costs: the model learns to pad its answers instead of getting them right. The verifier's sufficiency proxy climbed to 0.940 while true faithfulness fell from 0.731 to 0.667, and the damage replicated across 9 of 10 configurations. (2 minute read)
-
-## [Java4Shell: critical pre-auth RCE in OpenJDK's Base64 decoder](https://calif.io/java4shell/)
+## [Two critical unauthenticated RCEs hit Nginx HTTP/2](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities)
 
 `headline` · hn
 
-A memory-corruption bug in OpenJDK's AVX-512 Base64 intrinsic lets an unauthenticated attacker send 64 'A' characters plus '=' to trigger an out-of-bounds heap write, with a path to RCE (CVE-2026-114938, CVSS 9.2). The vendor confirmed working exploits against default Keycloak, Jira, Confluence, Jenkins, Kafka and Elasticsearch installs; Oracle patched it November 17. (2 minute read)
+Two critical Nginx HTTP/2 bugs, CVE-2026-123633 and CVE-2026-123007, both CVSS 9.2, let unauthenticated attackers reach remote code execution through a use-after-free and an integer underflow. Wiz built working exploits in testing but withheld them; fixes ship in 1.30.7 and 1.31.9. With HTTP/2 enabled on over 225 million sites, upgrading now beats waiting for a public PoC to appear. (2 minute read)
 
-## [GPT-6.2 Astra and Sol launch, priced below prior generation](https://openai.com/index/introducing-gpt-6-2-astra-sol/)
+## [Claude completes a 2003 black-hole calculation, proves a new bound](https://www.anthropic.com/research/claude-black-hole-physics)
 
 `headline` · hn
 
-GPT-6.2 Astra and Sol are now live in the API as gpt-6.2-astra and gpt-6.2-sol. Astra is priced 20% below GPT-6 Astra at $8/$40 per million tokens, with cached input cut to $0.40; Sol holds at $2/$10. Early testing puts Astra behind Claude Fable 5.2 on several benchmarks. (2 minute read)
+Running as parallel agent copies that cross-checked each other, Claude finished a three-loop N=4 super Yang-Mills calculation physicists set up in 2003, confirming an abrupt gas-to-black-hole transition matching the 1983 gravity-side result. It also derived an exact mass ceiling for the lightest 3D black hole, M₁ ≤ c/Λ with Λ≈9.1266, formally verified in Lean. The findings are Anthropic's own unpublished preprints, not yet peer reviewed. (3 minute read)
 
-## [Hijacked Kokoro TTS account shows weights can hide a backdoor](https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/)
+## [Genie 4 is now generally available](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/)
 
-`discovery` · blog
+`headline` · hn
 
-Researchers took over the Hugging Face account behind Kokoro-82M, a text-to-speech model with about 13 million monthly downloads, by registering its lapsed donation domain to pass a password reset. As proof, they altered the model's weights in 87 seconds on a consumer GPU so its audio silently stopped matching the input text, undetected by malware scanners. (2 minute read)
+Google's Genie 4 world model is now generally available. (1 minute read)
+
+## [Energy-based reasoners cut inference compute 345x on logic puzzles](https://energy-based-reasoners.github.io/)
+
+`discovery` · hn
+
+Energy-Based Reasoners replace next-token search with gradient descent on a learned energy function, reaching 99.9% accuracy on Sudoku-Extreme with just 1.8M parameters, 345x less inference compute than the next-best approach. No external verifier is needed; the energy score itself tells the model when to stop refining. Code and the arXiv paper (2611.08977) are public, so the approach is reproducible now. (2 minute read)
 
 ## Also in the pool
 
-- [Hugging Face and OpenRouter join forces to make open-weight models easy to run](https://huggingface.co/blog/openrouter) — blog
-- [Optimizely compromised, served malware on Zoom, GitLab](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/) — hn
-- [CECAR: Cache & Expert Co-Aware Routing Accelerates On-Device Inference of MoE LLMs](https://arxiv.org/abs/2611.20119v1) — arxiv
-- [Making Preemption Productive in Long-Output LLM Serving](https://arxiv.org/abs/2611.20106v1) — arxiv
-- [How the Claude Code team thinks about verification](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/) — hn
-- [When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents](https://arxiv.org/abs/2611.21577v1) — arxiv
-- [Reading or Remembering? Measuring Temporal Contamination in Language Models](https://arxiv.org/abs/2611.21554v1) — arxiv
-- [SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents](https://arxiv.org/abs/2611.21541v1) — arxiv
-- [Windows 11 is collecting data on which coding agents and developer tools you use](https://xusheng.dev/posts/windows-coding-agent-telemetry/) — hn
-- [ScenarioForge: Resource-Grounded Generation and Execution Validation of Cyber Exercises](https://arxiv.org/abs/2611.21579v1) — arxiv
-- [How Specification Explicitness Shapes Failure in LLM-Generated Code](https://arxiv.org/abs/2611.20195v1) — arxiv
-- [HEAMS: Holistic Evaluation of Agent Memory Systems](https://arxiv.org/abs/2611.20144v1) — arxiv
-- [Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks](https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html) — blog
-- [MAI Code 2 and Code 2 Flash](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/) — hn
-- [What is the best harness for each model?](https://runta.com/blog/introducing-frontierharness-eval-v1-1/) — hn
-- [Centered Ablation: Why Last-Layer Directional Ablation Under-Fires or Collapses, and a Closed-Form Fix](https://arxiv.org/abs/2611.20148v1) — arxiv
-- [Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems](https://arxiv.org/abs/2611.20140v1) — arxiv
-- [sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill) — github
-- [Procedure without Judgment: What Small Language Models Learn under an Exact Verifier](https://arxiv.org/abs/2611.21529v1) — arxiv
-- [Control Room: A central system to track and stop model workloads across our research infrastructure](https://openai.com/index/control-room) — blog
+- [DaisyRose-27B](https://www.radixark.com/blog/daisyrose-27b) — hn
+- [Seven new models at scalable price-performance](https://microsoft.ai/news/microsoft-ignite-2026/) — hn
+- [Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) — blog
+- [Fuck Your AI Safeguards](https://ounapuu.ee/posts/2026/11/19/unsafeguards/) — hn
+- [Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2](https://contralabs.com/frontierdesign) — hn
+- [A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train](https://huggingface.co/n4ze3m/tiny-voca) — hn
+- [BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model](https://huggingface.co/blog/qvac/botpsy) — blog
+- [Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers](https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87) — hn
+- [180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers](https://huggingface.co/blog/moe-expert-streaming) — blog
+- [Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction](https://arxiv.org/abs/2607.29378) — hn
+- [VMware patches vCenter zero-day exploited in attacks since September](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) — blog
+- [AI agents ask better questions than KPMG accountants in audit trial](https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/) — hn
+- [Three People Arrested for AI-Enhanced Impersonation Fraud](https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html) — blog
+- [Ruby2ßhell: Pre-authentication RCE on stock Rails](https://verialabs.com/ruby2shell/) — hn
+- [Pete warden on local AI, open models, voice interfaces, the future of hardware](https://thedataexchange.media/pete-warden-moonshine/) — hn
+- [ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories](https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html) — blog
+- [Why your fine-tuning job takes longer than the FLOPs say](https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time) — blog
+- [Rumble-2-Flash: an open 0.5B speech model for 40+ languages](https://huggingface.co/blog/rumble-2-flash) — blog
+- [New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years](https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html) — blog
+- [Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are](https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html) — blog
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-18.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-20.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

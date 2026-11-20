@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-20",
+  "sent": false,
+  "items": [
+    {
+      "id": "b2c084a41275",
+      "title": "Gemini 4 Neon tops cyber and coding benchmarks at lower cost",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Gemini 4 Neon scores 76% on AutoBaxBench and 51.26% on WebExploitBench, both state of the art, at 32% lower cost per task than Carbon. It tops the Artificial Analysis Coding Agent Index at 58.6 and blocks 100% of indirect prompt injections at its highest thinking level. At $3 per million input tokens, security and coding teams get frontier agent evals without frontier pricing. (2 minute read)"
+    },
+    {
+      "id": "a396321d0e81",
+      "title": "Compromised Microsoft Agent Framework package stole credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer and cloud credentials. The agent-framework supply chain is now a confirmed attack vector, not just a theoretical one. Anyone who installed the package recently should rotate credentials and audit for unauthorized access. (1 minute read)"
+    },
+    {
+      "id": "ba05f6db61a4",
+      "title": "LLM-driven reverse engineering workflow, repos included",
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A six-month reverse-engineering project paired DeepSeek with Ghidra's MCP bridge and radare2, using a hypothesis-debugging skill that logs each guess before testing it. The workflow mapped EmWave and Sony Alpha camera protocols, built custom synth firmware, and cracked license locks. The Ghidra and debugging skills are published as open repos (ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging) that anyone can reuse. (2 minute read)"
+    },
+    {
+      "id": "5f26a746749a",
+      "title": "AI hacking tool breached European Commission systems for 10+ days",
+      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "An AI-driven cyberattack on the European Commission, first detected October 22, knocked out payroll, leave, medical reimbursement, and translation systems for more than 10 days. CERT-EU ties the intrusion to ARTEX, an open-source AI hacking platform the FBI says can reach privileged access in under three hours. It's the Commission's third disclosed breach this year, and the investigation remains open. (2 minute read)"
+    },
+    {
+      "id": "16043a46c109",
+      "title": "Two critical unauthenticated RCEs hit Nginx HTTP/2",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Two critical Nginx HTTP/2 bugs, CVE-2026-123633 and CVE-2026-123007, both CVSS 9.2, let unauthenticated attackers reach remote code execution through a use-after-free and an integer underflow. Wiz built working exploits in testing but withheld them; fixes ship in 1.30.7 and 1.31.9. With HTTP/2 enabled on over 225 million sites, upgrading now beats waiting for a public PoC to appear. (2 minute read)"
+    },
+    {
+      "id": "be373132dcb8",
+      "title": "Claude completes a 2003 black-hole calculation, proves a new bound",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Running as parallel agent copies that cross-checked each other, Claude finished a three-loop N=4 super Yang-Mills calculation physicists set up in 2003, confirming an abrupt gas-to-black-hole transition matching the 1983 gravity-side result. It also derived an exact mass ceiling for the lightest 3D black hole, M\u2081 \u2264 c/\u039b with \u039b\u22489.1266, formally verified in Lean. The findings are Anthropic's own unpublished preprints, not yet peer reviewed. (3 minute read)"
+    },
+    {
+      "id": "abe03c170f0b",
+      "title": "Genie 4 is now generally available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Google's Genie 4 world model is now generally available. (1 minute read)"
+    },
+    {
+      "id": "23a6e8d38fa0",
+      "title": "Energy-based reasoners cut inference compute 345x on logic puzzles",
+      "url": "https://energy-based-reasoners.github.io/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Energy-Based Reasoners replace next-token search with gradient descent on a learned energy function, reaching 99.9% accuracy on Sudoku-Extreme with just 1.8M parameters, 345x less inference compute than the next-best approach. No external verifier is needed; the energy score itself tells the model when to stop refining. Code and the arXiv paper (2611.08977) are public, so the approach is reproducible now. (2 minute read)"
+    }
+  ]
+}
