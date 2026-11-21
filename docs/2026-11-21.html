@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-21</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-21</h1>
+<article>
+<h2><a href="https://alpo.ge/remark.pdf">Anthropic models produce a Lean-verified 17M-line proof of GRH</a></h2>
+<p>Levent Alpoge says Anthropic models produced a 17.4 million-line Lean-certified proof of the Generalized Riemann Hypothesis, posted on GitHub. No Lean-certified AI math result has yet been retracted, though Lean&#x27;s kernel has had soundness bugs before, which is why full confidence is still pending. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day">Amazon catches Cairn AI agents finding and exploiting a real zero-day</a></h2>
+<p>Amazon caught a Chinese-nexus actor running the autonomous pentest tool Cairn against East Asian universities, where it found and exploited a zero-day path-traversal bug in a medical-imaging app (GHSA-qc22-rmgc-vg94). The agents ran unattended for 16 hours, testing 30,000+ credential combos in one run alone. Amazon&#x27;s CISO says that&#x27;s faster than most SOCs can triage an alert. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://architectlabs.com/blog/frostbite">AI-designed Frostbite CPU claims 4.6x perf-per-watt over baseline</a></h2>
+<p>Architect Labs says its Frostbite CPU was discovered, designed, and verified end-to-end by AI agents, checked against an 800k-line Lean formal spec rather than RTL simulation. Across 25 workloads, it claims a 4.59x perf-per-watt geomean and 8.77x perf-per-area over an undisclosed comparison chip. All numbers are company-reported, with broader SPEC and multicore comparisons still planned. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://ankitg.me/blog/vibecoding-inference-chip/">Coding agents build an FPGA LLM inference engine, 33x faster</a></h2>
+<p>A developer with no FPGA experience had coding agents (Codex, Claude Opus, Astra) write about 3M lines of code to run a ternary-weight LLM on an AWS F2 FPGA. Throughput rose from 6.43 to 213.13 tokens/s, a 33x gain that beat a bit-exact 32-core CPU&#x27;s 129.5 tokens/s at a similar hourly price. The author doesn&#x27;t recommend the architecture for production. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/BaaRai/ARTEX">The AI pentest tool FBI warned about is a public repo with 14k stars</a></h2>
+<p>ARTEX, the autonomous LLM-driven pentest platform the FBI flagged in an advisory last week, is a public AGPL repo with roughly 14,000 stars and 1,232 commits. A planner breaks goals into intents, worker agents run real tools, and releases ship with SHA-256 sums and a CycloneDX SBOM. It works with Anthropic, OpenAI-compatible, or local Ollama models. (4 minute read)</p>
+<p class="meta">headline · github</p>
+</article>
+<article>
+<h2><a href="https://arxiv.org/abs/2611.26553v1">ROGUE-AI reproduces 89% of reported LLM agent harm incidents offline</a></h2>
+<p>ROGUE-AI replicates real LLM-agent harm incidents, like a coding agent deleting a production database, against matched controls missing only the blamed cause. It reproduced the reported harm in 89% of 108 attempted replications, and 62 of 72 real-harm cases had no attacker at all. A tool-output warning naming the hazard cut harm across all five models tested. (4 minute read)</p>
+<p class="meta">discovery · arxiv</p>
+</article>
+<article>
+<h2><a href="https://arxiv.org/abs/2611.26601v1">SoK: LLM vulnerability-finding autonomy passed frontier models in 2026</a></h2>
+<p>A new SoK rates LLM vulnerability-research capability on a driving-automation-style autonomy scale, finding agents reached full autonomous discovery, validation, and patching of real bugs before 2026&#x27;s most restricted frontier models. Disclosed vulnerabilities more than doubled in 2026, with decade-old bugs in widely used code surfacing several times more often. Report-to-fix timelines haven&#x27;t moved yet. (4 minute read)</p>
+<p class="meta">discovery · arxiv</p>
+</article>
+<article>
+<h2><a href="https://arxiv.org/abs/2611.21885">A 27B model edits its own weights, no gradients, no training</a></h2>
+<p>An open 27B model is given its own weights and the ability to run itself, then edits the weights responsible for its own failures, raising accuracy 6.6 points on unseen problems. Across 8 sessions accuracy kept climbing, and a deliberately damaged copy recovered to over 80% of original accuracy with no retraining. Only the largest model in the family could do this. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://github.com/dllm-labs/mojo-dllm">dllm-labs/mojo-dllm</a> <span class="meta">github</span></li>
+<li><a href="https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/">Hurried Announcement: Alessandro Masullo GRH</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html">The Path to AI Autonomy in the SOC</a> <span class="meta">blog</span></li>
+<li><a href="https://ounapuu.ee/posts/2026/11/19/unsafeguards/">Fuck Your AI Safeguards</a> <span class="meta">hn</span></li>
+<li><a href="https://git-aarvin.github.io/mei/">Gemini 4 Neon is the new #1 on the Models Engineering Index</a> <span class="meta">hn</span></li>
+<li><a href="https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/">UK government forced to admit it issued Apple a secret encryption order</a> <span class="meta">hn</span></li>
+<li><a href="https://deepmind.google/blog/introducing-gemini-4-neon/">Introducing Gemini 4 Neon</a> <span class="meta">blog</span></li>
+<li><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/">AlphaGenome 2: Deciphering how cells read DNA to better understand disease</a> <span class="meta">blog</span></li>
+<li><a href="https://grapheneos.social/@GrapheneOS/117645038299496084">Google is pushing OEMs against GrapheneOS and bootloader unlocking</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.26450v1">A CPU Inside an LLM: Zero-Gradient Compilation of Exact Circuits into Pretrained Weights</a> <span class="meta">arxiv</span></li>
+<li><a href="https://www.fermionresearch.com/research/mapping-every-neuron-in-qwen3-8b/">Mapping every neuron in Qwen3-8B</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/business/learn/deploying-daybreak-red">Deploying Daybreak Red</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/business/learn/codex-security-plugin-demo">Explore the Codex Security Plugin</a> <span class="meta">blog</span></li>
+<li><a href="https://signal.org/blog/protecting-your-privacy/">Restricting AI agents in mobile operating systems platforms from capturing data</a> <span class="meta">hn</span></li>
+<li><a href="https://austinpatrick.substack.com/p/when-should-ai-labs-alert-police">An FBI agent called a Claude user about his chats</a> <span class="meta">hn</span></li>
+<li><a href="https://contralabs.com/frontierdesign">Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/onehumanbeing/esp32-iphone-agent">onehumanbeing/esp32-iphone-agent</a> <span class="meta">github</span></li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/">Introducing Tool Retrieval in the Gemini API</a> <span class="meta">blog</span></li>
+<li><a href="https://www.techdirt.com/2026/11/19/court-tells-cops-that-the-4th-amendment-doesnt-cover-ai-generated-probable-cause/">Court: 4th Amendment Disallows Use Of AI-Generated &#x27;Probable Cause&#x27;</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/business/learn/daybreak-blue-onboarding-demo">Get started with Daybreak Blue</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-21.md">Markdown</a></footer>
+</body></html>

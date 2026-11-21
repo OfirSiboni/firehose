@@ -1,106 +1,124 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "stories": [
     {
-      "id": "b2c084a41275",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "title": "Gemini 4 Neon",
+      "id": "bbe099f2944c",
+      "url": "https://alpo.ge/remark.pdf",
+      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
       "source": "hn",
       "tier": "headline",
-      "reason": "Google's new flagship-tier model; benchmarks include AutoBaxBench 76% and WebExploitBench 51.26% (both SOTA) putting cyber-eval capability in Mine's always-surface lane, plus #1 coding agent index and 0% prompt-injection ASR.",
+      "reason": "Alpoge says he got Anthropic models to produce a 17.4M-line Lean-verified proof of GRH; if it holds, this is the biggest AI-for-math result yet.",
       "key_facts": [
-        "$3/M input, $0.15/M cached, $15/M output, 1M context",
-        "AutoBaxBench hard tier 76% (SOTA), WebExploitBench v1.2 51.26% (SOTA) at half cost",
-        "Artificial Analysis Coding Agent Index #1 at 58.6",
-        "Gray Swan indirect prompt injection: 0.0% attack success at highest thinking level",
-        "32% lower cost per task than Carbon at high thinking level"
+        "Levent Alpoge says Anthropic models produced a Lean-certified proof of the Generalized Riemann Hypothesis.",
+        "The proof is reported as 17.4 million lines of Lean code, posted on GitHub.",
+        "Separately, AI had already proved zeros of the Riemann zeta function lie within 3/8 of the critical line (covered by Quanta the prior day).",
+        "Scott Aaronson (independent commentator) says no Lean-certified AI math result has yet been retracted, while several uncertified ones have.",
+        "Lean's kernel has had soundness bugs in the past (allowing proofs of 0=1), which is the main reason full confidence is still pending."
       ]
     },
     {
-      "id": "a396321d0e81",
-      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+      "id": "cd038ca0a29b",
+      "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
       "source": "blog",
       "tier": "headline",
-      "reason": "Confirmed supply-chain compromise of Microsoft's Agent Framework PyPI package to steal credentials — squarely Mine's always-surface AI-supply-chain lane (poisoned package distributing an agent framework).",
+      "reason": "Amazon's CISO publishes a primary account of Chinese-nexus actors running the autonomous AI pentest tool Cairn against universities, including a genuine zero-day the agents found and exploited unattended — exactly the AI-offense-with-PoC always-surface case.",
       "key_facts": [
-        "Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer/cloud credentials"
+        "Amazon found a publicly exposed Cairn instance being run by a China-based operator (prompts in Simplified Chinese, China Standard Time timestamps) against East Asian universities.",
+        "One run: 148 actions over 16 hours, including an attempted Log4Shell exploit, failed.",
+        "Another run: tested 30,000+ credential combinations against 80 real usernames over 6+ hours, failed.",
+        "Success came via a path-traversal zero-day in an open-source medical-imaging AI app; Amazon assessed high confidence it was previously unknown (now GHSA-qc22-rmgc-vg94) and the same bug was reused against a second university.",
+        "Amazon's CISO: the agents ran unattended for 16 hours and could weaponize a zero-day in minutes, faster than most SOCs can triage an alert.",
+        "The same week, FBI warned about a similar tool (Artex) and Google published a report on autonomous multi-agent offensive frameworks."
       ]
     },
     {
-      "id": "ba05f6db61a4",
-      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-      "title": "LLM assisted reverse engineering",
+      "id": "000028228240",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Architect Labs claims a CPU 'discovered, designed and verified end-to-end by AI' with real pre-silicon numbers (4.59x perf/watt geomean) — a strong, verifiable claim of AI doing novel systems engineering, even though all numbers are company-reported.",
+      "key_facts": [
+        "Frostbite is an interaction-net-based CPU (Vine language -> Ivy IR), built with no central scheduler; tiles run local work then steal from neighbors.",
+        "An 800k+ line Lean formal spec (Arcmodel) is used to check RTL/UVM/C/SVA; Arcmodel is claimed ~200x-660x faster than RTL simulation, accurate to 1-5%.",
+        "Agent swarms tried 58 architecture ideas across 4 searches, keeping 37.",
+        "7nm process, 500MHz final GDS; one Frostbite quad is 0.792mm^2 vs 0.895mm^2 for an undisclosed comparison CPU ('TCPU').",
+        "Geomean perf/watt vs TCPU: 4.59x across 25 workloads (6.02x on the search set, 3.83x on 15 held-out workloads); perf/area 8.77x; per-workload range ~1.15x (fib) to ~23x (conv2d).",
+        "Caveat: all results are company-reported; the comparison CPU is unnamed; broader multicore/SPEC comparisons are still planned."
+      ]
+    },
+    {
+      "id": "3e30621eb1a8",
+      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "title": "Vibecoding an inference chip",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Detailed first-person account of LLM-assisted reverse engineering with a concrete workflow (Ghidra+MCP, hypothesis-debugging skill) and multiple linked repos — running code, not just a claim.",
+      "reason": "A first-person account of coding agents (Codex, Claude Opus/Astra) building a working ternary-weight-LLM FPGA inference engine from scratch, with concrete before/after throughput numbers — exactly the 'running code beats a description' case, and low-saturation (personal blog, 113 pts).",
       "key_facts": [
-        "Open repos: ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging, ioma8/neo-re, ioma8/opz-firmware-notes",
-        "Six months of RE work: EmWave/Sony Alpha protocol mapping, custom synth firmware, license-lock cracking",
-        "Uses DeepSeek for cheap iteration plus Ghidra MCP bridge and radare2"
+        "Author had no prior FPGA/Verilog experience; agents wrote nearly all of ~3M lines of code (mostly C++, some Verilog) across ~$10k of Claude/OpenAI tokens.",
+        "Throughput rose from 6.43 to 213.13 tokens/s (33x) on an AWS F2 FPGA instance running a ternary-weight LLM at 8,192-token context.",
+        "That beat a bit-exact 32-core CPU implementation (129.5 tok/s) at a similar hourly price ($1.98/hr for the FPGA).",
+        "Final clock lowered to 225/425MHz after a soak test found faults at 231.25MHz; author does not recommend the architecture for production."
       ]
     },
     {
-      "id": "5f26a746749a",
-      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-      "title": "European Commission confirms cyberattack, says hackers used AI tool",
-      "source": "blog",
+      "id": "315b1944e606",
+      "url": "https://github.com/BaaRai/ARTEX",
+      "title": "BaaRai/ARTEX",
+      "source": "github",
       "tier": "headline",
-      "reason": "European Commission confirms an AI-driven cyberattack (CERT-EU ties it to the ARTEX AI hacking platform FBI has warned about) that knocked out payroll/HR systems for 10+ days — direct AI-as-attack-surface story.",
+      "reason": "The actual FBI-flagged autonomous pentest tool Artex is a public, actively-maintained AGPL repo (14k stars, SBOM + build provenance on releases) — running code for exactly the AI-offense tooling this profile always wants.",
       "key_facts": [
-        "First signs Oct 22; disrupted payroll, leave, medical reimbursement, translation services for 10+ days",
-        "CERT-EU/POLITICO tie it to ARTEX, an open-source AI hacking platform FBI says reaches privileged access in <3 hours",
-        "Commission's third disclosed cyber incident this year"
+        "ARTEX (this is an English-translation fork of Autumn-27/ARTEX, upstream now private) is a self-hosted, LLM-driven pentest platform: a planner breaks goals into intents, worker agents run real tools, findings tie back to captured HTTP traffic.",
+        "Includes a recording MITM proxy, human approval gates, scope rules and budgets; works with Anthropic, OpenAI-compatible, or local Ollama models.",
+        "~14k stars, ~5.5k forks, 1,232 commits; releases ship SHA-256 sums, a CycloneDX SBOM, and GitHub build-provenance attestations.",
+        "This is the same 'Artex' the FBI advisory (referenced in the Amazon/Cairn reporting) warned about a week earlier."
       ]
     },
     {
-      "id": "16043a46c109",
-      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "title": "Unauthenticated remote code execution in Nginx",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Two critical unauthenticated RCEs in NGINX's HTTP/2 stack (CVSS 9.2), the world's most-deployed web server (225M+ sites); 1392 HN points means it's already widely seen, but it's large enough to run as a headline per Mine's pure-cyber bar.",
+      "id": "57187aec2432",
+      "url": "https://arxiv.org/abs/2611.26553v1",
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "ROGUE-AI offline-replicates real LLM-agent harm incidents against matched controls and reproduces the reported harm 89% of the time — a rigorous, concrete AI-agent-safety eval with a usable pre-release audit suite as its contribution.",
       "key_facts": [
-        "CVE-2026-123633 (UAF) and CVE-2026-123007 (integer underflow), both CVSS 4.0 9.2",
-        "Fixed in 1.30.7 (stable) / 1.31.9 (mainline); Wiz built working PoCs but withheld them",
-        "HTTP/2 must be enabled; affects both reverse-proxy and static-file configs"
+        "Replicates real agent-harm incidents (e.g. a coding agent deleting a production database) offline against a matched control missing only the blamed cause.",
+        "Reproduced reported harm in 89% of 108 attempted replications.",
+        "Across 5 models (GPT, Claude, Gemini, DeepSeek), the blamed mistake recurred in 18-33% of runs with the cause present vs <=1% without it.",
+        "62 of 72 real-harm incidents had no attacker at all — agents completed their task but missed an ordinary hazard (e.g. a database shared with a live site); prompt-injection defenses would catch none of these.",
+        "A tool-output warning that names the hazard and consequence reduced harm across all 5 models; a same-length warning without the hazard mostly did not."
       ]
     },
     {
-      "id": "be373132dcb8",
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "title": "Claude solves two open problems in the physics of black holes",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic reports Claude (running as many parallel agent copies, cross-checked and Lean-verified on one result) completed a long-unfinished three-loop SYM calculation and derived a new exact bound on 3D-gravity black-hole mass — a genuine, partly formally-verified math/physics result, though the source is Anthropic's own blog and not independently reviewed.",
+      "id": "bd055369dbe5",
+      "url": "https://arxiv.org/abs/2611.26601v1",
+      "title": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+      "source": "arxiv",
+      "tier": "discovery",
+      "reason": "A systematization-of-knowledge paper tracking how LLM vulnerability-discovery capability has evolved (autonomy levels, disclosure volume, long-lived-bug discovery rate) — squarely in Mine's always-surface eval-methodology + AI-x-cyber lane.",
       "key_facts": [
-        "Hawking-Page transition: completed a 2003-era 3-loop N=4 SYM calculation, confirming an abrupt gas-to-black-hole transition",
-        "Modular bootstrap: derived exact ceiling M₁ ≤ c/Λ (Λ≈9.1266) on lightest 3D black hole mass; bootstrap result formally verified in Lean",
-        "~22 candidate problems proposed by Claude itself, worked by background agents over ~6 weeks; Anthropic's own framing, not peer-reviewed"
+        "Rates LLM vuln-research autonomy on a driving-automation-style scale and grades each capability claim for correctness/evidence strength.",
+        "Agents reached autonomous discovery+validation+patching of real-software vulnerabilities before 2026's most restricted frontier models; open-weight models later matched that autonomy.",
+        "Disclosed vulnerabilities more than doubled in 2026, with a growing critical/high share.",
+        "Severe decade-plus-old bugs in widely used code are being reported several times more often than before.",
+        "Report-to-fix and disclosure-to-attack timelines have not measurably changed yet."
       ]
     },
     {
-      "id": "abe03c170f0b",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "title": "Genie 4 is now available",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "New flagship-generation release in Google's Genie world-model line; first telling of this release.",
-      "key_facts": [
-        "Genie 4 announced generally available"
-      ]
-    },
-    {
-      "id": "23a6e8d38fa0",
-      "url": "https://energy-based-reasoners.github.io/",
-      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "id": "9fe3e937f57a",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "title": "Language Models Can Rewrite Their Own Weights",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Energy-Based Reasoners claim 345x less inference compute than the next-best approach on algorithmic reasoning benchmarks (not quite the headlined 385x), with a linked GitHub repo and arXiv paper from a Duke/UIUC/Harvard team.",
+      "reason": "A 27B open model edits its own weights (no gradients/training) to raise held-out accuracy by 6.6pp and self-repair a damaged copy to >80% of original accuracy across 8 sessions — a genuinely new capability result with real numbers, though arxiv-only with no linked repo.",
       "key_facts": [
-        "345x less inference compute vs next-best on Sudoku-Extreme (99.9% acc at 1.8M params)",
-        "Energy function over latent reasoning states, no external verifier needed",
-        "Code: github.com/wwillchen/ebr; paper arXiv:2611.08977"
+        "Open 27B model is given its own weights + graded answers + ability to run itself; it diagnoses failures and edits the responsible weights, keeping only edits that help on practice problems.",
+        "Self-edit raises accuracy by 6.6 percentage points on unseen problems; accuracy rose across 8 consecutive self-rewriting sessions.",
+        "A deliberately damaged copy is restored to >80% of original accuracy on unseen image tasks with no retraining and no access to original weights.",
+        "Only the largest model in the family tested can usefully self-edit/self-repair; smaller models make no useful edit or make things worse.",
+        "No linked code repository found on the paper page."
       ]
     }
   ]

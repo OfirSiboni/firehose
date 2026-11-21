@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-21",
+  "sent": false,
+  "items": [
+    {
+      "id": "bbe099f2944c",
+      "title": "Anthropic models produce a Lean-verified 17M-line proof of GRH",
+      "url": "https://alpo.ge/remark.pdf",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Levent Alpoge says Anthropic models produced a 17.4 million-line Lean-certified proof of the Generalized Riemann Hypothesis, posted on GitHub. No Lean-certified AI math result has yet been retracted, though Lean's kernel has had soundness bugs before, which is why full confidence is still pending. (3 minute read)"
+    },
+    {
+      "id": "cd038ca0a29b",
+      "title": "Amazon catches Cairn AI agents finding and exploiting a real zero-day",
+      "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "Amazon caught a Chinese-nexus actor running the autonomous pentest tool Cairn against East Asian universities, where it found and exploited a zero-day path-traversal bug in a medical-imaging app (GHSA-qc22-rmgc-vg94). The agents ran unattended for 16 hours, testing 30,000+ credential combos in one run alone. Amazon's CISO says that's faster than most SOCs can triage an alert. (4 minute read)"
+    },
+    {
+      "id": "000028228240",
+      "title": "AI-designed Frostbite CPU claims 4.6x perf-per-watt over baseline",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Architect Labs says its Frostbite CPU was discovered, designed, and verified end-to-end by AI agents, checked against an 800k-line Lean formal spec rather than RTL simulation. Across 25 workloads, it claims a 4.59x perf-per-watt geomean and 8.77x perf-per-area over an undisclosed comparison chip. All numbers are company-reported, with broader SPEC and multicore comparisons still planned. (4 minute read)"
+    },
+    {
+      "id": "3e30621eb1a8",
+      "title": "Coding agents build an FPGA LLM inference engine, 33x faster",
+      "url": "https://ankitg.me/blog/vibecoding-inference-chip/",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A developer with no FPGA experience had coding agents (Codex, Claude Opus, Astra) write about 3M lines of code to run a ternary-weight LLM on an AWS F2 FPGA. Throughput rose from 6.43 to 213.13 tokens/s, a 33x gain that beat a bit-exact 32-core CPU's 129.5 tokens/s at a similar hourly price. The author doesn't recommend the architecture for production. (4 minute read)"
+    },
+    {
+      "id": "315b1944e606",
+      "title": "The AI pentest tool FBI warned about is a public repo with 14k stars",
+      "url": "https://github.com/BaaRai/ARTEX",
+      "source": "github",
+      "tier": "headline",
+      "summary": "ARTEX, the autonomous LLM-driven pentest platform the FBI flagged in an advisory last week, is a public AGPL repo with roughly 14,000 stars and 1,232 commits. A planner breaks goals into intents, worker agents run real tools, and releases ship with SHA-256 sums and a CycloneDX SBOM. It works with Anthropic, OpenAI-compatible, or local Ollama models. (4 minute read)"
+    },
+    {
+      "id": "57187aec2432",
+      "title": "ROGUE-AI reproduces 89% of reported LLM agent harm incidents offline",
+      "url": "https://arxiv.org/abs/2611.26553v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "ROGUE-AI replicates real LLM-agent harm incidents, like a coding agent deleting a production database, against matched controls missing only the blamed cause. It reproduced the reported harm in 89% of 108 attempted replications, and 62 of 72 real-harm cases had no attacker at all. A tool-output warning naming the hazard cut harm across all five models tested. (4 minute read)"
+    },
+    {
+      "id": "bd055369dbe5",
+      "title": "SoK: LLM vulnerability-finding autonomy passed frontier models in 2026",
+      "url": "https://arxiv.org/abs/2611.26601v1",
+      "source": "arxiv",
+      "tier": "discovery",
+      "summary": "A new SoK rates LLM vulnerability-research capability on a driving-automation-style autonomy scale, finding agents reached full autonomous discovery, validation, and patching of real bugs before 2026's most restricted frontier models. Disclosed vulnerabilities more than doubled in 2026, with decade-old bugs in widely used code surfacing several times more often. Report-to-fix timelines haven't moved yet. (4 minute read)"
+    },
+    {
+      "id": "9fe3e937f57a",
+      "title": "A 27B model edits its own weights, no gradients, no training",
+      "url": "https://arxiv.org/abs/2611.21885",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "An open 27B model is given its own weights and the ability to run itself, then edits the weights responsible for its own failures, raising accuracy 6.6 points on unseen problems. Across 8 sessions accuracy kept climbing, and a deliberately damaged copy recovered to over 80% of original accuracy with no retraining. Only the largest model in the family could do this. (4 minute read)"
+    }
+  ]
+}
