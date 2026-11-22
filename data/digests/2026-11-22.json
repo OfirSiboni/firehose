@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "bbe099f2944c",
@@ -8,7 +8,8 @@
       "url": "https://alpo.ge/remark.pdf",
       "source": "hn",
       "tier": "headline",
-      "summary": "Lean and Mathlib formally verified that Levent Alpöge's Claude-assisted proof of the Riemann Hypothesis and GRH is correct, checked by Lean's kernel plus the independently-verified con-leche and con-ron checkers. The formalized proof runs 17 million lines, and mathematicians expect years of work to distill the underlying ideas into human-explainable form. Researchers can now treat the result as formally checked rather than merely claimed. (3 minute read)"
+      "summary": "Lean and Mathlib formally verified that Levent Alpöge's Claude-assisted proof of the Riemann Hypothesis and GRH is correct, checked by Lean's kernel plus the independently-verified con-leche and con-ron checkers. The formalized proof runs 17 million lines, and mathematicians expect years of work to distill the underlying ideas into human-explainable form. Researchers can now treat the result as formally checked rather than merely claimed. (3 minute read)",
+      "message_id": 536
     },
     {
       "id": "16765aea3bd9",
@@ -16,7 +17,8 @@
       "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "Autonomous Cairn AI agents found and exploited a path-traversal zero-day in MONAI Label (CVE-2026-133968, CVSS 9.8), going from API mapping to a root shell in 11 minutes. Amazon ties the September 8-10 campaign against university targets to a China-linked actor, reconstructed after the attackers left their Cairn control panel exposed with no authentication. MONAI merged a source fix October 19, but no patched package has shipped. (3 minute read)"
+      "summary": "Autonomous Cairn AI agents found and exploited a path-traversal zero-day in MONAI Label (CVE-2026-133968, CVSS 9.8), going from API mapping to a root shell in 11 minutes. Amazon ties the September 8-10 campaign against university targets to a China-linked actor, reconstructed after the attackers left their Cairn control panel exposed with no authentication. MONAI merged a source fix October 19, but no patched package has shipped. (3 minute read)",
+      "message_id": 537
     },
     {
       "id": "000028228240",
@@ -24,7 +26,8 @@
       "url": "https://architectlabs.com/blog/frostbite",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Architect Labs says AI agent swarms designed Frostbite, a CPU built on interaction nets where parallelism comes from the program's dependency graph instead of threads or caches. The team reports 4.59x geometric-mean performance-per-watt over an undisclosed baseline across 25 workloads, synthesized at 500MHz in a 0.792mm² layout at 7nm. The results are pre-silicon and self-reported against an anonymized baseline, so independent benchmarking is the next step. (3 minute read)"
+      "summary": "Architect Labs says AI agent swarms designed Frostbite, a CPU built on interaction nets where parallelism comes from the program's dependency graph instead of threads or caches. The team reports 4.59x geometric-mean performance-per-watt over an undisclosed baseline across 25 workloads, synthesized at 500MHz in a 0.792mm² layout at 7nm. The results are pre-silicon and self-reported against an anonymized baseline, so independent benchmarking is the next step. (3 minute read)",
+      "message_id": 538
     },
     {
       "id": "a0ebc9ee452b",
@@ -32,7 +35,8 @@
       "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Thinking Machines released Inkling 2 Mini, its newest model, already near the top of Hacker News. (1 minute read)"
+      "summary": "Thinking Machines released Inkling 2 Mini, its newest model, already near the top of Hacker News. (1 minute read)",
+      "message_id": 539
     },
     {
       "id": "0ad755f2681c",
@@ -40,7 +44,8 @@
       "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
       "source": "blog",
       "tier": "discovery",
-      "summary": "A single malicious webpage opened by Meta's Muse agent let NebuSec researchers chain a browser bug with a Linux kernel flaw to take over the user's cloud VM, reaching stored chats, memories, and the credential store with no approval prompt. The compromise stayed inside one user's machine and didn't reach the shared host or other users. It was a lab demonstration, and Meta fixed the issues before publication. (3 minute read)"
+      "summary": "A single malicious webpage opened by Meta's Muse agent let NebuSec researchers chain a browser bug with a Linux kernel flaw to take over the user's cloud VM, reaching stored chats, memories, and the credential store with no approval prompt. The compromise stayed inside one user's machine and didn't reach the shared host or other users. It was a lab demonstration, and Meta fixed the issues before publication. (3 minute read)",
+      "message_id": 540
     },
     {
       "id": "c4ca83ba5741",
@@ -48,7 +53,8 @@
       "url": "https://signal.org/blog/protecting-your-privacy/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Signal will restrict screenshots by default on Android and iOS specifically to stop OS-level AI agents, such as those built into iOS 27, from reading chats on-screen. The app can detect when an AI assistant is attempting to read it, but Signal says the protection is incomplete. It's a new defensive layer against agents with screen or accessibility access, not just malware. (2 minute read)"
+      "summary": "Signal will restrict screenshots by default on Android and iOS specifically to stop OS-level AI agents, such as those built into iOS 27, from reading chats on-screen. The app can detect when an AI assistant is attempting to read it, but Signal says the protection is incomplete. It's a new defensive layer against agents with screen or accessibility access, not just malware. (2 minute read)",
+      "message_id": 541
     },
     {
       "id": "61dded18c5ae",
@@ -56,7 +62,8 @@
       "url": "https://github.com/Yamz-Labs/kyojin",
       "source": "github",
       "tier": "discovery",
-      "summary": "Kyojin is a new open-source, OpenAI-compatible inference engine built on ExLlamaV3 for running 100GB-class open models on one desktop machine. It serves GLM-5.3-Flash and Qwen3.8-Flash-Next (95-100GB) on a 128GB AMD Strix Halo box at 32-53 tok/s decode, and DeepSeek V4.1 Flash (184.7GB) on a Mac Studio at 62 tok/s with up to 983K token context. All numbers are the maintainers' own. (3 minute read)"
+      "summary": "Kyojin is a new open-source, OpenAI-compatible inference engine built on ExLlamaV3 for running 100GB-class open models on one desktop machine. It serves GLM-5.3-Flash and Qwen3.8-Flash-Next (95-100GB) on a 128GB AMD Strix Halo box at 32-53 tok/s decode, and DeepSeek V4.1 Flash (184.7GB) on a Mac Studio at 62 tok/s with up to 983K token context. All numbers are the maintainers' own. (3 minute read)",
+      "message_id": 542
     },
     {
       "id": "ac6264fec7d5",
@@ -64,7 +71,8 @@
       "url": "https://scottaaronson.blog/?p=10344",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Scott Aaronson now says the Claude-assisted Riemann Hypothesis proof is correct, updating once an independent Lean certificate landed from con-leche, itself formally verified back to set-theory axioms. He notes no AI math result with a Lean certificate has been retracted, while uncertified ones have. He separates verification from understanding: the 17-million-line proof is checked, but mathematicians will need years to explain the actual ideas. (3 minute read)"
+      "summary": "Scott Aaronson now says the Claude-assisted Riemann Hypothesis proof is correct, updating once an independent Lean certificate landed from con-leche, itself formally verified back to set-theory axioms. He notes no AI math result with a Lean certificate has been retracted, while uncertified ones have. He separates verification from understanding: the 17-million-line proof is checked, but mathematicians will need years to explain the actual ideas. (3 minute read)",
+      "message_id": 543
     }
   ]
 }
