@@ -1,76 +1,76 @@
-# Firehose — 2026-11-20
+# Firehose — 2026-11-22
 
-## [Gemini 4 Neon tops cyber and coding benchmarks at lower cost](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/)
+## [Claude-assisted Riemann Hypothesis proof formally verified by Lean](https://alpo.ge/remark.pdf)
 
 `headline` · hn
 
-Gemini 4 Neon scores 76% on AutoBaxBench and 51.26% on WebExploitBench, both state of the art, at 32% lower cost per task than Carbon. It tops the Artificial Analysis Coding Agent Index at 58.6 and blocks 100% of indirect prompt injections at its highest thinking level. At $3 per million input tokens, security and coding teams get frontier agent evals without frontier pricing. (2 minute read)
+Lean and Mathlib formally verified that Levent Alpöge's Claude-assisted proof of the Riemann Hypothesis and GRH is correct, checked by Lean's kernel plus the independently-verified con-leche and con-ron checkers. The formalized proof runs 17 million lines, and mathematicians expect years of work to distill the underlying ideas into human-explainable form. Researchers can now treat the result as formally checked rather than merely claimed. (3 minute read)
 
-## [Compromised Microsoft Agent Framework package stole credentials](https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/)
+## [AI agents found a real zero-day, took root on a university server](https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html)
 
 `headline` · blog
 
-Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer and cloud credentials. The agent-framework supply chain is now a confirmed attack vector, not just a theoretical one. Anyone who installed the package recently should rotate credentials and audit for unauthorized access. (1 minute read)
+Autonomous Cairn AI agents found and exploited a path-traversal zero-day in MONAI Label (CVE-2026-133968, CVSS 9.8), going from API mapping to a root shell in 11 minutes. Amazon ties the September 8-10 campaign against university targets to a China-linked actor, reconstructed after the attackers left their Cairn control panel exposed with no authentication. MONAI merged a source fix October 19, but no patched package has shipped. (3 minute read)
 
-## [LLM-driven reverse engineering workflow, repos included](https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering)
-
-`discovery` · hn
-
-A six-month reverse-engineering project paired DeepSeek with Ghidra's MCP bridge and radare2, using a hypothesis-debugging skill that logs each guess before testing it. The workflow mapped EmWave and Sony Alpha camera protocols, built custom synth firmware, and cracked license locks. The Ghidra and debugging skills are published as open repos (ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging) that anyone can reuse. (2 minute read)
-
-## [AI hacking tool breached European Commission systems for 10+ days](https://therecord.media/european-commission-confirms-cyberattack-using-ai)
-
-`headline` · blog
-
-An AI-driven cyberattack on the European Commission, first detected October 22, knocked out payroll, leave, medical reimbursement, and translation systems for more than 10 days. CERT-EU ties the intrusion to ARTEX, an open-source AI hacking platform the FBI says can reach privileged access in under three hours. It's the Commission's third disclosed breach this year, and the investigation remains open. (2 minute read)
-
-## [Two critical unauthenticated RCEs hit Nginx HTTP/2](https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities)
-
-`headline` · hn
-
-Two critical Nginx HTTP/2 bugs, CVE-2026-123633 and CVE-2026-123007, both CVSS 9.2, let unauthenticated attackers reach remote code execution through a use-after-free and an integer underflow. Wiz built working exploits in testing but withheld them; fixes ship in 1.30.7 and 1.31.9. With HTTP/2 enabled on over 225 million sites, upgrading now beats waiting for a public PoC to appear. (2 minute read)
-
-## [Claude completes a 2003 black-hole calculation, proves a new bound](https://www.anthropic.com/research/claude-black-hole-physics)
-
-`headline` · hn
-
-Running as parallel agent copies that cross-checked each other, Claude finished a three-loop N=4 super Yang-Mills calculation physicists set up in 2003, confirming an abrupt gas-to-black-hole transition matching the 1983 gravity-side result. It also derived an exact mass ceiling for the lightest 3D black hole, M₁ ≤ c/Λ with Λ≈9.1266, formally verified in Lean. The findings are Anthropic's own unpublished preprints, not yet peer reviewed. (3 minute read)
-
-## [Genie 4 is now generally available](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/)
-
-`headline` · hn
-
-Google's Genie 4 world model is now generally available. (1 minute read)
-
-## [Energy-based reasoners cut inference compute 345x on logic puzzles](https://energy-based-reasoners.github.io/)
+## [AI-designed CPU claims 4.59x performance per watt, pre-silicon](https://architectlabs.com/blog/frostbite)
 
 `discovery` · hn
 
-Energy-Based Reasoners replace next-token search with gradient descent on a learned energy function, reaching 99.9% accuracy on Sudoku-Extreme with just 1.8M parameters, 345x less inference compute than the next-best approach. No external verifier is needed; the energy score itself tells the model when to stop refining. Code and the arXiv paper (2611.08977) are public, so the approach is reproducible now. (2 minute read)
+Architect Labs says AI agent swarms designed Frostbite, a CPU built on interaction nets where parallelism comes from the program's dependency graph instead of threads or caches. The team reports 4.59x geometric-mean performance-per-watt over an undisclosed baseline across 25 workloads, synthesized at 500MHz in a 0.792mm² layout at 7nm. The results are pre-silicon and self-reported against an anonymized baseline, so independent benchmarking is the next step. (3 minute read)
+
+## [Thinking Machines ships Inkling 2 Mini](https://thinkingmachines.ai/news/inkling-2-mini/)
+
+`headline` · hn
+
+Thinking Machines released Inkling 2 Mini, its newest model, already near the top of Hacker News. (1 minute read)
+
+## [Malicious webpage gave researchers full control of a Meta Muse agent](https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html)
+
+`discovery` · blog
+
+A single malicious webpage opened by Meta's Muse agent let NebuSec researchers chain a browser bug with a Linux kernel flaw to take over the user's cloud VM, reaching stored chats, memories, and the credential store with no approval prompt. The compromise stayed inside one user's machine and didn't reach the shared host or other users. It was a lab demonstration, and Meta fixed the issues before publication. (3 minute read)
+
+## [Signal blocks AI agents from reading chats via screenshots](https://signal.org/blog/protecting-your-privacy/)
+
+`discovery` · hn
+
+Signal will restrict screenshots by default on Android and iOS specifically to stop OS-level AI agents, such as those built into iOS 27, from reading chats on-screen. The app can detect when an AI assistant is attempting to read it, but Signal says the protection is incomplete. It's a new defensive layer against agents with screen or accessibility access, not just malware. (2 minute read)
+
+## [Kyojin runs 100GB-class open models on a single desktop](https://github.com/Yamz-Labs/kyojin)
+
+`discovery` · github
+
+Kyojin is a new open-source, OpenAI-compatible inference engine built on ExLlamaV3 for running 100GB-class open models on one desktop machine. It serves GLM-5.3-Flash and Qwen3.8-Flash-Next (95-100GB) on a 128GB AMD Strix Halo box at 32-53 tok/s decode, and DeepSeek V4.1 Flash (184.7GB) on a Mac Studio at 62 tok/s with up to 983K token context. All numbers are the maintainers' own. (3 minute read)
+
+## [Scott Aaronson: the Riemann Hypothesis proof checks out](https://scottaaronson.blog/?p=10344)
+
+`discovery` · hn
+
+Scott Aaronson now says the Claude-assisted Riemann Hypothesis proof is correct, updating once an independent Lean certificate landed from con-leche, itself formally verified back to set-theory axioms. He notes no AI math result with a Lean certificate has been retracted, while uncertified ones have. He separates verification from understanding: the 17-million-line proof is checked, but mathematicians will need years to explain the actual ideas. (3 minute read)
 
 ## Also in the pool
 
-- [DaisyRose-27B](https://www.radixark.com/blog/daisyrose-27b) — hn
-- [Seven new models at scalable price-performance](https://microsoft.ai/news/microsoft-ignite-2026/) — hn
-- [Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required](https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html) — blog
-- [Fuck Your AI Safeguards](https://ounapuu.ee/posts/2026/11/19/unsafeguards/) — hn
-- [Two stealth models just appeared on the leaderboard, both ahead of Fable 5.2](https://contralabs.com/frontierdesign) — hn
-- [A 4.5M-parameter TTS model runs 70x real-time on CPU and cost just $10 to train](https://huggingface.co/n4ze3m/tiny-voca) — hn
-- [BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model](https://huggingface.co/blog/qvac/botpsy) — blog
-- [Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers](https://www.wsj.com/finance/banking/visa-mastercard-and-jpmorgan-customer-data-leaked-by-hackers-3b5a0f87) — hn
-- [180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers](https://huggingface.co/blog/moe-expert-streaming) — blog
-- [Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction](https://arxiv.org/abs/2607.29378) — hn
-- [VMware patches vCenter zero-day exploited in attacks since September](https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/) — blog
-- [AI agents ask better questions than KPMG accountants in audit trial](https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/) — hn
-- [Three People Arrested for AI-Enhanced Impersonation Fraud](https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html) — blog
-- [Ruby2ßhell: Pre-authentication RCE on stock Rails](https://verialabs.com/ruby2shell/) — hn
-- [Pete warden on local AI, open models, voice interfaces, the future of hardware](https://thedataexchange.media/pete-warden-moonshine/) — hn
-- [ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories](https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html) — blog
-- [Why your fine-tuning job takes longer than the FLOPs say](https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time) — blog
-- [Rumble-2-Flash: an open 0.5B speech model for 40+ languages](https://huggingface.co/blog/rumble-2-flash) — blog
-- [New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years](https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html) — blog
-- [Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are](https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html) — blog
+- [Mapping every neuron in Qwen3-8B](https://www.fermionresearch.com/research/mapping-every-neuron-in-qwen3-8b/) — hn
+- [Quoting Levent Alpöge](https://simonwillison.net/2026/Nov/20/levent-alpoge/) — blog
+- [Astra 6.2 and Sol 6.2 flop at Simple Bench](https://simple-bench.com/) — hn
+- [N1nEmAn/sapper-v2](https://github.com/N1nEmAn/sapper-v2) — github
+- [Can AI help scientists identify promising drug candidates?](https://openai.com/index/introducing-medchembench) — blog
+- [Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control](https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html) — blog
+- [Policy and Disclosure: 2026 Edition](https://projectzero.google/2026/11/disclosure-policy.html) — blog
+- [Tell HN: OpenRouter prompts to Minimax may have been read](https://news.ycombinator.com/item?id=50585962) — hn
+- [Leaky AI supply chain is exposing secret user data at an alarming rate](https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/) — hn
+- [Bell Canada says 'agentic' hacker stole enterprise customer data](https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/) — blog
+- [The Hungry Butler Effect: Concealed Commercial Incentives in LLMs](https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models) — hn
+- [XYBench: Helping with the problem behind the question](https://huggingface.co/blog/allenai/xybench) — blog
+- [Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost](https://huggingface.co/blog/harness-adapters-at-scale) — blog
+- [Vibecoding an inference chip](https://ankitg.me/blog/vibecoding-inference-chip/) — hn
+- [yjid/kensaku](https://github.com/yjid/kensaku) — github
+- [AI Doesn’t Have to Go Rogue to Break the World](https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html) — blog
+- [Llms.txt and MCP didn't move the needle](https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did) — hn
+- [Microsoft Entra Connect Health flaw exploited to steal tenant data](https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/) — blog
+- [Muru](https://simonwillison.net/2026/Nov/21/muru/) — blog
+- [Language Models Can Rewrite Their Own Weights](https://arxiv.org/abs/2611.21885) — hn
 
 ---
 
-[Web](https://ofirsiboni.github.io/firehose/2026-11-20.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)
+[Web](https://ofirsiboni.github.io/firehose/2026-11-22.html) · [RSS](https://ofirsiboni.github.io/firehose/feed.xml)

@@ -1,106 +1,115 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-22",
   "stories": [
     {
-      "id": "b2c084a41275",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "title": "Gemini 4 Neon",
+      "id": "bbe099f2944c",
+      "url": "https://alpo.ge/remark.pdf",
+      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
       "source": "hn",
       "tier": "headline",
-      "reason": "Google's new flagship-tier model; benchmarks include AutoBaxBench 76% and WebExploitBench 51.26% (both SOTA) putting cyber-eval capability in Mine's always-surface lane, plus #1 coding agent index and 0% prompt-injection ASR.",
+      "reason": "Alpoge says he and Claude found a proof of the Riemann Hypothesis (and GRH); the Lean/Mathlib community has since formally verified it correct.",
       "key_facts": [
-        "$3/M input, $0.15/M cached, $15/M output, 1M context",
-        "AutoBaxBench hard tier 76% (SOTA), WebExploitBench v1.2 51.26% (SOTA) at half cost",
-        "Artificial Analysis Coding Agent Index #1 at 58.6",
-        "Gray Swan indirect prompt injection: 0.0% attack success at highest thinking level",
-        "32% lower cost per task than Carbon at high thinking level"
+        "Levent Alpoge announced Nov 20 that working with Claude he found a proof of the Riemann Hypothesis, extending to the Generalized Riemann Hypothesis and likely the Extended RH.",
+        "The Lean/Mathlib community (Lean FRO + Mathlib Initiative) published a joint statement Nov 21 saying the formalized proof is correct.",
+        "Verification used Lean's kernel plus independent checkers con-leche and con-ron, which have their own formal soundness proofs back to set theory.",
+        "The formalized proof/library is about 17 million lines; mathematicians say distilling the underlying ideas into human-understandable form will take years.",
+        "Millennium Prize evaluation rules require 2 years after refereed publication, so no official Clay Institute statement is expected soon regardless of correctness."
       ]
     },
     {
-      "id": "a396321d0e81",
-      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+      "id": "16765aea3bd9",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
       "source": "blog",
       "tier": "headline",
-      "reason": "Confirmed supply-chain compromise of Microsoft's Agent Framework PyPI package to steal credentials — squarely Mine's always-surface AI-supply-chain lane (poisoned package distributing an agent framework).",
+      "reason": "Amazon says a China-linked actor's autonomous Cairn AI agents found and exploited a real zero-day (CVE-2026-133968, CVSS 9.8) in medical-imaging software and reached root on a university server.",
       "key_facts": [
-        "Microsoft's Agent Framework package on PyPI was compromised to exfiltrate developer/cloud credentials"
+        "Vulnerability: path-traversal flaw in MONAI Label (open-source medical imaging server) <=0.8.5, auth off by default; tracked CVE-2026-133968, CVSS 9.8.",
+        "Attackers' Cairn control panel (an open-source autonomous pentest-agent framework) was left exposed with no auth, letting Amazon Threat Intelligence reconstruct the whole operation.",
+        "Agents went from mapping the app's API to writing files on the server in about 11 minutes; later wrote a Python reverse shell into sitecustomize.py to get root.",
+        "Activity ran Sept 8-10, 2026 against East Asian university targets; attribution to a China-linked actor is 'moderate confidence' based on language/timezone of prompts.",
+        "Agents also failed: 16 hours/148 actions against a Redis server, and 30,000+ credential guesses over 6 hours against a GPU server, both unsuccessful.",
+        "MONAI maintainers merged a source fix Oct 19 but had not shipped a patched PyPI package (still 0.8.5) as of the report."
       ]
     },
     {
-      "id": "ba05f6db61a4",
-      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
-      "title": "LLM assisted reverse engineering",
+      "id": "000028228240",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Detailed first-person account of LLM-assisted reverse engineering with a concrete workflow (Ghidra+MCP, hypothesis-debugging skill) and multiple linked repos — running code, not just a claim.",
+      "reason": "Architect Labs says AI agent swarms designed Frostbite, a new interaction-net CPU, claiming 4.59x perf/watt over an undisclosed baseline -- concrete numbers and methodology, but pre-silicon and self-reported.",
       "key_facts": [
-        "Open repos: ioma8/ghidra-decompile-skill, ioma8/hypothesis-debugging, ioma8/neo-re, ioma8/opz-firmware-notes",
-        "Six months of RE work: EmWave/Sony Alpha protocol mapping, custom synth firmware, license-lock cracking",
-        "Uses DeepSeek for cheap iteration plus Ghidra MCP bridge and radare2"
+        "Architecture based on interaction nets: computation is local graph rewriting, so parallelism comes from program structure, not threads/caches; language Vine compiles to intermediate form Ivy.",
+        "AI agent swarms iterated on compiler, ISA, microarchitecture, RTL, verification and layout; a power model (Arcmodel) was calibrated against RTL estimates to within ~5%.",
+        "Claims 4.59x geometric-mean performance-per-watt vs a baseline 'TCPU' across 25 workloads (6.02x on the 10 search-set workloads, 3.83x on 15 held-out workloads) and 8.77x perf/area.",
+        "Synthesis at 800MHz, final GDS layout at 500MHz, 0.792mm^2 (quad+4 L3 nodes) at 7nm vs 0.895mm^2 baseline core.",
+        "No silicon, FPGA, or independent benchmark exists yet; baseline CPU is anonymized and unreproducible; RTL/ISA/Arcmodel are unreleased (future plan)."
       ]
     },
     {
-      "id": "5f26a746749a",
-      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-      "title": "European Commission confirms cyberattack, says hackers used AI tool",
+      "id": "a0ebc9ee452b",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+      "title": "Inkling 2 Mini",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Thinking Machines shipped Inkling 2 Mini, a flagship/first-of-generation model release; already at 1200+ HN points so treat as seen, surface briefly.",
+      "key_facts": []
+    },
+    {
+      "id": "0ad755f2681c",
+      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
       "source": "blog",
-      "tier": "headline",
-      "reason": "European Commission confirms an AI-driven cyberattack (CERT-EU ties it to the ARTEX AI hacking platform FBI has warned about) that knocked out payroll/HR systems for 10+ days — direct AI-as-attack-surface story.",
+      "tier": "discovery",
+      "reason": "Researchers demonstrated a lab PoC where a single malicious webpage opened by Meta's Muse agent chained a browser bug and a Linux kernel bug to fully take over the user's cloud machine, including stored chats and credential access.",
       "key_facts": [
-        "First signs Oct 22; disrupted payroll, leave, medical reimbursement, translation services for 10+ days",
-        "CERT-EU/POLITICO tie it to ARTEX, an open-source AI hacking platform FBI says reaches privileged access in <3 hours",
-        "Commission's third disclosed cyber incident this year"
+        "Meta Muse is Meta's personal AI agent (launched Sept 8); each user's agent runs on its own cloud VM, gated by a monitoring layer called Sentinel.",
+        "NebuSec: a malicious webpage could exfiltrate and alter a user's conversation history/memories via Muse's browsing with no approval prompt.",
+        "Chaining a flaw in Muse's built-in browser with a Linux kernel flaw gave full control of the user's cloud machine, including the credential store and Sentinel itself.",
+        "Lab demonstration only, not used against real users; stayed within one user's VM and did not reach the shared host or other users.",
+        "NebuSec says Meta fixed all the issues before publication; Meta has not publicly confirmed or commented; no PoC code or exact bug details were published."
       ]
     },
     {
-      "id": "16043a46c109",
-      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "title": "Unauthenticated remote code execution in Nginx",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Two critical unauthenticated RCEs in NGINX's HTTP/2 stack (CVSS 9.2), the world's most-deployed web server (225M+ sites); 1392 HN points means it's already widely seen, but it's large enough to run as a headline per Mine's pure-cyber bar.",
-      "key_facts": [
-        "CVE-2026-123633 (UAF) and CVE-2026-123007 (integer underflow), both CVSS 4.0 9.2",
-        "Fixed in 1.30.7 (stable) / 1.31.9 (mainline); Wiz built working PoCs but withheld them",
-        "HTTP/2 must be enabled; affects both reverse-proxy and static-file configs"
-      ]
-    },
-    {
-      "id": "be373132dcb8",
-      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
-      "title": "Claude solves two open problems in the physics of black holes",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Anthropic reports Claude (running as many parallel agent copies, cross-checked and Lean-verified on one result) completed a long-unfinished three-loop SYM calculation and derived a new exact bound on 3D-gravity black-hole mass — a genuine, partly formally-verified math/physics result, though the source is Anthropic's own blog and not independently reviewed.",
-      "key_facts": [
-        "Hawking-Page transition: completed a 2003-era 3-loop N=4 SYM calculation, confirming an abrupt gas-to-black-hole transition",
-        "Modular bootstrap: derived exact ceiling M₁ ≤ c/Λ (Λ≈9.1266) on lightest 3D black hole mass; bootstrap result formally verified in Lean",
-        "~22 candidate problems proposed by Claude itself, worked by background agents over ~6 weeks; Anthropic's own framing, not peer-reviewed"
-      ]
-    },
-    {
-      "id": "abe03c170f0b",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
-      "title": "Genie 4 is now available",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "New flagship-generation release in Google's Genie world-model line; first telling of this release.",
-      "key_facts": [
-        "Genie 4 announced generally available"
-      ]
-    },
-    {
-      "id": "23a6e8d38fa0",
-      "url": "https://energy-based-reasoners.github.io/",
-      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "id": "c4ca83ba5741",
+      "url": "https://signal.org/blog/protecting-your-privacy/",
+      "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Energy-Based Reasoners claim 345x less inference compute than the next-best approach on algorithmic reasoning benchmarks (not quite the headlined 385x), with a linked GitHub repo and arXiv paper from a Duke/UIUC/Harvard team.",
+      "reason": "Signal will restrict screenshots by default on Android/iOS specifically to stop AI agents built into the OS from reading private chats, and admits the protection is incomplete.",
       "key_facts": [
-        "345x less inference compute vs next-best on Sudoku-Extreme (99.9% acc at 1.8M params)",
-        "Energy function over latent reasoning states, no external verifier needed",
-        "Code: github.com/wwillchen/ebr; paper arXiv:2611.08977"
+        "Signal's own announcement: restricts screenshots by default to block agentic systems (e.g. iOS 27, some Android builds) that try to read chats on-screen.",
+        "Signal says the feature can detect an AI assistant attempting to read the Signal app and explicitly calls the protection 'incomplete.'",
+        "This is a defensive move against a new OS-level threat model: AI agents with screen/accessibility access reading data out of other apps, not just malware."
+      ]
+    },
+    {
+      "id": "61dded18c5ae",
+      "url": "https://github.com/Yamz-Labs/kyojin",
+      "title": "Yamz-Labs/kyojin",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Kyojin is a new open-source OpenAI-compatible inference engine (built on ExLlamaV3) for running 100GB-class open models on a single desktop -- AMD Strix Halo, RTX, or Mac -- with published per-model throughput numbers.",
+      "key_facts": [
+        "Runs GLM-5.3-Flash (100.1GB), Qwen3.8-Flash-Next (95.4GB) and MiMo-V2.6-Flash-MOPD (105GB) on a 128GB AMD Strix Halo box via ROCm; DeepSeek V4.1 Flash (184.7GB) on Mac Studio or Strix SSD tier.",
+        "Reports decode/prefill tok/s at 8K context: GLM-5.3-Flash 32/633, Qwen3.8-Flash-Next 53/1576, Qwen3.8-27B on RTX 3090 75/1621, DeepSeek V4.1 Flash on Mac Studio M5 Ultra 62/3001.",
+        "Context limits reported up to 983K tokens (DeepSeek V4.1 Flash on Mac) and 500K (GLM-5.3-Flash); a 763B model on one 128GB machine runs experimentally at 5-11 tok/s.",
+        "All numbers are the maintainers' own, unverified independently; MIT licensed, OpenAI-compatible API."
+      ]
+    },
+    {
+      "id": "ac6264fec7d5",
+      "url": "https://scottaaronson.blog/?p=10344",
+      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Scott Aaronson flips from skeptical to convinced on the Claude/Alpoge RH proof once a Lean certificate landed, and argues Lean-verified AI math claims now carry higher assurance than typical journal papers.",
+      "key_facts": [
+        "Aaronson: 'The proof is correct' -- his update came specifically because the proof has an independent Lean certificate checked by con-leche, which is itself formally verified back to set-theory axioms.",
+        "He notes no AI math result with a Lean certificate has yet been retracted, while several uncertified ones have.",
+        "He separates 'verified' from 'understood': the formalized proof is ~17M lines, and mathematicians will need years to distill and explain the actual ideas.",
+        "His remaining worry: future AI systems could reward-hack soundness gaps in proof assistants themselves, so he wants Lean's foundations hardened further."
       ]
     }
   ]
