@@ -32,7 +32,7 @@ Weighting notes:
 
 ## Learned (regenerated weekly from labels — edit freely, it will be overwritten)
 
-- Arxiv is 0-for-24 across every sub-topic seen (serving/KV-cache,
+- Arxiv is 0-for-27 across every sub-topic seen (serving/KV-cache,
   agent-safety research, benchmark critique, local-vs-frontier economics,
   robotics scaling laws, cyber evals), including both explicit downvotes
   (KV-cache sink-suppression, prefill/decode quantization splitting) — and
@@ -54,11 +54,11 @@ Weighting notes:
   near-duplicate of an already-covered category.
 - A lab's flagship/first-of-generation release still gets accepted (Opus
   5.5, GPT-6 Sol & Luna, Xiaomi MiMo v2.6 — 3-for-3), but repeat coverage of
-  that same release is 0-for-19 ignored: point-release variants (GPT-6.1
-  Sol), tier rollouts of the same number (Sonnet 5.5 going free-tier
-  default, Claude Haiku 5.5's 90%-cheaper pricing), the same relaunch posted
-  twice plus a later cyber-benchmark variant (Gemini 4 Argon x2, Gemini 4
-  Carbon), a UI rollout (GPT-6's "Intelligent UI"), how-tos or capability
+  that same release is 0-for-21 ignored: point-release variants (GPT-6.1
+  Sol, GPT-6.2 Astra & Sol), tier rollouts of the same number (Sonnet 5.5
+  going free-tier default, Claude Haiku 5.5's 90%-cheaper pricing), the same
+  relaunch posted multiple ways (Gemini 4 Argon x2, Gemini 4 Carbon, Gemini
+  4 Neon), a UI rollout (GPT-6's "Intelligent UI"), how-tos or capability
   demos bolted onto an already-covered release (Gemini 3.8 TTS, Opus 5.5
   porting the TypeScript compiler, Opus 5.5 flagging semiconductor
   candidates, a usage guide for Opus 5.5, Livenerf tracking Opus 5.5, GPT-6's
@@ -68,7 +68,13 @@ Weighting notes:
   cyber-benchmark framing — and Reflection's Beam posted twice), even though
   an open-weight flagship is a Mine always-surface topic. The rule is about
   the specific release being re-covered, not just "same model family" —
-  only the first telling of any given release earns a slot.
+  only the first telling of any given release earns a slot. Exception:
+  Claude's own Fable/Mythos line is 0-for-7 including its own launch
+  announcement (Fable 5.2/Mythos 5.2's own debut, Fable 5.1's image-message
+  trick, a LiveCodeBench comparison, a pentest/bug-finding comparison, an
+  AMD-kernel-porting demo) — unlike Opus/Sonnet/Haiku, Fable/Mythos doesn't
+  break through even on first telling, so skip the line entirely unless a
+  specific post carries a hard benchmark or security result on its own.
 - Legal and regulatory process stories about AI companies — lawsuits, court
   rulings, arrests, agency orders, and political appointments/export-control
   moves with no technical result attached — are 0-for-9 ignored (the
@@ -87,10 +93,11 @@ Weighting notes:
   size. Extend Mine's sub-$50M funding exclusion: skip this category
   outright unless a genuine AI-systems result rides along with the dollar
   figure.
-- Agent-product/runtime/harness launches are 0-for-11 ignored (OpenAI's
+- Agent-product/runtime/harness launches are 0-for-12 ignored (OpenAI's
   Dots, ChatGPT Sites, Claude Duet, Docker's agent builder, DeepSeek Harness
   Desktop, OpenMausBot, Talorys, Microsoft's MXC, NVIDIA's OpenShell,
-  Google's Harness2, the prompt-cache-hit-rate harness post) even when
-  open-sourced or framed as a sandboxed runtime. "We shipped an agent
-  product/harness" needs a concrete technical differentiator — a benchmark
-  win, an exploit, a measured number — to land on its own.
+  Google's Harness2, the prompt-cache-hit-rate harness post, "lend" for
+  credential-free agent command execution) even when open-sourced or framed
+  as a sandboxed runtime. "We shipped an agent product/harness" needs a
+  concrete technical differentiator — a benchmark win, an exploit, a
+  measured number — to land on its own.
