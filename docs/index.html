@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Firehose — 2026-11-22</title>
+<title>Firehose — 2026-11-23</title>
 <link rel="alternate" type="application/rss+xml" href="feed.xml">
 <style>
   :root { color-scheme: light dark; }
@@ -14,67 +14,67 @@
   .tail li { margin: .4rem 0; }
   footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
 </style></head><body>
-<h1>Firehose — 2026-11-22</h1>
+<h1>Firehose — 2026-11-23</h1>
 <article>
-<h2><a href="https://alpo.ge/remark.pdf">Claude-assisted Riemann Hypothesis proof formally verified by Lean</a></h2>
-<p>Lean and Mathlib formally verified that Levent Alpöge&#x27;s Claude-assisted proof of the Riemann Hypothesis and GRH is correct, checked by Lean&#x27;s kernel plus the independently-verified con-leche and con-ron checkers. The formalized proof runs 17 million lines, and mathematicians expect years of work to distill the underlying ideas into human-explainable form. Researchers can now treat the result as formally checked rather than merely claimed. (3 minute read)</p>
+<h2><a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Canary tokens catch AI inference providers stealing and leaking prompts</a></h2>
+<p>Dragos seeded 2 million canary-tokened prompts across inference providers since July, catching real breaches: one stolen AWS key was used within a day and stayed active three weeks, and a Zero-Data-Retention-flagged secret link surfaced in a Chinese chat 24 days later. OpenRouter pulled three providers and 125 endpoints from ZDR eligibility in response, so anyone routing prompts through a marketplace should assume ZDR promises aren&#x27;t verified. (5 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html">AI agents found a real zero-day, took root on a university server</a></h2>
-<p>Autonomous Cairn AI agents found and exploited a path-traversal zero-day in MONAI Label (CVE-2026-133968, CVSS 9.8), going from API mapping to a root shell in 11 minutes. Amazon ties the September 8-10 campaign against university targets to a China-linked actor, reconstructed after the attackers left their Cairn control panel exposed with no authentication. MONAI merged a source fix October 19, but no patched package has shipped. (3 minute read)</p>
-<p class="meta">headline · blog</p>
-</article>
-<article>
-<h2><a href="https://architectlabs.com/blog/frostbite">AI-designed CPU claims 4.59x performance per watt, pre-silicon</a></h2>
-<p>Architect Labs says AI agent swarms designed Frostbite, a CPU built on interaction nets where parallelism comes from the program&#x27;s dependency graph instead of threads or caches. The team reports 4.59x geometric-mean performance-per-watt over an undisclosed baseline across 25 workloads, synthesized at 500MHz in a 0.792mm² layout at 7nm. The results are pre-silicon and self-reported against an anonymized baseline, so independent benchmarking is the next step. (3 minute read)</p>
-<p class="meta">discovery · hn</p>
-</article>
-<article>
-<h2><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking Machines ships Inkling 2 Mini</a></h2>
-<p>Thinking Machines released Inkling 2 Mini, its newest model, already near the top of Hacker News. (1 minute read)</p>
+<h2><a href="https://simple-bench.com/">Astra 6.2 and Sol 6.2 still trail humans on Simple Bench</a></h2>
+<p>Simple Bench&#x27;s non-specialist human baseline sits at 83.7%, beating every LLM tested, including the current top model, Claude Fable, at 81.9%. Astra 6.2 and Sol 6.2 reportedly score further behind on the same benchmark. The gap shows two more frontier launches still lose to ordinary human judgment on this benchmark&#x27;s reasoning traps. (1 minute read)</p>
 <p class="meta">headline · hn</p>
 </article>
 <article>
-<h2><a href="https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html">Malicious webpage gave researchers full control of a Meta Muse agent</a></h2>
-<p>A single malicious webpage opened by Meta&#x27;s Muse agent let NebuSec researchers chain a browser bug with a Linux kernel flaw to take over the user&#x27;s cloud VM, reaching stored chats, memories, and the credential store with no approval prompt. The compromise stayed inside one user&#x27;s machine and didn&#x27;t reach the shared host or other users. It was a lab demonstration, and Meta fixed the issues before publication. (3 minute read)</p>
-<p class="meta">discovery · blog</p>
-</article>
-<article>
-<h2><a href="https://signal.org/blog/protecting-your-privacy/">Signal blocks AI agents from reading chats via screenshots</a></h2>
-<p>Signal will restrict screenshots by default on Android and iOS specifically to stop OS-level AI agents, such as those built into iOS 27, from reading chats on-screen. The app can detect when an AI assistant is attempting to read it, but Signal says the protection is incomplete. It&#x27;s a new defensive layer against agents with screen or accessibility access, not just malware. (2 minute read)</p>
-<p class="meta">discovery · hn</p>
-</article>
-<article>
-<h2><a href="https://github.com/Yamz-Labs/kyojin">Kyojin runs 100GB-class open models on a single desktop</a></h2>
-<p>Kyojin is a new open-source, OpenAI-compatible inference engine built on ExLlamaV3 for running 100GB-class open models on one desktop machine. It serves GLM-5.3-Flash and Qwen3.8-Flash-Next (95-100GB) on a 128GB AMD Strix Halo box at 32-53 tok/s decode, and DeepSeek V4.1 Flash (184.7GB) on a Mac Studio at 62 tok/s with up to 983K token context. All numbers are the maintainers&#x27; own. (3 minute read)</p>
+<h2><a href="https://github.com/N1nEmAn/sapper-v2">Sapper-v2 wins a pentest CTF using 4.5x fewer tokens</a></h2>
+<p>Sapper-v2&#x27;s multi-agent harness - commander, generals, soldiers, and scouts, tiered across GLM-5.3 and DeepSeek V4.1 Flash - won a Tencent Cloud Attack-Defense Challenge qualifier, scoring 80.18/100 across 634 teams. It matched the runner-up&#x27;s 85 flags 25 seconds faster using about 1 billion tokens against their 4.5 billion. Self-reported, but the harness and its shared-memory design are open source to inspect and reuse. (4 minute read)</p>
 <p class="meta">discovery · github</p>
 </article>
 <article>
-<h2><a href="https://scottaaronson.blog/?p=10344">Scott Aaronson: the Riemann Hypothesis proof checks out</a></h2>
-<p>Scott Aaronson now says the Claude-assisted Riemann Hypothesis proof is correct, updating once an independent Lean certificate landed from con-leche, itself formally verified back to set-theory axioms. He notes no AI math result with a Lean certificate has been retracted, while uncertified ones have. He separates verification from understanding: the 17-million-line proof is checked, but mathematicians will need years to explain the actual ideas. (3 minute read)</p>
+<h2><a href="https://pwn.ai/upload2shell">Ghostscript sandbox-escape RCE reaches Gradio and AI image apps</a></h2>
+<p>A use-after-free in Ghostscript&#x27;s Type 1 font loader (CVE-2026-125396) escapes its -dSAFER sandbox via a crafted document, with confirmed remote code execution in Gradio, Debian&#x27;s CUPS, Roundcube, and WordPress Core. AI image tools InvokeAI, AUTOMATIC1111, and ComfyUI are reachable through the same Pillow path but not independently confirmed. Ghostscript 10.08.0 fixes it upstream, so check whether your image pipeline still shells out to it. (3 minute read)</p>
 <p class="meta">discovery · hn</p>
 </article>
+<article>
+<h2><a href="https://github.com/microsoft/TokenEconomizer">Microsoft&#x27;s TokenEconomizer cuts coding-agent cost up to 31%</a></h2>
+<p>TokenEconomizer learns repo-specific facts and prunes unused tool definitions for Claude Code, Codex, and Copilot CLI sessions. Across 277 SWE-Bench tasks spanning 6 repos and 5 agent-model pairs, it cut mean cost 18.4-30.9% in every one of 30 combinations, with pass@1 flat or higher in 4 of 5. It runs as a stdlib-Python plugin that stores its learned state locally. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/">Signal blocks Siri and Gemini from reading chats off-screen</a></h2>
+<p>Signal now blocks Siri&#x27;s Onscreen Awareness on iOS 27 and Android&#x27;s Gemini Intelligence from reading chat content off the screen, a pathway Signal found through its own reverse engineering. The iOS block also disables screenshots of Signal chats; Android auto-enables Screen Security when it detects an AI assistant reading the screen. macOS users must manually exclude Signal from Siri in System Settings. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/">Anthropic&#x27;s 2028 US power mix projected at 87% gas, 11% coal</a></h2>
+<p>Independent modeling from the Better Data Center Project pegs Anthropic&#x27;s 2028 US power mix at roughly 87% gas and 11% coal, against 1.7GW of gas-generator commitments and no disclosed US renewables. The mid-case estimate is 32 million tons CO2e in 2028, more than California&#x27;s entire 2024 power sector, at power about 35% more carbon-intensive than the US grid average. These are modeled estimates, not Anthropic&#x27;s own disclosures. (4 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/T-Crypt/berth">Berth arbitrates one GPU&#x27;s VRAM across local AI engines</a></h2>
+<p>Berth is a Go daemon that leases a single GPU&#x27;s VRAM across llama.cpp, vLLM, Ollama, ComfyUI, and games by priority, queuing requests instead of letting them crash each other out of memory. It parks idle model weights to system RAM or restores via NVIDIA&#x27;s cuda-checkpoint instead of reloading from disk. Over one month on the author&#x27;s RTX 4090, it queued 1,136 requests and swapped 901 engines at safe boundaries. (3 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
 <h2>Also in the pool</h2>
-<ul class="tail"><li><a href="https://www.fermionresearch.com/research/mapping-every-neuron-in-qwen3-8b/">Mapping every neuron in Qwen3-8B</a> <span class="meta">hn</span></li>
-<li><a href="https://simonwillison.net/2026/Nov/20/levent-alpoge/">Quoting Levent Alpöge</a> <span class="meta">blog</span></li>
-<li><a href="https://simple-bench.com/">Astra 6.2 and Sol 6.2 flop at Simple Bench</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/N1nEmAn/sapper-v2">N1nEmAn/sapper-v2</a> <span class="meta">github</span></li>
-<li><a href="https://openai.com/index/introducing-medchembench">Can AI help scientists identify promising drug candidates?</a> <span class="meta">blog</span></li>
-<li><a href="https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html">Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control</a> <span class="meta">blog</span></li>
-<li><a href="https://projectzero.google/2026/11/disclosure-policy.html">Policy and Disclosure: 2026 Edition</a> <span class="meta">blog</span></li>
+<ul class="tail"><li><a href="https://openai.com/index/perplexity-and-intelligence/">Perplexity and Intelligence</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/mw00/project-maya">mw00/project-maya</a> <span class="meta">github</span></li>
 <li><a href="https://news.ycombinator.com/item?id=50585962">Tell HN: OpenRouter prompts to Minimax may have been read</a> <span class="meta">hn</span></li>
+<li><a href="https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html">RCE in Gnupg</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/reacher-z/Awesome-REA">reacher-z/Awesome-REA</a> <span class="meta">github</span></li>
+<li><a href="https://www.bbc.com/news/articles/cvze7de86pk3o">FBI reportedly investigating apparent hack of its criminal database</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/modelsphere/modelsphere">modelsphere/modelsphere</a> <span class="meta">github</span></li>
 <li><a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/">Leaky AI supply chain is exposing secret user data at an alarming rate</a> <span class="meta">hn</span></li>
-<li><a href="https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/">Bell Canada says &#x27;agentic&#x27; hacker stole enterprise customer data</a> <span class="meta">blog</span></li>
-<li><a href="https://www.researchgate.net/publication/418143113_The_Hungry_Butler_Effect_Concealed_Commercial_Incentives_and_the_Erosion_of_Epistemic_Rigour_in_Large_Language_Models">The Hungry Butler Effect: Concealed Commercial Incentives in LLMs</a> <span class="meta">hn</span></li>
-<li><a href="https://huggingface.co/blog/allenai/xybench">XYBench: Helping with the problem behind the question</a> <span class="meta">blog</span></li>
-<li><a href="https://huggingface.co/blog/harness-adapters-at-scale">Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost</a> <span class="meta">blog</span></li>
-<li><a href="https://ankitg.me/blog/vibecoding-inference-chip/">Vibecoding an inference chip</a> <span class="meta">hn</span></li>
-<li><a href="https://github.com/yjid/kensaku">yjid/kensaku</a> <span class="meta">github</span></li>
-<li><a href="https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html">AI Doesn’t Have to Go Rogue to Break the World</a> <span class="meta">blog</span></li>
-<li><a href="https://backpackforlaravel.com/articles/opinions/llms-txt-and-mcp-didn-t-move-the-needle-for-us-here-s-what-did">Llms.txt and MCP didn&#x27;t move the needle</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/Sandflow-ai/sand3d">Sandflow-ai/sand3d</a> <span class="meta">github</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/">Rackspace Spot breach let hackers access customer Kubernetes secrets</a> <span class="meta">blog</span></li>
+<li><a href="https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026">Together.ai: Prompt Leakage for Requests</a> <span class="meta">hn</span></li>
+<li><a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/">Data Processing Incidents on Inference Providers</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html">OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms</a> <span class="meta">blog</span></li>
+<li><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">Lean verification of the Riemann Hypothesis</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/sebaandrada-cell/PcapAnalyzer">PcapAnalyzer – self-hosted pcap analyzer with 27 problem detectors</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/YOLOW92/pagesift">YOLOW92/pagesift</a> <span class="meta">github</span></li>
+<li><a href="https://www.pandex.io">Pandex – Official European Law for AI Agents, over MCP</a> <span class="meta">hn</span></li>
+<li><a href="https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html">Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps</a> <span class="meta">blog</span></li>
 <li><a href="https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/">Microsoft Entra Connect Health flaw exploited to steal tenant data</a> <span class="meta">blog</span></li>
-<li><a href="https://simonwillison.net/2026/Nov/21/muru/">Muru</a> <span class="meta">blog</span></li>
-<li><a href="https://arxiv.org/abs/2611.21885">Language Models Can Rewrite Their Own Weights</a> <span class="meta">hn</span></li></ul>
-<footer><a href="feed.xml">RSS</a> · <a href="2026-11-22.md">Markdown</a></footer>
+<li><a href="https://twitter.com/GrapheneOS/status/2124158267123233056">GrapheneOS made a proof of concept RCS messaging app without Google Messages</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-23.md">Markdown</a></footer>
 </body></html>

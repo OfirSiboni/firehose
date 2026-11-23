@@ -1,115 +1,117 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "stories": [
     {
-      "id": "bbe099f2944c",
-      "url": "https://alpo.ge/remark.pdf",
-      "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+      "id": "ce0bcf2918b4",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "title": "AI Supply Chain Security: What Canary Tokens Found",
       "source": "hn",
       "tier": "headline",
-      "reason": "Alpoge says he and Claude found a proof of the Riemann Hypothesis (and GRH); the Lean/Mathlib community has since formally verified it correct.",
+      "reason": "Dragos seeded 2M canary-tokened prompts across inference providers since July and traced real breaches: AWS keys stolen and used within hours, ZDR-flagged prompts retained and accessed anyway, one prompt's secret link surfaced in a Chinese Feishu chat 24 days later, and the attacker tooling included the ARTEX LLM pentest framework.",
       "key_facts": [
-        "Levent Alpoge announced Nov 20 that working with Claude he found a proof of the Riemann Hypothesis, extending to the Generalized Riemann Hypothesis and likely the Extended RH.",
-        "The Lean/Mathlib community (Lean FRO + Mathlib Initiative) published a joint statement Nov 21 saying the formalized proof is correct.",
-        "Verification used Lean's kernel plus independent checkers con-leche and con-ron, which have their own formal soundness proofs back to set theory.",
-        "The formalized proof/library is about 17 million lines; mathematicians say distilling the underlying ideas into human-understandable form will take years.",
-        "Millennium Prize evaluation rules require 2 years after refereed publication, so no official Clay Institute statement is expected soon regardless of correctness."
+        "~2M canary-tokened prompts sent July-Nov 2026 across inference providers/routers",
+        "At least 3 hosting providers had data stolen; one stolen AWS key used within a day and still active 3 weeks later",
+        "A Chinese AI lab's systems fetched secret URLs from >50% of prompts sent to it, including ~2/3 of ZDR-flagged ones",
+        "One ZDR-flagged secret link appeared in a Chinese Feishu chat 24 days later, opened from 6 devices in 2 minutes",
+        "Attacker used ARTEX LLM pentest framework (user agents artex-agent/artex-judge-r121) from Nov 1",
+        "OpenRouter removed 3 providers and pulled 125 endpoints from Zero Data Retention eligibility in response"
       ]
     },
     {
-      "id": "16765aea3bd9",
-      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
-      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
-      "source": "blog",
-      "tier": "headline",
-      "reason": "Amazon says a China-linked actor's autonomous Cairn AI agents found and exploited a real zero-day (CVE-2026-133968, CVSS 9.8) in medical-imaging software and reached root on a university server.",
-      "key_facts": [
-        "Vulnerability: path-traversal flaw in MONAI Label (open-source medical imaging server) <=0.8.5, auth off by default; tracked CVE-2026-133968, CVSS 9.8.",
-        "Attackers' Cairn control panel (an open-source autonomous pentest-agent framework) was left exposed with no auth, letting Amazon Threat Intelligence reconstruct the whole operation.",
-        "Agents went from mapping the app's API to writing files on the server in about 11 minutes; later wrote a Python reverse shell into sitecustomize.py to get root.",
-        "Activity ran Sept 8-10, 2026 against East Asian university targets; attribution to a China-linked actor is 'moderate confidence' based on language/timezone of prompts.",
-        "Agents also failed: 16 hours/148 actions against a Redis server, and 30,000+ credential guesses over 6 hours against a GPU server, both unsuccessful.",
-        "MONAI maintainers merged a source fix Oct 19 but had not shipped a patched PyPI package (still 0.8.5) as of the report."
-      ]
-    },
-    {
-      "id": "000028228240",
-      "url": "https://architectlabs.com/blog/frostbite",
-      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Architect Labs says AI agent swarms designed Frostbite, a new interaction-net CPU, claiming 4.59x perf/watt over an undisclosed baseline -- concrete numbers and methodology, but pre-silicon and self-reported.",
-      "key_facts": [
-        "Architecture based on interaction nets: computation is local graph rewriting, so parallelism comes from program structure, not threads/caches; language Vine compiles to intermediate form Ivy.",
-        "AI agent swarms iterated on compiler, ISA, microarchitecture, RTL, verification and layout; a power model (Arcmodel) was calibrated against RTL estimates to within ~5%.",
-        "Claims 4.59x geometric-mean performance-per-watt vs a baseline 'TCPU' across 25 workloads (6.02x on the 10 search-set workloads, 3.83x on 15 held-out workloads) and 8.77x perf/area.",
-        "Synthesis at 800MHz, final GDS layout at 500MHz, 0.792mm^2 (quad+4 L3 nodes) at 7nm vs 0.895mm^2 baseline core.",
-        "No silicon, FPGA, or independent benchmark exists yet; baseline CPU is anonymized and unreproducible; RTL/ISA/Arcmodel are unreleased (future plan)."
-      ]
-    },
-    {
-      "id": "a0ebc9ee452b",
-      "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
-      "title": "Inkling 2 Mini",
+      "id": "aaaedd31c43d",
+      "url": "https://simple-bench.com/",
+      "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
       "source": "hn",
       "tier": "headline",
-      "reason": "Thinking Machines shipped Inkling 2 Mini, a flagship/first-of-generation model release; already at 1200+ HN points so treat as seen, surface briefly.",
-      "key_facts": []
-    },
-    {
-      "id": "0ad755f2681c",
-      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
-      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Researchers demonstrated a lab PoC where a single malicious webpage opened by Meta's Muse agent chained a browser bug and a Linux kernel bug to fully take over the user's cloud machine, including stored chats and credential access.",
+      "reason": "Simple Bench's human baseline (83.7%) still beats every LLM tested including Claude Fable (81.9%); Astra 6.2 and Sol 6.2 (already-covered launches) reportedly score far below that, concrete benchmark criticism of frontier models rather than a vendor benchmark win.",
       "key_facts": [
-        "Meta Muse is Meta's personal AI agent (launched Sept 8); each user's agent runs on its own cloud VM, gated by a monitoring layer called Sentinel.",
-        "NebuSec: a malicious webpage could exfiltrate and alter a user's conversation history/memories via Muse's browsing with no approval prompt.",
-        "Chaining a flaw in Muse's built-in browser with a Linux kernel flaw gave full control of the user's cloud machine, including the credential store and Sentinel itself.",
-        "Lab demonstration only, not used against real users; stayed within one user's VM and did not reach the shared host or other users.",
-        "NebuSec says Meta fixed all the issues before publication; Meta has not publicly confirmed or commented; no PoC code or exact bug details were published."
+        "Simple Bench non-specialist human baseline: 83.7%, beating every tested LLM",
+        "Current top LLM (Claude Fable) scores 81.9%, still below the human baseline"
       ]
     },
     {
-      "id": "c4ca83ba5741",
-      "url": "https://signal.org/blog/protecting-your-privacy/",
-      "title": "Restricting AI agents in mobile operating systems platforms from capturing data",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Signal will restrict screenshots by default on Android/iOS specifically to stop AI agents built into the OS from reading private chats, and admits the protection is incomplete.",
-      "key_facts": [
-        "Signal's own announcement: restricts screenshots by default to block agentic systems (e.g. iOS 27, some Android builds) that try to read chats on-screen.",
-        "Signal says the feature can detect an AI assistant attempting to read the Signal app and explicitly calls the protection 'incomplete.'",
-        "This is a defensive move against a new OS-level threat model: AI agents with screen/accessibility access reading data out of other apps, not just malware."
-      ]
-    },
-    {
-      "id": "61dded18c5ae",
-      "url": "https://github.com/Yamz-Labs/kyojin",
-      "title": "Yamz-Labs/kyojin",
+      "id": "a5af043ff573",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "title": "N1nEmAn/sapper-v2",
       "source": "github",
       "tier": "discovery",
-      "reason": "Kyojin is a new open-source OpenAI-compatible inference engine (built on ExLlamaV3) for running 100GB-class open models on a single desktop -- AMD Strix Halo, RTX, or Mac -- with published per-model throughput numbers.",
+      "reason": "Open-source multi-agent pentest harness (commander/generals/soldiers/scouts roles, model-tiered GLM-5.3 + DeepSeek V4.1 Flash) won a Tencent Cloud attack-defense CTF (80.18/100, 634 teams) using ~4.5x fewer tokens than the runner-up for the same flag count - running code with concrete competition results, squarely on the AI red-teaming line.",
       "key_facts": [
-        "Runs GLM-5.3-Flash (100.1GB), Qwen3.8-Flash-Next (95.4GB) and MiMo-V2.6-Flash-MOPD (105GB) on a 128GB AMD Strix Halo box via ROCm; DeepSeek V4.1 Flash (184.7GB) on Mac Studio or Strix SSD tier.",
-        "Reports decode/prefill tok/s at 8K context: GLM-5.3-Flash 32/633, Qwen3.8-Flash-Next 53/1576, Qwen3.8-27B on RTX 3090 75/1621, DeepSeek V4.1 Flash on Mac Studio M5 Ultra 62/3001.",
-        "Context limits reported up to 983K tokens (DeepSeek V4.1 Flash on Mac) and 500K (GLM-5.3-Flash); a 763B model on one 128GB machine runs experimentally at 5-11 tok/s.",
-        "All numbers are the maintainers' own, unverified independently; MIT licensed, OpenAI-compatible API."
+        "Multi-agent harness: commander/generals/soldiers/scouts + a watchdog script; model-tiered (GLM-5.3 for commander/generals, DeepSeek V4.1 Flash for soldiers)",
+        "Won online qualifier of 3rd Tencent Cloud Intelligent Attack-Defense Challenge: 80.18/100 across 634 teams, 8hr unattended run",
+        "Matched runner-up's 85 flags 25s faster using ~1.0B tokens vs runner-up's 4.5B tokens",
+        "Also won First Prize at GeekCon 2026 AI Challenge",
+        "Self-reported results, not independently verified"
       ]
     },
     {
-      "id": "ac6264fec7d5",
-      "url": "https://scottaaronson.blog/?p=10344",
-      "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+      "id": "6d859339b158",
+      "url": "https://pwn.ai/upload2shell",
+      "title": "Upload2Shell (CVE-2026-125396)",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Scott Aaronson flips from skeptical to convinced on the Claude/Alpoge RH proof once a Lean certificate landed, and argues Lean-verified AI math claims now carry higher assurance than typical journal papers.",
+      "reason": "Use-after-free in Ghostscript's Type 1 font loader (CVE-2026-125396) escapes the -dSAFER sandbox via a crafted document; confirmed command execution in Gradio and several non-AI apps, with AI image tools (InvokeAI, AUTOMATIC1111, ComfyUI) source-mapped as reachable via Pillow but not independently confirmed - AI systems as part of a real attack surface, not just the headline framing.",
       "key_facts": [
-        "Aaronson: 'The proof is correct' -- his update came specifically because the proof has an independent Lean certificate checked by con-leche, which is itself formally verified back to set-theory axioms.",
-        "He notes no AI math result with a Lean certificate has yet been retracted, while several uncertified ones have.",
-        "He separates 'verified' from 'understood': the formalized proof is ~17M lines, and mathematicians will need years to distill and explain the actual ideas.",
-        "His remaining worry: future AI systems could reward-hack soundness gaps in proof assistants themselves, so he wants Lean's foundations hardened further."
+        "CVE-2026-125396: use-after-free in Ghostscript Type 1 font loader escapes -dSAFER sandbox via crafted document",
+        "Confirmed RCE in Gradio (Ghostscript invoked on image upload before app code runs), Debian 13 CUPS, Roundcube, WordPress Core, others",
+        "AI apps InvokeAI, AUTOMATIC1111, ComfyUI are source-mapped as reachable via Pillow but not independently confirmed exploitable",
+        "Fixed upstream in Ghostscript 10.08.0; Debian/Ubuntu patched in Oct 2026"
+      ]
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "title": "microsoft/TokenEconomizer",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Microsoft's token-cost plugin for coding agents (Claude Code/Codex/Copilot CLI) learns repo-specific facts and prunes unused tool defs; on 277 SWE-Bench tasks across 6 repos/5 agent-model pairs it cut cost 18.4-30.9% with pass@1 flat-to-up in 4/5 combos - a concrete measured differentiator, not just another agent-harness launch.",
+      "key_facts": [
+        "Open-source plugin for Claude Code, Codex, GitHub Copilot CLI, Pi; pure-stdlib Python, state stored locally",
+        "On 277 SWE-Bench tasks across 6 repos x 5 agent/model combos: mean cost down 18.4-30.9%, lower in all 30 cells",
+        "Pass@1 rose in 4 of 5 combos; Claude Code + Opus 4.8 combo had -1.0 pass@1 alongside a 30.9% cost cut",
+        "Also reports 16-21% savings on Web-Bench and 6-20% on two security-auditing benchmarks"
+      ]
+    },
+    {
+      "id": "06c9fa474fde",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+      "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "Signal is blocking OS-level AI assistants (Siri's Onscreen Awareness, Android's Gemini Intelligence) from reading chat content off the screen, found via reverse engineering - a materially different mechanism than the earlier screenshot-blocking feature already covered, and Signal's own call-out that on-device agents are now 'an existential threat' worth tracking.",
+      "key_facts": [
+        "Signal blocks Siri's Onscreen Awareness (iOS 27) and Android's Gemini Intelligence from reading on-screen chat content",
+        "iOS block also disables screenshots of Signal chats; Android auto-enables Screen Security when an AI assistant tries to read the screen",
+        "Distinct from the May 2025 Microsoft Recall block - this targets OS-level AI agents found via Signal's own reverse engineering",
+        "macOS has no equivalent block; Signal recommends manually excluding it from Siri in System Settings"
+      ]
+    },
+    {
+      "id": "38c61351fe0d",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Independent analysis (Better Data Center Project, using Epoch AI + filings + EPA AVERT modeling) estimates Anthropic's 2028 US power mix at 87% gas/11% coal with no direct renewable commitments, projecting emissions bigger than California's entire 2024 power sector - large (877 HN pts) but an infra/environment story, not a technical AI result.",
+      "key_facts": [
+        "Estimated 2028 Anthropic US power mix: ~87% gas, ~11% coal; no direct US renewable commitments disclosed",
+        "Covers ~9.6GW of identified US capacity of ~15GW contracted compute; 1.7GW of gas generator commitments",
+        "Modeled 2028 emissions: 17-38 MtCO2e (mid-case 32M), exceeding California's entire 2024 power-sector emissions",
+        "Power estimated ~35% more carbon-intensive than US grid average; ~80% of on-site capacity uses inefficient simple-cycle turbines"
+      ]
+    },
+    {
+      "id": "647bf1f5c7b8",
+      "url": "https://github.com/T-Crypt/berth",
+      "title": "T-Crypt/berth",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Go daemon arbitrates a single GPU's VRAM across llama.cpp/vLLM/Ollama/ComfyUI/games via leases and a priority queue, with RAM-parking and cuda-checkpoint restore; author's month-long log shows 1,136 queued requests and 901 safe-boundary engine swaps on one RTX 4090 box - directly on the 'how models are served' line, though numbers are single-machine and self-reported.",
+      "key_facts": [
+        "Go daemon (berthd) leases GPU VRAM across llama.cpp/llama-swap/Ollama/vLLM/ComfyUI/games by priority",
+        "Supports parking model weights to system RAM or via NVIDIA cuda-checkpoint instead of reloading from disk",
+        "Author's 1-month log (1 RTX 4090): 1,136 requests queued for the GPU, 901 engines drained at a safe boundary, 573 unmanaged VRAM processes flagged",
+        "Alpha (v0.6.1), Linux+NVIDIA only; Windows/AMD experimental"
       ]
     }
   ]

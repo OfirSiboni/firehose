@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-23",
+  "sent": false,
+  "items": [
+    {
+      "id": "ce0bcf2918b4",
+      "title": "Canary tokens catch AI inference providers stealing and leaking prompts",
+      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Dragos seeded 2 million canary-tokened prompts across inference providers since July, catching real breaches: one stolen AWS key was used within a day and stayed active three weeks, and a Zero-Data-Retention-flagged secret link surfaced in a Chinese chat 24 days later. OpenRouter pulled three providers and 125 endpoints from ZDR eligibility in response, so anyone routing prompts through a marketplace should assume ZDR promises aren't verified. (5 minute read)"
+    },
+    {
+      "id": "aaaedd31c43d",
+      "title": "Astra 6.2 and Sol 6.2 still trail humans on Simple Bench",
+      "url": "https://simple-bench.com/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Simple Bench's non-specialist human baseline sits at 83.7%, beating every LLM tested, including the current top model, Claude Fable, at 81.9%. Astra 6.2 and Sol 6.2 reportedly score further behind on the same benchmark. The gap shows two more frontier launches still lose to ordinary human judgment on this benchmark's reasoning traps. (1 minute read)"
+    },
+    {
+      "id": "a5af043ff573",
+      "title": "Sapper-v2 wins a pentest CTF using 4.5x fewer tokens",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "Sapper-v2's multi-agent harness - commander, generals, soldiers, and scouts, tiered across GLM-5.3 and DeepSeek V4.1 Flash - won a Tencent Cloud Attack-Defense Challenge qualifier, scoring 80.18/100 across 634 teams. It matched the runner-up's 85 flags 25 seconds faster using about 1 billion tokens against their 4.5 billion. Self-reported, but the harness and its shared-memory design are open source to inspect and reuse. (4 minute read)"
+    },
+    {
+      "id": "6d859339b158",
+      "title": "Ghostscript sandbox-escape RCE reaches Gradio and AI image apps",
+      "url": "https://pwn.ai/upload2shell",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "A use-after-free in Ghostscript's Type 1 font loader (CVE-2026-125396) escapes its -dSAFER sandbox via a crafted document, with confirmed remote code execution in Gradio, Debian's CUPS, Roundcube, and WordPress Core. AI image tools InvokeAI, AUTOMATIC1111, and ComfyUI are reachable through the same Pillow path but not independently confirmed. Ghostscript 10.08.0 fixes it upstream, so check whether your image pipeline still shells out to it. (3 minute read)"
+    },
+    {
+      "id": "c1d7bbe61d18",
+      "title": "Microsoft's TokenEconomizer cuts coding-agent cost up to 31%",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "TokenEconomizer learns repo-specific facts and prunes unused tool definitions for Claude Code, Codex, and Copilot CLI sessions. Across 277 SWE-Bench tasks spanning 6 repos and 5 agent-model pairs, it cut mean cost 18.4-30.9% in every one of 30 combinations, with pass@1 flat or higher in 4 of 5. It runs as a stdlib-Python plugin that stores its learned state locally. (3 minute read)"
+    },
+    {
+      "id": "06c9fa474fde",
+      "title": "Signal blocks Siri and Gemini from reading chats off-screen",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Signal now blocks Siri's Onscreen Awareness on iOS 27 and Android's Gemini Intelligence from reading chat content off the screen, a pathway Signal found through its own reverse engineering. The iOS block also disables screenshots of Signal chats; Android auto-enables Screen Security when it detects an AI assistant reading the screen. macOS users must manually exclude Signal from Siri in System Settings. (3 minute read)"
+    },
+    {
+      "id": "38c61351fe0d",
+      "title": "Anthropic's 2028 US power mix projected at 87% gas, 11% coal",
+      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Independent modeling from the Better Data Center Project pegs Anthropic's 2028 US power mix at roughly 87% gas and 11% coal, against 1.7GW of gas-generator commitments and no disclosed US renewables. The mid-case estimate is 32 million tons CO2e in 2028, more than California's entire 2024 power sector, at power about 35% more carbon-intensive than the US grid average. These are modeled estimates, not Anthropic's own disclosures. (4 minute read)"
+    },
+    {
+      "id": "647bf1f5c7b8",
+      "title": "Berth arbitrates one GPU's VRAM across local AI engines",
+      "url": "https://github.com/T-Crypt/berth",
+      "source": "github",
+      "tier": "discovery",
+      "summary": "Berth is a Go daemon that leases a single GPU's VRAM across llama.cpp, vLLM, Ollama, ComfyUI, and games by priority, queuing requests instead of letting them crash each other out of memory. It parks idle model weights to system RAM or restores via NVIDIA's cuda-checkpoint instead of reloading from disk. Over one month on the author's RTX 4090, it queued 1,136 requests and swapped 901 engines at safe boundaries. (3 minute read)"
+    }
+  ]
+}
