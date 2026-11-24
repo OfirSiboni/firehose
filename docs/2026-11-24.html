@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-24</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-24</h1>
+<article>
+<h2><a href="https://z.ai/blog/glm-5.4">GLM-5.4 runs a 28-layer block twice with a new loop transformer</a></h2>
+<p>GLM-5.4 reruns a 28-layer block from its GLM-5 base twice, blending old and new state with gated loops instead of training deeper from scratch. It drew 1,006 HN points, but launched without OpenRouter access and Z.ai hasn&#x27;t published benchmark numbers, parameter counts, or compute costs yet. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/">DeepMind agents cut quantum-algorithm costs up to 290x, Lean-verified</a></h2>
+<p>Teams of Gemini 4 agents improved five quantum algorithms, with every result proved correct in a new open-source Lean library since the circuits can&#x27;t run on current hardware. Fusion-simulation cost dropped 11.8x and qubit count from 5,650 to 4,338, while an arcsin loading routine sped up 290x. The Lean library, problem specs, and verified solutions are open-sourced on GitHub. (5 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">NariQ quantizes Qwen3.8-27B to 10GB at BF16-level quality</a></h2>
+<p>NariQ&#x27;s 3-bit quantization shrinks Qwen3.8-27B from 53.8GB to 10.1GB while scoring slightly higher than BF16 on DeepSWE (41.0 vs 39.8) and Terminal-Bench (63.8 vs 62.6). The 2-bit version drops sharply, falling to 28.6 on DeepSWE, and it currently requires Nari Labs&#x27; own llama.cpp fork rather than stock llama.cpp or Ollama. Numbers are self-reported by the authors. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/agentic-evals">How to build an agentic eval that can&#x27;t be gamed</a></h2>
+<p>Hugging Face&#x27;s guide walks through a Raman-fitting eval where a shortcut guessed peak widths and passed every synthetic task, fixed only by adding per-peak checks. Terminal-Bench 2.1 has corrected 28 of 89 tasks, and an audit found issues in 59.4% of 138 examined SWE-bench Verified problems. The Hub now holds roughly 17,000 eval datasets, 16x more than a year ago. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html">AI agents cut attack time to hours in Indian bank fraud wave</a></h2>
+<p>CERT-In says attackers hit Indian banks and fintechs by altering approval workflows rather than payment APIs directly, moving stolen funds through mule accounts via IMPS/NEFT. Agentic tooling cut the time from initial access to impact from days to a few hours. The actor, dubbed Crafty Falcon, used tools including ARTEX, PentAGI, CAIRN, and CyberStrikeAI. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://openai.com/index/introducing-shirudo">OpenAI and Cisco&#x27;s Shirudo patches exploits live with eBPF</a></h2>
+<p>Shirudo, OpenAI and Cisco&#x27;s new open-source runtime, uses signed eBPF programs to block a specific exploit&#x27;s behavior on a running Linux system while a real patch is tested. In one demo, a Codex-generated shield added an input check to Java&#x27;s Base64 decoder and stopped a live Java4Shell exploit on a running Elasticsearch process without a restart. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/modelsphere/modelsphere">ModelSphere autoscales LLM serving on Kubernetes by KV-cache load</a></h2>
+<p>ModelSphere is an Apache-2.0 platform for serving LLMs on Kubernetes with SGLang and vLLM, scaling replicas by KV-cache pressure and queue depth instead of raw request rate. It adds prefill/decode disaggregation with a shared KV cache pool and recovers in-flight generations when a pod fails, running on NVIDIA and Huawei Ascend hardware. It&#x27;s at 196 stars with no tagged release yet. (4 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://github.com/mjwsolo/localcode">LocalCode runs agentic coding fully local on your Mac</a></h2>
+<p>LocalCode is an Apache-2.0 CLI that runs agentic coding sessions entirely on Apple Silicon Macs with 16GB+ unified memory, picking the largest model your hardware can fit. Its &#x27;copy drafting&#x27; technique claims 3.5-4x faster generation when rewriting files the model has already read, on top of roughly 2x from vendor speculative drafters. It&#x27;s installable from PyPI with 162 stars so far. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://therecord.media/crowdstrike-zscaler">CrowdStrike to purchase Zscaler for $43.9 billion</a> <span class="meta">blog</span></li>
+<li><a href="https://arxiv.org/abs/2611.27784v1">Neural Defend ARCAS 290M: A Robust Foundation Model for AI-Generated Audio Detection</a> <span class="meta">arxiv</span></li>
+<li><a href="https://huggingface.co/blog/allenai/robotrack">RoboTrack: Point tracking for real-world robotic manipulation</a> <span class="meta">blog</span></li>
+<li><a href="https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth">A Beginner&#x27;s Guide to Local AI with Inkling, Qwen, and Unsloth</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2606.14068">Harsher on Male? Evaluating LLMs on Gender-Asymmetric Moral Framing in Conflicts</a> <span class="meta">hn</span></li>
+<li><a href="https://0rwx.com/">0rwx – A simple model of AI usage, inspired by Unix permissions</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/Aevonix/FlashAlign">Aevonix/FlashAlign</a> <span class="meta">github</span></li>
+<li><a href="https://projectzero.google/2026/11/virtualbox-process-hardening.html">VirtualBox Process Hardening on Windows 2026 Edition: What’s a Single Bit Between Friends?</a> <span class="meta">blog</span></li>
+<li><a href="https://arxiv.org/abs/2611.27860v1">Who Grades the Agent? Privilege Separation for Coding-Agent Benchmarks</a> <span class="meta">arxiv</span></li>
+<li><a href="https://www.greptile.com/blog/trex-computer-use">How should an LLM see a computer?</a> <span class="meta">hn</span></li>
+<li><a href="https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20">GL.iNet Security Notice 2026-11-20</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.27973v1">MemOnce: A Scalable Memory Architecture for Large Language Models</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2611.27924v1">BioEmu2: Scalable Emulation of Biomolecular Dynamics</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2611.27891v1">Speculative Decoding Is Less Speculative Than You Think</a> <span class="meta">arxiv</span></li>
+<li><a href="https://arxiv.org/abs/2611.27823v1">Mixture of Latent Recursions for Low-Rank Adaptation</a> <span class="meta">arxiv</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/">CISA flags critical Cisco RCE flaw as actively exploited in attacks</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/">Microsoft Azure flaw exploited to steal customers&#x27; API credentials</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/">AI Agents Are Creating a Shared Responsibility Gap</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the">AI is becoming a disaster for the climate</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.27962v1">Model Carving: Training Transformers That Optimize Their Own Topology</a> <span class="meta">arxiv</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-24.md">Markdown</a></footer>
+</body></html>

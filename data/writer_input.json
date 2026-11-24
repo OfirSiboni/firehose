@@ -1,117 +1,113 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "stories": [
     {
-      "id": "ce0bcf2918b4",
-      "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
-      "title": "AI Supply Chain Security: What Canary Tokens Found",
+      "id": "5094532b4e2e",
+      "url": "https://z.ai/blog/glm-5.4",
+      "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
       "source": "hn",
       "tier": "headline",
-      "reason": "Dragos seeded 2M canary-tokened prompts across inference providers since July and traced real breaches: AWS keys stolen and used within hours, ZDR-flagged prompts retained and accessed anyway, one prompt's secret link surfaced in a Chinese Feishu chat 24 days later, and the attacker tooling included the ARTEX LLM pentest framework.",
+      "reason": "Z.ai's GLM-5.4 introduces a 'loop transformer': a 28-layer block run twice with gated blending between passes, built on the GLM-5 base. 1006 HN points/329 comments; commenters estimate ~3x inference compute for a 3x loop. Genuinely new architecture, not a repeat of an already-covered release.",
       "key_facts": [
-        "~2M canary-tokened prompts sent July-Nov 2026 across inference providers/routers",
-        "At least 3 hosting providers had data stolen; one stolen AWS key used within a day and still active 3 weeks later",
-        "A Chinese AI lab's systems fetched secret URLs from >50% of prompts sent to it, including ~2/3 of ZDR-flagged ones",
-        "One ZDR-flagged secret link appeared in a Chinese Feishu chat 24 days later, opened from 6 devices in 2 minutes",
-        "Attacker used ARTEX LLM pentest framework (user agents artex-agent/artex-judge-r121) from Nov 1",
-        "OpenRouter removed 3 providers and pulled 125 endpoints from Zero Data Retention eligibility in response"
+        "28-layer block looped a fixed 2 iterations with 'Damp Gates' blending old/new state",
+        "Built on top of the existing GLM-5 base model, not trained from scratch",
+        "1006 HN points, 329 comments; not available via OpenRouter or standard Z.ai API at launch",
+        "No official benchmark numbers or parameter count surfaced in the source or discussion"
       ]
     },
     {
-      "id": "aaaedd31c43d",
-      "url": "https://simple-bench.com/",
-      "title": "Astra 6.2 and Sol 6.2 flop at Simple Bench",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Simple Bench's human baseline (83.7%) still beats every LLM tested including Claude Fable (81.9%); Astra 6.2 and Sol 6.2 (already-covered launches) reportedly score far below that, concrete benchmark criticism of frontier models rather than a vendor benchmark win.",
-      "key_facts": [
-        "Simple Bench non-specialist human baseline: 83.7%, beating every tested LLM",
-        "Current top LLM (Claude Fable) scores 81.9%, still below the human baseline"
-      ]
-    },
-    {
-      "id": "a5af043ff573",
-      "url": "https://github.com/N1nEmAn/sapper-v2",
-      "title": "N1nEmAn/sapper-v2",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Open-source multi-agent pentest harness (commander/generals/soldiers/scouts roles, model-tiered GLM-5.3 + DeepSeek V4.1 Flash) won a Tencent Cloud attack-defense CTF (80.18/100, 634 teams) using ~4.5x fewer tokens than the runner-up for the same flag count - running code with concrete competition results, squarely on the AI red-teaming line.",
-      "key_facts": [
-        "Multi-agent harness: commander/generals/soldiers/scouts + a watchdog script; model-tiered (GLM-5.3 for commander/generals, DeepSeek V4.1 Flash for soldiers)",
-        "Won online qualifier of 3rd Tencent Cloud Intelligent Attack-Defense Challenge: 80.18/100 across 634 teams, 8hr unattended run",
-        "Matched runner-up's 85 flags 25s faster using ~1.0B tokens vs runner-up's 4.5B tokens",
-        "Also won First Prize at GeekCon 2026 AI Challenge",
-        "Self-reported results, not independently verified"
-      ]
-    },
-    {
-      "id": "6d859339b158",
-      "url": "https://pwn.ai/upload2shell",
-      "title": "Upload2Shell (CVE-2026-125396)",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Use-after-free in Ghostscript's Type 1 font loader (CVE-2026-125396) escapes the -dSAFER sandbox via a crafted document; confirmed command execution in Gradio and several non-AI apps, with AI image tools (InvokeAI, AUTOMATIC1111, ComfyUI) source-mapped as reachable via Pillow but not independently confirmed - AI systems as part of a real attack surface, not just the headline framing.",
-      "key_facts": [
-        "CVE-2026-125396: use-after-free in Ghostscript Type 1 font loader escapes -dSAFER sandbox via crafted document",
-        "Confirmed RCE in Gradio (Ghostscript invoked on image upload before app code runs), Debian 13 CUPS, Roundcube, WordPress Core, others",
-        "AI apps InvokeAI, AUTOMATIC1111, ComfyUI are source-mapped as reachable via Pillow but not independently confirmed exploitable",
-        "Fixed upstream in Ghostscript 10.08.0; Debian/Ubuntu patched in Oct 2026"
-      ]
-    },
-    {
-      "id": "c1d7bbe61d18",
-      "url": "https://github.com/microsoft/TokenEconomizer",
-      "title": "microsoft/TokenEconomizer",
-      "source": "github",
-      "tier": "discovery",
-      "reason": "Microsoft's token-cost plugin for coding agents (Claude Code/Codex/Copilot CLI) learns repo-specific facts and prunes unused tool defs; on 277 SWE-Bench tasks across 6 repos/5 agent-model pairs it cut cost 18.4-30.9% with pass@1 flat-to-up in 4/5 combos - a concrete measured differentiator, not just another agent-harness launch.",
-      "key_facts": [
-        "Open-source plugin for Claude Code, Codex, GitHub Copilot CLI, Pi; pure-stdlib Python, state stored locally",
-        "On 277 SWE-Bench tasks across 6 repos x 5 agent/model combos: mean cost down 18.4-30.9%, lower in all 30 cells",
-        "Pass@1 rose in 4 of 5 combos; Claude Code + Opus 4.8 combo had -1.0 pass@1 alongside a 30.9% cost cut",
-        "Also reports 16-21% savings on Web-Bench and 6-20% on two security-auditing benchmarks"
-      ]
-    },
-    {
-      "id": "06c9fa474fde",
-      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
-      "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+      "id": "61dcf1169479",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Signal is blocking OS-level AI assistants (Siri's Onscreen Awareness, Android's Gemini Intelligence) from reading chat content off the screen, found via reverse engineering - a materially different mechanism than the earlier screenshot-blocking feature already covered, and Signal's own call-out that on-device agents are now 'an existential threat' worth tracking.",
+      "reason": "DeepMind used teams of Gemini 4 agents to improve known quantum algorithms, with every result formally verified in a new open-source Lean library (since the circuits can't be tested on classical or current quantum hardware). Concrete, large speedups across five problems.",
       "key_facts": [
-        "Signal blocks Siri's Onscreen Awareness (iOS 27) and Android's Gemini Intelligence from reading on-screen chat content",
-        "iOS block also disables screenshots of Signal chats; Android auto-enables Screen Security when an AI assistant tries to read the screen",
-        "Distinct from the May 2025 Microsoft Recall block - this targets OS-level AI agents found via Signal's own reverse engineering",
-        "macOS has no equivalent block; Signal recommends manually excluding it from Siri in System Settings"
+        "Inertial confinement fusion: 11.8x lower computing cost, qubits 5650->4338",
+        "Cytochrome P450 simulation: 2.5x improvement, qubits 481->333; light-sensitive molecule sim 8x cheaper",
+        "Grover's algorithm implementation 2.57x speedup; arcsin loading routine 290x speedup",
+        "Lean library, problem specs and verified solutions open-sourced at github.com/google-deepmind/formal-quantum-computation"
       ]
     },
     {
-      "id": "38c61351fe0d",
-      "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-      "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
+      "id": "81ecb7742efe",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
       "source": "hn",
-      "tier": "headline",
-      "reason": "Independent analysis (Better Data Center Project, using Epoch AI + filings + EPA AVERT modeling) estimates Anthropic's 2028 US power mix at 87% gas/11% coal with no direct renewable commitments, projecting emissions bigger than California's entire 2024 power sector - large (877 HN pts) but an infra/environment story, not a technical AI result.",
+      "tier": "discovery",
+      "reason": "NariQ is a trellis-coded (QTIP-style) post-training quantization scheme calibrated on real coding-agent traces. Its own benchmarks show the 3-bit (10.1GB) and 2.5-bit (8.4GB) files matching or beating BF16 (53.8GB) on DeepSWE, Terminal-Bench, AIME and MGSM; 2-bit degrades sharply. Requires a llama.cpp fork, SM120-tuned, self-reported numbers.",
       "key_facts": [
-        "Estimated 2028 Anthropic US power mix: ~87% gas, ~11% coal; no direct US renewable commitments disclosed",
-        "Covers ~9.6GW of identified US capacity of ~15GW contracted compute; 1.7GW of gas generator commitments",
-        "Modeled 2028 emissions: 17-38 MtCO2e (mid-case 32M), exceeding California's entire 2024 power-sector emissions",
-        "Power estimated ~35% more carbon-intensive than US grid average; ~80% of on-site capacity uses inefficient simple-cycle turbines"
+        "3-bit NariQ (10.1GB) beats BF16 (53.8GB) on DeepSWE v1.1 (41.0 vs 39.8) and Terminal-Bench 2.1 (63.8 vs 62.6)",
+        "2.5-bit (8.4GB) stays close to BF16; 2-bit (6.8GB) drops sharply (DeepSWE 28.6 vs 39.8)",
+        "Requires nari-labs' llama.cpp fork; stock llama.cpp/Ollama/LM Studio can't load the tensor format yet",
+        "Self-reported by the authors using the Claude Code harness, not independently verified"
       ]
     },
     {
-      "id": "647bf1f5c7b8",
-      "url": "https://github.com/T-Crypt/berth",
-      "title": "T-Crypt/berth",
+      "id": "6fd4c32fe34a",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "title": "How to build and maintain an agentic evaluation",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "A detailed, concrete methodology for building agentic evals (HF blog): worked Raman-fitting example showing a shortcut that gamed the original task, benchmark-error stats (28/89 Terminal-Bench tasks corrected, 59.4% of audited SWE-bench Verified problems had issues), and a checklist for publishing evals responsibly. Directly on Mine's always-surface eval-methodology topic.",
+      "key_facts": [
+        "Worked example: unguarded raman-fitting shortcut passed all 8 synthetic tasks by guessing peak widths; fixed by adding per-peak checks",
+        "Terminal-Bench 2.1 corrected 28 of 89 tasks after user reports; harness changes alone shifted accuracy up to 29.9 points",
+        "Audit found material issues in 59.4% of 138 examined SWE-bench Verified problems; OpenAI estimated ~30% of SWE-Bench Pro tasks broken",
+        "~3,500 eval leaderboards and ~17,000 eval datasets on the Hub, roughly 16x growth in eval datasets over the past year"
+      ]
+    },
+    {
+      "id": "80927b607c9d",
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "source": "blog",
+      "tier": "discovery",
+      "reason": "CERT-In/I4C advisory: attackers made 'multi-crore' unauthorized payments at Indian banks/fintechs by manipulating approval workflows rather than exploiting payment APIs directly, cutting access-to-impact time from days to hours with agentic tooling. Names a specific actor (Crafty Falcon) and its toolset (ARTEX, PentAGI, CAIRN, CyberStrikeAI), tying into the earlier Barracuda/EU Commission campaigns.",
+      "key_facts": [
+        "CERT-In: attackers altered approval relationships/business records, then used legitimate payment workflows to move funds via mule accounts (IMPS/NEFT)",
+        "Agentic tooling cut time from initial access to impact from days to a few hours",
+        "Actor 'Crafty Falcon' linked to tools ARTEX, PentAGI, CAIRN, CyberStrikeAI; ARTEX also tied to the Barracuda supply-chain attack (~10 cloud accounts in ~44 hours)",
+        "RBI reportedly pressed banks on how they'll keep pace with AI-related threats"
+      ]
+    },
+    {
+      "id": "1d0c151fefed",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "OpenAI and Cisco's open-source Shirudo uses eBPF to apply temporary, signed 'shields' that block an exploit's specific behavior on a running Linux system while a real patch is prepared, with TPM-backed verification. Demoed live blocking a Java4Shell exploit on a running Elasticsearch process. BSD-2-Clause, concrete mechanism beyond a press release.",
+      "key_facts": [
+        "Mechanism: eBPF programs ('shields') cryptographically signed and TPM-verified, loaded without restart",
+        "Codex-generated shield added an input check to Java's Base64 decoder, blocking a live Java4Shell exploit on Elasticsearch",
+        "BSD-2-Clause license, BPF programs dual BSD/GPL; GitHub repo, VM quickstart, self-guided lab"
+      ]
+    },
+    {
+      "id": "b1ceedcda679",
+      "url": "https://github.com/modelsphere/modelsphere",
+      "title": "modelsphere/modelsphere",
       "source": "github",
       "tier": "discovery",
-      "reason": "Go daemon arbitrates a single GPU's VRAM across llama.cpp/vLLM/Ollama/ComfyUI/games via leases and a priority queue, with RAM-parking and cuda-checkpoint restore; author's month-long log shows 1,136 queued requests and 901 safe-boundary engine swaps on one RTX 4090 box - directly on the 'how models are served' line, though numbers are single-machine and self-reported.",
+      "reason": "ModelSphere: an early-stage (196 stars) Apache-2.0 Kubernetes platform for serving LLMs on SGLang/vLLM, with KV-cache/queue-depth-aware autoscaling, latency-based throttling, prefill/decode disaggregation and in-flight generation recovery. Squarely on Mine's favorite topic (how models are served) but small adoption and rough edges in the docs.",
       "key_facts": [
-        "Go daemon (berthd) leases GPU VRAM across llama.cpp/llama-swap/Ollama/vLLM/ComfyUI/games by priority",
-        "Supports parking model weights to system RAM or via NVIDIA cuda-checkpoint instead of reloading from disk",
-        "Author's 1-month log (1 RTX 4090): 1,136 requests queued for the GPU, 901 engines drained at a safe boundary, 573 unmanaged VRAM processes flagged",
-        "Alpha (v0.6.1), Linux+NVIDIA only; Windows/AMD experimental"
+        "Autoscales inference replicas on KV-cache pressure and queue depth, not just request rate",
+        "Supports NVIDIA and Huawei Ascend hardware; prefill/decode disaggregation with a shared KV cache pool",
+        "196 stars, 11 forks, 90 commits, no published releases yet; AutoTune feature labeled preview"
+      ]
+    },
+    {
+      "id": "69aed33940f7",
+      "url": "https://github.com/mjwsolo/localcode",
+      "title": "Localcode, open source agentic coding on your Mac with one command",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "LocalCode: an Apache-2.0 agentic coding CLI that runs models fully locally on Apple Silicon Macs, with speculative-drafting and 'copy drafting' (3.5-4x faster on files the model already read) speedups and hardware-aware model selection. 162 stars, modest but concrete technical claims.",
+      "key_facts": [
+        "Mac-only (Apple Silicon, 16GB+ unified memory), runs HF models fully locally with an OpenAI-compatible local endpoint",
+        "Claims 'copy drafting' is 3.5-4x faster than normal generation when rewriting already-read files; vendor speculative drafters ~2x",
+        "162 stars, 6 forks, 879 commits; published on PyPI (uv pip install localcode)"
       ]
     }
   ]
