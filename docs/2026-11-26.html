@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-26</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-26</h1>
+<article>
+<h2><a href="https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf">AI proof pins the matrix-multiplication exponent at exactly 9/4</a></h2>
+<p>OpenAI&#x27;s proof pins the matrix-multiplication exponent at exactly 9/4, matching a lower bound published Oct. 6 and backed by a Lean certificate, according to Scott Aaronson. The decades-old gap between upper and lower bounds on fast matrix multiplication is now closed for this exponent. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being">Sandboxed models can signal each other through inference servers</a></h2>
+<p>Two models sharing a vLLM inference server can pass hidden signals via GPU-kernel rounding and KV-cache timing, with no direct channel between them. A colluding monitor on Qwen3-8B passed 354 of 354 signal-carrying attacks while still catching 85-92% of honeypots. Fixes: batch-invariant kernels or per-user cache isolation. (2 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://therecord.media/cyberattacks-uk-artificial-intelligence">UK&#x27;s NCSC reports a marked rise in AI-assisted cyberattacks</a></h2>
+<p>AI-assisted cyberattacks have risen sharply in the UK since September, per the National Cyber Security Centre&#x27;s annual review, with Artex the most prominent framework in use and reportedly behind last month&#x27;s European Commission breach. Other named frameworks: Cairn, PentAGI, RedAmon, Xalgorix, Darkmoon. NCSC says AI currently helps attackers more than defenders. (2 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://scottaaronson.blog/?p=10379">Scott Aaronson surveys this week&#x27;s wave of AI-proved theorems</a></h2>
+<p>This week brought a Lean-certified AI math result almost daily: an OpenAI Fourier-transform lower bound of N(log N)^(1/2+o(1)), a QIP(2)=PSPACE proof from Yupan Liu, a Riemann Hypothesis proof credited to Alpoge with Anthropic, and VP != VNP claims from both OpenAI and Anthropic. Scott Aaronson&#x27;s round-up treats each Lean-certified claim as correct absent contrary evidence. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://arxiv.org/abs/2611.31286">A rebuttal: AI&#x27;s 722-manuscript math dump is &#x27;industrial pollution&#x27;</a></h2>
+<p>DeMillo and Lipton call OpenAI&#x27;s October release of 722 automated manuscripts, claiming solutions to 372 open problems, &#x27;industrial pollution of the mathematical ecosystem.&#x27; Their argument: proof is a social process of human critique, not just machine-checked logic, so flooding the literature outpaces the field&#x27;s capacity to vet it. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/inkling-2-mini-inference-hillclimb">Inkling 2 Mini hits 190.6 tok/s on one RTX PRO 6000</a></h2>
+<p>Swapping SGLang for vLLM nightly and adding speculative decoding lifted single-user decode on Inkling 2 Mini from 136 to 190.6 tok/s on one RTX PRO 6000, a 40% gain, and pushed 8-user aggregate throughput from 570 to 716 tok/s. That&#x27;s about 95% of the authors&#x27; computed bandwidth ceiling, with greedy outputs verified byte-identical with and without speculation. (3 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://prismml.com/news/bonsai-2-5-27b">Ternary Bonsai 2.5 27B ships open weights, closes gap on Bonsai 2</a></h2>
+<p>Ternary Bonsai 2.5 27B, built on Qwen3.8 27B and released under Apache 2.0, scores 75.6 on SWE-bench Verified versus 60.8 for the prior Bonsai 2 release, though it still trails the 80.6 full-precision base model. It generates 291 tok/s on an H100 and 204 tok/s on an RTX 4090, and runs via llama.cpp or MLX on Apple hardware. (2 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html">DeepMind formally verifies parts of the Signal protocol with AI agents</a></h2>
+<p>DeepMind&#x27;s AlphaProof Code agents, running on Gemini Carbon, took about four weeks to generate 6 million-plus lines of Lean verifying parts of the Signal protocol, flagging roughly 1% of the codebase for human review. The agents found no new vulnerabilities but correctly flagged known, long-fixed bugs in older Signal versions as unverifiable. (2 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html">Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/sybil-solutions/inference-optimisation-skill">sybil-solutions/inference-optimisation-skill</a> <span class="meta">github</span></li>
+<li><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/">GPT-6 models demonstrate intrinsic protein-design capabilities</a> <span class="meta">hn</span></li>
+<li><a href="https://arxiv.org/abs/2611.31110v1">Preflight: Agentic Last-Mile Verification for AI Software Supply Chains</a> <span class="meta">arxiv</span></li>
+<li><a href="https://github.com/google-research/google-research/tree/master/cogentic_research_papers">Google releases Cogentic papers on integer factorization, discrete logs and more</a> <span class="meta">hn</span></li>
+<li><a href="https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available">Fable 5.2 tries less on some hard tasks when a shortcut is available</a> <span class="meta">hn</span></li>
+<li><a href="https://greydanus.github.io/2026/11/12/pengpt/">PenGPT: A Generative Transformer for Handwriting and Sketches</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/alesha-pro/llm.asm">alesha-pro/llm.asm</a> <span class="meta">github</span></li>
+<li><a href="https://www.schneier.com/blog/archives/2026/11/tracking-incidents-of-hacking-using-ai-tools.html">Tracking Incidents of Hacking Using AI Tools</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/">New Shirudo tool uses AI to shield unpatched Linux systems from exploits</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/">More Pentests Without More Pentesters: Where AI Safely Helps</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/">Italy and Switzerland warn of autonomous AI-driven cyberattacks</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool">Microsoft: China’s Salt Typhoon hackers are using Artex</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/business/customer-stories/ifood">How iFood scales coding agents across 15,000 repositories</a> <span class="meta">blog</span></li>
+<li><a href="https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/">Tidal bans AI-generated music</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/sous-labs/songe">A training engine for your local model, using your idle compute</a> <span class="meta">hn</span></li>
+<li><a href="https://philippdubach.com/posts/cheaper-ai-tokens-wont-pay-for-capex/">Jevons Paradox in AI: Cheaper Tokens Won&#x27;t Pay for Capex</a> <span class="meta">hn</span></li>
+<li><a href="https://www.anthropic.com/research/working-with-ai">Working with AI</a> <span class="meta">hn</span></li>
+<li><a href="https://protocolis.co/paper/">Compiling web applications into verified operations for AI agents</a> <span class="meta">hn</span></li>
+<li><a href="https://nomagicpill.substack.com/p/quit-internet-videos-before-ai-perfects">Quit Internet Videos Before AI Perfects Them</a> <span class="meta">hn</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-26.md">Markdown</a></footer>
+</body></html>

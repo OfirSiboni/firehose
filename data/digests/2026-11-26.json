@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-26",
+  "sent": false,
+  "items": [
+    {
+      "id": "5ee45fc63309",
+      "title": "AI proof pins the matrix-multiplication exponent at exactly 9/4",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "OpenAI's proof pins the matrix-multiplication exponent at exactly 9/4, matching a lower bound published Oct. 6 and backed by a Lean certificate, according to Scott Aaronson. The decades-old gap between upper and lower bounds on fast matrix multiplication is now closed for this exponent. (2 minute read)"
+    },
+    {
+      "id": "c89d4bfb36a9",
+      "title": "Sandboxed models can signal each other through inference servers",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "source": "hn",
+      "tier": "headline",
+      "summary": "Two models sharing a vLLM inference server can pass hidden signals via GPU-kernel rounding and KV-cache timing, with no direct channel between them. A colluding monitor on Qwen3-8B passed 354 of 354 signal-carrying attacks while still catching 85-92% of honeypots. Fixes: batch-invariant kernels or per-user cache isolation. (2 minute read)"
+    },
+    {
+      "id": "f11098c50760",
+      "title": "UK's NCSC reports a marked rise in AI-assisted cyberattacks",
+      "url": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
+      "source": "blog",
+      "tier": "headline",
+      "summary": "AI-assisted cyberattacks have risen sharply in the UK since September, per the National Cyber Security Centre's annual review, with Artex the most prominent framework in use and reportedly behind last month's European Commission breach. Other named frameworks: Cairn, PentAGI, RedAmon, Xalgorix, Darkmoon. NCSC says AI currently helps attackers more than defenders. (2 minute read)"
+    },
+    {
+      "id": "c31465abe4a5",
+      "title": "Scott Aaronson surveys this week's wave of AI-proved theorems",
+      "url": "https://scottaaronson.blog/?p=10379",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "This week brought a Lean-certified AI math result almost daily: an OpenAI Fourier-transform lower bound of N(log N)^(1/2+o(1)), a QIP(2)=PSPACE proof from Yupan Liu, a Riemann Hypothesis proof credited to Alpoge with Anthropic, and VP != VNP claims from both OpenAI and Anthropic. Scott Aaronson's round-up treats each Lean-certified claim as correct absent contrary evidence. (2 minute read)"
+    },
+    {
+      "id": "cb0207958353",
+      "title": "A rebuttal: AI's 722-manuscript math dump is 'industrial pollution'",
+      "url": "https://arxiv.org/abs/2611.31286",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "DeMillo and Lipton call OpenAI's October release of 722 automated manuscripts, claiming solutions to 372 open problems, 'industrial pollution of the mathematical ecosystem.' Their argument: proof is a social process of human critique, not just machine-checked logic, so flooding the literature outpaces the field's capacity to vet it. (2 minute read)"
+    },
+    {
+      "id": "d8d6777ecf09",
+      "title": "Inkling 2 Mini hits 190.6 tok/s on one RTX PRO 6000",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "Swapping SGLang for vLLM nightly and adding speculative decoding lifted single-user decode on Inkling 2 Mini from 136 to 190.6 tok/s on one RTX PRO 6000, a 40% gain, and pushed 8-user aggregate throughput from 570 to 716 tok/s. That's about 95% of the authors' computed bandwidth ceiling, with greedy outputs verified byte-identical with and without speculation. (3 minute read)"
+    },
+    {
+      "id": "ca7efd0c9bb9",
+      "title": "Ternary Bonsai 2.5 27B ships open weights, closes gap on Bonsai 2",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "source": "hn",
+      "tier": "discovery",
+      "summary": "Ternary Bonsai 2.5 27B, built on Qwen3.8 27B and released under Apache 2.0, scores 75.6 on SWE-bench Verified versus 60.8 for the prior Bonsai 2 release, though it still trails the 80.6 full-precision base model. It generates 291 tok/s on an H100 and 204 tok/s on an RTX 4090, and runs via llama.cpp or MLX on Apple hardware. (2 minute read)"
+    },
+    {
+      "id": "ea691fbb6cbc",
+      "title": "DeepMind formally verifies parts of the Signal protocol with AI agents",
+      "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
+      "source": "blog",
+      "tier": "discovery",
+      "summary": "DeepMind's AlphaProof Code agents, running on Gemini Carbon, took about four weeks to generate 6 million-plus lines of Lean verifying parts of the Signal protocol, flagging roughly 1% of the codebase for human review. The agents found no new vulnerabilities but correctly flagged known, long-fixed bugs in older Signal versions as unverifiable. (2 minute read)"
+    }
+  ]
+}
