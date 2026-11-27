@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "0452d68d8827",
@@ -8,7 +8,8 @@
       "url": "https://modaic.dev/blog/latency-doesnt-lie",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Tokenizer correlation, throughput curves, and self-ID probes across 22 prompt variants point to TypeSafe's 'Jev' judge model being a relabeled Qwen3.5-35B-A3B. Its prefill throughput tracks a self-hosted Qwen3.5-35B-A3B within 7-22%, and it names Qwen 74% of the time when asked what it wants to claim to be. Benchmarkers can now treat Jev as a known MoE, not a black box. (3 minute read)"
+      "summary": "Tokenizer correlation, throughput curves, and self-ID probes across 22 prompt variants point to TypeSafe's 'Jev' judge model being a relabeled Qwen3.5-35B-A3B. Its prefill throughput tracks a self-hosted Qwen3.5-35B-A3B within 7-22%, and it names Qwen 74% of the time when asked what it wants to claim to be. Benchmarkers can now treat Jev as a known MoE, not a black box. (3 minute read)",
+      "message_id": 573
     },
     {
       "id": "17a805c0d69c",
@@ -16,7 +17,8 @@
       "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
       "source": "blog",
       "tier": "headline",
-      "summary": "Microsoft says Chinese state actors Salt Typhoon and Crystal Typhoon have added the AI-driven pentest tool Artex for recon, credential attacks, and web exploitation. Artex shipped in July, the FBI warned about it two weeks earlier, and Salt Typhoon is already tied to a 2024 breach of nine US telecoms. Defenders should watch for bursts of varied requests with rapid retries, since Artex doesn't hide its traffic by default. (4 minute read)"
+      "summary": "Microsoft says Chinese state actors Salt Typhoon and Crystal Typhoon have added the AI-driven pentest tool Artex for recon, credential attacks, and web exploitation. Artex shipped in July, the FBI warned about it two weeks earlier, and Salt Typhoon is already tied to a 2024 breach of nine US telecoms. Defenders should watch for bursts of varied requests with rapid retries, since Artex doesn't hide its traffic by default. (4 minute read)",
+      "message_id": 574
     },
     {
       "id": "af1852b4c46d",
@@ -24,7 +26,8 @@
       "url": "https://huggingface.co/blog/moe-expert-streaming",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Expert streaming now runs the 180B-parameter Qwen3.8-Flash-Next on a 32GB Mac M5, keeping only the router's active experts in memory and reading the rest from SSD on demand. Experts are quantized to 3 bits for a 49GB on-disk footprint, and the result hits 13.9 tok/s decode and 228 tok/s prefill, within 6% of the Strata baseline. Anyone with a 32GB machine can now run a 180B model instead of needing a multi-GPU server. (4 minute read)"
+      "summary": "Expert streaming now runs the 180B-parameter Qwen3.8-Flash-Next on a 32GB Mac M5, keeping only the router's active experts in memory and reading the rest from SSD on demand. Experts are quantized to 3 bits for a 49GB on-disk footprint, and the result hits 13.9 tok/s decode and 228 tok/s prefill, within 6% of the Strata baseline. Anyone with a 32GB machine can now run a 180B model instead of needing a multi-GPU server. (4 minute read)",
+      "message_id": 575
     },
     {
       "id": "bebcb9773ecb",
@@ -32,7 +35,8 @@
       "url": "https://kendell.dev/blog/arkwrapper/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Network fingerprints, ID formats, and censorship behavior show Novita, StreamLake, and Ant Digital are reselling ByteDance's Ark/Doubao models under their own names: downloads trace to Volcano Engine and BytePlus, tool-call IDs use Ark's 'call_00_' prefix, and Tank Man questions get ByteDance's canned refusal. A public GitHub probe tests every OpenRouter host of DeepSeek V4.1 Flash, so buyers can check which 'independent' provider is really just a markup on ByteDance's infrastructure. (4 minute read)"
+      "summary": "Network fingerprints, ID formats, and censorship behavior show Novita, StreamLake, and Ant Digital are reselling ByteDance's Ark/Doubao models under their own names: downloads trace to Volcano Engine and BytePlus, tool-call IDs use Ark's 'call_00_' prefix, and Tank Man questions get ByteDance's canned refusal. A public GitHub probe tests every OpenRouter host of DeepSeek V4.1 Flash, so buyers can check which 'independent' provider is really just a markup on ByteDance's infrastructure. (4 minute read)",
+      "message_id": 576
     },
     {
       "id": "2da10ebf7215",
@@ -40,7 +44,8 @@
       "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
       "source": "hn",
       "tier": "headline",
-      "summary": "A compromised employee GitHub account let an attacker reach 1Password's CI/CD system and push malicious code that pulled a subset of customer account data, including names, emails, account IDs, and some invitation and recovery tokens. Vault contents, vault keys, and account recovery keys were not affected, and 1Password lengthened its recovery codes from six digits to ten alphanumeric characters. A full root-cause analysis is still pending. (3 minute read)"
+      "summary": "A compromised employee GitHub account let an attacker reach 1Password's CI/CD system and push malicious code that pulled a subset of customer account data, including names, emails, account IDs, and some invitation and recovery tokens. Vault contents, vault keys, and account recovery keys were not affected, and 1Password lengthened its recovery codes from six digits to ten alphanumeric characters. A full root-cause analysis is still pending. (3 minute read)",
+      "message_id": 577
     },
     {
       "id": "ae92326f2550",
@@ -48,7 +53,8 @@
       "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
       "source": "blog",
       "tier": "discovery",
-      "summary": "Italy's CSIRT found a DeepSeek Harness setup running a 5-agent coordinator for recon, exploitation, and persistence that compromised many systems within hours and wrote new code in real time to dodge defenses. Switzerland's NCSC logged its first AI-agent-assisted attacks on critical infrastructure, with every known case ending in compromise, and says public AI agents have nearly doubled since October. Both agencies name ARTEX AI, CyberStrikeAI, DeepSeek Harness, and PentAGI as the tools involved. (4 minute read)"
+      "summary": "Italy's CSIRT found a DeepSeek Harness setup running a 5-agent coordinator for recon, exploitation, and persistence that compromised many systems within hours and wrote new code in real time to dodge defenses. Switzerland's NCSC logged its first AI-agent-assisted attacks on critical infrastructure, with every known case ending in compromise, and says public AI agents have nearly doubled since October. Both agencies name ARTEX AI, CyberStrikeAI, DeepSeek Harness, and PentAGI as the tools involved. (4 minute read)",
+      "message_id": 578
     },
     {
       "id": "a1356d98cece",
@@ -56,7 +62,8 @@
       "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A 24KB assembly kernel now boots Qwen3-0.6B directly on x86-64 hardware, no Linux, no libc, reaching an interactive prompt in 74-94ms. On a 16-vCPU KVM instance it decodes at about 135 tok/s, and the author claims it beats both the Linux-based version and llama.cpp's CPU path at every thread count. That means a usable LLM chat loop can now run on hardware with no operating system at all. (3 minute read)"
+      "summary": "A 24KB assembly kernel now boots Qwen3-0.6B directly on x86-64 hardware, no Linux, no libc, reaching an interactive prompt in 74-94ms. On a 16-vCPU KVM instance it decodes at about 135 tok/s, and the author claims it beats both the Linux-based version and llama.cpp's CPU path at every thread count. That means a usable LLM chat loop can now run on hardware with no operating system at all. (3 minute read)",
+      "message_id": 579
     },
     {
       "id": "1d45997e4997",
@@ -64,7 +71,8 @@
       "url": "https://devnull.land/amd-specific-llama-cpp",
       "source": "hn",
       "tier": "discovery",
-      "summary": "A minimal patch set applied on top of llama.cpp roughly doubles throughput on AMD RDNA GPUs: prefill goes from about 700 to 1,300 tok/s and generation from about 35 to 55 tok/s on an R9700 eGPU running a 27B model. The patches are reapplied to each new llama.cpp release rather than maintained as a permanent fork. AMD GPU owners running local models can now get roughly 2x the tokens per second without switching hardware. (4 minute read)"
+      "summary": "A minimal patch set applied on top of llama.cpp roughly doubles throughput on AMD RDNA GPUs: prefill goes from about 700 to 1,300 tok/s and generation from about 35 to 55 tok/s on an R9700 eGPU running a 27B model. The patches are reapplied to each new llama.cpp release rather than maintained as a permanent fork. AMD GPU owners running local models can now get roughly 2x the tokens per second without switching hardware. (4 minute read)",
+      "message_id": 580
     }
   ]
 }
