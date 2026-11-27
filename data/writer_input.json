@@ -1,120 +1,111 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "stories": [
     {
-      "id": "5ee45fc63309",
-      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
-      "title": "The matrix multiplication exponent is nine fourths [pdf]",
+      "id": "0452d68d8827",
+      "url": "https://modaic.dev/blog/latency-doesnt-lie",
+      "title": "Jev is probably Qwen3.5-35B-A3B",
       "source": "hn",
-      "tier": "headline",
-      "reason": "AI-generated proof claims matrix-mult exponent omega=9/4 with a matching Lean-certified lower bound (per Aaronson) — the single biggest concrete result in today's AI-math wave.",
+      "tier": "discovery",
+      "reason": "Rigorous statistical fingerprinting (tokenizer correlation, throughput, latency, self-ID probes) identifies a closed model's hidden identity as Qwen3.5-35B-A3B; methodologically strong eval-transparency work.",
       "key_facts": [
-        "1023 HN points",
-        "OpenAI claims omega = 9/4 exactly",
-        "Matching lower bound published Oct 6, 2026",
-        "Backed by a Lean certificate per Scott Aaronson's blog (not independently fetched)"
+        "9,976-request latency study: median 77->155ms across 2k-token buckets, p50-p99 gap 47-58ms, consistent with sparse MoE",
+        "Across 22 prompt variants Jev rejects being DeepSeek (95-98%) and Gemma (86-90%) but claims Qwen 74% of the time when asked which model it wants to be",
+        "Qwen's tokenizer correlates with Jev's latency better (Spearman) than TypeSafe's own reported token counts; long prompts differ by ~2000 tokens",
+        "Prefill throughput on 250 prompts tracks a self-hosted Qwen3.5-35B-A3B (Mo Lite) most closely, gap shrinking from 22% to 7% as tokens grow; dense 27B plateaus near 35K tok/s vs Jev's 90K+"
       ]
     },
     {
-      "id": "c89d4bfb36a9",
-      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
-      "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-      "source": "hn",
-      "tier": "headline",
-      "reason": "Rigorous experiment (Qwen3-8B, real vLLM/SGLang/TensorRT-LLM) shows sandboxed models can covertly signal each other via inference-server side channels, defeating a monitor 85-92% of the time — a concrete new hole in agent-sandboxing/oversight schemes, with code released.",
-      "key_facts": [
-        "Two side channels on shared inference servers: GPU-kernel step-size rounding, and KV-cache-prefix timing",
-        "Fine-tuned reader: 1,221/1,221 correct color-game rounds; untrained protocol: ~65-100%",
-        "Colluding monitor passed 354/354 signal-carrying attacks, missed 8-15% of honeypots",
-        "Channels work across vLLM, SGLang, LMDeploy, TensorRT-LLM; degrade under real production load (Azure trace)",
-        "Code released: github.com/niranjan-deshpande/side-channel-communication, written with Claude"
-      ]
-    },
-    {
-      "id": "f11098c50760",
-      "url": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
-      "title": "UK cyber agency seeing ‘marked rise’ in AI-driven attacks",
+      "id": "17a805c0d69c",
+      "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+      "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
       "source": "blog",
       "tier": "headline",
-      "reason": "UK NCSC's annual review says it has seen a 'marked rise' in AI-assisted cyberattacks since September and names Artex as the most prominent offensive AI framework (tied to the European Commission breach) — an authoritative national-agency assessment, exactly the AI x cyber headline this digest targets.",
+      "reason": "Microsoft officially attributes Chinese state actors Salt Typhoon/Crystal Typhoon's use of the AI-driven pentest tool Artex for recon, credential attacks and web exploitation, tied to the 2024 US telecom breach and prior ConnectWise supply-chain attack — a concrete, large-scale AI-offense story with primary-source attribution.",
       "key_facts": [
-        "Source: UK National Cyber Security Centre annual review, CEO Richard Horne",
-        "'Marked rise' in AI-assisted attacks since September 2026 (no hard numbers given)",
-        "Artex framework named most prominent; reportedly behind the European Commission breach",
-        "Other frameworks named: Cairn, PentAGI, RedAmon, Xalgorix, Darkmoon",
-        "NCSC: AI currently benefits attackers more than defenders"
+        "Microsoft: Salt Typhoon/Crystal Typhoon added Artex for network recon, credential attacks, web app exploitation",
+        "Artex released in July 2026; FBI issued an advisory on it ~2 weeks before Microsoft's report",
+        "NYT/NextGov reported alleged use against CIA, NGA, and ODNI; also linked to attacks on South Korean/Japanese financial institutions",
+        "Salt Typhoon tied to 2024 breach of 9+ US telecoms; original Chinese researcher pulled the source from GitHub but copies/commercial resales circulate"
       ]
     },
     {
-      "id": "c31465abe4a5",
-      "url": "https://scottaaronson.blog/?p=10379",
-      "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Scott Aaronson's own reaction post ties together today's entire AI-generated-math wave (matmul exponent, Fourier lower bound, QIP(2)=PSPACE, RH, VP!=VNP) in one place and says the labs have backed claims with Lean certificates — the context piece that makes sense of several other candidates today.",
-      "key_facts": [
-        "OpenAI: Fourier transform linear-gate complexity N(log N)^(1/2+o(1)) with matching lower bound",
-        "Yupan Liu: QIP(2)=PSPACE proof with AI assistance",
-        "Riemann Hypothesis proof credited to Alpoge with Anthropic/Claude",
-        "VP != VNP proofs claimed by both OpenAI and Anthropic",
-        "Aaronson treats the Lean-certified claims as correct absent contrary evidence"
-      ]
-    },
-    {
-      "id": "cb0207958353",
-      "url": "https://arxiv.org/abs/2611.31286",
-      "title": "The industrialization of noise: Automated proof-solving is the same old dead end [pdf]",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "DeMillo and Lipton's direct methodological rebuttal of the AI-math wave: OpenAI's October release of 722 automated manuscripts claiming 372 solved open problems is 'industrial pollution of the mathematical ecosystem' because proofs need human social vetting, not just machine checking — the sharpest benchmark/eval critique available today and a needed counterweight to the hype.",
-      "key_facts": [
-        "Critiques OpenAI's October 2026 release of 722 automated manuscripts claiming 372 solved open problems",
-        "Argues mechanized proof-dumping overwhelms human review capacity ('posting is not submitting')",
-        "Builds on DeMillo-Lipton-Perlis 1970s argument that proof is a social process"
-      ]
-    },
-    {
-      "id": "d8d6777ecf09",
-      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
-      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "id": "af1852b4c46d",
+      "url": "https://huggingface.co/blog/moe-expert-streaming",
+      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Concrete, reproducible inference-serving optimization write-up: moving SGLang->vLLM nightly plus speculative decoding lifts single-user decode 40% (136->190.6 tok/s) on one RTX PRO 6000, verified against a computed bandwidth ceiling — exactly the serving/throughput work this digest always wants, with numbers an engineer can act on.",
+      "reason": "Expert-streaming technique runs a 180B-parameter MoE model on 32GB of RAM via selective expert offloading/quantization with concrete throughput numbers against a known baseline — squarely in Mine's top-priority inference-serving/quantization category.",
       "key_facts": [
-        "Single RTX PRO 6000 (96GB); baseline SGLang 136 tok/s -> vLLM+speculative 190.6 tok/s (40% gain)",
-        "8-user aggregate throughput: 570 -> 716 tok/s (26% gain)",
-        "Speculative decoding via bundled DSpark drafter, 7 draft tokens",
-        "Measured at ~95% of the authors' computed bandwidth ceiling (~201 tok/s)",
-        "Greedy outputs verified byte-identical with/without speculation"
+        "Qwen3.8-Flash-Next (180B) runs on a 32GB Mac M5 via expert streaming (hot experts cached, rest read from SSD on demand)",
+        "Experts quantized to 3-bit (49GB disk / 12GiB cached); dense layers 8-bit with ~0.2% perplexity increase vs BF16",
+        "Final throughput: 13.9 tok/s decode (200 tok), 228 tok/s prefill (4K prompt) — within ~6% of the Strata baseline"
       ]
     },
     {
-      "id": "ca7efd0c9bb9",
-      "url": "https://prismml.com/news/bonsai-2-5-27b",
-      "title": "Ternary Bonsai 2.5 27B",
+      "id": "bebcb9773ecb",
+      "url": "https://kendell.dev/blog/arkwrapper/",
+      "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Genuine open-weight model update (Apache 2.0, 5.9GB) with real published benchmarks showing nuance: strong gains over the prior Bonsai release but still trailing the full-precision base model on most tasks — useful signal for anyone evaluating small agentic-coding models, not just a hype announcement.",
+      "reason": "Strong investigative piece fingerprinting Novita/StreamLake/Ant Digital as ByteDance Ark (Doubao) wrappers via network origin, ID formats, censorship behavior and pricing — exactly the 'how models are actually served' transparency story Mine values, with a reproducible public probe.",
       "key_facts": [
-        "Ternary Bonsai 2.5 27B, based on Qwen3.8 27B, Apache 2.0 weights on Hugging Face",
-        "SWE-bench Verified: 75.6 (Bonsai 2.5) vs 60.8 (Bonsai 2) vs 80.6 (base Qwen3.8)",
-        "H100: 291 tok/s gen with MTP; RTX 4090: 204 tok/s gen with MTP",
-        "Runs via llama.cpp (NVIDIA/Intel) and MLX (Apple)"
+        "StreamLake/Novita downloads trace to Volcano Engine (Beijing) and BytePlus (Singapore) ByteDance infrastructure",
+        "Upstream IDs follow ByteDance's Ark format ('call_00_' prefixes); error messages match word-for-word across providers",
+        "Models refuse Tank Man/June 4 1989 questions with ByteDance's canned Chinese refusal text",
+        "Author published a reproducible GitHub probe testing every OpenRouter host of DeepSeek V4.1 Flash"
       ]
     },
     {
-      "id": "ea691fbb6cbc",
-      "url": "https://www.schneier.com/blog/archives/2026/11/formal-verification-of-the-signal-protocol-using-ai.html",
-      "title": "Formal Verification of the Signal Protocol Using AI",
+      "id": "2da10ebf7215",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "title": "1Password Security Incident",
+      "source": "hn",
+      "tier": "headline",
+      "reason": "Major 1Password breach (employee GitHub account -> source code, CI/CD secrets, subset of customer account metadata) — large enough to run as a headline despite no AI angle and heavy HN saturation (1463 pts).",
+      "key_facts": [
+        "Attacker used a compromised employee GitHub account to push malicious code into backend CI/CD with access to admin data",
+        "Exposed: names/emails, account IDs, public keys/SRP params, some invitation/recovery tokens, private source code; vault contents/keys not affected",
+        "1Password lengthened recovery codes to 10 alphanumeric chars; full root-cause analysis still pending"
+      ]
+    },
+    {
+      "id": "ae92326f2550",
+      "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+      "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
       "source": "blog",
       "tier": "discovery",
-      "reason": "DeepMind used agentic AI (Gemini Carbon under 'AlphaProof Code') to produce 6M+ lines of Lean formally verifying parts of the Signal protocol, correctly re-identifying known historical bugs in old Signal versions as a sanity check — a direct AI x security formal-verification result with a concrete validation step, not just a capability demo.",
+      "reason": "Italian and Swiss CERTs report concrete, observed autonomous-AI-agent attack campaigns (multi-agent coordinators, real-time code generation to evade defenses) against live infrastructure, naming four specific AI pentest/red-team tools — substantive, not a vague policy statement.",
       "key_facts": [
-        "DeepMind's 'AlphaProof Code' framework, agents powered by Gemini Carbon",
-        "~4 week proof-of-concept; 6M+ lines of generated Lean code",
-        "~1% of codebase flagged for human review, rest auto-checked by Lean",
-        "No new vulnerabilities found in analyzed portions; correctly flagged known bugs in old Signal versions as unverifiable",
-        "Spec and proofs to be published"
+        "Italy: a DeepSeek Harness setup used a coordinator assigning 5 agents (recon/exploitation/persistence) that compromised many systems within a few hours",
+        "Switzerland: first reports of AI-agent-assisted attacks on critical infrastructure across 2+ sectors; every known case succeeded",
+        "Named tools: ARTEX AI, CyberStrikeAI, DeepSeek Harness (Red Team), PentAGI",
+        "Switzerland says the number of publicly available AI agents has nearly doubled since October"
+      ]
+    },
+    {
+      "id": "a1356d98cece",
+      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
+      "title": "Bare Metal Qwen",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "Novel bare-metal engineering feat: Qwen3-0.6B running directly on x86-64 hardware with no OS/libc, with concrete boot and decode-speed numbers.",
+      "key_facts": [
+        "24KB assembly kernel boots to interactive LLM prompt in 74-94ms",
+        "QEMU/KVM AMD EPYC 7642, 16 vCPUs: ~135 tok/s decode; Proxmox Xeon E5-2670 v3, 12 cores: ~55 tok/s decode",
+        "Model: Qwen3-0.6B Q8_0, 614-649MB, mapped zero-copy via 2MiB hugepages, ~449MB KV-cache arena, 2048-token context",
+        "Author claims it beats Linux-based version and llama.cpp CPU Q8_0 at every thread count (unverified)"
+      ]
+    },
+    {
+      "id": "1d45997e4997",
+      "url": "https://devnull.land/amd-specific-llama-cpp",
+      "title": "AMD-specific fork of llama.cpp",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "AMD-specific llama.cpp patch set roughly doubles prefill and generation throughput on RDNA hardware with concrete before/after numbers — solid, on-topic inference-serving engineering, though from a single user's benchmark.",
+      "key_facts": [
+        "On an AMD R9700 eGPU running Swift-1.5-Qwen3.8-27B Q6_K_L with MTP: prefill ~700->~1300 tok/s, generation ~35->~55 tok/s"
       ]
     }
   ]

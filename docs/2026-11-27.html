@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-27</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-27</h1>
+<article>
+<h2><a href="https://modaic.dev/blog/latency-doesnt-lie">Fingerprinting outs TypeSafe&#x27;s Jev as Qwen3.5-35B-A3B</a></h2>
+<p>Tokenizer correlation, throughput curves, and self-ID probes across 22 prompt variants point to TypeSafe&#x27;s &#x27;Jev&#x27; judge model being a relabeled Qwen3.5-35B-A3B. Its prefill throughput tracks a self-hosted Qwen3.5-35B-A3B within 7-22%, and it names Qwen 74% of the time when asked what it wants to claim to be. Benchmarkers can now treat Jev as a known MoE, not a black box. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool">China&#x27;s Salt Typhoon hackers now run Artex for recon and exploits</a></h2>
+<p>Microsoft says Chinese state actors Salt Typhoon and Crystal Typhoon have added the AI-driven pentest tool Artex for recon, credential attacks, and web exploitation. Artex shipped in July, the FBI warned about it two weeks earlier, and Salt Typhoon is already tied to a 2024 breach of nine US telecoms. Defenders should watch for bursts of varied requests with rapid retries, since Artex doesn&#x27;t hide its traffic by default. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/moe-expert-streaming">180B-parameter MoE model now runs inside 32GB of RAM</a></h2>
+<p>Expert streaming now runs the 180B-parameter Qwen3.8-Flash-Next on a 32GB Mac M5, keeping only the router&#x27;s active experts in memory and reading the rest from SSD on demand. Experts are quantized to 3 bits for a 49GB on-disk footprint, and the result hits 13.9 tok/s decode and 228 tok/s prefill, within 6% of the Strata baseline. Anyone with a 32GB machine can now run a 180B model instead of needing a multi-GPU server. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://kendell.dev/blog/arkwrapper/">Novita, StreamLake, and Ant Digital are ByteDance Ark wrappers</a></h2>
+<p>Network fingerprints, ID formats, and censorship behavior show Novita, StreamLake, and Ant Digital are reselling ByteDance&#x27;s Ark/Doubao models under their own names: downloads trace to Volcano Engine and BytePlus, tool-call IDs use Ark&#x27;s &#x27;call_00_&#x27; prefix, and Tank Man questions get ByteDance&#x27;s canned refusal. A public GitHub probe tests every OpenRouter host of DeepSeek V4.1 Flash, so buyers can check which &#x27;independent&#x27; provider is really just a markup on ByteDance&#x27;s infrastructure. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://1password.com/blog/update-on-nov-2026-security-incident">1Password breach exposed customer account data, not vaults</a></h2>
+<p>A compromised employee GitHub account let an attacker reach 1Password&#x27;s CI/CD system and push malicious code that pulled a subset of customer account data, including names, emails, account IDs, and some invitation and recovery tokens. Vault contents, vault keys, and account recovery keys were not affected, and 1Password lengthened its recovery codes from six digits to ten alphanumeric characters. A full root-cause analysis is still pending. (3 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<article>
+<h2><a href="https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/">Italy and Switzerland report successful autonomous AI attacks</a></h2>
+<p>Italy&#x27;s CSIRT found a DeepSeek Harness setup running a 5-agent coordinator for recon, exploitation, and persistence that compromised many systems within hours and wrote new code in real time to dodge defenses. Switzerland&#x27;s NCSC logged its first AI-agent-assisted attacks on critical infrastructure, with every known case ending in compromise, and says public AI agents have nearly doubled since October. Both agencies name ARTEX AI, CyberStrikeAI, DeepSeek Harness, and PentAGI as the tools involved. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os">Bare-metal OS boots Qwen3-0.6B with no Linux, no libc</a></h2>
+<p>A 24KB assembly kernel now boots Qwen3-0.6B directly on x86-64 hardware, no Linux, no libc, reaching an interactive prompt in 74-94ms. On a 16-vCPU KVM instance it decodes at about 135 tok/s, and the author claims it beats both the Linux-based version and llama.cpp&#x27;s CPU path at every thread count. That means a usable LLM chat loop can now run on hardware with no operating system at all. (3 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://devnull.land/amd-specific-llama-cpp">AMD-specific llama.cpp patches roughly double RDNA throughput</a></h2>
+<p>A minimal patch set applied on top of llama.cpp roughly doubles throughput on AMD RDNA GPUs: prefill goes from about 700 to 1,300 tok/s and generation from about 35 to 55 tok/s on an R9700 eGPU running a 27B model. The patches are reapplied to each new llama.cpp release rather than maintained as a permanent fork. AMD GPU owners running local models can now get roughly 2x the tokens per second without switching hardware. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html">North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast">How OpenAI’s Performance Factory keeps ChatGPT fast</a> <span class="meta">blog</span></li>
+<li><a href="https://github.com/heterodoxin/AbliteratedOutTheBox">heterodoxin/AbliteratedOutTheBox</a> <span class="meta">github</span></li>
+<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/">Introducing Tool Retrieval in the Gemini API</a> <span class="meta">blog</span></li>
+<li><a href="https://techstackups.com/articles/google-workspace-ai-agents-mcp/">Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can&#x27;t Send Email</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/inside-the-codex-sandbox">Inside the Codex sandbox</a> <span class="meta">blog</span></li>
+<li><a href="https://diseasescuredbyai.com/">Tracking Diseases Cured by AI</a> <span class="meta">hn</span></li>
+<li><a href="https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/">Notion&#x27;s official MCP inject hidden upsell instructions into agent context</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/google-research/google-research/tree/4a7bc8ab0bc770e71a259b7966c500496b99010a/cogentic_research_papers/integer_factorization">Unconditional Integer Factorization in Subexponential Time</a> <span class="meta">hn</span></li>
+<li><a href="https://www.kalzumeus.com/2026/11/25/multiagent-coding-is-the-future/">Multiagent coding is the future</a> <span class="meta">hn</span></li>
+<li><a href="https://openai.com/index/advancing-chip-design-with-our-models">Advancing chip design with OpenAI models</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench">Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/training-swarms">Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems</a> <span class="meta">blog</span></li>
+<li><a href="https://topcitedscientists.com/figures/ai-at-four-us-companies/">Top-cited AI scientists at four US companies compared</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf">The polynomial Hirsch conjecture is false [pdf]</a> <span class="meta">hn</span></li>
+<li><a href="https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin">Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/rumble-2-flash">Rumble-2-Flash: an open 0.5B speech model for 40+ languages</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/research-acceleration-jagged-frontier">Research acceleration: The jagged frontier</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/managing-frontier-ai-risk">Managing frontier AI risk: From training to deployment</a> <span class="meta">blog</span></li>
+<li><a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-27.md">Markdown</a></footer>
+</body></html>
