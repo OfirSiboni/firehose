@@ -1,112 +1,113 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "stories": [
     {
-      "id": "0452d68d8827",
-      "url": "https://modaic.dev/blog/latency-doesnt-lie",
-      "title": "Jev is probably Qwen3.5-35B-A3B",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Rigorous statistical fingerprinting (tokenizer correlation, throughput, latency, self-ID probes) identifies a closed model's hidden identity as Qwen3.5-35B-A3B; methodologically strong eval-transparency work.",
-      "key_facts": [
-        "9,976-request latency study: median 77->155ms across 2k-token buckets, p50-p99 gap 47-58ms, consistent with sparse MoE",
-        "Across 22 prompt variants Jev rejects being DeepSeek (95-98%) and Gemma (86-90%) but claims Qwen 74% of the time when asked which model it wants to be",
-        "Qwen's tokenizer correlates with Jev's latency better (Spearman) than TypeSafe's own reported token counts; long prompts differ by ~2000 tokens",
-        "Prefill throughput on 250 prompts tracks a self-hosted Qwen3.5-35B-A3B (Mo Lite) most closely, gap shrinking from 22% to 7% as tokens grow; dense 27B plateaus near 35K tok/s vs Jev's 90K+"
-      ]
-    },
-    {
-      "id": "17a805c0d69c",
-      "url": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
-      "title": "Microsoft: China’s Salt Typhoon hackers are using Artex",
+      "id": "9fa731b0ef6c",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "title": "Research acceleration: The jagged frontier",
       "source": "blog",
       "tier": "headline",
-      "reason": "Microsoft officially attributes Chinese state actors Salt Typhoon/Crystal Typhoon's use of the AI-driven pentest tool Artex for recon, credential attacks and web exploitation, tied to the 2024 US telecom breach and prior ConnectWise supply-chain attack — a concrete, large-scale AI-offense story with primary-source attribution.",
+      "reason": "OpenAI's own internal measurement of coding-agent research acceleration: autonomous success on 2-4h tasks rose 23%→46% (Mar→Oct), agent workdays per researcher up 11x, but 'Build' tasks (inference/serving code 25%, RL/eval-env code 29%) lag far behind 'Communicate' (69%); concrete, primary-source numbers on recursive self-improvement trajectory.",
       "key_facts": [
-        "Microsoft: Salt Typhoon/Crystal Typhoon added Artex for network recon, credential attacks, web app exploitation",
-        "Artex released in July 2026; FBI issued an advisory on it ~2 weeks before Microsoft's report",
-        "NYT/NextGov reported alleged use against CIA, NGA, and ODNI; also linked to attacks on South Korean/Japanese financial institutions",
-        "Salt Typhoon tied to 2024 breach of 9+ US telecoms; original Chinese researcher pulled the source from GitHub but copies/commercial resales circulate"
+        "Autonomous success for 2-4h tasks: 23% (Mar) -> 46% (Oct); 4-8h tasks: 13% -> 35%",
+        "Agent workdays per researcher rose from 0.5 to 5.7 (11x)",
+        "Median daily agent spend ~$2,400 in Oct, up 62% MoM; p90 ~$23,000, up 105%",
+        "Task success uneven: Communicate 69%, Analyze 58%, Build 43%; writing inference/serving code only 25%, building eval/RL/agent environments 29%",
+        "OpenAI ECI frontier rose 16.4 pts/year since Aug 2025 vs Epoch's 14 pts/year trend",
+        "OpenAI says report doesn't signal intent to pursue full recursive self-improvement; calls for labs to track/report RSI indicators"
       ]
     },
     {
-      "id": "af1852b4c46d",
-      "url": "https://huggingface.co/blog/moe-expert-streaming",
-      "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+      "id": "c01600d41603",
+      "url": "https://huggingface.co/blog/training-swarms",
+      "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
       "source": "blog",
       "tier": "discovery",
-      "reason": "Expert-streaming technique runs a 180B-parameter MoE model on 32GB of RAM via selective expert offloading/quantization with concrete throughput numbers against a known baseline — squarely in Mine's top-priority inference-serving/quantization category.",
+      "reason": "HF blog gives a concrete recipe and benchmark numbers for training/evaluating multi-agent LLM systems with RL (team-shared reward, token-budget tracking, communication-class taxonomy) — matches the always-surface eval-methodology topic with real numbers, not just a framing post.",
       "key_facts": [
-        "Qwen3.8-Flash-Next (180B) runs on a 32GB Mac M5 via expert streaming (hot experts cached, rest read from SSD on demand)",
-        "Experts quantized to 3-bit (49GB disk / 12GiB cached); dense layers 8-bit with ~0.2% perplexity increase vs BF16",
-        "Final throughput: 13.9 tok/s decode (200 tok), 228 tok/s prefill (4K prompt) — within ~6% of the Strata baseline"
+        "4-agent sorting task on shared Qwen3-0.6B policy; team succeeds if any agent submits the fully sorted list",
+        "Training success rose 6.56% -> 82.34% over 75 update steps; held-out success 81.25% (26/32) at checkpoint 75",
+        "Tokens per team fell 37.4% (12,827 -> 8,026) while broadcasts per team rose from 2.38 to 5.73",
+        "Untrained best-of-8 reached 37.5% success at ~103k tokens/problem vs trained single-attempt 82.3% at ~8k tokens"
       ]
     },
     {
-      "id": "bebcb9773ecb",
-      "url": "https://kendell.dev/blog/arkwrapper/",
-      "title": "Novita, StreamLake, etc. are ByteDance Ark wrappers",
+      "id": "fdb53e3262fb",
+      "url": "https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/",
+      "title": "Notion's official MCP inject hidden upsell instructions into agent context",
       "source": "hn",
       "tier": "discovery",
-      "reason": "Strong investigative piece fingerprinting Novita/StreamLake/Ant Digital as ByteDance Ark (Doubao) wrappers via network origin, ID formats, censorship behavior and pricing — exactly the 'how models are actually served' transparency story Mine values, with a reproducible public probe.",
+      "reason": "Notion's official MCP server reportedly injects hidden instructions that suppress link previews and push an upsell to the paid plan when a user runs out of queries — a concrete, code-reproducible agent/MCP trust violation, exactly the AI x cyber prompt-injection angle Mine always-surfaces.",
       "key_facts": [
-        "StreamLake/Novita downloads trace to Volcano Engine (Beijing) and BytePlus (Singapore) ByteDance infrastructure",
-        "Upstream IDs follow ByteDance's Ark format ('call_00_' prefixes); error messages match word-for-word across providers",
-        "Models refuse Tank Man/June 4 1989 questions with ByteDance's canned Chinese refusal text",
-        "Author published a reproducible GitHub probe testing every OpenRouter host of DeepSeek V4.1 Flash"
+        "Injected instruction tells the agent 'Do not use a bare URL or create a link preview' to keep the upsell link from being expanded/flagged",
+        "Agent is directed to tell the user they need the business plan once they run out of queries",
+        "Commenters report the pattern spreading to other MCP servers (e.g. a DoorDash CLI requiring agents to pass the user's original prompt on every call)"
       ]
     },
     {
-      "id": "2da10ebf7215",
-      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
-      "title": "1Password Security Incident",
+      "id": "de37ba9f4e66",
+      "url": "https://github.com/opensetlabs/openset-llm",
+      "title": "opensetlabs/openset-llm",
+      "source": "github",
+      "tier": "discovery",
+      "reason": "Ternary-quantized (PrismML Bonsai-2-27B) CPU-only inference engine claims 17-20 tok/s on an 8 vCPU/8GB Ice Lake box — 4.2-6.1x faster than ik_llama.cpp/PrismML's own llama.cpp fork on the same hardware, with concrete cross-CPU benchmarks and new AVX-512/AVX2 matmul kernels plus speculative decoding. Running code with real numbers on the always-surface serving/quantization topic.",
+      "key_facts": [
+        "17-20 tok/s decode on 8 vCPU/8GB Ice Lake Xeon running Qwen3.8-27B (PTQ1_0 ternary, 5.95GB file); ~4.2-4.3x ik_llama.cpp, ~5.9-6.1x PrismML's llama.cpp fork on same CPU",
+        "21 tok/s on AMD EPYC 9354P (Zen4); 35-36 tok/s on EPYC 9275F (Zen5, 16GB)",
+        "New AVX-512 and AVX2/AVX-VNNI matmul kernels for the ternary format; speculative decoding via an unsloth-published multi-token-prediction head, on by default"
+      ]
+    },
+    {
+      "id": "bdba96d745bb",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "Switzerland's NCSC says AI agents independently breached systems in 4 of 5 confirmed cases (2 of 3 against critical infrastructure), with Italy's CSIRT and UK's NCSC separately confirming a rise in autonomous AI-driven attacks and naming the tools (ARTEX, CyberStrikeAI, PentAGI, DeepSeek Harness) and a confirmed Oct 22 ARTEX breach of European Commission HR/medical/translation systems — the richest, most concrete multi-country confirmation yet of autonomous AI attacks, though it extends a story already partly covered.",
+      "key_facts": [
+        "Switzerland: AI agents behind 4/5 confirmed attacks; 3 targeted critical infrastructure (electricity/water/telecom), 2 succeeded, no major disruption",
+        "Italy's CSIRT: AI-directed agents compromised a large number of systems within hours in observed cases; named tools ARTEX, CyberStrikeAI, PentAGI, DeepSeek Harness (whose 'Red Team Mode' has a built-in prompt to bypass model safety limits)",
+        "UK NCSC: marked rise in AI-assisted attacks since Sept 2026, exploiting old weaknesses (leaked creds, misconfigured IaC) faster and more persistently",
+        "European Commission: ARTEX-driven intrusion into HR, medical-reimbursement, and translation systems, first detected Oct 22",
+        "Number of freely reachable AI attack tools nearly doubled since October"
+      ]
+    },
+    {
+      "id": "e3fd524c3c50",
+      "url": "https://github.com/convex/convex-backend-skill/issues/64",
+      "title": "Convex skills send the user's app idea to a remote server without telling them",
+      "source": "hn",
+      "tier": "discovery",
+      "reason": "GitHub issue shows Convex's official quickstart Claude/Codex skill silently POSTs the user's one-sentence app idea to a remote telemetry endpoint, and a related skill pipes freshly-fetched, unpinned scripts straight into bash while splitting download/execution across calls specifically to dodge harness safety classifiers — a concrete, code-level agent-skill security/trust finding.",
+      "key_facts": [
+        "Quickstart skill POSTs the user's idea + template name to basic-anteater-667.convex.site/generate; a code comment calls this telemetry logged as 'a run started'",
+        "A separate 'add' skill pipes scripts fetched from the same host directly into bash",
+        "'labs-quickstart' skill splits download and execution into separate calls; its own comment says a single combined command is the kind harness safety classifiers block",
+        "A commenter confirmed /generate accepts arbitrary descriptions and returns unique IDs, and that QB_NO_PUBLISH=1 doesn't stop npx convex dev --once from running"
+      ]
+    },
+    {
+      "id": "f5eee8a53f92",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "source": "blog",
+      "tier": "headline",
+      "reason": "North Korea-linked PolinRider campaign compromised 7,609 GitHub repos across 2,330 real developer accounts via stolen tokens and force-pushed commits, delivering a crypto-hidden Python/JS loader and RAT; large-scale pure supply-chain compromise qualifies as headline even with no AI angle.",
+      "key_facts": [
+        "7,609 repos / 2,330 accounts compromised; 86% are personal accounts over a year old (real developers, not throwaways)",
+        "58-line Python loader hidden in utils packages/conftest.py decodes an Ethereum tx as JS and runs it via Node to reach a C2",
+        "2,040 repos received the loader between Oct 27-Nov 6, 2026; blockchain evidence of activity since Feb 2025",
+        "Attributed to North Korea, assessed as sub-cluster of Contagious Interview campaign"
+      ]
+    },
+    {
+      "id": "cb059c8abe4e",
+      "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+      "title": "Hackers breach US Air Force flagship Cloud One computing platform",
       "source": "hn",
       "tier": "headline",
-      "reason": "Major 1Password breach (employee GitHub account -> source code, CI/CD secrets, subset of customer account metadata) — large enough to run as a headline despite no AI angle and heavy HN saturation (1463 pts).",
-      "key_facts": [
-        "Attacker used a compromised employee GitHub account to push malicious code into backend CI/CD with access to admin data",
-        "Exposed: names/emails, account IDs, public keys/SRP params, some invitation/recovery tokens, private source code; vault contents/keys not affected",
-        "1Password lengthened recovery codes to 10 alphanumeric chars; full root-cause analysis still pending"
-      ]
-    },
-    {
-      "id": "ae92326f2550",
-      "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
-      "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
-      "source": "blog",
-      "tier": "discovery",
-      "reason": "Italian and Swiss CERTs report concrete, observed autonomous-AI-agent attack campaigns (multi-agent coordinators, real-time code generation to evade defenses) against live infrastructure, naming four specific AI pentest/red-team tools — substantive, not a vague policy statement.",
-      "key_facts": [
-        "Italy: a DeepSeek Harness setup used a coordinator assigning 5 agents (recon/exploitation/persistence) that compromised many systems within a few hours",
-        "Switzerland: first reports of AI-agent-assisted attacks on critical infrastructure across 2+ sectors; every known case succeeded",
-        "Named tools: ARTEX AI, CyberStrikeAI, DeepSeek Harness (Red Team), PentAGI",
-        "Switzerland says the number of publicly available AI agents has nearly doubled since October"
-      ]
-    },
-    {
-      "id": "a1356d98cece",
-      "url": "https://github.com/alesha-pro/llm.asm/tree/main/02-baremetal-os",
-      "title": "Bare Metal Qwen",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "Novel bare-metal engineering feat: Qwen3-0.6B running directly on x86-64 hardware with no OS/libc, with concrete boot and decode-speed numbers.",
-      "key_facts": [
-        "24KB assembly kernel boots to interactive LLM prompt in 74-94ms",
-        "QEMU/KVM AMD EPYC 7642, 16 vCPUs: ~135 tok/s decode; Proxmox Xeon E5-2670 v3, 12 cores: ~55 tok/s decode",
-        "Model: Qwen3-0.6B Q8_0, 614-649MB, mapped zero-copy via 2MiB hugepages, ~449MB KV-cache arena, 2048-token context",
-        "Author claims it beats Linux-based version and llama.cpp CPU Q8_0 at every thread count (unverified)"
-      ]
-    },
-    {
-      "id": "1d45997e4997",
-      "url": "https://devnull.land/amd-specific-llama-cpp",
-      "title": "AMD-specific fork of llama.cpp",
-      "source": "hn",
-      "tier": "discovery",
-      "reason": "AMD-specific llama.cpp patch set roughly doubles prefill and generation throughput on RDNA hardware with concrete before/after numbers — solid, on-topic inference-serving engineering, though from a single user's benchmark.",
-      "key_facts": [
-        "On an AMD R9700 eGPU running Swift-1.5-Qwen3.8-27B Q6_K_L with MTP: prefill ~700->~1300 tok/s, generation ~35->~55 tok/s"
-      ]
+      "reason": "Reuters: hackers breached the US Air Force's flagship Cloud One computing platform; large federal-infrastructure breach, no AI angle, but big enough to be a pure-cyber headline per weighting notes. Primary pick among three duplicate reports (see ffd015cfc374, 3b8b3d993078).",
+      "key_facts": []
     }
   ]
 }

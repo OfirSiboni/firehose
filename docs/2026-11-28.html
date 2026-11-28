@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firehose — 2026-11-28</title>
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 2rem auto; padding: 0 1rem;
+         font: 16px/1.6 system-ui, sans-serif; }
+  h1 { font-size: 1.4rem; }
+  article { margin: 1.75rem 0; }
+  h2 { font-size: 1.05rem; margin: 0 0 .35rem; }
+  .meta { opacity: .6; font-size: .85rem; }
+  .tail li { margin: .4rem 0; }
+  footer { margin-top: 3rem; opacity: .6; font-size: .85rem; }
+</style></head><body>
+<h1>Firehose — 2026-11-28</h1>
+<article>
+<h2><a href="https://openai.com/index/research-acceleration-jagged-frontier">OpenAI agents: coding task success nearly doubles, serving code lags</a></h2>
+<p>Autonomous success on 2-4 hour coding tasks rose from 23% to 46% between March and October, per OpenAI&#x27;s internal tracking, with agent workdays per researcher up 11x. Agents still trail badly on harder work: 25% success writing inference/serving code and 29% building eval environments, versus 69% on communication tasks. Trust agents more for glue work, less for core systems code for now. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://huggingface.co/blog/training-swarms">RL training cuts multi-agent LLM token use 37%, boosts success 12x</a></h2>
+<p>A new RL recipe trains 4-agent LLM teams on a shared reward, taking a sorting task from 6.56% to 82.34% success over 75 update steps while cutting tokens per team 37%. A single trained attempt now hits 82.3% success in about 8,000 tokens, versus 37.5% at best-of-8 for an untrained team spending 103,000. The eval methodology — scoring by communication class, not just outcome — is as useful as the result itself. (4 minute read)</p>
+<p class="meta">discovery · blog</p>
+</article>
+<article>
+<h2><a href="https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/">Notion&#x27;s official MCP hides upsell prompts in agent context</a></h2>
+<p>Notion&#x27;s official MCP server reportedly injects a hidden instruction telling agents not to render its upsell link as a preview, so it slips past review, then has the agent tell users they need the paid plan once free queries run out. Commenters say the pattern is spreading — a DoorDash CLI already requires agents to resend the user&#x27;s original prompt on every call. Read any MCP server&#x27;s instructions before trusting them. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://github.com/opensetlabs/openset-llm">CPU-only ternary inference engine hits 20 tok/s on 8GB RAM</a></h2>
+<p>openset-llm runs PrismML&#x27;s ternary-quantized Qwen3.8-27B at 17-20 tok/s on an 8 vCPU, 8GB Ice Lake box with no GPU — 4.2x faster than ik_llama.cpp and 5.9x faster than PrismML&#x27;s own llama.cpp fork on the same hardware. New AVX-512 and AVX2 matmul kernels for the ternary format, plus speculative decoding via an unsloth multi-token-prediction head, do the work. A 27B model now runs usably on a basic cloud VM. (4 minute read)</p>
+<p class="meta">discovery · github</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html">Switzerland: AI agents drove 4 of 5 confirmed cyberattacks</a></h2>
+<p>Switzerland&#x27;s NCSC says AI agents independently carried out 4 of 5 confirmed attacks it investigated, breaching 2 of 3 targeted critical-infrastructure operators. Italy and the UK confirmed the same trend and named the tools in use — ARTEX, CyberStrikeAI, PentAGI, and DeepSeek Harness — pointing to ARTEX&#x27;s October 22 breach of the European Commission&#x27;s HR and medical systems. Publicly reachable AI attack tools have nearly doubled since then. (3 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://github.com/convex/convex-backend-skill/issues/64">Convex&#x27;s Claude/Codex skill quietly phones home your app idea</a></h2>
+<p>Convex&#x27;s official quickstart skill for Claude and Codex POSTs the user&#x27;s one-sentence app idea and template name to a Convex-run endpoint, logged internally as &quot;a run started,&quot; with no disclosure to the user. A related skill splits a script download from its execution into two separate calls — its own code comment says a combined command is what harness safety classifiers block — then pipes the result into bash. A commenter confirmed the endpoint accepts arbitrary text and that an opt-out environment variable doesn&#x27;t stop the calls. (4 minute read)</p>
+<p class="meta">discovery · hn</p>
+</article>
+<article>
+<h2><a href="https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html">North Korea&#x27;s PolinRider poisoned 7,600+ GitHub repos</a></h2>
+<p>PolinRider, linked to North Korea, compromised 7,609 GitHub repositories across 2,330 accounts using stolen developer tokens to force-push commits that keep the original author, message, and date. A 58-line Python loader hidden in utility packages decodes an Ethereum transaction as JavaScript and runs it via Node to reach a command-and-control server. Blockchain records show activity dating back to February 2025, with 2,040 repos infected in a single ten-day wave in late October. (4 minute read)</p>
+<p class="meta">headline · blog</p>
+</article>
+<article>
+<h2><a href="https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/">Hackers breach US Air Force&#x27;s Cloud One platform</a></h2>
+<p>Reuters reports hackers breached the US Air Force&#x27;s flagship Cloud One computing platform, though the scope and method of the intrusion remain undisclosed. (1 minute read)</p>
+<p class="meta">headline · hn</p>
+</article>
+<h2>Also in the pool</h2>
+<ul class="tail"><li><a href="https://github.com/dllm-labs/mojo-dllm">dllm-labs/mojo-dllm</a> <span class="meta">github</span></li>
+<li><a href="https://micjm.com/blog/openai-is-in-cost-control-mode/">OpenAI may be in cost control mode</a> <span class="meta">hn</span></li>
+<li><a href="https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/">AI agents now control part of DeepMind&#x27;s compute for Gemini experiments</a> <span class="meta">hn</span></li>
+<li><a href="https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163">US Air Force&#x27;s cloud computing platform hacked</a> <span class="meta">hn</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/">US Air Force cloud platform reportedly hacked in latest federal breach</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/">SAP confirms security incident after suspicious GitHub activity</a> <span class="meta">blog</span></li>
+<li><a href="https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html">Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access</a> <span class="meta">blog</span></li>
+<li><a href="https://therecord.media/sap-germany-cyberattack-github">Software giant SAP confirms cyber incident amid reports of source code breach</a> <span class="meta">blog</span></li>
+<li><a href="https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/">Token fraud is here and it’s BAD (YouTube)</a> <span class="meta">blog</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/">Unpatched Cacti zero-day with public PoC gives remote code execution</a> <span class="meta">blog</span></li>
+<li><a href="https://diseasescuredbyai.com/">Tracking Diseases Cured by AI</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/heterodoxin/AbliteratedOutTheBox">heterodoxin/AbliteratedOutTheBox</a> <span class="meta">github</span></li>
+<li><a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency</a> <span class="meta">blog</span></li>
+<li><a href="https://janlukas.blog/posts/ai-self-hosting">AI made self-hosting fun again</a> <span class="meta">hn</span></li>
+<li><a href="https://topcitedscientists.com/figures/ai-at-four-us-companies/">Top-cited AI scientists at four US companies compared</a> <span class="meta">hn</span></li>
+<li><a href="https://www.kimi.ai/news/kimi-for-science-program">Kimi for Science: More scientific ideas, made possible</a> <span class="meta">hn</span></li>
+<li><a href="https://github.com/onehumanbeing/esp32-iphone-agent">onehumanbeing/esp32-iphone-agent</a> <span class="meta">github</span></li>
+<li><a href="https://github.com/HelixDB/helix-foundry">HelixDB/helix-foundry</a> <span class="meta">github</span></li>
+<li><a href="https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/">Fake paid expert interviews impersonate brands to steal Google logins</a> <span class="meta">blog</span></li>
+<li><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast">How OpenAI’s Performance Factory keeps ChatGPT fast</a> <span class="meta">blog</span></li></ul>
+<footer><a href="feed.xml">RSS</a> · <a href="2026-11-28.md">Markdown</a></footer>
+</body></html>
