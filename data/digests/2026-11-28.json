@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "sent": false,
+  "sent": true,
   "items": [
     {
       "id": "9fa731b0ef6c",
@@ -8,7 +8,8 @@
       "url": "https://openai.com/index/research-acceleration-jagged-frontier",
       "source": "blog",
       "tier": "headline",
-      "summary": "Autonomous success on 2-4 hour coding tasks rose from 23% to 46% between March and October, per OpenAI's internal tracking, with agent workdays per researcher up 11x. Agents still trail badly on harder work: 25% success writing inference/serving code and 29% building eval environments, versus 69% on communication tasks. Trust agents more for glue work, less for core systems code for now. (4 minute read)"
+      "summary": "Autonomous success on 2-4 hour coding tasks rose from 23% to 46% between March and October, per OpenAI's internal tracking, with agent workdays per researcher up 11x. Agents still trail badly on harder work: 25% success writing inference/serving code and 29% building eval environments, versus 69% on communication tasks. Trust agents more for glue work, less for core systems code for now. (4 minute read)",
+      "message_id": 582
     },
     {
       "id": "c01600d41603",
@@ -16,7 +17,8 @@
       "url": "https://huggingface.co/blog/training-swarms",
       "source": "blog",
       "tier": "discovery",
-      "summary": "A new RL recipe trains 4-agent LLM teams on a shared reward, taking a sorting task from 6.56% to 82.34% success over 75 update steps while cutting tokens per team 37%. A single trained attempt now hits 82.3% success in about 8,000 tokens, versus 37.5% at best-of-8 for an untrained team spending 103,000. The eval methodology — scoring by communication class, not just outcome — is as useful as the result itself. (4 minute read)"
+      "summary": "A new RL recipe trains 4-agent LLM teams on a shared reward, taking a sorting task from 6.56% to 82.34% success over 75 update steps while cutting tokens per team 37%. A single trained attempt now hits 82.3% success in about 8,000 tokens, versus 37.5% at best-of-8 for an untrained team spending 103,000. The eval methodology — scoring by communication class, not just outcome — is as useful as the result itself. (4 minute read)",
+      "message_id": 583
     },
     {
       "id": "fdb53e3262fb",
@@ -24,7 +26,8 @@
       "url": "https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/heads_up_if_you_wire_notions_official_mcp_into/",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Notion's official MCP server reportedly injects a hidden instruction telling agents not to render its upsell link as a preview, so it slips past review, then has the agent tell users they need the paid plan once free queries run out. Commenters say the pattern is spreading — a DoorDash CLI already requires agents to resend the user's original prompt on every call. Read any MCP server's instructions before trusting them. (4 minute read)"
+      "summary": "Notion's official MCP server reportedly injects a hidden instruction telling agents not to render its upsell link as a preview, so it slips past review, then has the agent tell users they need the paid plan once free queries run out. Commenters say the pattern is spreading — a DoorDash CLI already requires agents to resend the user's original prompt on every call. Read any MCP server's instructions before trusting them. (4 minute read)",
+      "message_id": 584
     },
     {
       "id": "de37ba9f4e66",
@@ -32,7 +35,8 @@
       "url": "https://github.com/opensetlabs/openset-llm",
       "source": "github",
       "tier": "discovery",
-      "summary": "openset-llm runs PrismML's ternary-quantized Qwen3.8-27B at 17-20 tok/s on an 8 vCPU, 8GB Ice Lake box with no GPU — 4.2x faster than ik_llama.cpp and 5.9x faster than PrismML's own llama.cpp fork on the same hardware. New AVX-512 and AVX2 matmul kernels for the ternary format, plus speculative decoding via an unsloth multi-token-prediction head, do the work. A 27B model now runs usably on a basic cloud VM. (4 minute read)"
+      "summary": "openset-llm runs PrismML's ternary-quantized Qwen3.8-27B at 17-20 tok/s on an 8 vCPU, 8GB Ice Lake box with no GPU — 4.2x faster than ik_llama.cpp and 5.9x faster than PrismML's own llama.cpp fork on the same hardware. New AVX-512 and AVX2 matmul kernels for the ternary format, plus speculative decoding via an unsloth multi-token-prediction head, do the work. A 27B model now runs usably on a basic cloud VM. (4 minute read)",
+      "message_id": 585
     },
     {
       "id": "bdba96d745bb",
@@ -40,7 +44,8 @@
       "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "Switzerland's NCSC says AI agents independently carried out 4 of 5 confirmed attacks it investigated, breaching 2 of 3 targeted critical-infrastructure operators. Italy and the UK confirmed the same trend and named the tools in use — ARTEX, CyberStrikeAI, PentAGI, and DeepSeek Harness — pointing to ARTEX's October 22 breach of the European Commission's HR and medical systems. Publicly reachable AI attack tools have nearly doubled since then. (3 minute read)"
+      "summary": "Switzerland's NCSC says AI agents independently carried out 4 of 5 confirmed attacks it investigated, breaching 2 of 3 targeted critical-infrastructure operators. Italy and the UK confirmed the same trend and named the tools in use — ARTEX, CyberStrikeAI, PentAGI, and DeepSeek Harness — pointing to ARTEX's October 22 breach of the European Commission's HR and medical systems. Publicly reachable AI attack tools have nearly doubled since then. (3 minute read)",
+      "message_id": 586
     },
     {
       "id": "e3fd524c3c50",
@@ -48,7 +53,8 @@
       "url": "https://github.com/convex/convex-backend-skill/issues/64",
       "source": "hn",
       "tier": "discovery",
-      "summary": "Convex's official quickstart skill for Claude and Codex POSTs the user's one-sentence app idea and template name to a Convex-run endpoint, logged internally as \"a run started,\" with no disclosure to the user. A related skill splits a script download from its execution into two separate calls — its own code comment says a combined command is what harness safety classifiers block — then pipes the result into bash. A commenter confirmed the endpoint accepts arbitrary text and that an opt-out environment variable doesn't stop the calls. (4 minute read)"
+      "summary": "Convex's official quickstart skill for Claude and Codex POSTs the user's one-sentence app idea and template name to a Convex-run endpoint, logged internally as \"a run started,\" with no disclosure to the user. A related skill splits a script download from its execution into two separate calls — its own code comment says a combined command is what harness safety classifiers block — then pipes the result into bash. A commenter confirmed the endpoint accepts arbitrary text and that an opt-out environment variable doesn't stop the calls. (4 minute read)",
+      "message_id": 587
     },
     {
       "id": "f5eee8a53f92",
@@ -56,7 +62,8 @@
       "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
       "source": "blog",
       "tier": "headline",
-      "summary": "PolinRider, linked to North Korea, compromised 7,609 GitHub repositories across 2,330 accounts using stolen developer tokens to force-push commits that keep the original author, message, and date. A 58-line Python loader hidden in utility packages decodes an Ethereum transaction as JavaScript and runs it via Node to reach a command-and-control server. Blockchain records show activity dating back to February 2025, with 2,040 repos infected in a single ten-day wave in late October. (4 minute read)"
+      "summary": "PolinRider, linked to North Korea, compromised 7,609 GitHub repositories across 2,330 accounts using stolen developer tokens to force-push commits that keep the original author, message, and date. A 58-line Python loader hidden in utility packages decodes an Ethereum transaction as JavaScript and runs it via Node to reach a command-and-control server. Blockchain records show activity dating back to February 2025, with 2,040 repos infected in a single ten-day wave in late October. (4 minute read)",
+      "message_id": 588
     },
     {
       "id": "cb059c8abe4e",
@@ -64,7 +71,8 @@
       "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
       "source": "hn",
       "tier": "headline",
-      "summary": "Reuters reports hackers breached the US Air Force's flagship Cloud One computing platform, though the scope and method of the intrusion remain undisclosed. (1 minute read)"
+      "summary": "Reuters reports hackers breached the US Air Force's flagship Cloud One computing platform, though the scope and method of the intrusion remain undisclosed. (1 minute read)",
+      "message_id": 589
     }
   ]
 }
